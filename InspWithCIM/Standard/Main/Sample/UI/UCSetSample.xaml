@@ -1,0 +1,68 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Main"
+			 xmlns:camera="clr-namespace:Camera;assembly=Camera"
+             xmlns:HalconDotNet="clr-namespace:HalconDotNet;assembly=halcondotnet" x:Class="Main.UCSetSample"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1500" Loaded="UserControl_Loaded">
+	<Grid Background="White">
+		<DockPanel Grid.Row="1">
+			<Grid DockPanel.Dock="Top" Height="50">
+				<Label Content="Sample测试与保存" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Black"/>
+				<Separator HorizontalAlignment="Stretch" VerticalAlignment="Bottom"/>
+			</Grid>
+
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="24"/>
+					<RowDefinition Height="*"/>
+				</Grid.RowDefinitions>
+				<Label Content="图片列表"/>
+				<ScrollViewer Grid.Row="1" x:Name="scrollViewer" HorizontalScrollBarVisibility="Auto" 
+							  MaxHeight="{Binding ElementName=btnList,Path=ActualHeight}"
+							  PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
+					<DataGrid x:Name="dgResult" Height="{Binding ElementName=scrollViewer,Path=ActualHeight}" 
+							  IsReadOnly="True" ItemsSource="{Binding}" MaxWidth="400" AutoGenerateColumns="False" 
+							  CanUserAddRows="False" MouseDoubleClick="DgResult_MouseDoubleClick">
+						<DataGrid.InputBindings>
+							<MouseBinding MouseAction="LeftDoubleClick" Command="{Binding DoubleClickCommand}"/>
+						</DataGrid.InputBindings>
+						<DataGrid.Columns>
+							<DataGridTextColumn Header="Index" Binding="{Binding Index,Mode=TwoWay}" Width="Auto"/>
+							<DataGridTextColumn Header="FileName" Binding="{Binding FileName,Mode=TwoWay}" MaxWidth="200"/>
+							<DataGridCheckBoxColumn Header="Shell" Binding="{Binding Shell,Mode=TwoWay}"/>
+							<DataGridCheckBoxColumn Header="Convex" Binding="{Binding Convex,Mode=TwoWay}"/>
+							<DataGridCheckBoxColumn Header="Cornor" Binding="{Binding Cornor,Mode=TwoWay}"/>
+						</DataGrid.Columns>
+					</DataGrid>
+				</ScrollViewer>
+			</Grid>
+			<camera:BaseUCDisplayCamera Name="ucSetDisplay" MinWidth="300" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"/>
+			<Rectangle Grid.Row="1" Grid.Column="0" DockPanel.Dock="Right" Width="1" Stroke="CornflowerBlue" VerticalAlignment="Stretch" />
+			<Grid Grid.Column="3" DockPanel.Dock="Right">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="3*"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*"/>
+					<RowDefinition Height="*"/>
+					<RowDefinition Height="*"/>
+					<RowDefinition Height="*"/>
+				</Grid.RowDefinitions>
+				<Label x:Name="lblDefect" Content="缺陷：" FontSize="20" VerticalAlignment="Top" Grid.RowSpan="4"/>
+				<Button x:Name="btnLoadImg" Grid.Row="0" Grid.Column="3" Content="Load" Width="80" Height="40" Click="BtnLoadImg_Click"/>
+				<Button x:Name="btnSaveParams" Grid.Row="1" Grid.Column="3" Content="Save" Width="80" Height="40" Click="BtnSaveParams_Click"/>
+				<Button x:Name="btnNextImg" Grid.Row="2" Grid.Column="3" Content="Next" ToolTip="下一张" Width="80" Height="40" Click="BtnNextImg_Click"/>
+				<ComboBox x:Name="cbSide" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Top" Width="80" Height="40" Margin="0,15,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" SelectionChanged="CbSide_SelectionChanged">
+					<ComboBoxItem Content="电极边" FontSize="16"/>
+					<ComboBoxItem Content="非电极边" FontSize="16"/>
+				</ComboBox>
+				<Button x:Name="btnTestImg" Grid.Row="3" Grid.Column="3" Content="Run" ToolTip="运行检测" Width="80" Height="40" Click="BtnTestImg_Click" VerticalAlignment="Bottom" Margin="0,0,0,15"/>
+			</Grid>
+		</DockPanel>
+	</Grid>
+</UserControl>

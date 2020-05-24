@@ -1,0 +1,7 @@
+﻿[*.cs]
+
+# CS0114: 成员隐藏继承的成员；缺少关键字 override
+dotnet_diagnostic.CS0114.severity = none
+
+# CS0109: 成员不会隐藏继承的成员；不需要关键字 new
+dotnet_diagnostic.CS0109.severity = none

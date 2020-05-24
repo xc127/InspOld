@@ -1,0 +1,127 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DealCIM"    
+		xmlns:sys="clr-namespace:System;assembly=mscorlib"	
+        x:Class="DealCIM.CIMWnd"  
+        mc:Ignorable="d"
+        Title="CIM设置" Height="450" Width="300" Loaded="Window_Loaded">
+	<Window.Resources>
+		<ObjectDataProvider x:Key="TypeCode" MethodName="GetValues" ObjectType="{x:Type sys:Enum}">
+			<ObjectDataProvider.MethodParameters>
+				<x:Type TypeName="local:TypeCode_enum"/>
+			</ObjectDataProvider.MethodParameters>
+		</ObjectDataProvider>
+		<ObjectDataProvider x:Key="TypeMode" MethodName="GetValues" ObjectType="{x:Type sys:Enum}">
+			<ObjectDataProvider.MethodParameters>
+				<x:Type TypeName="local:TypeMode"/>
+			</ObjectDataProvider.MethodParameters>
+		</ObjectDataProvider>
+	</Window.Resources>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="4*"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		<TabControl Grid.Row="0">
+			<TabItem Header="过账信息设置">
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="*"/>
+						<RowDefinition Height="*"/>
+						<RowDefinition Height="*"/>
+						<RowDefinition Height="*"/>
+						<RowDefinition Height="*"/>
+						<RowDefinition Height="*"/>
+					</Grid.RowDefinitions>
+					<Label Content="UserID:" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+					<TextBox x:Name="tbUserID" Grid.Column="1" Grid.Row="0" Text="{Binding StrUserID, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="120" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+					<Label Content="Fab:" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+					<TextBox x:Name="tbFab" Grid.Column="1" Grid.Row="1" Text="{Binding StrFab, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="120" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+					<Label Content="Area:" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+					<TextBox x:Name="tbArea" Grid.Column="1" Grid.Row="2" Text="{Binding StrArea, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="120" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+					<Label Content="Line:" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+					<TextBox x:Name="tbLine" Grid.Column="1" Grid.Row="3" Text="{Binding StrLine, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="120" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+					<Label Content="Operation:" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+					<TextBox x:Name="tbOperation" Grid.Column="1" Grid.Row="4" Text="{Binding StrOperation, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="120" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+					<Label Content="ModelNo:" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+					<TextBox x:Name="tbModelNo" Grid.Column="1" Grid.Row="5" Text="{Binding StrModelNo, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="120" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+				</Grid>
+			</TabItem>
+			<TabItem Header="CIM连接设置">
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="*"/>
+						<RowDefinition Height="*"/>
+						<RowDefinition Height="*"/>
+						<RowDefinition Height="*"/>
+						<RowDefinition Height="*"/>
+						<RowDefinition Height="*"/>
+					</Grid.RowDefinitions>
+					<Label Content="SendQueue:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+					<TextBox x:Name="tbSendQueue" Grid.Column="1" Text="{Binding StrSendQueue, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="120" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+					<Label Content="ReadQueue:" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+					<TextBox x:Name="tbReadQueue" Grid.Column="1" Grid.Row="1" Text="{Binding StrReadQueue, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="120" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+					<Label Content="IP:" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+					<TextBox x:Name="tbIP" Grid.Column="1" Grid.Row="2" Text="{Binding StrIP, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="120" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+					<Label Content="Port:" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+					<TextBox x:Name="tbPort" Grid.Column="1" Grid.Row="3" Text="{Binding StrPort, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="120" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+					<Label Content="循环读取次数:" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+					<TextBox x:Name="tbCycTimes" Grid.Column="1" Grid.Row="4" Text="{Binding iCycTimes, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="120" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+					<Button Name="btnReconnect" Content="重连CIM" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center" Height="32" FontSize="18" VerticalAlignment="Center" Width="80" Click="BtnReconnect_Click"/>
+					<ComboBox Name="cbTypeMode" Grid.Row="5" Grid.Column="1" Height="40" Width="120" SelectedItem="{Binding ETypeMode, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding Source={StaticResource TypeMode}}" SelectionChanged="CbTypeMode_SelectionChanged" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22"/>
+				</Grid>
+			</TabItem>
+			<TabItem Header="二维码设置">
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="*"/>
+						<RowDefinition Height="*"/>
+						<RowDefinition Height="*"/>
+						<RowDefinition Height="*"/>
+						<RowDefinition Height="*"/>
+					</Grid.RowDefinitions>
+					<ComboBox Name="cbTypeCode" Grid.ColumnSpan="2" Height="40" SelectedItem="{Binding ETypeCode, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding Source={StaticResource TypeCode}}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22"/>
+					<Label Content="建议二维码使用COM1，本机使用COM2" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+					<Label Content="端口:" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
+					<TextBox x:Name="tbCodeCom" Grid.Column="1" Grid.Row="2" Text="{Binding StrCom, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="120" Height="40" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
+					<Label Content="波特率:" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
+					<TextBox x:Name="tbBaudrate" Grid.Column="1" Grid.Row="3" Text="{Binding iBaudrate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="120" Height="40" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"/>
+					<Label Content="读码延迟" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
+					<TextBox x:Name="tbCodeDelay" Grid.Row="4" Grid.Column="1" Text="{Binding iCodeDelay, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="120" Height="40" HorizontalAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+				</Grid>
+			</TabItem>
+		</TabControl>
+		<Grid Grid.Row="1">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+			<Button Name="btnConfirm" Content="确认" Grid.Column="0" HorizontalAlignment="Stretch" Height="32"
+					VerticalAlignment="Center" FontSize="18" Click="BtnConfirm_Click"/>
+			<Button Name="btnCancel" Content="取消" Grid.Column="2" HorizontalAlignment="Stretch" Height="32" 
+					VerticalAlignment="Center" FontSize="18" Click="BtnCancel_Click"/>
+			<CheckBox Name="cbLog" Content="记录日志"  Grid.Column="3" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="20"
+					  IsChecked="{Binding Path=BlLog, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+		</Grid>
+	</Grid>
+	
+</Window>

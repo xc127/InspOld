@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Button Info="操作日志">
+  <Button NameButton="imLogin" Annotation="main窗体登陆" Time="11:46:55" Authority="Null" Model="Default" />
+  <Button NameButton="btnSave保存&amp;退出" Annotation="登陆以权限null" Time="11:47:04" Authority="Null" Model="Default" />
+  <Button NameButton="btnSave保存&amp;退出" Annotation="登陆以权限engineer" Time="11:47:09" Authority="Engineer" Model="Default" />
+  <Button NameButton="imLogin" Annotation="main窗体登陆" Time="11:47:09" Authority="Engineer" Model="Default" />
+  <Button NameButton="btnSave保存&amp;退出" Annotation="登陆以权限engineer" Time="11:48:16" Authority="Engineer" Model="Default" />
+  <Button NameButton="imLogin" Annotation="main窗体登陆" Time="11:48:16" Authority="Engineer" Model="Default" />
+  <Button NameButton="imLogin" Annotation="main窗体登陆" Time="11:48:20" Authority="Null" Model="Default" />
+  <Button NameButton="btnSave保存&amp;退出" Annotation="登陆以权限manufacturer" Time="11:48:25" Authority="Manufacturer" Model="Default" />
+  <Button NameButton="imLogin" Annotation="main窗体登陆" Time="11:48:25" Authority="Manufacturer" Model="Default" />
+  <Button NameButton="btnSave保存&amp;退出" Annotation="登陆以权限engineer" Time="11:49:19" Authority="Engineer" Model="Default" />
+  <Button NameButton="imLogin" Annotation="main窗体登陆" Time="11:49:19" Authority="Engineer" Model="Default" />
+  <Button NameButton="btnSave保存&amp;退出" Annotation="登陆以权限engineer" Time="11:50:46" Authority="Engineer" Model="Default" />
+  <Button NameButton="imLogin" Annotation="main窗体登陆" Time="11:50:46" Authority="Engineer" Model="Default" />
+  <Button NameButton="btnSave保存&amp;退出" Annotation="登陆以权限engineer" Time="11:51:31" Authority="Engineer" Model="Default" />
+  <Button NameButton="imLogin" Annotation="main窗体登陆" Time="11:51:31" Authority="Engineer" Model="Default" />
+  <Button NameButton="imLogin" Annotation="main窗体登陆" Time="11:51:41" Authority="Null" Model="Default" />
+  <Button NameButton="btnSave保存&amp;退出" Annotation="登陆以权限manufacturer" Time="11:51:46" Authority="Manufacturer" Model="Default" />
+  <Button NameButton="imLogin" Annotation="main窗体登陆" Time="11:51:46" Authority="Manufacturer" Model="Default" />
+  <Button NameButton="btnSave保存&amp;退出" Annotation="登陆以权限engineer" Time="11:53:09" Authority="Engineer" Model="Default" />
+  <Button NameButton="imLogin" Annotation="main窗体登陆" Time="11:53:09" Authority="Engineer" Model="Default" />
+  <Button NameButton="btnSave保存&amp;退出" Annotation="登陆以权限engineer" Time="11:53:38" Authority="Engineer" Model="Default" />
+  <Button NameButton="imLogin" Annotation="main窗体登陆" Time="11:53:38" Authority="Engineer" Model="Default" />
+  <Button NameButton="btnSave保存&amp;退出" Annotation="登陆以权限engineer" Time="11:54:41" Authority="Engineer" Model="Default" />
+  <Button NameButton="imLogin" Annotation="main窗体登陆" Time="11:54:41" Authority="Engineer" Model="Default" />
+  <Button NameButton="imLogin" Annotation="main窗体登陆" Time="11:54:48" Authority="Null" Model="Default" />
+  <Button NameButton="btnSave保存&amp;退出" Annotation="登陆以权限manufacturer" Time="11:54:53" Authority="Manufacturer" Model="Default" />
+  <Button NameButton="imLogin" Annotation="main窗体登陆" Time="11:54:53" Authority="Manufacturer" Model="Default" />
+  <Button NameButton="btnSave保存&amp;退出" Annotation="登陆以权限engineer" Time="11:56:03" Authority="Engineer" Model="Default" />
+  <Button NameButton="imLogin" Annotation="main窗体登陆" Time="11:56:03" Authority="Engineer" Model="Default" />
+  <Button NameButton="btnSave保存&amp;退出" Annotation="登陆以权限engineer" Time="11:57:19" Authority="Engineer" Model="Default" />
+  <Button NameButton="imLogin" Annotation="main窗体登陆" Time="11:57:19" Authority="Engineer" Model="Default" />
+  <Button NameButton="btnSave保存&amp;退出" Annotation="登陆以权限engineer" Time="11:59:49" Authority="Engineer" Model="Default" />
+  <Button NameButton="imLogin" Annotation="main窗体登陆" Time="11:59:49" Authority="Engineer" Model="Default" />
+  <Button NameButton="imLogin" Annotation="main窗体登陆" Time="11:59:54" Authority="Null" Model="Default" />
+  <Button NameButton="btnSave保存&amp;退出" Annotation="登陆以权限manufacturer" Time="11:59:58" Authority="Manufacturer" Model="Default" />
+  <Button NameButton="imLogin" Annotation="main窗体登陆" Time="11:59:58" Authority="Manufacturer" Model="Default" />
+</Button>

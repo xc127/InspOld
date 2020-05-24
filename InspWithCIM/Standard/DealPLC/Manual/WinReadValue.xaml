@@ -1,0 +1,54 @@
+﻿<Window x:Class="DealPLC.WinReadValue"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+        xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib"
+        Title="PLC" Height="500" Width="400" Closed="Window_Closed" Loaded="Window_Loaded" Topmost="True" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="写入端口：" HorizontalAlignment="Right" VerticalAlignment="Center" />
+            <Label Content="写入数据：" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="1"/>
+            <Label Content="写入数量：" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="2"/>
+            <ComboBox Grid.Column="1"  HorizontalAlignment="Stretch" Name="cbxPort" VerticalAlignment="Stretch" SelectedIndex="0" Margin="1">
+                <ComboBoxItem Content="端口1"></ComboBoxItem>
+                <ComboBoxItem Content="端口2"></ComboBoxItem>
+                <ComboBoxItem Content="端口3"></ComboBoxItem>
+                <ComboBoxItem Content="端口4"></ComboBoxItem>
+                <ComboBoxItem Content="端口5"></ComboBoxItem>
+                <ComboBoxItem Content="端口6"></ComboBoxItem>
+                <ComboBoxItem Content="端口7"></ComboBoxItem>
+            </ComboBox>
+            <ControlLib:DoubleUpDown Grid.Column="1" Grid.Row="1" Value="1" Margin="2" Increment="1" Minimum="0" Maximum="99999"  Name="dudData"/>
+            <ControlLib:DoubleUpDown Grid.Column="1" Grid.Row="2" Value="1" Margin="2" Increment="1" Minimum="1" Maximum="3"  Name="dudNum"/>
+            <Button Content="刷新" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Name="btnRefresh" Grid.RowSpan="3" Grid.Column="3" Margin="2" Click="btnRefresh_Click" />
+            <Button Content="写入测试" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Name="btnWriteTest" Grid.RowSpan="3" Grid.Column="2" Margin="2" Click="btnWriteTest_Click" />
+        </Grid>
+        <Grid Grid.Row="1">
+            <DataGrid AllowDrop="True" AreRowDetailsFrozen="True" AutoGenerateColumns="False" Background="White" BorderThickness="1" 
+                          CanUserAddRows="False" CanUserResizeColumns="False" CanUserSortColumns="False" FontSize="13" GridLinesVisibility="All"
+                          HorizontalAlignment="Stretch" IsReadOnly="True" ItemsSource="{Binding}" Name="dgRegReadData" VerticalAlignment="Stretch" 
+                          Margin="1">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding StrReg}" Header="寄存器" Width="*"  />
+                    <DataGridTextColumn Binding="{Binding OlderValue}" Header="更早" Width="*" />
+                    <DataGridTextColumn Binding="{Binding OldValue}" Header="旧值" Width="*" />
+                    <DataGridTextColumn Binding="{Binding NewValue}" Header="新值" Width="*" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,40 @@
+﻿<MetroControls:MetroWindow x:Class="SetPar.WinSetFolder"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"             
+             xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib" 
+             xmlns:Metro="http://metro.mahapps.com/winfx/xaml/controls" 
+             xmlns:toolkit="http://schemas.xceed.com/wpf/xaml/toolkit" 
+             xmlns:MetroControls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             BorderBrush="#FF00D1E5" BorderThickness="1"
+             xmlns:SetPar="clr-namespace:SetPar"
+             mc:Ignorable="d" 
+             d:DesignHeight="724" d:DesignWidth="823" SizeToContent="WidthAndHeight" Title="设置文件参数" ShowMinButton="False" ShowMaxRestoreButton="False" WindowStartupLocation="CenterScreen" Loaded="MetroWindow_Loaded">
+    <Window.Resources >
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <MetroControls:MetroTabControl Grid.RowSpan="3" Name="MetroTabControlSetting" >
+            <ControlLib:CTabItem Header="设置文件删除" Margin="0" Height="32" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="120" BorderBrush="Black" BorderThickness="1" >
+                <Grid>
+                    <SetPar:SetDelFolder HorizontalAlignment="Stretch" Margin="0" x:Name="setDel" VerticalAlignment="Stretch" />
+                </Grid>
+            </ControlLib:CTabItem >
+
+            <ControlLib:CTabItem Header="设置文件显示" Margin="0,0,0,0" Height="32" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" BorderBrush="Black" BorderThickness="1">
+                <Grid>
+                    <SetPar:SetFolderAttribute HorizontalAlignment="Center" Margin="1" x:Name="setFolderAttribute" VerticalAlignment="Stretch"/>
+                </Grid>
+            </ControlLib:CTabItem >
+        </MetroControls:MetroTabControl>
+    </Grid>
+</MetroControls:MetroWindow>

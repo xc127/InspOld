@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="Main.UCRecord"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib" 
+             mc:Ignorable="d" 
+             d:DesignHeight="202" d:DesignWidth="477">
+
+    <GroupBox Header="检测记录" Margin="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="auto">
+		<ScrollViewer HorizontalScrollBarVisibility="Auto">
+			<DataGrid Name="dgRecord" Margin="1" Background="White" AllowDrop="True" GridLinesVisibility="All" SelectionChanged="dgRecord_SelectionChanged" VerticalScrollBarVisibility="Visible" ItemsSource="{Binding}" AutoGenerateColumns="False"   BorderThickness="2" CanUserReorderColumns="False" CanUserResizeColumns="True" CanUserSortColumns="False" CanUserResizeRows="False" IsReadOnly="True" SelectionUnit="FullRow">
+				<DataGrid.Columns>
+					<DataGridTextColumn Binding="{Binding SideInfo}" Header="Side" Width="Auto"  />
+					<DataGridTextColumn Binding="{Binding NoCamera}" Header="CamN" Width="Auto"  />
+					<DataGridTextColumn Binding="{Binding Code}" Header="二维码" Width="Auto"  />
+					<DataGridTextColumn Binding="{Binding FaultTypeStr}" Header="缺陷" Width="Auto"  />
+					<DataGridTextColumn Binding="{Binding FaultInfoStr}" Header="规格" Width="Auto"  />
+					<DataGridTextColumn Binding="{Binding ImagePath}" Header="路径" Width="Auto"  />
+					<DataGridTextColumn Binding="{Binding Time}" Header="时间" Width="Auto"  />
+				</DataGrid.Columns>
+			</DataGrid>
+		</ScrollViewer>
+	</GroupBox>
+</UserControl>

@@ -1,0 +1,1482 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SetComprehensive</name>
+    </assembly>
+    <members>
+        <member name="T:SetComprehensive.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:SetComprehensive.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:SetComprehensive.Properties.Resources.Culture">
+            <summary>
+              重写当前线程的 CurrentUICulture 属性
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="T:SetComprehensive.WinRecoverCompre">
+            <summary>
+            WinRecover.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinRecoverCompre
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinRecoverCompre.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinRecoverCompre.Init(ParComprehensive.BaseParComprehensive,BasicClass.FdBlAction_del)">
+            <summary>
+            初始化
+            </summary>
+            <param name="par"></param>
+            <param name="closeWin"></param>
+        </member>
+        <member name="M:SetComprehensive.WinRecoverCompre.ReadDir">
+            <summary>
+            读取目录
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinRecoverCompre.ReadExplain(System.String)">
+            <summary>
+            读取注释
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SetComprehensive.WinRecoverCompre.dgDir_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择文件目录查看文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.WinRecoverCompre.ReadFile(DealLog.BaseParRecoverDir)">
+            <summary>
+            读取文件
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinRecoverCompre.btnShowPar_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            查看参数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.WinRecoverCompre.btnCopyOld_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            使用历史参数覆盖当前参数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.WinRecoverCompre.btnRecoverNew_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            使用之前的参数，退出历史参数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.WinRecoverCompre.ShowDir">
+            <summary>
+            显示目录
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinRecoverCompre.ShowFile">
+            <summary>
+            显示文件
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinRecoverCompre.BaseWindow_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            关闭窗口
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.WinRecoverCompre.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:SetComprehensive.RegeditSetComprehensive.BlChangeSetComprehensive">
+            <summary>
+            是否显示相机综合设置切换
+            </summary>
+        </member>
+        <member name="T:SetComprehensive.SetSpreadsheet">
+            <summary>
+            SetImageP.xaml 的交互逻辑
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.CalibRobot(System.String)">
+            <summary>
+            机器人校准
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.SetParCommunication(System.String)">
+            <summary>
+            设置图像处理参数
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.Show2DCode(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.Gray(System.String)">
+            <summary>
+            灰度
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowGrayAnalyze(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+            <param name="baseParImageProcess"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowShaprness(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowShaprnessFocal(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.Location(System.String)">
+            <summary>
+            设置定位算法
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.Measure(System.String)">
+            <summary>
+            识别区域
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowMeasureSLine(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+            <param name="baseParImageProcess"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowMeasureCircle(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.OCR(System.String)">
+            <summary>
+            字符识别
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowSimpleOCR(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.Paint(System.String)">
+            <summary>
+            绘制
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.Point(System.String)">
+            <summary>
+            点
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowPointHarris(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+            <param name="baseParImageProcess"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowPointCV(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+            <param name="baseParImageProcess"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowPointRect(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            四边形角点
+            </summary>
+            <param name="baseParImageProcess">图像处理参数</param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.Save(System.String)">
+            <summary>
+            存储
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowSaveImage(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+            <param name="par"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.winSaveImage_ParSaveImage_event(DealImageProcess.ParSaveImage)">
+            <summary>
+            恢复算法参数
+            </summary>
+            <param name="par"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.SetParInspection(System.String)">
+            <summary>
+            检测
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.Defection(System.String)">
+            <summary>
+            缺陷检测
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.InitUCSimple">
+            <summary>
+            简单控件
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ClearUCSimple_WithoutSave">
+            <summary>
+            清除控件但是不保存
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowDisplayCamera(DealDisplay.BaseParDisplay)">
+            <summary>
+            设置相机显示画面
+            </summary>
+            <param name="baseParDisplay"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowDisplayImage(DealDisplay.BaseParDisplay)">
+            <summary>
+            设置图像画面
+            </summary>
+            <param name="baseParDisplay"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowResultShape(DealDisplay.BaseParDisplay)">
+            <summary>
+            设置结果图形
+            </summary>
+            <param name="baseParDisplay"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowCalculate(DealMath.BaseParMath)">
+            <summary>
+            数学计算
+            </summary>
+            <param name="baseParMath"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.SetParGrabImage(System.String)">
+            <summary>
+            图像采集
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.GetCellTakePhoto(System.Int32)">
+            <summary>
+            获取某算法之前的所有的拍照单元参数
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="E:SetComprehensive.SetSpreadsheet.GetResultValueMult_event">
+            <summary>
+            事件
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.SetParCalib(System.String)">
+            <summary>
+            打开校准窗体
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.win_GetResultValue_event(DealAlgorithm.ParGetResultFromCell,DealCalibrate.BaseParCalibrate,BasicClass.HashAction)">
+            <summary>
+            此相机算法单元结果
+            </summary>
+            <param name="par"></param>
+            <param name="baseParCalibrate"></param>
+            <param name="fun"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.win_GetResultValueMult_event(DealAlgorithm.ParGetResultFromCell,DealCalibrate.BaseParCalibrate,BasicClass.HashAction)">
+            <summary>
+            多目
+            </summary>
+            <param name="par"></param>
+            <param name="baseParCalibrate"></param>
+            <param name="fun"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowColorDecompose(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+            <param name="baseParImageProcess"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowBinary(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+            <param name="baseParImageProcess"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowCalibImage(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.SetParResult(System.String)">
+            <summary>
+            设置图像处理参数
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowDataStorage(DealResult.BaseParResult,System.String,System.String)">
+            <summary>
+            数据存储
+            </summary>
+            <param name="baseParResult"></param>
+            <param name="typeParent"></param>
+            <param name="typeChild"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.GetCellAll">
+            <summary>
+            生成可所有单元
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.GetCellExcute">
+            <summary>
+            生成可执行单元
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.GetCellData">
+            <summary>
+            生成数据单元
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.GetCellImage">
+            <summary>
+            生成图像单元，为整个过程的所有的单元，
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.win_CellComprehensive_event(BasicComprehensive.ParCellExeReference,DealAlgorithm.BaseUCTestRun)">
+            <summary>
+            测试运行的时候，关联算法单元的执行
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.GetHtResultCam_Mult">
+            <summary>
+            将各个相机的结果哈希表添加到总的哈希表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.AddHtResultCam_Mult(System.Collections.Hashtable,System.String)">
+            <summary>
+            添加到哈希表
+            </summary>
+            <param name="htResult"></param>
+            <param name="name"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.GetHtCellAllReference_MultC">
+            <summary>
+            获取多相机的算法单元格
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.AddHtCellReference(System.Collections.Generic.List{BasicComprehensive.CellReference},System.String)">
+            <summary>
+            添加到哈希表
+            </summary>
+            <param name="cell_L"></param>
+            <param name="name"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.GetCellAll_Mult(ParComprehensive.BaseParComprehensive)">
+            <summary>
+            生成可所有单元
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.GetCellExcute_Mult(ParComprehensive.BaseParComprehensive)">
+            <summary>
+            生成可执行单元
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.GetCellData_Mult(ParComprehensive.BaseParComprehensive)">
+            <summary>
+            生成数据单元
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.GetCellImage_Mult(ParComprehensive.BaseParComprehensive)">
+            <summary>
+            生成图像单元，为整个过程的所有的单元，
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.win_CellComprehensive_event_Mult(BasicComprehensive.ParCellExeReference,DealAlgorithm.BaseUCTestRun)">
+            <summary>
+            测试运行的时候，关联算法单元的执行
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.Init(System.Int32,Camera.BaseUCDisplayCamera,ParComprehensive.BaseParComprehensive,DealComprehensive.BaseDealComprehensive)">
+            <summary>
+            初始化加载
+            </summary>
+            <param name="noCamera"></param>
+            <param name="baseUCDisplayCamera"></param>
+            <param name="g_BaseParComprehensive"></param>
+            <param name="g_BaseDealComprehensive"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.dgSpreadsheet_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            通过datagrid的选择索引进行操作
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.SelectType">
+            <summary>
+            获取选中行的算法类型
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.DisplayROI">
+            <summary>
+            根据选择的算法单元，显示对应的所有ROI
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.rdoAll_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            选择所有设置过的单元格
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.rdoNull_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            都不选择
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.rdoReverse_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            反选
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.btnCreateNewCell_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            创建新的算子
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.CreateNewCell">
+            <summary>
+            根据选择的算法类型，设置单元处理算法
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.JudgeTypeCell">
+            <summary>
+            判断选择的算法名称是否合法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.SetTypeCell">
+            <summary>
+            创建单元处理类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.GetPos">
+            <summary>
+            获取当前表格单元的拍照位置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.GetPos(System.String@)">
+            <summary>
+            获取当前表格单元的拍照位置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.GetPhotoPos">
+            <summary>
+            是否有拍照算子
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.SetDeaultPhoto">
+            <summary>
+            清空时，默认设置图像采集
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.DeleteOldImage">
+            <summary>
+            删除此单元格
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.tbBtnSetPar_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            设置算法参数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowWinParCell">
+            <summary>
+            显示算子窗体
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.SetParCell">
+            <summary>
+            根据算法单元的类型，打开对应的参数设置窗体
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.btnSave_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            将参数保存到本地文档
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.Save">
+            <summary>
+            将所有参数保存到本地
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.SaveExecute">
+            <summary>
+            保存可执行单元设置
+            </summary>
+        </member>
+        <member name="F:SetComprehensive.SetSpreadsheet.Mt_SavePar">
+            <summary>
+            保存参数到本地
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.Delete">
+            <summary>
+            删除算子
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.tbBtnSave_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            保存到本地
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.tbBtnDelete_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            删除
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.tbBtnClear_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            清空
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.cmiChangeCompWin_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            是否显示相机综合设置
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.AddWinHt(System.String,BasicClass.BaseWindow)">
+            <summary>
+            讲算法窗体加到哈希表
+            </summary>       
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.CloseCellWin">
+            <summary>
+            关闭算子窗体
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.HtWinConCell(System.String)">
+            <summary>
+            是否包含该单元格的窗体,且处于显示状态
+            </summary>
+            <param name="nameCell"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.RemoveHtWin(System.String)">
+            <summary>
+            窗体关闭的时候，从HWin中移除
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ChangeRowColorByExe">
+            <summary>
+            不执行的话设置位灰色
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowPar">
+            <summary>
+            显示
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.RefreshdDSpreadsheet">
+            <summary>
+            刷新datagrid
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.RefreshTemp(System.Boolean)">
+            <summary>
+            参数是否为临时参数
+            </summary>
+            <param name="blTemp">临时参数</param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.Close">
+            <summary>
+            退出，关闭子窗体
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.cmiImport_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            导入本地参数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.cmiRecoverPar_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            历史参数查看和恢复
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.Win_RefreshPar_event(System.String)">
+            <summary>
+            刷新为历史参数
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.cmiCopy_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            复制
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.cmiPaste_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            粘贴
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.g_UCDisplayCamera_HalWin_event">
+            <summary>
+            鼠标滚轮以及抬起
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.g_UCDisplayCamera_ShowNewImage_event">
+            <summary>
+            加载新的图像之后,清空shape等
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.RefreshImageHoAndShape(System.String)">
+            <summary>
+            刷新指定单元格
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.RefreshHoAndShape">
+            <summary>
+            刷新上一次的结果
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.RefreshReferenceCellHoAndShape">
+            <summary>
+            刷新关联执行单元的形状
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.SetParImageProcess(System.String)">
+            <summary>
+            设置图像处理参数
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowMStraightLine(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowMCrossLine(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+            <param name="baseParImageProcess"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowMCircle(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+            <param name="baseParImageProcess"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowMCircleSegment(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+            <param name="baseParImageProcess"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowMArc(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+            <param name="baseParImageProcess"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.Match(System.String)">
+            <summary>
+            设置匹配算法参数
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowTempScaledShape(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            形状匹配模板参数
+            </summary>
+            <param name="baseParImageProcess"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowTempNcc(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            灰度值匹配模板参数
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.winTempT_ModelID_event(System.String,DealResult.ResultTemplate)">
+            <summary>
+            更新模板结果类到哈希表
+            </summary>
+            <param name="nameCell">T单元</param>
+            <param name="resultTemplate">模板类</param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.Region(System.String)">
+            <summary>
+            识别区域
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowCircle(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+            <param name="baseParImageProcess"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowRect(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+            <param name="baseParImageProcess"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowBlob(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+            <param name="baseParImageProcess"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.SetParImageProcess_S(System.String)">
+            <summary>
+            设置图像处理参数
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.Match_S(System.String)">
+            <summary>
+            设置匹配算法参数
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowMLine_S(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            M直线
+            </summary>
+            <param name="baseParImageProcess"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowMCrossLine_S(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            M直线求交点
+            </summary>
+            <param name="baseParImageProcess"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowMCircle_S(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            M圆
+            </summary>
+            <param name="baseParImageProcess"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowMCircleSegment_S(DealImageProcess.BaseParImageProcess)">
+            <summary>
+            M圆线段
+            </summary>
+            <param name="baseParImageProcess"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.Region_S(System.String)">
+            <summary>
+            设置区域算法参数
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.Gray_S(System.String)">
+            <summary>
+            设置区域算法参数
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowSharpnessFocal_S(DealImageProcess.BaseParImageProcess,ParComprehensive.BaseParComprehensive,System.Int32)">
+            <summary>
+            清晰度调焦
+            </summary>
+            <param name="baseParImageProcess"></param>
+            <param name="baseParComprehensive"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.Point_S(System.String)">
+            <summary>
+            设置点算法参数
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.Measure_S(System.String)">
+            <summary>
+            设置测量参数
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.Save_S(System.String)">
+            <summary>
+            保存
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.SetParWorkFlow(System.String)">
+            <summary>
+            设置工作流程参数
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.SetWorkFlow(System.String)">
+            <summary>
+            设置工作流程参数
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowLogicBranch(DealWorkFlow.BaseParWorkFlow)">
+            <summary>
+            显示条件分支
+            </summary>
+            <param name="baseParWorkFlow"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.SetWorkSetting(System.String)">
+            <summary>
+            设置工作流程参数
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowWorkSetting(DealWorkFlow.BaseParWorkFlow)">
+            <summary>
+            显示运行设置窗体
+            </summary>
+            <param name="baseParWorkFlow"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowCalibCamera(DealCalibrate.BaseParCalibrate)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+            <param name="baseParCalibrate"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowCalibCameraAffine(DealCalibrate.BaseParCalibrate)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+            <param name="baseParCalibrate"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowCalibMult(DealCalibrate.BaseParCalibrate)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+            <param name="baseParCalibrate"></param>
+        </member>
+        <member name="M:SetComprehensive.SetSpreadsheet.ShowCalibHandEye(DealCalibrate.BaseParCalibrate)">
+            <summary>
+            显示算法设置窗体
+            </summary>
+            <param name="baseParCalibrate"></param>
+        </member>
+        <member name="T:SetComprehensive.WinCheckRecord">
+            <summary>
+            WinCheckRecord.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinCheckRecord
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinCheckRecord.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SetComprehensive.UCSetSpreadsheet">
+            <summary>
+            UCSetSpreadsheet.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCSetSpreadsheet
+            </summary>
+        </member>
+        <member name="P:SetComprehensive.UCSetSpreadsheet.NameTypeCell">
+            <summary>
+            数值名称
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.UCSetSpreadsheet.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.UCSetSpreadsheet.InitLanguage">
+            <summary>
+            设置语言
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.UCSetSpreadsheet.cmiUCSimple_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            参数简单控件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.UCSetSpreadsheet.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SetComprehensive.UCSetSpreadsheetSmall">
+            <summary>
+            UCSetSpreadsheet.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCSetSpreadsheetSmall
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.UCSetSpreadsheetSmall.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SetComprehensive.WinTestRun">
+            <summary>
+            TestRun.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinTestRun
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinTestRun.ConvertResultToStd(DealAlgorithm.BaseParStd)">
+            <summary>
+            运算结果转换为基准值
+            </summary>
+            <returns>基准值类</returns>
+        </member>
+        <member name="M:SetComprehensive.WinTestRun.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SetComprehensive.TypeSpreadsheet">
+            <summary>
+            TypeSpreadsheet.xaml 的交互逻辑
+            </summary>
+            <summary>
+            TypeSpreadsheet
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.TypeSpreadsheet.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.TypeSpreadsheet.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.TypeSpreadsheet.SelectType(System.String)">
+            <summary>
+            选择功能
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:SetComprehensive.TypeSpreadsheet.AddChildCtr(System.Int32,System.Int32)">
+            <summary>
+            添加控件
+            </summary>
+            <param name="intWidth"></param>
+            <param name="intHeight"></param>
+        </member>
+        <member name="M:SetComprehensive.TypeSpreadsheet.LoadXmlStream(System.String)">
+            <summary>
+            读取指定路径的Stream，为系统资源
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.TypeSpreadsheet.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SetComprehensive.WinSimpleRun">
+            <summary>
+            WinSimpleRun.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinSimpleRun
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinSimpleRun.GetInstanceOriginal">
+            <summary>
+            返回最初的实例，用来判断窗体是不是为空
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SetComprehensive.WinSimpleRun.TestRun">
+            <summary>
+            判断是否采用单次触发，或者实时，分别调用
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinSimpleRun.TestRunSingle_Task">
+            <summary>
+            测试运行,单次
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.WinSimpleRun.InitCobPos">
+            <summary>
+            在combox控件里面添加位置选择
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinSimpleRun.imCLose_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            首先退出实时
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.WinSimpleRun.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SetComprehensive.UCSetComprehensive">
+            <summary>
+            Setting1.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCSetComprehensive
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.UCSetComprehensive.btnSimpleRun_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            简单运行，只运行程序，不输出结果界面
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.UCSetComprehensive.btnRun_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            打开运行窗口，
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.UCSetComprehensive.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SetComprehensive.UCSetComprehensiveFull">
+            <summary>
+            Setting1.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCSetComprehensiveFull
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.UCSetComprehensiveFull.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.UCSetComprehensiveFull.LoginEvent">
+            <summary>
+            事件注册
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.UCSetComprehensiveFull.Init(System.Int32)">
+            <summary>
+            初始化参数
+            </summary>
+            <param name="noCamera"></param>
+        </member>
+        <member name="M:SetComprehensive.UCSetComprehensiveFull.SmallWin">
+            <summary>
+            小窗体模式
+            </summary>
+            <param name="noCamera"></param>
+        </member>
+        <member name="M:SetComprehensive.UCSetComprehensiveFull.btnSimpleRun_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            简单运行，只运行程序，不输出结果界面
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.UCSetComprehensiveFull.btnRun_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            打开运行窗口，
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.UCSetComprehensiveFull.rdoCamera_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            选中相机综合设置
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.UCSetComprehensiveFull.rdoCamera_Unchecked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            取消选择
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.UCSetComprehensiveFull.EnableRdoCamera">
+            <summary>
+            使能相机控件
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.UCSetComprehensiveFull.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SetComprehensive.WinComprehensiveFull">
+            <summary>
+            WinComprehensive1.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinComprehensiveFull
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveFull.Close">
+            <summary>
+            关闭相机综合设置窗口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveFull.CloseWinChild">
+            <summary>
+            关闭子窗体
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveFull.CloseWinGrabImage">
+            <summary>
+            抓取图像
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveFull.CloseWinMatch">
+            <summary>
+            匹配
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveFull.CloseWinRegion">
+            <summary>
+            区域
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveFull.btnSimpleRun_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            简单运行，只运行程序，不输出结果界面
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveFull.btnRun_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            打开运行窗口，
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveFull.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveFull.SmallWin">
+            <summary>
+            小窗体模式
+            </summary>
+            <param name="noCamera"></param>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveFull.Init(System.Int32)">
+            <summary>
+            根据相机序号初始化参数
+            </summary>
+            <param name="noCamera"></param>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveFull.rdoCamera_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            选中相机综合设置
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveFull.rdoCamera_Unchecked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            取消选择
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveFull.EnableRdoCamera">
+            <summary>
+            使能相机控件
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveFull.InitLanguage">
+            <summary>
+            初始化语言
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveFull.BaseWindow_LocationChanged(System.Object,System.EventArgs)">
+            <summary>
+            窗体移动
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveFull.BaseWindow_Activated(System.Object,System.EventArgs)">
+            <summary>
+            窗体激活
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveFull.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SetComprehensive.WinComprehensive1">
+            <summary>
+            WinComprehensive1.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinComprehensive1
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensive1.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SetComprehensive.WinComprehensive2">
+            <summary>
+            WinComprehensive1.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinComprehensive2
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensive2.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SetComprehensive.WinComprehensive3">
+            <summary>
+            WinComprehensive1.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinComprehensive3
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensive3.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SetComprehensive.WinComprehensive4">
+            <summary>
+            WinComprehensive1.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinComprehensive4
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensive4.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SetComprehensive.WinComprehensive5">
+            <summary>
+            WinComprehensive1.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinComprehensive5
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensive5.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SetComprehensive.WinComprehensive6">
+            <summary>
+            WinComprehensive1.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinComprehensive6
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensive6.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SetComprehensive.WinComprehensive7">
+            <summary>
+            WinComprehensive1.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinComprehensive7
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensive7.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SetComprehensive.WinComprehensive8">
+            <summary>
+            WinComprehensive1.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinComprehensive8
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensive8.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SetComprehensive.WinComprehensiveSmall">
+            <summary>
+            WinComprehensive1.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinComprehensiveSmall
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveSmall.CloseWinChild">
+            <summary>
+            关闭子窗体
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveSmall.CloseWinGrabImage">
+            <summary>
+            抓取图像
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveSmall.CloseWinMatch">
+            <summary>
+            匹配
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveSmall.CloseWinRegion">
+            <summary>
+            区域
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveSmall.btnSimpleRun_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            简单运行，只运行程序，不输出结果界面
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveSmall.btnRun_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            打开运行窗口，
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveSmall.SmallWin">
+            <summary>
+            小窗体模式
+            </summary>
+            <param name="noCamera"></param>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveSmall.Init(System.Int32)">
+            <summary>
+            根据相机序号初始化参数
+            </summary>
+            <param name="noCamera"></param>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveSmall.rdoCamera_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            选中相机综合设置
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveSmall.rdoCamera_Unchecked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            取消选择
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveSmall.EnableRdoCamera">
+            <summary>
+            使能相机控件
+            </summary>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveSmall.BaseWindow_LocationChanged(System.Object,System.EventArgs)">
+            <summary>
+            窗体移动
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveSmall.BaseWindow_Activated(System.Object,System.EventArgs)">
+            <summary>
+            窗体激活
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SetComprehensive.WinComprehensiveSmall.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,280 @@
+******11:44:26******
+【Source】mscorlib
+【ErrorType】System.ArgumentException
+【TargetSite】Void SetFailure(ParseFailureKind, System.String, System.Object)
+【Message】要在此字符串中进行分析，必须指定有效信息。
+【StackTrace】   在 System.Enum.EnumResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument)
+   在 System.Enum.TryParseEnum(Type enumType, String value, Boolean ignoreCase, EnumResult& parseResult)
+   在 System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   在 DealCIM.PostParams.InitParams() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 28
+
+
+******11:44:26******
+【Source】mscorlib
+【ErrorType】System.FormatException
+【TargetSite】Boolean Parse(System.String)
+【Message】该字符串未被识别为有效的布尔值。
+【StackTrace】   在 System.Boolean.Parse(String value)
+   在 DealCIM.PostParams.InitCimMode() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 61
+
+
+******11:45:04******
+【Source】mscorlib
+【ErrorType】System.ArgumentException
+【TargetSite】Void SetFailure(ParseFailureKind, System.String, System.Object)
+【Message】要在此字符串中进行分析，必须指定有效信息。
+【StackTrace】   在 System.Enum.EnumResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument)
+   在 System.Enum.TryParseEnum(Type enumType, String value, Boolean ignoreCase, EnumResult& parseResult)
+   在 System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   在 DealCIM.PostParams.InitParams() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 28
+
+
+******11:45:04******
+【Source】mscorlib
+【ErrorType】System.FormatException
+【TargetSite】Boolean Parse(System.String)
+【Message】该字符串未被识别为有效的布尔值。
+【StackTrace】   在 System.Boolean.Parse(String value)
+   在 DealCIM.PostParams.InitCimMode() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 61
+
+
+******11:46:08******
+【Source】mscorlib
+【ErrorType】System.ArgumentException
+【TargetSite】Void SetFailure(ParseFailureKind, System.String, System.Object)
+【Message】要在此字符串中进行分析，必须指定有效信息。
+【StackTrace】   在 System.Enum.EnumResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument)
+   在 System.Enum.TryParseEnum(Type enumType, String value, Boolean ignoreCase, EnumResult& parseResult)
+   在 System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   在 DealCIM.PostParams.InitParams() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 28
+
+
+******11:46:08******
+【Source】mscorlib
+【ErrorType】System.FormatException
+【TargetSite】Boolean Parse(System.String)
+【Message】该字符串未被识别为有效的布尔值。
+【StackTrace】   在 System.Boolean.Parse(String value)
+   在 DealCIM.PostParams.InitCimMode() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 61
+
+
+******11:46:49******
+【Source】mscorlib
+【ErrorType】System.ArgumentException
+【TargetSite】Void SetFailure(ParseFailureKind, System.String, System.Object)
+【Message】要在此字符串中进行分析，必须指定有效信息。
+【StackTrace】   在 System.Enum.EnumResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument)
+   在 System.Enum.TryParseEnum(Type enumType, String value, Boolean ignoreCase, EnumResult& parseResult)
+   在 System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   在 DealCIM.PostParams.InitParams() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 28
+
+
+******11:46:49******
+【Source】mscorlib
+【ErrorType】System.FormatException
+【TargetSite】Boolean Parse(System.String)
+【Message】该字符串未被识别为有效的布尔值。
+【StackTrace】   在 System.Boolean.Parse(String value)
+   在 DealCIM.PostParams.InitCimMode() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 61
+
+
+******11:48:04******
+【Source】mscorlib
+【ErrorType】System.ArgumentException
+【TargetSite】Void SetFailure(ParseFailureKind, System.String, System.Object)
+【Message】要在此字符串中进行分析，必须指定有效信息。
+【StackTrace】   在 System.Enum.EnumResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument)
+   在 System.Enum.TryParseEnum(Type enumType, String value, Boolean ignoreCase, EnumResult& parseResult)
+   在 System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   在 DealCIM.PostParams.InitParams() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 28
+
+
+******11:48:04******
+【Source】mscorlib
+【ErrorType】System.FormatException
+【TargetSite】Boolean Parse(System.String)
+【Message】该字符串未被识别为有效的布尔值。
+【StackTrace】   在 System.Boolean.Parse(String value)
+   在 DealCIM.PostParams.InitCimMode() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 61
+
+
+******11:49:13******
+【Source】mscorlib
+【ErrorType】System.ArgumentException
+【TargetSite】Void SetFailure(ParseFailureKind, System.String, System.Object)
+【Message】要在此字符串中进行分析，必须指定有效信息。
+【StackTrace】   在 System.Enum.EnumResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument)
+   在 System.Enum.TryParseEnum(Type enumType, String value, Boolean ignoreCase, EnumResult& parseResult)
+   在 System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   在 DealCIM.PostParams.InitParams() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 28
+
+
+******11:49:13******
+【Source】mscorlib
+【ErrorType】System.FormatException
+【TargetSite】Boolean Parse(System.String)
+【Message】该字符串未被识别为有效的布尔值。
+【StackTrace】   在 System.Boolean.Parse(String value)
+   在 DealCIM.PostParams.InitCimMode() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 61
+
+
+******11:50:39******
+【Source】mscorlib
+【ErrorType】System.ArgumentException
+【TargetSite】Void SetFailure(ParseFailureKind, System.String, System.Object)
+【Message】要在此字符串中进行分析，必须指定有效信息。
+【StackTrace】   在 System.Enum.EnumResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument)
+   在 System.Enum.TryParseEnum(Type enumType, String value, Boolean ignoreCase, EnumResult& parseResult)
+   在 System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   在 DealCIM.PostParams.InitParams() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 28
+
+
+******11:50:39******
+【Source】mscorlib
+【ErrorType】System.FormatException
+【TargetSite】Boolean Parse(System.String)
+【Message】该字符串未被识别为有效的布尔值。
+【StackTrace】   在 System.Boolean.Parse(String value)
+   在 DealCIM.PostParams.InitCimMode() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 61
+
+
+******11:51:22******
+【Source】mscorlib
+【ErrorType】System.ArgumentException
+【TargetSite】Void SetFailure(ParseFailureKind, System.String, System.Object)
+【Message】要在此字符串中进行分析，必须指定有效信息。
+【StackTrace】   在 System.Enum.EnumResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument)
+   在 System.Enum.TryParseEnum(Type enumType, String value, Boolean ignoreCase, EnumResult& parseResult)
+   在 System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   在 DealCIM.PostParams.InitParams() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 28
+
+
+******11:51:22******
+【Source】mscorlib
+【ErrorType】System.FormatException
+【TargetSite】Boolean Parse(System.String)
+【Message】该字符串未被识别为有效的布尔值。
+【StackTrace】   在 System.Boolean.Parse(String value)
+   在 DealCIM.PostParams.InitCimMode() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 61
+
+
+******11:53:00******
+【Source】mscorlib
+【ErrorType】System.ArgumentException
+【TargetSite】Void SetFailure(ParseFailureKind, System.String, System.Object)
+【Message】要在此字符串中进行分析，必须指定有效信息。
+【StackTrace】   在 System.Enum.EnumResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument)
+   在 System.Enum.TryParseEnum(Type enumType, String value, Boolean ignoreCase, EnumResult& parseResult)
+   在 System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   在 DealCIM.PostParams.InitParams() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 28
+
+
+******11:53:00******
+【Source】mscorlib
+【ErrorType】System.FormatException
+【TargetSite】Boolean Parse(System.String)
+【Message】该字符串未被识别为有效的布尔值。
+【StackTrace】   在 System.Boolean.Parse(String value)
+   在 DealCIM.PostParams.InitCimMode() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 61
+
+
+******11:53:32******
+【Source】mscorlib
+【ErrorType】System.ArgumentException
+【TargetSite】Void SetFailure(ParseFailureKind, System.String, System.Object)
+【Message】要在此字符串中进行分析，必须指定有效信息。
+【StackTrace】   在 System.Enum.EnumResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument)
+   在 System.Enum.TryParseEnum(Type enumType, String value, Boolean ignoreCase, EnumResult& parseResult)
+   在 System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   在 DealCIM.PostParams.InitParams() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 28
+
+
+******11:53:32******
+【Source】mscorlib
+【ErrorType】System.FormatException
+【TargetSite】Boolean Parse(System.String)
+【Message】该字符串未被识别为有效的布尔值。
+【StackTrace】   在 System.Boolean.Parse(String value)
+   在 DealCIM.PostParams.InitCimMode() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 61
+
+
+******11:54:30******
+【Source】mscorlib
+【ErrorType】System.ArgumentException
+【TargetSite】Void SetFailure(ParseFailureKind, System.String, System.Object)
+【Message】要在此字符串中进行分析，必须指定有效信息。
+【StackTrace】   在 System.Enum.EnumResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument)
+   在 System.Enum.TryParseEnum(Type enumType, String value, Boolean ignoreCase, EnumResult& parseResult)
+   在 System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   在 DealCIM.PostParams.InitParams() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 28
+
+
+******11:54:30******
+【Source】mscorlib
+【ErrorType】System.FormatException
+【TargetSite】Boolean Parse(System.String)
+【Message】该字符串未被识别为有效的布尔值。
+【StackTrace】   在 System.Boolean.Parse(String value)
+   在 DealCIM.PostParams.InitCimMode() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 61
+
+
+******11:55:56******
+【Source】mscorlib
+【ErrorType】System.ArgumentException
+【TargetSite】Void SetFailure(ParseFailureKind, System.String, System.Object)
+【Message】要在此字符串中进行分析，必须指定有效信息。
+【StackTrace】   在 System.Enum.EnumResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument)
+   在 System.Enum.TryParseEnum(Type enumType, String value, Boolean ignoreCase, EnumResult& parseResult)
+   在 System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   在 DealCIM.PostParams.InitParams() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 28
+
+
+******11:55:56******
+【Source】mscorlib
+【ErrorType】System.FormatException
+【TargetSite】Boolean Parse(System.String)
+【Message】该字符串未被识别为有效的布尔值。
+【StackTrace】   在 System.Boolean.Parse(String value)
+   在 DealCIM.PostParams.InitCimMode() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 61
+
+
+******11:57:13******
+【Source】mscorlib
+【ErrorType】System.ArgumentException
+【TargetSite】Void SetFailure(ParseFailureKind, System.String, System.Object)
+【Message】要在此字符串中进行分析，必须指定有效信息。
+【StackTrace】   在 System.Enum.EnumResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument)
+   在 System.Enum.TryParseEnum(Type enumType, String value, Boolean ignoreCase, EnumResult& parseResult)
+   在 System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   在 DealCIM.PostParams.InitParams() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 28
+
+
+******11:57:13******
+【Source】mscorlib
+【ErrorType】System.FormatException
+【TargetSite】Boolean Parse(System.String)
+【Message】该字符串未被识别为有效的布尔值。
+【StackTrace】   在 System.Boolean.Parse(String value)
+   在 DealCIM.PostParams.InitCimMode() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 61
+
+
+******11:59:40******
+【Source】mscorlib
+【ErrorType】System.ArgumentException
+【TargetSite】Void SetFailure(ParseFailureKind, System.String, System.Object)
+【Message】要在此字符串中进行分析，必须指定有效信息。
+【StackTrace】   在 System.Enum.EnumResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument)
+   在 System.Enum.TryParseEnum(Type enumType, String value, Boolean ignoreCase, EnumResult& parseResult)
+   在 System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   在 DealCIM.PostParams.InitParams() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 28
+
+
+******11:59:40******
+【Source】mscorlib
+【ErrorType】System.FormatException
+【TargetSite】Boolean Parse(System.String)
+【Message】该字符串未被识别为有效的布尔值。
+【StackTrace】   在 System.Boolean.Parse(String value)
+   在 DealCIM.PostParams.InitCimMode() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\CIM\PostParams\PostParams.ReadWrite.cs:行号 61
+
+

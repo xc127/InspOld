@@ -1,0 +1,54 @@
+﻿<DealAlgorithm:BaseUCTestRun x:Class="Main.BaseUCTrrigerComprehensive"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:BasicClass="clr-namespace:BasicClass;assembly=BasicClass"
+             xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib"
+             xmlns:BasicComprehensive="clr-namespace:BasicComprehensive;assembly=BasicComprehensive"
+             xmlns:DealImageProcess="clr-namespace:DealImageProcess;assembly=DealImageProcess"
+             xmlns:DealAlgorithm="clr-namespace:DealAlgorithm;assembly=DealAlgorithm"
+             mc:Ignorable="d" 
+             Height="150" Width="275">
+    <UserControl.Resources >
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <ControlLib:NGroupBox Header="" HorizontalAlignment="Stretch" Margin="1" TitleBrush="#FF00D1E5" VerticalAlignment="Stretch" Grid.ColumnSpan="3" Name="gpRun">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="0.8*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <ControlLib:ButtonColor Background="#FF66FFFF" Content="单次运行" FontSize="16" FontStyle="Normal" FontWeight="SemiBold" Height="28" Margin="0" Name="btnSingle"  Width="100" Grid.Row="3" Grid.ColumnSpan="2" Click="btnSingle_Click" />
+                <ControlLib:ButtonColor Background="#FF66FFFF" Click="btnRepeat_Click" Content="连续运行" FontSize="16" FontStyle="Normal" FontWeight="SemiBold" Height="28" Margin="0" Name="btnRepeat" Width="100" Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="2" />
+                <Label Content="触发间隔:" Height="25" HorizontalAlignment="Center" Margin="1,3,1,2" Name="label1" VerticalAlignment="Stretch" Width="60" Grid.Column="2" Grid.Row="1" />
+                <ControlLib:DoubleUpDown BorderBrush="#FF00D1E5" Height="25" Increment="10" Margin="3,3,3,2" Maximum="Infinity" Minimum="1" Name="dudInterval" Value="100" Width="60" ValueChanged="dudInterval_ValueChanged" Grid.Column="3" HorizontalAlignment="Center" Grid.Row="1" />
+                <ComboBox BorderBrush="#FF00D1E5" Height="28" HorizontalAlignment="Center" Margin="0" Name="cboPos" VerticalAlignment="Center" Width="60" Grid.Column="1"/>
+                <Label Content="拍照位置:" Height="28" HorizontalAlignment="Stretch" Margin="0" Name="label2" VerticalAlignment="Center" Width="60" />
+                <CheckBox Content="NG停止" Grid.Row="1" Height="20" HorizontalAlignment="Left" Margin="0" Name="chkNGStop" VerticalAlignment="Center" ToolTip="结果NG时停止连续运行" Grid.ColumnSpan="2" Width="71" Checked="chkNGStop_Checked" Unchecked="chkNGStop_Unchecked" />
+                <CheckBox Content="OK停止" Grid.ColumnSpan="2" Height="20" HorizontalAlignment="Left" Margin="8,0,0,0" Name="chkOKStop" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1" ToolTip="结果OK时停止连续运行" Checked="chkOKStop_Checked" Unchecked="chkOKStop_Unchecked" />
+                <CheckBox Content="本地图片连续Next" Grid.ColumnSpan="2" Height="20" HorizontalAlignment="Center" Margin="0" Name="chkAutoNextLocal" VerticalAlignment="Center" Grid.Row="2" Checked="chkAutoNextLocal_Checked"/>
+                <CheckBox Content="本地图片连续Pre" Grid.ColumnSpan="2" Height="20" HorizontalAlignment="Center" Margin="0" Name="chkAutoPreLocal" VerticalAlignment="Center" Grid.Column="2" Grid.Row="2" Checked="chkAutoPreLocal_Checked"/>
+                <Label Content="位置序号:" Height="25" HorizontalAlignment="Center" Margin="3,2,3,3" Name="label3" VerticalAlignment="Stretch" Width="60" Grid.Column="2" />
+                <ControlLib:DoubleUpDown BorderBrush="#FF00D1E5" Grid.Column="3" Height="25" HorizontalAlignment="Center" Increment="1" Margin="1" Maximum="Infinity" Minimum="0" Name="dudNoPos" Value="0" Width="60" />
+            </Grid>
+        </ControlLib:NGroupBox>
+    </Grid>
+</DealAlgorithm:BaseUCTestRun>

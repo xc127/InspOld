@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2429126B-59E1-4D64-8A0C-45FD56B5B672}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DealRobot</RootNamespace>
+    <AssemblyName>DealRobot</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BasicClass, Version=1.0.2018.926, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\BasicClass.dll</HintPath>
+    </Reference>
+    <Reference Include="BasicComprehensive, Version=1.0.2018.926, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\BasicComprehensive.dll</HintPath>
+    </Reference>
+    <Reference Include="Common, Version=1.0.2018.926, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ControlLib, Version=1.0.2018.926, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\ControlLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DealComInterface, Version=1.0.2018.926, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\DealComInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="DealCommunication">
+      <HintPath>..\DLL\DealCommunication.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro">
+      <HintPath>..\DLL\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WPFToolkit">
+      <HintPath>..\DLL\WPFToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit.Design">
+      <HintPath>..\DLL\WPFToolkit.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=2.3.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\BaseParRobot.cs" />
+    <Compile Include="File\RegeditRobot.cs" />
+    <Compile Include="Interface\Par\ParInterfaceEthernetRobot.cs" />
+    <Compile Include="Logic\LogicRobot\LogicRobot.cs" />
+    <Compile Include="Logic\LogicRobot\LogicRobot.Read.cs" />
+    <Compile Include="Logic\LogicRobot\LogicRobot.ReadStd.cs" />
+    <Compile Include="Logic\LogicRobot\LogicRobot.Write.Result.cs" />
+    <Compile Include="Logic\LogicRobot\LogicRobot.Write.cs" />
+    <Compile Include="Logic\LogicRobot\LogicRobot.WriteStd.cs" />
+    <Compile Include="Logic\LogicRobot\RobotCamera\LogicRobotCam1.cs" />
+    <Compile Include="Logic\LogicRobot\RobotCamera\LogicRobotCam2.cs" />
+    <Compile Include="Logic\LogicRobot\RobotCamera\LogicRobotCam3.cs" />
+    <Compile Include="Logic\LogicRobot\RobotCamera\LogicRobotCam4.cs" />
+    <Compile Include="Logic\LogicRobot\RobotCamera\LogicRobotCam5.cs" />
+    <Compile Include="Logic\LogicRobot\RobotCamera\LogicRobotCam6.cs" />
+    <Compile Include="Manual\UCRobotCtr.xaml.cs">
+      <DependentUpon>UCRobotCtr.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manual\UCRobotIO.xaml.cs">
+      <DependentUpon>UCRobotIO.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manual\UCTechRobot.xaml.cs">
+      <DependentUpon>UCTechRobot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manual\WinManualRobot.xaml.cs">
+      <DependentUpon>WinManualRobot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manual\WinTrrigerRobot.xaml.cs">
+      <DependentUpon>WinTrrigerRobot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Base\BaseUCRobot.cs" />
+    <Compile Include="ParSetRobot\DataLimitRobot\SetDataLimit.xaml.cs">
+      <DependentUpon>SetDataLimit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ParSetRobot\SetRobot\UCSetTypeRobot.xaml.cs">
+      <DependentUpon>UCSetTypeRobot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ParSetRobot\SetRobot\WinSetRobot.xaml.cs">
+      <DependentUpon>WinSetRobot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ParSetRobot\TypeWork\SetTypeWork.xaml.cs">
+      <DependentUpon>SetTypeWork.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ParSetRobot\ParSetRobot\ParSetRobot.cs" />
+    <Compile Include="ParSetRobot\ParSetRobot\ParSetRobot.DataLimit.cs" />
+    <Compile Include="ParSetRobot\ParSetRobot\ParSetRobot.ReadIni.cs" />
+    <Compile Include="ParSetRobot\ParSetRobot\ParSetRobot.WriteIni.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Logic\Par\ParLogicRobot.CmdRead.cs" />
+    <Compile Include="Logic\Par\ParLogicRobot.CmdWrite.cs" />
+    <Compile Include="Logic\Par\ParLogicRobot.cs" />
+    <Compile Include="Logic\Par\ParLogicRobot.ReadIni.cs" />
+    <Compile Include="StdRobot\Par\RobotStdPoint.cs" />
+    <Compile Include="StdRobot\Par\RobotStdPoint.Xml.cs" />
+    <Compile Include="StdRobot\UI\UCPropPoint.xaml.cs">
+      <DependentUpon>UCPropPoint.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StdRobot\UI\WinAllPointValue.xaml.cs">
+      <DependentUpon>WinAllPointValue.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StdRobot\UI\WinStdRobotData.xaml.cs">
+      <DependentUpon>WinStdRobotData.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Manual\UCRobotCtr.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manual\UCRobotIO.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manual\UCTechRobot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manual\WinManualRobot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manual\WinTrrigerRobot.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ParSetRobot\DataLimitRobot\SetDataLimit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ParSetRobot\SetRobot\UCSetTypeRobot.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ParSetRobot\SetRobot\WinSetRobot.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ParSetRobot\TypeWork\SetTypeWork.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="StdRobot\UI\UCPropPoint.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StdRobot\UI\WinAllPointValue.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StdRobot\UI\WinStdRobotData.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DealConfigFile\DealConfigFile.csproj">
+      <Project>{5713e4a9-45bd-4d40-9ef5-81b679f605ea}</Project>
+      <Name>DealConfigFile</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealFiles\DealFile.csproj">
+      <Project>{ED6A6F85-661B-4066-8DB2-BA97A205E824}</Project>
+      <Name>DealFile</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealLog\DealLog.csproj">
+      <Project>{56D56A34-7E95-48D2-965A-A3BD9BA6DD7E}</Project>
+      <Name>DealLog</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ParSetRobot\SetRobot\XmlTemplate\XmlSetRobot.xml">
+      <SubType>Designer</SubType>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interface\UI\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="StdRobot\XmlTemplate\XmlRobotStdPoint.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

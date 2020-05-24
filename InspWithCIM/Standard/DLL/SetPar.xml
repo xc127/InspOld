@@ -1,0 +1,378 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SetPar</name>
+    </assembly>
+    <members>
+        <member name="M:SetPar.FunDelFolder.DelteFolder(DealLog.UCStateWork)">
+            <summary>
+            监控文件是否可以删除
+            </summary>
+            <param name="uCStateWork"></param>
+        </member>
+        <member name="M:SetPar.FunDelFolder.DelteOldImage(SetPar.BaseParDelFolder,DealLog.UCStateWork)">
+            <summary>
+            删除旧型号
+            </summary>
+        </member>
+        <member name="T:SetPar.WinClearHardDisk">
+            <summary>
+            WinClearHardDisk.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinClearHardDisk
+            </summary>
+        </member>
+        <member name="M:SetPar.WinClearHardDisk.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:SetPar.FunHarDisk.GetSpace(System.String)">
+            <summary>
+            获取存储空间
+            </summary>
+            <param name="drive"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SetPar.ParHardDisk">
+            <summary>
+            监控硬盘容量
+            </summary>
+        </member>
+        <member name="F:SetPar.ParHardDisk.c_PathSetHardDisk">
+            <summary>
+            Path
+            </summary>
+        </member>
+        <member name="P:SetPar.ParHardDisk.NameDrive">
+            <summary>
+            驱动盘
+            </summary>
+        </member>
+        <member name="P:SetPar.ParHardDisk.SpaceMin">
+            <summary>
+            报警的阈值
+            </summary>
+        </member>
+        <member name="M:SetPar.ParHardDisk.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SetPar.ParHardDisk.ReadIniPar">
+            <summary>
+            读取参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SetPar.ParHardDisk.WriteIniPar">
+            <summary>
+            写入参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SetPar.WinHardDisk">
+            <summary>
+            WinHardDisk.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinHardDisk
+            </summary>
+        </member>
+        <member name="M:SetPar.WinHardDisk.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:SetPar.RegeditLogin.BlManufacturer">
+            <summary>
+            是否m默认使用厂商权限
+            </summary>
+        </member>
+        <member name="T:SetPar.UCLogin">
+            <summary>
+            UCLogin.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCLogin
+            </summary>
+        </member>
+        <member name="M:SetPar.UCLogin.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SetPar.UCLogin.ShowError">
+            <summary>
+            显示错误信息
+            </summary>
+        </member>
+        <member name="M:SetPar.UCLogin.ShowPar">
+            <summary>
+            初始化显示
+            </summary>
+        </member>
+        <member name="M:SetPar.UCLogin.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SetPar.WinLogin">
+            <summary>
+            Login.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinLogin
+            </summary>
+        </member>
+        <member name="M:SetPar.WinLogin.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="F:SetPar.ParDelFolder.ErrorLog">
+            <summary>
+            异常信息日志
+            </summary>
+        </member>
+        <member name="F:SetPar.ParDelFolder.RobotLog">
+            <summary>
+            机器人日志
+            </summary>
+        </member>
+        <member name="F:SetPar.ParDelFolder.PLCLog">
+            <summary>
+            PLC日志
+            </summary>
+        </member>
+        <member name="F:SetPar.ParDelFolder.CustomLog">
+             <summary>
+            Custom日志
+             </summary>
+        </member>
+        <member name="F:SetPar.ParDelFolder.ResultLog">
+             <summary>
+            Result通信日志
+             </summary>
+        </member>
+        <member name="F:SetPar.ParDelFolder.AlarmWorkLog">
+             <summary>
+            运行及报警日志
+             </summary>
+        </member>
+        <!-- 对于成员“F:SetPar.ParDelFolder.BackUp”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:SetPar.ParDelFolder.CIM”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:SetPar.ParDelFolder.Tact_DealCell”忽略有格式错误的 XML 注释 -->
+        <member name="F:SetPar.ParDelFolder.imageRecord">
+             <summary>
+            当前型号记录图片,按照天进行文件夹存储
+             </summary>
+        </member>
+        <member name="F:SetPar.ParDelFolder.oldImageRecord">
+             <summary>
+            当前不使用型号图片删除
+             </summary>
+        </member>
+        <member name="M:SetPar.ParDelFolder.AddParDelFolder">
+            <summary>
+            向集合中添加值
+            </summary>
+        </member>
+        <member name="M:SetPar.ParDelFolder.ReadIniPar">
+            <summary>
+            读取参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SetPar.ParDelFolder.WriteDeleteIni">
+            <summary>
+            写入
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SetPar.WinSetLogin">
+            <summary>
+            WinSetLogin.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinSetLogin
+            </summary>
+        </member>
+        <member name="M:SetPar.WinSetLogin.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SetPar.WinSetFolder">
+            <summary>
+            Others.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinSetFolder
+            </summary>
+        </member>
+        <member name="M:SetPar.WinSetFolder.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:SetPar.FunMemory.RecordMemory(System.String,System.Int32,System.Double,System.Double)">
+            <summary>
+            记录内存到本地
+            </summary>
+            <param name="camera"></param>
+            <param name="pos"></param>
+            <param name="annotation"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SetPar.FunMemory.GetMemory">
+            <summary>
+            获取当前的进程值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:SetPar.ParMemory.PathMemory">
+            <summary>
+            存储路径
+            </summary>
+        </member>
+        <member name="M:SetPar.ParMemory.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SetPar.ParMemory.ReadIniPar">
+            <summary>
+            读取文件属性设置参数
+            </summary>
+        </member>
+        <member name="M:SetPar.ParMemory.WriteIniPar">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SetPar.WinMemory">
+            <summary>
+            WinMemory.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinMemory
+            </summary>
+        </member>
+        <member name="M:SetPar.WinMemory.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SetPar.WinMemory.ShowPar">
+            <summary>
+            显示
+            </summary>
+        </member>
+        <member name="M:SetPar.WinMemory.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SetPar.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:SetPar.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:SetPar.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="T:SetPar.SetDelFolder">
+            <summary>
+            SetDelFolder.xaml 的交互逻辑
+            </summary>
+            <summary>
+            SetDelFolder
+            </summary>
+        </member>
+        <member name="M:SetPar.SetDelFolder.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SetPar.SetFolderAttribute">
+            <summary>
+            SetFolderAttribute.xaml 的交互逻辑
+            </summary>
+            <summary>
+            SetFolderAttribute
+            </summary>
+        </member>
+        <member name="M:SetPar.SetFolderAttribute.RefreshDatagrid">
+            <summary>
+            刷新文件列表
+            </summary>
+        </member>
+        <member name="M:SetPar.SetFolderAttribute.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:SetPar.ParFolderAttribute.WriteFolderAttributeIni">
+            <summary>
+            写入文件属性设置参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SetPar.ParFolderAttribute.ReadFolderAttributeIni">
+            <summary>
+            读取文件属性设置参数
+            </summary>
+        </member>
+        <member name="P:SetPar.ParFolderAttribute.PathFolderAttribute">
+            <summary>
+            保存路径
+            </summary>
+        </member>
+        <member name="F:SetPar.ParFolderAttribute.FolderAttribute_Camera">
+            <summary>
+            相机参数
+            </summary>
+        </member>
+        <member name="F:SetPar.ParFolderAttribute.FolderAttribute_PLC">
+            <summary>
+            PLC参数
+            </summary>
+        </member>
+        <member name="F:SetPar.ParFolderAttribute.FolderAttribute_Robot">
+            <summary>
+            机器人参数
+            </summary>
+        </member>
+        <member name="F:SetPar.ParFolderAttribute.FolderAttribute_SysInit">
+            <summary>
+            SysInit参数
+            </summary>
+        </member>
+        <member name="F:SetPar.ParFolderAttribute.FolderAttribute_SetPar">
+            <summary>
+            SetPar参数
+            </summary>
+        </member>
+        <member name="M:SetPar.ParSetLogin.ReadIniPar">
+            <summary>
+            读取权限设置相关参数
+            </summary>
+        </member>
+        <member name="M:SetPar.ParSetLogin.WriteIniLogin">
+            <summary>
+            写入相关登陆密码
+            </summary>
+        </member>
+    </members>
+</doc>

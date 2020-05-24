@@ -1,0 +1,1941 @@
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\bin\Debug\DealFile.dll
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0224\Standard0223\Standard0223\DealCIM\bin\Debug\WPFToolkit.dll
+D:\Standard0227\Standard0227\DealCIM\bin\Debug\DealCIM.dll
+D:\Standard0227\Standard0227\DealCIM\bin\Debug\DealCIM.pdb
+D:\Standard0227\Standard0227\DealCIM\bin\Debug\BasicClass.dll
+D:\Standard0227\Standard0227\DealCIM\bin\Debug\ControlLib.dll
+D:\Standard0227\Standard0227\DealCIM\bin\Debug\DealFile.dll
+D:\Standard0227\Standard0227\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\Standard0227\Standard0227\DealCIM\bin\Debug\WPFToolkit.dll
+D:\Standard0227\Standard0227\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Standard0227\Standard0227\DealCIM\bin\Debug\halcondotnet.dll
+D:\Standard0227\Standard0227\DealCIM\bin\Debug\BasicClass.pdb
+D:\Standard0227\Standard0227\DealCIM\bin\Debug\ControlLib.pdb
+D:\Standard0227\Standard0227\DealCIM\bin\Debug\DealFile.pdb
+D:\Standard0227\Standard0227\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\Standard0227\Standard0227\DealCIM\bin\Debug\halcondotnet.xml
+D:\Standard0227\Standard0227\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Standard0227\Standard0227\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\Standard0227\Standard0227\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\Standard0227\Standard0227\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\Standard0227\Standard0227\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\Standard0227\Standard0227\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\Standard0227\Standard0227\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Standard0227\Standard0227\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Standard0227\Standard0227\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\Standard0227\Standard0227\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\Standard0227\Standard0227\DealCIM\bin\Debug\VariableCompolet.dll
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\bin\Debug\DealFile.dll
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\OLED\Standard0227\Standard0227\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\Standard0228\DealCIM\bin\Debug\DealCIM.dll
+D:\Standard0228\DealCIM\bin\Debug\DealCIM.pdb
+D:\Standard0228\DealCIM\bin\Debug\BasicClass.dll
+D:\Standard0228\DealCIM\bin\Debug\ControlLib.dll
+D:\Standard0228\DealCIM\bin\Debug\DealFile.dll
+D:\Standard0228\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\Standard0228\DealCIM\bin\Debug\VariableCompolet.dll
+D:\Standard0228\DealCIM\bin\Debug\WPFToolkit.dll
+D:\Standard0228\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Standard0228\DealCIM\bin\Debug\halcondotnet.dll
+D:\Standard0228\DealCIM\bin\Debug\BasicClass.pdb
+D:\Standard0228\DealCIM\bin\Debug\ControlLib.pdb
+D:\Standard0228\DealCIM\bin\Debug\DealFile.pdb
+D:\Standard0228\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\Standard0228\DealCIM\bin\Debug\halcondotnet.xml
+D:\Standard0228\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Standard0228\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\Standard0228\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\Standard0228\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\Standard0228\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\Standard0228\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\Standard0228\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Standard0228\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Standard0228\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\Standard0228\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\bin\Debug\DealFile.dll
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\OLED\Standard0301\Standard0301\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\Standard0302\DealCIM\bin\Debug\DealCIM.dll
+D:\Standard0302\DealCIM\bin\Debug\DealCIM.pdb
+D:\Standard0302\DealCIM\bin\Debug\BasicClass.dll
+D:\Standard0302\DealCIM\bin\Debug\ControlLib.dll
+D:\Standard0302\DealCIM\bin\Debug\DealFile.dll
+D:\Standard0302\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\Standard0302\DealCIM\bin\Debug\VariableCompolet.dll
+D:\Standard0302\DealCIM\bin\Debug\WPFToolkit.dll
+D:\Standard0302\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Standard0302\DealCIM\bin\Debug\halcondotnet.dll
+D:\Standard0302\DealCIM\bin\Debug\BasicClass.pdb
+D:\Standard0302\DealCIM\bin\Debug\ControlLib.pdb
+D:\Standard0302\DealCIM\bin\Debug\DealFile.pdb
+D:\Standard0302\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\Standard0302\DealCIM\bin\Debug\halcondotnet.xml
+D:\Standard0302\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Standard0302\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\Standard0302\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\Standard0302\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\Standard0302\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\Standard0302\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\Standard0302\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Standard0302\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Standard0302\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\Standard0302\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\bin\Debug\DealFile.dll
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\OLED\Standard03021404\Standard0302\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\bin\Debug\DealFile.dll
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\OLED\Standard0305\Standard0302\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\bin\Debug\DealFile.dll
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\OLED\Standard03071054\Standard0302\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\bin\Debug\DealFile.dll
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\OLED\Standard0309\Standard0302\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\Standard0309\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Standard0309\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\Standard0309\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\Standard0309\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\Standard0309\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\Standard0309\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\Standard0309\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Standard0309\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Standard0309\DealCIM\bin\Debug\DealCIM.dll
+D:\Standard0309\DealCIM\bin\Debug\DealCIM.pdb
+D:\Standard0309\DealCIM\bin\Debug\BasicClass.dll
+D:\Standard0309\DealCIM\bin\Debug\ControlLib.dll
+D:\Standard0309\DealCIM\bin\Debug\DealFile.dll
+D:\Standard0309\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\Standard0309\DealCIM\bin\Debug\VariableCompolet.dll
+D:\Standard0309\DealCIM\bin\Debug\WPFToolkit.dll
+D:\Standard0309\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Standard0309\DealCIM\bin\Debug\halcondotnet.dll
+D:\Standard0309\DealCIM\bin\Debug\BasicClass.pdb
+D:\Standard0309\DealCIM\bin\Debug\ControlLib.pdb
+D:\Standard0309\DealCIM\bin\Debug\DealFile.pdb
+D:\Standard0309\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\Standard0309\DealCIM\bin\Debug\halcondotnet.xml
+D:\Standard0309\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\Standard0309\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\Standard0309\DealCIM\bin\Debug\Common.dll
+D:\Standard0309\DealCIM\bin\Debug\Common.pdb
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.baml
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.g.cs
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\bin\Debug\Common.dll
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\bin\Debug\DealFile.dll
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\bin\Debug\Common.pdb
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\OLED\Standard0310\Standard0309\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\Standard0311\DealCIM\bin\Debug\DealCIM.dll
+D:\Standard0311\DealCIM\bin\Debug\DealCIM.pdb
+D:\Standard0311\DealCIM\bin\Debug\BasicClass.dll
+D:\Standard0311\DealCIM\bin\Debug\Common.dll
+D:\Standard0311\DealCIM\bin\Debug\ControlLib.dll
+D:\Standard0311\DealCIM\bin\Debug\DealFile.dll
+D:\Standard0311\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\Standard0311\DealCIM\bin\Debug\VariableCompolet.dll
+D:\Standard0311\DealCIM\bin\Debug\WPFToolkit.dll
+D:\Standard0311\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Standard0311\DealCIM\bin\Debug\halcondotnet.dll
+D:\Standard0311\DealCIM\bin\Debug\BasicClass.pdb
+D:\Standard0311\DealCIM\bin\Debug\Common.pdb
+D:\Standard0311\DealCIM\bin\Debug\ControlLib.pdb
+D:\Standard0311\DealCIM\bin\Debug\DealFile.pdb
+D:\Standard0311\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\Standard0311\DealCIM\bin\Debug\halcondotnet.xml
+D:\Standard0311\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Standard0311\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.baml
+D:\Standard0311\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\Standard0311\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.g.cs
+D:\Standard0311\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\Standard0311\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\Standard0311\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\Standard0311\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\Standard0311\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Standard0311\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Standard0311\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\Standard0311\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\bin\Debug\Common.dll
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\bin\Debug\DealFile.dll
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\bin\Debug\Common.pdb
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.baml
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.g.cs
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.baml
+D:\项目\OLED\Standard0312\Standard0311\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.g.cs
+D:\Standard0313\DealCIM\bin\Debug\DealCIM.dll
+D:\Standard0313\DealCIM\bin\Debug\DealCIM.pdb
+D:\Standard0313\DealCIM\bin\Debug\BasicClass.dll
+D:\Standard0313\DealCIM\bin\Debug\Common.dll
+D:\Standard0313\DealCIM\bin\Debug\ControlLib.dll
+D:\Standard0313\DealCIM\bin\Debug\DealFile.dll
+D:\Standard0313\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\Standard0313\DealCIM\bin\Debug\VariableCompolet.dll
+D:\Standard0313\DealCIM\bin\Debug\WPFToolkit.dll
+D:\Standard0313\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Standard0313\DealCIM\bin\Debug\halcondotnet.dll
+D:\Standard0313\DealCIM\bin\Debug\BasicClass.pdb
+D:\Standard0313\DealCIM\bin\Debug\Common.pdb
+D:\Standard0313\DealCIM\bin\Debug\ControlLib.pdb
+D:\Standard0313\DealCIM\bin\Debug\DealFile.pdb
+D:\Standard0313\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\Standard0313\DealCIM\bin\Debug\halcondotnet.xml
+D:\Standard0313\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Standard0313\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.baml
+D:\Standard0313\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\Standard0313\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.baml
+D:\Standard0313\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.g.cs
+D:\Standard0313\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\Standard0313\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.g.cs
+D:\Standard0313\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\Standard0313\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\Standard0313\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\Standard0313\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Standard0313\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Standard0313\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\Standard0313\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\bin\Debug\Common.dll
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\bin\Debug\DealFile.dll
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\bin\Debug\Common.pdb
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.baml
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.baml
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.g.cs
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.g.cs
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\OLED\Standard03142255\Standard0313\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0315\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\OLED\Standard0315\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0315\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\OLED\Standard0315\DealCIM\bin\Debug\Common.dll
+D:\项目\OLED\Standard0315\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\OLED\Standard0315\DealCIM\bin\Debug\DealFile.dll
+D:\项目\OLED\Standard0315\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\OLED\Standard0315\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\OLED\Standard0315\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\OLED\Standard0315\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\OLED\Standard0315\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\OLED\Standard0315\DealCIM\bin\Debug\Common.pdb
+D:\项目\OLED\Standard0315\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\OLED\Standard0315\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\OLED\Standard0315\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\OLED\Standard0315\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\OLED\Standard0315\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\OLED\Standard0315\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.baml
+D:\项目\OLED\Standard0315\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\项目\OLED\Standard0315\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.baml
+D:\项目\OLED\Standard0315\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.g.cs
+D:\项目\OLED\Standard0315\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\OLED\Standard0315\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.g.cs
+D:\项目\OLED\Standard0315\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\OLED\Standard0315\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\OLED\Standard0315\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\OLED\Standard0315\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\OLED\Standard0315\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\OLED\Standard0315\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\OLED\Standard0315\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\bin\Debug\Common.dll
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\bin\Debug\DealFile.dll
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\bin\Debug\Common.pdb
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.baml
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.baml
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.g.cs
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.g.cs
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\OLED\Standard0315-1639\Standard0315\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\bin\Debug\Common.dll
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\bin\Debug\DealFile.dll
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\bin\Debug\Common.pdb
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.baml
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.baml
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.g.cs
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.g.cs
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\OLED\Standard0320\Standard0315\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\bin\Debug\Common.dll
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\bin\Debug\DealFile.dll
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\bin\Debug\Common.pdb
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.baml
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.baml
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.g.cs
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.g.cs
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\OLED\Standard0321\Standard0315\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\bin\Debug\Common.dll
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\bin\Debug\DealFile.dll
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\bin\Debug\Common.pdb
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.baml
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.baml
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.g.cs
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.g.cs
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\OLED\Standard0331\Standard0315\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\bin\Debug\Common.dll
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\bin\Debug\DealFile.dll
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\bin\Debug\Common.pdb
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.baml
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.baml
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.g.cs
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.g.cs
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\OLED\Standard0404\Standard0315\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\bin\Debug\Common.dll
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\bin\Debug\DealFile.dll
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\bin\Debug\Common.pdb
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.baml
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.baml
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.g.cs
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.g.cs
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\OLED\Standard0412\Standard0315\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealCIM.dll
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealCIM.pdb
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\BasicClass.dll
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Common.dll
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\ControlLib.dll
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealFile.dll
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\VariableCompolet.dll
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\WPFToolkit.dll
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\halcondotnet.dll
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\BasicClass.pdb
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Common.pdb
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\ControlLib.pdb
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealFile.pdb
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\halcondotnet.xml
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.baml
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.baml
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.g.cs
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.g.cs
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Common.dll
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealFile.dll
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Common.pdb
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.baml
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.baml
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.g.cs
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.g.cs
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\AOI上料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealCIM.dll
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealCIM.pdb
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\BasicClass.dll
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Common.dll
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\ControlLib.dll
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealFile.dll
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\VariableCompolet.dll
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\WPFToolkit.dll
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\halcondotnet.dll
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\BasicClass.pdb
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Common.pdb
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\ControlLib.pdb
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealFile.pdb
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\halcondotnet.xml
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.baml
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.baml
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.g.cs
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.g.cs
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\Standard04251905-厦门友达AOI上下料\Standard0425-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealCIM.dll
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealCIM.pdb
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\BasicClass.dll
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Common.dll
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\ControlLib.dll
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealFile.dll
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\VariableCompolet.dll
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\WPFToolkit.dll
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\halcondotnet.dll
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\BasicClass.pdb
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Common.pdb
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\ControlLib.pdb
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealFile.pdb
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\halcondotnet.xml
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.baml
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.baml
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.g.cs
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.g.cs
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\Standard04252105-厦门友达AOI上下料\Standard04252105-厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealCIM.dll
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealCIM.pdb
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\BasicClass.dll
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Common.dll
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\ControlLib.dll
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealFile.dll
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\VariableCompolet.dll
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\WPFToolkit.dll
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\halcondotnet.dll
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\BasicClass.pdb
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Common.pdb
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\ControlLib.pdb
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealFile.pdb
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\halcondotnet.xml
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.baml
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.baml
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.g.cs
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.g.cs
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\Standard0427厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealCIM.dll
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealCIM.pdb
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\BasicClass.dll
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Common.dll
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\ControlLib.dll
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealFile.dll
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\VariableCompolet.dll
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\WPFToolkit.dll
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\halcondotnet.dll
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\BasicClass.pdb
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Common.pdb
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\ControlLib.pdb
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealFile.pdb
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\halcondotnet.xml
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.baml
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.baml
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.g.cs
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.g.cs
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Common.dll
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealFile.dll
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Common.pdb
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.baml
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.baml
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.g.cs
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.g.cs
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\AOI上料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealCIM.dll
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealCIM.pdb
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\BasicClass.dll
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Common.dll
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\ControlLib.dll
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealFile.dll
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\VariableCompolet.dll
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\WPFToolkit.dll
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\halcondotnet.dll
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\BasicClass.pdb
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Common.pdb
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\ControlLib.pdb
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealFile.pdb
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\halcondotnet.xml
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.baml
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.baml
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.g.cs
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.g.cs
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\Standard0430厦门友达AOI上下料\Standard0429厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Common.dll
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealFile.dll
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Common.pdb
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.baml
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.baml
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.g.cs
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.g.cs
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\AOI上料\Standard0430厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Common.dll
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealFile.dll
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\Common.pdb
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.baml
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.baml
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.baml
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\Log\UI\UCLogCIM.g.cs
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\WinOutTime\WinOutTime.g.cs
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\AOI上料\Standard0502厦门友达AOI上下料\Standard0412\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\bin\Debug\Common.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\bin\Debug\DealComInterface.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\bin\Debug\DealFile.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\bin\Debug\VariableCompolet.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\bin\Debug\Common.pdb
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\bin\Debug\DealComInterface.pdb
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.baml
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.baml
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.baml
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.g.cs
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.g.cs
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard05051913FLowOK AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.baml
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.baml
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.baml
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.g.cs
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.g.cs
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\bin\Debug\Common.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\bin\Debug\DealComInterface.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\bin\Debug\DealFile.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\bin\Debug\VariableCompolet.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\bin\Debug\Common.pdb
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\bin\Debug\DealComInterface.pdb
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\厦门友达\T3 AOI上下料\Standard0510 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\bin\Debug\Common.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\bin\Debug\DealComInterface.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\bin\Debug\DealFile.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\bin\Debug\VariableCompolet.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\bin\Debug\Common.pdb
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\bin\Debug\DealComInterface.pdb
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.baml
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.baml
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.baml
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.g.cs
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.g.cs
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.baml
+D:\项目\厦门友达\T3 AOI上下料\Standard0513 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.g.cs
+D:\Standard0515 AOI上下料\Standard\DealCIM\bin\Debug\DealCIM.dll
+D:\Standard0515 AOI上下料\Standard\DealCIM\bin\Debug\DealCIM.pdb
+D:\Standard0515 AOI上下料\Standard\DealCIM\bin\Debug\BasicClass.dll
+D:\Standard0515 AOI上下料\Standard\DealCIM\bin\Debug\Common.dll
+D:\Standard0515 AOI上下料\Standard\DealCIM\bin\Debug\ControlLib.dll
+D:\Standard0515 AOI上下料\Standard\DealCIM\bin\Debug\DealComInterface.dll
+D:\Standard0515 AOI上下料\Standard\DealCIM\bin\Debug\DealFile.dll
+D:\Standard0515 AOI上下料\Standard\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\Standard0515 AOI上下料\Standard\DealCIM\bin\Debug\VariableCompolet.dll
+D:\Standard0515 AOI上下料\Standard\DealCIM\bin\Debug\WPFToolkit.dll
+D:\Standard0515 AOI上下料\Standard\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Standard0515 AOI上下料\Standard\DealCIM\bin\Debug\halcondotnet.dll
+D:\Standard0515 AOI上下料\Standard\DealCIM\bin\Debug\BasicClass.pdb
+D:\Standard0515 AOI上下料\Standard\DealCIM\bin\Debug\Common.pdb
+D:\Standard0515 AOI上下料\Standard\DealCIM\bin\Debug\DealComInterface.pdb
+D:\Standard0515 AOI上下料\Standard\DealCIM\bin\Debug\ControlLib.pdb
+D:\Standard0515 AOI上下料\Standard\DealCIM\bin\Debug\DealFile.pdb
+D:\Standard0515 AOI上下料\Standard\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\Standard0515 AOI上下料\Standard\DealCIM\bin\Debug\halcondotnet.xml
+D:\Standard0515 AOI上下料\Standard\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Standard0515 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.baml
+D:\Standard0515 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.baml
+D:\Standard0515 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.baml
+D:\Standard0515 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.baml
+D:\Standard0515 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.g.cs
+D:\Standard0515 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.g.cs
+D:\Standard0515 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.g.cs
+D:\Standard0515 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.g.cs
+D:\Standard0515 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\Standard0515 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\Standard0515 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\Standard0515 AOI上下料\Standard\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Standard0515 AOI上下料\Standard\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Standard0515 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\Standard0515 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\Standard0516 AOI上下料\Standard\DealCIM\bin\Debug\DealCIM.dll
+D:\Standard0516 AOI上下料\Standard\DealCIM\bin\Debug\DealCIM.pdb
+D:\Standard0516 AOI上下料\Standard\DealCIM\bin\Debug\BasicClass.dll
+D:\Standard0516 AOI上下料\Standard\DealCIM\bin\Debug\Common.dll
+D:\Standard0516 AOI上下料\Standard\DealCIM\bin\Debug\ControlLib.dll
+D:\Standard0516 AOI上下料\Standard\DealCIM\bin\Debug\DealComInterface.dll
+D:\Standard0516 AOI上下料\Standard\DealCIM\bin\Debug\DealFile.dll
+D:\Standard0516 AOI上下料\Standard\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\Standard0516 AOI上下料\Standard\DealCIM\bin\Debug\VariableCompolet.dll
+D:\Standard0516 AOI上下料\Standard\DealCIM\bin\Debug\WPFToolkit.dll
+D:\Standard0516 AOI上下料\Standard\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Standard0516 AOI上下料\Standard\DealCIM\bin\Debug\halcondotnet.dll
+D:\Standard0516 AOI上下料\Standard\DealCIM\bin\Debug\BasicClass.pdb
+D:\Standard0516 AOI上下料\Standard\DealCIM\bin\Debug\Common.pdb
+D:\Standard0516 AOI上下料\Standard\DealCIM\bin\Debug\DealComInterface.pdb
+D:\Standard0516 AOI上下料\Standard\DealCIM\bin\Debug\ControlLib.pdb
+D:\Standard0516 AOI上下料\Standard\DealCIM\bin\Debug\DealFile.pdb
+D:\Standard0516 AOI上下料\Standard\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\Standard0516 AOI上下料\Standard\DealCIM\bin\Debug\halcondotnet.xml
+D:\Standard0516 AOI上下料\Standard\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Standard0516 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.baml
+D:\Standard0516 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.baml
+D:\Standard0516 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.baml
+D:\Standard0516 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.baml
+D:\Standard0516 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.g.cs
+D:\Standard0516 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.g.cs
+D:\Standard0516 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.g.cs
+D:\Standard0516 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.g.cs
+D:\Standard0516 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\Standard0516 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\Standard0516 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\Standard0516 AOI上下料\Standard\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Standard0516 AOI上下料\Standard\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Standard0516 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\Standard0516 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\Standard0520 AOI上下料\Standard\DealCIM\bin\Debug\DealCIM.dll
+D:\Standard0520 AOI上下料\Standard\DealCIM\bin\Debug\DealCIM.pdb
+D:\Standard0520 AOI上下料\Standard\DealCIM\bin\Debug\BasicClass.dll
+D:\Standard0520 AOI上下料\Standard\DealCIM\bin\Debug\Common.dll
+D:\Standard0520 AOI上下料\Standard\DealCIM\bin\Debug\ControlLib.dll
+D:\Standard0520 AOI上下料\Standard\DealCIM\bin\Debug\DealComInterface.dll
+D:\Standard0520 AOI上下料\Standard\DealCIM\bin\Debug\DealFile.dll
+D:\Standard0520 AOI上下料\Standard\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\Standard0520 AOI上下料\Standard\DealCIM\bin\Debug\VariableCompolet.dll
+D:\Standard0520 AOI上下料\Standard\DealCIM\bin\Debug\WPFToolkit.dll
+D:\Standard0520 AOI上下料\Standard\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Standard0520 AOI上下料\Standard\DealCIM\bin\Debug\halcondotnet.dll
+D:\Standard0520 AOI上下料\Standard\DealCIM\bin\Debug\BasicClass.pdb
+D:\Standard0520 AOI上下料\Standard\DealCIM\bin\Debug\Common.pdb
+D:\Standard0520 AOI上下料\Standard\DealCIM\bin\Debug\DealComInterface.pdb
+D:\Standard0520 AOI上下料\Standard\DealCIM\bin\Debug\ControlLib.pdb
+D:\Standard0520 AOI上下料\Standard\DealCIM\bin\Debug\DealFile.pdb
+D:\Standard0520 AOI上下料\Standard\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\Standard0520 AOI上下料\Standard\DealCIM\bin\Debug\halcondotnet.xml
+D:\Standard0520 AOI上下料\Standard\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Standard0520 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.baml
+D:\Standard0520 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.baml
+D:\Standard0520 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.baml
+D:\Standard0520 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.baml
+D:\Standard0520 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.g.cs
+D:\Standard0520 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.g.cs
+D:\Standard0520 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.g.cs
+D:\Standard0520 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.g.cs
+D:\Standard0520 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\Standard0520 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\Standard0520 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\Standard0520 AOI上下料\Standard\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Standard0520 AOI上下料\Standard\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Standard0520 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\Standard0520 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\Common.dll
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\DealComInterface.dll
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\DealFile.dll
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\Common.pdb
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\DealComInterface.pdb
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.baml
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.baml
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.baml
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.baml
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.g.cs
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.g.cs
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.g.cs
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\AOI上料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\DealCIM.dll
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\DealCIM.pdb
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\BasicClass.dll
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\Common.dll
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\ControlLib.dll
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\DealComInterface.dll
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\DealFile.dll
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\VariableCompolet.dll
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\WPFToolkit.dll
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\halcondotnet.dll
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\BasicClass.pdb
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\Common.pdb
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\DealComInterface.pdb
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\ControlLib.pdb
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\DealFile.pdb
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\bin\Debug\halcondotnet.xml
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.baml
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.baml
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.baml
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.baml
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.g.cs
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.g.cs
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.g.cs
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.g.cs
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\Standard0601 AOI上下料\Standard0529-2258 AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\bin\Debug\Common.dll
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\bin\Debug\DealComInterface.dll
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\bin\Debug\DealFile.dll
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\bin\Debug\Common.pdb
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\bin\Debug\DealComInterface.pdb
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.baml
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.baml
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.baml
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.baml
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.g.cs
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.g.cs
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.g.cs
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\AOI上料\Standard0604AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\Standard0609AOI上下料\Standard\DealCIM\bin\Debug\DealCIM.dll
+D:\Standard0609AOI上下料\Standard\DealCIM\bin\Debug\DealCIM.pdb
+D:\Standard0609AOI上下料\Standard\DealCIM\bin\Debug\BasicClass.dll
+D:\Standard0609AOI上下料\Standard\DealCIM\bin\Debug\Common.dll
+D:\Standard0609AOI上下料\Standard\DealCIM\bin\Debug\ControlLib.dll
+D:\Standard0609AOI上下料\Standard\DealCIM\bin\Debug\DealComInterface.dll
+D:\Standard0609AOI上下料\Standard\DealCIM\bin\Debug\DealFile.dll
+D:\Standard0609AOI上下料\Standard\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\Standard0609AOI上下料\Standard\DealCIM\bin\Debug\VariableCompolet.dll
+D:\Standard0609AOI上下料\Standard\DealCIM\bin\Debug\WPFToolkit.dll
+D:\Standard0609AOI上下料\Standard\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Standard0609AOI上下料\Standard\DealCIM\bin\Debug\halcondotnet.dll
+D:\Standard0609AOI上下料\Standard\DealCIM\bin\Debug\BasicClass.pdb
+D:\Standard0609AOI上下料\Standard\DealCIM\bin\Debug\Common.pdb
+D:\Standard0609AOI上下料\Standard\DealCIM\bin\Debug\DealComInterface.pdb
+D:\Standard0609AOI上下料\Standard\DealCIM\bin\Debug\ControlLib.pdb
+D:\Standard0609AOI上下料\Standard\DealCIM\bin\Debug\DealFile.pdb
+D:\Standard0609AOI上下料\Standard\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\Standard0609AOI上下料\Standard\DealCIM\bin\Debug\halcondotnet.xml
+D:\Standard0609AOI上下料\Standard\DealCIM\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Standard0609AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.baml
+D:\Standard0609AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.baml
+D:\Standard0609AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.baml
+D:\Standard0609AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.baml
+D:\Standard0609AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.g.cs
+D:\Standard0609AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.g.cs
+D:\Standard0609AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.g.cs
+D:\Standard0609AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.g.cs
+D:\Standard0609AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\Standard0609AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\Standard0609AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\Standard0609AOI上下料\Standard\DealCIM\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Standard0609AOI上下料\Standard\DealCIM\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Standard0609AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\Standard0609AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\bin\Debug\Common.dll
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\bin\Debug\DealComInterface.dll
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\bin\Debug\DealFile.dll
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\bin\Debug\Common.pdb
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\bin\Debug\DealComInterface.pdb
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.csprojResolveAssemblyReference.cache
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.baml
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.baml
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.baml
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.baml
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.g.cs
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.g.cs
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.g.cs
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.Cache
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\AOI上料\Standard0902AOI上下料\Standard0817AOI上下料\Standard\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\bin\Debug\Common.dll
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\bin\Debug\DealComInterface.dll
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\bin\Debug\DealFile.dll
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\bin\Debug\Common.pdb
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\bin\Debug\DealComInterface.pdb
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\obj\x86\Debug\DealCIM.csprojResolveAssemblyReference.cache
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.baml
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.baml
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.baml
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.baml
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.g.cs
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.g.cs
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.g.cs
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.Cache
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\德龙\Standard0911德龙检测\Standard0914\Standard\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\Common.dll
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\DealComInterface.dll
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\DealFile.dll
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\System.Windows.Interactivity.dll
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\Common.pdb
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\DealComInterface.pdb
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\DealCIM.csprojResolveAssemblyReference.cache
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.baml
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.baml
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.baml
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.baml
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.g.cs
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.g.cs
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.g.cs
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.Cache
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\FineVision\Standard0325\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\DealCIM.pdb
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\DealCIM.dll
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\DealCIM.pdb
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\BasicClass.dll
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\Common.dll
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\ControlLib.dll
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\DealComInterface.dll
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\DealFile.dll
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\MahApps.Metro.dll
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\WPFToolkit.dll
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\halcondotnet.dll
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\System.Windows.Interactivity.dll
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\BasicClass.pdb
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\Common.pdb
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\DealComInterface.pdb
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\ControlLib.pdb
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\DealFile.pdb
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\MahApps.Metro.xml
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\bin\Debug\halcondotnet.xml
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\DealCIM.csprojResolveAssemblyReference.cache
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.baml
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.baml
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.baml
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.baml
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\CIMAOI\UI\UCCode.g.cs
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\CIMOled\Log\UI\UCLogCIM.g.cs
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\CIMOled\SysMac\UI\WinCimSysMac.g.cs
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\CIMOled\WinOutTime\WinOutTime.g.cs
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.Cache
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\项目\FineVision\Standard0403\Standard1029-PLC寄存器减少\Standard\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\DealCIM.dll
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\DealCIM.pdb
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\BasicClass.dll
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\Common.dll
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\ControlLib.dll
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\DealComInterface.dll
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\DealFile.dll
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\MahApps.Metro.dll
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\McmqApi.dll
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\Telerik.Windows.Controls.dll
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\VariableCompolet.dll
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\WPFToolkit.dll
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\Xceed.Wpf.Toolkit.dll
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\halcondotnet.dll
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\System.Windows.Interactivity.dll
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\BasicClass.xml
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\Common.xml
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\ControlLib.xml
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\DealComInterface.xml
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\DealFile.xml
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\MahApps.Metro.xml
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\Telerik.Windows.Controls.xml
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\de\Telerik.Windows.Controls.resources.dll
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\es\Telerik.Windows.Controls.resources.dll
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\fr\Telerik.Windows.Controls.resources.dll
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\it\Telerik.Windows.Controls.resources.dll
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\nl\Telerik.Windows.Controls.resources.dll
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\bin\Debug\tr\Telerik.Windows.Controls.resources.dll
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll.licenses
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DLL\DealCIM.dll
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DLL\DealCIM.pdb
+E:\项目\设备\产品\finievision\Standard64位-精简版本DLL20190314\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csprojAssemblyReference.cache
+E:\项目\设备\苏州友达\收片机\Program\Standard64位-精简版本DLL20190319\Standard-WithoutCV\DLL\DealCIM.dll
+E:\项目\设备\苏州友达\收片机\Program\Standard64位-精简版本DLL20190319\Standard-WithoutCV\DLL\DealCIM.pdb
+E:\项目\设备\苏州友达\收片机\Program\Standard64位-精简版本DLL20190319\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csprojAssemblyReference.cache
+E:\项目\设备\苏州友达\收片机\Program\Standard64位-精简版本DLL20190319\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\项目\设备\苏州友达\收片机\Program\Standard64位-精简版本DLL20190319\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\项目\设备\苏州友达\收片机\Program\Standard64位-精简版本DLL20190319\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\项目\设备\苏州友达\收片机\Program\Standard64位-精简版本DLL20190319\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\项目\设备\苏州友达\收片机\Program\Standard64位-精简版本DLL20190319\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\项目\设备\苏州友达\收片机\Program\Standard64位-精简版本DLL20190319\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\项目\设备\苏州友达\收片机\Program\Standard64位-精简版本DLL20190319\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\项目\设备\苏州友达\收片机\Program\Standard64位-精简版本DLL20190319\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\项目\设备\苏州友达\收片机\Program\Standard64位-精简版本DLL20190319\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\项目\设备\苏州友达\收片机\Program\Standard64位-精简版本DLL20190319\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll.licenses
+E:\项目\设备\苏州友达\收片机\Program\Standard64位-精简版本DLL20190319\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+E:\项目\设备\苏州友达\收片机\Program\Standard64位-精简版本DLL20190319\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\项目\设备\苏州友达\收片机\Program\Standard64位-精简版本DLL20190319\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\项目\设备\苏州友达\收片机\Program\Standard64位-精简版本DLL20190319\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\项目\设备\苏州友达\收片机\Program\SZ_SPJ_x64_xc\Standard-WithoutCV\DLL\DealCIM.dll
+E:\项目\设备\苏州友达\收片机\Program\SZ_SPJ_x64_xc\Standard-WithoutCV\DLL\DealCIM.pdb
+E:\项目\设备\苏州友达\收片机\Program\SZ_SPJ_x64_xc\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csprojAssemblyReference.cache
+E:\项目\设备\苏州友达\收片机\Program\SZ_SPJ_x64_xc\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\项目\设备\苏州友达\收片机\Program\SZ_SPJ_x64_xc\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\项目\设备\苏州友达\收片机\Program\SZ_SPJ_x64_xc\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\项目\设备\苏州友达\收片机\Program\SZ_SPJ_x64_xc\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\项目\设备\苏州友达\收片机\Program\SZ_SPJ_x64_xc\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\项目\设备\苏州友达\收片机\Program\SZ_SPJ_x64_xc\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\项目\设备\苏州友达\收片机\Program\SZ_SPJ_x64_xc\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\项目\设备\苏州友达\收片机\Program\SZ_SPJ_x64_xc\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\项目\设备\苏州友达\收片机\Program\SZ_SPJ_x64_xc\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\项目\设备\苏州友达\收片机\Program\SZ_SPJ_x64_xc\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll.licenses
+E:\项目\设备\苏州友达\收片机\Program\SZ_SPJ_x64_xc\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+E:\项目\设备\苏州友达\收片机\Program\SZ_SPJ_x64_xc\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\项目\设备\苏州友达\收片机\Program\SZ_SPJ_x64_xc\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\项目\设备\苏州友达\收片机\Program\SZ_SPJ_x64_xc\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\SZ_SPJ_x64_xc_0404\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\SZ_SPJ_x64_xc_0404\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\SZ_SPJ_x64_xc_0404\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\SZ_SPJ_x64_xc_0404\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\SZ_SPJ_x64_xc_0404\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\SZ_SPJ_x64_xc_0404\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\SZ_SPJ_x64_xc_0404\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csprojResolveAssemblyReference.cache
+E:\SZ_SPJ_x64_xc_0404\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DLL\DealCIM.dll
+E:\SZ_SPJ_x64_xc_0404\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DLL\DealCIM.pdb
+E:\SZ_SPJ_x64_xc_0404\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\SZ_SPJ_x64_xc_0404\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\SZ_SPJ_x64_xc_0404\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\SZ_SPJ_x64_xc_0404\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\SZ_SPJ_x64_xc_0404\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.Cache
+E:\SZ_SPJ_x64_xc_0404\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll.licenses
+E:\SZ_SPJ_x64_xc_0407\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DLL\DealCIM.dll
+E:\SZ_SPJ_x64_xc_0407\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DLL\DealCIM.pdb
+E:\SZ_SPJ_x64_xc_0407\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csprojResolveAssemblyReference.cache
+E:\SZ_SPJ_x64_xc_0407\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\SZ_SPJ_x64_xc_0407\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\SZ_SPJ_x64_xc_0407\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\SZ_SPJ_x64_xc_0407\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\SZ_SPJ_x64_xc_0407\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\SZ_SPJ_x64_xc_0407\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\SZ_SPJ_x64_xc_0407\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\SZ_SPJ_x64_xc_0407\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\SZ_SPJ_x64_xc_0407\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.Cache
+E:\SZ_SPJ_x64_xc_0407\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll.licenses
+E:\SZ_SPJ_x64_xc_0407\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\SZ_SPJ_x64_xc_0407\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DLL\DealCIM.dll
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DLL\DealCIM.pdb
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csprojAssemblyReference.cache
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll.licenses
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0404\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0423\Standard-WithoutCV\DLL\DealCIM.dll
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0423\Standard-WithoutCV\DLL\DealCIM.pdb
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0423\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csprojAssemblyReference.cache
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0423\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0423\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0423\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0423\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0423\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0423\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0423\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0423\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0423\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0423\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll.licenses
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0423\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0423\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0423\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0423\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0425\Standard-WithoutCV\DLL\DealCIM.dll
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0425\Standard-WithoutCV\DLL\DealCIM.pdb
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csprojAssemblyReference.cache
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll.licenses
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\项目\设备\厦门友达\切割收片机\Program\XM_QGSPJ_x64_xc_0409\SZ_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\QG_SPJ_x64_xc_0425\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csprojAssemblyReference.cache
+E:\QG_SPJ_x64_xc_0425\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\QG_SPJ_x64_xc_0425\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\QG_SPJ_x64_xc_0425\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\QG_SPJ_x64_xc_0425\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\QG_SPJ_x64_xc_0425\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\QG_SPJ_x64_xc_0425\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DLL\DealCIM.dll
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DLL\DealCIM.pdb
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csprojAssemblyReference.cache
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DLL\DealCIM.dll
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DLL\DealCIM.pdb
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csprojAssemblyReference.cache
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0428\QG_SPJ_x64_xc_0425\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0429\Standard-WithoutCV\DLL\DealCIM.dll
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0429\Standard-WithoutCV\DLL\DealCIM.pdb
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0429\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csprojAssemblyReference.cache
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0429\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0429\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0429\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0429\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0429\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0429\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0429\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0429\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0429\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0429\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0429\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0429\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0429\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0430\Standard-WithoutCV\DLL\DealCIM.dll
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0430\Standard-WithoutCV\DLL\DealCIM.pdb
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0430\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csprojAssemblyReference.cache
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0430\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0430\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0430\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0430\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0430\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0430\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0430\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0430\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0430\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0430\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0430\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0430\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\QG_SPJ_x64_xc_0429\QG_SPJ_x64_xc_0430\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0505\Standard-WithoutCV\DLL\DealCIM.dll
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0505\Standard-WithoutCV\DLL\DealCIM.pdb
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0505\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csprojAssemblyReference.cache
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0505\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0505\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0505\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0505\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0505\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0505\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0505\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0505\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0505\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0505\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0505\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0505\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_0505\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_050619\QG_SPJ_x64_xc_0506\QG_SPJ_x64_xc_0506\Standard-WithoutCV\DLL\DealCIM.dll
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_050619\QG_SPJ_x64_xc_0506\QG_SPJ_x64_xc_0506\Standard-WithoutCV\DLL\DealCIM.pdb
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_050619\QG_SPJ_x64_xc_0506\QG_SPJ_x64_xc_0506\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csprojAssemblyReference.cache
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_050619\QG_SPJ_x64_xc_0506\QG_SPJ_x64_xc_0506\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_050619\QG_SPJ_x64_xc_0506\QG_SPJ_x64_xc_0506\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_050619\QG_SPJ_x64_xc_0506\QG_SPJ_x64_xc_0506\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_050619\QG_SPJ_x64_xc_0506\QG_SPJ_x64_xc_0506\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_050619\QG_SPJ_x64_xc_0506\QG_SPJ_x64_xc_0506\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_050619\QG_SPJ_x64_xc_0506\QG_SPJ_x64_xc_0506\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_050619\QG_SPJ_x64_xc_0506\QG_SPJ_x64_xc_0506\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_050619\QG_SPJ_x64_xc_0506\QG_SPJ_x64_xc_0506\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_050619\QG_SPJ_x64_xc_0506\QG_SPJ_x64_xc_0506\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_050619\QG_SPJ_x64_xc_0506\QG_SPJ_x64_xc_0506\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_050619\QG_SPJ_x64_xc_0506\QG_SPJ_x64_xc_0506\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_050619\QG_SPJ_x64_xc_0506\QG_SPJ_x64_xc_0506\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\项目\设备\厦门友达\切割收片机\Program\QG_SPJ_x64_xc_050619\QG_SPJ_x64_xc_0506\QG_SPJ_x64_xc_0506\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\QG_SPJ_x64_xc_0507\Standard-WithoutCV\DLL\DealCIM.dll
+E:\QG_SPJ_x64_xc_0507\Standard-WithoutCV\DLL\DealCIM.pdb
+E:\QG_SPJ_x64_xc_0507\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csprojAssemblyReference.cache
+E:\QG_SPJ_x64_xc_0507\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\QG_SPJ_x64_xc_0507\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\QG_SPJ_x64_xc_0507\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\QG_SPJ_x64_xc_0507\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\QG_SPJ_x64_xc_0507\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\QG_SPJ_x64_xc_0507\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\QG_SPJ_x64_xc_0507\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\QG_SPJ_x64_xc_0507\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\QG_SPJ_x64_xc_0507\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\QG_SPJ_x64_xc_0507\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+E:\QG_SPJ_x64_xc_0507\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\QG_SPJ_x64_xc_0507\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\QG_SPJ_x64_xc_0507\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\项目\设备\厦门友达\宇宏泰CIM\QG_SPJ_x64_xc_0509\Standard-WithoutCV\DLL\DealCIM.dll
+E:\项目\设备\厦门友达\宇宏泰CIM\QG_SPJ_x64_xc_0509\Standard-WithoutCV\DLL\DealCIM.pdb
+E:\项目\设备\厦门友达\宇宏泰CIM\QG_SPJ_x64_xc_0509\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\项目\设备\厦门友达\宇宏泰CIM\QG_SPJ_x64_xc_0509\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\项目\设备\厦门友达\宇宏泰CIM\QG_SPJ_x64_xc_0509\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\项目\设备\厦门友达\宇宏泰CIM\QG_SPJ_x64_xc_0509\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\项目\设备\厦门友达\宇宏泰CIM\QG_SPJ_x64_xc_0509\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\项目\设备\厦门友达\宇宏泰CIM\QG_SPJ_x64_xc_0509\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\项目\设备\厦门友达\宇宏泰CIM\QG_SPJ_x64_xc_0509\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\项目\设备\厦门友达\宇宏泰CIM\QG_SPJ_x64_xc_0509\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\项目\设备\厦门友达\宇宏泰CIM\QG_SPJ_x64_xc_0509\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\项目\设备\厦门友达\宇宏泰CIM\QG_SPJ_x64_xc_0509\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+E:\项目\设备\厦门友达\宇宏泰CIM\QG_SPJ_x64_xc_0509\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\项目\设备\厦门友达\宇宏泰CIM\QG_SPJ_x64_xc_0509\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\项目\设备\厦门友达\宇宏泰CIM\QG_SPJ_x64_xc_0509\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\项目\设备\厦门友达\宇宏泰CIM\QG_SPJ_x64_xc_0509\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csprojAssemblyReference.cache
+E:\视觉\YHTCIM_xc_0528\Standard-WithoutCV\DLL\DealCIM.dll
+E:\视觉\YHTCIM_xc_0528\Standard-WithoutCV\DLL\DealCIM.pdb
+E:\视觉\YHTCIM_xc_0528\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\视觉\YHTCIM_xc_0528\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\视觉\YHTCIM_xc_0528\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\视觉\YHTCIM_xc_0528\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\视觉\YHTCIM_xc_0528\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\视觉\YHTCIM_xc_0528\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\视觉\YHTCIM_xc_0528\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\视觉\YHTCIM_xc_0528\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\视觉\YHTCIM_xc_0528\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\视觉\YHTCIM_xc_0528\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+E:\视觉\YHTCIM_xc_0528\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\视觉\YHTCIM_xc_0528\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\视觉\YHTCIM_xc_0528\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHTCIM_xc_052816\Standard-WithoutCV\DLL\DealCIM.dll
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHTCIM_xc_052816\Standard-WithoutCV\DLL\DealCIM.pdb
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHTCIM_xc_052816\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHTCIM_xc_052816\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHTCIM_xc_052816\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHTCIM_xc_052816\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHTCIM_xc_052816\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHTCIM_xc_052816\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHTCIM_xc_052816\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHTCIM_xc_052816\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHTCIM_xc_052816\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHTCIM_xc_052816\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHTCIM_xc_052816\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHTCIM_xc_052816\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHTCIM_xc_052816\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHTCIM_xc_052816\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMMain.g.cs
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHTCIM_xc_052816\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMMain.baml
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHTCIM_xc_052816\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csprojAssemblyReference.cache
+E:\视觉\YHTCIM_xc_0530\YHTCIM_xc_0530\Standard-WithoutCV\DLL\DealCIM.dll
+E:\视觉\YHTCIM_xc_0530\YHTCIM_xc_0530\Standard-WithoutCV\DLL\DealCIM.pdb
+E:\视觉\YHTCIM_xc_0530\YHTCIM_xc_0530\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMMain.g.cs
+E:\视觉\YHTCIM_xc_0530\YHTCIM_xc_0530\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\视觉\YHTCIM_xc_0530\YHTCIM_xc_0530\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\视觉\YHTCIM_xc_0530\YHTCIM_xc_0530\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\视觉\YHTCIM_xc_0530\YHTCIM_xc_0530\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\视觉\YHTCIM_xc_0530\YHTCIM_xc_0530\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMMain.baml
+E:\视觉\YHTCIM_xc_0530\YHTCIM_xc_0530\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\视觉\YHTCIM_xc_0530\YHTCIM_xc_0530\Standard-WithoutCV\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\视觉\YHTCIM_xc_0530\YHTCIM_xc_0530\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\视觉\YHTCIM_xc_0530\YHTCIM_xc_0530\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\视觉\YHTCIM_xc_0530\YHTCIM_xc_0530\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\视觉\YHTCIM_xc_0530\YHTCIM_xc_0530\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+E:\视觉\YHTCIM_xc_0530\YHTCIM_xc_0530\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\视觉\YHTCIM_xc_0530\YHTCIM_xc_0530\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\视觉\YHTCIM_xc_0530\YHTCIM_xc_0530\Standard-WithoutCV\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\32\Standard320531\DLL\DealCIM.dll
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\32\Standard320531\DLL\DealCIM.pdb
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\32\Standard320531\DealCIM\obj\x86\Debug\CIM\UI\CIMMain.g.cs
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\32\Standard320531\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\32\Standard320531\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\32\Standard320531\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\32\Standard320531\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\32\Standard320531\DealCIM\obj\x86\Debug\CIM\UI\CIMMain.baml
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\32\Standard320531\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\32\Standard320531\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\32\Standard320531\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\32\Standard320531\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\32\Standard320531\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\32\Standard320531\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\32\Standard320531\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\32\Standard320531\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\32\Standard320531\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\视觉\YHT_x86_xc_0531\YHT_x86_xc_0531\DLL\DealCIM.dll
+E:\视觉\YHT_x86_xc_0531\YHT_x86_xc_0531\DLL\DealCIM.pdb
+E:\视觉\YHT_x86_xc_0531\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\DealCIM.csprojAssemblyReference.cache
+E:\视觉\YHT_x86_xc_0531\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\CIM\UI\CIMMain.g.cs
+E:\视觉\YHT_x86_xc_0531\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\视觉\YHT_x86_xc_0531\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\视觉\YHT_x86_xc_0531\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\视觉\YHT_x86_xc_0531\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\视觉\YHT_x86_xc_0531\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\CIM\UI\CIMMain.baml
+E:\视觉\YHT_x86_xc_0531\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\视觉\YHT_x86_xc_0531\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\视觉\YHT_x86_xc_0531\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\视觉\YHT_x86_xc_0531\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\视觉\YHT_x86_xc_0531\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\视觉\YHT_x86_xc_0531\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+E:\视觉\YHT_x86_xc_0531\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\视觉\YHT_x86_xc_0531\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\视觉\YHT_x86_xc_0531\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0531\DLL\DealCIM.dll
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0531\DLL\DealCIM.pdb
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\CIM\UI\CIMMain.g.cs
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\CIM\UI\CIMMain.baml
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0531\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0605\DLL\DealCIM.dll
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0605\DLL\DealCIM.pdb
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.csprojAssemblyReference.cache
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\CIMMain.g.cs
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\CIMMain.baml
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\CIMStatus.g.cs
+E:\项目\设备\厦门友达\宇宏泰CIM\Program\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\CIMStatus.baml
+E:\项目\Gitee\AUO_CIM\YHT_x86_xc_0605\DLL\DealCIM.dll
+E:\项目\Gitee\AUO_CIM\YHT_x86_xc_0605\DLL\DealCIM.pdb
+E:\项目\Gitee\AUO_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\CIMMain.g.cs
+E:\项目\Gitee\AUO_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\CIMStatus.g.cs
+E:\项目\Gitee\AUO_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\项目\Gitee\AUO_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\PostLotWnd.g.cs
+E:\项目\Gitee\AUO_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\项目\Gitee\AUO_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\项目\Gitee\AUO_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\项目\Gitee\AUO_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\CIMMain.baml
+E:\项目\Gitee\AUO_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\CIMStatus.baml
+E:\项目\Gitee\AUO_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\项目\Gitee\AUO_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\项目\Gitee\AUO_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\PostLotWnd.baml
+E:\项目\Gitee\AUO_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\项目\Gitee\AUO_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\项目\Gitee\AUO_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\项目\Gitee\AUO_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+E:\项目\Gitee\AUO_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\项目\Gitee\AUO_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\项目\Gitee\AUO_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\项目\Gitee\AUO_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.csprojAssemblyReference.cache
+E:\项目\Gitee\XM_CIM\YHT_x86_xc_0605\DLL\DealCIM.dll
+E:\项目\Gitee\XM_CIM\YHT_x86_xc_0605\DLL\DealCIM.pdb
+E:\项目\Gitee\XM_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.csprojAssemblyReference.cache
+E:\项目\Gitee\XM_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\CIMMain.g.cs
+E:\项目\Gitee\XM_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\CIMStatus.g.cs
+E:\项目\Gitee\XM_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\项目\Gitee\XM_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\PostLotWnd.g.cs
+E:\项目\Gitee\XM_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\项目\Gitee\XM_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\项目\Gitee\XM_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\项目\Gitee\XM_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\CIMMain.baml
+E:\项目\Gitee\XM_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\CIMStatus.baml
+E:\项目\Gitee\XM_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\项目\Gitee\XM_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\PostLotWnd.baml
+E:\项目\Gitee\XM_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\项目\Gitee\XM_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\项目\Gitee\XM_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\项目\Gitee\XM_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\项目\Gitee\XM_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+E:\项目\Gitee\XM_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\项目\Gitee\XM_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\项目\Gitee\XM_CIM\YHT_x86_xc_0605\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DLL\DealCIM.dll
+E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DLL\DealCIM.pdb
+E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\CIMMain.g.cs
+E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\CIMStatus.g.cs
+E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\PostLotWnd.g.cs
+E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\CIMMain.baml
+E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\CIMStatus.baml
+E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\PostLotWnd.baml
+E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM.g.resources
+E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM.dll
+E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\WndCimMode.g.cs
+E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\WndCimMode.baml
+F:\work\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DLL\DealCIM.dll
+F:\work\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DLL\DealCIM.pdb
+F:\work\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM.csprojAssemblyReference.cache
+F:\work\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\CIMMain.g.cs
+F:\work\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\CIMStatus.g.cs
+F:\work\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+F:\work\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\PostLotWnd.g.cs
+F:\work\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+F:\work\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\WndCimMode.g.cs
+F:\work\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+F:\work\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+F:\work\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\CIMMain.baml
+F:\work\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\CIMStatus.baml
+F:\work\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+F:\work\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\PostLotWnd.baml
+F:\work\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+F:\work\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\WndCimMode.baml
+F:\work\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM.g.resources
+F:\work\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+F:\work\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+F:\work\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+F:\work\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM.dll
+F:\work\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM.pdb
+E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM.csproj.CoreCompileInputs.cache
+D:\InspWithCIM_xc_0716\InspWithCIM_xc_0716\Standard\DLL\DealCIM.dll
+D:\InspWithCIM_xc_0716\InspWithCIM_xc_0716\Standard\DLL\DealCIM.pdb
+D:\InspWithCIM_xc_0716\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\CIMMain.g.cs
+D:\InspWithCIM_xc_0716\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\CIMStatus.g.cs
+D:\InspWithCIM_xc_0716\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.g.cs
+D:\InspWithCIM_xc_0716\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\PostLotWnd.g.cs
+D:\InspWithCIM_xc_0716\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.g.cs
+D:\InspWithCIM_xc_0716\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\WndCimMode.g.cs
+D:\InspWithCIM_xc_0716\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.cache
+D:\InspWithCIM_xc_0716\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM_MarkupCompile.lref
+D:\InspWithCIM_xc_0716\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\CIMMain.baml
+D:\InspWithCIM_xc_0716\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\CIMStatus.baml
+D:\InspWithCIM_xc_0716\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\CIMWnd.baml
+D:\InspWithCIM_xc_0716\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\PostLotWnd.baml
+D:\InspWithCIM_xc_0716\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\PostTrackout.baml
+D:\InspWithCIM_xc_0716\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\CIM\UI\WndCimMode.baml
+D:\InspWithCIM_xc_0716\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM.g.resources
+D:\InspWithCIM_xc_0716\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM.Properties.Resources.resources
+D:\InspWithCIM_xc_0716\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM.csproj.GenerateResource.cache
+D:\InspWithCIM_xc_0716\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM.csproj.CopyComplete
+D:\InspWithCIM_xc_0716\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM.dll
+D:\InspWithCIM_xc_0716\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\DealCIM.pdb

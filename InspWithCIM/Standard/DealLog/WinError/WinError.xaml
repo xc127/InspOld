@@ -1,0 +1,33 @@
+﻿<MetroControls:MetroWindow  x:Class="DealLog.WinError"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:MetroControls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib"
+        xmlns:BasicClass="clr-namespace:BasicClass;assembly=BasicClass"
+        Title="重要信息显示" Height="606" Width="690" WindowStartupLocation="CenterScreen" 
+        BorderBrush="#CC119EDA" BorderThickness="1" ShowMinButton="False" ShowMaxRestoreButton="False" 
+        ResizeMode="NoResize" xmlns:my="clr-namespace:Common;assembly=Common" Foreground="Red" Topmost="false" Closing="MetroWindow_Closing" Visibility="Hidden">
+    <Window.Resources >
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid Background="Red">
+        <Grid.ColumnDefinitions>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+
+        </Grid.RowDefinitions>
+        <TextBlock Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="Black" Name="txtBError" TextWrapping="Wrap" FontSize="28" Background="Red">
+
+        </TextBlock>
+
+    </Grid>
+</MetroControls:MetroWindow >

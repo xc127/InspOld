@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root Name="数据备份" IsExpanded="true">
+  <Title Name="相机综合设置1" IsExpanded="true"/>
+  <Title Name="相机综合设置2" IsExpanded="true"/>
+  <Title Name="相机综合设置3" IsExpanded="true"/>
+  <Title Name="相机综合设置4" IsExpanded="true"/>
+  <Title Name="相机综合设置5" IsExpanded="true"/>
+  <Title Name="相机综合设置6" IsExpanded="true"/>
+  
+  <Title Name="产品参数" IsExpanded="true"/>
+
+  <Title Name="调整值参数" IsExpanded="true"/>
+
+  <Title Name="基准值参数" IsExpanded="true"/>
+
+  <Title Name="相机参数" IsExpanded="true"/>
+
+  <Title Name="PLC参数" IsExpanded="true"/>
+
+  <Title Name="Robot参数" IsExpanded="true"/>
+
+  <Title Name="系统设置参数" IsExpanded="true"/>
+</Root>

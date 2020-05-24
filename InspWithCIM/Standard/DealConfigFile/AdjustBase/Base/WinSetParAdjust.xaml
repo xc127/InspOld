@@ -1,0 +1,68 @@
+﻿<BasicClass:BaseMetroWindow x:Class="DealConfigFile.WinSetParAdjust"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib"
+             xmlns:BasicClass="clr-namespace:BasicClass;assembly=BasicClass"
+             xmlns:assembly="clr-namespace:System;assembly=mscorlib"
+             xmlns:MetroControls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             xmlns:DealConfigFile="clr-namespace:DealConfigFile"
+             mc:Ignorable="d" 
+             Width="700" Title="设置调整值参数" Height="400" WindowStartupLocation="CenterScreen" ShowMinButton="False" ShowMaxRestoreButton="False" ShowCloseButton="False">
+    <Window.Resources >
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <ObjectDataProvider x:Key="Increment" MethodName="GetValues" 
+                            ObjectType="{x:Type assembly:Enum}">
+                <ObjectDataProvider.MethodParameters>
+                    <x:Type Type="DealConfigFile:TypeIncrement_e"/>
+                </ObjectDataProvider.MethodParameters>
+            </ObjectDataProvider>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <ControlLib:NGroupBox Header="设置调整值参数" HorizontalAlignment="Stretch" Margin="0,2" Name="gpbAdjust" TitleBrush="#FF00D1E5" VerticalAlignment="Stretch">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <DataGrid AllowDrop="True" AreRowDetailsFrozen="True" AutoGenerateColumns="False" Background="White" CanUserAddRows="False" CanUserResizeColumns="False" CanUserSortColumns="False" FontSize="14" GridLinesVisibility="All" IsReadOnly="false" ItemsSource="{Binding}" Name="dgSetAdjust" SelectionUnit="FullRow" VerticalAlignment="Stretch" BorderThickness="1" Grid.ColumnSpan="2" Margin="1">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding No}" Header="序号" Width="45" />
+                        <DataGridTextColumn Binding="{Binding Type}" Header="数据类型" Width="80" IsReadOnly="true"/>
+                        <DataGridTextColumn Binding="{Binding Name}" Header="名称" Width="100" />
+                        <DataGridComboBoxColumn TextBinding="{Binding StrIncrement}"  ItemsSource="{Binding Source={StaticResource Increment}}" Header="小数点位数" Width="70" />
+                        <DataGridTextColumn Binding="{Binding Min}" Header="最小值" Width="95" />
+                        <DataGridTextColumn Binding="{Binding Max}" Header="最大值" Width="95" />
+                        <DataGridCheckBoxColumn Binding="{Binding Worker}" Header="技术员权限" Width="90" />
+                        <DataGridCheckBoxColumn Binding="{Binding Engineer}" Header="工程师权限" Width="90" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <ControlLib:ButtonColor Background="#FF66FFFF" Content="保  存" FontSize="14" Height="30" HorizontalAlignment="Center" Margin="0" Name="btnSave" ToolTip="" VerticalAlignment="Center" WAuthority="False" Width="90" Grid.Row="2" Click="btnSave_Click" />
+                <ControlLib:ButtonColor Background="#FF66FFFF" Content="退  出" FontSize="14" Height="30" HorizontalAlignment="Center" Margin="0" Name="btnClose" ToolTip="" VerticalAlignment="Center" WAuthority="False" Width="90" Grid.Column="1" Grid.Row="2" Click="btnClose_Click" />
+                <Grid  HorizontalAlignment="Stretch" Margin="0" Name="grid1" VerticalAlignment="Stretch" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="68*" />
+                        <ColumnDefinition Width="226*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Content="标题名称:" Height="28" HorizontalAlignment="Stretch" Margin="0" Name="label1" VerticalAlignment="Stretch" />
+                    <TextBox Grid.Column="1" Height="32" HorizontalAlignment="Stretch" Margin="1" Name="txtTitle" VerticalAlignment="Stretch" BorderBrush="#CC119EDA" FontSize="14" MetroControls:TextBoxHelper.ClearTextButton="True"/>
+                </Grid>
+            </Grid>
+        </ControlLib:NGroupBox>
+    </Grid>
+</BasicClass:BaseMetroWindow>

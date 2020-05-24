@@ -1,0 +1,662 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BasicComprehensive</name>
+    </assembly>
+    <members>
+        <member name="F:BasicComprehensive.BaseComprehensive.g_AuthorityCtr_L">
+            <summary>
+            设置权限
+            </summary>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensive.GetVersion">
+            <summary>
+            获取版本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:BasicComprehensive.BaseComprehensive.PathRoot">
+            <summary>
+            根路径,按照型号名为根目录
+            </summary>
+        </member>
+        <member name="P:BasicComprehensive.BaseComprehensive.PathComprehensive">
+            <summary>
+            /参数保存的路径，按照不同的配置文件进行保存
+            </summary>
+        </member>
+        <member name="P:BasicComprehensive.BaseComprehensive.PathComprehensiveOld">
+            <summary>
+            旧文件路径，用作参数复制时提供旧文件路径
+            </summary>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensive.Init(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            对参数进行初始化
+            </summary>
+            <param name="typeParent"></param>
+            <param name="typeChild"></param>
+            <param name="nameCell"></param>
+            <param name="pos"></param>
+            <param name="noCamera"></param>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensive.ChangeClonePar(System.String,System.Int32)">
+            <summary>
+            改变拷贝后单元应有的参数
+            </summary>
+            <param name="nameCell">单元名称</param>
+            <param name="pos">位置数</param>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensive.ReadXmlInit">
+            <summary>
+            初始化读取参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensive.ReadBasicAttribute(System.Xml.XmlElement)">
+            <summary>
+            读取基础属性
+            </summary>
+            <param name="xeRoot"></param>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensive.ReadXmlChildInit(System.Xml.XmlElement)">
+            <summary>
+            初始化读取参数，和ReadXmlChild方法相比，只是不读取基础属性
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensive.ReadXmlChild(System.Xml.XmlElement)">
+            <summary>
+            读取子元素的参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensive.ReadXmlPar(System.Xml.XmlElement)">
+            <summary>
+            读取算法参数
+            </summary>
+            <param name="xeRoot">算法参数根节点</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensive.ReadBasicPar(System.Xml.XmlElement)">
+            <summary>
+            读取基础参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensive.ReadAuthority(System.Xml.XmlElement)">
+            <summary>
+            读取权限
+            </summary>
+            <param name="xeRoot"></param>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensive.WriteBasicAttribute(System.Xml.XmlElement)">
+            <summary>
+            写入基础属性
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensive.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            写入算法参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensive.WriteBasicPar(System.Xml.XmlElement)">
+            <summary>
+            写入基础参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensive.WriteXmlRoot">
+            <summary>
+            Strange读取完整节点并获取参数的根节点
+            </summary>
+            <returns>根节点</returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensive.WriteAuthority(System.Xml.XmlElement)">
+            <summary>
+            写入权限设置
+            </summary>
+            <param name="xeRoot"></param>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensive.WriteXmlDefault">
+            <summary>
+            Stream读取完整节点并保存到默认值文件
+            </summary>
+            <returns>根节点</returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensive.StringConvertToDoubleArray(System.String,System.Char)">
+            <summary>
+            字符串转数组
+            </summary>
+            <param name="strValue">分隔符</param>
+            <param name="chr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensive.StringConvertToDoubleArray(System.String,System.Char,System.Int32)">
+            <summary>
+            字符串转数组，20190112-zx
+            </summary>
+            <param name="strValue">字符串</param>
+            <param name="chr">分隔符</param>
+            <param name="sum">数组长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensive.DoubleArrayConvertToString(System.Double[])">
+            <summary>
+            数组转字符串
+            </summary>
+            <param name="dblValue"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BasicComprehensive.AuthorityCtr">
+            <summary>
+            调整参数时，每个控件的权限
+            </summary>
+        </member>
+        <member name="P:BasicComprehensive.AuthorityCtr.No">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="F:BasicComprehensive.AuthorityCtr.name">
+            <summary>
+            控件名称
+            </summary>
+        </member>
+        <member name="F:BasicComprehensive.AuthorityCtr.type">
+            <summary>
+            控件类型
+            </summary>
+        </member>
+        <member name="F:BasicComprehensive.AuthorityCtr.worker">
+            <summary>
+            权限
+            </summary>
+        </member>
+        <member name="F:BasicComprehensive.AuthorityCtr.annotation">
+            <summary>
+            注释说明
+            </summary>
+        </member>
+        <member name="T:BasicComprehensive.BaseImageComprehensive">
+            <summary>
+            图像处理综合处理基类
+            </summary>
+        </member>
+        <member name="P:BasicComprehensive.BaseImageComprehensive.ResultHObject_L">
+            <summary>
+            输出数据结果列表
+            </summary>
+        </member>
+        <member name="M:BasicComprehensive.BaseImageComprehensive.SortResultHObjectNo(System.Collections.Generic.List{BasicComprehensive.HObjectReference})">
+            <summary>
+            对结果列表进行排序
+            </summary>
+        </member>
+        <member name="T:BasicComprehensive.HObjectReference">
+            <summary>
+            结果参考类
+            </summary>
+        </member>
+        <member name="P:BasicComprehensive.HObjectReference.Name">
+            <summary>
+            名称包含了函数名称+图像名称
+            </summary>
+        </member>
+        <member name="T:BasicComprehensive.CellHObjectReference">
+            <summary>
+            创建图像和数据关联单元
+            </summary>
+        </member>
+        <member name="T:BasicComprehensive.ParComResult">
+            <summary>
+            通用结果
+            </summary>
+        </member>
+        <member name="P:BasicComprehensive.ParComResult.NameCellComResult">
+            <summary>
+            通用结果
+            </summary>
+        </member>
+        <member name="M:BasicComprehensive.BaseUCComprehensive.FindVisualChild``1(System.Windows.DependencyObject)">
+            <summary>
+            利用visualtreehelper寻找对象的子级对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BasicComprehensive.BaseUCComprehensive.PathRoot">
+            <summary>
+            根路径,按照型号名为根目录
+            </summary>
+        </member>
+        <member name="M:BasicComprehensive.BaseUCComprehensive.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:BasicComprehensive.BaseUCComprehensive.Init_ImEnbale(System.Windows.Controls.Image)">
+            <summary>
+            显示使能控件按钮
+            </summary>
+        </member>
+        <member name="M:BasicComprehensive.BaseUCComprehensive.ShowCellData(BasicComprehensive.BaseComprehensive)">
+            <summary>
+            显示数据关联单元
+            </summary>
+            <param name="baseComprehensive"></param>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensiveXml.LoadXmlStream(System.String)">
+            <summary>
+            加载资源中的Xml文档
+            </summary>
+            <param name="Path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensiveXml.LoadXmlStream(System.String,System.String)">
+            <summary>
+            加载本地或者资源中的Xml文档
+            </summary>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensiveXml.ReadNode(System.Xml.XmlElement,System.String)">
+            <summary>
+            从根节点读取节点
+            </summary>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensiveXml.ReadNode(System.Xml.XmlDocument,System.String)">
+            <summary>
+            从文档中读取节点
+            </summary>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensiveXml.ReadNodeInt(System.Xml.XmlElement,System.String)">
+            <summary>
+            读取节点中Int型
+            </summary>
+            <param name="xeRoot"></param>
+            <param name="strChild"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensiveXml.ReadNodeDbl(System.Xml.XmlElement,System.String)">
+            <summary>
+            读取节点中的double型
+            </summary>
+            <param name="xeRoot"></param>
+            <param name="strChild"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensiveXml.ReadNodeStr(System.Xml.XmlElement,System.String)">
+            <summary>
+            读取节点中的string型
+            </summary>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensiveXml.ReadNodeEnum(System.Xml.XmlElement)">
+            <summary>
+            读取enum型变量
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensiveXml.ReadNodeBl(System.Xml.XmlElement,System.String)">
+            <summary>
+            读取double型变量
+            </summary>
+            <param name="xeRoot"></param>
+            <param name="strChild"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensiveXml.ReadAttributeStr(System.Xml.XmlElement,System.String)">
+            <summary>
+            读取string型属性
+            </summary>
+            <param name="xeRoot"></param>
+            <param name="attribute"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensiveXml.ReadAttributeInt(System.Xml.XmlElement,System.String)">
+            <summary>
+            读取int型变量
+            </summary>
+            <param name="xeRoot"></param>
+            <param name="attribute"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensiveXml.ReadAttributeDbl(System.Xml.XmlElement,System.String)">
+            <summary>
+            读取double型变量
+            </summary>
+            <param name="xeRoot"></param>
+            <param name="attribute"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensiveXml.ReadAttributeBl(System.Xml.XmlElement,System.String)">
+            <summary>
+            bool型属性
+            </summary>
+            <param name="xeRoot"></param>
+            <param name="attribute"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensiveXml.ReadAttributeEnum(System.Xml.XmlElement,System.String)">
+            <summary>
+            读取Enum型属性
+            </summary>
+            <param name="xeRoot"></param>
+            <param name="attribute"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensiveXml.CreateNewXe(System.Xml.XmlElement,System.String)">
+            <summary>
+            在根节点中创建新的子节点
+            </summary>
+            <param name="xeRoot"></param>
+            <param name="child"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensiveXml.InnerText(System.Xml.XmlDocument,System.String,System.String)">
+            <summary>
+            对文档插入节点并写入value
+            </summary>
+            <param name="xDoc"></param>
+            <param name="strChild"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensiveXml.WriteAttribute(System.Xml.XmlElement,System.String,System.String)">
+            <summary>
+            写入属性
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <param name="attribute">属性名称</param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensiveXml.WriteChildAttribute(System.Xml.XmlElement,System.String,System.String,System.String)">
+            <summary>
+            写入根节点下子节点的属性
+            </summary>
+            <param name="xeRoot"></param>
+            <param name="child"></param>
+            <param name="attribute"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.BaseComprehensiveXml.WriteNewChildAttribute(System.Xml.XmlElement,System.String,System.String,System.String)">
+            <summary>
+            创建根节点下新的子节点，并写入属性
+            </summary>
+            <param name="xeRoot"></param>
+            <param name="child"></param>
+            <param name="attribute"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BasicComprehensive.WinCellExeReference">
+            <summary>
+            WinExeCellReference.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinCellExeReference
+            </summary>
+        </member>
+        <member name="M:BasicComprehensive.WinCellExeReference.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:BasicComprehensive.CellReference">
+            <summary>
+            创建图像和数据关联单元
+            </summary>
+        </member>
+        <member name="M:BasicComprehensive.CellReference.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            写入参数
+            </summary>
+        </member>
+        <member name="M:BasicComprehensive.CellReference.WriteXmlRoot(System.Xml.XmlElement,System.String)">
+            <summary>
+            重新命名
+            </summary>
+            <param name="xeRoot"></param>
+            <param name="child"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.CellReference.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            读取参数
+            </summary>
+        </member>
+        <member name="M:BasicComprehensive.CellReference.ReadXmlRoot(System.Xml.XmlElement,System.String)">
+            <summary>
+            重新命名
+            </summary>
+            <param name="xeRoot"></param>
+            <param name="child"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BasicComprehensive.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:BasicComprehensive.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:BasicComprehensive.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="T:BasicComprehensive.WinSetAuthorityCtr">
+            <summary>
+            UCSetParAdjust.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinSetAuthorityCtr
+            </summary>
+        </member>
+        <member name="M:BasicComprehensive.WinSetAuthorityCtr.btnSave_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            将修改后的参数保存到本地
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BasicComprehensive.WinSetAuthorityCtr.ShowPar">
+            <summary>
+            显示参数
+            </summary>
+        </member>
+        <member name="M:BasicComprehensive.WinSetAuthorityCtr.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:BasicComprehensive.ParCellExeReference.NameCellExecute_L">
+            <summary>
+            关联单元列表单元格名称     
+            </summary>
+        </member>
+        <member name="M:BasicComprehensive.ParCellExeReference.ReadXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            初始化加载的时候读取根元素     
+            </summary>
+            <param name="xDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.ParCellExeReference.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            记载整个配置文件的时候，读取参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.ParCellExeReference.ReadXmlRoot(System.Xml.XmlElement,System.String)">
+            <summary>
+            根据名称读取子节点
+            </summary>
+            <param name="xeRoot"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.ParCellExeReference.ReadXmlPar(System.Xml.XmlElement)">
+            <summary>
+            读取算法参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.ParCellExeReference.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            写入Xml
+            </summary>
+        </member>
+        <member name="M:BasicComprehensive.ParCellExeReference.WriteXmlRoot(System.Xml.XmlElement,System.String)">
+            <summary>
+            写入指定名称的，子节点
+            </summary>
+            <param name="xeRoot"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.ParCellExeReference.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            算法参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BasicComprehensive.UCCellExeReference">
+            <summary>
+            UCCellExecuteReference.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCCellExeReference
+            </summary>
+        </member>
+        <member name="M:BasicComprehensive.UCCellExeReference.Init(BasicComprehensive.ParCellExeReference,System.Collections.Generic.List{BasicComprehensive.CellReference})">
+            <summary>
+            
+            </summary>
+            <param name="par">选择执行的单元格</param>
+            <param name="cellData_L">所有单元格</param>
+        </member>
+        <member name="M:BasicComprehensive.UCCellExeReference.Init(BasicComprehensive.ParCellExeReference,System.Collections.Generic.List{BasicComprehensive.CellReference},System.Int32,System.Collections.Hashtable)">
+            <summary>
+            20181129-zx
+            </summary>
+            <param name="par">选择执行的单元格</param>
+            <param name="cellData_L">所有单元格</param>
+        </member>
+        <member name="M:BasicComprehensive.UCCellExeReference.Init(BasicComprehensive.ParCellExeReference,System.Collections.Generic.List{BasicComprehensive.CellReference},System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="par"></param>
+            <param name="cellData_L"></param>
+            <param name="noPos">位置参数</param>
+        </member>
+        <member name="M:BasicComprehensive.UCCellExeReference.rdoAll_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            全选20181130-zx
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BasicComprehensive.UCCellExeReference.rdoReverse_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            反选
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BasicComprehensive.UCCellExeReference.rdoNull_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            全不选
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BasicComprehensive.UCCellExeReference.rdoSamePos_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            选择同一拍照位置的单元
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BasicComprehensive.UCCellExeReference.CheckCellList">
+            <summary>
+            确认列表单元是否正确
+            </summary>
+        </member>
+        <member name="M:BasicComprehensive.UCCellExeReference.GetCellByNoCamera(System.Int32)">
+            <summary>
+            根据相机
+            </summary>
+            <param name="noCamera"></param>
+        </member>
+        <member name="M:BasicComprehensive.UCCellExeReference.dgCellReference_GotFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            通过判断是否点击，在鼠标离开的时候进行保存
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BasicComprehensive.UCCellExeReference.Save">
+            <summary>
+            保存需要显示的项目，按照勾选项保存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BasicComprehensive.UCCellExeReference.RefreshDgCellReference">
+            <summary>
+            刷新数据列表
+            </summary>
+        </member>
+        <member name="M:BasicComprehensive.UCCellExeReference.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

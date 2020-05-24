@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root Name="设置机器人" IsExpanded="true"> 
+  <Title Name="机器人类型" IsExpanded="false">
+   
+  </Title>
+
+  <Title Name="机器人控制设定" IsExpanded="true">
+  </Title>
+  
+  <Title Name="机器人数据范围" IsExpanded="true">    
+  </Title>
+</Root>

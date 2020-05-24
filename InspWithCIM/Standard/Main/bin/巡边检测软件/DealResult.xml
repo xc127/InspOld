@@ -1,0 +1,1048 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DealResult</name>
+    </assembly>
+    <members>
+        <member name="T:DealResult.BaseUCResultRegion">
+            <summary>
+            BaseUCResultRegion.xaml 的交互逻辑
+            </summary>
+            <summary>
+            BaseUCResultRegion
+            </summary>
+        </member>
+        <member name="M:DealResult.BaseUCResult.SetComResult(DealResult.BaseResult)">
+            <summary>
+            将对应的结果内容显示
+            </summary>
+            <param name="baseResult"></param>
+        </member>
+        <member name="M:DealResult.BaseUCResult.ShowTypeResult">
+            <summary>
+            显示结果类型
+            </summary>
+        </member>
+        <member name="M:DealResult.BaseUCResult.TrriggerResultSelect(DealResult.BaseResult,DealResult.BaseResult,System.Int32)">
+            <summary>
+            列表类
+            </summary>
+            <param name="result"></param>
+            <param name="resultSingle"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:DealResult.BaseUCResult.TrriggerResultSelect(DealResult.BaseResult)">
+            <summary>
+            非列表类
+            </summary>
+            <param name="result"></param>
+        </member>
+        <member name="M:DealResult.BaseUCResult.ShowTitleByCoord(System.Int32)">
+            <summary>
+            根据坐标轴方向，显示标题
+            </summary>
+        </member>
+        <member name="M:DealResult.BaseUCResultRegion.dgRegion_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择某一行的数据进行显示
+            </summary>
+        </member>
+        <member name="M:DealResult.BaseUCResultRegion.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealResult.BaseResultHObject">
+            <summary>
+            基础包含Hobject结果
+            </summary>
+        </member>
+        <member name="F:DealResult.BaseResult.XAssist_L">
+            <summary>
+            辅助十字
+            </summary>
+        </member>
+        <member name="M:DealResult.BaseResult.SetSingle">
+            <summary>
+            给单个的结果赋值List的首项
+            </summary>
+        </member>
+        <member name="M:DealResult.BaseResult.SetDefault">
+            <summary>
+            没有求出时，默认都是0
+            </summary>
+        </member>
+        <member name="M:DealResult.BaseResult.Clear">
+            <summary>
+            清空
+            </summary>
+        </member>
+        <member name="P:DealResult.BaseResult.ResultReference_L">
+            <summary>
+            所有结果
+            </summary>
+        </member>
+        <member name="P:DealResult.BaseResult.ResultCoordReference_L">
+            <summary>
+            坐标结果
+            </summary>
+        </member>
+        <member name="P:DealResult.BaseResult.ResultValueCom_L">
+            <summary>
+            添加通用输出结果
+            </summary>
+        </member>
+        <!-- 对于成员“M:DealResult.BaseResultHObject.AddResultHObject(System.String,System.String,HalconDotNet.HObject,System.String,System.String)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:DealResult.BaseResultHObject.AddResultHObject_Record(System.String,System.String,HalconDotNet.HObject,System.Int32,System.Int32)”忽略有格式错误的 XML 注释 -->
+        <member name="M:DealResult.BaseResultHObject.Dispose">
+            <summary>
+            释放图像资源
+            </summary>
+        </member>
+        <member name="M:DealResult.BaseResultImageProcess.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:DealResult.BaseResultRegion.SetSingle">
+            <summary>
+            给单个的结果赋值List的首项
+            </summary>
+        </member>
+        <member name="M:DealResult.BaseResultRegion.SetDefault">
+            <summary>
+            没有求出时，默认都是0
+            </summary>
+        </member>
+        <member name="P:DealResult.BaseResultRegion.ResultReference_L">
+            <summary>
+            输出数据结果列表
+            </summary>
+        </member>
+        <member name="M:DealResult.BaseResultMatch.SetSingle">
+            <summary>
+            给单个的结果赋值List的首项
+            </summary>
+        </member>
+        <member name="M:DealResult.BaseResultMatch.SetDefault">
+            <summary>
+            没有求出时，默认都是0
+            </summary>
+        </member>
+        <member name="M:DealResult.BaseResultMatch.AddRect2(System.String,System.String,System.Double)">
+            <summary>
+            按照结果把包络添加进去
+            </summary>
+            <param name="colorLine"></param>
+            <param name="typeFill"></param>
+            <param name="thickness"></param>
+        </member>
+        <member name="M:DealResult.ResultSharpness.SetSingle">
+            <summary>
+            给单个的结果赋值List的首项
+            </summary>
+        </member>
+        <member name="M:DealResult.ResultSharpness.SetDefault">
+            <summary>
+            没有求出时，默认都是0
+            </summary>
+        </member>
+        <member name="M:DealResult.BaseResultEdge.SetSingle">
+            <summary>
+            给单个的结果赋值List的首项
+            </summary>
+        </member>
+        <member name="T:DealResult.UCResultCircle">
+            <summary>
+            UCResultCircle.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCResultCircle
+            </summary>
+        </member>
+        <member name="M:DealResult.UCResultCircle.dgRegion_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择某一行的数据进行显示
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealResult.UCResultCircle.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealResult.UCResultSingleLineGeo">
+            <summary>
+            UCResultSingleLineGeo.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCResultSingleLineGeo
+            </summary>
+        </member>
+        <member name="M:DealResult.UCResultSingleLineGeo.TransformResult(DealResult.BaseResult)">
+            <summary>
+            将算法产生的结果，分解到集合用来显示
+            </summary>
+            <param name="resultBase_L"></param>
+        </member>
+        <member name="M:DealResult.UCResultSingleLineGeo.dgResult_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择某一行的数据进行显示
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealResult.UCResultSingleLineGeo.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:DealResult.ResultStd.ResultReference_L">
+            <summary>
+            输出数据结果列表
+            </summary>
+        </member>
+        <member name="T:DealResult.UCResultCalibCameraAffine">
+            <summary>
+            UCResultCalibCameraAffine.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCResultCalibCameraAffine
+            </summary>
+        </member>
+        <member name="M:DealResult.UCResultCalibCameraAffine.ShowHomo(System.Boolean)">
+            <summary>
+            是否是齐次校准
+            </summary>
+            <param name="blHome"></param>
+        </member>
+        <member name="M:DealResult.UCResultCalibCameraAffine.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealResult.RecordResult">
+            <summary>
+            结果记录类
+            </summary>
+        </member>
+        <member name="T:DealResult.LevelError_enum">
+            错误等级
+        </member>
+        <member name="T:DealResult.TypeErrorProcess_enum">
+            处理错误类型
+        </member>
+        <member name="M:DealResult.ResultPreProcess.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="T:DealResult.UCResultStraightLine">
+            <summary>
+            Edge.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCResultStraightLine
+            </summary>
+        </member>
+        <member name="M:DealResult.UCResultStraightLine.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealResult.UCResultDisLine">
+            <summary>
+            UCResultDisLine.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCResultDisLine
+            </summary>
+        </member>
+        <member name="M:DealResult.UCResultDisLine.TransformResult(DealResult.BaseResult)">
+            <summary>
+            将算法产生的结果，分解到集合用来显示
+            </summary>
+            <param name="resultBase"></param>
+        </member>
+        <member name="M:DealResult.UCResultDisLine.dgResult_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择某一行的数据进行显示
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealResult.UCResultDisLine.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealResult.ResultColorDecompose.Dispose">
+            <summary>
+            释放图像资源
+            </summary>
+        </member>
+        <member name="M:DealResult.ResultSingleLine.SetSingle">
+            <summary>
+            给单个的结果赋值List的首项
+            </summary>
+        </member>
+        <member name="T:DealResult.UCResultTwoLinesGeo">
+            <summary>
+            UIResultLine.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCResultTwoLinesGeo
+            </summary>
+        </member>
+        <member name="M:DealResult.UCResultTwoLinesGeo.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:DealResult.BaseResultOCR.ResultReference_L">
+            <summary>
+            输出数据结果列表
+            </summary>
+        </member>
+        <member name="T:DealResult.UCResultCalibHandEye">
+            <summary>
+            UCResultHandEye.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCResultCalibHandEye
+            </summary>
+        </member>
+        <member name="M:DealResult.UCResultCalibHandEye.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealResult.ResultMeasureSLine.SetSingle">
+            <summary>
+            给单个的结果赋值List的首项
+            </summary>
+        </member>
+        <member name="M:DealResult.ResultMeasureSLine.SetDefault">
+            <summary>
+            没有求出时，默认都是0
+            </summary>
+        </member>
+        <member name="M:DealResult.ResultMeasureSLine.CopyDisplay">
+            <summary>
+            将集合的绘制拷贝
+            </summary>
+        </member>
+        <member name="P:DealResult.ResultMeasureSLine.Range">
+            <summary>
+            幅度
+            </summary>
+        </member>
+        <member name="P:DealResult.ResultMeasureSLine.Distance">
+            <summary>
+            距离
+            </summary>
+        </member>
+        <member name="P:DealResult.ResultMeasureSLine.Adjust">
+            <summary>
+            距离补偿值
+            </summary>
+        </member>
+        <member name="P:DealResult.ResultMeasureSLine.ResultReference_L">
+            <summary>
+            输出数据结果列表
+            </summary>
+        </member>
+        <member name="P:DealResult.ResultAdjust.ResultReference_L">
+            <summary>
+            输出数据结果列表
+            </summary>
+        </member>
+        <member name="M:DealResult.ResultCalibImage.Dispose">
+            <summary>
+            释放图像资源
+            </summary>
+        </member>
+        <member name="T:DealResult.BaseUCPreImageProcess">
+            <summary>
+            BaseUCPreImageProcess.xaml 的交互逻辑
+            </summary>
+            <summary>
+            BaseUCPreImageProcess
+            </summary>
+        </member>
+        <member name="M:DealResult.BaseUCPreImageProcess.TransformResult(DealResult.BaseResult)">
+            <summary>
+            将算法产生的结果，分解到集合用来显示
+            </summary>
+            <param name="resultBase_L"></param>
+        </member>
+        <member name="M:DealResult.BaseUCPreImageProcess.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealResult.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:DealResult.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:DealResult.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="T:DealResult.UIBaseResultMathCal">
+            <summary>
+            UIBaseResultMathCal.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UIBaseResultMathCal
+            </summary>
+        </member>
+        <member name="M:DealResult.UIBaseResultMathCal.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealResult.UCResultGrayAnalyze">
+            <summary>
+            UCResultGrayAnalyze.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCResultGrayAnalyze
+            </summary>
+        </member>
+        <member name="M:DealResult.UCResultGrayAnalyze.TransformResult(DealResult.BaseResult)">
+            <summary>
+            将算法产生的结果，分解到集合用来显示
+            </summary>
+            <param name="resultBase"></param>
+        </member>
+        <member name="M:DealResult.UCResultGrayAnalyze.dgResult_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择某一行的数据进行显示
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealResult.UCResultGrayAnalyze.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealResult.ResultGrayAnalyze.SetSingle">
+            <summary>
+            给单个的结果赋值List的首项
+            </summary>
+        </member>
+        <member name="M:DealResult.ResultGrayAnalyze.SetDefault">
+            <summary>
+            没有求出时，默认都是0
+            </summary>
+        </member>
+        <member name="T:DealResult.ParLogResultValue">
+            <summary>
+            设置需要显示的数据结果
+            </summary>
+        </member>
+        <member name="M:DealResult.ParLogResultValue.ReadXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            从资源文档中读取参数
+            </summary>
+            <param name="xDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealResult.ParLogResultValue.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            从本地文档读取参数的时候，读取
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:DealResult.ParLogResultValue.ReadXmlPar(System.Xml.XmlElement)">
+            <summary>
+            读取算法参数
+            </summary>
+            <param name="xeRoot">算法参数根节点</param>
+            <returns>成功</returns>
+        </member>
+        <member name="M:DealResult.ParLogResultValue.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            从Stream资源读取完整节点后，写入参数
+            </summary>
+            <param name="xDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealResult.ParLogResultValue.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            该算法参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealResult.ResultMultImage.Dispose">
+            <summary>
+            释放图像资源
+            </summary>
+        </member>
+        <member name="M:DealResult.ResultAffineImage.Dispose">
+            <summary>
+            释放图像资源
+            </summary>
+        </member>
+        <member name="M:DealResult.BaseParResult.WriteXmlDefault">
+            <summary>
+            将参数保存到默认值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealResult.BaseParResult.WriteXmlRoot">
+            <summary>
+            写入参数并获取参数的根节点
+            </summary>
+            <returns>根节点</returns>
+        </member>
+        <member name="M:DealResult.ResultBinary.Dispose">
+            <summary>
+            释放图像资源
+            </summary>
+        </member>
+        <member name="T:DealResult.UCResultMeasureSLine">
+            <summary>
+            UCResultMeasureSLine.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCResultMeasureSLine
+            </summary>
+        </member>
+        <member name="M:DealResult.UCResultMeasureSLine.dgResult_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择某一行的数据进行显示
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealResult.UCResultMeasureSLine.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealResult.UCResultSharpness">
+            <summary>
+            UCResultSharpness.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCResultSharpness
+            </summary>
+        </member>
+        <member name="M:DealResult.UCResultSharpness.TransformResult(DealResult.BaseResult)">
+            <summary>
+            将算法产生的结果，分解到集合用来显示
+            </summary>
+            <param name="resultBase"></param>
+        </member>
+        <member name="M:DealResult.UCResultSharpness.dgResult_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择某一行的数据进行显示
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealResult.UCResultSharpness.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealResult.BaseUCResultMatchTMCrossLines">
+            <summary>
+            UCResultCrossLine.xaml 的交互逻辑
+            </summary>
+            <summary>
+            BaseUCResultMatchTMCrossLines
+            </summary>
+        </member>
+        <member name="M:DealResult.BaseUCResultMatchTMCrossLines.TransformResult(DealResult.BaseResult)">
+            <summary>
+            将算法产生的结果，分解到集合用来显示
+            </summary>
+        </member>
+        <member name="M:DealResult.BaseUCResultMatchTMCrossLines.dgCrossLines_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择某一行的数据进行显示
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealResult.BaseUCResultMatchTMCrossLines.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealResult.ResultMCircle.SetSingle">
+            <summary>
+            给单个的结果赋值List的首项
+            </summary>
+        </member>
+        <member name="T:DealResult.WinSetIndex">
+            <summary>
+            WinSetIndex.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinSetIndex
+            </summary>
+        </member>
+        <member name="M:DealResult.WinSetIndex.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealResult.ResultGrayMorpho.Dispose">
+            <summary>
+            释放图像资源
+            </summary>
+        </member>
+        <member name="M:DealResult.ResultMeasureCircle.SetSingle">
+            <summary>
+            给单个的结果赋值List的首项
+            </summary>
+        </member>
+        <member name="M:DealResult.ResultMeasureCircle.SetDefault">
+            <summary>
+            没有求出时，默认都是0
+            </summary>
+        </member>
+        <member name="M:DealResult.ResultMeasureCircle.CopyDisplay">
+            <summary>
+            将集合的绘制拷贝
+            </summary>
+        </member>
+        <member name="P:DealResult.ResultMeasureCircle.ResultReference_L">
+            <summary>
+            输出数据结果列表
+            </summary>
+        </member>
+        <member name="T:DealResult.ResultMainShow">
+            <summary>
+            在Main里面主动添加，用来显示 添加20181212-zx
+            </summary>
+        </member>
+        <member name="T:DealResult.UCResultMCircle">
+            <summary>
+            Edge.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCResultMCircle
+            </summary>
+        </member>
+        <member name="M:DealResult.UCResultMCircle.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealResult.UCResultCalibRobot">
+            <summary>
+            UCResultCalibRobot.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCResultCalibRobot
+            </summary>
+        </member>
+        <member name="M:DealResult.UCResultCalibRobot.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealResult.UCResultCrossLines">
+            <summary>
+            UCResultCrossLine.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCResultCrossLines
+            </summary>
+        </member>
+        <member name="M:DealResult.UCResultCrossLines.TransformResult(DealResult.BaseResult)">
+            <summary>
+            将算法产生的结果，分解到集合用来显示
+            </summary>
+        </member>
+        <member name="M:DealResult.UCResultCrossLines.dgCrossLines_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择某一行的数据进行显示
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealResult.UCResultCrossLines.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealResult.BaseResultTwoLinesGeo.SetSingle">
+            <summary>
+            给单个的结果赋值List的首项
+            </summary>
+        </member>
+        <member name="T:DealResult.UCResultCalibRotate">
+            <summary>
+            UCResultCalibRotate.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCResultCalibRotate
+            </summary>
+        </member>
+        <member name="M:DealResult.UCResultCalibRotate.TransformResult(DealResult.BaseResult)">
+            <summary>
+            将算法产生的结果，分解到集合用来显示
+            </summary>
+            <param name="resultBase"></param>
+        </member>
+        <member name="M:DealResult.UCResultCalibRotate.dgResult_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择某一行的数据进行显示
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealResult.UCResultCalibRotate.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealResult.UCResultCalibCamera">
+            <summary>
+            UCResultCalibCamera.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCResultCalibCamera
+            </summary>
+        </member>
+        <member name="M:DealResult.UCResultCalibCamera.ShowHomo(System.Boolean)">
+            <summary>
+            是否是齐次校准
+            </summary>
+            <param name="blHome"></param>
+        </member>
+        <member name="M:DealResult.UCResultCalibCamera.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:DealResult.ResultPLCAxis.ResultReference_L">
+            <summary>
+            输出数据结果列表
+            </summary>
+        </member>
+        <member name="T:DealResult.TypeResult">
+            <summary>
+            TypeLocation.xaml 的交互逻辑
+            </summary>
+            <summary>
+            TypeResult
+            </summary>
+        </member>
+        <member name="M:DealResult.TypeResult.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealResult.ResultEmphasize.Dispose">
+            <summary>
+            释放图像资源
+            </summary>
+        </member>
+        <member name="T:DealResult.WinDataStorage">
+            <summary>
+            WinDataStorage.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinDataStorage
+            </summary>
+        </member>
+        <member name="M:DealResult.WinDataStorage.RefreshdgDataStorage">
+            <summary>
+            刷新显示结果
+            </summary>
+        </member>
+        <member name="M:DealResult.WinDataStorage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealResult.UCResult">
+            <summary>
+            UCResult.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCResult
+            </summary>
+        </member>
+        <member name="M:DealResult.UCResult.InitContextMenu">
+            <summary>
+            初始化右键菜单
+            </summary>
+        </member>
+        <member name="M:DealResult.UCResult.miClear_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            清除显示信息
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealResult.UCResult.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealResult.UCResultMeasureCircle">
+            <summary>
+            UCResultMeasureCircle.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCResultMeasureCircle
+            </summary>
+        </member>
+        <member name="M:DealResult.UCResultMeasureCircle.dgResult_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择某一行的数据进行显示
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealResult.UCResultMeasureCircle.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealResult.UCResultCalibAxis">
+            <summary>
+            UCResultCalibAxis.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCResultCalibAxis
+            </summary>
+        </member>
+        <member name="M:DealResult.UCResultCalibAxis.ShowAxisCamera">
+            <summary>
+            显示当前轴位置
+            </summary>
+        </member>
+        <member name="M:DealResult.UCResultCalibAxis.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealResult.UIResultCoordMap">
+            <summary>
+            ResultCoordMap.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UIResultCoordMap
+            </summary>
+        </member>
+        <member name="M:DealResult.UIResultCoordMap.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealResult.BaseUCResultMatch">
+            <summary>
+            BaseUCResultMatch.xaml 的交互逻辑
+            </summary>
+            <summary>
+            BaseUCResultMatch
+            </summary>
+        </member>
+        <member name="M:DealResult.BaseUCResultMatch.TransformResult(DealResult.BaseResult)">
+            <summary>
+            将算法产生的结果，分解到集合用来显示
+            </summary>
+            <param name="resultBase_L"></param>
+        </member>
+        <member name="M:DealResult.BaseUCResultMatch.dgResult_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择某一行的数据进行显示
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealResult.BaseUCResultMatch.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:DealResult.ResultParProduct.ResultReference_L">
+            <summary>
+            输出数据结果列表
+            </summary>
+        </member>
+        <member name="T:DealResult.TypeCenterTemp_enum">
+            <summary>
+            模板中心
+            </summary>
+        </member>
+        <member name="T:DealResult.UCLogResultValue">
+            <summary>
+            UCLogResultValue.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCLogResultValue
+            </summary>
+        </member>
+        <member name="M:DealResult.UCLogResultValue.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealResult.FunLogResultValue.DealLogResultValue(DealResult.BaseResult,DealResult.ParLogResultValue)">
+            <summary>
+            获取需要显示的参数以及数值
+            </summary>
+            <param name="baseResult"></param>
+            <param name="par"></param>
+        </member>
+        <member name="T:DealResult.ResultReference">
+            <summary>
+            结果参考类
+            </summary>
+        </member>
+        <member name="F:DealResult.ResultReference.value_L">
+            <summary>
+            存储数组矩阵
+            </summary>
+        </member>
+        <member name="F:DealResult.ResultReference.blLog">
+            <summary>
+            是否显示
+            </summary>
+        </member>
+        <member name="M:DealResult.ResultReference.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            写入参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealResult.ResultReference.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            读取参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="P:DealResult.ResultReference.Type">
+            <summary>
+            结果类型
+            </summary>
+        </member>
+        <member name="T:DealResult.UCResultPoint">
+            <summary>
+            UCResultPoint.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCResultPoint
+            </summary>
+        </member>
+        <member name="M:DealResult.UCResultPoint.dgResult_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择某一行的数据进行显示
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealResult.UCResultPoint.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealResult.BaseUCResultOCR">
+            <summary>
+            BaseUCResultOCR.xaml 的交互逻辑
+            </summary>
+            <summary>
+            BaseUCResultOCR
+            </summary>
+        </member>
+        <member name="M:DealResult.BaseUCResultOCR.dgRegion_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择某一行的数据进行显示
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealResult.BaseUCResultOCR.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealResult.WorldCoordMap_enum">
+            <summary>
+            世界坐标系映射关系
+            </summary>
+        </member>
+        <member name="M:DealResult.BaseFunResult.CreateBaseParResult_ImageProcess(System.String[],DealResult.BaseResult)">
+            <summary>
+            图像处理
+            </summary>
+            <param name="type"></param>
+            <param name="baseResult"></param>
+        </member>
+        <member name="M:DealResult.BaseFunResult.CreateBaseParResult_Gray(System.String,DealResult.BaseResult)">
+            <summary>
+            灰度
+            </summary>
+            <param name="type"></param>
+            <param name="baseResult"></param>
+        </member>
+        <member name="M:DealResult.BaseFunResult.CreateBaseParResult_Math(System.String[],DealResult.BaseResult)">
+            <summary>
+            数学计算
+            </summary>
+            <param name="type"></param>
+            <param name="baseResult"></param>
+        </member>
+        <member name="M:DealResult.BaseFunResult.CreateBaseParResult_Geometry(System.String[],DealResult.BaseResult)">
+            <summary>
+            几何计算
+            </summary>
+            <param name="type"></param>
+            <param name="baseResult"></param>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

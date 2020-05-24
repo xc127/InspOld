@@ -1,0 +1,542 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DealLog</name>
+    </assembly>
+    <members>
+        <member name="T:DealLog.FunBackup">
+            <summary>
+            备份参数
+            </summary>
+        </member>
+        <member name="P:DealLog.FunBackup.RootBackup">
+            <summary>
+            备份根目录
+            </summary>
+        </member>
+        <member name="P:DealLog.FunBackup.TimeNow">
+            <summary>
+            当前时间
+            </summary>
+        </member>
+        <member name="P:DealLog.FunBackup.PathProduct">
+            <summary>
+            产品参数
+            </summary>
+        </member>
+        <member name="P:DealLog.FunBackup.PathCamera">
+            <summary>
+            相机参数
+            </summary>
+        </member>
+        <member name="P:DealLog.FunBackup.PathParSysWork">
+            <summary>
+            系统参数
+            </summary>
+        </member>
+        <member name="P:DealLog.FunBackup.NoCamera">
+            <summary>
+            相机序号
+            </summary>
+        </member>
+        <member name="P:DealLog.FunBackup.PathComprehensive">
+            <summary>
+            相机综合设置备份路径
+            </summary>
+        </member>
+        <member name="P:DealLog.FunBackup.PathPLC">
+            <summary>
+            PLC
+            </summary>
+        </member>
+        <member name="P:DealLog.FunBackup.PathRobot">
+            <summary>
+            Robot
+            </summary>
+        </member>
+        <member name="P:DealLog.FunBackup.PathAdjust">
+            <summary>
+            Adjust
+            </summary>
+        </member>
+        <member name="P:DealLog.FunBackup.PathStd">
+            <summary>
+            Std
+            </summary>
+        </member>
+        <member name="P:DealLog.FunBackup.PathSetPar">
+            <summary>
+            SetPar
+            </summary>
+        </member>
+        <member name="M:DealLog.FunBackup.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealLog.FunBackup.BackupProduct">
+            <summary>
+            备份产品参数
+            </summary>
+        </member>
+        <member name="M:DealLog.FunBackup.BackupProduct(System.String)">
+            <summary>
+            备份产品参数
+            </summary>
+        </member>
+        <member name="M:DealLog.FunBackup.BackupProduct(System.String,System.String)">
+            <summary>
+            备份产品参数
+            </summary>
+            <param name="pathOld"></param>
+            <param name="reason"></param>
+        </member>
+        <member name="M:DealLog.FunBackup.BackupCamera">
+            <summary>
+            备份相机参数
+            </summary>
+        </member>
+        <member name="M:DealLog.FunBackup.BackupParSysWork">
+            <summary>
+            备份运行参数
+            </summary>
+        </member>
+        <member name="M:DealLog.FunBackup.BackupComprehensive(System.String,System.Int32)">
+            <summary>
+            备份综合参数
+            </summary>
+            <param name="pathOld"></param>
+            <param name="noCamera"></param>
+        </member>
+        <member name="M:DealLog.FunBackup.BackupPLC">
+            <summary>
+            备份PLC参数
+            </summary>
+        </member>
+        <member name="M:DealLog.FunBackup.BackupRobot">
+            <summary>
+            备份机器人参数
+            </summary>
+        </member>
+        <member name="M:DealLog.FunBackup.BackupAdjust">
+            <summary>
+            备份调整值
+            </summary>
+        </member>
+        <member name="M:DealLog.FunBackup.BackupStd">
+            <summary>
+            备份基准值
+            </summary>
+        </member>
+        <member name="M:DealLog.FunBackup.BackupSetPar">
+            <summary>
+            备份SetPar参数
+            </summary>
+        </member>
+        <member name="M:DealLog.BaseParLog.ReadIni">
+            <summary>
+            读取
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealLog.BaseParLog.WriteIni">
+            <summary>
+            写入
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealLog.BaseParLog.GetVersion">
+            <summary>
+            获取版本号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DealLog.FunLogAlarm">
+            <summary>
+            报警日志
+            </summary>
+        </member>
+        <member name="P:DealLog.FunLogAlarm.PathAlarmHour">
+            <summary>
+            按照小时存储路径
+            </summary>
+        </member>
+        <member name="M:DealLog.FunLogAlarm.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealLog.FunLogAlarm.AddInfo(System.String)">
+            <summary>
+            添加报警信息,Com,通用型报警
+            </summary>
+        </member>
+        <member name="M:DealLog.FunLogAlarm.AddInfo(System.String,DealLog.TypeLog_enum)">
+            <summary>
+            添加报警信息
+            </summary>
+        </member>
+        <member name="M:DealLog.FunLogAlarm.AddInfo(System.String,System.String)">
+            <summary>
+            添加报警信息
+            </summary>
+        </member>
+        <member name="M:DealLog.FunLogAlarm.ClearInfo">
+            <summary>
+            清除报警信息
+            </summary>
+        </member>
+        <member name="M:DealLog.FunLogAlarm.WriteTxt(DealLog.StateInfo)">
+            <summary>
+            写入文本,NLog
+            </summary>
+            <param name="alarmInfo"></param>
+        </member>
+        <member name="T:DealLog.UCAlarm">
+            <summary>
+            UIError.xaml 的交互逻辑20181223-zx
+            </summary>
+            <summary>
+            UCAlarm
+            </summary>
+        </member>
+        <member name="M:DealLog.UCAlarm.AddInfo(System.String,DealLog.TypeLog_enum)">
+            <summary>
+            添加信息，包含了日志类型
+            </summary>
+            <param name="info"></param>
+            <param name="typeLog_e"></param>
+        </member>
+        <member name="M:DealLog.UCAlarm.dgAlarm_MouseRightButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            在相机窗体中打开图像
+            </summary>
+        </member>
+        <member name="M:DealLog.UCAlarm.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="F:DealLog.ButtonInfo.nameButton">
+            <summary>
+            按钮名称
+            </summary>
+        </member>
+        <member name="F:DealLog.ButtonInfo.authority">
+            <summary>
+            操作权限
+            </summary>
+        </member>
+        <member name="F:DealLog.ButtonInfo.time">
+            <summary>
+            时间
+            </summary>
+        </member>
+        <member name="T:DealLog.ParSetLog">
+            <summary>
+            读取日志设置
+            </summary>
+        </member>
+        <member name="F:DealLog.ParSetLog.numStateLog">
+            <summary>
+            日志显示条目个数
+            </summary>
+        </member>
+        <member name="F:DealLog.ParSetLog.numAlarmLog">
+            <summary>
+            报警日志显示条目个数
+            </summary>
+        </member>
+        <member name="F:DealLog.ParSetLog.BlUseNLog">
+            <summary>
+            是否使用新版本日志
+            </summary>
+        </member>
+        <member name="M:DealLog.ParSetLog.ReadParIni">
+            <summary>
+            读取参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealLog.ParSetLog.WriteParIni">
+            <summary>
+            写入参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DealLog.FunLogState">
+            <summary>
+            运行日志
+            </summary>
+        </member>
+        <member name="M:DealLog.FunLogState.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealLog.FunLogState.AddInfo(System.String)">
+            <summary>
+            添加信息
+            </summary>
+        </member>
+        <member name="M:DealLog.FunLogState.AddInfo(System.String,DealLog.TypeLog_enum)">
+            <summary>
+            添加信息，输入日志类型
+            </summary>
+            <param name="info"></param>
+            <param name="typeLog_e"></param>
+        </member>
+        <member name="M:DealLog.FunLogState.AddInfo(System.String,System.String)">
+            <summary>
+            添加报警信息，以及本地图片路径
+            </summary>
+        </member>
+        <member name="M:DealLog.FunLogState.ClearInfo">
+            <summary>
+            清除报警信息
+            </summary>
+        </member>
+        <member name="M:DealLog.FunLogState.WriteTxt(DealLog.StateInfo)">
+            <summary>
+            写入文本,NLog
+            </summary>
+            <param name="stateInfo"></param>
+        </member>
+        <member name="T:DealLog.TypeLog_enum">
+            <summary>
+            日志类型
+            </summary>
+        </member>
+        <member name="T:DealLog.StateInfo">
+            <summary>
+            状态信息
+            </summary>
+        </member>
+        <member name="P:DealLog.StateInfo.No">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="P:DealLog.StateInfo.State">
+            <summary>
+            状态信息
+            </summary>
+        </member>
+        <member name="P:DealLog.StateInfo.Time">
+            <summary>
+            日志时间
+            </summary>
+        </member>
+        <member name="P:DealLog.StateInfo.InfoImage">
+            <summary>
+            图像信息
+            </summary>
+        </member>
+        <member name="P:DealLog.StateInfo.NoCameraImage">
+            <summary>
+            图像相机
+            </summary>
+        </member>
+        <member name="P:DealLog.StateInfo.PosCameraImage">
+            <summary>
+            图像位置号
+            </summary>
+        </member>
+        <member name="P:DealLog.StateInfo.PathImage">
+            <summary>
+            图像存储路径
+            </summary>
+        </member>
+        <member name="P:DealLog.StateInfo.TimeImage">
+            <summary>
+            图像存储时间
+            </summary>
+        </member>
+        <member name="F:DealLog.StateInfo.TypeLog_e">
+            <summary>
+            日志类型
+            </summary>
+        </member>
+        <member name="T:DealLog.UCStateWork">
+            <summary>
+            UIInfoWork.xaml 的交互逻辑 20181223-zx
+            </summary>
+            <summary>
+            UCStateWork
+            </summary>
+        </member>
+        <member name="M:DealLog.UCStateWork.AddInfo(System.String)">
+            <summary>
+            添加信息
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:DealLog.UCStateWork.AddInfo(System.String,DealLog.TypeLog_enum)">
+            <summary>
+            添加信息，包含了日志类型
+            </summary>
+            <param name="info"></param>
+            <param name="typeLog_e"></param>
+        </member>
+        <member name="M:DealLog.UCStateWork.dgState_MouseRightButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            在相机窗体中打开图像
+            </summary>
+        </member>
+        <member name="M:DealLog.UCStateWork.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealLog.WinSetLog">
+            <summary>
+            WinSetLog.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinSetLog
+            </summary>
+        </member>
+        <member name="M:DealLog.WinSetLog.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealLog.WinSetLog.btnSave_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            保存参数到本地
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealLog.WinSetLog.ShowPar">
+            <summary>
+            显示
+            </summary>
+        </member>
+        <member name="M:DealLog.WinSetLog.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealLog.UCFilter">
+            <summary>
+            UCFilter.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCFilter
+            </summary>
+        </member>
+        <member name="M:DealLog.UCFilter.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealLog.UCFilter.Init(DealLog.BaseParLog)">
+            <summary>
+            初始化
+            </summary>
+            <param name="par"></param>
+        </member>
+        <member name="M:DealLog.UCFilter.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealLog.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:DealLog.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:DealLog.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="T:DealLog.WinRecover">
+            <summary>
+            WinRecover.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinRecover
+            </summary>
+        </member>
+        <member name="M:DealLog.WinRecover.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealLog.WinRecover.ReadDir(System.String)">
+            <summary>
+            加载目录
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="M:DealLog.WinRecover.ReadExplain(System.String)">
+            <summary>
+            读取注释
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealLog.WinRecover.dgDir_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择文件目录查看文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealLog.WinRecover.ReadFile(DealLog.BaseParRecoverDir)">
+            <summary>
+            读取文件
+            </summary>
+        </member>
+        <member name="M:DealLog.WinRecover.btnRecover_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            恢复文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealLog.WinRecover.btnLook_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            查看文件夹
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealLog.WinRecover.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealLog.WinError">
+            <summary>
+            Login.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinError
+            </summary>
+        </member>
+        <member name="M:DealLog.WinError.tm_WinTop_Tick(System.Object,System.EventArgs)">
+            <summary>
+            控制窗体的Topmost
+            </summary>
+        </member>
+        <member name="M:DealLog.WinError.MetroWindow_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            关闭窗体
+            </summary>
+        </member>
+        <member name="M:DealLog.WinError.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>

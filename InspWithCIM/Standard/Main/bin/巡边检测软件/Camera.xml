@@ -1,0 +1,2137 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Camera</name>
+    </assembly>
+    <members>
+        <member name="T:Camera.Camera_DHSDK_N">
+            <summary>
+            大华相机新驱动
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_DHSDK_N.OpenCamera(Camera.BaseParCamera)">
+            <summary>
+            打开相机，并传入相机参数
+            </summary>
+            <param name="baseParCamera">相机参数设置</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK_N.ColorCamera">
+            <summary>
+            彩色相机格式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK_N.SetGigEPacketResend">
+            <summary>
+            设置丢帧重传
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_DHSDK_N.GrabImageAll">
+            <summary>
+            抓取相机的图像,输出所有的格式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK_N.GrabImageHal">
+            <summary>
+            抓取相机的图像,
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK_N.GrabImageRaw">
+            <summary>
+            采图-采原始数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK_N.ConvertImageBitmap(ThridLibray.IGrabbedRawData)">
+            <summary>
+            图像格式转换，转换为BitmapSource
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK_N.ConvertHobject(ThridLibray.IGrabbedRawData)">
+            <summary>
+            将图像转换为H 格式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK_N.ColorImage(HalconDotNet.HObject)">
+            <summary>
+            彩色/灰度图像,根据图像制式，转换图像
+            </summary>
+            <param name="ho_Image"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK_N.SetExposure(System.Double)">
+            <summary>
+            快门时间
+            </summary>
+            <param name="dblValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK_N.SetGain(System.Double)">
+            <summary>
+            增益
+            </summary>
+            <param name="dblValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK_N.SaveParChannel">
+            <summary>
+            保存设置到通道
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_DHSDK_N.SetTrriggerMode">
+             <summary>
+            设置软触发
+             </summary>
+        </member>
+        <member name="M:Camera.Camera_DHSDK_N.TriggerSoftware">
+            <summary>
+            模拟软触发
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_DHSDK_N.setEnumAttr(System.String,System.String)">
+            <summary>
+            设置属性
+            </summary>
+            <param name="attrName"></param>
+            <param name="sValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK_N.SetTriggerDelay(System.Double)">
+            <summary>
+            触发延迟
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_DHSDK_N.CloseCamera">
+            <summary>
+            关闭相机,停止抓取相机并断开相机连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Camera.CameraBase.CountQ">
+            <summary>
+            队列中图像的个数,外触发启用队列
+            </summary>
+        </member>
+        <member name="P:Camera.CameraBase.BlQueueCount">
+            <summary>
+            队列中是否有图像,外触发启用队列
+            </summary>
+        </member>
+        <member name="M:Camera.CameraBase.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Camera.CameraBase.Init(Camera.BaseParCamera)">
+            <summary>
+            初始化
+            </summary>
+            <param name="baseParCamera"></param>
+        </member>
+        <member name="M:Camera.CameraBase.OpenCamera">
+            <summary>
+            通过序列号打开相机
+            </summary>
+        </member>
+        <member name="M:Camera.CameraBase.CloseCamera">
+            <summary>
+            关闭相机
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.CameraBase.GrabImageAll">
+            <summary>
+            抓取图像
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.CameraBase.GrabImageHal">
+            <summary>
+            采集图像，用Halcon窗体显示
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.CameraBase.SetExposure(System.Double)">
+            <summary>
+            /曝光时间
+            </summary>
+        </member>
+        <member name="M:Camera.CameraBase.SetGain(System.Double)">
+            <summary>
+            设置增益
+            </summary>
+        </member>
+        <member name="M:Camera.CameraBase.SaveParChannel">
+            <summary>
+            保存到相机
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.CameraBase.SetSoftTrrigger">
+            <summary>
+            设置软触发
+            </summary>
+        </member>
+        <member name="M:Camera.CameraBase.TriggerSoftware">
+            <summary>
+            模拟软触发
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.CameraBase.TriggerSoftware(System.Boolean)">
+            <summary>
+            软触发
+            </summary>
+            <param name="blBitmap"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.CameraBase.SetTriggerDelay(System.Double)">
+            <summary>
+            设置延迟
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.CameraBase.TriggerOnOff(System.Boolean)">
+            <summary>
+            打开关闭使能
+            </summary>
+            <param name="blOn">打开或者关闭</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.CameraBase.GetVersion">
+            <summary>
+            获取版本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Camera.Camera_BSLSDK">
+            <summary>
+            巴斯勒相机驱动
+            </summary>
+        </member>
+        <member name="E:Camera.Camera_BSLSDK.Trigger_event">
+            定义事件
+        </member>
+        <member name="M:Camera.Camera_BSLSDK.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_BSLSDK.OpenCamera(Camera.BaseParCamera)">
+            <summary>
+            打开相机，并传入相机参数
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_BSLSDK.GrabImageAll">
+            <summary>
+            抓取相机的图像,输出所有的格式
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_BSLSDK.GrabImageHalAndBit">
+            <summary>
+            采集halcon和bitmap
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_BSLSDK.GrabImageHal">
+            <summary>
+            抓取相机的图像,输出Halcon格式
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_BSLSDK.ConvertImageBitmapSource(Basler.Pylon.IGrabResult)">
+            <summary>
+            抓取相机的图像并转换为BitmapSource
+            </summary>
+            <param name="grabResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_BSLSDK.ConvertImageBitmap(Basler.Pylon.IGrabResult)">
+            <summary>
+            相机数据转换为Bitmap
+            </summary>
+            <param name="grabResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_BSLSDK.GetBitmapSourceFromData(Basler.Pylon.IGrabResult,System.Int32,System.Int32,System.String)">
+            <summary>
+            转换为BitmapSource
+            </summary>
+            <param name="grabResult"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+            <param name="pixelFormat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_BSLSDK.GetBitmapFromData(Basler.Pylon.IGrabResult,System.Int32,System.Int32,System.String)">
+            <summary>
+            转换为Bitmap
+            </summary>
+            <param name="grabResult"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+            <param name="pixelFormat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_BSLSDK.DeleteObject(System.IntPtr)">
+            <summary>
+            将bitmap转换为WPF可以用的bitmapImage
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_BSLSDK.BitmapToBitmapSource(System.Drawing.Bitmap)">
+            <summary>
+            bitmap转换为BitmapSource
+            </summary>
+            <param name="bitmap"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_BSLSDK.ConvertHobject(Basler.Pylon.IGrabResult)">
+            <summary>
+            将图像转换为Halcon 格式
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_BSLSDK.ColorImage(HalconDotNet.HObject)">
+            <summary>
+            彩色/灰度图像,根据图像制式，转换图像
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_BSLSDK.SetGain(System.Double)">
+            <summary>
+            增益
+            </summary>
+            <param name="dblValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_BSLSDK.SaveParChannel">
+            <summary>
+            保存设置到通道
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_BSLSDK.SetTrriggerMode">
+             <summary>
+            设置软触发
+             </summary>
+        </member>
+        <member name="M:Camera.Camera_BSLSDK.SetTrigger">
+            <summary>
+            触发模式
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_BSLSDK.SetContinue">
+            <summary>
+            连续触发模式
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_BSLSDK.CloseCamera">
+            <summary>
+            关闭相机,停止抓取相机并断开相机连接
+            </summary>
+        </member>
+        <member name="T:Camera.Camera_DHSDK">
+            <summary>
+            海康相机驱动
+            </summary>
+        </member>
+        <member name="E:Camera.Camera_DHSDK.Trigger_event">
+            定义事件
+        </member>
+        <member name="M:Camera.Camera_DHSDK.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.OpenCamera(Camera.BaseParCamera)">
+            <summary>
+            打开相机，并传入相机参数
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.ConnectCamera(System.String)">
+            <summary>
+            使用序列号打开相机
+            </summary>
+            <param name="serialNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.GetOneFrameTimeout(System.IntPtr,System.UInt32@,System.UInt32,MvCamCtrl.NET.MyCamera.MV_FRAME_OUT_INFO_EX@,MvCamCtrl.NET.MyCamera.MV_PIXEL_CONVERT_PARAM@,System.Int32)">
+            <summary>
+            抓取一帧图像
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.GrabHal_CallBack(System.IntPtr,MvCamCtrl.NET.MyCamera.MV_FRAME_OUT_INFO_EX@,System.IntPtr)">
+            <summary>
+            
+            </summary>
+            <param name="pData"></param>
+            <param name="pFrameInfo"></param>
+            <param name="pUser"></param>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.GrabImageAll">
+            <summary>
+            抓取图像
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.GrabImageHalAndBit">
+            <summary>
+            采集halcon和bitmap
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.GrabImageHal">
+            <summary>
+            Halcon图像
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.ConvertImageBitmapSource(MvCamCtrl.NET.MyCamera.MV_FRAME_OUT_INFO_EX,System.IntPtr)">
+            <summary>
+            图像格式转换，转换为BitmapSource
+            </summary>
+            <param name="image_grab"></param>
+            <param name="pData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.ConvertImageBitmapSource(MvCamCtrl.NET.MyCamera.MV_FRAME_OUT_INFO_EX,System.Byte[])">
+            <summary>
+            彩色相机转换
+            </summary>
+            <param name="image_grab"></param>
+            <param name="pData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.ConvertImageBitmap(MvCamCtrl.NET.MyCamera.MV_FRAME_OUT_INFO_EX,System.IntPtr)">
+            <summary>
+            图像格式转换，转换为Bitmap
+            </summary>
+            <param name="image_grab"></param>
+            <param name="pData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.ConvertHobject(MvCamCtrl.NET.MyCamera.MV_FRAME_OUT_INFO_EX,System.IntPtr)">
+            <summary>
+            将图像转换为Halcon 格式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.ColorImage(HalconDotNet.HObject)">
+            <summary>
+            彩色/灰度图像,根据图像制式，转换图像
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.SetFloatValue(System.String,System.Single)">
+            <summary>
+            通用设置
+            </summary>
+            <param name="fValue">写入值</param>
+            <param name="strKey" >写入项目</param>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.SetExposure(System.Double)">
+            <summary>
+            曝光时间 
+            </summary>
+            <param name="dblValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.SetGain(System.Double)">
+            <summary>
+            增益
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.SetFrameRate(System.Double)">
+            <summary>
+            帧率
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.LoadChannel">
+            <summary>
+            加载用户参数
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.SaveParChannel">
+            <summary>
+            保存设置到通道
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.SetTrriggerMode">
+             <summary>
+            设置软触发
+             </summary>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.SetTrigger">
+            <summary>
+            触发模式
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.SetContinue">
+            <summary>
+            连续触发模式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.SetTriggerDelay(System.Double)">
+            <summary>
+            触发延迟
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.TriggerSoftware">
+            <summary>
+            模拟软触发
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.GetFloatValue(System.String,System.Single@)">
+            <summary>
+            通用函数
+            </summary>
+            /// <param name="strKey" >读取项目</param>
+            <param name="dblValue">读取值</param>        
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.GetExposure(System.Double@)">
+            <summary>
+            曝光时间 
+            </summary>
+            <param name="dblValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.GetGain(System.Double@)">
+            <summary>
+            增益
+            </summary>
+            <param name="dblValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_DHSDK.GetFrameRate(System.Double)">
+            <summary>
+            帧率
+            </summary>
+            <param name="cameraP"></param>
+        </member>
+        <member name="T:Camera.Camera_HIKSDK">
+            <summary>
+            海康相机驱动
+            </summary>
+        </member>
+        <member name="P:Camera.Camera_HIKSDK.TriggerSource_e">
+            <summary>
+            触发模式
+            </summary>
+        </member>
+        <member name="P:Camera.Camera_HIKSDK.CountQ">
+            <summary>
+            图像队列 
+            </summary>        
+        </member>
+        <member name="E:Camera.Camera_HIKSDK.Trigger_event">
+            定义事件
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.EnumDevices(System.UInt32,MvCamCtrl.NET.MyCamera.MV_CC_DEVICE_INFO_LIST@)">
+            <summary>
+            枚举相机
+            </summary>
+            <param name="nLayerType"></param>
+            <param name="stDeviceList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.OpenCamera(Camera.BaseParCamera)">
+            <summary>
+            打开相机，并传入相机参数
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.ConnectCamera(System.String)">
+            <summary>
+            使用序列号打开相机
+            </summary>
+            <param name="serialNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.GetOneFrameTimeout(System.IntPtr,System.UInt32@,System.UInt32,MvCamCtrl.NET.MyCamera.MV_FRAME_OUT_INFO_EX@,MvCamCtrl.NET.MyCamera.MV_PIXEL_CONVERT_PARAM@,System.Int32)">
+            <summary>
+            抓取一帧图像
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.GrabHal_CallBack(System.IntPtr,MvCamCtrl.NET.MyCamera.MV_FRAME_OUT_INFO_EX@,System.IntPtr)">
+            <summary>
+            外触发回调函数
+            </summary>
+            <param name="pData">指针</param>
+            <param name="pFrameInfo">图像信息</param>
+            <param name="pUser"></param>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.GrabImageAll">
+            <summary>
+            抓取图像
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.GrabImageHalAndBit">
+            <summary>
+            采集halcon和bitmap
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.GrabImageHal">
+            <summary>
+            Halcon图像
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.ConvertImageBitmapSource(MvCamCtrl.NET.MyCamera.MV_FRAME_OUT_INFO_EX,System.IntPtr)">
+            <summary>
+            图像格式转换，转换为BitmapSource
+            </summary>
+            <param name="image_grab"></param>
+            <param name="pData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.ConvertImageBitmapSource(MvCamCtrl.NET.MyCamera.MV_FRAME_OUT_INFO_EX,System.Byte[])">
+            <summary>
+            彩色相机转换
+            </summary>
+            <param name="image_grab"></param>
+            <param name="bufSource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.ConvertImageBitmap(MvCamCtrl.NET.MyCamera.MV_FRAME_OUT_INFO_EX,System.IntPtr)">
+            <summary>
+            图像格式转换，转换为Bitmap
+            </summary>
+            <param name="image_grab"></param>
+            <param name="pData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.ConvertHobject(MvCamCtrl.NET.MyCamera.MV_FRAME_OUT_INFO_EX,System.IntPtr)">
+            <summary>
+            将图像转换为Halcon 格式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.ColorImage(HalconDotNet.HObject)">
+            <summary>
+            彩色/灰度图像,根据图像制式，转换图像
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.SetFloatValue(System.String,System.Single)">
+            <summary>
+            通用设置
+            </summary>
+            <param name="fValue">写入值</param>
+            <param name="strKey" >写入项目</param>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.SetExposure(System.Double)">
+            <summary>
+            曝光时间 
+            </summary>
+            <param name="dblValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.SetGain(System.Double)">
+            <summary>
+            增益
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.SetFrameRate(System.Double)">
+            <summary>
+            帧率
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.LoadChannel">
+            <summary>
+            加载用户参数
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.SaveParChannel">
+            <summary>
+            保存设置到通道
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.SetTrriggerMode">
+             <summary>
+            设置软触发
+             </summary>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.SetTrigger">
+            <summary>
+            触发模式
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.SetContinue">
+            <summary>
+            连续触发模式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.SetTriggerDelay(System.Double)">
+            <summary>
+            触发延迟
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.TriggerSoftware">
+            <summary>
+            模拟软触发
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.TriggerOnOff(System.Boolean)">
+            <summary>
+            打开关闭触发使能
+            </summary>
+            <param name="blOn">打开或者关闭</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.GetFloatValue(System.String,System.Single@)">
+            <summary>
+            通用函数
+            </summary>
+            /// <param name="strKey" >读取项目</param>
+            <param name="dblValue">读取值</param>        
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.GetExposure(System.Double@)">
+            <summary>
+            曝光时间 
+            </summary>
+            <param name="dblValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.GetGain(System.Double@)">
+            <summary>
+            增益
+            </summary>
+            <param name="dblValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_HIKSDK.GetFrameRate(System.Double)">
+            <summary>
+            帧率
+            </summary>
+            <param name="cameraP"></param>
+        </member>
+        <member name="T:Camera.QForHIK">
+            <summary>
+            海康相机队列存储类
+            </summary>
+        </member>
+        <member name="T:Camera.WinRestartNet">
+            <summary>
+            WinRestartNet.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinRestartNet
+            </summary>
+        </member>
+        <member name="M:Camera.WinRestartNet.NetWorkList">
+            <summary>
+            网卡列表
+            </summary>
+        </member>
+        <member name="M:Camera.WinRestartNet.NetWorkState(System.String)">
+            <summary>
+            网卡状态
+            </summary>
+            <param name="netWorkName">网卡名</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.WinRestartNet.btnStartNet_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            启用网卡
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Camera.WinRestartNet.EnableNetWork">
+            <summary>
+            启用网卡
+            </summary>
+            <param name="name">网卡名</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.WinRestartNet.btnStopNet_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            禁止网卡
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Camera.WinRestartNet.DisableNetWork(System.String)">
+            <summary>
+            禁用网卡
+            </summary>5
+            <param name="name">网卡名</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.WinRestartNet.btnRestartNet_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            重启网卡
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Camera.WinRestartNet.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Camera.SetCamera">
+            <summary>
+            UISetCamera.xaml 的交互逻辑
+            </summary>
+            <summary>
+            SetCamera
+            </summary>
+        </member>
+        <member name="F:Camera.SetCamera.g_ParCamera">
+            <summary>
+            相机参数类
+            </summary>
+        </member>
+        <member name="M:Camera.SetCamera.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Camera.SetCamera.Init(Camera.BaseParCamera)">
+            <summary>
+            初始化
+            </summary>
+            <param name="varCamera"></param>
+        </member>
+        <member name="M:Camera.SetCamera.tsbNameCamera_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            是否使用相机名称
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Camera.SetCamera.SetSoftTrrigger(System.Boolean)">
+            <summary>
+            设置软触发
+            </summary>
+        </member>
+        <member name="M:Camera.SetCamera.ShowPar">
+            <summary>
+            显示参数
+            </summary>
+        </member>
+        <member name="M:Camera.SetCamera.ShowNameCamera">
+            <summary>
+            相机名称
+            </summary>
+        </member>
+        <member name="M:Camera.SetCamera.InitLanguage">
+            <summary>
+            设置语言
+            </summary>
+        </member>
+        <member name="M:Camera.SetCamera.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Camera.WinSetCamera">
+            <summary>
+            SetWork.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinSetCamera
+            </summary>
+        </member>
+        <member name="M:Camera.WinSetCamera.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Camera.WinSetCamera.ShowTab">
+            <summary>
+            显示选项卡
+            </summary>
+        </member>
+        <member name="M:Camera.WinSetCamera.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Camera.BaseUCDisplayCamera">
+            <summary>
+            BaseUCDisplay.xaml 的交互逻辑
+            </summary>
+            <summary>
+            BaseUCDisplayCamera
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.DisplayImageInfo">
+            <summary>
+            显示图像以及信息
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.DisplayLocalImageInfo">
+            <summary>
+            显示本地图片信息
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.ShowPosandGray(System.Double,System.Double)">
+             <summary>
+            显示当前位置和灰度值
+             </summary>
+             <param name="x"></param>
+             <param name="y"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.DisplayInfo_Bit(System.String,System.Boolean)">
+            <summary>
+            在bit中显示
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.DisplayInfo_Bit(System.String,System.String)">
+            <summary>
+            打印字符到bitmap
+            </summary>
+            <param name="info"></param>
+            <param name="color"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.EnableShowPosandGray">
+            <summary>
+            使能显示控件
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.ClearShape">
+            <summary>
+            清空polygn中的list
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SelectROI(System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="indexP"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.InitRealGrab">
+            <summary>
+            处于实时抓取状态
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.StopRealGrab">
+            <summary>
+            停止实时触发
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.RealGrab">
+            <summary>
+            实时状态下进行处理和显示
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.GrabForAuto">
+            <summary>
+            自动抓取
+            是否是DealGrabImage项目调用
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.DispHobjectFirst_L(System.Collections.Generic.List{BasicClass.ImageAll})">
+            <summary>
+            
+            </summary>
+            <param name="im_L"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.DispHobject_L">
+            <summary>
+            显示上一次的ROI和结果,目前只在实时处理显示中使用
+            </summary>
+        </member>
+        <member name="P:Camera.BaseUCDisplayCamera.PathSaveImage">
+            <summary>
+            保存图片路径
+            </summary>
+        </member>
+        <member name="P:Camera.BaseUCDisplayCamera.PathOKImage">
+            <summary>
+            保存OK图片默认路径
+            </summary>
+        </member>
+        <member name="P:Camera.BaseUCDisplayCamera.PathNGImage">
+            <summary>
+            保存NG图片默认路径
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.GrabAndSaveImage(System.String)">
+            <summary>
+            抓取新的图像进行保存,如果存储空间不足，暂停存图20191203-zx
+            </summary>
+            <param name="strPath">图像保存路径，完整的绝对路径，包含名称和扩展名</param>
+            <returns>是否处理成功</returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveImageDefaultPath(BasicClass.ImageAll)">
+            <summary>
+            默认路径保存
+            </summary>
+            <param name="imageAll">图像</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveImageDefaultPath_Short(BasicClass.ImageAll)">
+            <summary>
+            时间为短名称
+            </summary>
+            <param name="imageAll">图像</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveImageDefaultPath(BasicClass.ImageAll,System.String)">
+            <summary>
+            保存图片到默认路径
+            </summary>
+            <param name="imageAll">图像</param>
+            <param name="nameFolder">按照拍照设置的文件夹名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveImageDefaultPath_Short(BasicClass.ImageAll,System.String)">
+            <summary>
+            短名称
+            </summary>
+            <param name="imageAll">图像</param>
+            <param name="nameFolder">根目录下的文件夹名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveOKImageDefaultPath(BasicClass.ImageAll)">
+            <summary>
+             保存OK图像到默认路径20190404
+            </summary>
+            <param name="imageAll">图像</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveOKImageDefaultPath_Bit(BasicClass.ImageAll)">
+            <summary>
+             保存OK图像到默认路径20190404
+            </summary>
+            <param name="imageAll">图像</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveOKImageDefaultPath_Bit">
+            <summary>
+            保存OK图像到默认路径，当前图像20190404
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveImageFullPath_Bit(System.String)">
+            <summary>
+            保存全路径Bit
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveOKImageDefaultPath(BasicClass.ImageAll,BasicClass.FormatImage_enum)">
+            <summary>
+            保存图像到默认路径 20190402
+            </summary>
+            <param name="imageAll">图像</param>
+            <param name="formatImage_e">图像格式</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveOKImageDefaultPath_Short(BasicClass.ImageAll)">
+            <summary>
+            短名称
+            </summary>
+            <param name="imageAll">图像</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveOKImagePath(BasicClass.ImageAll,System.String)">
+            <summary>
+            保存OK图像到指定路径
+            </summary>
+            <param name="imageAll">图像</param>
+            <param name="nameFolder">默认图像存储路径下新建文件夹名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveOKImagePath_Bit(System.String)">
+            <summary>
+            保存OK图像到指定路径Bitmap 20190404
+            </summary>
+            <param name="nameFolder">默认图像存储路径下新建文件夹名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveOKImagePath(BasicClass.ImageAll,BasicClass.FormatImage_enum,System.String)">
+            <summary>
+            保存图像20190402
+            </summary>
+            <param name="imageAll">图像</param>
+            <param name="formatImage_e">图像格式</param>
+            <param name="nameFolder">默认图像存储路径下新建文件夹名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveOKImagePath_Short(BasicClass.ImageAll,System.String)">
+            <summary>
+            时间短名称
+            </summary>
+            <param name="imageAll">图像</param>
+            <param name="nameFolder">默认图像存储路径下新建文件夹名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveOKImagePath(BasicClass.ImageAll,System.String,System.String)">
+            <summary>
+            图像名称+时间
+            </summary>
+            <param name="imageAll">图像</param>
+            <param name="nameImage">图像</param>
+            <param name="nameFolder">默认图像存储路径下新建文件夹名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveOKImagePath_Short(BasicClass.ImageAll,System.String,System.String)">
+            <summary>
+            短名称
+            </summary>
+            <param name="imageAll"></param>
+            <param name="nameImage"></param>
+            <param name="nameFolder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveNGImageDefaultPath(BasicClass.ImageAll)">
+            <summary>
+             保存NG图像
+            </summary>
+            <param name="imageAll"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveNGImageDefaultPath_Bit(BasicClass.ImageAll)">
+            <summary>
+             保存NG图像到默认路径20190404
+            </summary>
+            <param name="imageAll">图像</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveNGImageDefaultPath(BasicClass.ImageAll,BasicClass.FormatImage_enum)">
+            <summary>
+            保存NG图像到指定路径
+            </summary>
+            <param name="imageAll">图像</param>
+            <param name="formatImage_e">图像格式</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveNGImageDefaultPath_Bit">
+            <summary>
+            保存NG图像到默认路径，当前图像20190404
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveNGImageDefaultPath_Short(BasicClass.ImageAll)">
+            <summary>
+            短名称
+            </summary>
+            <param name="imageAll"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveNGImagePath(BasicClass.ImageAll,System.String)">
+            <summary>
+            保存NG图像到指定路径
+            </summary>
+            <param name="imageAll">图像</param>
+            <param name="nameFolder">NGImage根目录下新建文件夹名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveNGImagePath_Bit(System.String)">
+            <summary>
+            保存Bitmap图像到NG根目录下指定的文件夹
+            </summary>
+            <param name="nameFolder">文件夹名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveNGImagePath(BasicClass.ImageAll,BasicClass.FormatImage_enum,System.String)">
+            <summary>
+            保存NG图像到指定路径
+            </summary>
+            <param name="imageAll">图像</param>
+            <param name="formatImage_e">图像格式</param>
+            <param name="nameFolder">目录</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveNGImagePath_Short(BasicClass.ImageAll,System.String)">
+            <summary>
+            短名称
+            </summary>
+            <param name="imageAll"></param>
+            <param name="nameFolder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveNGImagePath(BasicClass.ImageAll,System.String,System.String)">
+            <summary>
+            名称+时间
+            </summary>
+            <param name="imageAll">图像</param>
+            <param name="nameFolder">目录</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveNGImagePath_Short(BasicClass.ImageAll,System.String,System.String)">
+            <summary>
+            短名称
+            </summary>
+            <param name="imageAll"></param>
+            <param name="nameImage"></param>
+            <param name="nameFolder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveBitOK_Screen">
+            <summary>
+            保存截屏到到OK文件夹,系统默认NG路径，图片名称为时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveBitNG_Screen">
+            <summary>
+            保存截屏到到NG文件夹,系统默认NG路径，图片名称为时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveBitAll_Screen">
+            <summary>
+            保存截屏到到All文件夹
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveBit_Screen(System.String)">
+            <summary>
+            保存屏幕截图,根目录下建立小时文件夹
+            </summary>
+            <param name="path">根目录</param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveBitFullPath_Screen(System.String)">
+            <summary>
+            保存全路径截屏
+            </summary>
+            <param name="path">完成的包含图片名字的路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveBitFullPath_Screen(System.String,System.String)">
+            <summary>
+            保存截屏到完整路径
+            </summary>
+            <param name="name">图像名称</param>
+            <param name="path">完整路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveImage(BasicClass.ImageAll,System.String)">
+            <summary>
+            保存图像
+            </summary>
+            <param name="imageAll">图像</param>
+            <param name="strPath">图像保存的根目录,自动创建小时文件夹，图像名称默认采用时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveImage_Custom(BasicClass.ImageAll,System.String,System.String)">
+            <summary>
+            自定义存图
+            </summary>
+            <param name="imageAll">图像</param>
+            <param name="name">名称</param>
+            <param name="strPath">文件夹</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveImage_Bit(System.String)">
+            <summary>
+            保存Bit版本，完整文件夹，名称为时间名称
+            </summary>
+            <param name="strPath">完整文件夹</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveImage_Bit(BasicClass.ImageAll,System.String)">
+            <summary>
+            保存Bit版本，完整文件夹，名称为时间名称
+            </summary>
+            <param name="im">图像</param>
+            <param name="strPath">完整文件夹</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveImage(BasicClass.ImageAll,BasicClass.FormatImage_enum,System.String)">
+            <summary>
+            保存图片
+            </summary>
+            <param name="imageAll">图像</param>
+            <param name="formatImage_e">图像格式</param>
+            <param name="strPath">路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveImage_Short(BasicClass.ImageAll,System.String)">
+            <summary>
+            短名称
+            </summary>
+            <param name="imageAll"></param>
+            <param name="strPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveImage_Short(BasicClass.ImageAll,BasicClass.FormatImage_enum,System.String)">
+            <summary>
+            保存图像20190402
+            </summary>
+            <param name="imageAll">图像</param>
+            <param name="formatImage_e">图像格式</param>
+            <param name="strPath">路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveImage(BasicClass.ImageAll,System.String,System.String)">
+            <summary>
+            图像，加上名称+时间
+            </summary>
+            <param name="imageAll">图像</param>
+            <param name="nameImage">图像名称（名称=图像名称+时间名称）</param>
+            <param name="strPath">图像路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveImage(BasicClass.ImageAll,System.String,BasicClass.FormatImage_enum,System.String)">
+            <summary>
+            保存图像20190402
+            </summary>
+            <param name="imageAll">图像</param>
+            <param name="nameImage">图像名称</param>
+            <param name="formatImage_e">图像格式</param>
+            <param name="strPath">路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveImage_Short(BasicClass.ImageAll,System.String,System.String)">
+            <summary>
+            短名称
+            </summary>
+            <param name="imageAll">图像</param>
+            <param name="nameImage"></param>
+            <param name="strPath">图像路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveImage_FullPath(BasicClass.ImageAll,System.String,System.String)">
+            <summary>
+            参数传入完整路径和名称
+            </summary>
+            <param name="imageAll">图像</param>
+            <param name="name">保存名称</param>
+            <param name="strPath">完整路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveImage_FullPath(BasicClass.ImageAll,System.String,BasicClass.FormatImage_enum,System.String)">
+            <summary>
+            保存图像20190402
+            </summary>
+            <param name="imageAll"></param>
+            <param name="name"></param>
+            <param name="formatImage_e">图像格式</param>
+            <param name="strPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveHoImage(HalconDotNet.HObject,System.String)">
+            <summary>
+            保存Halcon图像，并按照设置的格式保存
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SaveHoImage(HalconDotNet.HObject,BasicClass.FormatImage_enum,System.String)">
+            <summary>
+            保存图像
+            </summary>
+            <param name="ho_Image">图像</param>
+            <param name="formatImage_e">图像格式</param>
+            <param name="path">路径</param>
+            <returns></returns>
+        </member>
+        <member name="P:Camera.BaseUCDisplayCamera.TypeSaveImageForBit">
+            <summary>
+            保存图像类型
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.InitCodeBit">
+            <summary>
+            初始化存储编码
+            </summary>
+        </member>
+        <member name="F:Camera.BaseUCDisplayCamera.BlUsingPP">
+            <summary>
+            是否使用了PP控件，如果没有使用，窗体对PP的触发将不起作用
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.gpbCamera_MouseDoubleClick(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            显示或者隐藏Poppup
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.ShowResult(System.String)">
+            <summary>
+            显示信息，默认LimeGreen
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.ShowResult(System.String,System.Boolean)">
+            <summary>
+            显示信息，表示结果true或者false
+            </summary>
+            <param name="info"></param>
+            <param name="blResult"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.ShowResult(System.String,System.String)">
+            <summary>
+            显示信息，传入颜色
+            </summary>
+            <param name="info"></param>
+            <param name="color"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.ShowPPResult">
+            <summary>
+            显示弹框
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.HidePPResult">
+            <summary>
+            隐藏PP
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.MovePPResult">
+            <summary>
+            移动PP
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.VisibleTxtResult">
+            <summary>
+            显示控件
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.UnVisibleTxtResult">
+            <summary>
+            显示控件
+            </summary>
+        </member>
+        <member name="P:Camera.BaseUCDisplayCamera.PathLocalImage">
+            <summary>
+            保存图片路径
+            </summary>
+        </member>
+        <member name="P:Camera.BaseUCDisplayCamera.CountQ">
+            <summary>
+            队列中图像的个数,外触发启用队列
+            </summary>
+        </member>
+        <member name="P:Camera.BaseUCDisplayCamera.BlQueueCount">
+            <summary>
+            图像队列里面是否有图像,外触发启用队列
+            </summary>
+        </member>
+        <member name="P:Camera.BaseUCDisplayCamera.NameRealImage">
+            <summary>
+            实时画面
+            </summary>
+        </member>
+        <member name="P:Camera.BaseUCDisplayCamera.NamePhotoImage">
+            <summary>
+            拍摄画面
+            </summary>
+        </member>
+        <member name="E:Camera.BaseUCDisplayCamera.RealImage_event">
+            <summary>
+            定义事件
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.LoginEvent(System.Boolean)">
+            <summary>
+            注册事件
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.LogoutEvent(System.Boolean)">
+            <summary>
+            注销事件
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.Init(BasicDisplay.BaseParSetDisplay)">
+            <summary>
+            初始化参数
+            </summary>
+            <param name="baseParSetDisplay"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.InitLanguage_Menu">
+            <summary>
+            右键菜单英文
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.InitContextMenu">
+            <summary>
+            初始化右键菜单
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.ZeroWidthLable(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            将按钮的宽度设置为0
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.InitLanguage">
+            <summary>
+            设置语言
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.MiPhotoImage_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            拍摄画面
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.MiRealImage_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            实时画面
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.MiLocalImage_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            本地画面
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.MiRefershWinHal_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            刷新窗体
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.MiSaveImage_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            保存图像
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.miSaveAs_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            图像另存为
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.MiEnableInspect_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            图像控件缩放移动有效
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.MiEnableInspect_Unchecked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            使能图像控件缩放移动失效
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.EnableZoom(System.Boolean,System.Boolean)">
+            <summary>
+            使能缩放
+            </summary>
+            <param name="blEnable">使能H窗体缩放</param>
+            <param name="blMove">鼠标移动事件是否注销</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.HideMenuAndStopHWin(System.Boolean)">
+            <summary>
+            隐藏右键菜单和停止窗体
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.MiFit_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            图像控件恢复
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.EnableZoomFit(System.Boolean)">
+            <summary>
+            使能缩放控件
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.MiFolder_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            打开本地文件夹
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.MiCycle_Unchecked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            本地图片是否循环
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.MiPI_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            允许加载屏幕截图
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.MiPI_Unchecked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            不允许
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.MiPIForce_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            强制截屏
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.MiRestartCamera_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            重新启动当前相机
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.RecoverPhoto(System.Boolean)">
+            <summary>
+            恢复拍摄画面
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.RecoverPhoto_Invoke(System.Boolean)">
+            <summary>
+            恢复拍照
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.RecoverPhotoOnly">
+            <summary>
+            不再抓图，仅仅停止
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.RecoverPhotoOnly_Invoke">
+            <summary>
+            恢复成拍照状态
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.LeaveReaImage_Invoke">
+            <summary>
+            离开实时画面
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.LeaveReaImage">
+            <summary>
+            不再抓图，仅仅停止
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SetRecoverPhotoState_Invoke">
+            <summary>
+            设置成拍摄状态
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.lblLocalImage_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            打开对话框，获取本地图片
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.GetLocalImage">
+            <summary>
+            打开对话框，获取本地文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.LoadLocalImage(System.String,System.Boolean)">
+            <summary>
+            从指定路径加载图像
+            </summary>
+            <param name="path">图片的绝对路径</param>
+            <param name="blShow">是否显示，模式显示</param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.LoadLocalImage(System.String)">
+            <summary>
+            添加路径
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.GetFolderImage(System.String)">
+            <summary>
+            获取指定路径下的所有文件,采用递归的方式
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SetLocalState(System.Collections.Generic.List{System.String})">
+            <summary>
+            设置为本地图像状态,并传入文件路径
+            </summary>
+            <param name="image_L"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SetLocalState">
+            <summary>
+            设置为本地图片状态
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.lblNext_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            点击显示下一幅图片
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.lblPre_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            点击显示上一幅图片
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SetPreNext(System.Boolean)">
+            <summary>
+            设置本地图片翻页按钮显示与隐藏
+            </summary>
+            <param name="blVisible"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.VisiblePreNext">
+            <summary>
+            根据本地图片的序号显示响应
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.lblRealImage_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            控制实时画面和拍摄画面
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SetRealImage_Invoke">
+            <summary>
+            设定实时画面
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.RealImage">
+            <summary>
+            开始实时图像,因为增加了自动重连，所以相机掉线只是延迟，不退出实时
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.lblSaveImage_MouseLeftButtonDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            按照型号和相机序号命名文件夹，对图像进行保存
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.GrabImageAndShowHalcon">
+            <summary>
+            第一次加载图像 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.GrabImageAndShow">
+            <summary>
+            图像抓取并且显示
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.GrabImageAndShow(System.String)">
+            <summary>
+            抓取显示指定路径的图像
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.GrabImageAll">
+            <summary>
+            抓取图像包括Halcon和BitmapSource
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.GrabImageHal(System.Boolean,System.Boolean)">
+            <summary>
+            只抓取Halcon图像
+            DealGrabImage项目调用
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.GrabImageHalForReal">
+            <summary>
+            只抓取Halcon图像,实时触发20190702
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.GrabImageLocalAll">
+            <summary>
+            抓取本地图像,包含所有的格式
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.GrabImageLocalHal">
+            <summary>
+            抓取本地图像,只包含Halcon图像
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.GrabImageLocalHal(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SetExposure(System.Double)">
+            <summary>
+            /曝光时间
+            </summary>
+            <param name="dblValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SetGain(System.Double)">
+            <summary>
+            设置增益
+            </summary>
+            <param name="dblValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SavePar">
+            <summary>
+            保存参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.TriggerOnOff(System.Boolean)">
+            <summary>
+            打开或者关闭使能
+            </summary>
+            <param name="blOn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.EnableBtnPhotoCtr(System.Boolean)">
+            <summary>
+            使能控制按钮
+            </summary>
+            <param name="enable"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.DumpWinImage">
+            <summary>
+            截取窗体屏幕图像,将分辨率升到1500左右
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.SetTileColor(System.Boolean)">
+            <summary>
+            显示标题栏颜色
+            </summary>
+            <param name="blResult"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.ShowInfo(System.String,System.String)">
+            <summary>
+            显示信息
+            </summary>
+            <param name="str"></param>
+            <param name="strColor"></param>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.ShowGrayLabel">
+            <summary>
+            显示查看图像时用来显示灰度的Label，20181110-zx
+            </summary>
+        </member>
+        <member name="M:Camera.BaseUCDisplayCamera.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:Camera.UCDisplayCamera10.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Camera.UCDisplayCamera10.#ctor(System.Boolean)">
+            <summary>
+            构造函数重载
+            </summary>
+            <param name="blShow"></param>
+        </member>
+        <member name="M:Camera.UCDisplayCamera14.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Camera.UCDisplayCamera14.#ctor(System.Boolean)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="blShow"></param>
+        </member>
+        <member name="T:Camera.UCDisplayCamera16">
+            <summary>
+            相机16
+            </summary>
+        </member>
+        <member name="M:Camera.UCDisplayCamera16.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Camera.UCDisplayCamera16.#ctor(System.Boolean)">
+            <summary>
+            构造函数重载
+            </summary>
+            <param name="blShow"></param>
+        </member>
+        <member name="T:Camera.Camera_PGSDK">
+            <summary>
+            灰点相机
+            </summary>
+        </member>
+        <member name="E:Camera.Camera_PGSDK.Trigger_event">
+            定义事件
+        </member>
+        <member name="M:Camera.Camera_PGSDK.OpenCamera(Camera.BaseParCamera)">
+            <summary>
+            打开相机，并传入相机参数
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_PGSDK.ConnectCamera(System.String)">
+            <summary>
+            连接相机
+            </summary>
+            <param name="SerialNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_PGSDK.ColorCamera">
+            <summary>
+            彩色相机格式
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_PGSDK.SetSoftTrriger(System.Boolean)">
+            <summary>
+            设置相机在软触发模式
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_PGSDK.StartCapture">
+            <summary>
+            抓取图像
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_PGSDK.SetGigEPacketResend">
+            <summary>
+            设置丢帧重传
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_PGSDK.GrabImageAll">
+            <summary>
+            抓取相机的图像,输出所有的格式
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_PGSDK.GrabImageHal">
+            <summary>
+            抓取相机的图像,输出Halcon格式
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_PGSDK.GrabImageHalAndBit">
+            <summary>
+            采集bitmap
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.Camera_PGSDK.ConvertImageBitmap">
+            <summary>
+            图像格式转换，转换为BitmapSource
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_PGSDK.ConvertHobject">
+            <summary>
+            将图像转换为Halcon 格式
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_PGSDK.ColorImage(HalconDotNet.HObject)">
+            <summary>
+            彩色/灰度图像,根据图像制式，转换图像
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_PGSDK.SetExposure(System.Double)">
+            <summary>
+            快门时间
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_PGSDK.SetGain(System.Double)">
+            <summary>
+            增益
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_PGSDK.SetProperty(FlyCapture2Managed.CameraProperty)">
+            <summary>
+            设置相机属性
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_PGSDK.SaveParChannel">
+            <summary>
+            保存设置到通道
+            </summary>
+        </member>
+        <member name="M:Camera.Camera_PGSDK.SetTrriggerMode">
+             <summary>
+            设置软触发
+             </summary>
+        </member>
+        <member name="M:Camera.Camera_PGSDK.CloseCamera">
+            <summary>
+            关闭相机,停止抓取相机并断开相机连接
+            </summary>
+        </member>
+        <member name="T:Camera.BaseParCamera">
+            <summary>
+            相机参数类
+            </summary>
+        </member>
+        <member name="P:Camera.BaseParCamera.PathSaveImage">
+            <summary>
+            Path,图片的保存路径
+            </summary>
+        </member>
+        <member name="P:Camera.BaseParCamera.PathOKImage">
+            <summary>
+            保存OK图片到默认路径
+            </summary>
+        </member>
+        <member name="P:Camera.BaseParCamera.PathNGImage">
+            <summary>
+            保存NG图片到默认路径
+            </summary>
+        </member>
+        <member name="F:Camera.BaseParCamera.Crop">
+            <summary>
+            XStart,YStart,XEnd,YEnd
+            </summary>
+        </member>
+        <member name="P:Camera.BaseParCamera.BlUsingTrigger">
+            <summary>
+            是否使用软触发
+            </summary>
+        </member>
+        <member name="F:Camera.BaseParCamera.BlNameCamera">
+            <summary>
+            是否使用相机名称
+            </summary>
+        </member>
+        <member name="F:Camera.BaseParCamera.BlAutoConnectCamera">
+            <summary>
+            相机掉线是否自动重连
+            </summary>
+        </member>
+        <member name="F:Camera.BaseParCamera.TypeCamera_e">
+            <summary>
+            相机类型
+            </summary>
+        </member>
+        <member name="F:Camera.BaseParCamera.TriggerSource_e">
+            <summary>
+            触发源
+            </summary>
+        </member>
+        <member name="M:Camera.BaseParCamera.ReadIni">
+            <summary>
+            从Ini中读取参数
+            </summary>
+        </member>
+        <member name="M:Camera.BaseParCamera.WriteIni">
+            <summary>
+            写入参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Camera.TypeCamera_enum">
+            <summary>
+            相机类型
+            </summary>
+        </member>
+        <member name="T:Camera.TriggerSourceCamera_enum">
+            <summary>
+            触发源
+            </summary>
+        </member>
+        <member name="T:Camera.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:Camera.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:Camera.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="T:Camera.CameraAbstract">
+            <summary>
+            定义一个相机类虚基类
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Camera.CameraAbstract.OpenCamera(Camera.BaseParCamera)" -->
+        <member name="M:Camera.CameraAbstract.TriggerOnOff(System.Boolean)">
+            <summary>
+            打开或者关闭触发使能
+            </summary>
+            <param name="blOn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camera.CameraAbstract.GrabImageHalAndBit">
+            <summary>
+            抓取halcon格式和bitmap格式图像
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Camera.ParCameraSetting">
+            <summary>
+            相机配置
+            </summary>
+        </member>
+        <member name="M:Camera.ImageTrans.DeleteObject(System.IntPtr)">
+            <summary>
+            将bitmap转换为WPF可以用的bitmapImage
+            </summary>
+            <param name="hObject"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Camera.WinCameraROI">
+            <summary>
+            WinCameraROI.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinCameraROI
+            </summary>
+        </member>
+        <member name="M:Camera.WinCameraROI.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Camera.BaseWinCamera">
+            <summary>
+            WinCamera.xaml 的交互逻辑
+            </summary>
+            <summary>
+            BaseWinCamera
+            </summary>
+        </member>
+        <member name="P:Camera.BaseWinCamera.ResizeMode_e">
+            <summary>
+            窗体是否可以改变尺寸
+            </summary>
+        </member>
+        <member name="M:Camera.BaseWinCamera.InitLocation">
+            <summary>
+            设置窗体位置
+            </summary>
+        </member>
+        <member name="M:Camera.BaseWinCamera.BaseMetroWindow_LocationChanged(System.Object,System.EventArgs)">
+            <summary>
+            窗体位置变动
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Camera.BaseWinCamera.BaseMetroWindow_SizeChanged(System.Object,System.Windows.SizeChangedEventArgs)">
+            <summary>
+            窗体大小变化
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Camera.BaseWinCamera.BaseMetroWindow_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Camera.BaseWinCamera.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>

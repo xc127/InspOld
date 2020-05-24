@@ -1,0 +1,75 @@
+﻿<BasicClass:BaseMetroWindow x:Class="DealConfigFile.WinCameraWork"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:MetroControls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:BasicClass="clr-namespace:BasicClass;assembly=BasicClass" 
+        xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib" 
+        xmlns:assembly="clr-namespace:System;assembly=mscorlib"
+        xmlns:DealConfigFile="clr-namespace:DealConfigFile"
+        Title="设置图像处理工作参数" Height="500" Width="645" ShowMaxRestoreButton="False" ShowCloseButton="False" ShowMinButton="False" BorderThickness="1" BorderBrush="#CC119EDA" Topmost="False" WindowStartupLocation="CenterScreen" Loaded="MetroWindow_Loaded">
+    <Window.Resources >
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <ObjectDataProvider x:Key="FormatImage_e" MethodName="GetValues" 
+                            ObjectType="{x:Type assembly:Enum}">
+                <ObjectDataProvider.MethodParameters>
+                    <x:Type Type="BasicClass:FormatImage_enum"/>
+                </ObjectDataProvider.MethodParameters>
+            </ObjectDataProvider>
+
+            <ObjectDataProvider x:Key="NumPhoto_e" MethodName="GetValues" 
+                            ObjectType="{x:Type assembly:Enum}">
+                <ObjectDataProvider.MethodParameters>
+                    <x:Type Type="DealConfigFile:NumPhoto_enum"/>
+                </ObjectDataProvider.MethodParameters>
+            </ObjectDataProvider>
+
+            <ObjectDataProvider x:Key="TypeImageCoord_e" MethodName="GetValues" 
+                            ObjectType="{x:Type assembly:Enum}">
+                <ObjectDataProvider.MethodParameters>
+                    <x:Type Type="DealConfigFile:TypeImageCoord_enum"/>
+                </ObjectDataProvider.MethodParameters>
+            </ObjectDataProvider>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <ControlLib:NGroupBox Margin="2" Header="设置图像处理工作参数" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TitleBrush="#FF00D1E5" BorderBrush="#CC119EDA" BorderThickness="1" Foreground="Black"  Grid.Row="0" Grid.ColumnSpan="2">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="286*" />
+                    <RowDefinition Height="69*" />
+                </Grid.RowDefinitions>
+                <DataGrid AllowDrop="True" AreRowDetailsFrozen="True" AutoGenerateColumns="False" Background="White" BorderThickness="1" CanUserAddRows="False" CanUserResizeColumns="False" CanUserSortColumns="False" FontSize="13" GridLinesVisibility="All" HorizontalAlignment="Stretch" IsReadOnly="false" ItemsSource="{Binding}" Name="dgCameraWork" VerticalAlignment="Stretch" Margin="1,1,1,10">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding No}" Header="相机序号" Width="100" IsReadOnly="True"/>
+                        <DataGridComboBoxColumn SelectedItemBinding="{Binding NumPhoto_e}" ItemsSource="{Binding Source={StaticResource NumPhoto_e}}" Header="拍照次数" Width="120"/>
+                        <DataGridComboBoxColumn SelectedItemBinding="{Binding FormatImage_e}" ItemsSource="{Binding Source={StaticResource FormatImage_e}}" Header="图片保存格式" Width="120"/>
+                        <DataGridComboBoxColumn SelectedItemBinding="{Binding TypeImageCoord_e}" ItemsSource="{Binding Source={StaticResource TypeImageCoord_e}}" Header="坐标系选择" Width="120"/>
+
+                        <DataGridTextColumn Binding="{Binding Annotation}" Header="注释" Width="150" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <TextBlock Text="说明：LeftTop,图像左上角为原点，向右为X+，向下为Y+；LeftButtom,图像左下角为原点，向右为X+，向上为Y+；Center,图像中心为原点，向右为X+，向上为Y+；" Grid.Row="1" HorizontalAlignment="Stretch" Margin="1" Name="label1" VerticalAlignment="Stretch" TextWrapping="WrapWithOverflow" ForceCursor="False" Foreground="Blue" />
+            </Grid>
+        </ControlLib:NGroupBox>
+        <Grid  HorizontalAlignment="Stretch" Margin="0" Name="grid1" VerticalAlignment="Stretch" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="203*" />
+                <ColumnDefinition Width="206*" />
+            </Grid.ColumnDefinitions>
+            <ControlLib:ButtonColor Background="#FF66FFFF" Content="保  存" FontSize="20" FontWeight="Bold" Height="39" HorizontalAlignment="Center" IsEnabled="True" Margin="0" Name="btnSave" VerticalAlignment="Center" Width="120" Click="btnSave_Click" />
+            <ControlLib:ButtonColor Background="#FF66FFFF" Content="退  出" FontSize="20" FontWeight="Bold" Height="39" HorizontalAlignment="Center" IsEnabled="True" Margin="0" Name="btnClose" VerticalAlignment="Center" Width="120" Grid.Column="1" Click="btnClose_Click" />
+        </Grid>
+    </Grid>
+</BasicClass:BaseMetroWindow>

@@ -1,0 +1,115 @@
+﻿<DealPLC:BaseWinPLC x:Class="DealPLC.WinCommWritePLC"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:DealPLC="clr-namespace:DealPLC" 
+        xmlns:BasicClass="clr-namespace:BasicClass;assembly=BasicClass" 
+        xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib"
+        xmlns:BasicComprehensive="clr-namespace:BasicComprehensive;assembly=BasicComprehensive"
+        xmlns:DealAlgorithm="clr-namespace:DealAlgorithm;assembly=DealAlgorithm"
+        xmlns:MetroControls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="写入PLC" Height="730" Width="730" BorderBrush="#CC119EDA" BorderThickness="1" Closing="BaseWinPLC_Closing" ShowCloseButton="False" ShowMaxRestoreButton="False" ShowMinButton="False">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid Background="#EDF7F4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="347*" />
+            <RowDefinition Height="344*" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>      
+        <Grid Grid.Row="1"  HorizontalAlignment="Stretch" Margin="1" Name="grid1" VerticalAlignment="Stretch"  Grid.ColumnSpan="2" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="340*" />
+                <RowDefinition Height="53*" />
+            </Grid.RowDefinitions>
+            <DataGrid DockPanel.Dock="Top"  AllowDrop="True" AreRowDetailsFrozen="True" AutoGenerateColumns="False" Background="White" BorderThickness="1" CanUserAddRows="False" CanUserResizeColumns="False" CanUserSortColumns="False" FontSize="12" GridLinesVisibility="All" ItemsSource="{Binding}" Margin="1" Name="dgDataAndReg" VerticalAlignment="Stretch" SelectionMode="Single">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding No}" Header="序号" Width="45" />
+                    <DataGridCheckBoxColumn Binding="{Binding BlSelect}" Header="使用" Width="45" />
+                    <DataGridTextColumn Binding="{Binding Name}" Header="引用结果" Width="150" IsReadOnly="True"/>
+                    <DataGridTextColumn Binding="{Binding Result}" Header="结果值" Width="100"/>
+                    <DataGridTextColumn Binding="{Binding NameReg}" Header="寄存器" Width="120"/>
+                    <DataGridTextColumn Binding="{Binding DblMin}" Header="Min" Width="100" />
+                    <DataGridTextColumn Binding="{Binding DblMax}" Header="Max" Width="100" />
+                    <DataGridTextColumn Binding="{Binding Co}" Header="换算系数" Width="80" />
+                    <DataGridTextColumn Binding="{Binding Annotation}" Header="注释" Width="150" />
+                </DataGrid.Columns>
+            </DataGrid>
+            <Grid  HorizontalAlignment="Stretch" Margin="0" Name="grid2" VerticalAlignment="Stretch"  Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Content="引用数值" Height="23" HorizontalAlignment="Center" Margin="0" Name="btnGetResult" VerticalAlignment="Center" Width="75" Click="btnGetResult_Click" />
+                <Button Content="引用寄存器" Height="23" HorizontalAlignment="Center" Margin="0" Name="btnGetReg" VerticalAlignment="Center" Width="75" Grid.Column="1" Click="btnGetReg_Click" />
+                <Button Content="执行" Height="23" HorizontalAlignment="Center" Margin="0" Name="btnExe" VerticalAlignment="Center" Width="75" Grid.Column="5" />
+                <Button Content="删除设置" Height="23" HorizontalAlignment="Center" Margin="0" Name="btnDel" VerticalAlignment="Center" Width="75" Grid.Column="2" ToolTip="删除选中行的设置" Click="btnDel_Click" />
+            </Grid>
+        </Grid>
+        <Grid Height="320" HorizontalAlignment="Stretch" Margin="0" Name="grid3" VerticalAlignment="Top" Width="705" >
+            <MetroControls:MetroTabControl  Name="tcAlgorithm">
+                <ControlLib:CTabItem Header="结果数值" Width="80" Height="32" BorderBrush="Black" Margin="0,0">
+                    <Grid Margin="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="280" Width="705">
+                        <DealAlgorithm:UCCellDataReference HorizontalAlignment="Center" Margin="0" x:Name="uCCellDataReference" VerticalAlignment="Stretch"/>
+                    </Grid>
+                </ControlLib:CTabItem >
+                <ControlLib:CTabItem Header="PLC寄存器" Width="120" Height="32" BorderBrush="Black" Margin="0,0">
+                    <Grid Margin="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="285" Width="700">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="170*" />
+                            <ColumnDefinition Width="517*" />
+                        </Grid.ColumnDefinitions>
+                        <DataGrid AllowDrop="True" AreRowDetailsFrozen="True" AutoGenerateColumns="False" Background="White" BorderThickness="1" CanUserAddRows="False" CanUserResizeColumns="False" CanUserSortColumns="False" FontSize="12" GridLinesVisibility="All" ItemsSource="{Binding}" Margin="0" Name="dgPLCReg" VerticalAlignment="Stretch" Grid.Column="1">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding No}" Header="序号" Width="45" />
+                                <DataGridTextColumn Binding="{Binding NameReg}" Header="寄存器" Width="120" IsReadOnly="True"/>
+                                <DataGridTextColumn Binding="{Binding DblMin}" Header="Min" Width="100" />
+                                <DataGridTextColumn Binding="{Binding DblMax}" Header="Max" Width="100" />
+                                <DataGridTextColumn Binding="{Binding Co}" Header="换算系数" Width="80" />
+                                <DataGridTextColumn Binding="{Binding Annotation}" Header="注释" Width="150" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+
+                        <TreeView HorizontalAlignment="Stretch"  Margin="1" Name="tvSetPLC" VerticalAlignment="Stretch" BorderThickness="1" BorderBrush="#CC119EDA" IsEnabled="True" SelectedItemChanged="tvSetPLC_SelectedItemChanged" FontSize="14">
+                            <TreeViewItem Header="寄存器类型" IsExpanded="true">
+                                <TreeViewItem Header="相机寄存器"/>
+                                <TreeViewItem Header="数据寄存器1"/>
+                                <TreeViewItem Header="数据寄存器2"/>
+                                <TreeViewItem Header="数据寄存器3"/>
+                                <TreeViewItem Header="数据寄存器4"/>
+                                <TreeViewItem Header="数据寄存器5"/>
+                                <TreeViewItem Header="数据寄存器6"/>
+                            </TreeViewItem>
+                            
+                            
+                        </TreeView>
+                    </Grid>
+                </ControlLib:CTabItem >
+            </MetroControls:MetroTabControl>
+        </Grid>
+        <Grid Margin="0" Grid.ColumnSpan="2" Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <ControlLib:ButtonColor Background="#FF66FFFF" Content="保存&amp;退出" FontFamily="Arial" FontSize="14" Height="30" HorizontalAlignment="Center" Margin="0" Name="btnSave" VerticalAlignment="Center" Width="100" Click="btnSave_Click" IsEnabled="True" Grid.Column="2" />
+            <ControlLib:ButtonColor Background="#FF66FFFF" Content="退   出" FontFamily="Arial" FontSize="14" Height="30" HorizontalAlignment="Center" Margin="0" Name="btnClose" VerticalAlignment="Center" Width="100" Click="btnClose_Click" Grid.Column="3" />
+            <CheckBox Content="窗体始终在最前" Height="20" HorizontalAlignment="Center" Margin="0" Name="chkTopMost" VerticalAlignment="Center" Checked="chkTopMost_Checked" Width="120" IsChecked="True" Unchecked="chkTopMost_Unchecked" />
+            <ControlLib:ButtonColor Background="#FF66FFFF" Content="保  存" FontFamily="Arial" FontSize="14" Height="30" HorizontalAlignment="Center" IsEnabled="True" Margin="0" Name="btnSaveOnly" VerticalAlignment="Center" Width="100" Grid.Column="1" Click="btnSaveOnly_Click" />
+        </Grid>
+    </Grid>
+</DealPLC:BaseWinPLC>

@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E0C69D39-3105-480B-BBFE-26DC4F886864}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DealPLC</RootNamespace>
+    <AssemblyName>DealPLC</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\DLL\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BasicClass, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\BasicClass.dll</HintPath>
+    </Reference>
+    <Reference Include="BasicComprehensive, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\BasicComprehensive.dll</HintPath>
+    </Reference>
+    <Reference Include="Caliburn.Metro">
+      <HintPath>..\Main\bin\机器视觉控制处理软件\Caliburn.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Caliburn.Metro.Core">
+      <HintPath>..\Main\bin\机器视觉控制处理软件\Caliburn.Metro.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Caliburn.Micro">
+      <HintPath>..\Main\bin\机器视觉控制处理软件\Caliburn.Micro.dll</HintPath>
+    </Reference>
+    <Reference Include="Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ControlLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\ControlLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DealAlgorithm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\DealAlgorithm.dll</HintPath>
+    </Reference>
+    <Reference Include="DealCommunication, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\DealCommunication.dll</HintPath>
+    </Reference>
+    <Reference Include="DealResult, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\DealResult.dll</HintPath>
+    </Reference>
+    <Reference Include="HslCommunication">
+      <HintPath>DLL\HslCommunication.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ACTETHERLib">
+      <HintPath>DLL\Interop.ACTETHERLib.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.ActMsgWrapperLib">
+      <HintPath>..\DLL\Interop.ActMsgWrapperLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.ACTMULTILib">
+      <HintPath>DLL\Interop.ACTMULTILib.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.ActProgTypeLib">
+      <HintPath>DLL\Interop.ActProgTypeLib.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.ActUtlTypeLib">
+      <HintPath>DLL\Interop.ActUtlTypeLib.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.ActUtlWrapperLib">
+      <HintPath>..\DLL\Interop.ActUtlWrapperLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MahApps.Metro">
+      <HintPath>..\DLL\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Luna" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Controls.DataVisualization.Toolkit">
+      <HintPath>..\Main\bin\机器视觉控制处理软件\System.Windows.Controls.DataVisualization.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity">
+      <HintPath>..\Main\bin\机器视觉控制处理软件\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WPFToolkit">
+      <HintPath>..\Main\bin\机器视觉控制处理软件\WPFToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit.Design">
+      <HintPath>..\Main\bin\机器视觉控制处理软件\WPFToolkit.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=2.3.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\BaseParPLC.cs" />
+    <Compile Include="Base\BaseWinPLC.cs" />
+    <Compile Include="Communication\Function\FunCommWritePLC.cs" />
+    <Compile Include="Communication\Par\ParCommWritePLC.cs" />
+    <Compile Include="Communication\UI\WinCommWritePLC.xaml.cs">
+      <DependentUpon>WinCommWritePLC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="File\RegeditPLC.cs" />
+    <Compile Include="LogicPLC\Logic\LogicPLC.AnnotherPLC.cs" />
+    <Compile Include="LogicPLC\Logic\LogicPLC.RegConfigPar.cs" />
+    <Compile Include="LogicPLC\Logic\LogicPLC.cs" />
+    <Compile Include="LogicPLC\Logic\LogicPLC.RegMonitor.cs" />
+    <Compile Include="LogicPLC\Logic\LogicPLC.Read.cs" />
+    <Compile Include="LogicPLC\Logic\LogicPLC.Write.ComFun.cs" />
+    <Compile Include="LogicPLC\Logic\LogicPLC.Write.cs" />
+    <Compile Include="LogicPLC\Logic\LogicPLC.DataReg.cs" />
+    <Compile Include="File\LogPLC.cs" />
+    <Compile Include="LogicPLC\Logic\LogicPLC.RegCyc.cs" />
+    <Compile Include="LogicPLC\PortPLC\PortPLC_MITHls.cs" />
+    <Compile Include="LogicPLC\PortPLC\PortPLC_MITNew.cs" />
+    <Compile Include="Manual\WinTrrigerPLC.xaml.cs">
+      <DependentUpon>WinTrrigerPLC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LogicPLC\PortPLC\PortPLC.cs" />
+    <Compile Include="LogicPLC\PortPLC\BasePortPLC.cs" />
+    <Compile Include="LogicPLC\PortPLC\PortPLC_MIT.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="LogicPLC\ParLogicPLC\ParLogicPLC.cs" />
+    <Compile Include="Base\BaseUCPLC.cs" />
+    <Compile Include="SetPLC\Excel\ReadExcelReg.cs" />
+    <Compile Include="SetPLC\RegPLC\Base\BaseRegPLC.cs" />
+    <Compile Include="SetPLC\RegPLC\Base\BaseUCReg.xaml.cs">
+      <DependentUpon>BaseUCReg.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SetPLC\RegPLC\ConfigPar\RegConfigPar.cs" />
+    <Compile Include="SetPLC\RegPLC\ConfigPar\UCSetRegConfigPar.cs" />
+    <Compile Include="SetPLC\RegPLC\Data\Data1\RegData.cs" />
+    <Compile Include="SetPLC\RegPLC\Data\Data1\UCSetRegData.cs" />
+    <Compile Include="SetPLC\RegPLC\CameraData\RegCameraData.cs" />
+    <Compile Include="SetPLC\RegPLC\CameraData\UCSetRegData.cs" />
+    <Compile Include="SetPLC\RegPLC\Data\Data2\RegData2.cs" />
+    <Compile Include="SetPLC\RegPLC\Data\Data2\UCSetRegData2.cs" />
+    <Compile Include="SetPLC\RegPLC\Data\Data3\RegData3.cs" />
+    <Compile Include="SetPLC\RegPLC\Data\Data3\UCSetRegData3.cs" />
+    <Compile Include="SetPLC\RegPLC\Data\Data4\RegData4.cs" />
+    <Compile Include="SetPLC\RegPLC\Data\Data4\UCSetRegData4.cs" />
+    <Compile Include="SetPLC\RegPLC\Data\Data5\RegData5.cs" />
+    <Compile Include="SetPLC\RegPLC\Data\Data5\UCSetRegData5.cs" />
+    <Compile Include="SetPLC\RegPLC\Data\Data6\RegData6.cs" />
+    <Compile Include="SetPLC\RegPLC\Data\Data6\UCSetRegData6.cs" />
+    <Compile Include="SetPLC\RegPLC\RegCycle\UCSetRegCycle.xaml.cs">
+      <DependentUpon>UCSetRegCycle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SetPLC\RegPLC\Monitor\RegMonitor.cs" />
+    <Compile Include="SetPLC\RegPLC\Monitor\UCSetRegMonitor.cs" />
+    <Compile Include="SetPLC\UI\UCSetTypePLC.xaml.cs">
+      <DependentUpon>UCSetTypePLC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SetPLC\Par\ParSetPLC.ReadIni.cs" />
+    <Compile Include="SetPLC\Par\ParSetPLC.WriteIni.cs" />
+    <Compile Include="SetPLC\Par\ParSetPLC.Reg.cs" />
+    <Compile Include="SetPLC\Par\ParSetPLC.cs" />
+    <Compile Include="SetPLC\UI\WinSetPLC.xaml.cs">
+      <DependentUpon>WinSetPLC.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="LogicPLC\Logic\LogicPLC.Read.Trriger.cs" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Communication\UI\WinCommWritePLC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manual\WinTrrigerPLC.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SetPLC\RegPLC\Base\BaseUCReg.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SetPLC\RegPLC\RegCycle\UCSetRegCycle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SetPLC\UI\UCSetTypePLC.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SetPLC\UI\WinSetPLC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Communication\XmlTemplate\XmlParCommWritePLC.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SetPLC\UI\XmlTemplate\XmlSetPLC.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DealConfigFile\DealConfigFile.csproj">
+      <Project>{5713e4a9-45bd-4d40-9ef5-81b679f605ea}</Project>
+      <Name>DealConfigFile</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealFiles\DealFile.csproj">
+      <Project>{ED6A6F85-661B-4066-8DB2-BA97A205E824}</Project>
+      <Name>DealFile</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DealLog\DealLog.csproj">
+      <Project>{56d56a34-7e95-48d2-965a-a3bd9ba6dd7e}</Project>
+      <Name>DealLog</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

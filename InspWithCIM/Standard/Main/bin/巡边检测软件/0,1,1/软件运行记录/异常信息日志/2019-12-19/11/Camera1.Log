@@ -1,0 +1,140 @@
+******11:44:23******
+【Source】MvCameraControl.Net
+【ErrorType】System.DllNotFoundException
+【TargetSite】Int32 MV_CC_EnumDevices(UInt32, MV_CC_DEVICE_INFO_LIST ByRef)
+【Message】无法加载 DLL“MvCameraControl.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+【StackTrace】   在 MvCamCtrl.NET.MyCamera.MV_CC_EnumDevices(UInt32 nTLayerType, MV_CC_DEVICE_INFO_LIST& stDevList)
+   在 Camera.Camera_HIKSDK.EnumDevices(UInt32 nLayerType, MV_CC_DEVICE_INFO_LIST& stDeviceList) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 108
+   在 Camera.Camera_HIKSDK.ConnectCamera(String serialNumber) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 159
+
+
+******11:45:02******
+【Source】MvCameraControl.Net
+【ErrorType】System.DllNotFoundException
+【TargetSite】Int32 MV_CC_EnumDevices(UInt32, MV_CC_DEVICE_INFO_LIST ByRef)
+【Message】无法加载 DLL“MvCameraControl.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+【StackTrace】   在 MvCamCtrl.NET.MyCamera.MV_CC_EnumDevices(UInt32 nTLayerType, MV_CC_DEVICE_INFO_LIST& stDevList)
+   在 Camera.Camera_HIKSDK.EnumDevices(UInt32 nLayerType, MV_CC_DEVICE_INFO_LIST& stDeviceList) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 108
+   在 Camera.Camera_HIKSDK.ConnectCamera(String serialNumber) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 159
+
+
+******11:46:06******
+【Source】MvCameraControl.Net
+【ErrorType】System.DllNotFoundException
+【TargetSite】Int32 MV_CC_EnumDevices(UInt32, MV_CC_DEVICE_INFO_LIST ByRef)
+【Message】无法加载 DLL“MvCameraControl.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+【StackTrace】   在 MvCamCtrl.NET.MyCamera.MV_CC_EnumDevices(UInt32 nTLayerType, MV_CC_DEVICE_INFO_LIST& stDevList)
+   在 Camera.Camera_HIKSDK.EnumDevices(UInt32 nLayerType, MV_CC_DEVICE_INFO_LIST& stDeviceList) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 108
+   在 Camera.Camera_HIKSDK.ConnectCamera(String serialNumber) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 159
+
+
+******11:46:47******
+【Source】MvCameraControl.Net
+【ErrorType】System.DllNotFoundException
+【TargetSite】Int32 MV_CC_EnumDevices(UInt32, MV_CC_DEVICE_INFO_LIST ByRef)
+【Message】无法加载 DLL“MvCameraControl.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+【StackTrace】   在 MvCamCtrl.NET.MyCamera.MV_CC_EnumDevices(UInt32 nTLayerType, MV_CC_DEVICE_INFO_LIST& stDevList)
+   在 Camera.Camera_HIKSDK.EnumDevices(UInt32 nLayerType, MV_CC_DEVICE_INFO_LIST& stDeviceList) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 108
+   在 Camera.Camera_HIKSDK.ConnectCamera(String serialNumber) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 159
+
+
+******11:48:02******
+【Source】MvCameraControl.Net
+【ErrorType】System.DllNotFoundException
+【TargetSite】Int32 MV_CC_EnumDevices(UInt32, MV_CC_DEVICE_INFO_LIST ByRef)
+【Message】无法加载 DLL“MvCameraControl.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+【StackTrace】   在 MvCamCtrl.NET.MyCamera.MV_CC_EnumDevices(UInt32 nTLayerType, MV_CC_DEVICE_INFO_LIST& stDevList)
+   在 Camera.Camera_HIKSDK.EnumDevices(UInt32 nLayerType, MV_CC_DEVICE_INFO_LIST& stDeviceList) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 108
+   在 Camera.Camera_HIKSDK.ConnectCamera(String serialNumber) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 159
+
+
+******11:49:11******
+【Source】MvCameraControl.Net
+【ErrorType】System.DllNotFoundException
+【TargetSite】Int32 MV_CC_EnumDevices(UInt32, MV_CC_DEVICE_INFO_LIST ByRef)
+【Message】无法加载 DLL“MvCameraControl.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+【StackTrace】   在 MvCamCtrl.NET.MyCamera.MV_CC_EnumDevices(UInt32 nTLayerType, MV_CC_DEVICE_INFO_LIST& stDevList)
+   在 Camera.Camera_HIKSDK.EnumDevices(UInt32 nLayerType, MV_CC_DEVICE_INFO_LIST& stDeviceList) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 108
+   在 Camera.Camera_HIKSDK.ConnectCamera(String serialNumber) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 159
+
+
+******11:50:37******
+【Source】MvCameraControl.Net
+【ErrorType】System.DllNotFoundException
+【TargetSite】Int32 MV_CC_EnumDevices(UInt32, MV_CC_DEVICE_INFO_LIST ByRef)
+【Message】无法加载 DLL“MvCameraControl.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+【StackTrace】   在 MvCamCtrl.NET.MyCamera.MV_CC_EnumDevices(UInt32 nTLayerType, MV_CC_DEVICE_INFO_LIST& stDevList)
+   在 Camera.Camera_HIKSDK.EnumDevices(UInt32 nLayerType, MV_CC_DEVICE_INFO_LIST& stDeviceList) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 108
+   在 Camera.Camera_HIKSDK.ConnectCamera(String serialNumber) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 159
+
+
+******11:51:20******
+【Source】MvCameraControl.Net
+【ErrorType】System.DllNotFoundException
+【TargetSite】Int32 MV_CC_EnumDevices(UInt32, MV_CC_DEVICE_INFO_LIST ByRef)
+【Message】无法加载 DLL“MvCameraControl.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+【StackTrace】   在 MvCamCtrl.NET.MyCamera.MV_CC_EnumDevices(UInt32 nTLayerType, MV_CC_DEVICE_INFO_LIST& stDevList)
+   在 Camera.Camera_HIKSDK.EnumDevices(UInt32 nLayerType, MV_CC_DEVICE_INFO_LIST& stDeviceList) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 108
+   在 Camera.Camera_HIKSDK.ConnectCamera(String serialNumber) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 159
+
+
+******11:52:58******
+【Source】MvCameraControl.Net
+【ErrorType】System.DllNotFoundException
+【TargetSite】Int32 MV_CC_EnumDevices(UInt32, MV_CC_DEVICE_INFO_LIST ByRef)
+【Message】无法加载 DLL“MvCameraControl.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+【StackTrace】   在 MvCamCtrl.NET.MyCamera.MV_CC_EnumDevices(UInt32 nTLayerType, MV_CC_DEVICE_INFO_LIST& stDevList)
+   在 Camera.Camera_HIKSDK.EnumDevices(UInt32 nLayerType, MV_CC_DEVICE_INFO_LIST& stDeviceList) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 108
+   在 Camera.Camera_HIKSDK.ConnectCamera(String serialNumber) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 159
+
+
+******11:53:30******
+【Source】MvCameraControl.Net
+【ErrorType】System.DllNotFoundException
+【TargetSite】Int32 MV_CC_EnumDevices(UInt32, MV_CC_DEVICE_INFO_LIST ByRef)
+【Message】无法加载 DLL“MvCameraControl.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+【StackTrace】   在 MvCamCtrl.NET.MyCamera.MV_CC_EnumDevices(UInt32 nTLayerType, MV_CC_DEVICE_INFO_LIST& stDevList)
+   在 Camera.Camera_HIKSDK.EnumDevices(UInt32 nLayerType, MV_CC_DEVICE_INFO_LIST& stDeviceList) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 108
+   在 Camera.Camera_HIKSDK.ConnectCamera(String serialNumber) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 159
+
+
+******11:54:28******
+【Source】MvCameraControl.Net
+【ErrorType】System.DllNotFoundException
+【TargetSite】Int32 MV_CC_EnumDevices(UInt32, MV_CC_DEVICE_INFO_LIST ByRef)
+【Message】无法加载 DLL“MvCameraControl.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+【StackTrace】   在 MvCamCtrl.NET.MyCamera.MV_CC_EnumDevices(UInt32 nTLayerType, MV_CC_DEVICE_INFO_LIST& stDevList)
+   在 Camera.Camera_HIKSDK.EnumDevices(UInt32 nLayerType, MV_CC_DEVICE_INFO_LIST& stDeviceList) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 108
+   在 Camera.Camera_HIKSDK.ConnectCamera(String serialNumber) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 159
+
+
+******11:55:54******
+【Source】MvCameraControl.Net
+【ErrorType】System.DllNotFoundException
+【TargetSite】Int32 MV_CC_EnumDevices(UInt32, MV_CC_DEVICE_INFO_LIST ByRef)
+【Message】无法加载 DLL“MvCameraControl.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+【StackTrace】   在 MvCamCtrl.NET.MyCamera.MV_CC_EnumDevices(UInt32 nTLayerType, MV_CC_DEVICE_INFO_LIST& stDevList)
+   在 Camera.Camera_HIKSDK.EnumDevices(UInt32 nLayerType, MV_CC_DEVICE_INFO_LIST& stDeviceList) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 108
+   在 Camera.Camera_HIKSDK.ConnectCamera(String serialNumber) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 159
+
+
+******11:57:11******
+【Source】MvCameraControl.Net
+【ErrorType】System.DllNotFoundException
+【TargetSite】Int32 MV_CC_EnumDevices(UInt32, MV_CC_DEVICE_INFO_LIST ByRef)
+【Message】无法加载 DLL“MvCameraControl.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+【StackTrace】   在 MvCamCtrl.NET.MyCamera.MV_CC_EnumDevices(UInt32 nTLayerType, MV_CC_DEVICE_INFO_LIST& stDevList)
+   在 Camera.Camera_HIKSDK.EnumDevices(UInt32 nLayerType, MV_CC_DEVICE_INFO_LIST& stDeviceList) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 108
+   在 Camera.Camera_HIKSDK.ConnectCamera(String serialNumber) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 159
+
+
+******11:59:38******
+【Source】MvCameraControl.Net
+【ErrorType】System.DllNotFoundException
+【TargetSite】Int32 MV_CC_EnumDevices(UInt32, MV_CC_DEVICE_INFO_LIST ByRef)
+【Message】无法加载 DLL“MvCameraControl.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+【StackTrace】   在 MvCamCtrl.NET.MyCamera.MV_CC_EnumDevices(UInt32 nTLayerType, MV_CC_DEVICE_INFO_LIST& stDevList)
+   在 Camera.Camera_HIKSDK.EnumDevices(UInt32 nLayerType, MV_CC_DEVICE_INFO_LIST& stDeviceList) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 108
+   在 Camera.Camera_HIKSDK.ConnectCamera(String serialNumber) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 159
+
+

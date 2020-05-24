@@ -1,0 +1,74 @@
+﻿<BasicClass:BaseControl x:Class="DealRobot.UCTechRobot"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:BasicClass="clr-namespace:BasicClass;assembly=BasicClass"
+             xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib"
+             mc:Ignorable="d" 
+             d:DesignHeight="329" d:DesignWidth="397" Height="350" Width="400" Loaded="BaseControl_Loaded">
+    <UserControl.Resources>
+        <Style x:Key="styleTxt" TargetType="{x:Type TextBox}">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalContentAlignment" Value="Right" />
+            <Setter Property="Text" Value="0" />
+            <Setter Property="Margin" Value="2" />
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <StackPanel>
+            <Grid Height="100" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Button Content="获取当前点" Width="60" Height="30" Name="btnCurrPos" Click="btnCurrPos_Click" />
+                <TextBox Name="txtX" Style="{StaticResource styleTxt}" Grid.Column="1" />
+                <TextBox Name="txtY" Style="{StaticResource styleTxt}" Grid.Column="2" />
+                <TextBox Name="txtZ" Style="{StaticResource styleTxt}" Grid.Column="3" />
+                <TextBox Name="txtU" Style="{StaticResource styleTxt}" Grid.Column="4" />
+                <ComboBox Name="cbxHand" HorizontalAlignment="Center" VerticalAlignment="Center" Width="60" Grid.Column="5" SelectedIndex="0" IsEnabled ="False">
+                    <ComboBoxItem Content="L" />
+                    <ComboBoxItem Content="R" />
+                </ComboBox>
+                
+                <!--这里控制电机上电，默认当界面打开时电机是上电的 这里最好可以获取状态，但是很麻烦
+                另外程序里是先打开电机在打开通讯-->
+                <ControlLib:ButtonColor Background="#FF66FFFF" Name="btnSetPowerOn" Content="上电" Grid.Row="1" Width="70" Height="30" Grid.Column="1" Grid.ColumnSpan="2" Click="btnSetPowerOn_Click" />
+                <ControlLib:ButtonColor Background="#FF66FFFF" Name="btnSetPowerOff" Content="断电" Grid.Row="1" Width="70" Height="30" Grid.Column="3" Grid.ColumnSpan="2" Click="btnSetPowerOff_Click" />
+            </Grid>
+            <Grid Name="gdCtr" Height="250" IsEnabled="False">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Content="X-" Name="btnDecX" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnJogRobot_Click" />
+                <Button Content="X+" Name="btnAddX" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnJogRobot_Click"  />
+                <Button Content="Y-" Name="btnDecY" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnJogRobot_Click"  />
+                <Button Content="Y+" Name="btnAddY" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnJogRobot_Click"  />
+                <Button Content="R+" Name="btnDecU" Grid.Row="2" Grid.Column="1" Height="auto" Width="20" Margin="70,31,9,31" Click="btnJogRobot_Click"  />
+                <Button Content="R-" Name="btnAddU" Grid.Row="2" Grid.Column="1" Height="auto" Width="20" Margin="9,31,70,31" Click="btnJogRobot_Click"  />
+                <Button Content="Z+" Name="btnDecZ" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnJogRobot_Click"  />
+                <Button Content="Z-" Name="btnAddZ" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnJogRobot_Click"  />
+                <ControlLib:DoubleUpDown Increment="0.01" Maximum="100" Minimum="100" Name="dudStepMove" Value="1" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Right" VerticalAlignment="Center" Width="60" ToolTip="移动步长" />
+                <ControlLib:DoubleUpDown Increment="0.01" Maximum="100" Minimum="100" Name="dudStepAngle" Value="1" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Right" VerticalAlignment="Center" Width="60" ToolTip="角度步长" />
+            </Grid>
+        </StackPanel>
+    </Grid>
+</BasicClass:BaseControl>

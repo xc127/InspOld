@@ -1,0 +1,505 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DealGeometry</name>
+    </assembly>
+    <members>
+        <member name="T:DealGeometry.UCSinglePoint">
+            <summary>
+            UCSinglePoint.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCSinglePoint
+            </summary>
+        </member>
+        <member name="M:DealGeometry.UCSinglePoint.LoginEvent">
+            <summary>
+            事件注册
+            </summary>
+        </member>
+        <member name="M:DealGeometry.UCSinglePoint.btnGetXY_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            引用XY结果
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealGeometry.UCSinglePoint.txtResultXY_TextChanged(System.Object,System.Windows.Controls.TextChangedEventArgs)">
+            <summary>
+            清空
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealGeometry.UCSinglePoint.btnXDelta_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            引用X偏移
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealGeometry.UCSinglePoint.btnYDelta_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            引用Y偏移
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealGeometry.UCSinglePoint.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealGeometry.BaseParGeometry.ReadXmlChildInit(System.Xml.XmlElement)">
+            <summary>
+            初始化读取参数，和ReadXmlChild方法相比，只是不读取基础属性
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealGeometry.BaseParGeometry.ReadXmlChild(System.Xml.XmlElement)">
+            <summary>
+            读取子元素的参数
+            </summary>
+        </member>
+        <member name="M:DealGeometry.BaseParGeometry.ReadBasicAttribute(System.Xml.XmlElement)">
+            <summary>
+            读取基础属性
+            </summary>
+            <param name="xeRoot">根节点</param>
+        </member>
+        <member name="M:DealGeometry.BaseParGeometry.ReadBasicPar(System.Xml.XmlElement)">
+            <summary>
+            读取基础参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealGeometry.BaseParGeometry.WriteXmlRoot">
+            <summary>
+            写入参数并获取参数的根节点，直接从资源里面读取，确保参数所有的节点都被读取到
+            </summary>
+            <returns>根节点</returns>
+        </member>
+        <member name="M:DealGeometry.BaseParGeometry.WriteXmlChild(System.Xml.XmlElement,System.Xml.XmlElement)">
+            <summary>
+            全局
+            </summary>
+        </member>
+        <member name="M:DealGeometry.BaseParGeometry.WriteBasicPar(System.Xml.XmlElement)">
+            <summary>
+            写入基础参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealGeometry.BaseParGeometry.WriteBasicAttribute(System.Xml.XmlElement)">
+            <summary>
+            写入基础属性
+            </summary>
+            <param name="xeRoot">跟节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealGeometry.ParSinglePoint.ReadXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            初始化加载的时候读取根元素     
+            </summary>
+            <param name="xDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealGeometry.ParSinglePoint.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            记载整个配置文件的时候，读取参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealGeometry.ParSinglePoint.ReadXmlPar(System.Xml.XmlElement)">
+            <summary>
+            读取算法参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealGeometry.ParSinglePoint.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealGeometry.ParSinglePoint.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            算法参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealGeometry.ParTwoPointsLine.ReadXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            初始化加载的时候读取根元素     
+            </summary>
+            <param name="xDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealGeometry.ParTwoPointsLine.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            记载整个配置文件的时候，读取参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealGeometry.ParTwoPointsLine.ReadXmlPar(System.Xml.XmlElement)">
+            <summary>
+            读取算法参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealGeometry.ParTwoPointsLine.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealGeometry.ParTwoPointsLine.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            算法参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealGeometry.ParTwoLines.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            从本地文档读取参数的时候，读取
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:DealGeometry.ParTwoLines.WriteXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            写入参数到xml节点
+            </summary>
+            <param name="xDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealGeometry.ParTwoLines.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            从Stream资源读取完整节点后，写入参数
+            </summary>
+            <param name="xDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealGeometry.ParTwoLines.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            该算法参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealGeometry.FunGeometry.GetLine(BasicClass.Point2D,BasicClass.Point2D)">
+            <summary>
+            两点求直线
+            </summary>
+            <param name="pBegin"></param>
+            <param name="pEnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealGeometry.FunGeometry.DealCalibResult(DealGeometry.BaseParGeometry,DealResult.BaseResult,System.Collections.Hashtable)">
+            <summary>
+            对结果进行校准
+            </summary>
+            <param name="cell">校准的算法单元</param>
+        </member>
+        <member name="M:DealGeometry.FunGeometry.SetDefaultCalib(DealGeometry.BaseParGeometry,DealResult.BaseResult,System.Collections.Hashtable)">
+            <summary>
+            如果不设置校准
+            </summary>
+        </member>
+        <member name="M:DealGeometry.FunDisLine.SelectType(DealGeometry.ParDisLine,DealResult.ResultDisLine,System.Collections.Hashtable,System.Double@)">
+            <summary>
+            选择数据类型
+            </summary>
+        </member>
+        <member name="M:DealGeometry.ParDisLine.WriteXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            写入参数到xml节点
+            </summary>
+        </member>
+        <member name="M:DealGeometry.ParDisLine.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            从Stream资源读取完整节点后，写入参数
+            </summary>
+        </member>
+        <member name="M:DealGeometry.ParDisLine.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            该算法参数
+            </summary>
+        </member>
+        <member name="M:DealGeometry.BaseFunGeometry.DealCalibResult(DealGeometry.BaseParGeometry,DealResult.BaseResult,System.Collections.Hashtable)">
+            <summary>
+            对结果进行校准
+            </summary>
+            <param name="cell">校准的算法单元</param>
+        </member>
+        <member name="M:DealGeometry.BaseFunGeometry.SetDefaultCalib(DealGeometry.BaseParGeometry,DealResult.BaseResult,System.Collections.Hashtable)">
+            <summary>
+            如果不设置校准
+            </summary>
+        </member>
+        <member name="M:DealGeometry.BaseFunGeometry.AddDisplay(DealDisplay.ParDisplayResultShape,DealResult.BaseResult)">
+            <summary>
+            将产生的结果，添加到结果类显示
+            </summary>
+            <param name="parDisplayResult"></param>
+            <param name="baseResult"></param>
+        </member>
+        <member name="M:DealGeometry.FunCrossLineGeo.GetCross(BasicClass.Point4D,BasicClass.Point4D)">
+            <summary>
+            通过直线的点，求交点
+            </summary>
+            <param name="HPoints"></param>
+            <param name="VPoints"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealGeometry.UCTwoLines">
+            <summary>
+            UCTwoLines.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCTwoLines
+            </summary>
+        </member>
+        <member name="M:DealGeometry.UCTwoLines.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealGeometry.BaseWinGeometry">
+            <summary>
+            基类
+            </summary>
+        </member>
+        <member name="M:DealGeometry.BaseWinGeometry.btnClose_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            退出窗体,恢复备份参数
+            </summary>
+        </member>
+        <member name="M:DealGeometry.BaseWinGeometry.LogOutEvent">
+            注销事件
+        </member>
+        <member name="T:DealGeometry.TypeGeometry">
+            <summary>
+            TypeGeometry.xaml 的交互逻辑
+            </summary>
+            <summary>
+            TypeGeometry
+            </summary>
+        </member>
+        <member name="M:DealGeometry.TypeGeometry.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealGeometry.UCTwoPointsLine">
+            <summary>
+            UCTwoPointsLine.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCTwoPointsLine
+            </summary>
+        </member>
+        <member name="M:DealGeometry.UCTwoPointsLine.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealGeometry.UCBaseLine">
+            <summary>
+            BaseLine.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCBaseLine
+            </summary>
+        </member>
+        <member name="M:DealGeometry.UCBaseLine.cboNameCell_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            算法单元
+            </summary>
+        </member>
+        <member name="M:DealGeometry.UCBaseLine.cboTypePar_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            设置直线参数类型
+            </summary>
+        </member>
+        <member name="M:DealGeometry.UCBaseLine.SaveCell">
+            <summary>
+            保存参考单元
+            </summary>
+        </member>
+        <member name="M:DealGeometry.UCBaseLine.EnableGd(DealGeometry.TypeParLine_enum)">
+            <summary>
+            使能控件
+            </summary>
+        </member>
+        <member name="M:DealGeometry.UCBaseLine.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealGeometry.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:DealGeometry.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:DealGeometry.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="T:DealGeometry.WinTwoPointsLine">
+            <summary>
+            WinTwoPointsLine.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinTwoPointsLine
+            </summary>
+        </member>
+        <member name="M:DealGeometry.WinTwoPointsLine.LoginEvent">
+            <summary>
+            事件注册
+            </summary>
+        </member>
+        <member name="M:DealGeometry.WinTwoPointsLine.btnSave_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            保存参数到本地并且退出
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealGeometry.WinTwoPointsLine.btnClose_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            退出窗体,恢复备份参数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealGeometry.WinTwoPointsLine.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealGeometry.WinCrossLineGeo">
+            <summary>
+            CreatNcc.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinCrossLineGeo
+            </summary>
+        </member>
+        <member name="M:DealGeometry.WinCrossLineGeo.btnSaveOnly_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            保存
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealGeometry.WinCrossLineGeo.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealGeometry.WinDisLine">
+            <summary>
+            WinDisLine.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinDisLine
+            </summary>
+        </member>
+        <member name="M:DealGeometry.WinDisLine.LoginEvent">
+            <summary>
+            事件注册
+            </summary>
+        </member>
+        <member name="M:DealGeometry.WinDisLine.tsbGlobalPar_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            是否位全局变量
+            </summary>
+        </member>
+        <member name="M:DealGeometry.WinDisLine.btnSaveOnly_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            保存
+            </summary>
+        </member>
+        <member name="M:DealGeometry.WinDisLine.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealGeometry.ParCrossLineGeo.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            从本地文档读取参数的时候，读取
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:DealGeometry.ParCrossLineGeo.WriteXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            写入参数到xml节点
+            </summary>
+            <param name="xDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealGeometry.ParCrossLineGeo.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            从Stream资源读取完整节点后，写入参数
+            </summary>
+            <param name="xDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealGeometry.ParCrossLineGeo.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            该算法参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

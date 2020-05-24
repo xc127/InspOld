@@ -1,0 +1,5 @@
+Alarm:相机1打开失败       Time:10:46:19
+Alarm:CIM屏蔽       Time:10:46:21
+Alarm:CIM连接断开       Time:10:47:18
+Alarm:相机1打开失败       Time:10:51:09
+Alarm:CIM屏蔽       Time:10:51:10

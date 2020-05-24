@@ -1,0 +1,23 @@
+﻿<BasicClass:BaseMetroWindow x:Class="Camera.BaseWinCamera"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:MetroControls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:BasicClass="clr-namespace:BasicClass;assembly=BasicClass"
+        xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib" 
+        xmlns:Camera="clr-namespace:Camera" 
+        Title="相机显示" Height="760" Width="760" WindowStartupLocation="CenterScreen" BorderBrush="#CC119EDA" Topmost="False" Loaded="BaseMetroWindow_Loaded" Closing="BaseMetroWindow_Closing" LocationChanged="BaseMetroWindow_LocationChanged" ShowMinButton="False" ShowMaxRestoreButton="True" SizeChanged="BaseMetroWindow_SizeChanged" Name="winCamera" >
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <!--<ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />-->
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid Name="gdCtr">
+        
+    </Grid>
+</BasicClass:BaseMetroWindow>

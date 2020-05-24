@@ -1,0 +1,150 @@
+******11:44:22******
+【Source】mscorlib
+【ErrorType】System.IO.DirectoryNotFoundException
+【TargetSite】Void WinIOError(Int32, System.String)
+【Message】未能找到路径“C:\Program Files\A Sercet Dll\halcon.dll”的一部分。
+【StackTrace】   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 Main.StartUpWindow..ctor() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Main\StartWindow\StartWindow.xaml.cs:行号 53
+
+
+******11:45:01******
+【Source】mscorlib
+【ErrorType】System.IO.DirectoryNotFoundException
+【TargetSite】Void WinIOError(Int32, System.String)
+【Message】未能找到路径“C:\Program Files\A Sercet Dll\halcon.dll”的一部分。
+【StackTrace】   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 Main.StartUpWindow..ctor() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Main\StartWindow\StartWindow.xaml.cs:行号 53
+
+
+******11:46:05******
+【Source】mscorlib
+【ErrorType】System.IO.DirectoryNotFoundException
+【TargetSite】Void WinIOError(Int32, System.String)
+【Message】未能找到路径“C:\Program Files\A Sercet Dll\halcon.dll”的一部分。
+【StackTrace】   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 Main.StartUpWindow..ctor() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Main\StartWindow\StartWindow.xaml.cs:行号 53
+
+
+******11:46:46******
+【Source】mscorlib
+【ErrorType】System.IO.DirectoryNotFoundException
+【TargetSite】Void WinIOError(Int32, System.String)
+【Message】未能找到路径“C:\Program Files\A Sercet Dll\halcon.dll”的一部分。
+【StackTrace】   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 Main.StartUpWindow..ctor() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Main\StartWindow\StartWindow.xaml.cs:行号 53
+
+
+******11:48:02******
+【Source】mscorlib
+【ErrorType】System.IO.DirectoryNotFoundException
+【TargetSite】Void WinIOError(Int32, System.String)
+【Message】未能找到路径“C:\Program Files\A Sercet Dll\halcon.dll”的一部分。
+【StackTrace】   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 Main.StartUpWindow..ctor() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Main\StartWindow\StartWindow.xaml.cs:行号 53
+
+
+******11:49:10******
+【Source】mscorlib
+【ErrorType】System.IO.DirectoryNotFoundException
+【TargetSite】Void WinIOError(Int32, System.String)
+【Message】未能找到路径“C:\Program Files\A Sercet Dll\halcon.dll”的一部分。
+【StackTrace】   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 Main.StartUpWindow..ctor() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Main\StartWindow\StartWindow.xaml.cs:行号 53
+
+
+******11:50:36******
+【Source】mscorlib
+【ErrorType】System.IO.DirectoryNotFoundException
+【TargetSite】Void WinIOError(Int32, System.String)
+【Message】未能找到路径“C:\Program Files\A Sercet Dll\halcon.dll”的一部分。
+【StackTrace】   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 Main.StartUpWindow..ctor() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Main\StartWindow\StartWindow.xaml.cs:行号 53
+
+
+******11:51:20******
+【Source】mscorlib
+【ErrorType】System.IO.DirectoryNotFoundException
+【TargetSite】Void WinIOError(Int32, System.String)
+【Message】未能找到路径“C:\Program Files\A Sercet Dll\halcon.dll”的一部分。
+【StackTrace】   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 Main.StartUpWindow..ctor() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Main\StartWindow\StartWindow.xaml.cs:行号 53
+
+
+******11:52:58******
+【Source】mscorlib
+【ErrorType】System.IO.DirectoryNotFoundException
+【TargetSite】Void WinIOError(Int32, System.String)
+【Message】未能找到路径“C:\Program Files\A Sercet Dll\halcon.dll”的一部分。
+【StackTrace】   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 Main.StartUpWindow..ctor() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Main\StartWindow\StartWindow.xaml.cs:行号 53
+
+
+******11:53:30******
+【Source】mscorlib
+【ErrorType】System.IO.DirectoryNotFoundException
+【TargetSite】Void WinIOError(Int32, System.String)
+【Message】未能找到路径“C:\Program Files\A Sercet Dll\halcon.dll”的一部分。
+【StackTrace】   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 Main.StartUpWindow..ctor() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Main\StartWindow\StartWindow.xaml.cs:行号 53
+
+
+******11:54:28******
+【Source】mscorlib
+【ErrorType】System.IO.DirectoryNotFoundException
+【TargetSite】Void WinIOError(Int32, System.String)
+【Message】未能找到路径“C:\Program Files\A Sercet Dll\halcon.dll”的一部分。
+【StackTrace】   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 Main.StartUpWindow..ctor() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Main\StartWindow\StartWindow.xaml.cs:行号 53
+
+
+******11:55:53******
+【Source】mscorlib
+【ErrorType】System.IO.DirectoryNotFoundException
+【TargetSite】Void WinIOError(Int32, System.String)
+【Message】未能找到路径“C:\Program Files\A Sercet Dll\halcon.dll”的一部分。
+【StackTrace】   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 Main.StartUpWindow..ctor() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Main\StartWindow\StartWindow.xaml.cs:行号 53
+
+
+******11:57:11******
+【Source】mscorlib
+【ErrorType】System.IO.DirectoryNotFoundException
+【TargetSite】Void WinIOError(Int32, System.String)
+【Message】未能找到路径“C:\Program Files\A Sercet Dll\halcon.dll”的一部分。
+【StackTrace】   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 Main.StartUpWindow..ctor() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Main\StartWindow\StartWindow.xaml.cs:行号 53
+
+
+******11:57:47******
+【Source】mscorlib
+【ErrorType】System.IO.DirectoryNotFoundException
+【TargetSite】Void WinIOError(Int32, System.String)
+【Message】未能找到路径“C:\Program Files\A Sercet Dll\halcon.dll”的一部分。
+【StackTrace】   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 Main.StartUpWindow..ctor() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Main\StartWindow\StartWindow.xaml.cs:行号 53
+
+
+******11:59:37******
+【Source】mscorlib
+【ErrorType】System.IO.DirectoryNotFoundException
+【TargetSite】Void WinIOError(Int32, System.String)
+【Message】未能找到路径“C:\Program Files\A Sercet Dll\halcon.dll”的一部分。
+【StackTrace】   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 Main.StartUpWindow..ctor() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Main\StartWindow\StartWindow.xaml.cs:行号 53
+
+

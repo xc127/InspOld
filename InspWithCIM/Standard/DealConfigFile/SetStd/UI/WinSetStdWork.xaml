@@ -1,0 +1,54 @@
+﻿<BasicClass:BaseWindow x:Class="DealConfigFile.WinSetStdWork"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib" 
+        xmlns:toolkit="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:DealConfigFile="clr-namespace:DealConfigFile"
+        xmlns:BasicClass="clr-namespace:BasicClass;assembly=BasicClass"
+        xmlns:Common="clr-namespace:Common;assembly=Common"
+        Title="设置基准值" Height="675" Width="1095" WindowStartupLocation="CenterScreen" Closing="BaseMetroWindow_Closing" Loaded="BaseMetroWindow_Loaded" BorderBrush="#CC119EDA" BorderThickness="1" ResizeMode="NoResize">
+    <Window.Resources >
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!--<ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />-->
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid Name="gdLayout">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <DealConfigFile:Adjust3 HorizontalAlignment="Center" x:Name="std1" VerticalAlignment="Center" Width="155" Margin="0" WAuthority="True" PathStd="True" />
+        <DealConfigFile:Adjust3 HorizontalAlignment="Center" Margin="0" x:Name="std2" VerticalAlignment="Center" Grid.Column="1"  Width="155" WAuthority="True" PathStd="True" />
+        <DealConfigFile:Adjust3 HorizontalAlignment="Center" Margin="0" x:Name="std3"  VerticalAlignment="Center" Grid.Column="2"  Width="155" WAuthority="True" PathStd="True" />
+        <DealConfigFile:Adjust3 HorizontalAlignment="Center" Margin="0" x:Name="std4" VerticalAlignment="Center" Grid.Column="3" Width="155" WAuthority="True" PathStd="True" />
+        <DealConfigFile:Adjust3 HorizontalAlignment="Center" Margin="0" x:Name="std5"  VerticalAlignment="Center" Grid.Column="4"  Width="155" WAuthority="True" PathStd="True" />
+        <DealConfigFile:Adjust3 HorizontalAlignment="Center" Margin="0" x:Name="std6" VerticalAlignment="Center" Grid.Column="5"  Width="155" WAuthority="True" PathStd="True" />
+        <DealConfigFile:Adjust3 HorizontalAlignment="Center" Margin="0" x:Name="std7" VerticalAlignment="Center" Grid.Row="1"  Width="155" WAuthority="True" IsEnabled="True" PathStd="True" />
+        <DealConfigFile:Adjust3 HorizontalAlignment="Center" Margin="0" x:Name="std8" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1"  Width="155" WAuthority="True" PathStd="True" />
+        <DealConfigFile:Adjust3 HorizontalAlignment="Center" Margin="0" x:Name="std9" VerticalAlignment="Center" Grid.Column="2" Grid.Row="1"  Width="155" PathStd="True" />
+        <DealConfigFile:Adjust3 HorizontalAlignment="Center" Margin="0" x:Name="std10" VerticalAlignment="Center" Grid.Column="3" Grid.Row="1" Width="155"/>
+        <DealConfigFile:Adjust3 HorizontalAlignment="Center" Margin="0" x:Name="std11" VerticalAlignment="Center" Grid.Column="4" Grid.Row="1"  Width="155" WAuthority="True" PathStd="True" />
+        <DealConfigFile:Adjust3 HorizontalAlignment="Center" Margin="0" x:Name="std12" VerticalAlignment="Center" Grid.Row="1" Grid.Column="5"   Width="155" WAuthority="True" PathStd="True" />
+        <DealConfigFile:Adjust3 HorizontalAlignment="Center" Margin="0" x:Name="std13" VerticalAlignment="Center" Grid.Row="2" Height="185"  Width="155" WAuthority="True" PathStd="True" />
+        <DealConfigFile:Adjust3 HorizontalAlignment="Center" IsEnabled="True" Margin="0" x:Name="std14" PathStd="True" VerticalAlignment="Center" WAuthority="True" Width="155" Height="185" Grid.Column="1" Grid.Row="2" />
+        <DealConfigFile:Adjust3 Grid.Column="2" HorizontalAlignment="Center" Margin="0" x:Name="std15" PathStd="True" VerticalAlignment="Center" WAuthority="True" Width="155" Height="185" Grid.Row="2" />
+        <DealConfigFile:Adjust3 Grid.Column="3" HorizontalAlignment="Center" Margin="0" x:Name="std16" PathStd="True" VerticalAlignment="Center" Width="155" Grid.Row="2" Height="185"/>
+        <DealConfigFile:Adjust3 Height="185" HorizontalAlignment="Center" IsEnabled="True" Margin="0" x:Name="std17" PathStd="True" VerticalAlignment="Center" WAuthority="True" Width="155" Grid.Column="4" Grid.Row="2" />
+        <DealConfigFile:Adjust3 Grid.Column="5" Height="185" HorizontalAlignment="Center" Margin="0" x:Name="std18" PathStd="True" VerticalAlignment="Center" WAuthority="True" Width="155" Grid.Row="2" />
+    </Grid>
+</BasicClass:BaseWindow>

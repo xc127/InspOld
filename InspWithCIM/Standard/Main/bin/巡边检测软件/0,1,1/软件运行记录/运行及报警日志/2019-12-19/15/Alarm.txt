@@ -1,0 +1,2 @@
+Alarm:相机1打开失败       Time:15:59:06
+Alarm:CIM屏蔽       Time:15:59:07

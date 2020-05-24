@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DealFile</name>
+    </assembly>
+    <members>
+        <member name="M:DealFile.BaseFile.GetVersion">
+            <summary>
+            获取版本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealFile.IniFile.WriteIni(System.String,System.String,System.String,System.String)">
+            <summary>
+            写入string型
+            </summary>
+        </member>
+        <member name="M:DealFile.IniFile.WriteIni(System.String,System.String,System.Double,System.String)">
+            <summary>
+            写入double int 型
+            </summary>
+        </member>
+        <member name="M:DealFile.IniFile.WriteIni(System.String,System.String,System.Boolean,System.String)">
+            <summary>
+            写入bool型
+            </summary>
+        </member>
+        <member name="M:DealFile.IniFile.ReadIniStr(System.String,System.String,System.String)">
+            <summary>
+            读取String型
+            </summary>
+        </member>
+        <member name="M:DealFile.IniFile.ReadIniStr(System.String,System.String,System.String,System.String)">
+            <summary>
+            读取ini
+            </summary>
+            <param name="section"></param>
+            <param name="key"></param>
+            <param name="strDefault">默认值</param>
+            <param name="path">文件路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealFile.IniFile.ReadIniBl(System.String,System.String,System.Boolean,System.String)">
+            <summary>
+            读取bool型
+            </summary>
+        </member>
+        <member name="M:DealFile.IniFile.ReadIniInt(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            读取int型
+            </summary>
+        </member>
+        <member name="M:DealFile.IniFile.ReadIniDbl(System.String,System.String,System.Double,System.String)">
+            <summary>
+            读取double型
+            </summary>
+        </member>
+        <member name="T:DealFile.RegeditFile">
+            <summary>
+            注册表
+            </summary>
+        </member>
+        <member name="M:DealFile.RegeditFile.ReadRegedit(System.String)">
+            <summary>
+            读取注册表
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealFile.RegeditFile.WriteRegedit(System.String,System.String)">
+            <summary>
+            写注册表  
+            </summary>
+            <param name="name"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:DealFile.TxtFile.GetText(System.String)">
+            <summary>
+            获取写入的流
+            </summary>
+            <param name="log"></param>
+        </member>
+        <member name="M:DealFile.XmlFile.WriteAttribute(System.Xml.XmlElement,System.String,System.String)">
+            <summary>
+            写入属性
+            </summary>
+        </member>
+        <member name="M:DealFile.XmlFile.WriteChildAttribute(System.Xml.XmlElement,System.String,System.String,System.String)">
+            <summary>
+            写入根节点下面子节点的属性
+            </summary>
+        </member>
+        <member name="M:DealFile.XmlFile.LoadXml(System.IO.Stream)">
+            <summary>
+            从stream中加载xml
+            </summary>
+        </member>
+        <member name="M:DealFile.XmlFile.LoadXml(System.String)">
+            <summary>
+            读取指定路径的xml
+            </summary>
+        </member>
+        <member name="M:DealFile.XmlFile.LoadXmlStream(System.String)">
+            <summary>
+            读取指定路径的Stream，为系统资源
+            </summary>
+        </member>
+        <member name="M:DealFile.XmlFile.LoadXmlStream(System.String,System.String)">
+            <summary>
+            如果指定路径的本地稳定存在则读取，否则读取指定路径的stream
+            </summary>
+        </member>
+        <member name="M:DealFile.XmlFile.ReadNode(System.Xml.XmlElement,System.String)">
+            <summary>
+            搜索指定名称的子节点
+            </summary>
+        </member>
+        <member name="M:DealFile.XmlFile.ReadNode(System.Xml.XmlDocument,System.String)">
+            <summary>
+            从文档中读取指定名称子节点
+            </summary>
+        </member>
+        <member name="M:DealFile.XmlFile.ReadNodes(System.Xml.XmlElement)">
+            <summary>
+            返回根节点中所有的子节点
+            </summary>
+        </member>
+        <member name="M:DealFile.XmlFile.ReadNodeInt(System.Xml.XmlElement,System.String)">
+            <summary>
+            读取节点中子节点变量的Int文本值
+            </summary>
+        </member>
+        <member name="M:DealFile.XmlFile.ReadNodeInt(System.Xml.XmlElement)">
+            <summary>
+            读取节点的Int型文本值
+            </summary>
+        </member>
+        <member name="M:DealFile.XmlFile.ReadNodeDbl(System.Xml.XmlElement,System.String)">
+            <summary>
+            读取节点中子节点的double型文本值
+            </summary>
+        </member>
+        <member name="M:DealFile.XmlFile.ReadNodeDbl(System.Xml.XmlElement)">
+            <summary>
+            读取节点中double型文本值
+            </summary>
+        </member>
+        <member name="M:DealFile.XmlFile.ReadNodeStr(System.Xml.XmlElement,System.String)">
+            <summary>
+            读取节点中指定子节点的文本值
+            </summary>
+        </member>
+        <member name="M:DealFile.XmlFile.ReadNodeStr(System.Xml.XmlElement)">
+            <summary>
+            读取节点的文本值
+            </summary>
+        </member>
+        <member name="M:DealFile.XmlFile.ReadAttributeStr(System.Xml.XmlElement,System.String)">
+            <summary>
+            读取String型属性
+            </summary>
+        </member>
+        <member name="M:DealFile.XmlFile.ReadAttributeInt(System.Xml.XmlElement,System.String)">
+            <summary>
+            读取Int型属性
+            </summary>
+        </member>
+        <member name="M:DealFile.XmlFile.ReadAttributeDbl(System.Xml.XmlElement,System.String)">
+            <summary>
+            读取double型属性
+            </summary>
+        </member>
+        <member name="M:DealFile.XmlFile.ReadAttributeBl(System.Xml.XmlElement,System.String)">
+            <summary>
+            读取bool型属性
+            </summary>
+        </member>
+        <member name="M:DealFile.XmlFile.ReadAttributeEnum(System.Xml.XmlElement,System.String)">
+            <summary>
+            读取枚举型属性
+            </summary>
+        </member>
+    </members>
+</doc>

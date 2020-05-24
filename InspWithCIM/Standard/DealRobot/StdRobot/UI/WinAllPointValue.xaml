@@ -1,0 +1,44 @@
+﻿<BasicClass:BaseMetroWindow x:Class="DealRobot.WinAllPointValue"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                            xmlns:BasicClass="clr-namespace:BasicClass;assembly=BasicClass"
+        xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib"
+        xmlns:MetroControls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro" 
+        xmlns:Common="clr-namespace:Common;assembly=Common"
+        xmlns:BasicComprehensive="clr-namespace:BasicComprehensive;assembly=BasicComprehensive" 
+        xmlns:DealRobot="clr-namespace:DealRobot" 
+        Title="所有点位信息" Height="750" Width="1200" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="BaseMetroWindow_Loaded" BorderBrush="#FF66FFFF">
+    
+    <Window.Resources >
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <DataGrid AllowDrop="True" AreRowDetailsFrozen="True" AutoGenerateColumns="False" CanUserAddRows="false" CanUserResizeColumns="False" CanUserSortColumns="False" GridLinesVisibility="All" HorizontalAlignment="Stretch" Margin="1" Name="dgPoint" VerticalAlignment="Stretch">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding No}" Header="" IsReadOnly="True" Width="35" />
+                <DataGridTextColumn Binding="{Binding NamePoint}" Header="名称" IsReadOnly="True" Width="45" />
+                <DataGridTextColumn Binding="{Binding NameValue}" Header="指令类型" IsReadOnly="True" Width="100" />
+                <DataGridTextColumn Binding="{Binding X}" Header="X" IsReadOnly="True" Width="70" />
+                <DataGridTextColumn Binding="{Binding Y}" Header="Y" IsReadOnly="True" Width="70" />
+                <DataGridTextColumn Binding="{Binding Z}" Header="Z" Width="70" />
+                <DataGridTextColumn Binding="{Binding R}" Header="R" Width="70" />
+                <DataGridTextColumn Binding="{Binding Arm}" Header="Arm" Width="70" />
+
+
+                <DataGridTextColumn Binding="{Binding XInfo}" Header="X" IsReadOnly="True" Width="120" />
+                <DataGridTextColumn Binding="{Binding YInfo}" Header="Y" IsReadOnly="True" Width="120" />
+                <DataGridTextColumn Binding="{Binding ZInfo}" Header="Z" Width="120" />
+                <DataGridTextColumn Binding="{Binding RInfo}" Header="R" Width="120" />
+                <DataGridTextColumn Binding="{Binding ArmInfo}" Header="手系" Width="80" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</BasicClass:BaseMetroWindow>

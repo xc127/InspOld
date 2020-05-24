@@ -1,0 +1,63 @@
+﻿<Window x:Class="DealCIM.PostLotWnd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"		
+		xmlns:PU="clr-namespace:Panuon.UI;assembly=Panuon.UI"
+        xmlns:local="clr-namespace:DealCIM"
+        mc:Ignorable="d"
+        Title="PostLotWnd" Height="350" Width="700" Closing="Window_Closing" Loaded="Window_Loaded" KeyDown="Window_KeyDown" BorderThickness="20" AllowsTransparency="True" WindowStyle="None">
+	<Window.Effect>
+		<DropShadowEffect BlurRadius="15" Opacity="0.3" ShadowDepth="1"/>
+	</Window.Effect>
+	<Grid FocusManager.FocusedElement="{Binding ElementName=tbLot}">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="8*"/>
+		</Grid.RowDefinitions>
+		<Grid Grid.Row="0">
+			<Rectangle Fill="CornflowerBlue" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Grid.ColumnSpan="2"/>
+			<Label Margin="10,0,0,0" Content="RunCard" FontSize="18" Foreground="White" VerticalAlignment="Center" FontWeight="Black" Grid.ColumnSpan="2" MouseLeftButtonDown="Label_MouseLeftButtonDown"/>
+		</Grid>
+		<Grid Grid.Row="1" Margin="10,0,10,0">
+			<Grid.Effect>
+				<DropShadowEffect BlurRadius="4" Color="#FFF0EBEB" Opacity="0.8"/>
+			</Grid.Effect>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="1.2*"/>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="1.5*"/>
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="6"/>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="6"/>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="6"/>
+				<RowDefinition Height="*"/>
+			</Grid.RowDefinitions>
+			<Label Content="Fab:" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Black" FontSize="20"/>
+			<Label x:Name="tbFab" Grid.Column="3" Grid.Row="0" Content="{Binding StrFab,Mode=OneWay}" Foreground="DarkGray" Width="120" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+			<Label Content="Area:" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Black" FontSize="20"/>
+			<Label x:Name="tbArea" Grid.Column="1" Grid.Row="0" Content="{Binding StrArea,Mode=OneWay}" Foreground="DarkGray" Width="120" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+			<!--<Separator Grid.Row="1" Grid.ColumnSpan="4" Margin="10,0,10,0" BorderBrush="CornflowerBlue" BorderThickness="5"/>-->
+			<Label Content="Line:" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Black" FontSize="20"/>
+			<Label x:Name="tbLine" Grid.Column="3" Grid.Row="2" Content="{Binding StrLine,Mode=OneWay}" Foreground="DarkGray" Width="120" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+			<Label Content="Operation:" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Black" FontSize="20"/>
+			<Label x:Name="tbOperation" Grid.Column="1" Grid.Row="2" Content="{Binding StrOperation,Mode=OneWay}" Foreground="DarkGray" Width="120" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+			<Separator Grid.Row="3" Grid.ColumnSpan="4" Margin="10,0,10,0" BorderBrush="CornflowerBlue" BorderThickness="5"/>
+			<Label Content="UserID:" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Black" FontSize="20"/>
+			<TextBox x:Name="tbUserID" Grid.Column="1" Grid.Row="4" Text="{Binding StrUserID,Mode=TwoWay}" Width="150" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+			<Label Content="ModelNo:" Grid.Column="2" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Black" FontSize="20"/>
+			<TextBox x:Name="tbModelNo" Grid.Column="3" Grid.Row="4" Text="{Binding StrModelNo,Mode=TwoWay}" Width="200" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+			<!--<Separator Grid.Row="5" Grid.ColumnSpan="4" Margin="10,0,10,0" BorderBrush="CornflowerBlue" BorderThickness="5"/>-->
+			<Label Content="Lot:" Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Black" FontSize="20"/>
+			<TextBox Name="tbLot" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="180" Height="40"/>
+
+			<PU:PUButton Content="上 报" Name="btnPostLot" ButtonStyle="Hollow" Background="CornflowerBlue" BorderCornerRadius="3" CoverBrush="CornflowerBlue" BorderBrush="CornflowerBlue" Grid.Row="6" Grid.Column="2" Width="100" FontWeight="Black" FontSize="16" Height="32" Click="BtnPostLot_Click" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="60,0,0,0" Grid.ColumnSpan="2"/>
+			<PU:PUButton Content="退 出" Name="btnCancel" ButtonStyle="Outline" Background="CornflowerBlue" BorderCornerRadius="3" CoverBrush="CornflowerBlue" BorderBrush="CornflowerBlue" Grid.Row="6" Grid.Column="3" Width="100" FontSize="16" Height="32" Click="BtnCancel_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,20,0"/>
+		</Grid>
+	</Grid>
+</Window>

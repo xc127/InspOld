@@ -1,0 +1,41 @@
+﻿<Window x:Class="DealCIM.WndCimMode"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DealCIM"
+		xmlns:PU="clr-namespace:Panuon.UI;assembly=Panuon.UI"
+        mc:Ignorable="d"
+        Title="WndCimMode" Height="350" Width="400" Closing="Window_Closing" Loaded="Window_Loaded">
+    <Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="6*"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		<StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center">
+			<ToggleButton x:Name="tbtnGetCode" Content="读码关闭" Width="120" Height="40" Margin="5" 
+						  Checked="TbtnGetCode_Checked" Unchecked="TbtnGetCode_Unchecked"
+						  IsChecked="{Binding Path=BlCodeOn, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+			<ToggleButton x:Name="tbtnPost" Content="CIM过账关闭" Width="120" Height="40" Margin="5"
+						  Checked="TbtnPost_Checked" Unchecked="TbtnPost_Unchecked"
+						  IsChecked="{Binding Path=BlCimOn,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+						  IsEnabled="{Binding ElementName=tbtnGetCode,Path=IsChecked}"/>
+			<ToggleButton x:Name="tbtnVerifyChipid" Content="Chipid认证关闭" Width="120" Height="40" Margin="5"
+						  Checked="TbtnVerifyChipid_Checked" Unchecked="TbtnVerifyChipid_Unchecked"
+						  IsChecked="{Binding Path=BlVerifyChipID,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+						  IsEnabled="{Binding Path=BlVerifyChipIDEnabled,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+			<ToggleButton x:Name="tbtnPassCodeNG" Content="读码NG抛料" Width="120" Height="40" Margin="5"
+						  Checked="TbtnPassCodeNG_Checked" Unchecked="TbtnPassCodeNG_Unchecked"
+						  IsChecked="{Binding Path=BlPassVerifyCode,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+						  IsEnabled="{Binding Path=BlPassVerifyCodeEnabled,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+		</StackPanel>
+		<Grid Grid.Row="1">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+			<Button x:Name="btnConfirm" Content="确定" Width="80" Height="40" Click="BtnConfirm_Click"/>
+			<Button x:Name="btnCancel" Content="取消" Grid.Column="1" Width="80" Height="40" Click="BtnCancel_Click"/>
+		</Grid>
+	</Grid>
+</Window>

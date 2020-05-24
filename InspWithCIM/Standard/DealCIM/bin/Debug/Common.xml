@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Common</name>
+    </assembly>
+    <members>
+        <member name="M:Common.PathDirectory.GetTimeName">
+            <summary>
+            获取时间名称的路径
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:Common.ComValue.c_PathStore">
+            <summary>
+            Store根目录
+            </summary>
+        </member>
+        <member name="F:Common.ComValue.c_PathRecord">
+            <summary>
+            软件运行记录根目录-20181128-zx
+            </summary>
+        </member>
+        <member name="P:Common.ComValue.PathRootLocalImage">
+            <summary>
+            Path,图片的保存路径
+            </summary>
+        </member>
+        <member name="T:Common.PLCReserveValue">
+            <summary>
+            PLC触发保留值
+            </summary>
+        </member>
+        <member name="T:Common.UCColorComBoxWPF">
+            <summary>
+            UCColorComBoxWPF
+            </summary>
+        </member>
+        <member name="M:Common.UCColorComBoxWPF.OnSelectedColorChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            回调函数，当属性发生变化时触发响应
+            </summary>
+            <param name="obj"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Common.UCColorComBoxWPF.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:Common.BaseColor.InitColors">
+            <summary>
+            初始化颜色集合
+            </summary>
+        </member>
+        <member name="P:Common.BaseColor.Item(System.Int32)">
+            <summary>
+            索引器
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Common.ComFunction.GetDecimals(System.Double)">
+            <summary>
+            求取小数点位数
+            </summary>
+        </member>
+        <member name="T:Common.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:Common.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:Common.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="T:Common.UCColorComBox">
+            <summary>
+            UCColorComBox
+            </summary>
+        </member>
+        <member name="M:Common.UCColorComBox.OnSelectedColorChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            回调函数，当属性发生变化时触发响应
+            </summary>
+            <param name="obj"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Common.UCColorComBox.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Common.ComConfigPar.PathRoot">
+            <summary>
+            所有和产品相关的文件保存路径
+            </summary>
+        </member>
+        <member name="T:Common.UIKeyBoard">
+            <summary>
+            UIKeyBoard.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UIKeyBoard
+            </summary>
+        </member>
+        <member name="M:Common.UIKeyBoard.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,590 @@
+﻿<BasicClass:BaseControl x:Class="DealRobot.UCPropPoint"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:BasicClass="clr-namespace:BasicClass;assembly=BasicClass"
+             xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib"
+             xmlns:MetroControls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro" 
+             mc:Ignorable="d" 
+             d:DesignHeight="720" d:DesignWidth="1280" Name="uCPropPoint">
+    <UserControl.Resources >
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.3*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid Margin="0">
+            <Grid.RowDefinitions>
+            <RowDefinition Height="2.6*" />
+            <RowDefinition Height="1.2*" />
+            <RowDefinition Height="3.2*" />
+
+        </Grid.RowDefinitions>
+        
+            <ControlLib:NGroupBox Header="home输入IO" TitleBrush="#FF00D1E5" Foreground="Black" Name="gpbInputIO" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="1" >
+                <Grid Background="White">
+                    <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid HorizontalAlignment="Stretch" Name="grid1" VerticalAlignment="Stretch" Grid.Row="1" Margin="0" >
+                    <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.7*" />
+                            <ColumnDefinition Width="0.7*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Content="真空判断:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label1" VerticalAlignment="Center" />
+                        <ControlLib:MTSwitchButton Height="30" HorizontalAlignment="Center" Margin="0" Name="tsbVaccum_In" VerticalAlignment="Center" Width="55" Grid.Column="1" Checked="tsbVaccum_In_Checked" Unchecked="tsbVaccum_In_Unchecked" IsChecked="False" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbVaccum_In,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="Infinity" Minimum="-1" Name="dudVaccum_Wait" Value="0" Width="65" Grid.Column="3" ValueChanged="dudVaccum_Wait_ValueChanged" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbVaccum_In,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="1024" Minimum="-1" Name="dudVaccum_NGIO" Value="0" Width="61" Grid.Column="4" ValueChanged="dudVaccum_NGIO_ValueChanged" />
+                        <ComboBox IsEnabled="{Binding Path=IsChecked,ElementName=tsbVaccum_In,Mode=TwoWay}" Grid.Column="6" Height="30" HorizontalAlignment="Center" Margin="0" Name="cboVaccum_NGPos" VerticalAlignment="Center" Width="80" SelectionChanged="cboVaccum_NGPos_SelectionChanged" />
+                        <ControlLib:DoubleUpDown BorderBrush="MediumSlateBlue" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="32" Minimum="0" Name="dudVaccum_No" Value="8" Width="61" Grid.Column="2" IsEnabled="False" />
+                        <TextBox Grid.Column="7" Height="30" HorizontalAlignment="Stretch" Margin="0" Name="txtVaccum_Anno" VerticalAlignment="Stretch" LostFocus="txtVaccum_Anno_LostFocus" />
+                    </Grid>
+                <Grid HorizontalAlignment="Stretch" Margin="0" Name="grid2" VerticalAlignment="Stretch" Grid.Row="2" >
+                    <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.7*" />
+                            <ColumnDefinition Width="0.7*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                    <Label Content="输入IO1:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label5" VerticalAlignment="Center" />
+                        <ControlLib:MTSwitchButton Grid.Column="1" Height="30" HorizontalAlignment="Center" Margin="0" Name="tsbInputIO1" VerticalAlignment="Center" Width="55" Checked="tsbInputIO1_Checked" Unchecked="tsbInputIO1_Unchecked" />
+                        <ControlLib:DoubleUpDown  IsEnabled="{Binding Path=IsChecked,ElementName=tsbInputIO1,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="3" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="Infinity" Minimum="-1" Name="dudInputIO1_Wait" Value="0" Width="65" ValueChanged="dudInputIO1_Wait_ValueChanged" />
+                        <ControlLib:DoubleUpDown  IsEnabled="{Binding Path=IsChecked,ElementName=tsbInputIO1,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="4" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="1024" Minimum="-1" Name="dudInputIO1_NGIO" Value="0" Width="61" ValueChanged="dudInputIO1_NGIO_ValueChanged" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbInputIO1,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="2" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="32" Minimum="0" Name="dudInputIO1_No" Value="0" Width="61" ValueChanged="dudInputIO1_No_ValueChanged" />
+                        <ComboBox  IsEnabled="{Binding Path=IsChecked,ElementName=tsbInputIO1,Mode=TwoWay}" Grid.Column="6" Height="30" HorizontalAlignment="Center" Margin="0" Name="cboInputIO1_NGPos" VerticalAlignment="Center" Width="80" SelectionChanged="cboInputIO1_NGPos_SelectionChanged" />
+                        <ComboBox  IsEnabled="{Binding Path=IsChecked,ElementName=tsbInputIO1,Mode=TwoWay}" Grid.Column="5" Height="30" HorizontalAlignment="Center" Margin="0" Name="cboInputIO1_OKPos" VerticalAlignment="Center" Width="80" SelectionChanged="cboInputIO1_OKPos_SelectionChanged" />
+                        <TextBox Height="30" HorizontalAlignment="Stretch" Margin="0" Name="txtInputIO1_Anno" VerticalAlignment="Stretch" Grid.Column="7" LostFocus="txtInputIO1_Anno_LostFocus" />
+                    </Grid>
+                <Grid Grid.Row="3" HorizontalAlignment="Stretch" Margin="0" Name="grid3" VerticalAlignment="Stretch" >
+                    <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.7*" />
+                            <ColumnDefinition Width="0.7*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Content="输入IO2:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label11" VerticalAlignment="Center" />
+                        <ControlLib:MTSwitchButton Grid.Column="1" Height="30" HorizontalAlignment="Center" Margin="0" Name="tsbInputIO2" VerticalAlignment="Center" Width="55" Checked="tsbInputIO2_Checked" Unchecked="tsbInputIO2_Unchecked" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbInputIO2,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="2" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="32" Minimum="0" Name="dudInputIO2_No" Value="0" Width="61" ValueChanged="dudInputIO2_No_ValueChanged" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbInputIO2,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="3" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="Infinity" Minimum="-1" Name="dudInputIO2_Wait" Value="0"  Width="65" ValueChanged="dudInputIO2_Wait_ValueChanged" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbInputIO2,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="4" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="1024" Minimum="-1" Name="dudInputIO2_NGIO" Value="0" Width="61" ValueChanged="dudInputIO2_NGIO_ValueChanged" />
+                        <ComboBox IsEnabled="{Binding Path=IsChecked,ElementName=tsbInputIO2,Mode=TwoWay}" Grid.Column="5" Height="30" HorizontalAlignment="Center" Margin="0" Name="cboInputIO2_OKPos" VerticalAlignment="Center" Width="80" SelectionChanged="cboInputIO2_OKPos_SelectionChanged" />
+                        <ComboBox IsEnabled="{Binding Path=IsChecked,ElementName=tsbInputIO2,Mode=TwoWay}" Grid.Column="6" Height="30" HorizontalAlignment="Center" Margin="0" Name="cboInputIO2_NGPos" VerticalAlignment="Center" Width="80" SelectionChanged="cboInputIO2_NGPos_SelectionChanged" />
+                        <TextBox Height="30" HorizontalAlignment="Stretch" Margin="0" Name="txtInputIO2_Anno" VerticalAlignment="Stretch" Grid.Column="7" LostFocus="txtInputIO2_Anno_LostFocus" />
+                    </Grid>
+                <Grid HorizontalAlignment="Stretch" Margin="0" Name="grid11" VerticalAlignment="Stretch" Grid.Row="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.7*" />
+                            <ColumnDefinition Width="0.7*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Content="输入IO3:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label16" VerticalAlignment="Center" />
+                        <ControlLib:MTSwitchButton Grid.Column="1" Height="30" HorizontalAlignment="Center" Margin="0" Name="tsbInputIO3" VerticalAlignment="Center" Width="55" IsChecked="false" Checked="tsbInputIO3_Checked" Unchecked="tsbInputIO3_Unchecked" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbInputIO3,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="3" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="Infinity" Minimum="-1" Name="dudInputIO3_Wait" Value="0"  Width="65" ValueChanged="dudInputIO3_Wait_ValueChanged" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbInputIO3,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="4" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="1024" Minimum="-1" Name="dudInputIO3_NGIO" Value="0" Width="65" ValueChanged="dudInputIO3_NGIO_ValueChanged" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbInputIO3,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="2" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="32" Minimum="0" Name="dudInputIO3_No" Value="0" Width="65" ValueChanged="dudInputIO3_No_ValueChanged" />
+                        <ComboBox IsEnabled="{Binding Path=IsChecked,ElementName=tsbInputIO3,Mode=TwoWay}" Grid.Column="6" Height="30" HorizontalAlignment="Center" Margin="0" Name="cboInputIO3_NGPos" VerticalAlignment="Center" Width="80" SelectionChanged="cboInputIO3_NGPos_SelectionChanged" />
+                        <ComboBox IsEnabled="{Binding Path=IsChecked,ElementName=tsbInputIO3,Mode=TwoWay}" Grid.Column="5" Height="30" HorizontalAlignment="Center" Margin="0" Name="cboInputIO3_OKPos" VerticalAlignment="Center" Width="80" SelectionChanged="cboInputIO3_OKPos_SelectionChanged" />
+                        <TextBox Height="30" HorizontalAlignment="Stretch" Margin="0" Name="txtInputIO3_Anno" VerticalAlignment="Stretch" Grid.Column="7" />
+                    </Grid>
+                    <Grid HorizontalAlignment="Stretch" Margin="0"  VerticalAlignment="Stretch" Grid.Row="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.7*" />
+                            <ColumnDefinition Width="0.7*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Content="输入IO4:" Height="28" HorizontalAlignment="Center" Margin="0"  VerticalAlignment="Center" />
+                        <ControlLib:MTSwitchButton Grid.Column="1" Height="30" HorizontalAlignment="Center" Margin="0"  VerticalAlignment="Center" Width="55" Name="tsbInputIO4" Checked="tsbInputIO4_Checked" Unchecked="tsbInputIO4_Unchecked" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbInputIO4,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="3" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="Infinity" Minimum="-1"  Value="0"  Width="65" Name="dudInputIO4_Wait" ValueChanged="dudInputIO4_Wait_ValueChanged" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbInputIO4,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="4" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="1024" Minimum="-1"  Value="0" Width="65" Name="dudInputIO4_NGIO" ValueChanged="dudInputIO4_NGIO_ValueChanged" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbInputIO4,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="2" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="32" Minimum="0"  Value="0" Width="65" Name="dudInputIO4_No" ValueChanged="dudInputIO4_No_ValueChanged" />
+                        <ComboBox IsEnabled="{Binding Path=IsChecked,ElementName=tsbInputIO4,Mode=TwoWay}" Grid.Column="6" Height="30" HorizontalAlignment="Center" Margin="0"  VerticalAlignment="Center" Width="80" Name="cboInputIO4_NGPos" SelectionChanged="cboInputIO4_NGPos_SelectionChanged" />
+                        <ComboBox IsEnabled="{Binding Path=IsChecked,ElementName=tsbInputIO4,Mode=TwoWay}" Grid.Column="5" Height="30" HorizontalAlignment="Center" Margin="0"  VerticalAlignment="Center" Width="80" Name="cboInputIO4_OKPos" SelectionChanged="cboInputIO4_OKPos_SelectionChanged" />
+                        <TextBox Height="30" HorizontalAlignment="Stretch" Margin="0" Name="txtInputIO4_Anno" VerticalAlignment="Stretch" Grid.Column="7" LostFocus="txtInputIO4_Anno_LostFocus" />
+                    </Grid>
+                    <Grid  HorizontalAlignment="Stretch" Margin="0" Name="grid8" VerticalAlignment="Stretch">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.7*" />
+                        <ColumnDefinition Width="0.7*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                    <Label Content="等待时间(ms)" Height="28" HorizontalAlignment="Center" Margin="0" Name="label2" VerticalAlignment="Center" Grid.Column="3" />
+                    <Label Content="NG输出IO" Height="28" HorizontalAlignment="Center" Margin="0" Name="label3" VerticalAlignment="Center" Grid.Column="4" />
+                    <Label Content="OK跳转点位" Height="28" HorizontalAlignment="Center" Margin="0" Name="label9" VerticalAlignment="Center" Grid.Column="5" />
+                    <Label Content="NG跳转点位" Height="28" HorizontalAlignment="Center" Margin="0" Name="label4" VerticalAlignment="Center" Grid.Column="6" />
+                    <Label Content="IO序号" Height="28" HorizontalAlignment="Center" Margin="0" Name="label6" VerticalAlignment="Center" Grid.Column="2" />
+                        <Label Content="注释" Height="28" HorizontalAlignment="Center" Margin="46,7" Name="label55" VerticalAlignment="Center" Grid.Column="7" />
+                    </Grid>
+            </Grid>
+        </ControlLib:NGroupBox>
+        <ControlLib:NGroupBox Foreground="Black" Header="home输入PC数据"  HorizontalAlignment="Stretch" Margin="1" TitleBrush="#FF00D1E5" VerticalAlignment="Stretch"  Grid.Row="1" Name="gpbInputPC">
+                <Grid Background="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid HorizontalAlignment="Stretch" Margin="0" Name="grid6" VerticalAlignment="Stretch">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.7*" />
+                            <ColumnDefinition Width="0.7*" />
+                            <ColumnDefinition Width="1.2*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                    <Label Content="PC数据:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label17" VerticalAlignment="Center" />
+                    <ControlLib:MTSwitchButton Grid.Column="1" Height="30" HorizontalAlignment="Center" Margin="0" Name="tsbPC" VerticalAlignment="Center" Width="55" Checked="tsbPC_Checked" Unchecked="tsbPC_Unchecked" />
+                    <Label Content="等待时间(ms):" Grid.Column="2" Height="28" HorizontalAlignment="Center" Margin="0" Name="label18" VerticalAlignment="Center" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbPC,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="3" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="Infinity" Minimum="-1" Name="dudPC_Wait" Value="0" Width="60" ValueChanged="dudPC_Wait_ValueChanged" />
+                    <Label Content="NG输出IO:" Grid.Column="4" Height="28" HorizontalAlignment="Center" Margin="0" Name="label19" VerticalAlignment="Center" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbPC,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="5" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="1024" Minimum="-1" Name="dudPC_NGIO" Value="0" Width="60" ValueChanged="dudPC_NGIO_ValueChanged" />
+                    <Label Content="NG跳转点:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label20" VerticalAlignment="Center" Grid.Column="6" />
+                        <ComboBox IsEnabled="{Binding Path=IsChecked,ElementName=tsbPC,Mode=TwoWay}" Grid.Column="7" Height="30" HorizontalAlignment="Center" Margin="1" Name="cboPC_NGPos" VerticalAlignment="Center" SelectionChanged="cboPC_NGPos_SelectionChanged" />
+                        <TextBox Height="30" HorizontalAlignment="Stretch" Margin="0" Name="txtPC_Anno" VerticalAlignment="Stretch" Grid.Column="8"/>
+                    </Grid>
+                <Grid HorizontalAlignment="Stretch" Margin="0,0,0,0" Name="grid7" VerticalAlignment="Stretch" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.6*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="0.6*" />
+                        <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.6*" />
+                        <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.6*" />
+                        <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                    <Label Content="PC-X:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label21" VerticalAlignment="Center" />
+                        <Label Content="PC-Y:" Height="28" HorizontalAlignment="Left" Margin="3,8,0,8" Name="label22" VerticalAlignment="Center" Grid.Column="2" />
+                        <Label Content="PC-Z:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label23" VerticalAlignment="Center" Grid.Column="4" />
+                        <Label Content="PC-R:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label24" VerticalAlignment="Center" Grid.Column="6" />
+                        <ComboBox Height="30" HorizontalAlignment="Center"  Margin="0" Name="cboPCCMD_X" VerticalAlignment="Center" Grid.Column="1" SelectionChanged="cboPCCMD_X_SelectionChanged">
+                            <ComboBoxItem Content="不使用" IsSelected="True" />
+                            <ComboBoxItem Content="相对值"  />
+                            <ComboBoxItem Content="绝对值" />
+                        </ComboBox>
+                        <ComboBox Height="30" HorizontalAlignment="Center" Margin="0" Name="cboPCCMD_U" VerticalAlignment="Center" Grid.Column="7" SelectionChanged="cboPCCMD_U_SelectionChanged">
+                            <ComboBoxItem Content="不使用" IsSelected="True" />
+                            <ComboBoxItem Content="相对值" />
+                            <ComboBoxItem Content="绝对值" />
+                        </ComboBox>
+                        <ComboBox Height="30" HorizontalAlignment="Center" Margin="0" Name="cboPCCMD_Z" VerticalAlignment="Center" Grid.Column="5" SelectionChanged="cboPCCMD_Z_SelectionChanged">
+                            <ComboBoxItem Content="不使用" IsSelected="True" />
+                            <ComboBoxItem Content="相对值" />
+                            <ComboBoxItem Content="绝对值" />
+                        </ComboBox>
+                        <ComboBox Height="30" HorizontalAlignment="Center" Margin="0" Name="cboPCCMD_Y" VerticalAlignment="Center" Grid.Column="3" SelectionChanged="cboPCCMD_Y_SelectionChanged">
+                            <ComboBoxItem Content="不使用" IsSelected="True" />
+                            <ComboBoxItem Content="相对值" />
+                            <ComboBoxItem Content="绝对值" />
+                        </ComboBox>
+                        <Label Content="PC-Arm:" Height="28" HorizontalAlignment="Center" Margin="7,8,6,8" Name="label7" VerticalAlignment="Center" Grid.Column="8" />
+                        <ComboBox Grid.Column="9" Height="30" HorizontalAlignment="Center" Margin="4,7" Name="cboPCCMD_Arm" VerticalAlignment="Center" SelectionChanged="cboPCCMD_Arm_SelectionChanged">
+                            <ComboBoxItem Content="不使用" IsSelected="True" />
+                            <ComboBoxItem Content="Left" />
+                            <ComboBoxItem Content="Right" />
+                        </ComboBox>
+                    </Grid>                   
+                </Grid>
+        </ControlLib:NGroupBox>
+        <ControlLib:NGroupBox Foreground="Black" Header="home运动参数" HorizontalAlignment="Stretch" Margin="1" TitleBrush="#FF00D1E5" VerticalAlignment="Stretch" Grid.Row="2" Name="gpbMove">
+            <Grid Background="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid HorizontalAlignment="Stretch" Margin="0" Name="grid9" VerticalAlignment="Stretch">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.6*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Content="速度设置:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label8" VerticalAlignment="Center" />
+                        <ControlLib:MTSwitchButton Grid.Column="1" Height="30" HorizontalAlignment="Center" Margin="0" Name="tsbVel" VerticalAlignment="Center" Width="55" Checked="tsbVel_Checked" Unchecked="tsbVel_Unchecked" />
+                        <Label Content="功率:" Grid.Column="2" Height="28" HorizontalAlignment="Center" Margin="0" Name="label10" VerticalAlignment="Center" />
+                        <Label Content="速度(%):" Grid.Column="4" Height="28" HorizontalAlignment="Center" Margin="0" Name="label12" VerticalAlignment="Center" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbVel,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="5" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="100" Minimum="1" Name="dudVel" Value="0" Width="65" ValueChanged="dudVel_ValueChanged" />
+                        <Label Content="加减速(%):" Grid.Column="6" Height="28" HorizontalAlignment="Center" Margin="0" Name="label13" VerticalAlignment="Center" />
+                        <ComboBox IsEnabled="{Binding Path=IsChecked,ElementName=tsbVel,Mode=TwoWay}" Height="30" HorizontalAlignment="Center" Margin="0" Name="cboPower" VerticalAlignment="Center" Grid.Column="3" SelectionChanged="cboPower_SelectionChanged">
+                            <ComboBoxItem Content="Low" IsSelected="True"/>
+                            <ComboBoxItem Content="High"/>
+                        </ComboBox>
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbVel,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="100" Minimum="1" Name="dudAcc" Value="0" Width="65" Grid.Column="7" ValueChanged="dudAcc_ValueChanged" />
+                    </Grid>
+                    <Grid HorizontalAlignment="Stretch" Margin="0" Name="grid20" VerticalAlignment="Stretch" Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Content="X:" Grid.Column="2" Height="28" HorizontalAlignment="Center" Margin="0" Name="label56" VerticalAlignment="Center" />
+                        <ControlLib:DoubleUpDown BorderBrush="MediumSlateBlue" Grid.Column="3" Height="30" HorizontalAlignment="Center" Increment="0.01" Margin="0" Maximum="1024" Minimum="-1024" Name="dudDesX" Value="0"  Width="65" ValueChanged="dudDesX_ValueChanged" />
+                        <Label Content="Y:" Grid.Column="4" Height="28" HorizontalAlignment="Center" Margin="0" Name="label57" VerticalAlignment="Center" />
+                        <ControlLib:DoubleUpDown BorderBrush="MediumSlateBlue" Grid.Column="5" Height="30" HorizontalAlignment="Center" Increment="0.01" Margin="0" Maximum="1024" Minimum="-1024" Name="dudDesY" Value="0" Width="65" ValueChanged="dudDesY_ValueChanged" />
+                        <Label Content="Z:" Grid.Column="6" Height="28" HorizontalAlignment="Center" Margin="0" Name="label58" VerticalAlignment="Center" />
+                        <ControlLib:DoubleUpDown BorderBrush="MediumSlateBlue" Grid.Column="7" Height="30" HorizontalAlignment="Center" Increment="0.01" Margin="0" Maximum="1024" Minimum="-1024" Name="dudDesZ" Value="0" Width="65" ValueChanged="dudDesZ_ValueChanged" />
+                        <Label Content="R:" Grid.Column="8" Height="28" HorizontalAlignment="Center" Margin="0" Name="label59" VerticalAlignment="Center" />
+                        <ControlLib:DoubleUpDown BorderBrush="MediumSlateBlue" Grid.Column="9" Height="30" HorizontalAlignment="Center" Increment="0.01" Margin="0" Maximum="1024" Minimum="-1024" Name="dudDesR" Value="0" Width="65" ValueChanged="dudDesR_ValueChanged" />
+                        <Label Content="手系:" Grid.Column="10" Height="28" HorizontalAlignment="Center" Margin="7,7,10,7" Name="label60" VerticalAlignment="Center" />
+                        <ComboBox Grid.Column="11" Height="30" HorizontalAlignment="Center" Margin="0" Name="cboArm" VerticalAlignment="Center" Width="61" SelectionChanged="cboArm_SelectionChanged">
+                            <ComboBoxItem Content="Left" IsSelected="True" />
+                            <ComboBoxItem Content="Right" />
+                        </ComboBox>
+                        <Label Content="目标点:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label15" VerticalAlignment="Center" />
+                        <ComboBox Height="30" HorizontalAlignment="Left" Margin="0" Name="cboMove" VerticalAlignment="Center"  Grid.Column="1" SelectionChanged="cboMove_SelectionChanged" Width="80" Grid.ColumnSpan="2">
+                            <ComboBoxItem Content="Stay" IsSelected="True" />
+                            <ComboBoxItem Content="Go" />
+                            <ComboBoxItem Content="Move" />
+                            <ComboBoxItem Content="Jump" />
+                            <ComboBoxItem Content="Pass" />
+                            <ComboBoxItem Content="GoHere" />
+                        </ComboBox>
+                    </Grid>
+                    <Grid  HorizontalAlignment="Stretch" Margin="0" Name="grid4" VerticalAlignment="Stretch" Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="1.5*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="1.5*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Content="Here点:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label26" VerticalAlignment="Center" />
+                        <Label Content="X(相对):" Grid.Column="2" Height="28" HorizontalAlignment="Center" Margin="0" Name="label27" VerticalAlignment="Center" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbHere,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="3" Height="30" HorizontalAlignment="Center" Increment="0.01" Margin="0" Maximum="1024" Minimum="-1024" Name="dudHereX" Value="0" Width="65" ValueChanged="dudHereX_ValueChanged" />
+                        <Label Content="Y(相对):" Grid.Column="4" Height="28" HorizontalAlignment="Center" Margin="0" Name="label28" VerticalAlignment="Center" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbHere,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="5" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="1024" Minimum="-1024" Name="dudHereY" Value="0" Width="65" ValueChanged="dudHereY_ValueChanged" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbHere,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Height="30" HorizontalAlignment="Center" Increment="0.01" Margin="0" Maximum="1024" Minimum="-1024" Name="dudHereZ" Value="0" Width="65" Grid.Column="7" ValueChanged="dudHereZ_ValueChanged" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbHere,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Height="30" HorizontalAlignment="Center" Increment="0.01" Margin="0" Maximum="1024" Minimum="-1024" Name="dudHereR" Value="0" Width="65" Grid.Column="9" ValueChanged="dudHereR_ValueChanged" />
+                        <ComboBox IsEnabled="{Binding Path=IsChecked,ElementName=tsbHere,Mode=TwoWay}" Height="30" HorizontalAlignment="Center" Margin="0" Name="cboHereZ" VerticalAlignment="Center" Grid.Column="6" SelectionChanged="cboHereZ_SelectionChanged">
+                            <ComboBoxItem Content="Z相对移动" IsSelected="True" />
+                            <ComboBoxItem Content="Z绝对位置" />
+                        </ComboBox>
+                        <ComboBox IsEnabled="{Binding Path=IsChecked,ElementName=tsbHere,Mode=TwoWay}" Height="30" HorizontalAlignment="Center" Margin="0" Name="cboHereR" VerticalAlignment="Center" Grid.Column="8" SelectionChanged="cboHereR_SelectionChanged">
+                            <ComboBoxItem Content="R相对移动" IsSelected="True" />
+                            <ComboBoxItem Content="R绝对位置" />
+                        </ComboBox>
+                    </Grid>
+
+                    <Grid HorizontalAlignment="Stretch" Margin="0" Name="grid5" VerticalAlignment="Stretch" Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Content="pass点1:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label31" VerticalAlignment="Center" />
+                        <ControlLib:MTSwitchButton Grid.Column="1" Height="30" HorizontalAlignment="Center" Margin="0" Name="tsbPass1" VerticalAlignment="Center" Width="55" IsChecked="False" Checked="tsbPass1_Checked" Unchecked="tsbPass1_Unchecked" />
+                        <Label Content="X:" Grid.Column="2" Height="28" HorizontalAlignment="Center" Margin="0" Name="label32" VerticalAlignment="Center" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbPass1,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="3" Height="30" HorizontalAlignment="Center" Increment="0.01" Margin="0" Maximum="1024" Minimum="-1024" Name="dudPass1_X" Value="0"  Width="65" ValueChanged="dudPass1_X_ValueChanged" />
+                        <Label Content="Y:" Grid.Column="4" Height="28" HorizontalAlignment="Center" Margin="0" Name="label33" VerticalAlignment="Center" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbPass1,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="5" Height="30" HorizontalAlignment="Center" Increment="0.01" Margin="0" Maximum="1024" Minimum="-1024" Name="dudPass1_Y" Value="0" Width="65" ValueChanged="dudPass1_Y_ValueChanged" />
+                        <Label Content="Z:" Grid.Column="6" Height="28" HorizontalAlignment="Center" Margin="0" Name="label34" VerticalAlignment="Center" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbPass1,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="7" Height="30" HorizontalAlignment="Center" Increment="0.01" Margin="0" Maximum="1024" Minimum="-1024" Name="dudPass1_Z" Value="0" Width="65" ValueChanged="dudPass1_Z_ValueChanged" />
+                        <Label Content="R:" Grid.Column="8" Height="28" HorizontalAlignment="Center" Margin="0" Name="label35" VerticalAlignment="Center" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbPass1,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="9" Height="30" HorizontalAlignment="Center" Increment="0.01" Margin="0" Maximum="1024" Minimum="-1024" Name="dudPass1_R" Value="0" Width="65" ValueChanged="dudPass1_R_ValueChanged" />
+                        <Label Content="手系:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label66" VerticalAlignment="Center" Grid.Column="10" />
+                        <ComboBox IsEnabled="{Binding Path=IsChecked,ElementName=tsbPass1,Mode=TwoWay}" Grid.Column="11" Height="30" HorizontalAlignment="Center" Margin="0" Name="cboPass1_Arm" VerticalAlignment="Center" Width="61" SelectionChanged="cboPass1_Arm_SelectionChanged">
+                            <ComboBoxItem Content="Left" IsSelected="True" />
+                            <ComboBoxItem Content="Right" />
+                        </ComboBox>
+                    </Grid>
+                    <Grid  HorizontalAlignment="Stretch" Margin="00" Name="grid12" VerticalAlignment="Stretch" Grid.Row="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Content="pass点2:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label36" VerticalAlignment="Center" />
+                        <ControlLib:MTSwitchButton Grid.Column="1" Height="30" HorizontalAlignment="Center" Margin="0" Name="tsbPass2" VerticalAlignment="Center" Width="55" IsEnabled="{Binding Path=IsChecked,ElementName=tsbPass1,Mode=TwoWay}" Checked="tsbPass2_Checked" Unchecked="tsbPass2_Unchecked" />
+                        <Label Content="X:" Grid.Column="2" Height="28" HorizontalAlignment="Center" Margin="0" Name="label37" VerticalAlignment="Center" />
+                        <ControlLib:DoubleUpDown  IsEnabled="{Binding Path=IsChecked,ElementName=tsbPass2,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="3" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="1024" Minimum="-1024" Name="dudPass2_X" Value="0" Width="65" ValueChanged="dudPass2_X_ValueChanged" />
+                        <Label Content="Y:" Grid.Column="4" Height="28" HorizontalAlignment="Center" Margin="0" Name="label38" VerticalAlignment="Center" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbPass2,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="5" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="1024" Minimum="-1024" Name="dudPass2_Y" Value="0" Width="65" ValueChanged="dudPass2_Y_ValueChanged" />
+                        <Label Content="Z:" Grid.Column="6" Height="28" HorizontalAlignment="Center" Margin="0" Name="label39" VerticalAlignment="Center" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbPass2,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="7" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="1024" Minimum="-1024" Name="dudPass2_Z" Value="0" Width="65" ValueChanged="dudPass2_Z_ValueChanged" />
+                        <Label Content="R:" Grid.Column="8" Height="28" HorizontalAlignment="Center" Margin="0" Name="label40" VerticalAlignment="Center" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbPass2,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="9" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="1024" Minimum="-1024" Name="dudPass2_R" Value="0" Width="65" ValueChanged="dudPass2_R_ValueChanged" />
+                        <Label Content="手系:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label67" VerticalAlignment="Center" Grid.Column="10" />
+                        <ComboBox IsEnabled="{Binding Path=IsChecked,ElementName=tsbPass2,Mode=TwoWay}" Grid.Column="11" Height="30" HorizontalAlignment="Center" Margin="0" Name="cboPass2_Arm" VerticalAlignment="Center" Width="61" SelectionChanged="cboPass2_Arm_SelectionChanged">
+                            <ComboBoxItem Content="Left" IsSelected="True" />
+                            <ComboBoxItem Content="Right" />
+                        </ComboBox>
+                    </Grid>
+                    <Grid  HorizontalAlignment="Stretch" Margin="0" Name="grid13" VerticalAlignment="Stretch" Grid.Row="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Content="pass点3:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label41" VerticalAlignment="Center" />
+                        <ControlLib:MTSwitchButton Grid.Column="1" Height="30" HorizontalAlignment="Center" Margin="0" Name="tsbPass3" VerticalAlignment="Center" Width="55" IsEnabled="{Binding Path=IsChecked,ElementName=tsbPass2,Mode=TwoWay}" Checked="tsbPass3_Checked" Unchecked="tsbPass3_Unchecked" />
+                        <Label Content="X:" Grid.Column="2" Height="28" HorizontalAlignment="Center" Margin="0" Name="label42" VerticalAlignment="Center" />
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbPass3,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="3" Height="30" HorizontalAlignment="Center" Increment="0.01" Margin="0" Maximum="1024" Minimum="-1024" Name="dudPass3_X" Value="0"  Width="65" ValueChanged="dudPass3_X_ValueChanged" />
+                        <Label Content="Y:" Grid.Column="4" Height="28" HorizontalAlignment="Center" Margin="0" Name="label43" VerticalAlignment="Center" />
+                        <ControlLib:DoubleUpDown  IsEnabled="{Binding Path=IsChecked,ElementName=tsbPass3,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="5" Height="30" HorizontalAlignment="Center" Increment="0.01" Margin="0" Maximum="1024" Minimum="-1024" Name="dudPass3_Y" Value="0" Width="65" ValueChanged="dudPass3_Y_ValueChanged" />
+                        <Label Content="Z:" Grid.Column="6" Height="28" HorizontalAlignment="Center" Margin="0" Name="label44" VerticalAlignment="Center" />
+                        <ControlLib:DoubleUpDown  IsEnabled="{Binding Path=IsChecked,ElementName=tsbPass3,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="7" Height="30" HorizontalAlignment="Center" Increment="0.01" Margin="0" Maximum="1024" Minimum="-1024" Name="dudPass3_Z" Value="0" Width="65" ValueChanged="dudPass3_Z_ValueChanged" />
+                        <Label Content="R:" Grid.Column="8" Height="28" HorizontalAlignment="Center" Margin="0" Name="label45" VerticalAlignment="Center" />
+                        <ControlLib:DoubleUpDown  IsEnabled="{Binding Path=IsChecked,ElementName=tsbPass3,Mode=TwoWay}" BorderBrush="MediumSlateBlue" Grid.Column="9" Height="30" HorizontalAlignment="Center" Increment="0.01" Margin="0" Maximum="1024" Minimum="-1024" Name="dudPass3_R" Value="0" Width="65" ValueChanged="dudPass3_R_ValueChanged" />
+                        <Label Content="手系:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label68" VerticalAlignment="Center" Grid.Column="10" />
+                        <ComboBox  IsEnabled="{Binding Path=IsChecked,ElementName=tsbPass3,Mode=TwoWay}" Grid.Column="11" Height="30" HorizontalAlignment="Center" Margin="0" Name="cboPass3_Arm" VerticalAlignment="Center" Width="61" SelectionChanged="cboPass3_Arm_SelectionChanged">
+                            <ComboBoxItem Content="Left" IsSelected="True" />
+                            <ComboBoxItem Content="Right" />
+                        </ComboBox>
+                    </Grid>
+                </Grid>
+        </ControlLib:NGroupBox>
+        </Grid>
+      
+        <Grid Grid.Column="1" HorizontalAlignment="Stretch" Margin="0" Name="grid14" VerticalAlignment="Stretch" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*" />
+                <RowDefinition Height="9*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <ControlLib:NGroupBox Foreground="Black" Header="home输出" HorizontalAlignment="Stretch" Margin="1" TitleBrush="#FF00D1E5" VerticalAlignment="Stretch" Name="gpbOut">
+                <Grid Background="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid HorizontalAlignment="Stretch" Margin="0" Name="grid15" VerticalAlignment="Stretch">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="3*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Content="输出IO:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label46" VerticalAlignment="Center" />
+                        <ControlLib:MTSwitchButton Grid.Column="1" Height="30" HorizontalAlignment="Center" Margin="0" Name="tsbOutIO" VerticalAlignment="Center" Width="55" Checked="tsbOutIO_Checked" Unchecked="tsbOutIO_Unchecked" />
+                        <ControlLib:DoubleUpDown  IsEnabled="{Binding Path=IsChecked,ElementName=tsbOutIO,Mode=TwoWay}"  BorderBrush="MediumSlateBlue" Grid.Column="3" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="Infinity" Minimum="0" Name="dudOutIO" Value="0" Width="65" ValueChanged="dudOutIO_ValueChanged" />
+                        <Label Content="组合IO值:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label47" VerticalAlignment="Center" Grid.Column="2" />
+                        <TextBox Height="30" HorizontalAlignment="Stretch" Margin="0" Name="txtOutIO_Anno" VerticalAlignment="Stretch" Grid.Column="5" LostFocus="txtOutIO_Anno_LostFocus" />
+                        <Label Content="注释:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label61" VerticalAlignment="Center" Grid.Column="4" />
+                        
+                    </Grid>
+                    <Grid HorizontalAlignment="Stretch" Margin="0" Name="grid21" VerticalAlignment="Stretch" Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Content="真空操作:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label63" VerticalAlignment="Center" />
+                        <Label Content="吹气:" Grid.Column="2" Height="28" HorizontalAlignment="Center" Margin="0" Name="label64" VerticalAlignment="Center" />
+                        <ComboBox Height="30" HorizontalAlignment="Center" Margin="0" Name="cboVaccum" VerticalAlignment="Center" Grid.Column="1" SelectionChanged="cboVaccum_SelectionChanged">
+                            <ComboBoxItem Content="不操作"  IsSelected="True" />
+                            <ComboBoxItem Content="打开真空"/>
+                            <ComboBoxItem Content="关闭真空" />
+                      
+                        </ComboBox>
+                        <ComboBox Height="30" HorizontalAlignment="Center" Margin="0" Name="cboBlow" VerticalAlignment="Center" Grid.Column="3" SelectionChanged="cboBlow_SelectionChanged">
+                            <ComboBoxItem Content="不操作"  IsSelected="True"/>
+                            <ComboBoxItem Content="关闭吹气" />
+                            <ComboBoxItem Content="吹气并延迟关闭" />
+                            <ComboBoxItem Content="吹气且不关闭" />
+                        </ComboBox>
+                        <ControlLib:DoubleUpDown  BorderBrush="MediumSlateBlue" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="Infinity" Minimum="0" Name="dudBlow_Wait" Value="0" Width="65" Grid.Column="5" ValueChanged="dudBlow_Wait_ValueChanged" />
+                        <Label Content="吹气延迟:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label65" VerticalAlignment="Center" Grid.Column="4" />
+                       
+                    </Grid>
+                    <Grid HorizontalAlignment="Stretch" Margin="0" Name="grid16" VerticalAlignment="Stretch" Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.7*" />
+                            <ColumnDefinition Width="0.5*" />
+                            <ColumnDefinition Width="0.5*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="0.7*" />
+                            <ColumnDefinition Width="0.8*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Content="输出PC:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label48" VerticalAlignment="Center" />
+                        <ControlLib:MTSwitchButton Grid.Column="1" Height="30" HorizontalAlignment="Center" Margin="0" Name="tsbOutPC" VerticalAlignment="Center" Width="55" Checked="tsbOutPC_Checked" Unchecked="tsbOutPC_Unchecked" />
+                        <Label Content="类型:" Grid.Column="2" Height="28" HorizontalAlignment="Center" Margin="0" Name="label49" VerticalAlignment="Center" />
+                        <ComboBox IsEnabled="{Binding Path=IsChecked,ElementName=tsbOutPC,Mode=TwoWay}" Height="30" HorizontalAlignment="Center" Margin="0" Name="cboTypeOutPC" VerticalAlignment="Center"  Grid.Column="3" SelectionChanged="cboTypeOutPC_SelectionChanged">
+                            <ComboBoxItem Content="Camera1" IsSelected="True"/>
+                            <ComboBoxItem Content="Camera2"/>
+                            <ComboBoxItem Content="Camera3"/>
+                            <ComboBoxItem Content="Camera4"/>
+                            <ComboBoxItem Content="Camera5"/>
+                            <ComboBoxItem Content="Camera6"/>
+                            <ComboBoxItem Content="Throw"/>
+                            <ComboBoxItem Content="Others"/>
+                        </ComboBox>
+                        <ControlLib:DoubleUpDown IsEnabled="{Binding Path=IsChecked,ElementName=tsbOutPC,Mode=TwoWay}"  BorderBrush="MediumSlateBlue" Grid.Column="5" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="10" Minimum="1" Name="dudCmdOutPC" Value="0" Width="55" ValueChanged="dudCmdOutPC_ValueChanged" />
+                        <Label Content="指令值:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label50" VerticalAlignment="Center" Grid.Column="4" />
+                        <TextBox Height="30" HorizontalAlignment="Stretch" Margin="0" Name="txtOutPC_Anno" VerticalAlignment="Stretch" Grid.Column="6" LostFocus="txtOutPC_Anno_LostFocus" />
+                    </Grid>
+                    <Grid HorizontalAlignment="Stretch" Margin="0" Name="grid18" VerticalAlignment="Stretch" Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Content="下一个执行点位:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label54" VerticalAlignment="Center" />
+                        <ComboBox Grid.Column="1" Height="30" HorizontalAlignment="Center" Margin="0" Name="cboNextPos" VerticalAlignment="Center" Width="80" SelectionChanged="cboNextPos_SelectionChanged">
+                        
+                        </ComboBox>
+                        <TextBox Height="30" HorizontalAlignment="Stretch" Margin="0" Name="txtNextPos" VerticalAlignment="Stretch" Grid.Column="3" LostFocus="txtNextPos_LostFocus" />
+                        <Label Content="注释:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label62" VerticalAlignment="Center" Grid.Column="2" />
+                    </Grid>
+                </Grid>
+            </ControlLib:NGroupBox>
+            <ControlLib:NGroupBox Foreground="Black" Header="Home点位综合信息" HorizontalAlignment="Stretch" Margin="1" TitleBrush="#FF00D1E5" VerticalAlignment="Stretch" Grid.Row="1" Name="gpbPoints">
+                <Grid Background="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="345*" />
+                        <RowDefinition Height="40*" />
+                    </Grid.RowDefinitions>
+                    <DataGrid  AllowDrop="True"  AreRowDetailsFrozen="True" AutoGenerateColumns="False" HorizontalAlignment="Stretch" CanUserAddRows="false" GridLinesVisibility="All" CanUserResizeColumns="False" CanUserSortColumns="False" Margin="0,0,0,11" Name="dgPoint" VerticalAlignment="Stretch" SelectionChanged="dgPoint_SelectionChanged" SelectedIndex="0" SelectionMode="Single">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding No}" Header="" Width="35" IsReadOnly="True"/>
+                            <DataGridTextColumn Binding="{Binding NamePoint}" Header="名称" Width="45" IsReadOnly="True"/>
+                            <DataGridTextColumn Binding="{Binding Info_Input}" Header="输入" Width="300" IsReadOnly="True"/>
+                            <DataGridTextColumn Binding="{Binding Info_Move}" Header="运动" Width="300" IsReadOnly="True"/>
+                            <DataGridTextColumn Binding="{Binding Info_Out}" Header="输出" Width="300" IsReadOnly="True"/>
+                            <DataGridTextColumn Binding="{Binding Annotation}" Header="注释" Width="150" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Grid HorizontalAlignment="Stretch" Margin="0" Name="grid17" VerticalAlignment="Stretch" Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Content="显示运行信息:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label51" VerticalAlignment="Center" />
+                        <ControlLib:MTSwitchButton Grid.Column="1" Height="30" HorizontalAlignment="Center" Margin="0" Name="tsbShowInfo" VerticalAlignment="Center" Width="55" Checked="tsbShowInfo_Checked" Unchecked="tsbShowInfo_Unchecked" />
+                        <Label Content="输出信息至PC:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label52" VerticalAlignment="Center" Grid.Column="2" />
+                        <ControlLib:MTSwitchButton Grid.Column="3" Height="30" HorizontalAlignment="Center" Margin="0" Name="tsbOutPCInfo" VerticalAlignment="Center" Width="55" Checked="tsbOutPCInfo_Checked" Unchecked="tsbOutPCInfo_Unchecked" />
+                    </Grid>
+                </Grid>
+            </ControlLib:NGroupBox>
+            <Grid HorizontalAlignment="Stretch" Margin="0" Name="grid19" VerticalAlignment="Stretch"  Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.7*" />
+                    <ColumnDefinition Width="0.7*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Content="点位个数:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label53" VerticalAlignment="Center" />
+                <ControlLib:DoubleUpDown BorderBrush="MediumSlateBlue" Height="30" HorizontalAlignment="Center" Increment="1" Margin="0" Maximum="1024" Minimum="0" Name="dudNumPoint" Value="0" Width="61" ValueChanged="dudNumPoint_ValueChanged" Grid.Column="1" />
+                <ControlLib:ButtonColor Background="#FF66FFFF" Content="保存" Height="23" HorizontalAlignment="Center" Margin="0" Name="btnSaveAll" VerticalAlignment="Center" Width="75" Grid.Column="6" Click="btnSaveAll_Click" />
+                <ControlLib:ButtonColor Background="#FF66FFFF" Content="删除点位" Height="23" HorizontalAlignment="Center" Margin="0" Name="btnDelPoint" VerticalAlignment="Center" Width="75" Grid.Column="3" Click="btnDelPoint_Click" />
+                <ControlLib:ButtonColor Background="#FF66FFFF" Content="写入机器人" Height="23" HorizontalAlignment="Center" Margin="0" Name="btnWriteRobot" VerticalAlignment="Center" Width="75" Grid.Column="5" Click="btnWriteRobot_Click" />
+                <ControlLib:ButtonColor Background="#FF66FFFF" Content="增加点位" Height="23" HorizontalAlignment="Center" Margin="0" Name="btnAddPoint" VerticalAlignment="Center" Width="75" Grid.Column="2" Click="btnAddPoint_Click" />
+                <ControlLib:ButtonColor Background="#FF66FFFF" Content="写入指定点位" Height="23" HorizontalAlignment="Center" Margin="0" Name="btnWriteSelect" VerticalAlignment="Center" Width="75" Grid.Column="4" Click="btnWriteSelect_Click" />
+            </Grid>
+        </Grid>
+        
+    </Grid>
+</BasicClass:BaseControl>

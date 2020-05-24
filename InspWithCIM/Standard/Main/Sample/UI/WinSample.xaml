@@ -1,0 +1,22 @@
+﻿<Window x:Class="Main.WinSample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Main"
+        mc:Ignorable="d"
+        Title="SampleWnd" Height="600" Width="1500" Closing="Window_Closing">
+	<Window.Effect>
+		<DropShadowEffect/>
+	</Window.Effect>
+	<Grid>
+		<TabControl>
+			<TabItem Header="设置Sample">
+				<local:UCSetSample x:Name="g_ucSetSample"/>
+			</TabItem>
+			<TabItem Header="比较Sample">
+				<local:UCCompareSample/>
+			</TabItem>
+		</TabControl>
+	</Grid>
+</Window>

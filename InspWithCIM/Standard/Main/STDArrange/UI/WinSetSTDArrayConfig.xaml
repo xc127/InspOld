@@ -1,0 +1,232 @@
+﻿<BasicClass:BaseMetroWindow x:Class="Main.WinSetSTDArrayConfig"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:BasicClass="clr-namespace:BasicClass;assembly=BasicClass"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:local="clr-namespace:Main"
+        xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib"
+        xmlns:MetroControls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="标准收片机配置" Height="740" Width="1000"  ResizeMode="NoResize" Closing="Window_Closing" BorderBrush="LightBlue" BorderThickness="2"  WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <ResourceDictionary x:Key="KeySource">
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <MetroControls:MetroTabControl Background="#FFEDF7F4">
+            <ControlLib:CTabItem Header="配置设置" Margin="2">
+                <local:UCParConfig x:Name="ucParConfig" Margin="2" IsEnabled="{Binding Path=IsChecked,ElementName=cbxIsArrange}" />
+            </ControlLib:CTabItem>
+
+            <ControlLib:CTabItem Header="相机功能选择" Margin="2">
+                <local:UCCamFunSet  Margin="2" Width="969" IsEnabled="{Binding Path=IsChecked,ElementName=cbxIsArrange}" />
+            </ControlLib:CTabItem>
+
+        </MetroControls:MetroTabControl>
+        <CheckBox Name="cbxIsArrange" Content="收片机" IsChecked="{Binding IsArrange,Mode=TwoWay}" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,150,25" />
+        <Button Background="#FF00D1E5" Content="保 存" FontFamily="Microsoft YaHei" FontSize="30" Height="60" HorizontalAlignment="Right" Margin="2" Name="BtnSave" VerticalAlignment="Bottom" Width="120" Click="BtnSave_Click" />
+    </Grid>
+
+    <!--<Grid>
+        <Grid.Resources>
+            <Style TargetType="Label" x:Key="lblStyle">
+                <Setter Property="HorizontalAlignment" Value="Left" />
+                <Setter Property="VerticalAlignment" Value="Center" />
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                <Setter Property="Height" Value="30" />
+            </Style>
+        </Grid.Resources>
+        <StackPanel Orientation="Horizontal" Margin="2,2,2,80">
+            <ControlLib:NGroupBox BorderBrush="#CC119EDA" TitleBrush="#FF00D1E5" HorizontalAlignment="Left" Margin="2" BorderThickness="1" Header="配置参数" Width="200">
+                <Grid Name="gdConfig">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="65" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Content="玻璃X：" Style="{StaticResource lblStyle}" />
+                    <Label Name="lblGlassX" Content="{Binding GlassX}" Style="{StaticResource lblStyle}" Grid.Column="1" />
+                    <Label Content="玻璃Y：" Grid.Row="1" Style="{StaticResource lblStyle}" />
+                    <Label Name="lblGlassY" Grid.Row="1" Grid.Column="1" Content="{Binding GlassY}" Style="{StaticResource lblStyle}" />
+                    <Label Content="玻璃Z：" Grid.Row="2" Style="{StaticResource lblStyle}" />
+                    <Label Name="lblGlassZ" Grid.Row="2" Grid.Column="1" Content="{Binding GlassZ}" Style="{StaticResource lblStyle}" />
+                    <Label Content="上电极宽：" Grid.Row="3" Style="{StaticResource lblStyle}" />
+                    <Label Name="lblITOTop" Content="{Binding ITOTop}" Grid.Row="3" Grid.Column="1" Style="{StaticResource lblStyle}" />
+                    <Label Content="下电极宽：" Grid.Row="4" Style="{StaticResource lblStyle}" />
+                    <Label Name="lblITOButtom" Grid.Row="4" Grid.Column="1" Content="{Binding ITOButtom}" Style="{StaticResource lblStyle}" />
+                    <Label Content="左电极宽：" Grid.Row="5" Style="{StaticResource lblStyle}" />
+                    <Label Name="lblITOLeft" Content="{Binding ITOLeft}" Grid.Row="5" Grid.Column="1" Style="{StaticResource lblStyle}" />
+                    <Label Content="右电极宽：" Grid.Row="6" Style="{StaticResource lblStyle}" />
+                    <Label Name="lblITORight" Content="{Binding ITORight}" Grid.Row="6" Grid.Column="1" Style="{StaticResource lblStyle}" />
+                    <Label Content="二维码X：" Grid.Row="7" Style="{StaticResource lblStyle}" />
+                    <Label Name="lblCodeX" Content="{Binding CodeX}" Grid.Row="7" Grid.Column="1" Style="{StaticResource lblStyle}" />
+                    <Label Content="二维码Y：" Grid.Row="8" Style="{StaticResource lblStyle}" />
+                    <Label Name="lblCodeY" Content="{Binding CodeY}" Grid.Row="8" Grid.Column="1" Style="{StaticResource lblStyle}" />
+                </Grid>
+            </ControlLib:NGroupBox>
+
+            <StackPanel Orientation="Vertical" Name="StkpPar" Margin="2" Width="764">
+                <StackPanel.Resources>
+                    <ObjectDataProvider x:Key="KeyPreciLight" MethodName="GetValues" ObjectType="{x:Type sys:Enum}">
+                        <ObjectDataProvider.MethodParameters>
+                            <x:Type Type="local:TypePreciLight_Enum" />
+                        </ObjectDataProvider.MethodParameters>
+                    </ObjectDataProvider>
+
+                    <ObjectDataProvider x:Key="KeyTypeRobotCoor" MethodName="GetValues" ObjectType="{x:Type sys:Enum}">
+                        <ObjectDataProvider.MethodParameters>
+                            <x:Type Type="local:TypeRobotCoor_Enum" />
+                        </ObjectDataProvider.MethodParameters>
+                    </ObjectDataProvider>
+
+                    <ObjectDataProvider x:Key="KeyTypePlatWork" MethodName="GetValues" ObjectType="{x:Type sys:Enum}">
+                        <ObjectDataProvider.MethodParameters>
+                            <x:Type Type="local:TypePlatWork_Enum" />
+                        </ObjectDataProvider.MethodParameters>
+                    </ObjectDataProvider>
+
+                    <ObjectDataProvider x:Key="KeyITOPlatCorner" MethodName="GetValues" ObjectType="{x:Type sys:Enum}">
+                        <ObjectDataProvider.MethodParameters>
+                            <x:Type Type="local:ITOPlatCorner_Enum" />
+                        </ObjectDataProvider.MethodParameters>
+                    </ObjectDataProvider>
+                </StackPanel.Resources>
+                <ControlLib:NGroupBox BorderBrush="#CC119EDA" Margin="2" BorderThickness="1" Header="背光方向设置" TitleBrush="#FF00D1E5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.2*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <ComboBox Name="cbxPreciLight" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" ItemsSource="{Binding Source={StaticResource KeyPreciLight}}" SelectionChanged="cbxAll_SelectionChanged" ToolTip="背光方向 默认竖向" />
+                        <Grid Grid.Column="1" Margin="2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="机器人取片角度："  Style="{StaticResource lblStyle}"/>
+                            <Label Content="机器人精确定位：" Style="{StaticResource lblStyle}" Grid.Column="2" />
+                            <Label Content="{Binding AngleInit}" Name="lblAngleInit" Style="{StaticResource lblStyle}" Grid.Column="1" />
+                            <Label Content="{Binding AnglePrec}" Name="lblAnglePreci" Grid.Column="3" Style="{StaticResource lblStyle}" />
+                            <Label Content="视觉输出偏差：" Style="{StaticResource lblStyle}" Grid.Row="1" VerticalContentAlignment="Center" />
+                            <Label Name="lblDeltaVision" Content="{Binding DeltaVision}" Style="{StaticResource lblStyle}" Grid.Row="1" Grid.Column="1" />
+                            <Label Content="实际交接偏差：" Style="{StaticResource lblStyle}" Grid.Row="1" Grid.Column="2" VerticalContentAlignment="Center" />
+                            <Label Name="lblDeltaReal" Content="{Binding DeltaReal}" Style="{StaticResource lblStyle}" Grid.Row="1" Grid.Column="3" />
+                        </Grid>
+                    </Grid>
+                </ControlLib:NGroupBox>
+                <ControlLib:NGroupBox BorderBrush="#CC119EDA" Margin="2" BorderThickness="1" Header="机器人方向设置" TitleBrush="#FF00D1E5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.2*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <ComboBox Name="cbxRobotCoor" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" ItemsSource="{Binding Source={StaticResource KeyTypeRobotCoor}}" SelectionChanged="cbxAll_SelectionChanged" ToolTip="机器人坐标系的角度,表示从机器人坐标系到正常坐标系的夹角"/>
+                        <Grid Grid.Column="1" Margin="2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="给机器人交接偏差：" Style="{StaticResource lblStyle}" Grid.Row="0" Grid.Column="0" VerticalContentAlignment="Center" />
+                            <Label Name="lblDeltaRobot" Content="{Binding DeltaRobot}" Style="{StaticResource lblStyle}" Grid.Row="0" Grid.Column="1" />                            
+                            <Label Content="残边平台角度：" Style="{StaticResource lblStyle}" Grid.Row="1" Grid.Column="0" VerticalContentAlignment="Center" />
+                            <Label Name="lblAngleITOPlat" Content="{Binding AngleITOPlat}" Style="{StaticResource lblStyle}" Grid.Row="1" Grid.Column="1" />
+                            <Label Content="定位到残边平台角度：" Style="{StaticResource lblStyle}" Grid.Row="1" Grid.Column="2" VerticalContentAlignment="Center" />
+                            <Label Name="lblAnglePreciToITOPlat" Content="{Binding AnglePreciToITOPlat}" Style="{StaticResource lblStyle}" Grid.Row="1" Grid.Column="3" />
+                        </Grid>
+                    </Grid>
+                </ControlLib:NGroupBox>
+                <ControlLib:NGroupBox BorderBrush="#CC119EDA" Margin="2" BorderThickness="1" Header="平台基准点设置" TitleBrush="#FF00D1E5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.2*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <ComboBox Name="cbxITOPlatCorner" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" ItemsSource="{Binding Source={StaticResource KeyITOPlatCorner}}" SelectionChanged="cbxAll_SelectionChanged" ToolTip="相对于观察面的残才角"/>
+                        <Grid Grid.Column="1" Margin="2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="平台基准点（R）：" Style="{StaticResource lblStyle}" Grid.Row="0" Grid.Column="0" VerticalContentAlignment="Center" />
+                            <Label Name="lblPosSTDITOPlat" Content="{Binding PosSTDITOPlat}" Style="{StaticResource lblStyle}" Grid.Row="0" Grid.Column="1" />
+                            <Label Content="平台交接位置（R）：" Style="{StaticResource lblStyle}" Grid.Row="2" Grid.Column="0" VerticalContentAlignment="Center" />
+                            <Label Name="lblPosTransPlat" Content="{Binding PosTransITOPlat}" Style="{StaticResource lblStyle}" Grid.Row="2" Grid.Column="1" />
+                            <Label Content="残边位置玻璃尺寸：" Style="{StaticResource lblStyle}" Grid.Row="1" Grid.Column="0" VerticalContentAlignment="Center" />
+                            <Label Name="lblSizeGalssPlat" Content="{Binding SizeGlassPlat}" Style="{StaticResource lblStyle}" Grid.Row="1" Grid.Column="1" />
+                            <Label Content="基于基准角的玻璃尺寸：" Style="{StaticResource lblStyle}" Grid.Row="1" Grid.Column="2" VerticalContentAlignment="Center" />
+                            <Label Name="lblSizeGalssBaseOnPlatCorner" Content="{Binding SizeGlassBaseOnITOCorner}" Style="{StaticResource lblStyle}" Grid.Row="1" Grid.Column="3" />
+                            <Label Content="实际交接位置(R)：" Style="{StaticResource lblStyle}" Grid.Row="2" Grid.Column="2" VerticalContentAlignment="Center" />
+                            <Label Name="lblPosTransPlatReal" Content="{Binding PosTransITOPlatReal}" Style="{StaticResource lblStyle}" Grid.Row="2" Grid.Column="3" />
+                        </Grid>
+                        
+                    </Grid>
+                </ControlLib:NGroupBox>
+                <ControlLib:NGroupBox BorderBrush="#CC119EDA" Margin="2" BorderThickness="1" Header="平台工作方式" TitleBrush="#FF00D1E5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.2*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <ComboBox Name="cbxTypePlatWork" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" ItemsSource="{Binding Source={StaticResource KeyTypePlatWork}}" SelectionChanged="cbxAll_SelectionChanged" />
+                        <Grid Grid.Column="1" Margin="2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                        </Grid>
+                    </Grid>
+                </ControlLib:NGroupBox>
+            </StackPanel>
+        </StackPanel>
+        <Button Background="#FF00D1E5" Content="应 用" FontFamily="Microsoft YaHei" FontSize="30" Name="BtnApply" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="120" Height="60" Margin="3,0,0,2" Click="BtnApply_Click" />
+        <Button Background="#FF00D1E5" Content="保 存" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei" FontSize="30" Height="60" Name="BtnSave" Width="120" Margin="146,0,0,2" Click="BtnSave_Click" />
+        <Button Background="#FF00D1E5" Content="刷 新" FontFamily="Microsoft YaHei" FontSize="30" Height="60" HorizontalAlignment="Right" Margin="2" Name="btnRefresh" VerticalAlignment="Bottom" Width="120" Click="btnRefresh_Click" />
+        <TextBox Name="txtDeltaX" Width="100" Height="30" VerticalAlignment="Bottom" Margin="641,0,233,2"/>
+        <TextBox Name="txtDeltaY" Height="30" Margin="0,0,128,2" VerticalAlignment="Bottom" Width="100" HorizontalAlignment="Right" />
+    </Grid>-->
+
+</BasicClass:BaseMetroWindow>

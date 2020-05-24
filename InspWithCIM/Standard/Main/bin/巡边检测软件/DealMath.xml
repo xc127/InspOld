@@ -1,0 +1,370 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DealMath</name>
+    </assembly>
+    <members>
+        <member name="M:DealMath.FunCalculate.AnalysisExpression(System.String)">
+            <summary>
+            解析表达式
+            </summary>
+            <param name="expression"></param>
+        </member>
+        <member name="M:DealMath.FunCalculate.GetHtResultValue(System.String,System.Collections.Hashtable)">
+            <summary>
+            获取结果列表中的值
+            </summary>
+            <param name="type"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMath.FunCalculate.CalListFun(System.String,System.Collections.Hashtable,System.String@)">
+            <summary>
+            替换数组函数的表达式
+            </summary>
+        </member>
+        <member name="M:DealMath.FunCalculate.GetResultValueList(DealMath.BaseExpression,System.Collections.Hashtable,System.Double@)">
+            <summary>
+            计算各个表达式的值
+            </summary>
+            <param name="expression_L"></param>
+            <param name="htResult"></param>
+        </member>
+        <member name="M:DealMath.FunCalculate.GetHtResultList(System.String,System.Collections.Hashtable)">
+            <summary>
+            获取结果列表中的值
+            </summary>
+            <param name="type"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMath.FunCalculate.CalTranslateFun(System.String,System.Collections.Hashtable,System.String@)">
+            <summary>
+            替换坐标变换函数的表达式
+            </summary>
+        </member>
+        <member name="M:DealMath.FunCalculate.GetResultValueTranslate(DealMath.BaseExpression,System.Collections.Hashtable)">
+            <summary>
+            计算各个表达式的值
+            </summary>
+            <param name="expression_L"></param>
+            <param name="htResult"></param>
+        </member>
+        <member name="M:DealMath.FunCalculate.GetResultValueTranslate(System.String,System.Double,System.Double)">
+            <summary>
+            求取变换值
+            </summary>
+            <param name="type"></param>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealMath.UCFunctionCom">
+            <summary>
+            UCFunctionCom.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCFunctionCom
+            </summary>
+        </member>
+        <member name="M:DealMath.UCFunctionCom.UpdateNameFun(System.String)">
+            <summary>
+            更新注解
+            </summary>
+            <param name="oper">操作符名</param>
+        </member>
+        <member name="M:DealMath.UCFunctionCom.dgNameFun_MouseDoubleClick(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            双击控件，显示计算公式
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealMath.UCFunctionCom.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealMath.BaseParMath.LoadXmlStream(System.String)">
+            <summary>
+            加载资源中Xml文档
+            </summary>
+            <param name="Path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMath.BaseParMath.LoadXmlStream(System.String,System.String)">
+            <summary>
+            加载本地或者资源中的xml
+            </summary>
+            <param name="Path"></param>
+            <param name="PathStream"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMath.BaseParMath.ReadXmlChildInit(System.Xml.XmlElement)">
+            <summary>
+            初始化读取参数，和ReadXmlChild方法相比，只是不读取基础属性
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealMath.BaseParMath.ReadXmlChild(System.Xml.XmlElement)">
+            <summary>
+            读取子元素的参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMath.BaseParMath.ReadBasicAttribute(System.Xml.XmlElement)">
+            <summary>
+            读取基础属性
+            </summary>
+            <param name="xeRoot">根节点</param>
+        </member>
+        <member name="M:DealMath.BaseParMath.ReadBasicPar(System.Xml.XmlElement)">
+            <summary>
+            读取基础参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMath.BaseParMath.WriteXmlRoot">
+            <summary>
+            写入参数并获取参数的根节点，直接从资源里面读取，确保参数所有的节点都被读取到
+            </summary>
+            <returns>根节点</returns>
+        </member>
+        <member name="M:DealMath.BaseParMath.WriteXmlChild(System.Xml.XmlElement)">
+            <summary>
+            在根节点中，写入参数
+            </summary>
+        </member>
+        <member name="M:DealMath.BaseParMath.WriteXmlDefault">
+            <summary>
+            Strange读取完整节点并保存到默认值文件
+            </summary>
+            <returns>根节点</returns>
+        </member>
+        <member name="T:DealMath.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:DealMath.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:DealMath.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="T:DealMath.UCFunctionTranslate">
+            <summary>
+            UCFunctionTranslate.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCFunctionTranslate
+            </summary>
+        </member>
+        <member name="M:DealMath.UCFunctionTranslate.btnSet_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            设置
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealMath.UCFunctionTranslate.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealMath.WinCalculator">
+            <summary>
+            Calculator.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinCalculator
+            </summary>
+        </member>
+        <member name="M:DealMath.WinCalculator.LoginEvent">
+            <summary>
+            事件注册
+            </summary>
+        </member>
+        <member name="M:DealMath.WinCalculator.DealOperatorsAdd_event(System.String)">
+            <summary>
+            运算符
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:DealMath.WinCalculator.DealNumAdd_event(System.String)">
+            <summary>
+            数字
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:DealMath.WinCalculator.DealFunctionAdd_event(DealMath.BaseParFunGeneral)">
+            <summary>
+            添加函数
+            </summary>
+            <param name="par"></param>
+        </member>
+        <member name="M:DealMath.WinCalculator.DealController_event(System.String)">
+            <summary>
+            控制符响应事件
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:DealMath.WinCalculator.uCSelectResult_CellDataReference_event(BasicComprehensive.CellReference,DealResult.ResultReference)">
+            <summary>
+            结果关联选择
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:DealMath.WinCalculator.TextAdd(System.String,System.Int32)">
+            <summary>
+            显示添加文本
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:DealMath.WinCalculator.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealMath.ParFunGeneral.InitMathFun">
+            <summary>
+            数学计算
+            </summary>
+        </member>
+        <member name="M:DealMath.ParFunGeneral.InitFunNumber">
+            <summary>
+            数字计算
+            </summary>
+        </member>
+        <member name="M:DealMath.ParFunGeneral.InitFunTrigonometricoper">
+            <summary>
+            三角函数
+            </summary>
+        </member>
+        <member name="M:DealMath.ParFunGeneral.InitFunOneList">
+            <summary>
+            一维数组
+            </summary>
+        </member>
+        <member name="M:DealMath.ParFunGeneral.InitFunCalibrate">
+            <summary>
+            校准计算
+            </summary>
+        </member>
+        <member name="M:DealMath.ParFunGeneral.InitFunTranslate">
+            <summary>
+            坐标变换
+            </summary>
+        </member>
+        <member name="T:DealMath.TypeMath">
+            <summary>
+            TypeGeometry.xaml 的交互逻辑
+            </summary>
+            <summary>
+            TypeMath
+            </summary>
+        </member>
+        <member name="M:DealMath.TypeMath.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealMath.UCOperators">
+            <summary>
+            Calculator.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCOperators
+            </summary>
+        </member>
+        <member name="M:DealMath.UCOperators.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealMath.UCController">
+            <summary>
+            Calculator.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCController
+            </summary>
+        </member>
+        <member name="M:DealMath.UCController.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealMath.UCNumbers">
+            <summary>
+            Calculator.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCNumbers
+            </summary>
+        </member>
+        <member name="M:DealMath.UCNumbers.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealMath.BaseExpression">
+            <summary>
+            表达式基类
+            </summary>
+        </member>
+        <member name="M:DealMath.ParCalculate.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            从本地文档读取参数的时候，读取
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:DealMath.ParCalculate.ReadXmlPar(System.Xml.XmlElement)">
+            <summary>
+            读取该算法的参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMath.ParCalculate.WriteXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            从Stream资源读取完整节点后，写入参数
+            </summary>
+            <param name="xDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealMath.ParCalculate.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            从Stream资源读取完整节点后，写入参数
+            </summary>
+            <param name="xDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealMath.UCGeneralFunctions">
+            <summary>
+            Calculator.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCGeneralFunctions
+            </summary>
+        </member>
+        <member name="M:DealMath.UCGeneralFunctions.RefreshCboParentFun">
+            <summary>
+            刷新父函数名称
+            </summary>        
+        </member>
+        <member name="M:DealMath.UCGeneralFunctions.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>

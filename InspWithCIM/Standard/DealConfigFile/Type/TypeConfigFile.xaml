@@ -1,0 +1,48 @@
+﻿<BasicClass:BaseControl x:Class="DealConfigFile.TypeConfigFile"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:BasicClass="clr-namespace:BasicClass;assembly=BasicClass"
+             xmlns:DealConfigFile="clr-namespace:DealConfigFile"
+             mc:Ignorable="d" 
+             Height="260" Width="200">
+    <UserControl.Resources >
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <XmlDataProvider x:Key="TypeConfigFile" Source="./XmlTemplate/XmlTypeConfigFile.xml" XPath="Root"/>           
+
+            <Style x:Key="TVIStyle" TargetType="TreeViewItem"  BasedOn="{StaticResource {x:Type TreeViewItem}}">
+                <Setter Property="IsExpanded" Value="{Binding XPath=@IsExpanded}"></Setter>
+            </Style>
+
+            <HierarchicalDataTemplate DataType="Root" ItemsSource="{Binding XPath=Title}">
+                <TextBlock Text="{Binding XPath=@Name}"></TextBlock>
+            </HierarchicalDataTemplate>
+
+            <HierarchicalDataTemplate DataType="Title" ItemsSource="{Binding XPath=Function}">
+                <TextBlock Text="{Binding XPath=@Name}"></TextBlock>
+            </HierarchicalDataTemplate>
+
+            <HierarchicalDataTemplate DataType="Function" >
+                <TextBlock Text="{Binding XPath=@Name}"></TextBlock>
+            </HierarchicalDataTemplate>
+
+        </ResourceDictionary>
+    </UserControl.Resources>
+    
+    <Grid>
+        <TreeView BorderBrush="#CC119EDA" BorderThickness="1" HorizontalAlignment="Stretch" ItemsSource="{Binding Source={StaticResource TypeConfigFile}}" Margin="0" Name="tvType" VerticalAlignment="Stretch" SelectedItemChanged="tvType_SelectedItemChanged">
+            <TreeView.ItemContainerStyle>
+                <Style BasedOn="{StaticResource TVIStyle}" TargetType="TreeViewItem" />
+            </TreeView.ItemContainerStyle>
+        </TreeView>
+    </Grid>
+</BasicClass:BaseControl>

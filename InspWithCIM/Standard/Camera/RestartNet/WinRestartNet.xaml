@@ -1,0 +1,49 @@
+﻿<BasicClass:BaseMetroWindow x:Class="Camera.WinRestartNet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:MetroControls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:BasicClass="clr-namespace:BasicClass;assembly=BasicClass"
+        xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib" 
+        Title="重启网卡" Height="452" Width="1002" Loaded="BaseMetroWindow_Loaded" BorderBrush="#CC119EDA" WindowStartupLocation="CenterScreen" Closing="BaseMetroWindow_Closing" ShowMaxRestoreButton="False" ShowMinButton="False">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="351*" />
+            <RowDefinition Height="62*" />
+        </Grid.RowDefinitions>
+        <GroupBox Header="网卡列表" Margin="0,0,0,10">
+            <Grid>
+                <DataGrid AllowDrop="True" AreRowDetailsFrozen="True" AutoGenerateColumns="False" Background="White" BorderThickness="1" CanUserAddRows="False" CanUserResizeColumns="False" CanUserSortColumns="False" FontSize="14" GridLinesVisibility="All" HorizontalAlignment="Stretch" IsReadOnly="False" ItemsSource="{Binding}" Margin="1" Name="dgNet" VerticalAlignment="Stretch" Grid.ColumnSpan="2">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Name}" Header="名称" Width="300" IsReadOnly="True"/>
+                        <DataGridTextColumn Binding="{Binding Model}" Header="型号" Width="350" IsReadOnly="True"/>
+                        <DataGridTextColumn Binding="{Binding MAC}" Header="Mac" Width="150" IsReadOnly="True"/>
+                        <DataGridTextColumn Binding="{Binding IP}" Header="IP" Width="150" IsReadOnly="True"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </GroupBox>
+        <Grid Grid.Row="1" HorizontalAlignment="Stretch" Margin="0" Name="grid1" VerticalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <ControlLib:ButtonColor Background="#FF66FFFF" Content="禁用网卡" FontSize="14" Height="30" HorizontalAlignment="Center" Margin="0" Name="btnStopNet" VerticalAlignment="Center" Width="100" Click="btnStopNet_Click" />
+            <ControlLib:ButtonColor Background="#FF66FFFF" Content="启用网卡" FontSize="14" Height="30" HorizontalAlignment="Center" Margin="0" Name="btnStartNet" VerticalAlignment="Center" Width="100" Grid.Column="1" Click="btnStartNet_Click" />
+            <ControlLib:ButtonColor Background="#FF66FFFF" Content="重启网卡" FontSize="14" Height="30" HorizontalAlignment="Center" Margin="0" Name="btnRestartNet" VerticalAlignment="Center" Width="100" Click="btnRestartNet_Click" Grid.Column="2" />
+            <ControlLib:ButtonColor Background="#FF66FFFF" Content="保存参数" FontSize="14" Height="30" HorizontalAlignment="Center" Margin="0" Name="btnSave" VerticalAlignment="Center" Width="100" Grid.Column="3" />
+        </Grid>
+    </Grid>
+</BasicClass:BaseMetroWindow>

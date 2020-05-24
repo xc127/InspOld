@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root Name="设定PLC" IsExpanded="true">
+  <Title Name="PLC基本参数" IsExpanded="false">
+  </Title>
+
+  <Title Name="PLC寄存器" IsExpanded="true">
+    <Function Name="配置参数寄存器"/>
+    <Function Name="监控寄存器"/>
+    <Function Name="相机寄存器"/>
+    <Function Name="数据寄存器1"/>
+    <Function Name="数据寄存器2"/>
+    <Function Name="数据寄存器3"/>
+    <Function Name="数据寄存器4"/>
+    <Function Name="数据寄存器5"/>
+    <Function Name="数据寄存器6"/>
+    <Function Name="循环读取寄存器"/>
+  </Title>
+</Root>

@@ -1,0 +1,3276 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Main_EX</name>
+    </assembly>
+    <members>
+        <member name="T:Main_EX.Com_MainEX">
+            <summary>
+            公共类
+            </summary>
+        </member>
+        <member name="T:Main_EX.BaseDealComprehensiveResult">
+            <summary>
+            多目校准
+            </summary>
+             <summary>
+            校准的触发响应函数 20181111-zx
+             </summary>
+            <summary>
+            处理各个相机需要调用的公共函数
+            </summary>
+            <summary>
+            通过名称获取参数，以及名称 20181127-zx
+            </summary>
+            <summary>
+            通过算法获取当前相机的基准坐标，并获取其他相机的坐标，对两个相机进行映射，得到投影变换的系数
+            </summary>
+             <summary>
+            校准的触发响应函数 20181111-zx
+             </summary>
+            <summary>
+            多相机执行
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DealComprehensiveResultFun_CalibHandEye(BasicClass.TriggerSource_enum,System.Int32,System.Int32,System.Collections.Hashtable@)">
+            <summary>
+            通过拍照位置来区分标定相机，采用标定板，1501表示位置1第一次拍照，
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="index"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.CalibHandEye(System.Int32,System.Int32,System.Collections.Hashtable@)">
+            <summary>
+            自动手眼校准,1501表示位置1第一次拍照，
+            </summary>
+            <param name="pos">拍照位置</param>
+            <param name="index">点位索引号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DealComprehensiveResultFun_CalibMult(BasicClass.TriggerSource_enum,System.Int32,System.Int32,System.Collections.Hashtable@)">
+            <summary>
+            通过拍照位置来区分标定相机，采用标定板，
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="index"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.CalibMult_GetPoint(System.Int32,System.Int32,System.Collections.Hashtable@)">
+            <summary>
+            多目校准，获取坐标
+            </summary>
+            <param name="pos">算子的序号，并非拍照位置</param>
+            <param name="index">拍照次序</param>
+            <param name="htResult">哈希表结果</param>
+            <returns></returns> 
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.CalibMult_Co(ParComprehensive.BaseParComprehensive,System.Int32,ParComprehensive.BaseParComprehensive,System.Int32)">
+            <summary>
+            计算相机的映射系数
+            </summary>
+            <param name="par1">基准相机参数</param>
+            <param name="index1">算子索引号</param>
+            <param name="par2"></param>
+            <param name="index2">算子索引号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.SaveCalibMultCo(BasicClass.NoCamera_enum,System.Int32,System.Double[])">
+            <summary>
+            保存多目校准的系数
+            </summary>
+            <param name="noCamera_e">相机序号</param>
+            <param name="index">算子序号，不是拍照位置</param>
+            <param name="calib"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DealComprehensiveResultFun_CalibSelf(BasicClass.TriggerSource_enum,System.Int32,System.Collections.Hashtable@)">
+            <summary>
+            接收触发信号，计算校准,自定义校准
+            </summary>
+            <param name="trigerSource_e">触发源</param>
+            <param name="i">指令</param>
+            <returns></returns>
+        </member>
+        <member name="F:Main_EX.BaseDealComprehensiveResult.BlResultPos_Cam1">
+            <summary>
+            相机处理结果
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.Init(Camera.BaseUCDisplayCamera,System.Collections.Hashtable,DealResult.UCResult,DealLog.UCAlarm,DealLog.UCStateWork)">
+            <summary>
+            初始化为Halcon窗体
+            </summary>
+            <param name="uICameraBase">halcon窗体界面</param>
+            <param name="uCResult"></param>
+            <param name="uCAlarm"></param>
+            <param name="uCStateWork"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.Init(Camera.BaseUCDisplayCamera,System.Collections.Hashtable,Main_EX.UCDisplayMainResult,DealLog.UCAlarm,DealLog.UCStateWork,System.Action)">
+            <summary>
+            初始化相机综合设置处理结果参数
+            </summary>
+            <param name="baseUCDisplayCamera"></param>
+            <param name="htUCDisplay"></param>
+            <param name="uCResult"></param>
+            <param name="uCAlarm"></param>
+            <param name="uCStateWork"></param>
+            <param name="fun_State">切换软件状态</param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DealComprehensiveResultFun(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            接收外部触发源的指令
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DealComprehensiveResultFun(BasicClass.TriggerSource_enum,System.Int32,System.Int32)">
+            <summary>
+            传入参考值
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DealComprehensiveResultFun(BasicClass.TriggerSource_enum,System.Int32,System.Int32[])">
+            <summary>
+            传入参考数组
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DealComprehensiveResultFun_Calib1(BasicClass.TriggerSource_enum,System.Collections.Hashtable@)">
+            <summary>
+            校准方法1
+            </summary>
+            <param name="trigerSource_e">触发源</param>
+            <param name="htResult">结果哈希表</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DealComprehensiveResultFun_Calib2(BasicClass.TriggerSource_enum,System.Collections.Hashtable@)">
+            <summary>
+            校准方法2
+            </summary>
+            <param name="trigerSource_e">触发源</param>
+            <param name="htResult">结果哈希表</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DealComprehensiveResultFun_Calib3(BasicClass.TriggerSource_enum,System.Collections.Hashtable@)">
+            <summary>
+            校准方法3
+            </summary>
+            <param name="trigerSource_e">触发源</param>
+            <param name="htResult">结果哈希表</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DealComprehensiveResultFun_Calib4(BasicClass.TriggerSource_enum,System.Collections.Hashtable@)">
+            <summary>
+            校准方法4
+            </summary>
+            <param name="trigerSource_e">触发源</param>
+            <param name="htResult">结果哈希表</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowMainResult(System.String,System.Boolean)">
+            <summary>
+            显示结果到列表，默认相机序号
+            </summary>
+            <param name="str"></param>
+            <param name="blResult"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowMainResult(System.String,System.Int32,System.Boolean)">
+            <summary>
+            显示结果到列表，传入相机序号参数
+            </summary>
+            <param name="str"></param>
+            <param name="noCamera"></param>
+            <param name="blResult"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.g_UCDisplayCamera_HalWin_event">
+            <summary>
+            halcon窗体事件响应
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.Display(BasicClass.Pos_enum,System.Collections.Hashtable,System.Boolean,System.Diagnostics.Stopwatch)">
+            <summary>
+            显示
+            </summary>
+            <param name="pos_e">拍照位置</param>
+            <param name="htResult">结果哈希表</param>
+            <param name="blResult">结果是否正确</param>
+            <param name="sw">计时器</param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.Display(System.String,System.Collections.Hashtable,System.Boolean)">
+            <summary>
+            显示指定单元格结果 20190412
+            </summary>
+            <param name="nameCell">单元格名称</param>
+            <param name="htResult">结果哈希表</param>
+            <param name="blResult">结果是否正确</param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.InitDisplay_Task">
+            <summary>
+            使用新建线程显示
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.Display_Task(BasicClass.Pos_enum,System.Collections.Hashtable,System.Boolean,System.Diagnostics.Stopwatch,System.Action)">
+            <summary>
+            刷新显示使用单线程循环
+            </summary>
+            <param name="pos"></param>
+            <param name="htResult"></param>
+            <param name="blResult"></param>
+            <param name="sw"></param>
+            <param name="funDisplay">显示的委托</param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.AddResultMainShow(System.String,BasicClass.ImageAll)">
+            <summary>
+            将图像添加到哈希表
+            </summary>
+            <param name="name"></param>
+            <param name="im"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowResult(System.String,System.Boolean)">
+            <summary>
+            显示结果到当前相机
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowResult_Camera1(System.String,System.Boolean)">
+            <summary>
+            显示结果到相机1窗体
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowResult_Camera2(System.String,System.Boolean)">
+            <summary>
+            显示结果到相机2窗体
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowResult_Camera3(System.String,System.Boolean)">
+            <summary>
+            显示结果到相机3窗体
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowResult_Camera4(System.String,System.Boolean)">
+            <summary>
+            显示结果到相机4窗体
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowResult_Camera5(System.String,System.Boolean)">
+            <summary>
+            显示结果到相机5窗体
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowResult_Camera6(System.String,System.Boolean)">
+            <summary>
+            显示结果到相机6窗体
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowResult_Camera7(System.String,System.Boolean)">
+            <summary>
+            显示结果到相机7窗体
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowResult_Camera8(System.String,System.Boolean)">
+            <summary>
+            显示结果到相机8窗体
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetNameCellByType(System.String,System.Int32)">
+            <summary>
+            通过算法名称返回对应拍照位置的单元格20190331
+            </summary>
+            <param name="type">算法类型</param>
+            <param name="pos">拍照位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetNameCellByType(System.String)">
+            <summary>
+            通过算法名称返回第一个单元格20190331-zx
+            </summary>
+            <param name="type">算法类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetNameCellByType_First(System.String)">
+            <summary>
+            通过算法名称返回第一个单元格20190331-zx
+            </summary>
+            <param name="type">算法类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetAllNameCellByType(System.String,System.Int32)">
+            <summary>
+            通过算法名称返回对应拍照位置所有元格，按照顺序20190331-zx
+            </summary>
+            <param name="type">算法类型</param>
+            <param name="pos">拍照位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetAllNameCellByType(System.String)">
+            <summary>
+            通过算法名称返回所有元格，按照顺序20190331-zx
+            </summary>
+            <param name="type">算法类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetCellParImageProcessByType(System.String,System.Int32)">
+            <summary>
+            通过算法名称，索引对应拍照位置算法类-图像处理20190331-zx
+            </summary>
+            <param name="type">算法名称</param>
+            <param name="pos">拍照位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetCellParImageProcessByType(System.String)">
+            <summary>
+            通过算法名称，索引第一个算法类-图像处理20190331-zx
+            </summary>
+            <param name="type">算法名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetCellParCalibByType(System.String,System.Int32)">
+            <summary>
+            通过算法名称，索引对应拍照位置校准类20190331-zx
+            </summary>
+            <param name="type">算法名称</param>
+            <param name="pos">拍照位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetCellParCalibRotateByType(System.String,System.Int32)">
+            <summary>
+            通过算法名称获取旋转中心，索引对应拍照位置校准类20191013-zx
+            </summary>
+            <param name="type">算法名称</param>
+            <param name="pos">拍照位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetCellParCalibByType(System.String)">
+            <summary>
+            通过算法名称，索引第一个校准类20190331-zx
+            </summary>
+            <param name="type">算法名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetCellParCalibRotateByType(System.String)">
+            <summary>
+            通过算法名称获取旋转中心，索引第一个校准类20191013-zx
+            </summary>
+            <param name="type">算法名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetCellParGrabImageByType(System.String,System.Int32)">
+            <summary>
+            通过算法名称，索引对应拍照位置拍照类20190331-zx
+            </summary>
+            <param name="type">算法名称</param>
+            <param name="pos">拍照位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetCellParGrabImageByType(System.String)">
+            <summary>
+            通过算法名称，索引第一个拍照类20190331-zx
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetAnnotationByType(System.String,System.Int32)">
+            <summary>
+            通过算法名称，反馈对应拍照位置注释20190331-zx
+            </summary>
+            <param name="type">算法名称</param>
+            <param name="pos">拍照位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetAnnotationByType(System.String)">
+            <summary>
+            通过算法名称，反馈第一个算子注释20190331-zx
+            </summary>
+            <param name="type">算法名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetCellParImageProcess(System.String)">
+            <summary>
+            通过单元格索引图像处理算法类-图像处理20190331-zx
+            </summary>
+            <param name="cell">单元格</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetCellParCalibrate(System.String)">
+            <summary>
+             通过单元格索引算法类-校准20190331-zx
+            </summary>
+            <param name="cell">单元格</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetCellParCalibRotate(System.String)">
+            <summary>
+             通过单元格索引旋转中心-zx20191013
+            </summary>
+            <param name="cell">单元格</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetCellParGrabImage(System.String)">
+            <summary>
+            通过单元格索引算法类-拍照20190331-zx
+            </summary>
+            <param name="cell">单元格</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetParStdByCell(System.String)">
+            <summary>
+            通过单元格索引基准值类20190331-zx
+            </summary>
+            <param name="cell"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetParStdByName(System.String,System.Int32)">
+            <summary>
+            通过名称索引对应拍照位置基准值类20190331-zx
+            </summary>
+            <param name="name">算法名称</param>
+            <param name="pos">拍照位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.SaveAllParComprehensive">
+            <summary>
+            保存所有参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.SaveParComprehensive(System.String)">
+            <summary>
+            保存指定单元格参数
+            </summary>
+            <param name="nameCell"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.SaveParComprehensive(System.String,System.Int32)">
+            <summary>
+            将指定算法名称的参数保存到本地
+            </summary>
+            <param name="type">算法名称，如果形状匹配T</param>
+            <param name="pos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.RecordTact(System.Int32,System.Int32,System.Collections.Hashtable)">
+            <summary>
+            记录图像处理的节拍和整体的节拍
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DumpWimImage_OK(System.String,System.String)">
+            <summary>
+            OK图像，包含新的存储路径，图片名称
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DumpWimImageShort_OK(System.String,System.String)">
+            <summary>
+            短时间，不包含年月日
+            </summary>
+            <param name="name"></param>
+            <param name="path"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DumpWimImage_OK(System.String)">
+            <summary>
+            OK图像，包含新的存储路径，图片名称
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DumpWimImageShort_OK(System.String)">
+            <summary>
+            短时间，不包含年月日
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DumpWimImage_NG(System.String,System.String)">
+             <summary>
+            NG图像，包含新的存储路径，图片名称
+             </summary>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DumpWimImageShort_NG(System.String,System.String)">
+            <summary>
+            短时间，不包含年月日
+            </summary>
+            <param name="name"></param>
+            <param name="path"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DumpWimImage_NG(System.String)">
+            <summary>
+            新的存储路径文件夹
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DumpWimImageShort_NG(System.String)">
+            <summary>
+            短时间
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowState(System.String)">
+            <summary>
+            添加通用日志
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowState_EN(System.String)">
+            <summary>
+            英文日志20190424
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowState_Cam(System.String)">
+            <summary>
+            添加相机日志
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowState_Cam(System.String,System.Int32)">
+            <summary>
+            添加相机日志
+            </summary>
+            <param name="info">信息</param>
+            <param name="noCamera">相机序号</param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowState_PLC(System.String)">
+            <summary>
+            PLC日志
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowState_Robot(System.String)">
+            <summary>
+            Robot日志
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowAlarm(System.String)">
+            <summary>
+            添加报警
+            </summary>
+            <param name="alarm">报警信息</param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowAlarm_EN(System.String)">
+            <summary>
+            英文报警20190424
+            </summary>
+            <param name="alarm">报警信息</param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowAlarm_Cam(System.String)">
+            <summary>
+            添加相机报警日志
+            </summary>
+            <param name="alarm"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowAlarm_Cam(System.String,System.Int32)">
+            <summary>
+            添加相机报警日志
+            </summary>
+            <param name="alarm">信息</param>
+            <param name="noCamera">相机序号</param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowAlarm_PLC(System.String)">
+            <summary>
+            添加PLC报警日志
+            </summary>
+            <param name="alarm">报警信息</param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowAlarm_Robot(System.String)">
+            <summary>
+            添加Robot报警日志
+            </summary>
+            <param name="alarm">报警信息</param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowState_Hidden(System.String)">
+            <summary>
+            记录的日志不显示
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowAlarm_Hidden(System.String)">
+            <summary>
+            记录的日志不显示
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowState_Image(System.String,System.String)">
+            <summary>
+            记录的日志y以及图片
+            </summary>
+            <param name="info"></param>
+            <param name="path"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowAlarm_Image(System.String,System.String)">
+            <summary>
+            记录的日志y以及图片
+            </summary>
+            <param name="alarm">报警信息</param>
+            <param name="path">图片路径</param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowWinError_Invoke(System.String)">
+            <summary>
+            显示报警窗体
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.ShowWinError_EN(System.String)">
+            <summary>
+            英文报警
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.AddLogImage(System.String,System.Int32,System.String)">
+            <summary>
+            增加日志
+            </summary>
+            <param name="key">关键字</param>
+            <param name="noCamera">相机序号</param>
+            <param name="path">路径</param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.AddLogImage(System.String,System.Int32,System.String,System.Boolean)">
+            <summary>
+            增加日志
+            </summary>
+            <param name="key">关键字</param>
+            <param name="noCamera">相机序号</param>
+            <param name="path">路径</param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.FinishPhotoPLC(DealComprehensive.StateComprehensive_enum)">
+            <summary>
+            结束拍照
+            </summary>
+            <param name="stateComprehensive_e"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.FinishPhotoPLC(System.Int32)">
+            <summary>
+            结束拍照并发送拍照结果
+            </summary>
+            <param name="result"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DealTypeResult(DealResult.BaseResult)">
+            <summary>
+            判断算法处理结果的正确性
+            </summary>
+            <param name="result"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetErrorCell(System.Collections.Hashtable,System.Int32,System.String@)">
+            <summary>
+            搜索当前位置的错误单元格
+            </summary>
+            <param name="htResult">结果哈希表</param>
+            <param name="pos">拍照位置</param>
+            <param name="name">错误单元格</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetErrorCell(System.Collections.Hashtable,System.Collections.Generic.List{System.String},System.String@)">
+            <summary>
+            判断指定单元格结果
+            </summary>
+            <param name="htResult">哈希表结果</param>
+            <param name="cell_L">单元格名称</param>
+            <param name="name">错误单元格名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.CheckSharpness">
+            <summary>
+            判断当前相机是否有清晰度调焦算子,算子为该相机任何拍照位置算子
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DealComprehensiveResultFun_CalibAffineCamera(BasicClass.TriggerSource_enum,System.Int32,System.Int32,System.Collections.Hashtable@)">
+            <summary>
+            投影校准 1501   -20181207--zx
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="index"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.CalibAffineCamera(System.Int32,System.Int32,System.Collections.Hashtable@)">
+            <summary>
+            自动相机校准,并且调用多相机执行算子
+            </summary>
+            <param name="pos"></param>
+            <param name="index">拍照序号，99表示结束表达，或者点位引用是_L</param>
+             <param name="htResult">哈希表存储结果</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DealComprehensiveResultFun_CalibAxis(BasicClass.TriggerSource_enum,System.Int32,System.Int32,System.Collections.Hashtable@)">
+            <summary>
+            通过拍照位置来区分标定轴，1301表示位置1第一次拍照，1302表示位置2第一次拍照
+            </summary>
+            <param name="pos">算子的序号，并非拍照位置</param>
+            <param name="trigerSource_e">触发源</param>
+            <param name="index"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.CalibAxis(System.Int32,System.Int32,System.Collections.Hashtable@)">
+            <summary>
+            自动轴,1301表示位置1第一次拍照，轴坐标的计算是双数点进行保存，轴计算是两个数据表示一根轴，20181111-zx
+            </summary>
+            <param name="pos">算子的序号，并非拍照位置</param>
+            <param name="index"></param>
+            <param name="htResult">哈希表结果</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DealComprehensiveResultFun_CalibCamera(BasicClass.TriggerSource_enum,System.Int32,System.Int32,System.Collections.Hashtable@)">
+            <summary>
+            通过拍照位置来区分标定相机，采用标定板，1201表示位置1第一次拍照，
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="index"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.CalibCamera(System.Int32,System.Int32,System.Collections.Hashtable@)">
+            <summary>
+            自动相机校准,1201表示位置1第一次拍照，
+            </summary>
+            <param name="pos"></param>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DealComprehensiveResultFun_CalibRotate(BasicClass.TriggerSource_enum,System.Int32,System.Int32,System.Collections.Hashtable@)">
+            <summary>
+            通过拍照位置来区分标定旋转中心，
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="pos">算子序号,不表示拍照位置</param>
+            <param name="index"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.CalibRotate(System.Int32,System.Int32,System.Collections.Hashtable@)">
+            <summary>
+            自动校准旋转中心,1401表示位置1第一次拍照，
+            </summary>
+            <param name="pos">算子序号，不表示拍照位置</param>
+            <param name="index"></param>
+            <param name="htResult">哈希表结果</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DealComprehensiveResultFun_Calib(BasicClass.TriggerSource_enum,System.Int32,System.Collections.Hashtable@)">
+            <summary>
+            接收触发信号，计算校准
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.DealComprehensiveResultFun_Calib_ForMain(BasicClass.TriggerSource_enum,DealComprehensive.StateComprehensive_enum,System.Int32,System.Int32,Main_EX.TypeCalib_enum,System.Collections.Hashtable@)">
+            <summary>
+            给Main中重载用，做为校准指令时的自定义
+            </summary>
+            <param name="trigerSource_e">触发源</param>
+            <param name="stateComprehensive_e">运算结果</param>
+            <param name="pos">拍照位置</param>
+            <param name="index">拍照序号</param>
+            <param name="typeCalib_e">校准类型</param>
+            <param name="htResult">结果</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetCalibCellRefValue2(BasicClass.NoCamera_enum,System.String)">
+            <summary>
+            获取指定相机中校准算子的引用值列表，默认拍照位置1
+            </summary>
+            <param name="noCamera_e">相机序号</param>
+            <param name="nameType">算子名称:</param>
+            相机校准,相机投影校准,手眼校准,多目校准,旋转中心变换,坐标系变换,世界坐标变换,轴坐标校准
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetCalibCellRefValue3(BasicClass.NoCamera_enum,System.Int32,System.String)">
+            <summary>
+            获取指定相机中校准算子的引用值列表，指定拍照位置
+            </summary>
+            <param name="noCamera_e">相机序号</param>
+            <param name="pos">算子序号</param>
+            <param name="nameType">算子名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetCalibCellRefValue2(BasicClass.NoCamera_enum,System.Int32,System.String)">
+            <summary>
+            获取指定相机中校准算子的引用值列表，
+            </summary>
+            <param name="noCamera_e">相机序号</param>
+            <param name="pos">算子序号</param>
+            <param name="nameType">算子名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetParComphensive(BasicClass.NoCamera_enum)">
+            <summary>
+            获取相机综合设置参数顶层类
+            </summary>
+            <param name="noCamera_e"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.SaveStdImage(DealAlgorithm.ParAlgorithm)">
+            <summary>
+            保存基准图片
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.SaveStdImage(DealAlgorithm.ParAlgorithm,System.String)">
+            <summary>
+            保存基准图片
+            </summary>
+            <param name="par"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetCellResultValue(DealAlgorithm.ParGetResultFromCell,DealCalibrate.BaseParCalibrate,BasicClass.HashAction)">
+            <summary>
+            此相机算法单元结果
+            </summary>
+            <param name="par"></param>
+            <param name="baseParCalibrate"></param>
+            <param name="fun"></param>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetBaseDealComprehensive(System.Int32)">
+            <summary>
+            获取对应相机的执行类
+            </summary>
+            <param name="noCamera"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetDealComprehensiveResult(System.Int32)">
+            <summary>
+            相机综合设置Main_EX,获取多相机调用的类，在Main里面重写函数20181226-zx
+            </summary>
+            <param name="noCamera"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.BaseDealComprehensiveResult.GetHtResult(System.Int32)">
+            <summary>
+            获取哈希表结果
+            </summary>
+            <param name="noCamera"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Main_EX.WinTrrigerComprehensiveFull">
+            <summary>
+            WinTrrigerComprehensive.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinTrrigerComprehensiveFull
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinTrrigerComprehensiveFull.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinTrrigerComprehensiveFull.btnClose_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            退出窗体，先退出实时
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinTrrigerComprehensiveFull.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Main_EX.WinTrrigerComprehensiveSmall">
+            <summary>
+            WinTrrigerComprehensive.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinTrrigerComprehensiveSmall
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinTrrigerComprehensiveSmall.btnClose_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            退出窗体，先退出实时
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinTrrigerComprehensiveSmall.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Main_EX.BaseStartWin">
+            <summary>
+            启动窗口
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.SetPriority">
+            <summary>
+            设置程序优先级
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init">
+            <summary>
+            初始化加载
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init_SetPar">
+            <summary>
+            系统参数
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.OpenCamera">
+            <summary>
+            打开相机
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init_Others">
+            <summary>
+            初始化其他设置
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.ReadCalib">
+            <summary>
+            读取校准文件
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.ReadAssistantSharpe">
+            <summary>
+            读取辅助绘图
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init_Comprehensive">
+            <summary>
+            相机综合设置参数
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init_Comprehensive1">
+            <summary>
+            相机1综合设置
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init_Comprehensive2">
+            <summary>
+            相机2综合设置
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init_Comprehensive3">
+            <summary>
+            相机3综合设置
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init_Comprehensive4">
+            <summary>
+            相机4综合设置
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init_Comprehensive5">
+            <summary>
+            相机5综合设置
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init_Comprehensive6">
+            <summary>
+            相机6综合设置
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init_Comprehensive7">
+            <summary>
+            相机7综合设置
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init_Comprehensive8">
+            <summary>
+            相机8综合设置
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init_Comprehensive9">
+            <summary>
+            相机9综合设置
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init_Comprehensive10">
+            <summary>
+            相机10综合设置
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init_Comprehensive11">
+            <summary>
+            相机11综合设置
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init_Comprehensive12">
+            <summary>
+            相机12综合设置
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init_Comprehensive13">
+            <summary>
+            相机13综合设置
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init_Comprehensive14">
+            <summary>
+            相机14综合设置
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init_Comprehensive15">
+            <summary>
+            相机15综合设置
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init_Comprehensive16">
+            <summary>
+            相机16综合设置
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init_Communicate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init_PLC">
+            <summary>
+            初始化PLC
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init_Robot">
+            <summary>
+            初始化Robot 
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.Init_ComInterface">
+            <summary>
+            ComInterface 
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.StartInitTemp">
+            <summary>
+            加载模板
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.CreateTemp">
+            <summary>
+            创建模板ID
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseStartWin.FinishInit">
+            <summary>
+            加载结束
+            </summary>
+        </member>
+        <member name="T:Main_EX.StateMachine_enum">
+            <summary>
+            设备状态
+            </summary>
+        </member>
+        <member name="T:Main_EX.UCStateSoft">
+            <summary>
+            UCStateSoft.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCStateSoft
+            </summary>
+        </member>
+        <member name="M:Main_EX.UCStateSoft.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Main_EX.UCStateSoft.ShowPar">
+            <summary>
+            显示参数
+            </summary>
+        </member>
+        <member name="M:Main_EX.UCStateSoft.InitLanguage">
+            <summary>
+            初始化语言
+            </summary>
+        </member>
+        <member name="M:Main_EX.UCStateSoft.btnClose_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            退出
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.UCStateSoft.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Main_EX.WinStateMachine">
+            <summary>
+            WinStateMachine.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinStateMachine
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinStateMachine.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinStateMachine.ShowPar">
+            <summary>
+            显示参数
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinStateMachine.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Main_EX.WinInitMain">
+            <summary>
+            多相机触发
+            </summary>
+        </member>
+        <member name="F:Main_EX.WinInitMain.BlSetCamera1">
+            <summary>
+            是否加载过图像日志的图片
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.PreSetPhoto">
+            <summary>
+            软件打开，换型的时候设置拍照参数
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.WinInitMain_ParLogImage_event(DealLog.ParLogImage)">
+            <summary>
+            按照路径打开日志图像
+            </summary>
+            <param name="par"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.WinInitMain_Close_event">
+            <summary>
+            关闭窗体恢复相机
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_Reserve1_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            保留触发1
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_Reserve2_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            保留触发2
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_Reserve3_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            保留触发3 
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_Reserve4_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            保留触发4
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_Reserve5_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            保留触发5
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_Reserve6_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            保留触发6
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_Reserve7_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            保留触发7
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_Reserve8_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            保留触发8
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_Reserve9_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            保留触发9
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_Reserve10_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            保留触发10
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_Reserve11_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            保留触发11,发送泡棉
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_Reserve12_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            保留触发12
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_Reserve13_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            保留触发13
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_Reserve14_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            保留触发14
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_Reserve15_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            保留触发15
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_Reserve16_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            保留触发16
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_Reserve17_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            保留触发17
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_Reserve18_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            保留触发18
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_Reserve19_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            保留触发19
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_Reserve20_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            保留触发20
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Login_ReconnectCamera">
+            <summary>
+            相机掉线重连
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Init_Camera">
+            <summary>
+            相机抓取图像
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera1Trigger_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            相机1
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera2Trigger_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            相机2
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera3Trigger_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            相机3
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera4Trigger_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            相机4
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera5Trigger_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            相机5
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera6Trigger_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            相机6
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera7Trigger_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            相机7
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera8Trigger_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            相机8
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera9Trigger_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            相机9
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera10Trigger_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            相机10
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera11Trigger_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            相机11
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera12Trigger_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            相机12
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="F:Main_EX.WinInitMain.numDisconnect1">
+            <summary>
+            相机1
+            </summary>
+        </member>
+        <member name="F:Main_EX.WinInitMain.numDisconnect2">
+            <summary>
+            相机2
+            </summary>
+        </member>
+        <member name="F:Main_EX.WinInitMain.numDisconnect3">
+            <summary>
+            相机3
+            </summary>
+        </member>
+        <member name="F:Main_EX.WinInitMain.numDisconnect4">
+            <summary>
+            相机4
+            </summary>
+        </member>
+        <member name="F:Main_EX.WinInitMain.numDisconnect5">
+            <summary>
+            相机5
+            </summary>
+        </member>
+        <member name="F:Main_EX.WinInitMain.numDisconnect6">
+            <summary>
+            相机6
+            </summary>
+        </member>
+        <member name="F:Main_EX.WinInitMain.numDisconnect7">
+            <summary>
+            相机7
+            </summary>
+        </member>
+        <member name="F:Main_EX.WinInitMain.numDisconnect8">
+            <summary>
+            相机8
+            </summary>
+        </member>
+        <member name="F:Main_EX.WinInitMain.numDisconnect9">
+            <summary>
+            相机9
+            </summary>
+        </member>
+        <member name="F:Main_EX.WinInitMain.numDisconnect10">
+            <summary>
+            相机10
+            </summary>
+        </member>
+        <member name="F:Main_EX.WinInitMain.numDisconnect11">
+            <summary>
+            相机11
+            </summary>
+        </member>
+        <member name="F:Main_EX.WinInitMain.numDisconnect12">
+            <summary>
+            相机12
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.MainWindow_GetResultValueMult_event(DealAlgorithm.ParGetResultFromCell,DealCalibrate.BaseParCalibrate,BasicClass.HashAction)">
+            <summary>
+            多相机执行
+            </summary>
+            <param name="par"></param>
+            <param name="baseParCalibrate"></param>
+            <param name="fun"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.CloseCIM">
+            <summary>
+            关闭CIM端口
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Close_Custom">
+            <summary>
+            关闭Custom
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.CloseIO">
+            <summary>
+            关闭IO
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.RestartSoft">
+            <summary>
+            软件重启
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ShutDownPC">
+            <summary>
+            电脑关机
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.RestartPC">
+            <summary>
+            电脑重启
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.OnClosing(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            软件关闭
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.BaseWindow_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            关闭
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Init_DictionaryFiles">
+            <summary>
+            初始化文件夹
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.CheckLicence">
+            <summary>
+            确认软件许可
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.CheckVersion_Time">
+            <summary>
+            确认软件的时间版本
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.InitNewModel_Custom">
+            <summary>
+            换型时调用
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ShowCustom">
+            <summary>
+            自定义显示
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LoginEvent_ShowInfo">
+            <summary>
+            事件注册
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Init_ShowInfo">
+            <summary>
+            初始化显示
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.TM300_Refresh_Tick(System.Object,System.EventArgs)">
+            <summary>
+            刷新显示信息
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.uCStateWork_ImageInfo_event(DealLog.StateInfo)">
+            <summary>
+            刷新记录在日志里面的图片
+            </summary>
+            <param name="stateInfo"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ShowState(System.String)">
+            <summary>
+            通用state
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ShowState_Hidden(System.String)">
+            <summary>
+            记录但不显示状态
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ShowState_Cam(System.String)">
+            <summary>
+            相机日志
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ShowState_PLC(System.String)">
+            <summary>
+            PLC日志
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ShowState_Robot(System.String)">
+            <summary>
+            Robot日志
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ShowState_EN(System.String)">
+            <summary>
+            显示英文状态
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ShowState_FT(System.String)">
+            <summary>
+            显示繁体,采用自动转换，此函数注销
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ShowState_FT_ByConvert(System.String)">
+            <summary>
+            通过转换简体字实现
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ConvertTraditionalChinese(System.String)">
+            <summary>
+            简体转换为繁体
+            </summary>
+            <param name="str">字符</param>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ShowAlarm(System.String)">
+            <summary>
+            将报警信息显示出来，同时显示在状态区域
+            </summary>
+            <param name="alarm"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ShowAlarm_EN(System.String)">
+            <summary>
+            英文报警
+            </summary>
+            <param name="alarm"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ShowAlarm_FT(System.String)">
+            <summary>
+            繁体报警
+            </summary>
+            <param name="alarm"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ShowAlarm_PLC(System.String)">
+            <summary>
+            PLC日志
+            </summary>
+            <param name="alarm"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ShowAlarm_Robot(System.String)">
+            <summary>
+            Robot日志
+            </summary>
+            <param name="alarm"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Init_MainResult">
+            <summary>
+            运行数据列表初始化
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ShowParProduct">
+            <summary>
+            显示换型之后的型号名称
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ShowWinError_Invoke(System.String)">
+            <summary>
+            显示报警窗体
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ShowWinError_EN(System.String)">
+            <summary>
+            英文报警
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ShowWinError_FT(System.String)">
+            <summary>
+            繁体报警
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Init_Display">
+            <summary>
+            初始化显示
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.CreateUIDisplay(System.Windows.Controls.Grid)">
+            <summary>
+            选择添加窗口控件的数量
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.g_UCDisplayCameraSum_CameraError_event(System.String)">
+            <summary>
+            显示相机出错信息
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.CountWinTemp(System.Boolean@,System.Boolean@,System.Boolean@,System.Boolean@)">
+            <summary>
+            统计预加载窗体类型
+            </summary>
+            <param name="blScale"></param>
+            <param name="blNcc"></param>
+            <param name="blScaleT"></param>
+            <param name="blNccT"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.CreateTemp">
+            <summary>
+            加载对应的模板
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ShowResultTemp">
+            <summary>
+            显示模板加载结果
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.InitTempWin(System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            初始化模板窗体
+            </summary>
+            <param name="blScale"></param>
+            <param name="blNcc"></param>
+            <param name="blScaleT"></param>
+            <param name="blNccT"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.InitCalib">
+            <summary>
+            加载校准
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Init_TrrigerDealResult">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.InitCycTriggerCamera">
+            <summary>
+            初始化相机循环监控线程
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Init_TrrigerDealResult(Main_EX.BaseDealComprehensiveResult[])">
+            <summary>
+            初始化触发
+            </summary>
+            <param name="baseDealComprehensiveResults"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera1_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            响应触发，调用对应相机的处理方法
+            </summary>
+            <param name="trigerSource_e">触发源</param>
+            <param name="i">拍照位置</param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera1_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32)">
+            <summary>
+            触发拍照并传入区分参考值index
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera1_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32[])">
+            <summary>
+            触发拍照并传入区分参考数组
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera2_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32)">
+            <summary>
+            触发拍照并传入区分参考值index
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera2_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32[])">
+            <summary>
+            触发拍照并传入区分参考数组
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera3_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32)">
+            <summary>
+            触发拍照并传入区分参考值index
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera3_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32[])">
+            <summary>
+            触发拍照并传入区分参考数组
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera4_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32)">
+            <summary>
+            触发拍照并传入区分参考值index
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera4_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32[])">
+            <summary>
+            触发拍照并传入区分参考数组
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera5_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32)">
+            <summary>
+            触发拍照并传入区分参考值index
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera5_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32[])">
+            <summary>
+            触发拍照并传入区分参考数组
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera6_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32)">
+            <summary>
+            触发拍照并传入区分参考值index
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera6_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32[])">
+            <summary>
+            触发拍照并传入区分参考数组
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera7_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32)">
+            <summary>
+            触发拍照并传入区分参考值index
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera7_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32[])">
+            <summary>
+            触发拍照并传入区分参考数组
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera8_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            相机8触发
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera8_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32)">
+            <summary>
+            触发拍照并传入区分参考值index
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera8_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32[])">
+            <summary>
+            触发拍照并传入区分参考数组
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera9_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32)">
+            <summary>
+            触发拍照并传入区分参考值index
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera9_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32[])">
+            <summary>
+            触发拍照并传入区分参考数组
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera10_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32)">
+            <summary>
+            触发拍照并传入区分参考值index
+            </summary>
+            <param name="trigerSource_e">触发源</param>
+            <param name="i">拍照位置</param>
+            <param name="index">拍照序号</param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera10_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32[])">
+            <summary>
+            触发拍照并传入区分参考数组
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera11_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32)">
+            <summary>
+            触发拍照并传入区分参考值index
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera11_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32[])">
+            <summary>
+            触发拍照并传入区分参考数组
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera12_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32)">
+            <summary>
+            触发拍照并传入区分参考值index
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealComprehensive_Camera12_event(BasicClass.TriggerSource_enum,System.Int32,System.Int32[])">
+            <summary>
+            触发拍照并传入区分参考数组
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="i"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ShowInfo(BasicClass.TriggerSource_enum,DealComprehensive.StateComprehensive_enum,System.Int32,System.Int32)">
+            <summary>
+            显示信息
+            </summary>
+            <param name="trigerSource_e"></param>
+            <param name="stateComprehensive_e"></param>
+            <param name="cam"></param>
+            <param name="j"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.NewModel">
+            <summary>
+            处理新建型号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.WinInitMain.NewModel_ForMain">
+            <summary>
+            新建型号给Main项目重载
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.RefreshPar">
+            <summary>
+            更新产品数据
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.CopyXmlComprehensive">
+            <summary>
+            新建型号时拷贝文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.WinInitMain.OpenSaveFileDialog">
+            <summary>
+            打开保存对话框
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DelModel(System.String)">
+            <summary>
+            删除配置文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ChangeModel">
+            <summary>
+            进行换型后所有参数的替换
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ChangeModel_ForMain">
+            <summary>
+            给Main项目重载，换型时自定义
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ChangeXmlComprehensive">
+            <summary>
+            读取相机综合配置文件,并加载模板
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ChangeXmlComprehensive1">
+            <summary>
+            相机1
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ChangeXmlComprehensive2">
+            <summary>
+            相机2
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ChangeXmlComprehensive3">
+            <summary>
+            相机3
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ChangeXmlComprehensive4">
+            <summary>
+            相机4
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ChangeXmlComprehensive5">
+            <summary>
+            相机5
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ChangeXmlComprehensive6">
+            <summary>
+            相机6
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ChangeXmlComprehensive7">
+            <summary>
+            相机7
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ChangeXmlComprehensive8">
+            <summary>
+            相机8
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ChangeXmlComprehensive9">
+            <summary>
+            相机9
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ChangeXmlComprehensive10">
+            <summary>
+            相机10
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.FinishComprehensive">
+            <summary>
+            判断是否所有的换型都结束
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.OpenFileDialog">
+            <summary>
+            打开文件对话框
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealOthersModel">
+            <summary>
+            处理换型后的相关
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ShowResultChangeModel">
+            <summary>
+            显示换型结果
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LoginEvent_PLC">
+            <summary>
+            事件注册
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Init_PLC(System.Boolean)">
+            <summary>
+            初始化PLC，包括
+            </summary>
+            <param name="blOpenOnly">是否进行进行重连</param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_PLCState_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            设备状态
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="intState"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_RobotState_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            机器人状态
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="intState"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_CommunicationState_event(System.String,System.String)">
+            <summary>
+            PLC通信出错
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.L_I_WriteDataOverFlow(System.String)">
+            <summary>
+            PC发送给PLC数据超限
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_SoftRestart_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            软件重启
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_PCRestart_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            重启PC
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_PCShutdown_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            关机PC
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.L_I_PLCState_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            设备状态
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_PLCAlarm_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            报警
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.L_I_PLCMaterial_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            PLC物料信息
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.L_I_DisConnectAnnotherPLC_event">
+            <summary>
+            和PLC独立通信软件断开连接
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_NewModel_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            响应PLC新建型号的事件
+            </summary>
+            <param name="trrigerSource_e">触发源-PLC</param>
+            <param name="cmd">触发指令,1表示仅仅通过名称来新建型号，11表示通过序号来新建型号</param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.PLCNewModel">
+            <summary>
+            PLC触发新建型号
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.PLCNewModelByNo">
+            <summary>
+            PLC触发新建，通过文件编号
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.PLCChangeModelByNo">
+            <summary>
+            PLC触发换型，通过文件编号
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.L_I_CopyModelByNo_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            通过序号进行型号copy
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="no"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.PLCRefreshPar">
+            <summary>
+            PLC触发更新数据
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ReadParProductFromPLC">
+            <summary>
+            读取产品参数
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_ChangeModel_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            换型
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_DelModel_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            删除配置参数
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicPLC_Inst_ConfigParError_event(System.String)">
+            <summary>
+            配置参数错误
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.WritePLCModelPar">
+            <summary>
+            每次换型时，需要写入PLC的值,在Main里面重载
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.L_I_VoiceState_event(BasicClass.TriggerSource_enum,System.Int32)">
+            <summary>
+            语音信息
+            </summary>
+            <param name="trrigerSource_e"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Close_PLC">
+            <summary>
+            关闭PLC
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LoginEvent_Robot">
+            <summary>
+            事件注册
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Init_Robot">
+            <summary>
+            初始化机器人
+            </summary>       
+        </member>
+        <member name="M:Main_EX.WinInitMain.L_I_StateRobotInterface_event(System.String,System.Boolean)">
+            <summary>
+            机器人接口状态
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.RobotReStart">
+            <summary>
+            重启机器人通信
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.L_I_RobotReset_event(System.Int32)">
+            <summary>
+            机器人复位 在Main里面实现重载
+            </summary>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.L_I_RobotHome_event(System.Int32)">
+            <summary>
+            机器人回到Home点，在Main里面实现重载
+            </summary>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.L_I_RobotThrow_event(System.Int32)">
+            <summary>
+            抛料，在Main里面实现重载
+            </summary>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.R_Inst_Others_event(System.Int32)">
+            <summary>
+            其他
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.L_I_Version_event(System.String)">
+            <summary>
+            机器人程序版本号
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.L_I_Delay_event(System.Int32)">
+            <summary>
+            数据超时
+            </summary>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.L_I_Monitor_event(System.String)">
+            <summary>
+            机器人监控
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.L_I_RobotDisConnect_event">
+            <summary>
+            机器人通信断开连接
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicRobot_Inst_ConfigRobot_event(System.String,System.Boolean)">
+            <summary>
+            机器人配置参数反馈情况
+            </summary>
+            <param name="str"></param>
+            <param name="result"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Close_Robot">
+            <summary>
+            关闭机器人
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LoginEvent_Robot2">
+            <summary>
+            事件注册
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Init_Robot2">
+            <summary>
+            初始化机器人
+            </summary>       
+        </member>
+        <member name="M:Main_EX.WinInitMain.Robot2ReStart">
+            <summary>
+            重启机器人通信
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.L_I_StateRobot2Interface_event(System.String,System.Boolean)">
+            <summary>
+            机器人接口状态
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Robot2Shake">
+            <summary>
+            机器人握手
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.L_I_Robot2Home_event(System.Int32)">
+            <summary>
+            机器人回到Home点
+            </summary>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.L_I_Robot2Throw_event(System.Int32)">
+            <summary>
+            抛料
+            </summary>
+            <param name="i"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.L_I_Version2_event(System.String)">
+            <summary>
+            机器人程序版本号
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.L_I_Shakehand2_event">
+            <summary>
+            握手
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.L_I_Monitor2_event(System.String)">
+            <summary>
+            机器人监控
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LogicRobot2_Inst_ConfigRobot2_event(System.String,System.Boolean)">
+            <summary>
+            机器人配置参数反馈情况
+            </summary>
+            <param name="str"></param>
+            <param name="result"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Close_Robot2">
+            <summary>
+            关闭机器人
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ExCameraTrigger1">
+            <summary>
+            相机1外触发
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ExCameraTrigger2">
+            <summary>
+            相机2外触发
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ExCameraTrigger3">
+            <summary>
+            相机3外触发
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ExCameraTrigger4">
+            <summary>
+            相机4外触发
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ExCameraTrigger5">
+            <summary>
+            相机5外触发
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ExCameraTrigger6">
+            <summary>
+            相机6外触发
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ExCameraTrigger7">
+            <summary>
+            相机7外触发
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ExCameraTrigger8">
+            <summary>
+            相机8外触发
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ShowStateMachine">
+            <summary>
+            显示设备状态
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.DealByMachineState">
+            <summary>
+            根据设备状态进行处理,自定义处理方式
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.TM30000_LongMonitor_Tick(System.Object,System.EventArgs)">
+            <summary>
+            长时间监控,30s监控一次
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.TM200_ShortMonitor_Tick(System.Object,System.EventArgs)">
+            <summary>
+            短时间监控,200ms循环一次
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.MonitorLogout">
+            <summary>
+            自动退出
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.FileMonitor">
+            <summary>
+            监控文件夹，判断是否删除多余的文件
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.HardDisk">
+            <summary>
+            当硬盘容量不足时报警
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Init_ImageProcess">
+            <summary>
+            图像处理初始化
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Event_Init">
+            <summary>
+            注册事件
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LoginEvent_ComInterface">
+            <summary>
+            注册通用端口事件
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LoginEvent_CIM">
+            <summary>
+            注册CIM事件
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LoginEvent_Others">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LoginEvent_Log">
+            <summary>
+            日志相关事件注册
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.InitWinSize">
+            <summary>
+            初始化窗体Grid尺寸
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.gdsMain_DragDelta(System.Object,System.Windows.Controls.Primitives.DragDeltaEventArgs)">
+            <summary>
+            分隔匡调整
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.muSetting_MouseEnter(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            主窗体取消最前
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.BaseWindow_SizeChanged(System.Object,System.Windows.SizeChangedEventArgs)">
+            <summary>
+            窗体尺寸变化
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Window_StateChanged(System.Object,System.EventArgs)">
+            <summary>
+            窗体的状态发生变化
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.WinInitMain_LocationChanged(System.Object,System.EventArgs)">
+            <summary>
+            窗体的位置发生变化
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.WinInitMain_Activated(System.Object,System.EventArgs)">
+            <summary>
+            主窗体被激活，隐藏相机综合设置的pp
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.InitWinComprehensive">
+            <summary>
+            预打开相机综合设置窗体
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Init_UIMainShow">
+            <summary>
+            初始化主界面显示
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Init_Communicate">
+            <summary>
+            通信
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.FinishInitWin">
+            <summary>
+            结束初始化
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiConfigPar_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            配置参数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cimAdjust_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            打开调整值窗口
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Win_CloseWin_event">
+            <summary>
+            调整值窗口关闭
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cimStd_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            设置基准值
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cimTypeWork_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            打开工作模式设置窗口
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cimManageConfigPar_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            打开配置文件管理
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cimNewModel_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            新建型号
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cimChangeModel_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            切换型号
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cimSetVoice_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            设置声音 报警
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiCamera1_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            相机1
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiCamera9_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            相机9
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiCamera10_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            相机10
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiCamera11_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            相机11
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiCamera12_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            相机12
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.OpenWinWinComprehensive(System.Int32)">
+            <summary>
+            打开相机综合设置窗体
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.MainWindow_ActiveWinComp_event">
+            <summary>
+            相机综合设置窗体被激活
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.WinInitMain_CloseWin_event">
+            <summary>
+            相机综合设置关闭
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiSetCameraPar_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            相机参数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cimCameraWork_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            相机工作参数设置
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cimDisplayImage_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            图像显示设置
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiPLC_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            设定PLC
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiPLCValue_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            寄存器监控
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiPLCLog_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            PLC日志
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiRobot_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            设定机器人
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiRobot2_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            第二个机器人
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiComInterface_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            通用端口
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cimSetLogin_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            登录权限设定
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.SetDefaultLogin">
+            <summary>
+            设定默认的登录权限
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Main_EX.WinInitMain.cmiStateAlarm_Click(System.Object,System.Windows.RoutedEventArgs)" -->
+        <member name="M:Main_EX.WinInitMain.cmiFolder_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            文件删除设置
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiMemory_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            内存管理
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiPathRoot_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            系统根目录
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiMonitorSpace_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            设置存储空间监控
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiClearSpace_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            清理存储空间
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiRecover_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            历史数据恢复
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiLog_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            日志设置
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiSetSys_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            系统设置
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Win_Close_event">
+            <summary>
+            系统设置窗口关闭，更新语言
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ChangeLanguage">
+            <summary>
+            修改语言，Main里面重载
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiManualPC_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            模拟PC触发
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiManualPLC_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            模拟PLC
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiPLCReadWrite_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            PLC读写监控
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiManualComInterface_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            模拟通用端口
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiManualRobot_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            模拟机器人
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.winTrrigerRobot_ManualRobot_event(DealRobot.ManualRobot_enum)">
+            <summary>
+            手动操作机器人
+            </summary>
+            <param name="manualRobot_e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.winTrrigerRobot_ConfigRobot_event">
+            <summary>
+            手动发送机器人配置参数
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiRestartRobot_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            重启机器人通信
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiCal_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            计算器
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiText_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            打开记事本
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiPaint_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            绘图板
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiCopyFile_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            拷贝文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiRestartNet_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            重启网卡
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiMaxWin_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            窗体最大化
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiOffline_MouseEnter(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiCameraOffline_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            相机离线
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiPLCOffline_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            PLC离线
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.cmiRobotOffline_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            机器人处于离线状态
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.ChangeColorOffLine">
+            <summary>
+            改变菜单字体颜色
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.imLogin_MouseDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            登录
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Login">
+            <summary>
+            显示登陆权限
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.Logout">
+            <summary>
+            退出登录
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.NullReturn">
+            <summary>
+            无权限返回
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.WinInitMain.WorkerReturn">
+            <summary>
+            技术员权限返回
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.WinInitMain.EngineerReturn">
+            <summary>
+            工程师权限返回
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LoginEvent_Login">
+            <summary>
+            登录相关事件注册
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.G_UCLogin_Close_event">
+            <summary>
+            退出登录弹框
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.G_UCLogin_Focus_event">
+            <summary>
+            主窗体获取焦点
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.LoginEvent_SoftState">
+            <summary>
+            运行状态相关事件注册
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.G_UCStateSoft_Close_Event">
+            <summary>
+            退出状态设置
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinInitMain.lbStateMachine_MouseDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            双击运行状态
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.lblStateRun_MouseDoubleClick(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            打开软件运行记录
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinInitMain.InitLanguage">
+            <summary>
+            初始化语言
+            </summary>
+        </member>
+        <member name="T:Main_EX.RegeditMain_EX">
+            <summary>
+            注册表参数
+            </summary>
+        </member>
+        <member name="P:Main_EX.RegeditMain_EX.BlMaxWin">
+            <summary>
+            窗体是否最大化
+            </summary>
+        </member>
+        <member name="T:Main_EX.TypeCalib_enum">
+            <summary>
+            校准模式
+            </summary>
+        </member>
+        <member name="M:Main_EX.FunDisplayMainResult.Init(System.String)">
+            <summary>
+            初始化
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:Main_EX.FunDisplayMainResult.AddInfo(System.String,System.Int32,System.Boolean)">
+            <summary>
+            添加显示信息
+            </summary>
+            <param name="info"></param>
+            <param name="index"></param>
+            <param name="blResult"></param>
+        </member>
+        <member name="M:Main_EX.FunDisplayMainResult.WriteTxt">
+            <summary>
+            写入文本
+            </summary>
+        </member>
+        <member name="T:Main_EX.UCDisplayMainResult">
+            <summary>
+            UIInfoWork.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCDisplayMainResult
+            </summary>
+        </member>
+        <member name="M:Main_EX.UCDisplayMainResult.dgInfo_MouseDoubleClick(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            打开图像日志窗体
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.UCDisplayMainResult.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Main_EX.BaseUCTrrigerComprehensive">
+            <summary>
+            BaseUCTrrigerComprehensive.xaml 的交互逻辑
+            </summary>
+            <summary>
+            BaseUCTrrigerComprehensive
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseUCTrrigerComprehensive.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseUCTrrigerComprehensive.LoginEvent">
+            <summary>
+            事件注册
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseUCTrrigerComprehensive.RunSingleAndRepeat_Task">
+            <summary>
+            通过循环监控是否点击了单次或者重复运行
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseUCTrrigerComprehensive.btnSingle_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            单次触发
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.BaseUCTrrigerComprehensive.btnRepeat_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            连续触发
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.BaseUCTrrigerComprehensive.RunSingle">
+            <summary>
+            选择运行当前相机的相关位置的算法
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseUCTrrigerComprehensive.ShowPar">
+            <summary>
+            显示参数
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseUCTrrigerComprehensive.InitLanguange">
+            <summary>
+            设置语言
+            </summary>
+        </member>
+        <member name="M:Main_EX.BaseUCTrrigerComprehensive.lblCalib_MouseDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            打开关闭Popup
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.BaseUCTrrigerComprehensive.uCTriggerCalib_TriggerCalib_event(System.Int32)">
+            <summary>
+            触发校准事件响应
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:Main_EX.BaseUCTrrigerComprehensive.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Main_EX.UCTriggerCalib">
+            <summary>
+            UCTriggerCalib.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCTriggerCalib
+            </summary>
+        </member>
+        <member name="M:Main_EX.UCTriggerCalib.Init(Main_EX.BaseDealComprehensiveResult,System.Int32)">
+            <summary>
+            初始化
+            </summary>
+            <param name="par">参数</param>
+            <param name="numPos">拍照位置</param>
+        </member>
+        <member name="M:Main_EX.UCTriggerCalib.cboType_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            修改算法类型
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.UCTriggerCalib.TriggerMult(System.Int32,System.Int32)">
+            <summary>
+            多目校准 1200
+            </summary>
+        </member>
+        <member name="M:Main_EX.UCTriggerCalib.TriggerAxis(System.Int32,System.Int32)">
+            <summary>
+            触发相机和轴校准1300
+            </summary>
+        </member>
+        <member name="M:Main_EX.UCTriggerCalib.TriggerRotate(System.Int32,System.Int32)">
+            <summary>
+            触发旋转中心校准1400
+            </summary>
+        </member>
+        <member name="M:Main_EX.UCTriggerCalib.TriggerHandEye(System.Int32,System.Int32)">
+            <summary>
+            手眼校准
+            </summary>
+        </member>
+        <member name="M:Main_EX.UCTriggerCalib.TriggerAffineCamera(System.Int32,System.Int32)">
+            <summary>
+            相机投影校准 1700
+            </summary>
+        </member>
+        <member name="M:Main_EX.UCTriggerCalib.TriggerCamera(System.Int32,System.Int32)">
+            <summary>
+            触发相机标定板校准1800
+            </summary>
+        </member>
+        <member name="M:Main_EX.UCTriggerCalib.TriggerCalibSelf(System.Int32,System.Int32)">
+            <summary>
+            自定义校准101，102，103
+            </summary>
+        </member>
+        <member name="M:Main_EX.UCTriggerCalib.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Main_EX.WinTrrigerComprehensive">
+            <summary>
+            WinTrrigerComprehensive.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinTrrigerComprehensive
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinTrrigerComprehensive.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinTrrigerComprehensive.btnClose_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            退出窗体，先退出实时
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinTrrigerComprehensive.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Main_EX.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:Main_EX.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:Main_EX.Properties.Resources.Culture">
+            <summary>
+              重写当前线程的 CurrentUICulture 属性
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="T:Main_EX.WinStateAndAlarm">
+            <summary>
+            WinStateAndAlarm.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinStateAndAlarm
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinStateAndAlarm.tsbMainShow_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            主界面显示
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinStateAndAlarm.tsbAutoShow_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            窗体自动显示
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Main_EX.WinStateAndAlarm.chkTopMost_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            窗体再最前
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinStateAndAlarm.AddStateInfo(System.String)">
+            <summary>
+            添加状态显示信息
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinStateAndAlarm.AddStateInfo_EN(System.String)">
+            <summary>
+            添加状态显示信息
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinStateAndAlarm.AddStateInfo_FT(System.String)">
+            <summary>
+            添加状态显示信息
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinStateAndAlarm.AddStateInfo(System.String,DealLog.TypeLog_enum)">
+            <summary>
+            添加状态显示信息
+            </summary>
+        </member>
+        <member name="M:Main_EX.WinStateAndAlarm.AddAlarmInfo(System.String)">
+            <summary>
+            报警信息
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Main_EX.WinStateAndAlarm.AddAlarmInfo_EN(System.String)">
+            <summary>
+            报警信息英文
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Main_EX.WinStateAndAlarm.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>

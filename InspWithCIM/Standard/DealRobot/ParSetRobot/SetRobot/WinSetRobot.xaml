@@ -1,0 +1,55 @@
+﻿<MetroControls:MetroWindow x:Class="DealRobot.WinSetRobot"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:BasicClass="clr-namespace:BasicClass;assembly=BasicClass"
+             xmlns:MetroControls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"  
+             mc:Ignorable="d" 
+             Height="600" Width="1090" Title="设置机器人" Loaded="MetroWindow_Loaded" ShowMinButton="False" ShowMaxRestoreButton="False" BorderThickness="1" BorderBrush="#CC119EDA" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources >
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <XmlDataProvider x:Key="DealRobot" Source="XmlTemplate/XmlSetRobot.xml" XPath="Root"/>
+            <HierarchicalDataTemplate DataType="Root" ItemsSource="{Binding XPath=Title}">
+                <TextBlock Text="{Binding XPath=@Name}"></TextBlock>
+            </HierarchicalDataTemplate>
+
+            <HierarchicalDataTemplate DataType="Title" ItemsSource="{Binding XPath=Function}">
+                <TextBlock Text="{Binding XPath=@Name}"></TextBlock>
+            </HierarchicalDataTemplate>
+
+            <HierarchicalDataTemplate DataType="Function" >
+                <TextBlock Text="{Binding XPath=@Name}"></TextBlock>
+            </HierarchicalDataTemplate>
+
+            <Style x:Key="TVIStyle" TargetType="TreeViewItem"  BasedOn="{StaticResource {x:Type TreeViewItem}}">
+                <Setter Property="IsExpanded" Value="{Binding XPath=@IsExpanded}"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid  Name="gdLayout">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="4*" />
+        </Grid.ColumnDefinitions>
+        <Expander Header="设置机器人" Background="#FF00D1E5" Foreground="Black" IsExpanded="True" Name="epdSetBase" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,0" Width="200" Height="250">
+            <Grid Height="210" Background="White" >
+                <TreeView ItemsSource="{Binding Source={StaticResource DealRobot}}" HorizontalAlignment="Stretch"  Margin="2" Name="tvSetRobot" VerticalAlignment="Stretch" BorderThickness="1" BorderBrush="#CC119EDA" IsEnabled="True" SelectedItemChanged="tvSetRobot_SelectedItemChanged">
+                    <TreeView.ItemContainerStyle>
+                        <Style TargetType="TreeViewItem"  BasedOn="{StaticResource TVIStyle}"/>
+                    </TreeView.ItemContainerStyle>
+                </TreeView>
+            </Grid>
+        </Expander>
+    </Grid>
+</MetroControls:MetroWindow>

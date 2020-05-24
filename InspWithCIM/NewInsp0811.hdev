@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hdevelop file_version="1.0" halcon_version="11.0.1" cs="988727555">
+<procedure name="main">
+<interface/>
+<body>
+<c></c>
+<l>th1:=40</l>
+<c>*求轮廓参数</c>
+<l>widthRect:=10</l>
+<l>rateDelete:=0.6</l>
+<l>thLine:=20</l>
+<l>Transition:='positive'</l>
+<l>Select:='first'</l>
+<l>Smooth:=3</l>
+<c>*判断是否电极的区域</c>
+<l>RateAdjITO:=20</l>
+<c></c>
+<l>read_image (Image, 'E:/Image/2018-08-26/19/Default213782/相机1_左上相机/2018-08-26 19-54-11-833_1_1.jpg')</l>
+<c></c>
+<l>Rows_L:=[]</l>
+<l>Columns_L:=[]</l>
+<c></c>
+<c></c>
+<l>get_image_size (Image, Width, Height)</l>
+<l>dev_set_draw ('margin')</l>
+<l>threshold (Image, rawRegionThreshold, th1, 255)</l>
+<c></c>
+<c>*有效图片判断，输出面积，在C#补全</c>
+<l>fill_up_shape (rawRegionThreshold, RegionFillUp, 'area', 1, 999999)</l>
+<l>connection (RegionFillUp, ConnectedRegions)</l>
+<c></c>
+<l>area_center (ConnectedRegions, AreaTotal, RowTotal, ColumnTotal)</l>
+<l>tuple_max (AreaTotal,maxArea)</l>
+<l>select_shape (ConnectedRegions, SelectedRegions, 'area', 'and', maxArea, maxArea)</l>
+<l>smallest_rectangle1 (SelectedRegions, RowStart, ColumnStart, RowEnd, ColumnEnd)</l>
+<c>*处理轮廓</c>
+<l>stop ()</l>
+<c></c>
+<l>numRect:=(ColumnEnd-ColumnStart)/widthRect </l>
+<l>for i:=0 to numRect-1 by 1    </l>
+<l>    col:=ColumnStart + widthRect*i +widthRect/2</l>
+<l>    if (col &gt;Width)</l>
+<l>        break</l>
+<l>    endif</l>
+<l>    gen_measure_rectangle2 (RowStart+25,col , -1.57, 50, widthRect/2, Width, Height, 'nearest_neighbor', Measure_H)</l>
+<l>    gen_rectangle2 (Rectangle, RowStart+25, col, -1.57, 50, widthRect/2)</l>
+<l>    measure_pos (Image, Measure_H,Smooth , thLine,Transition, Select, Row_Measure, Column_Measure, Amplitude_Measure, Distance_Measure)   </l>
+<l>    gen_cross_contour_xld (Cross, Row_Measure, Column_Measure, 30, 0)</l>
+<l>    if(Row_Measure*Column_Measure!=0)</l>
+<l>        tuple_concat(Rows_L,Row_Measure,Rows_L)        </l>
+<l>        tuple_concat (Columns_L, Column_Measure, Columns_L)</l>
+<l>    endif</l>
+<l>endfor</l>
+<c></c>
+<c>*剔除</c>
+<l>if(|Rows_L|&lt;10)</l>
+<l>    return ()</l>
+<l>endif</l>
+<c></c>
+<l>gen_contour_polygon_xld (Contour, Rows_L, Columns_L)</l>
+<l>fit_line_contour_xld (Contour, 'tukey', -1, 2, 5, 0.5, RowBeginL1, ColBeginL1, RowEndL1, ColEndL1, Nr, Nc, Dist)</l>
+<l>distance_pl (Rows_L, Columns_L, RowBeginL1, ColBeginL1, RowEndL1, ColEndL1, Distance)</l>
+<c></c>
+<l>tuple_sort (Distance, Sorted)</l>
+<l>tuple_sort_index (Distance, Indices)</l>
+<c>*剔除到只剩10个点</c>
+<l>ClearIndex:=Indices[10:|Indices|-1]</l>
+<l>tuple_remove(Rows_L,ClearIndex,Rows_L)</l>
+<l>gen_contour_polygon_xld (LastLine, [RowBeginL1,RowEndL1], [ColBeginL1,ColEndL1])</l>
+<c></c>
+<l>tempK:=(RowEndL1-RowBeginL1)/(ColEndL1-ColBeginL1)</l>
+<l>RealRowBegin:=RowBeginL1+tempK*(ColumnStart-ColBeginL1)</l>
+<l>RealRowEnd := RowBeginL1+tempK*(ColumnEnd-ColBeginL1)</l>
+<c></c>
+<c></c>
+<l>gen_region_polygon (RegionReal, [RealRowBegin,RealRowEnd,RowEnd,RowEnd], [ColumnStart,ColumnEnd,ColumnEnd,ColumnStart])</l>
+<l>shape_trans (RegionReal, RegionTrans, 'convex')</l>
+<c>*贝壳 破角</c>
+<l>difference (RegionTrans, RegionFillUp, def_Corner_Edge)</l>
+<l>connection (def_Corner_Edge, ConnectedRegions1)</l>
+<l>smallest_rectangle1 (ConnectedRegions1, hv_RowDefect1, hv_ColumnDefect1, hv_RowDefect2, hv_ColumnDefect2)</l>
+<l>rectangularity (ConnectedRegions1, Rectangularity)</l>
+<l>gen_rectangle1(RectAdjITO,hv_RowDefect1,hv_ColumnDefect1-RateAdjITO,hv_RowDefect2+RateAdjITO,hv_ColumnDefect2+RateAdjITO)</l>
+<l>min_max_gray (RectAdjITO, Image, 0, Min, Max, Range)</l>
+<c>*凸边</c>
+<l>difference (RegionFillUp, RegionTrans, def_Rest)</l>
+<l>connection (def_Rest, ConnectedRegions2)</l>
+<l>smallest_rectangle1 (ConnectedRegions2, Row11, Column11, Row21, Column21)</l>
+<c></c>
+<l>dev_clear_window ()</l>
+<l>dev_display (Image)</l>
+<l>* dev_set_color ('orange')</l>
+<l>dev_display (ConnectedRegions1)</l>
+<l>stop ()</l>
+<l>* dev_set_color ('blue')</l>
+<l>dev_display (def_Rest)</l>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+</body>
+<docu id="main">
+<parameters/>
+</docu>
+</procedure>
+</hdevelop>

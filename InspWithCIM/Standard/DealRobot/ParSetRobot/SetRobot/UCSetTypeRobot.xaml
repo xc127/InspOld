@@ -1,0 +1,58 @@
+﻿<DealRobot:BaseUCRobot x:Class="DealRobot.UCSetTypeRobot"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:BasicClass="clr-namespace:BasicClass;assembly=BasicClass"
+             xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib"                        
+             xmlns:assembly="clr-namespace:System;assembly=mscorlib"
+             xmlns:DealComInterface="clr-namespace:DealComInterface;assembly=DealComInterface"
+             xmlns:DealRobot="clr-namespace:DealRobot"
+             mc:Ignorable="d" 
+             d:DesignHeight="503" d:DesignWidth="584">
+    
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <ObjectDataProvider x:Key="RobotType" MethodName="GetValues" 
+                            ObjectType="{x:Type assembly:Enum}">
+                <ObjectDataProvider.MethodParameters>
+                    <x:Type Type="DealRobot:TypeRobot_enum"/>
+                </ObjectDataProvider.MethodParameters>
+            </ObjectDataProvider>
+        </ResourceDictionary>      
+         
+    </UserControl.Resources>
+    
+    <Grid>
+        <ControlLib:NGroupBox Header="机器人类型以及通信设定" HorizontalAlignment="Stretch" TitleBrush="#FF00D1E5" VerticalAlignment="Stretch" Margin="0">
+            <Grid Name="gdLayout">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="4*" />
+                </Grid.RowDefinitions>
+                <Grid HorizontalAlignment="Center" Margin="0" Name="grid1" VerticalAlignment="Stretch" Width="400">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <ComboBox ItemsSource="{Binding Source={StaticResource RobotType}}" Height="35" HorizontalAlignment="Center" Margin="0" Name="cboRobotType" VerticalAlignment="Center" Width="150" SelectedIndex="0" SelectionChanged="cboRobotType_SelectionChanged" BorderBrush="#FF00D1E5"></ComboBox>
+                    <ControlLib:ButtonColor Background="#FF66FFFF" Content="保  存" FontSize="20" Height="40" FontStyle="Normal" FontWeight="SemiBold" Margin="0" Name="btnSave" ToolTip="保存对参数的修改" Width="130" IsEnabled="True" Click="btnSave_Click" Grid.Column="1" Grid.RowSpan="2" />
+                    <ControlLib:MTSwitchButton Height="30" HorizontalAlignment="Right" Margin="0" Name="tsbAutoConnect" VerticalAlignment="Center" Width="55"  Grid.Row="1" />
+                    <Label Content="自动连接机器人通信:" Grid.Row="1" Height="28" Margin="0" Name="label1" VerticalAlignment="Center" HorizontalAlignment="Left"  Width="120"/>
+                </Grid>
+            </Grid>
+        </ControlLib:NGroupBox>
+    </Grid>
+</DealRobot:BaseUCRobot>

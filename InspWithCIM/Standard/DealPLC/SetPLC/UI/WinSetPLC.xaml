@@ -1,0 +1,58 @@
+﻿<BasicClass:BaseWindow x:Class="DealPLC.WinSetPLC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:BasicClass="clr-namespace:BasicClass;assembly=BasicClass"
+             xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib"
+             xmlns:MetroControls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"             
+             xmlns:DealPLC="clr-namespace:DealPLC" 
+             Title="设置PLC" Loaded="MetroWindow_Loaded"
+             mc:Ignorable="d" 
+             Height="600" Width="1090" ShowMinButton="False" ShowMaxRestoreButton="False" BorderBrush="#CC119EDA" BorderThickness="1" WindowStartupLocation="CenterScreen" Closing="MetroWindow_Closing" ShowCloseButton="True">
+
+    <Window.Resources >
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <!--<ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />-->
+            </ResourceDictionary.MergedDictionaries>
+
+            <XmlDataProvider x:Key="DealPLC" Source="./XmlTemplate/XmlSetPLC.xml" XPath="Root"/>
+            <HierarchicalDataTemplate DataType="Root" ItemsSource="{Binding XPath=Title}">
+                <TextBlock Text="{Binding XPath=@Name}"></TextBlock>
+            </HierarchicalDataTemplate>
+
+            <HierarchicalDataTemplate DataType="Title" ItemsSource="{Binding XPath=Function}">
+                <TextBlock Text="{Binding XPath=@Name}"></TextBlock>
+            </HierarchicalDataTemplate>
+
+            <HierarchicalDataTemplate DataType="Function" >
+                <TextBlock Text="{Binding XPath=@Name}"></TextBlock>
+            </HierarchicalDataTemplate>
+
+            <Style x:Key="TVIStyle" TargetType="TreeViewItem"  BasedOn="{StaticResource {x:Type TreeViewItem}}">
+                <Setter Property="IsExpanded" Value="{Binding XPath=@IsExpanded}"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid Name="gdLayout">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="4*" />
+        </Grid.ColumnDefinitions>
+        <ControlLib:NGroupBox Header="PLC设置" TitleBrush="#FF00D1E5" Foreground="Black" Name="epdSetBase" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,154,5,110" Width="200" Height="295">
+            <Grid Height="262" Background="White" >
+                <TreeView ItemsSource="{Binding Source={StaticResource DealPLC}}" HorizontalAlignment="Stretch"  Margin="2" Name="tvSetPLC" VerticalAlignment="Stretch" BorderThickness="1" BorderBrush="#CC119EDA" IsEnabled="True" SelectedItemChanged="tvSetPLC_SelectedItemChanged" FontSize="14" Grid.ColumnSpan="2">
+                    <TreeView.ItemContainerStyle>
+                        <Style TargetType="TreeViewItem"  BasedOn="{StaticResource TVIStyle}"/>
+                    </TreeView.ItemContainerStyle>
+                </TreeView>
+            </Grid>
+         </ControlLib:NGroupBox>
+    </Grid>
+</BasicClass:BaseWindow>

@@ -1,0 +1,1300 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DealConfigFile</name>
+    </assembly>
+    <members>
+        <member name="T:DealConfigFile.AdjustIniBase">
+            <summary>
+            调整值基类
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.AdjustIniBase.Annotation(System.String,System.String)">
+            <summary>
+            读取注释
+            </summary>
+            <param name="strSection"></param>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealConfigFile.BaseUCAdjust">
+            <summary>
+            基类
+            </summary>
+        </member>
+        <member name="F:DealConfigFile.BaseUCAdjust.Path_New">
+            <summary>
+            自定义存储新路径
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.BaseUCAdjust.Authority1_e">
+            <summary>
+            设置权限
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.BaseUCAdjust.InitDoubleUpDown(Xceed.Wpf.Toolkit.DoubleUpDown,Xceed.Wpf.Toolkit.DoubleUpDown,Xceed.Wpf.Toolkit.DoubleUpDown,Xceed.Wpf.Toolkit.DoubleUpDown)">
+            <summary>
+            初始化DoubleUpDown
+            </summary>
+            <param name="dudAdjust1"></param>
+            <param name="dudAdjust2"></param>
+            <param name="dudAdjust3"></param>
+            <param name="dudAdjust4"></param>
+        </member>
+        <member name="M:DealConfigFile.BaseUCAdjust.InitLable(System.Windows.Controls.Label,System.Windows.Controls.Label,System.Windows.Controls.Label,System.Windows.Controls.Label)">
+            <summary>
+            初始化Lable
+            </summary>
+            <param name="lblName1"></param>
+            <param name="lblName2"></param>
+            <param name="lblName3"></param>
+            <param name="lblName4"></param>
+        </member>
+        <member name="M:DealConfigFile.BaseUCAdjust.winSetParAdjust_ChangeInfo_event">
+            <summary>
+            重新加载信息
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.BaseUCAdjust.ChangeTitle">
+            <summary>
+            改变颜色
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.BaseUCAdjust.GetIncrement(System.Int32)">
+            <summary>
+            通过小数位数，求取增量
+            </summary>
+            <param name="num"></param>
+            <returns></returns>
+        </member>
+        <member name="P:DealConfigFile.BaseUCAdjust.PathStd">
+            <summary>
+            edit by xc-从2中扩展成4种，布尔->int
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.BaseUCAdjust.WriteIni3(System.Double,System.Double,System.Double,System.String)">
+            <summary>
+            保存参数到本地
+            </summary>
+            <param name="dblValue1">数据1</param>
+            <param name="dblValue2">数据2</param>
+            <param name="dblValue3">数据3</param>
+            <param name="Annotation">注释</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealConfigFile.BaseUCAdjust.Backup">
+            <summary>
+            备份参数
+            </summary>
+        </member>
+        <member name="F:DealConfigFile.ParSetAdjust.g_ParSetAdjust_L">
+             <summary>
+            四个调整值相关的设置参数
+             </summary>
+        </member>
+        <member name="M:DealConfigFile.ParSetAdjust.ReadIniStr">
+            <summary>
+            从Ini文件中读取参数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.ParSetAdjust.ReadIniAdj">
+            <summary>
+            读取调整值配置
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.ParSetAdjust.ReadIniStd">
+            <summary>
+            读取基准值的配置
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.ParSetAdjust.ReadIniRAdj">
+            <summary>
+            机器人调整值 20190426
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.ParSetAdjust.ReadIniRStd">
+            <summary>
+            读取机器人基准值的配置20190426
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.ParSetAdjust.WriteIni(System.String)">
+            <summary>
+            将参数写入Ini
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.ParSetAdjust.WriteSelectWinIni">
+            <summary>
+            写入窗体选择
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.BaseParSetAdjust">
+            <summary>
+            设置调整值基类
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.TypeWinAdjust_enum">
+            <summary>
+            窗体大小选择
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.WinSetParAdjust">
+            <summary>
+            UCSetParAdjust.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinSetParAdjust
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetParAdjust.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetParAdjust.btnSave_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            将修改后的参数保存到本地
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.WinSetParAdjust.ShowPar">
+            <summary>
+            显示参数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetParAdjust.RefreshDatagrid">
+            <summary>
+            刷新列表
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetParAdjust.InitLanguage">
+            <summary>
+            设置语言
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetParAdjust.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.TypeIncrement_e">
+            <summary>
+            小数点个数
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.Adjust2">
+            <summary>
+            SetAdjustBase.xaml 的交互逻辑
+            </summary>
+            <summary>
+            Adjust2
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.Adjust2.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.Adjust3">
+            <summary>
+            SetAdjustBase.xaml 的交互逻辑
+            </summary>
+            <summary>
+            Adjust3
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.Adjust3.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.Adjust3.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.Adjust4">
+            <summary>
+            SetAdjustBase.xaml 的交互逻辑
+            </summary>
+            <summary>
+            Adjust4
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.Adjust4.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.ParCameraWork.BlFull">
+            <summary>
+            采集类型
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.ParCameraWork.Item(System.Int32)">
+            <summary>
+            拍照位置个数
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:DealConfigFile.ParCameraWork.Sum1">
+            <summary>
+            一个相机总的拍照位置数目
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.ParCameraWork.Sum2">
+            <summary>
+            2个相机总的拍照位置数目
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.ParCameraWork.Sum3">
+            <summary>
+            3个相机总的拍照位置数目
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.ParCameraWork.Sum4">
+            <summary>
+            4个相机总的拍照位置数目
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.ParCameraWork.Sum5">
+            <summary>
+            5个相机总的拍照位置数目
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.ParCameraWork.Sum6">
+            <summary>
+            6个相机总的拍照位置数目
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.ParCameraWork.Sum7">
+            <summary>
+            7个相机总的拍照位置数目
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.ParCameraWork.Sum8">
+            <summary>
+            8个相机总的拍照位置数目
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.ParCameraWork.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.ParCameraWork.ReadIniPar">
+            <summary>
+            参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealConfigFile.ParCameraWork.ReadIniNumCamera">
+            <summary>
+            读取相机个数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.ParCameraWork.WriteIni">
+            <summary>
+            写入相机参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealConfigFile.ParCameraWork.WriteIniNumCamera">
+            <summary>
+            相机个数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:DealConfigFile.ParCameraWork.Item(System.String,System.String)">
+            <summary>
+            索引器相机和触发源
+            </summary>
+            <param name="Cam">相机序号</param>
+            <param name="Tri">触发源序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealConfigFile.ParCameraWork.CameraAndTri(System.String,System.String)">
+            <summary>
+            判断相机是否被设置了触发源
+            </summary>
+            <param name="cam">相机</param>
+            <param name="tri">触发源</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealConfigFile.ParCameraWork.ReadIniPar_Trigger">
+            <summary>
+            读取触发参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealConfigFile.ParCameraWork.WriteIniPar_Trigger">
+            <summary>
+            写入触发参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DealConfigFile.TypeGrab_enum">
+            <summary>
+            图像采集类型
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.WinCameraWork">
+            <summary>
+            WinTestRun.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinCameraWork
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinCameraWork.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinCameraWork.btnSave2_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            保存触发设置
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinCameraWork.ShowPar">
+            <summary>
+            显示参数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinCameraWork.ShowTri">
+            <summary>
+            显示触发
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinCameraWork.InitLanguage">
+            <summary>
+            设置语言
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinCameraWork.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.WinConfigPar">
+            <summary>
+            WinConfigPar.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinConfigPar
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinConfigPar.SavePar">
+            <summary>
+            保存参数
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.WinConfigPar.NameValue">
+            <summary>
+            数值名称
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinConfigPar.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinConfigPar.InitLanguage">
+            <summary>
+            初始化语言
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinConfigPar.btnSave_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            保存产品参数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.WinConfigPar.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.WinSaveNewModel">
+            <summary>
+            CreatNcc.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinSaveNewModel
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.WinSaveNewModel.NameFile">
+            <summary>
+            数值名称
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.WinSaveNewModel.PathFile">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSaveNewModel.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSaveNewModel.InitLanguage">
+            <summary>
+            设置语言
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSaveNewModel.RefreshDgFileConfigList">
+            <summary>
+            刷新配置文件列表
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSaveNewModel.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.ParManageConfigPar.ReadIniPathConfigPar">
+            <summary>
+            读取当前配置参数路径,以及是否使用文件编号进行判断
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.ParManageConfigPar.ReadFileConfigList">
+            <summary>
+            读取配置文件列表
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.ParManageConfigPar.WriteIniPathConfigPar">
+            <summary>
+            将当前配置文件路径进行保存
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.WinManageConfigPar">
+            <summary>
+            WinManageConfigPar.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinManageConfigPar
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.WinManageConfigPar.NameFile">
+            <summary>
+            文件名称
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.WinManageConfigPar.PathFile">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinManageConfigPar.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinManageConfigPar.BaseMetroWindow_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            窗体加载
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.WinManageConfigPar.InitLanguage">
+            <summary>
+            初始化语言
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinManageConfigPar.tsbShowNoDg_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            是否显示列表序号
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.WinManageConfigPar.btnSaveNew_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            保存新文件
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinManageConfigPar.SaveNew">
+            <summary>
+            保存新文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealConfigFile.WinManageConfigPar.btnChangeModel_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            打开新型号
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.WinManageConfigPar.btnDelete_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            删除选择的文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.WinManageConfigPar.RefreshDgFileConfigList">
+            <summary>
+            刷新配置文件列表
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinManageConfigPar.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:DealConfigFile.ParConfigPar.Item(System.Int32)" -->
+        <member name="M:DealConfigFile.ParConfigPar.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.ParConfigPar.ReadIniConfigPar">
+            <summary>
+            读取产品参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealConfigFile.ParConfigPar.ReadIniParProduct">
+            <summary>
+            从本地文档中，读取产品参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealConfigFile.ParConfigPar.ReadIniPosPhoto">
+            <summary>
+            读取拍照位置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealConfigFile.ParConfigPar.WriteConfigIni">
+            <summary>
+            将产品参数保存到ini
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealConfigFile.ParConfigPar.WriteIniParProduct">
+            <summary>
+            保存产品参数到Ini
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.ParConfigPar.WriteIniPosPhoto">
+            <summary>
+            保存拍照位置参数到ini
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.WinRecoverAdjust">
+            <summary>
+            WinRecoverAdjust.xaml 的交互逻辑 20190123-zx
+            </summary>
+            <summary>
+            WinRecoverAdjust
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinRecoverAdjust.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinRecoverAdjust.BaseWindow_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            初始化加载
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.WinRecoverAdjust.ReadDir(System.String)">
+            <summary>
+            读取目录
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinRecoverAdjust.ReadExplain(System.String)">
+            <summary>
+            读取注释
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealConfigFile.WinRecoverAdjust.dgDir_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择文件目录查看文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.WinRecoverAdjust.ReadFile(DealLog.BaseParRecoverDir,System.String)">
+            <summary>
+            读取文件参数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinRecoverAdjust.btnRefresh_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            刷新历史参数的目录
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.WinRecoverAdjust.btnRecover_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            恢复参数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.WinRecoverAdjust.ShowDir">
+            <summary>
+            显示目录
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinRecoverAdjust.ShowFile">
+            <summary>
+            显示文件
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinRecoverAdjust.BaseWindow_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            关闭窗口
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.WinRecoverAdjust.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.Adjust_Temp">
+            <summary>
+            调整值临时变量
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.WinRecoverRobotAdj">
+            <summary>
+            add by xc-190401
+            </summary>
+        </member>
+        <member name="E:DealConfigFile.WinRecoverRobotAdj.RecoverPar_event">
+            <summary>
+            恢复参数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinRecoverRobotAdj.BaseWindow_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            关闭窗口
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:DealConfigFile.WinRecoverRobotStd">
+            <summary>
+            add by xc-190401
+            </summary>
+        </member>
+        <member name="E:DealConfigFile.WinRecoverRobotStd.RecoverPar_event">
+            <summary>
+            恢复参数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinRecoverRobotStd.BaseWindow_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            关闭窗口
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:DealConfigFile.WinRecoverStd">
+            <summary>
+            恢复基准值
+            </summary>
+        </member>
+        <member name="E:DealConfigFile.WinRecoverStd.RecoverPar_event">
+            <summary>
+            恢复参数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinRecoverStd.BaseWindow_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            初始化加载
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.WinRecoverStd.dgDir_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择文件目录查看文件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.WinRecoverStd.btnRefresh_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            刷新历史参数的目录
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.WinRecoverStd.btnRecover_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            恢复参数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.WinRecoverStd.BaseWindow_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            关闭窗口
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:DealConfigFile.WinSetAdjustWorkFull">
+            <summary>
+            SetCom.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinSetAdjustWorkFull
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetAdjustWorkFull.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetAdjustWorkFull.BaseWindow_MouseRightButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            历史参数恢复
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.WinSetAdjustWorkFull.ShowPar_Task">
+            <summary>
+            显示线程
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetAdjustWorkFull.ShowPar">
+            <summary>
+            显示
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetAdjustWorkFull.InitLanguage">
+            <summary>
+            设置语言
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetAdjustWorkFull.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.WinSetAdjustWorkSmall">
+            <summary>
+            SetCom.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinSetAdjustWorkSmall
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetAdjustWorkSmall.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetAdjustWorkSmall.BaseWindow_MouseRightButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            历史参数恢复
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.WinSetAdjustWorkSmall.ShowPar_Task">
+            <summary>
+            显示线程
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetAdjustWorkSmall.ShowPar">
+            <summary>
+            显示
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetAdjustWorkSmall.InitLanguage">
+            <summary>
+            设置语言
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetAdjustWorkSmall.BaseMetroWindow_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            关闭窗体
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.WinSetAdjustWorkSmall.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.ParBase">
+            <summary>
+            调整值
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.ParBase.FilePath">
+            <summary>
+            文件路径
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.ParBotAdj">
+            <summary>
+            add by xc-190401
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.ParBotAdj.ClassName">
+            <summary>
+            类名/文件名
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.ParBotAdj.columnName">
+            <summary>
+            调整栏名字
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.ParBotAdj.indexName">
+            <summary>
+            索引器
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.ParBotAdj.FilePath">
+            <summary>
+            ini路径
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.WinSetRobotAdj">
+            <summary>
+            add by xc-190401
+            </summary>
+            <summary>
+            WinSetRobotAdj
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetRobotAdj.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.ParBotStd">
+            <summary>
+            add by xc-190401
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.ParBotStd.ClassName">
+            <summary>
+            类名/文件名
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.ParBotStd.columnName">
+            <summary>
+            调整栏名字
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.ParBotStd.indexName">
+            <summary>
+            索引名
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.WinSetRobotPoints">
+            <summary>
+            add by xc-190401
+            </summary>
+            <summary>
+            WinSetRobotPoints
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetRobotPoints.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.WinSetStdWork">
+            <summary>
+            WinSetStdWork.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinSetStdWork
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetStdWork.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetStdWork.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.ParAdjust">
+            <summary>
+            调整值
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.ParAdjust.PathRootAdjust">
+            <summary>
+            文件存储根目录
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.ParAdjust.PathAdjust">
+            <summary>
+            文件路径
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.ParAdjust.Value1(System.String,System.String)">
+            <summary>
+            读取调整值1
+            </summary>
+            <param name="name">名称</param>
+            <param name="path">自定义的路径</param>
+            <returns>返回调整值</returns>
+        </member>
+        <member name="M:DealConfigFile.ParAdjust.Value2(System.String,System.String)">
+            <summary>
+            读取调整值2
+            </summary>
+            <param name="name">名称</param>
+            <param name="path">自定义的路径</param>
+            <returns>返回调整值</returns>
+        </member>
+        <member name="M:DealConfigFile.ParAdjust.Value3(System.String,System.String)">
+            <summary>
+            读取调整值3
+            </summary>
+            <param name="name">名称</param>
+            <param name="path">自定义的路径</param>
+            <returns>返回调整值</returns>
+        </member>
+        <member name="M:DealConfigFile.ParAdjust.Value4(System.String,System.String)">
+            <summary>
+            读取调整值4
+            </summary>
+            <param name="name">名称</param>
+            <param name="path">自定义的路径</param>
+            <returns>返回调整值</returns>
+        </member>
+        <member name="M:DealConfigFile.ParAdjust.SetValue1(System.String,System.Double,System.String)">
+            <summary>
+            写入调整值1
+            </summary>
+            <param name="name">名称</param>
+            <param name="value">写入值</param>
+            <param name="path">自定义文件路径</param>
+        </member>
+        <member name="M:DealConfigFile.ParAdjust.SetValue2(System.String,System.Double,System.String)">
+            <summary>
+            写入调整值2
+            </summary>
+            <param name="name">名称</param>
+            <param name="value">写入值</param>
+            <param name="path">自定义文件路径</param>
+        </member>
+        <member name="M:DealConfigFile.ParAdjust.SetValue3(System.String,System.Double,System.String)">
+            <summary>
+            写入调整值3
+            </summary>
+            <param name="name">名称</param>
+            <param name="value">写入值</param>
+            <param name="path">自定义文件路径</param>
+        </member>
+        <member name="M:DealConfigFile.ParAdjust.SetValue4(System.String,System.Double,System.String)">
+            <summary>
+            写入调整值4
+            </summary>
+            <param name="name">名称</param>
+            <param name="value">写入值</param>
+            <param name="path">自定义文件路径</param>
+        </member>
+        <member name="T:DealConfigFile.WinSetAdjustWork">
+            <summary>
+            SetCom.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinSetAdjustWork
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetAdjustWork.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetAdjustWork.BaseWindow_MouseRightButtonUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            历史参数恢复
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.WinSetAdjustWork.ShowPar_Task">
+            <summary>
+            显示线程
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetAdjustWork.ShowPar">
+            <summary>
+            显示
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetAdjustWork.InitLanguage">
+            <summary>
+            设置语言
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetAdjustWork.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.WinSetStdWorkSmall">
+            <summary>
+            WinSetStdWork.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinSetStdWorkSmall
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetStdWorkSmall.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.ParSetWork">
+            <summary>
+            运行模式设定
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.ParSetWork.WriteIniPar">
+            <summary>
+            写入Ini
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.ParSetWork.ReadIniPar">
+            <summary>
+            读取Ini
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.WorkSelect">
+            <summary>
+            模式选择类
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.WorkSelect.BlEnable_Authority">
+            <summary>
+            权限设置使能
+            </summary>
+        </member>
+        <member name="P:DealConfigFile.WorkSelect.BrCell">
+            <summary>
+            列表row颜色
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.WinSetWorkType">
+            <summary>
+            SetWork.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinSetWorkType
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetWorkType.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.WinSetWorkType.btnSave_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            保存
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.WinSetWorkType.btnClose_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            关闭
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.WinSetWorkType.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.TypeConfigFile">
+            <summary>
+            TypeLocation.xaml 的交互逻辑
+            </summary>
+            <summary>
+            TypeConfigFile
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.TypeConfigFile.LoadXmlStream(System.String)">
+            <summary>
+            读取指定路径的Stream，为系统资源
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.TypeConfigFile.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealConfigFile.UCParProduct">
+            <summary>
+            UCParProduct.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCParProduct
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.UCParProduct.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.UCParProduct.lblModelName_MouseDoubleClick(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            打开pp
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.UCParProduct.btnRoot_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            打开根目录
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.UCParProduct.btnRootImage_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            图像根目录
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.UCParProduct.btnImage_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            当前型号的图片文件夹
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.UCParProduct.btnRootError_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            异常信息日志
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.UCParProduct.btnRootPLC_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            PLC日志
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.UCParProduct.btnRobot_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            机器人日志
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.UCParProduct.btnRootState_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            运行日志
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.UCParProduct.btnParProduct_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            产品参数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealConfigFile.UCParProduct.ShowModelName_Invoke">
+            <summary>
+            产品参数
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.UCParProduct.ShowPath">
+            <summary>
+            显示路径
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.UCParProduct.InitLanguange">
+            <summary>
+            初始化语言
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.UCParProduct.InitLanguage_2">
+            <summary>
+            初始化语言
+            </summary>
+        </member>
+        <member name="M:DealConfigFile.UCParProduct.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

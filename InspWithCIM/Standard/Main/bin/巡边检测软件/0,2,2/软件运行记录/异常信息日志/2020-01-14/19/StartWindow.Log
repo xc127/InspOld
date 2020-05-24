@@ -1,0 +1,40 @@
+******19:22:52******
+【Source】mscorlib
+【ErrorType】System.IO.DirectoryNotFoundException
+【TargetSite】Void WinIOError(Int32, System.String)
+【Message】未能找到路径“C:\Program Files\A Sercet Dll\halcon.dll”的一部分。
+【StackTrace】   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 Main.StartUpWindow..ctor() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Main\StartWindow\StartWindow.xaml.cs:行号 53
+
+
+******19:36:13******
+【Source】mscorlib
+【ErrorType】System.IO.DirectoryNotFoundException
+【TargetSite】Void WinIOError(Int32, System.String)
+【Message】未能找到路径“C:\Program Files\A Sercet Dll\halcon.dll”的一部分。
+【StackTrace】   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 Main.StartUpWindow..ctor() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Main\StartWindow\StartWindow.xaml.cs:行号 53
+
+
+******19:42:24******
+【Source】mscorlib
+【ErrorType】System.IO.DirectoryNotFoundException
+【TargetSite】Void WinIOError(Int32, System.String)
+【Message】未能找到路径“C:\Program Files\A Sercet Dll\halcon.dll”的一部分。
+【StackTrace】   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 Main.StartUpWindow..ctor() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Main\StartWindow\StartWindow.xaml.cs:行号 53
+
+
+******19:59:02******
+【Source】mscorlib
+【ErrorType】System.IO.DirectoryNotFoundException
+【TargetSite】Void WinIOError(Int32, System.String)
+【Message】未能找到路径“C:\Program Files\A Sercet Dll\halcon.dll”的一部分。
+【StackTrace】   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 Main.StartUpWindow..ctor() 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Main\StartWindow\StartWindow.xaml.cs:行号 53
+
+

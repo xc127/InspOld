@@ -1,0 +1,789 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DealAlgorithm</name>
+    </assembly>
+    <members>
+        <member name="M:DealAlgorithm.BaseWinAlgorithm.g_BaseUCResult_ResultSelect_event(DealResult.BaseResult,DealResult.BaseResult,System.Int32)">
+            <summary>
+            列表类结果
+            </summary>
+            <param name="result"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:DealAlgorithm.BaseWinAlgorithm.g_BaseUCResult_Result_event(DealResult.BaseResult)">
+            <summary>
+            非列表类的结果
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseWinAlgorithm.SaveStdImage">
+            <summary>
+            保存基准图片
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseWinAlgorithm.ShowStdImage">
+            <summary>
+            显示基准图片
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseWinAlgorithm.ShowNewWin(System.String,System.String)">
+            <summary>
+            窗体加载得是新算法得时候
+            </summary>
+        </member>
+        <member name="T:DealAlgorithm.FunCellDataReferenc">
+            <summary>
+            获取单元格的算法结果
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.FunCellDataReferenc.GetResultValue(System.Collections.Hashtable,DealAlgorithm.ParGetResultFromCell,System.Int32)">
+            <summary>
+            获取哈希表的坐标
+            </summary>
+            <param name="htResult"></param>
+            <param name="par"></param>
+            <param name="index"></param>
+        </member>
+        <member name="T:DealAlgorithm.ParGetResultFromCell">
+            <summary>
+            获取单元格的结果
+            </summary>
+        </member>
+        <member name="P:DealAlgorithm.ParGetResultFromCell.NameCell">
+            <summary>
+            单元格名称
+            </summary>
+        </member>
+        <member name="P:DealAlgorithm.ParGetResultFromCell.NameResult">
+            <summary>
+            结果名称
+            </summary>
+        </member>
+        <member name="P:DealAlgorithm.ParGetResultFromCell.NameCellAndResult">
+            <summary>
+            单元格和结果名称
+            </summary>
+        </member>
+        <member name="F:DealAlgorithm.ParGetResultFromCell.numResultforCalib">
+            <summary>
+            算法结果
+            </summary>
+        </member>
+        <member name="F:DealAlgorithm.ParGetResultFromCell.ResultforCalib_L">
+            <summary>
+            校准结果
+            </summary>
+        </member>
+        <member name="F:DealAlgorithm.ParGetResultFromCell.ResultforCheck_L">
+            <summary>
+            验证结果
+            </summary>
+        </member>
+        <member name="P:DealAlgorithm.ParGetResultFromCell.Item(System.Int32)">
+            <summary>
+            索引器
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealAlgorithm.ParGetResultFromCell.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.ParGetResultFromCell.Clear">
+            <summary>
+            清空
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.ParGetResultFromCell.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            从根目录中读取
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealAlgorithm.ParGetResultFromCell.ReadXmlRoot(System.Xml.XmlElement,System.String)">
+            <summary>
+            根据名称读取节点，
+            </summary>
+            <param name="xeRoot"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealAlgorithm.ParGetResultFromCell.WriteXmlRoot(System.Xml.XmlElement,System.String)">
+            <summary>
+            节点的名称是传入的参数
+            </summary>
+            <param name="xeRoot"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealAlgorithm.ParGetResultFromCell.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            写入根节点参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealAlgorithm.ParGetResultFromCell.ReadResultforCalib(System.Xml.XmlElement)">
+            <summary>
+            读取
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealAlgorithm.ParGetResultFromCell.ReadResultforCheck(System.Xml.XmlElement)">
+            <summary>
+            验证
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealAlgorithm.ParGetResultFromCell.WriteResultforCalib(System.Xml.XmlElement)">
+            <summary>
+            写入xml
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealAlgorithm.ResultforCalib">
+            <summary>
+            校准结果
+            </summary>
+        </member>
+        <member name="P:DealAlgorithm.ResultforCalib.XResult">
+            <summary>
+            X
+            </summary>
+        </member>
+        <member name="P:DealAlgorithm.ResultforCalib.YResult">
+            <summary>
+            Y
+            </summary>
+        </member>
+        <member name="P:DealAlgorithm.ResultforCalib.RResult">
+            <summary>
+            R
+            </summary>
+        </member>
+        <member name="P:DealAlgorithm.ResultforCalib.XResult_Axis">
+            <summary>
+            X轴坐标
+            </summary>
+        </member>
+        <member name="P:DealAlgorithm.ResultforCalib.YResult_Axis">
+            <summary>
+            Y轴坐标
+            </summary>
+        </member>
+        <member name="T:DealAlgorithm.UCCellDataCoordReference">
+            <summary>
+            UCCellDataCoordReference.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCCellDataCoordReference
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCCellDataCoordReference.LoginEvent">
+            <summary>
+            事件注册
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCCellDataCoordReference.dgResultReference_MouseDoubleClick(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            双击单元格
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealAlgorithm.UCCellDataCoordReference.dgResultReference_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择行
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealAlgorithm.UCCellDataCoordReference.cboCellData_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择算法单元
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealAlgorithm.UCCellDataCoordReference.ShowResultReference(System.Int32)">
+            <summary>
+            图像图形结果列表
+            </summary>
+            <param name="index">算法单元索引号</param>
+        </member>
+        <member name="M:DealAlgorithm.UCCellDataCoordReference.CreateBaseParResult(System.Int32)">
+            <summary>
+            创建结果显示列表实例
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:DealAlgorithm.UCCellDataCoordReference.RefreshDgResultReference">
+            <summary>
+            刷新列表
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCCellDataCoordReference.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealAlgorithm.UCCellDataReference">
+            <summary>
+            UCCellDataReference.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCCellDataReference
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCCellDataReference.LoginEvent">
+            <summary>
+            事件注册
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCCellDataReference.Init(System.Collections.Generic.List{BasicComprehensive.CellReference},System.Collections.Hashtable)">
+            <summary>
+            初始化单目
+            </summary>
+            <param name="cellData_L"></param>
+            <param name="htResult"></param>
+        </member>
+        <member name="M:DealAlgorithm.UCCellDataReference.Init(System.Collections.Generic.List{BasicComprehensive.CellReference},System.Collections.Hashtable,System.Int32,System.Collections.Hashtable,System.Collections.Hashtable)">
+            <summary>
+            初始化多目
+            </summary>
+            <param name="cellData_L"></param>
+            <param name="htResult"></param>
+            <param name="noCamera"></param>
+            <param name="htCellRef_Mult"></param>
+            <param name="htResult_Mult"></param>
+        </member>
+        <member name="M:DealAlgorithm.UCCellDataReference.dgResultReference_MouseDoubleClick(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            双击单元格
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealAlgorithm.UCCellDataReference.dgResultReference_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择行
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealAlgorithm.UCCellDataReference.cboCellData_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择算法单元
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealAlgorithm.UCCellDataReference.ShowResultReference(System.Int32)">
+            <summary>
+            图像图形结果列表
+            </summary>
+            <param name="index">算法单元索引号</param>
+        </member>
+        <member name="M:DealAlgorithm.UCCellDataReference.CreateBaseParResult(System.Int32)">
+            <summary>
+            创建结果显示列表实例
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:DealAlgorithm.UCCellDataReference.GetCellByNoCamera(System.Int32)">
+            <summary>
+            切换相机序号
+            </summary>
+            <param name="i"></param>
+        </member>
+        <member name="M:DealAlgorithm.UCCellDataReference.RefreshDgResultReference">
+            <summary>
+            刷新列表
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCCellDataReference.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealAlgorithm.UCGetResultFromCell">
+            <summary>
+            UCGetResultFromCell.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCGetResultFromCell
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCGetResultFromCell.LoginEvent">
+            <summary>
+             事件注册
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCGetResultFromCell.Init(DealAlgorithm.ParGetResultFromCell,System.Collections.Generic.List{BasicComprehensive.CellReference},System.Collections.Hashtable)">
+            <summary>
+            初始化单目
+            </summary>
+            <param name="par"></param>
+            <param name="cellData_L"></param>
+            <param name="htResult"></param>
+        </member>
+        <member name="M:DealAlgorithm.UCGetResultFromCell.Init(DealAlgorithm.ParGetResultFromCell,System.Collections.Generic.List{BasicComprehensive.CellReference},System.Collections.Hashtable,System.Int32,System.Collections.Hashtable,System.Collections.Hashtable)">
+            <summary>
+            初始化多目
+            </summary>
+            <param name="par"></param>
+            <param name="cellData_L"></param>
+            <param name="htCellMut">多相机单元名称</param>
+            <param name="htResult"></param>
+        </member>
+        <member name="M:DealAlgorithm.UCGetResultFromCell.uCCellDataReference_CellDataReferenceSelect_event(BasicComprehensive.CellReference,DealResult.ResultReference)">
+            <summary>
+            引用单元
+            </summary>
+            <param name="cellReference"></param>
+            <param name="resultReference"></param>
+        </member>
+        <member name="M:DealAlgorithm.UCGetResultFromCell.GetCellByNoCamera(System.Int32)">
+            <summary>
+            切换相机序号
+            </summary>
+            <param name="i"></param>
+        </member>
+        <member name="M:DealAlgorithm.UCGetResultFromCell.HiddenShowSelected">
+            <summary>
+            隐藏显示项
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCGetResultFromCell.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealAlgorithm.GetResultValue_del">
+            <summary>
+            委托
+            </summary>
+            <param name="par"></param>
+            <param name="fun"></param>
+        </member>
+        <member name="T:DealAlgorithm.UCResultValueOfCell">
+            <summary>
+            UCResultValueOfCell.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCResultValueOfCell
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCResultValueOfCell.Init(Camera.BaseUCDisplayCamera,DealAlgorithm.ParGetResultFromCell,System.Collections.Hashtable)">
+            <summary>
+            轴坐标，刷新选择项
+            </summary>
+            <param name="baseUCDisplayCamera"></param>
+            <param name="par"></param>
+            <param name="htResult"></param>
+        </member>
+        <member name="M:DealAlgorithm.UCResultValueOfCell.Init(Camera.BaseUCDisplayCamera,DealAlgorithm.ParGetResultFromCell,System.Collections.Hashtable,System.Collections.Hashtable)">
+            <summary>
+            初始化，多相机模式
+            </summary>
+            <param name="baseUCDisplayCamera"></param>
+            <param name="par"></param>
+            <param name="htResult"></param>
+            <param name="htResult_Mult"></param>
+        </member>
+        <member name="M:DealAlgorithm.UCResultValueOfCell.Init(Camera.BaseUCDisplayCamera,DealAlgorithm.ParGetResultFromCell,System.Collections.Hashtable,System.Boolean)">
+            <summary>
+            轴坐标全部刷新
+            </summary>
+            <param name="baseUCDisplayCamera"></param>
+            <param name="par"></param>
+            <param name="htResult"></param>
+            <param name="blRefreshAxisAll"></param>
+        </member>
+        <member name="M:DealAlgorithm.UCResultValueOfCell.btnGetResult_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealAlgorithm.UCResultValueOfCell.GetResultValue(System.Collections.Hashtable)">
+            <summary>
+            从执行后的哈希表中，对列表进行赋值，单相机20181203-zx
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCResultValueOfCell.GetResultValue_Mult(System.Collections.Hashtable)">
+            <summary>
+            从执行后的哈希表中，对列表进行赋值，多相机20181203-zx
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCResultValueOfCell.ShowPar">
+            <summary>
+            显示
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCResultValueOfCell.RefreshDgResult">
+            <summary>
+            刷新Datagrid
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCResultValueOfCell.ShowAxisXY">
+            <summary>
+            显示XY轴列
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCResultValueOfCell.HideAxisXY">
+            <summary>
+            隐藏
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCResultValueOfCell.ShowNameCol34(System.String,System.String)">
+            <summary>
+            改变第三四列名称
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCResultValueOfCell.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealAlgorithm.UCSetGlobalPar">
+            <summary>
+            UCSetGlobalPar.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCSetGlobalPar
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCSetGlobalPar.btnShowGlobalPar_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            设置全局参数保存
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCSetGlobalPar.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealAlgorithm.WinGlobalPar">
+            <summary>
+            WinGlobalPar.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinGlobalPar
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.WinGlobalPar.btnSave_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            保存
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealAlgorithm.WinGlobalPar.btnClose_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            退出
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealAlgorithm.WinGlobalPar.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealAlgorithm.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:DealAlgorithm.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:DealAlgorithm.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="F:DealAlgorithm.BaseParStd.X_BS">
+            <summary>
+            X基准值
+            </summary>
+        </member>
+        <member name="F:DealAlgorithm.BaseParStd.Y_BS">
+            <summary>
+            基准值
+            </summary>
+        </member>
+        <member name="F:DealAlgorithm.BaseParStd.XCalib_BS">
+            <summary>
+            X校准基准值
+            </summary>
+        </member>
+        <member name="F:DealAlgorithm.BaseParStd.YCalib_BS">
+            <summary>
+            Y校准基准值
+            </summary>
+        </member>
+        <member name="F:DealAlgorithm.BaseParStd.RJ_BS">
+            <summary>
+            角度（角度）基准值
+            </summary>
+        </member>
+        <member name="P:DealAlgorithm.BaseParStd.R_BS">
+            <summary>
+            角度（弧度）基准值
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseParStd.Init_BaseParStd">
+            <summary>
+            初始化基准值
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseParStd.Init_StdValueCom">
+            <summary>
+            通用结果基准值
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseParStd.SortNo">
+            <summary>
+            对序号进行排序
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseParStd.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            读取基础值
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealAlgorithm.BaseParStd.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            写入基准值
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="F:DealAlgorithm.BasicStd.dblValue">
+            <summary>
+            基准值
+            </summary>
+        </member>
+        <member name="T:DealAlgorithm.BaseUCStandard">
+            <summary>
+            BaseUCStandard.xaml 的交互逻辑
+            </summary>
+            <summary>
+            BaseUCStandard
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCStandard.Init(DealAlgorithm.BaseParStd,BasicClass.FdBlAction_del,System.Action)">
+            <summary>
+            通过回调函数，进行基准值的保存
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCStandard.dgStd_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择DataGrid行
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCStandard.dudStdValue_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            基准值
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCStandard.dudStdMin_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            最小值
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCStandard.dudStdMax_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            最大值
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCStandard.btnResultToStd_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            结果保存到基准值
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCStandard.btnSaveMannual_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            保存手动修改基准值
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCStandard.RefreshDgStd">
+            <summary>
+            刷新DataGrid
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCStandard.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealAlgorithm.BaseUCStandardOCR">
+            <summary>
+            BaseUCStandardOCR.xaml 的交互逻辑
+            </summary>
+            <summary>
+            BaseUCStandardOCR
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCStandardOCR.Init(DealAlgorithm.BaseParStd,BasicClass.FdBlIntAction_del,System.Action)">
+            <summary>
+            通过回调函数，进行基准值的保存
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCStandardOCR.btnResultToStd_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            结果保存到基准值
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCStandardOCR.RefreshDgStd">
+            <summary>
+            刷新DataGrid
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCStandardOCR.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCTestRun.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCTestRun.InitSingleRun">
+            <summary>
+            初始化单次运行
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCTestRun.InitDoubleUpDown(ControlLib.DoubleUpDown)">
+            <summary>
+            初始化控件，做控件的引用关联
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCTestRun.dudInterval_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            触发间隔，设置循环之间的时间间隔
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCTestRun.chkAutoNextLocal_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            本地图像自动下一幅
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCTestRun.chkAutoPreLocal_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            自动获取上一幅 
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCTestRun.btnSingle_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            单次运行
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCTestRun.RunSingle">
+            <summary>
+            选择运行当前相机的相关位置的算法
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCTestRun.btnRepeat_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            连续触发
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCTestRun.StopRealRun">
+            <summary>
+            通知实时运行
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCTestRun.RunSingleAndRepeat_Task">
+            <summary>
+            通过循环监控是否点击了单次或者重复运行
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCTestRun.SetTypeAutoLocal">
+            <summary>
+            设置自动获取本地图片的类型
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCTestRun.DealCompreResult(System.Collections.Hashtable)">
+            <summary>
+            
+            </summary>
+            <param name="htResult"></param>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCTestRun.CheckResult">
+            <summary>
+            判断结果是否有NG
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.BaseUCTestRun.Close">
+            <summary>
+            关闭
+            </summary>
+        </member>
+        <member name="T:DealAlgorithm.StopRepeat_enum">
+            <summary>
+            循环停止条件
+            </summary>
+        </member>
+        <member name="T:DealAlgorithm.UCTestRun">
+            <summary>
+            UCTestRun.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCTestRun
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCTestRun.RunSingle">
+            <summary>
+            单次运行 
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCTestRun.ReWriteCellReference">
+            <summary>
+            重新添加部分算子
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCTestRun.DealCompreResult(System.Collections.Hashtable,BasicClass.StrAction)">
+            <summary>
+            使用回调函数，刷新显示
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCTestRun.ClearHtResultObjectShape">
+            <summary>
+            清除哈希表中的halcon对象
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCTestRun.RefreshResult(DealResult.BaseResult)">
+            <summary>
+            显示运算结果到列表
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCTestRun.CheckResult">
+            <summary>
+            判断结果是否有NG
+            </summary>
+        </member>
+        <member name="M:DealAlgorithm.UCTestRun.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>

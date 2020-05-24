@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root Name="配置文件" IsExpanded="true">
+  <Title Name="配置文件" IsExpanded="true">
+    <Function Name="产品参数"/>
+    <Function Name="拍照位置坐标"/>
+    <Function Name="调整值"/>
+    <Function Name="基准值"/>
+    <Function Name="运行模式"/>
+  </Title>
+
+  
+</Root>

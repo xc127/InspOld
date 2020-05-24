@@ -1,0 +1,25 @@
+﻿<DealRobot:BaseUCRobot x:Class="DealRobot.SetTypeWork"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:BasicClass="clr-namespace:BasicClass;assembly=BasicClass"
+             xmlns:DealRobot="clr-namespace:DealRobot"  
+             xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib"
+             mc:Ignorable="d" 
+             d:DesignHeight="220" d:DesignWidth="200">
+    <Grid>
+        <ControlLib:NGroupBox Header="操作设定" HorizontalAlignment="Stretch" Margin="5" TitleBrush="#FF00D1E5" VerticalAlignment="Stretch" >
+            <Grid Name="gdButton2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <ControlLib:ButtonColor Background="#FF66FFFF" Click="btnSave_Click" Content="保  存" FontSize="20" FontStyle="Normal" FontWeight="SemiBold" Grid.Row="2" IsEnabled="True" Margin="8" Name="btnSave" ToolTip="保存对参数的修改" Width="130" />
+                <CheckBox Content="握手失败报警" Height="20" HorizontalAlignment="Center" Margin="0" Name="chkShakeAlarm" VerticalAlignment="Center" />
+                <CheckBox Content="数据超限报警" Grid.Row="1" Height="20" HorizontalAlignment="Center" Margin="34,20,36,15" Name="chkDataOverflow" VerticalAlignment="Center" />
+            </Grid>
+        </ControlLib:NGroupBox>
+    </Grid>
+</DealRobot:BaseUCRobot>

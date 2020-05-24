@@ -1,0 +1,8 @@
+******15:59:06******
+【Source】DealDisplay
+【ErrorType】System.IndexOutOfRangeException
+【TargetSite】Void InitGrabImage()
+【Message】索引超出了数组界限。
+【StackTrace】   在 DealDisplay.BaseUCDisplaySum.InitGrabImage()
+
+

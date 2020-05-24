@@ -1,0 +1,3445 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DealPLC</name>
+    </assembly>
+    <members>
+        <member name="M:DealPLC.BaseParPLC.LoadXmlStream(System.String)">
+            <summary>
+            加载资源中Xml文档
+            </summary>
+            <param name="Path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.BaseParPLC.LoadXmlStream(System.String,System.String)">
+            <summary>
+            加载本地或者资源中的xml
+            </summary>
+            <param name="Path"></param>
+            <param name="PathStream"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.ParCommWritePLC.ReadXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            初始化加载
+            </summary>
+            <param name="xDoc">Stream文档</param>
+            <returns></returns>  
+        </member>
+        <member name="M:DealPLC.ParCommWritePLC.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            从本地文档读取参数的时候，读取
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:DealPLC.ParCommWritePLC.ReadXmlPar(System.Xml.XmlElement)">
+            <summary>
+            读取该算法的参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.ParCommWritePLC.WriteXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            从Stream资源读取完整节点后，写入参数
+            </summary>
+            <param name="xDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.ParCommWritePLC.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            从Stream资源读取完整节点后，写入参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.ParCommWritePLC.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            写入Xml
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealPLC.WinCommWritePLC">
+            <summary>
+            WinCommPLC.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinCommWritePLC
+            </summary>
+        </member>
+        <member name="M:DealPLC.WinCommWritePLC.btnGetReg_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            可以批量设置选择的寄存器
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealPLC.WinCommWritePLC.btnSave_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            保存参数到本地并且退出
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealPLC.WinCommWritePLC.RefreshDgDataAndReg">
+            <summary>
+            shauxin
+            </summary>
+        </member>
+        <member name="M:DealPLC.WinCommWritePLC.btnClose_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            退出窗体,恢复备份参数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealPLC.WinCommWritePLC.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealPLC.LogicPLC">
+            <summary>
+            读写数据寄存器
+            </summary>
+            <summary>
+            监控寄存器
+            </summary>
+            <summary>
+            PLC写入
+            </summary>
+            <summary>
+            读写数据寄存器
+            </summary>
+            <summary>
+            PLC写入端口1
+            </summary>
+            <summary>
+            
+            </summary>
+            <summary>
+            PLC写入端口4
+            </summary>
+            <summary>
+            PLC写入端口5
+            </summary>
+            <summary>
+            PLC写入端口6
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.OpenClient">
+            <summary>
+            打开客户端口
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.AddPLCData(System.String,System.Int32[])">
+            <summary>
+            将结果添加到哈希表
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReadRegConfigPar(System.Int32)">
+            <summary>
+            读入指定位置的数据寄存器
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReadRegConfigPar(System.Int32,System.Int32)">
+            <summary>
+            批量读入寄存器
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegConfigPar(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegConfigPar(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.OpenPort(System.String@,System.Boolean)">
+            <summary>
+             打开通信接口
+            </summary>
+            <param name="blOpenOnly">是否仅仅只是打开</param>
+            <param name="error">错误信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ClosePLC">
+            <summary>
+            关闭通信接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.GetRegName(System.Collections.Generic.List{DealPLC.RegPLC})">
+            <summary>
+            获取寄存器的名称
+            </summary>
+            <param name="reg_L"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReadRegMonitor(System.Int32)">
+            <summary>
+            读取单个寄存器，只读取用来触发用的监控寄存器
+            </summary>
+            <param name="index">寄存器序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReadRegMonitor(System.Int32,System.Int32)">
+            <summary>
+            批量读入监控寄存器，只读取触发部分寄存器，都只是16位
+            </summary>
+            <param name="index">索引号</param>
+            <param name="num">寄存器长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegMonitor(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegMonitor(System.Int32,System.Int32,System.Int32[])">
+            <summary>
+            批量写入寄存器,写入监控寄存器，都是16位的
+            </summary>
+            <param name="index">索引号</param>
+            <param name="num">个数</param>
+            <param name="data">数据</param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReadReg(System.String,System.Int32@)">
+            <summary>
+            读取单个寄存器
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReadBlockReg(System.String,System.Int32,System.String,System.Int32[]@)">
+            <summary>
+            批量读取寄存器
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReadBlockReg_Continue(System.String,System.Int32,System.String,System.Int32[]@)">
+            <summary>
+            批量读取寄存器，连续地址
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ConvertReadData(System.Int32[])">
+            <summary>
+            两个寄存器转换成整数
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ConvertReadData(System.Int32,System.Int32,DealPLC.RegPLC)">
+            <summary>
+            最终调用
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteReg(System.String,System.Int32)">
+            <summary>
+            写单个寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteBlockReg(System.String,System.Int32,System.Int32[],System.String)">
+            <summary>
+            写批量寄存器
+            </summary>
+            <param name="reg">寄存器名称</param>
+            <param name="num">寄存器数量</param>
+            <param name="value">值</param>
+            <param name="nameFun">函数名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteReg_Write1(System.String,System.Int32)">
+            <summary>
+            写单个寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteBlockReg_Write1(System.String,System.Int32,System.Int32[],System.String)">
+            <summary>
+            写批量寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="num"></param>
+            <param name="value"></param>
+            <param name="nameFun"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteReg_Write2(System.String,System.Int32)">
+            <summary>
+            写单个寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteBlockReg_Write2(System.String,System.Int32,System.Int32[],System.String)">
+            <summary>
+            写批量寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="num"></param>
+            <param name="value"></param>
+            <param name="nameFun"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteReg_Write3(System.String,System.Int32)">
+            <summary>
+            写单个寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteBlockReg_Write3(System.String,System.Int32,System.Int32[],System.String)">
+            <summary>
+            写批量寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="num"></param>
+            <param name="value"></param>
+            <param name="nameFun"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteReg_Write4(System.String,System.Int32)">
+            <summary>
+            写单个寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteBlockReg_Write4(System.String,System.Int32,System.Int32[],System.String)">
+            <summary>
+            写批量寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="num"></param>
+            <param name="value"></param>
+            <param name="nameFun"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteReg_Write5(System.String,System.Int32)">
+            <summary>
+            写单个寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteBlockReg_Write5(System.String,System.Int32,System.Int32[],System.String)">
+            <summary>
+            写批量寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="num"></param>
+            <param name="value"></param>
+            <param name="nameFun"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteReg_Write6(System.String,System.Int32)">
+            <summary>
+            写单个寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteBlockReg_Write6(System.String,System.Int32,System.Int32[],System.String)">
+            <summary>
+            写批量寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="num"></param>
+            <param name="value"></param>
+            <param name="nameFun"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ClearPLC(DealPLC.RegPLC)">
+            <summary>
+            清除PLC寄存器
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ClearPLC(System.String)">
+            <summary>
+            清零PLC寄存器
+            </summary>
+            <param name="strReg">寄存器名称</param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.FinishPhoto(System.String,System.Int32)">
+            <summary>
+            拍照完成以及结果
+            </summary>
+            <param name="strReg"></param>
+            <param name="intResult"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteCalData(System.Collections.Generic.List{DealPLC.RegPLC},System.Double[],System.String,System.Int32)">
+            <summary>
+            写入相机寄存器
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteData(System.String[],System.Double[],System.Double[])">
+            <summary>
+            将数据写入PLC
+            </summary>
+            reg里面不包含\n
+        </member>
+        <member name="M:DealPLC.LogicPLC.PCConnectPLC">
+            <summary>
+            PC发送数据，表示打开软件
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.PCDisConnectPLC">
+            <summary>
+            PC 链接断开
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.PCAlarm">
+            <summary>
+            上位机出错，具体信息查看上位机报警信息
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.PCAlarm(DealPLC.ErrorPC_enum)">
+            <summary>
+            PLC报警
+            </summary>
+            <param name="errorPC_e"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.PCBuzzer">
+            <summary>
+            PC通知PLC蜂鸣
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.PCConnectRobotOK">
+            <summary>
+            机器人链接OK
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.PCConnectRobotNG">
+            <summary>
+            机器人连续错误
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ClearCyc">
+            <summary>
+            关闭软件的时候，会清零所有的循环读取寄存器
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ConvertWriteData(System.Double)">
+            <summary>
+            将数据转换为两个16位
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ConvertJudgeData(System.Collections.Generic.List{DealPLC.RegPLC},System.Double[],System.Double[]@)">
+            <summary>
+            数据乘以系数转换，以及范围判断
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ConvertJudgeData_Write(System.Collections.Generic.List{DealPLC.RegPLC},System.Double[],System.Double[]@)">
+            <summary>
+            对数据寄存器的判断和系数转换
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReadRegData1(System.Int32)">
+            <summary>
+            读入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReadRegData1(System.Int32,System.Int32)">
+            <summary>
+            批量读入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReadRegData2(System.Int32)">
+            <summary>
+            读入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReadRegData2(System.Int32,System.Int32)">
+            <summary>
+            批量读入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReadRegData3(System.Int32)">
+            <summary>
+            读入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReadRegData3(System.Int32,System.Int32)">
+            <summary>
+            批量读入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReadRegData4(System.Int32)">
+            <summary>
+            读入指定位置的数据寄存器
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReadRegData4(System.Int32,System.Int32)">
+            <summary>
+            批量读入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReadRegData5(System.Int32)">
+            <summary>
+            读入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReadRegData5(System.Int32,System.Int32)">
+            <summary>
+            批量读入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReadRegData6(System.Int32)">
+            <summary>
+            读入指定位置的数据寄存器
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReadRegData6(System.Int32,System.Int32)">
+            <summary>
+            批量读入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData1(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData1(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData2(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData2(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData3(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData3(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData4(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData4(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData5(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData5(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData6(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData6(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReadCycReg_Task">
+            <summary>
+            循环读取线程
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.SingleTaskRead">
+            <summary>
+            相机触发监控单线程
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.SingleTaskReserveTrigger">
+            <summary>
+            触发保留单线程
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ClearPLC_Write1(DealPLC.RegPLC)">
+            <summary>
+            清除PLC寄存器
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ClearPLC_Write1(System.String)">
+            <summary>
+            清除PLC
+            </summary>
+            <param name="strReg"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.FinishPhoto_Write1(System.String,System.Int32)">
+            <summary>
+            拍照完成以及结果
+            </summary>
+            <param name="strReg"></param>
+            <param name="intResult"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteCalData_Write1(System.Collections.Generic.List{DealPLC.RegPLC},System.Double[],System.String,System.Int32)">
+            <summary>
+            写入相机寄存器
+            </summary>
+            <param name="Reg_L"></param>
+            <param name="dblData"></param>
+            <param name="strFinishDataReg"></param>
+            <param name="intFinish"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteCalData_Write1(System.Collections.Generic.List{DealPLC.RegPLC},System.Double[],System.String)">
+            <summary>
+            写入计算数据道PLC
+            </summary>
+            <param name="Reg_L"></param>
+            <param name="dblData"></param>
+            <param name="strFinishDataReg"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteData_Write1(System.String[],System.Double[],System.Double[])">
+            <summary>
+            将数据写入PLC
+            </summary>
+            <param name="reg">reg里面不包含\n</param>
+            <param name="co">系数</param>
+            <param name="data">数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteData_Write1(System.Collections.Generic.List{DealPLC.ResultforWritePLC})">
+            <summary>
+            写入数据
+            </summary>
+            <param name="resultforWritePLC_L"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData1_Write1(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData1_Write1(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index">寄存器在列表中的索引</param>
+            <param name="num">写入寄存器个数</param>
+            <param name="data">写入的数值</param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData2_Write1(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器-数据寄存器2
+            </summary>
+            <param name="index">寄存器索引</param>
+            <param name="data">数值</param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData2_Write1(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器-数据寄存器2
+            </summary>
+            <param name="index">寄存器索引</param>
+            <param name="num">数据个数</param>
+            <param name="data">数值</param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData3_Write1(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器-数据寄存器3
+            </summary>
+            <param name="index">寄存器索引</param>
+            <param name="data">数据个数</param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData3_Write1(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器-数据寄存器3
+            </summary>
+            <param name="index">寄存器索引</param>
+            <param name="num">数据的个数</param>
+            <param name="data">写入的数值</param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData4_Write1(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器-数据寄存器4
+            </summary>
+            <param name="index">寄存器索引</param>
+            <param name="data">写入的数值</param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData4_Write1(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器-数据寄存器4
+            </summary>
+            <param name="index">寄存器索引</param>
+            <param name="num">数据个数</param>
+            <param name="data">写入的数值</param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData5_Write1(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器-数据寄存器5
+            </summary>
+            <param name="index">寄存器索引</param>
+            <param name="data">写入的数值</param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData5_Write1(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器-数据寄存器5
+            </summary>
+            <param name="index">寄存器索引</param>
+            <param name="num">数据个数</param>
+            <param name="data">写入的数值</param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData6_Write1(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器-数据寄存器6
+            </summary>
+            <param name="index">寄存器索引</param>
+            <param name="data">写入的数值</param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData6_Write1(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器-数据寄存器6
+            </summary>
+            <param name="index">寄存器索引</param>
+            <param name="num">写入的数据个数</param>
+            <param name="data">数值</param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ClearPLC_Write2(DealPLC.RegPLC)">
+            <summary>
+            清除PLC寄存器
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ClearPLC_Write2(System.String)">
+            <summary>
+            清除PLC
+            </summary>
+            <param name="strReg"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.FinishPhoto_Write2(System.String,System.Int32)">
+            <summary>
+            拍照完成以及结果
+            </summary>
+            <param name="strReg"></param>
+            <param name="intResult"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteCalData_Write2(System.Collections.Generic.List{DealPLC.RegPLC},System.Double[],System.String,System.Int32)">
+            <summary>
+            写入相机寄存器
+            </summary>
+            <param name="Reg_L"></param>
+            <param name="dblData"></param>
+            <param name="strFinishDataReg"></param>
+            <param name="intFinish"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteCalData_Write2(System.Collections.Generic.List{DealPLC.RegPLC},System.Double[],System.String)">
+            <summary>
+            写入计算数据道PLC
+            </summary>
+            <param name="Reg_L"></param>
+            <param name="dblData"></param>
+            <param name="strFinishDataReg"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteData_Write2(System.String[],System.Double[],System.Double[])">
+            <summary>
+            将数据写入PLC
+            </summary>
+            <param name="reg">reg里面不包含\n</param>
+            <param name="co">系数</param>
+            <param name="data">数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteData_Write2(System.Collections.Generic.List{DealPLC.ResultforWritePLC})">
+            <summary>
+            写入数据
+            </summary>
+            <param name="resultforWritePLC_L"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData1_Write2(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData1_Write2(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData2_Write2(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData2_Write2(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData3_Write2(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData3_Write2(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData4_Write2(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData4_Write2(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData5_Write2(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData5_Write2(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData6_Write2(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData6_Write2(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ClearPLC_Write3(DealPLC.RegPLC)">
+            <summary>
+            清除PLC寄存器
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ClearPLC_Write3(System.String)">
+            <summary>
+            清除PLC
+            </summary>
+            <param name="strReg"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.FinishPhoto_Write3(System.String,System.Int32)">
+            <summary>
+            拍照完成以及结果
+            </summary>
+            <param name="strReg"></param>
+            <param name="intResult"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteCalData_Write3(System.Collections.Generic.List{DealPLC.RegPLC},System.Double[],System.String,System.Int32)">
+            <summary>
+            写入相机寄存器
+            </summary>
+            <param name="Reg_L"></param>
+            <param name="dblData"></param>
+            <param name="strFinishDataReg"></param>
+            <param name="intFinish"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteCalData_Write3(System.Collections.Generic.List{DealPLC.RegPLC},System.Double[],System.String)">
+            <summary>
+            写入计算数据道PLC
+            </summary>
+            <param name="Reg_L"></param>
+            <param name="dblData"></param>
+            <param name="strFinishDataReg"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteData_Write3(System.String[],System.Double[],System.Double[])">
+            <summary>
+            将数据写入PLC
+            </summary>
+            <param name="reg">reg里面不包含\n</param>
+            <param name="co">系数</param>
+            <param name="data">数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteData_Write3(System.Collections.Generic.List{DealPLC.ResultforWritePLC})">
+            <summary>
+            写入数据
+            </summary>
+            <param name="resultforWritePLC_L"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData1_Write3(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData1_Write3(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData2_Write3(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData2_Write3(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData3_Write3(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData3_Write3(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData4_Write3(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData4_Write3(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData5_Write3(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData5_Write3(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData6_Write3(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData6_Write3(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ClearPLC_Write4(DealPLC.RegPLC)">
+            <summary>
+            清除PLC寄存器
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ClearPLC_Write4(System.String)">
+            <summary>
+            清除PLC
+            </summary>
+            <param name="strReg"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.FinishPhoto_Write4(System.String,System.Int32)">
+            <summary>
+            拍照完成以及结果
+            </summary>
+            <param name="strReg"></param>
+            <param name="intResult"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteCalData_Write4(System.Collections.Generic.List{DealPLC.RegPLC},System.Double[],System.String,System.Int32)">
+            <summary>
+            写入相机寄存器
+            </summary>
+            <param name="Reg_L"></param>
+            <param name="dblData"></param>
+            <param name="strFinishDataReg"></param>
+            <param name="intFinish"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteCalData_Write4(System.Collections.Generic.List{DealPLC.RegPLC},System.Double[],System.String)">
+            <summary>
+            写入计算数据道PLC
+            </summary>
+            <param name="Reg_L"></param>
+            <param name="dblData"></param>
+            <param name="strFinishDataReg"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteData_Write4(System.String[],System.Double[],System.Double[])">
+            <summary>
+            将数据写入PLC
+            </summary>
+            <param name="reg">reg里面不包含\n</param>
+            <param name="co">系数</param>
+            <param name="data">数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteData_Write4(System.Collections.Generic.List{DealPLC.ResultforWritePLC})">
+            <summary>
+            写入数据
+            </summary>
+            <param name="resultforWritePLC_L"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData1_Write4(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData1_Write4(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData2_Write4(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData2_Write4(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData3_Write4(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData3_Write4(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData4_Write4(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData4_Write4(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData5_Write4(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData5_Write4(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData6_Write4(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData6_Write4(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ClearPLC_Write5(DealPLC.RegPLC)">
+            <summary>
+            清除PLC寄存器
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ClearPLC_Write5(System.String)">
+            <summary>
+            清除PLC
+            </summary>
+            <param name="strReg"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.FinishPhoto_Write5(System.String,System.Int32)">
+            <summary>
+            拍照完成以及结果
+            </summary>
+            <param name="strReg"></param>
+            <param name="intResult"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteCalData_Write5(System.Collections.Generic.List{DealPLC.RegPLC},System.Double[],System.String,System.Int32)">
+            <summary>
+            写入相机寄存器
+            </summary>
+            <param name="Reg_L"></param>
+            <param name="dblData"></param>
+            <param name="strFinishDataReg"></param>
+            <param name="intFinish"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteCalData_Write5(System.Collections.Generic.List{DealPLC.RegPLC},System.Double[],System.String)">
+            <summary>
+            写入计算数据道PLC
+            </summary>
+            <param name="Reg_L"></param>
+            <param name="dblData"></param>
+            <param name="strFinishDataReg"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteData_Write5(System.String[],System.Double[],System.Double[])">
+            <summary>
+            将数据写入PLC
+            </summary>
+            <param name="reg">reg里面不包含\n</param>
+            <param name="co">系数</param>
+            <param name="data">数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteData_Write5(System.Collections.Generic.List{DealPLC.ResultforWritePLC})">
+            <summary>
+            写入数据
+            </summary>
+            <param name="resultforWritePLC_L"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData1_Write5(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData1_Write5(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData2_Write5(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData2_Write5(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData3_Write5(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData3_Write5(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData4_Write5(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData4_Write5(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData5_Write5(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData5_Write5(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData6_Write5(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData6_Write5(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ClearPLC_Write6(DealPLC.RegPLC)">
+            <summary>
+            清除PLC寄存器
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ClearPLC_Write6(System.String)">
+            <summary>
+            清除PLC
+            </summary>
+            <param name="strReg"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.FinishPhoto_Write6(System.String,System.Int32)">
+            <summary>
+            拍照完成以及结果
+            </summary>
+            <param name="strReg"></param>
+            <param name="intResult"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteCalData_Write6(System.Collections.Generic.List{DealPLC.RegPLC},System.Double[],System.String,System.Int32)">
+            <summary>
+            写入相机寄存器
+            </summary>
+            <param name="Reg_L"></param>
+            <param name="dblData"></param>
+            <param name="strFinishDataReg"></param>
+            <param name="intFinish"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteCalData_Write6(System.Collections.Generic.List{DealPLC.RegPLC},System.Double[],System.String)">
+            <summary>
+            写入计算数据道PLC
+            </summary>
+            <param name="Reg_L"></param>
+            <param name="dblData"></param>
+            <param name="strFinishDataReg"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteData_Write6(System.String[],System.Double[],System.Double[])">
+            <summary>
+            将数据写入PLC
+            </summary>
+            <param name="reg">reg里面不包含\n</param>
+            <param name="co">系数</param>
+            <param name="data">数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteData_Write6(System.Collections.Generic.List{DealPLC.ResultforWritePLC})">
+            <summary>
+            写入数据
+            </summary>
+            <param name="resultforWritePLC_L"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData1_Write6(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData1_Write6(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData2_Write6(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData2_Write6(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData3_Write6(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData3_Write6(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData4_Write6(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData4_Write6(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData5_Write6(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData5_Write6(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData6_Write6(System.Int32,System.Double)">
+            <summary>
+            写入指定位置的数据寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.WriteRegData6_Write6(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            批量写入寄存器
+            </summary>
+            <param name="index"></param>
+            <param name="num"></param>
+            <param name="data"></param>
+        </member>
+        <member name="F:DealPLC.LogicPLC.OldSoftRestart">
+            <summary>
+            存储触发时上一次的值
+            </summary>
+        </member>
+        <member name="P:DealPLC.LogicPLC.RegReserveData">
+            <summary>
+            寄存器保留读值
+            </summary>
+        </member>
+        <member name="P:DealPLC.LogicPLC.RegReserveData1">
+            <summary>
+            寄存器保留读值1
+            </summary>
+        </member>
+        <member name="P:DealPLC.LogicPLC.RegReserveData2">
+            <summary>
+            寄存器保留读值2
+            </summary>
+        </member>
+        <member name="P:DealPLC.LogicPLC.RegReserveData3">
+            <summary>
+            寄存器保留读值3
+            </summary>
+        </member>
+        <member name="P:DealPLC.LogicPLC.RegReserveData4">
+            <summary>
+            寄存器保留读值4
+            </summary>
+        </member>
+        <member name="P:DealPLC.LogicPLC.RegReserveData5">
+            <summary>
+            寄存器保留读值5
+            </summary>
+        </member>
+        <member name="P:DealPLC.LogicPLC.RegReserveData6">
+            <summary>
+            寄存器保留读值6
+            </summary>
+        </member>
+        <member name="P:DealPLC.LogicPLC.RegReserveData7">
+            <summary>
+            寄存器保留读值7
+            </summary>
+        </member>
+        <member name="P:DealPLC.LogicPLC.RegReserveData8">
+            <summary>
+            寄存器保留读值8
+            </summary>
+        </member>
+        <member name="P:DealPLC.LogicPLC.RegReserveData9">
+            <summary>
+            寄存器保留读值9
+            </summary>
+        </member>
+        <member name="P:DealPLC.LogicPLC.RegReserveData10">
+            <summary>
+            寄存器保留读值10
+            </summary>
+        </member>
+        <member name="P:DealPLC.LogicPLC.RegReserveData11">
+            <summary>
+            寄存器保留读值11
+            </summary>
+        </member>
+        <member name="P:DealPLC.LogicPLC.RegReserveData12">
+            <summary>
+            寄存器保留读值12
+            </summary>
+        </member>
+        <member name="P:DealPLC.LogicPLC.RegReserveData13">
+            <summary>
+            寄存器保留读值13
+            </summary>
+        </member>
+        <member name="P:DealPLC.LogicPLC.RegReserveData14">
+            <summary>
+            寄存器保留读值14
+            </summary>
+        </member>
+        <member name="P:DealPLC.LogicPLC.RegReserveData15">
+            <summary>
+            寄存器保留读值15
+            </summary>
+        </member>
+        <member name="P:DealPLC.LogicPLC.RegReserveData16">
+            <summary>
+            寄存器保留读值16
+            </summary>
+        </member>
+        <member name="P:DealPLC.LogicPLC.RegReserveData17">
+            <summary>
+            寄存器保留读值17
+            </summary>
+        </member>
+        <member name="P:DealPLC.LogicPLC.RegReserveData18">
+            <summary>
+            寄存器保留读值18
+            </summary>
+        </member>
+        <member name="P:DealPLC.LogicPLC.RegReserveData19">
+            <summary>
+            寄存器保留读值19
+            </summary>
+        </member>
+        <member name="P:DealPLC.LogicPLC.RegReserveData20">
+            <summary>
+            寄存器保留读值20
+            </summary>
+        </member>
+        <member name="P:DealPLC.LogicPLC.BlRegReserveData1">
+            <summary>
+            输出bool型的变量
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.DealTrrigerSingle(System.Int32[])">
+            <summary>
+            通过输入的数组值，分解寄存器的值，进行触发处理,监控寄存器和相机都只保留一个
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.DealTrrigerSingle_New(System.Int32[])">
+            <summary>
+            新协议
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.SoftRestart(System.Int32)">
+            <summary>
+            软件重启
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.PCShutdown(System.Int32)">
+            <summary>
+            PC关机
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.PCRestart(System.Int32)">
+            <summary>
+            电脑重启
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.HeartBeat(System.Int32)">
+            <summary>
+            和PLC进行心跳,只要监测到PLC为1
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.CycClearHeart">
+            <summary>
+            清除心跳的线程
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.PLCState(System.Int32)">
+            <summary>
+            设备状态
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.PLCAlarm(System.Int32)">
+            <summary>
+             PLC报警
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.PLCMaterial(System.Int32)">
+            <summary>
+            设备其他信息，包含了cim用的物料信息或者和型号相关的物料信息
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.RobotState(System.Int32)">
+             <summary>
+            机器人状态
+             </summary>
+             <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.NewModel(System.Int32)">
+            <summary>
+            增加新的型号
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DealPLC.LogicPLC.ChangeModel(System.Int32)" -->
+        <member name="M:DealPLC.LogicPLC.DelModel(System.Int32)">
+            <summary>
+            删除型号
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Model(System.Int32)">
+            <summary>
+            精简版本协议综合处理
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReadModelName">
+            <summary>
+            读取型号名称
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReadModelNo">
+            <summary>
+            读取配置文件序号
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReadConfigPar">
+            <summary>
+            读取配置参数
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.VoiceState(System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Reserve1(System.Int32)">
+            <summary>
+            保留触发1
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerReserve1">
+            <summary>
+            PLC触发监控触发保留线程1
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Reserve2(System.Int32)">
+             <summary>
+            保留触发2
+             </summary>
+             <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerReserve2">
+            <summary>
+            PLC触发监控触发保留线程2
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Reserve3(System.Int32)">
+            <summary>
+            保留触发3
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerReserve3">
+            <summary>
+            PLC触发监控触发保留线程3
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Reserve4(System.Int32)">
+            <summary>
+            保留触发4
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerReserve4">
+            <summary>
+            PLC触发监控触发保留线程4
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Reserve5(System.Int32)">
+            <summary>
+            保留触发5
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerReserve5">
+            <summary>
+            PLC触发监控触发保留线程5
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Reserve6(System.Int32)">
+            <summary>
+            保留触发6
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerReserve6">
+            <summary>
+            PLC触发监控触发保留线程6
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Reserve7(System.Int32)">
+            <summary>
+            保留触发7
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerReserve7">
+            <summary>
+            PLC触发监控触发保留线程7
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Reserve8(System.Int32)">
+            <summary>
+            保留触发8
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerReserve8">
+            <summary>
+            PLC触发监控触发保留线程8
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Reserve9(System.Int32)">
+            <summary>
+            保留触发9
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerReserve9">
+            <summary>
+            PLC触发监控触发保留线程9
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Reserve10(System.Int32)">
+            <summary>
+            保留触发10
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerReserve10">
+            <summary>
+            PLC触发监控触发保留线程10
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Reserve11(System.Int32)">
+            <summary>
+            保留触发11
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerReserve11">
+            <summary>
+            PLC触发监控触发保留线程11
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Reserve12(System.Int32)">
+            <summary>
+            保留触发12
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerReserve12">
+            <summary>
+            PLC触发监控触发保留线程12
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Reserve13(System.Int32)">
+            <summary>
+            保留触发13
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerReserve13">
+            <summary>
+            PLC触发监控触发保留线程13
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Reserve14(System.Int32)">
+            <summary>
+            保留触发14
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerReserve14">
+            <summary>
+            PLC触发监控触发保留线程14
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Reserve15(System.Int32)">
+            <summary>
+            保留触发15
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerReserve15">
+            <summary>
+            PLC触发监控触发保留线程15
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Reserve16(System.Int32)">
+            <summary>
+            保留触发16
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerReserve16">
+            <summary>
+            PLC触发监控触发保留线程16
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Reserve17(System.Int32)">
+            <summary>
+            保留触发17
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerReserve17">
+            <summary>
+            PLC触发监控触发保留线程17
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Reserve18(System.Int32)">
+            <summary>
+            保留触发18
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerReserve18">
+            <summary>
+            PLC触发监控触发保留线程18
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Reserve19(System.Int32)">
+            <summary>
+            保留触发19
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerReserve19">
+            <summary>
+            PLC触发监控触发保留线程19
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Reserve20(System.Int32)">
+            <summary>
+            保留触发20
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerReserve20">
+            <summary>
+            PLC触发监控触发保留线程20
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReserveXPos(System.Int32,System.Int32)">
+            <summary>
+            当前轴位置
+            </summary>
+            <param name="low"></param>
+            <param name="high"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ReserveData(System.Int32,System.Int32[])">
+            <summary>
+            读值保留
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Camera1(System.Int32)">
+            <summary>
+            相机1拍照，最新的版后本20191025，Main_EX中更新了相机线程监控，所以PLC端可以不用采用监控线程了，
+            </summary>
+            <param name="intValue">PLC寄存器的值</param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerCamera1">
+            <summary>
+            PLC触发监控线程
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Camera2(System.Int32)">
+            <summary>
+            相机2拍照
+            </summary>
+            <param name="intValue">PLC寄存器的值</param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerCamera2">
+            <summary>
+            PLC触发监控线程
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Camera3(System.Int32)">
+            <summary>
+            相机3拍照
+            </summary>
+            <param name="intValue">PLC寄存器的值</param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerCamera3">
+            <summary>
+            PLC触发监控线程
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Camera4(System.Int32)">
+            <summary>
+            相机4拍照
+            </summary>
+            <param name="intValue">PLC寄存器的值</param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerCamera4">
+            <summary>
+            PLC触发监控线程
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Camera5(System.Int32)">
+            <summary>
+            相机5拍照
+            </summary>
+            <param name="intValue">PLC寄存器的值</param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerCamera5">
+            <summary>
+            PLC触发监控线程
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Camera6(System.Int32)">
+            <summary>
+            相机6拍照
+            </summary>
+            <param name="intValue">PLC寄存器的值</param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerCamera6">
+            <summary>
+            PLC触发监控线程
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Camera7(System.Int32)">
+            <summary>
+            相机7拍照
+            </summary>
+            <param name="intValue">PLC寄存器的值</param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerCamera7">
+            <summary>
+            PLC触发监控线程
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.Camera8(System.Int32)">
+            <summary>
+            相机8拍照
+            </summary>
+            <param name="intValue">PLC寄存器的值</param>
+        </member>
+        <member name="M:DealPLC.LogicPLC.TriggerCamera8">
+            <summary>
+            PLC触发监控线程
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ManualTrriger">
+            <summary>
+            手动模拟PLC触发，传入信号
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogicPLC.ClearOld">
+            <summary>
+            清除Old值
+            </summary>
+        </member>
+        <member name="M:DealPLC.LogPLC.WritePLC(System.String,System.String)">
+            <summary>
+            保存信息
+            </summary>
+            <param name="strFileName"></param>
+            <param name="strInfo"></param>
+        </member>
+        <member name="M:DealPLC.LogPLC.WritePLC(System.String,System.String,System.String)">
+            <summary>
+            记录机PLC寄存器的值变化
+            </summary>
+            <param name="strFileName"></param>
+            <param name="strReg"></param>
+            <param name="strInfo"></param>
+        </member>
+        <member name="T:DealPLC.PortPLC_Keyence">
+            <summary>
+            基恩士PLC接口0310
+            </summary>
+        </member>
+        <member name="M:DealPLC.PortPLC_Keyence.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealPLC.PortPLC_Keyence.#ctor(System.Int32)">
+            <summary>
+            构造函数重载
+            </summary>
+            <param name="port">端口号</param>
+        </member>
+        <member name="M:DealPLC.PortPLC_Keyence.OpenPLC(System.String@)">
+            <summary>
+            打开通信接口
+            </summary>
+            <param name="error"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.PortPLC_Keyence.ClosePLC">
+            <summary>
+            关闭通信接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.PortPLC_Keyence.ReadReg(System.String,System.Int32@)">
+            <summary>
+            读取单个寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="intValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.PortPLC_Keyence.ReadBlockReg(System.String,System.Int32,System.Int32[]@)">
+            <summary>
+            读取批量寄存器
+            </summary>
+            <param name="reg">批量寄存器</param>
+            <param name="intNum">读取个数</param>
+            <param name="intValue">输出数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.PortPLC_Keyence.ReadBlockReg_Continue(System.String,System.Int32,System.Int32[]@)">
+            <summary>
+            读取连续寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="intNum"></param>
+            <param name="intValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.PortPLC_Keyence.WriteReg(System.String,System.Int32,System.String)">
+            <summary>
+            写入单个寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="intValue"></param>
+            <param name="strFunName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.PortPLC_Keyence.WriteBlockReg(System.String,System.Int32,System.Int32[],System.String)">
+            <summary>
+            写入批量寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="intNum"></param>
+            <param name="intValue"></param>
+            <param name="strFunName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealPLC.ModBusTCP">
+            <summary>
+            这个注释保留
+            Modbus TCP common driver class. This class implements a modbus TCP master driver.
+            It supports the following commands:
+            
+            Read coils -useless
+            Read discrete inputs -useless
+            Write single coil -useless
+            Write multiple cooils -useless
+            Read holding register
+            Read input register
+            Write single register
+            Write multiple register
+                                                        -useless
+            All commands can be sent in synchronous or asynchronous mode. If a value is accessed
+            in synchronous mode the program will stop and wait for slave to response. If the 
+            slave didn't answer within a specified time a timeout exception is called.
+            The class uses multi threading for both synchronous and asynchronous access. For
+            the communication two lines are created. This is necessary because the synchronous
+            thread has to wait for a previous command to finish.
+            
+            </summary>
+        </member>
+        <member name="F:DealPLC.ModBusTCP.excIllegalFunction">
+            <summary>function参数非法</summary>
+        </member>
+        <member name="F:DealPLC.ModBusTCP.excIllegalDataAdr">
+            <summary>data address参数非法</summary>
+        </member>
+        <member name="F:DealPLC.ModBusTCP.excIllegalDataVal">
+            <summary>data value参数非法.</summary>
+        </member>
+        <member name="F:DealPLC.ModBusTCP.excSlaveDeviceFailure">
+            <summary>slave device failure从动设备异常.</summary>
+        </member>
+        <member name="F:DealPLC.ModBusTCP.excAck">
+            <summary>acknowledge答复异常.</summary>
+        </member>
+        <member name="F:DealPLC.ModBusTCP.excSlaveIsBusy">
+            <summary> slave is busy/booting up 从动设备繁忙.</summary>
+        </member>
+        <member name="F:DealPLC.ModBusTCP.excGatePathUnavailable">
+            <summary>Constant for exception gate path unavailable.</summary>
+        </member>
+        <member name="F:DealPLC.ModBusTCP.excExceptionNotConnected">
+            <summary>not connected 连接断开/未连接</summary>
+        </member>
+        <member name="F:DealPLC.ModBusTCP.excExceptionConnectionLost">
+            <summary>connection lost 连接断开</summary>
+        </member>
+        <member name="F:DealPLC.ModBusTCP.excExceptionTimeout">
+            <summary>response timeout 等待答复超时.</summary>
+        </member>
+        <member name="F:DealPLC.ModBusTCP.excExceptionOffset">
+            <summary>offset 参数错误.</summary>
+        </member>
+        <member name="F:DealPLC.ModBusTCP.excSendFailt">
+            <summary>send failt 发送失败</summary>
+        </member>
+        <member name="F:DealPLC.ModBusTCP.tcpAsyCl">
+            <summary>
+            socket端口 异步
+            </summary>
+        </member>
+        <member name="F:DealPLC.ModBusTCP.tcpSynCl">
+            <summary>
+            socket端口 同步
+            </summary>
+        </member>
+        <member name="T:DealPLC.ModBusTCP.ResponseData">
+            <summary>Response data event. This event is called when new data arrives</summary>
+        </member>
+        <member name="E:DealPLC.ModBusTCP.OnResponseData">
+            <summary>Response data event. This event is called when new data arrives</summary>
+        </member>
+        <member name="T:DealPLC.ModBusTCP.ExceptionData">
+            <summary>Exception data event. This event is called when the data is incorrect</summary>
+        </member>
+        <member name="E:DealPLC.ModBusTCP.OnException">
+            <summary>Exception data event. This event is called when the data is incorrect</summary>
+        </member>
+        <member name="P:DealPLC.ModBusTCP.Timeout">
+            <summary>答复超时的设定</summary>
+            <value>The default value is 500ms.</value>
+        </member>
+        <member name="P:DealPLC.ModBusTCP.RefreshTime">
+            <summary>从动设备答复的刷新时间</summary>
+            <value>The default value is 10ms.</value>
+        </member>
+        <member name="P:DealPLC.ModBusTCP.Connected">
+            <summary>连接状态</summary>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.#ctor">
+            <summary>无参构造函数</summary>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.#ctor(System.String,System.UInt16,System.String@)">
+            <summary>含参构造函数</summary>>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.Connect(System.String,System.UInt16,System.String@)">
+            <summary>
+            连接从站
+            </summary>
+            <param name="ip">IP地址</param>
+            <param name="port">端口</param>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.Disconnect">
+            <summary>断开连接</summary>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.Finalize">
+            <summary>析构函数</summary>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.Dispose">
+            <summary>Destroy master instance</summary>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.CallException(System.UInt16,System.Byte,System.Byte,System.Byte)">
+            <summary>
+            异常处理
+            </summary>
+            <param name="id"></param>
+            <param name="unit"></param>
+            <param name="function"></param>
+            <param name="exception"></param>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.ReadSingleReg(System.String,System.Int32@)">
+            <summary>
+            读取单个16位寄存器的值
+            </summary>
+            <param name="regName">首个寄存器名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.ReadMultReg(System.String,System.Int32,System.Int32[]@)">
+            <summary>
+            读取多个16位寄存器的值，默认带符号
+            </summary>
+            <param name="regName">首个寄存器名称</param>
+            <param name="length">寄存器个数（16位）</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.ReadBitData(System.String,System.Int32)">
+            <summary>
+            读取基础的bit数据
+            </summary>
+            <param name="strRegName"></param>
+            <param name="length"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.CreateReadHeader(System.UInt16,System.Byte,System.UInt16,System.UInt16,System.Byte)">
+            <summary>
+            Create modbus header for read action
+            为读Modbus创建头数据
+            </summary>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.WriteSingleReg(System.String,System.Int32)">
+            <summary>Write single register in slave synchronous.</summary>
+            <param name="strRegName">首位寄存器名</param>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.WriteMultReg(System.String,System.Int32[])">
+            <summary>Write multiple registers in slave synchronous.</summary>
+            <param name="id">Unique id that marks the transaction. In asynchonous mode this id is given to the callback function.</param>
+            <param name="unit">Unit identifier (previously slave address). In asynchonous mode this unit is given to the callback function.</param>
+            <param name="startAddress">Address to where the data is written.</param>
+            <param name="values">Contains the register information.</param>
+            <param name="result">Contains the result of the synchronous write.</param>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.CreateWriteHeader(System.UInt16,System.Byte,System.UInt16,System.UInt16,System.UInt16,System.Byte)">
+            <summary>
+            Create modbus header for read action
+            为写Modbus创建头数据
+            </summary>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.WriteSyncData(System.Byte[],System.UInt16,System.Byte[]@)">
+            <summary>
+            将数据写入到Socket，等待答复，并作简单判断
+            </summary>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.ConvertBetweenPanData(System.Byte[])">
+            <summary>
+            将输入数组的i位和i+1位交换，得到一个新的数组
+            </summary>
+            <param name="rawData"></param>
+            <exception cref="!:输入数组的长度为奇数" />
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.ReadCoils(System.UInt16,System.Byte,System.UInt16,System.UInt16)">
+            <summary>Read coils from slave asynchronous. The result is given in the response function.</summary>
+            <param name="id">Unique id that marks the transaction. In asynchonous mode this id is given to the callback function.</param>
+            <param name="unit">Unit identifier (previously slave address). In asynchonous mode this unit is given to the callback function.</param>
+            <param name="startAddress">Address from where the data read begins.</param>
+            <param name="numInputs">Length of data.</param>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.ReadCoils(System.UInt16,System.Byte,System.UInt16,System.UInt16,System.Byte[]@)">
+            <summary>Read coils from slave synchronous.</summary>
+            <param name="id">Unique id that marks the transaction. In asynchonous mode this id is given to the callback function.</param>
+            <param name="unit">Unit identifier (previously slave address). In asynchonous mode this unit is given to the callback function.</param>
+            <param name="startAddress">Address from where the data read begins.</param>
+            <param name="numInputs">Length of data.</param>
+            <param name="values">Contains the result of function.</param>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.ReadDiscreteInputs(System.UInt16,System.Byte,System.UInt16,System.UInt16)">
+            <summary>Read discrete inputs from slave asynchronous. The result is given in the response function.</summary>
+            <param name="id">Unique id that marks the transaction. In asynchonous mode this id is given to the callback function.</param>
+            <param name="unit">Unit identifier (previously slave address). In asynchonous mode this unit is given to the callback function.</param>
+            <param name="startAddress">Address from where the data read begins.</param>
+            <param name="numInputs">Length of data.</param>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.ReadDiscreteInputs(System.UInt16,System.Byte,System.UInt16,System.UInt16,System.Byte[]@)">
+            <summary>Read discrete inputs from slave synchronous.</summary>
+            <param name="id">Unique id that marks the transaction. In asynchonous mode this id is given to the callback function.</param>
+            <param name="unit">Unit identifier (previously slave address). In asynchonous mode this unit is given to the callback function.</param>
+            <param name="startAddress">Address from where the data read begins.</param>
+            <param name="numInputs">Length of data.</param>
+            <param name="values">Contains the result of function.</param>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.ReadHoldingRegister(System.UInt16,System.Byte,System.UInt16,System.UInt16)">
+            <summary>Read holding registers from slave asynchronous. The result is given in the response function.</summary>
+            <param name="id">Unique id that marks the transaction. In asynchonous mode this id is given to the callback function.</param>
+            <param name="unit">Unit identifier (previously slave address). In asynchonous mode this unit is given to the callback function.</param>
+            <param name="startAddress">Address from where the data read begins.</param>
+            <param name="numInputs">Length of data.</param>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.ReadInputRegister(System.UInt16,System.Byte,System.UInt16,System.UInt16)">
+            <summary>Read input registers from slave asynchronous. The result is given in the response function.</summary>
+            <param name="id">Unique id that marks the transaction. In asynchonous mode this id is given to the callback function.</param>
+            <param name="unit">Unit identifier (previously slave address). In asynchonous mode this unit is given to the callback function.</param>
+            <param name="startAddress">Address from where the data read begins.</param>
+            <param name="numInputs">Length of data.</param>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.ReadInputRegister(System.UInt16,System.Byte,System.UInt16,System.UInt16,System.Byte[]@)">
+            <summary>Read input registers from slave synchronous.</summary>
+            <param name="id">Unique id that marks the transaction. In asynchonous mode this id is given to the callback function.</param>
+            <param name="unit">Unit identifier (previously slave address). In asynchonous mode this unit is given to the callback function.</param>
+            <param name="startAddress">Address from where the data read begins.</param>
+            <param name="numInputs">Length of data.</param>
+            <param name="values">Contains the result of function.</param>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.WriteSingleCoils(System.UInt16,System.Byte,System.UInt16,System.Boolean)">
+            <summary>Write single coil in slave asynchronous. The result is given in the response function.</summary>
+            <param name="id">Unique id that marks the transaction. In asynchonous mode this id is given to the callback function.</param>
+            <param name="unit">Unit identifier (previously slave address). In asynchonous mode this unit is given to the callback function.</param>
+            <param name="startAddress">Address from where the data read begins.</param>
+            <param name="OnOff">Specifys if the coil should be switched on or off.</param>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.WriteSingleCoils(System.UInt16,System.Byte,System.UInt16,System.Boolean,System.Byte[]@)">
+            <summary>Write single coil in slave synchronous.</summary>
+            <param name="id">Unique id that marks the transaction. In asynchonous mode this id is given to the callback function.</param>
+            <param name="unit">Unit identifier (previously slave address). In asynchonous mode this unit is given to the callback function.</param>
+            <param name="startAddress">Address from where the data read begins.</param>
+            <param name="OnOff">Specifys if the coil should be switched on or off.</param>
+            <param name="result">Contains the result of the synchronous write.</param>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.WriteMultipleCoils(System.UInt16,System.Byte,System.UInt16,System.UInt16,System.Byte[])">
+            <summary>Write multiple coils in slave asynchronous. The result is given in the response function.</summary>
+            <param name="id">Unique id that marks the transaction. In asynchonous mode this id is given to the callback function.</param>
+            <param name="unit">Unit identifier (previously slave address). In asynchonous mode this unit is given to the callback function.</param>
+            <param name="startAddress">Address from where the data read begins.</param>
+            <param name="numBits">Specifys number of bits.</param>
+            <param name="values">Contains the bit information in byte format.</param>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.WriteMultipleCoils(System.UInt16,System.Byte,System.UInt16,System.UInt16,System.Byte[],System.Byte[]@)">
+            <summary>Write multiple coils in slave synchronous.</summary>
+            <param name="id">Unique id that marks the transaction. In asynchonous mode this id is given to the callback function.</param>
+            <param name="unit">Unit identifier (previously slave address). In asynchonous mode this unit is given to the callback function.</param>
+            <param name="startAddress">Address from where the data read begins.</param>
+            <param name="numBits">Specifys number of bits.</param>
+            <param name="values">Contains the bit information in byte format.</param>
+            <param name="result">Contains the result of the synchronous write.</param>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.WriteSingleRegister(System.UInt16,System.Byte,System.UInt16,System.Byte[])">
+            <summary>Write single register in slave asynchronous. The result is given in the response function.</summary>
+            <param name="id">Unique id that marks the transaction. In asynchonous mode this id is given to the callback function.</param>
+            <param name="unit">Unit identifier (previously slave address). In asynchonous mode this unit is given to the callback function.</param>
+            <param name="startAddress">Address to where the data is written.</param>
+            <param name="values">Contains the register information.</param>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.WriteMultipleRegister(System.UInt16,System.Byte,System.UInt16,System.Byte[])">
+            <summary>Write multiple registers in slave asynchronous. The result is given in the response function.</summary>
+            <param name="id">Unique id that marks the transaction. In asynchonous mode this id is given to the callback function.</param>
+            <param name="unit">Unit identifier (previously slave address). In asynchonous mode this unit is given to the callback function.</param>
+            <param name="startAddress">Address to where the data is written.</param>
+            <param name="values">Contains the register information.</param>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.ReadWriteMultipleRegister(System.UInt16,System.Byte,System.UInt16,System.UInt16,System.UInt16,System.Byte[])">
+            <summary>Read/Write multiple registers in slave asynchronous. The result is given in the response function.</summary>
+            <param name="id">Unique id that marks the transaction. In asynchonous mode this id is given to the callback function.</param>
+            <param name="unit">Unit identifier (previously slave address). In asynchonous mode this unit is given to the callback function.</param>
+            <param name="startReadAddress">Address from where the data read begins.</param>
+            <param name="numInputs">Length of data.</param>
+            <param name="startWriteAddress">Address to where the data is written.</param>
+            <param name="values">Contains the register information.</param>
+        </member>
+        <member name="M:DealPLC.ModBusTCP.ReadWriteMultipleRegister(System.UInt16,System.Byte,System.UInt16,System.UInt16,System.UInt16,System.Byte[],System.Byte[]@)">
+            <summary>Read/Write multiple registers in slave synchronous. The result is given in the response function.</summary>
+            <param name="id">Unique id that marks the transaction. In asynchonous mode this id is given to the callback function.</param>
+            <param name="unit">Unit identifier (previously slave address). In asynchonous mode this unit is given to the callback function.</param>
+            <param name="startReadAddress">Address from where the data read begins.</param>
+            <param name="numInputs">Length of data.</param>
+            <param name="startWriteAddress">Address to where the data is written.</param>
+            <param name="values">Contains the register information.</param>
+            <param name="result">Contains the result of the synchronous command.</param>
+        </member>
+        <member name="M:DealPLC.PortPLC_PanModbusTCP.ReadBlockReg(System.String,System.Int32,System.Int32[]@)">
+            <summary>
+            读取批量寄存器
+            </summary>
+            <param name="reg">批量寄存器</param>
+            <param name="intNum">读取个数</param>
+            <param name="intValue">输出数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.PortPLC_PanModbusTCP.ReadBlockReg_Continue(System.String,System.Int32,System.Int32[]@)">
+            <summary>
+            连续的寄存器
+            </summary>
+        </member>
+        <member name="T:DealPLC.PortPLC_MITHls">
+            <summary>
+            开源64位
+            </summary>
+        </member>
+        <member name="M:DealPLC.PortPLC_MITHls.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealPLC.PortPLC_MITHls.#ctor(System.Int32)">
+            <summary>
+            构造函数重载
+            </summary>
+            <param name="port"></param>
+        </member>
+        <member name="M:DealPLC.PortPLC_MITHls.OpenPLC(System.String@)">
+            <summary>
+            打开通信接口
+            </summary>
+            <param name="error"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.PortPLC_MITHls.ClosePLC">
+            <summary>
+            关闭通信接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.PortPLC_MITHls.ReadReg(System.String,System.Int32@)">
+            <summary>
+            读取单个寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="intValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.PortPLC_MITHls.ReadBlockReg(System.String,System.Int32,System.Int32[]@)">
+            <summary>
+            读取批量寄存器
+            </summary>
+            <param name="reg">批量寄存器</param>
+            <param name="intNum">读取个数</param>
+            <param name="intValue">输出数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.PortPLC_MITHls.ReadBlockReg_Continue(System.String,System.Int32,System.Int32[]@)">
+            <summary>
+            读取连续寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="intNum"></param>
+            <param name="intValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.PortPLC_MITHls.WriteReg(System.String,System.Int32,System.String)">
+            <summary>
+            写入单个寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="intValue"></param>
+            <param name="strFunName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.PortPLC_MITHls.WriteBlockReg(System.String,System.Int32,System.Int32[],System.String)">
+            <summary>
+            写入批量寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="intNum"></param>
+            <param name="intValue"></param>
+            <param name="strFunName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealPLC.PortPLC_MITHlsSerial">
+            <summary>
+            开源64位
+            </summary>
+        </member>
+        <member name="M:DealPLC.PortPLC_MITHlsSerial.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealPLC.PortPLC_MITHlsSerial.#ctor(System.String)">
+            <summary>
+            构造函数重载
+            </summary>
+            <param name="port"></param>
+        </member>
+        <member name="M:DealPLC.PortPLC_MITHlsSerial.OpenPLC(System.String@)">
+            <summary>
+            打开通信接口
+            </summary>
+            <param name="error"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.PortPLC_MITHlsSerial.ClosePLC">
+            <summary>
+            关闭通信接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.PortPLC_MITHlsSerial.ReadReg(System.String,System.Int32@)">
+            <summary>
+            读取单个寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="intValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.PortPLC_MITHlsSerial.ReadBlockReg(System.String,System.Int32,System.Int32[]@)">
+            <summary>
+            读取批量寄存器
+            </summary>
+            <param name="reg">批量寄存器</param>
+            <param name="intNum">读取个数</param>
+            <param name="intValue">输出数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.PortPLC_MITHlsSerial.ReadBlockReg_Continue(System.String,System.Int32,System.Int32[]@)">
+            <summary>
+            读取连续寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="intNum"></param>
+            <param name="intValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.PortPLC_MITHlsSerial.WriteReg(System.String,System.Int32,System.String)">
+            <summary>
+            写入单个寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="intValue"></param>
+            <param name="strFunName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.PortPLC_MITHlsSerial.WriteBlockReg(System.String,System.Int32,System.Int32[],System.String)">
+            <summary>
+            写入批量寄存器
+            </summary>
+            <param name="reg"></param>
+            <param name="intNum"></param>
+            <param name="intValue"></param>
+            <param name="strFunName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealPLC.PortPLC_MITNew">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DealPLC.PortPLC_MITNew.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealPLC.PortPLC_MITNew.ReadBlockReg(System.String,System.Int32,System.Int32[]@)">
+            <summary>
+            读取批量寄存器
+            </summary>
+            <param name="reg">批量寄存器</param>
+            <param name="intNum">读取个数</param>
+            <param name="intValue">输出数组</param>
+            <returns></returns>
+        </member>
+        <member name="P:DealPLC.ParLogReadWritePLC.BrReg">
+            <summary>
+            列表row颜色
+            </summary>
+        </member>
+        <member name="M:DealPLC.ParLogReadWritePLC.AddInfo_Read(System.String,System.Double)">
+            <summary>
+            添加读取的信息
+            </summary>
+            <param name="reg"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:DealPLC.ParLogReadWritePLC.AddInfo_Write(System.String,System.Double)">
+            <summary>
+            添加写入的信息
+            </summary>
+            <param name="reg"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:DealPLC.ParLogReadWritePLC.WriteTxt(DealPLC.ParLogReadWritePLC)">
+            <summary>
+            写入文本
+            </summary>
+            <param name="stateInfo"></param>
+        </member>
+        <member name="T:DealPLC.WinLogReadWrite">
+            <summary>
+            WinLogReadWrite.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinLogReadWrite
+            </summary>
+        </member>
+        <member name="M:DealPLC.WinLogReadWrite.BaseWindow_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            窗体加载
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealPLC.WinLogReadWrite.Tm250_Refresh_Tick(System.Object,System.EventArgs)">
+            <summary>
+            刷新
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealPLC.WinLogReadWrite.chkRefresh_Unchecked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            是否自动刷新
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealPLC.WinLogReadWrite.chkRefresh_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            是否自动刷新
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealPLC.WinLogReadWrite.RefreshDg">
+            <summary>
+            刷新列表
+            </summary>
+        </member>
+        <member name="M:DealPLC.WinLogReadWrite.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealPLC.WinCheckReg">
+            <summary>
+            WinCheckReg.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinCheckReg
+            </summary>
+        </member>
+        <member name="M:DealPLC.WinCheckReg.btnReadReg_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            读取寄存器值
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealPLC.WinCheckReg.btnWriteReg_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            写入寄存器
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealPLC.WinCheckReg.dgReg_MouseDoubleClick(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            双击列表
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealPLC.WinCheckReg.L_I_RefreshRegValue_event">
+            <summary>
+            PLC寄存器值发生变化
+            </summary>
+        </member>
+        <member name="M:DealPLC.WinCheckReg.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:DealPLC.CheckReg.BrCell">
+            <summary>
+            列表row颜色
+            </summary>
+        </member>
+        <member name="M:DealPLC.CheckReg.AddValue(System.Int32[])">
+            <summary>
+            PLC值加入列表
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="M:DealPLC.CheckReg.AddValue_WithoutHeart(System.Int32[])">
+            <summary>
+            导入没有心跳的本地数据
+            </summary>
+            <param name="intValue"></param>
+        </member>
+        <member name="T:DealPLC.WinCheckRegLocal">
+            <summary>
+            WinCheckRegLocalLocal.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinCheckRegLocal
+            </summary>
+        </member>
+        <member name="M:DealPLC.WinCheckRegLocal.btnLocal_Click(System.Object,System.Windows.RoutedEventArgs)">
+            打开本地PLC读取日志
+        </member>
+        <member name="M:DealPLC.WinCheckRegLocal.dgTime_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            切换时间
+        </member>
+        <member name="M:DealPLC.WinCheckRegLocal.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealPLC.WinReadValue">
+            <summary>
+            WinReadValue.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinReadValue
+            </summary>
+        </member>
+        <member name="M:DealPLC.WinReadValue.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealPLC.WinTrrigerPLC">
+            <summary>
+            TrrigerPLC.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinTrrigerPLC
+            </summary>
+        </member>
+        <member name="M:DealPLC.WinTrrigerPLC.InitRegList">
+            <summary>
+            初始化列表
+            </summary>
+        </member>
+        <member name="M:DealPLC.WinTrrigerPLC.dgTrrigerReg_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择寄存器
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealPLC.WinTrrigerPLC.btnTrriger_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            模拟触发
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealPLC.WinTrrigerPLC.Clear">
+            <summary>
+            对触发数组和显示清空
+            </summary>
+        </member>
+        <member name="M:DealPLC.WinTrrigerPLC.ShowPar">
+            <summary>
+            显示参数
+            </summary>
+        </member>
+        <member name="M:DealPLC.WinTrrigerPLC.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealPLC.PortPLC">
+            <summary>
+            PLC端口
+            </summary>
+        </member>
+        <member name="F:DealPLC.PortPLC.g_BasePortPLC">
+            <summary>
+            通用端口类
+            </summary>
+        </member>
+        <member name="F:DealPLC.PortPLC.g_BasePortPLC1">
+            <summary>
+            写端口
+            </summary>
+        </member>
+        <member name="M:DealPLC.PortPLC.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealPLC.PortPLC.InitPort">
+            <summary>
+            PLC端口
+            </summary>
+        </member>
+        <member name="M:DealPLC.PortPLC.OpenPort(System.String@)">
+            <summary>
+            打开端口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.PortPLC.ClosePort">
+            <summary>
+            关闭端口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DealPLC.BasePortPLC">
+            <summary>
+            端口基类
+            </summary>
+        </member>
+        <member name="F:DealPLC.BasePortPLC.BlOpen">
+            <summary>
+            定义
+            </summary>
+        </member>
+        <member name="M:DealPLC.PortPLC_MIT.OpenPLC(System.String@)">
+            <summary>
+            打开通信接口
+            </summary>
+            <param name="error">输出错位信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.PortPLC_MIT.ClosePLC">
+            <summary>
+            关闭PLC通信
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.PortPLC_MIT.ReadBlockReg(System.String,System.Int32,System.Int32[]@)">
+            <summary>
+            读取批量寄存器
+            </summary>
+            <param name="reg">批量寄存器</param>
+            <param name="intNum">读取个数</param>
+            <param name="intValue">输出数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.PortPLC_MIT.ReadBlockReg_Continue(System.String,System.Int32,System.Int32[]@)">
+            <summary>
+            连续的寄存器
+            </summary>
+        </member>
+        <member name="T:DealPLC.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:DealPLC.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:DealPLC.Properties.Resources.Culture">
+            <summary>
+              重写当前线程的 CurrentUICulture 属性
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="M:DealPLC.ParLogicPLC.ClearTriggerValue">
+            <summary>
+            清空TriggerValue
+            </summary>
+        </member>
+        <member name="M:DealPLC.ReadExcelReg.CloseProcess(System.String)">
+            <summary>
+            关闭所有Excel进程
+            </summary>
+            <param name="process">"EXCEL"</param>
+        </member>
+        <member name="P:DealPLC.BaseRegPLC.NumReg">
+            <summary>
+            寄存器个数
+            </summary>
+        </member>
+        <member name="P:DealPLC.BaseRegPLC.Item(System.Int32)">
+            <summary>
+            索引器
+            </summary>
+        </member>
+        <member name="M:DealPLC.BaseRegPLC.WriteIni">
+            <summary>
+            写入保存Ini
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.BaseRegPLC.ReadIni">
+            <summary>
+             读取寄存器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.BaseRegPLC.CreateRegWrite">
+            <summary>
+            创建可以写入PLC的寄存器
+            </summary>
+        </member>
+        <member name="T:DealPLC.BitReg_enum">
+            <summary>
+            寄存器位数
+            </summary>
+        </member>
+        <member name="T:DealPLC.BaseUCReg">
+            <summary>
+            PLCRegBase.xaml 的交互逻辑
+            </summary>
+            <summary>
+            BaseUCReg
+            </summary>
+        </member>
+        <member name="P:DealPLC.BaseUCReg.NameReg">
+            <summary>
+            寄存器
+            </summary>
+        </member>
+        <member name="P:DealPLC.BaseUCReg.NameReg_Custom">
+            <summary>
+            自定义寄存器
+            </summary>
+        </member>
+        <member name="P:DealPLC.BaseUCReg.NameCo">
+            <summary>
+            换算系数
+            </summary>
+        </member>
+        <member name="M:DealPLC.BaseUCReg.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealPLC.BaseUCReg.Init(DealPLC.BaseRegPLC,System.String)">
+            <summary>
+            初始化
+            </summary>
+            <param name="R_I">不同类型实例</param>
+            <param name="strName">标题</param>
+        </member>
+        <member name="M:DealPLC.BaseUCReg.btnCreate_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            初始创建寄存器
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealPLC.BaseUCReg.CreateRegTwo">
+            <summary>
+            按照两个D寄存器进行生成
+            </summary>
+        </member>
+        <member name="M:DealPLC.BaseUCReg.dudNumReg_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            设置寄存器的个数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealPLC.BaseUCReg.SaveEvent">
+            <summary>
+            是否触发保存事件,只有相机寄存器和监控寄存器会触发
+            </summary>
+        </member>
+        <member name="M:DealPLC.BaseUCReg.RefreshDG">
+            <summary>
+            刷新列表数据
+            </summary>
+        </member>
+        <member name="M:DealPLC.BaseUCReg.InitLanguage">
+            <summary>
+            初始化语言
+            </summary>
+        </member>
+        <member name="M:DealPLC.BaseUCReg.btnInputExcel_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            从Excel表格中导入寄存器
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealPLC.BaseUCReg.SetRegFromExcel(System.Object)">
+            <summary>
+            导入excel
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:DealPLC.BaseUCReg.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealPLC.RegConfigPar.GetAnnotaion">
+            <summary>
+            获取注释
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.UCSetRegConfigPar.SetRegFromExcel(System.Object)">
+            <summary>
+            导入excel
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="P:DealPLC.RegData.Annotation">
+            <summary>
+            注释
+            </summary>
+        </member>
+        <member name="M:DealPLC.RegData.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:DealPLC.UCSetRegData.btnCreate_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            初始创建寄存器
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:DealPLC.RegCameraData.NumReg">
+             <summary>
+            寄存器个数
+             </summary>
+        </member>
+        <member name="T:DealPLC.RegData2">
+            <summary>
+            数据寄存器2
+            </summary>
+        </member>
+        <member name="P:DealPLC.RegData2.Annotation">
+            <summary>
+            注释
+            </summary>
+        </member>
+        <member name="M:DealPLC.RegData2.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:DealPLC.UCSetRegData2.btnCreate_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            初始创建寄存器
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:DealPLC.RegData3">
+            <summary>
+            数据寄存器3
+            </summary>
+        </member>
+        <member name="P:DealPLC.RegData3.Annotation">
+            <summary>
+            注释
+            </summary>
+        </member>
+        <member name="M:DealPLC.RegData3.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:DealPLC.UCSetRegData3.btnCreate_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            初始创建寄存器
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:DealPLC.RegData4.Annotation">
+            <summary>
+            注释
+            </summary>
+        </member>
+        <member name="M:DealPLC.RegData4.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:DealPLC.UCSetRegData4.btnCreate_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            初始创建寄存器
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:DealPLC.RegData5.Annotation">
+            <summary>
+            注释
+            </summary>
+        </member>
+        <member name="M:DealPLC.RegData5.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:DealPLC.UCSetRegData5.btnCreate_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            初始创建寄存器
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:DealPLC.RegData6">
+            <summary>
+            数据寄存器6
+            </summary>
+        </member>
+        <member name="P:DealPLC.RegData6.Annotation">
+            <summary>
+            注释
+            </summary>
+        </member>
+        <member name="M:DealPLC.RegData6.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:DealPLC.UCSetRegData6.btnCreate_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            初始创建寄存器
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:DealPLC.UCSetRegCycle">
+            <summary>
+            UCSetRegCycle.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCSetRegCycle
+            </summary>
+        </member>
+        <member name="M:DealPLC.UCSetRegCycle.CreateCycReg">
+            <summary>
+            按照触发寄存器以及数据寄存器的配置，生产循环读取寄存器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.UCSetRegCycle.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:DealPLC.RegMonitor.NumReg">
+            <summary>
+            数据总个数,
+            </summary>
+        </member>
+        <member name="P:DealPLC.RegMonitor.PLCSendPC">
+            <summary>
+            PLCPC传输方向
+            </summary>
+        </member>
+        <member name="P:DealPLC.RegMonitor.PCSendPLC">
+            <summary>
+            PCPLC传输方向
+            </summary>
+        </member>
+        <member name="P:DealPLC.RegMonitor.Annotation">
+            <summary>
+            注释
+            </summary>
+        </member>
+        <member name="P:DealPLC.RegMonitor.Co">
+            <summary>
+            数据寄存器的系数
+            </summary>
+        </member>
+        <member name="P:DealPLC.RegMonitor.Item(System.Int32)">
+            <summary>
+            索引器,索引保留值寄存器
+            </summary>
+        </member>
+        <member name="T:DealPLC.UCSetRegMonitor">
+            <summary>
+            监控寄存器
+            </summary>
+        </member>
+        <member name="M:DealPLC.ParSetTime.ReadIni">
+            <summary>
+            读取时间设置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.ParSetTime.WriteIni">
+            <summary>
+            写时间设置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealPLC.ParSetTime.SetLocalTime(System.String@)">
+            <summary>
+            设置系统时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DealPLC.SetLocalTime">
+            <summary>
+            SetLocalTime.xaml 的交互逻辑
+            </summary>
+            <summary>
+            SetLocalTime
+            </summary>
+        </member>
+        <member name="M:DealPLC.SetLocalTime.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealPLC.SetLocalTime.btnSaveTime_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            baocun
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealPLC.SetLocalTime.btnSetTime_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            设置时间
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealPLC.SetLocalTime.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealPLC.UCSetTypePLC">
+            <summary>
+            TypePLC.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCSetTypePLC
+            </summary>
+        </member>
+        <member name="M:DealPLC.UCSetTypePLC.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealPLC.UCSetTypePLC.cboPLCModel_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择PLC型号
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealPLC.UCSetTypePLC.tsbSingleWrite_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            PLC独立写通道
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealPLC.UCSetTypePLC.ShowIPPort">
+            <summary>
+            根据不同的PLC，是否显示IP配置
+            </summary>
+        </member>
+        <member name="M:DealPLC.UCSetTypePLC.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealPLC.ParSetPLC">
+            <summary>
+            设置PLC
+            </summary>
+        </member>
+        <member name="M:DealPLC.ParSetPLC.ReadIni">
+            <summary>
+            读取参数
+            </summary>
+        </member>
+        <member name="M:DealPLC.ParSetPLC.ReadIniTypePLC">
+            <summary>
+            读取参数
+            </summary>
+        </member>
+        <member name="M:DealPLC.ParSetPLC.ReadCommonReserve">
+            <summary>
+            读取机器人初始点位
+            </summary>
+        </member>
+        <member name="M:DealPLC.ParSetPLC.WrtiteIniTypePLC">
+            <summary>
+            写入参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:DealPLC.ParSetPLC.TypePLC_e">
+            <summary>
+            PLC类型
+            </summary>
+        </member>
+        <member name="F:DealPLC.ParSetPLC.Port">
+            <summary>
+            通用端口
+            </summary>
+        </member>
+        <member name="F:DealPLC.ParSetPLC.PortWrite1">
+            <summary>
+            写入端口
+            </summary>
+        </member>
+        <member name="F:DealPLC.ParSetPLC.BlWritePort1">
+            <summary>
+            写端口
+            </summary>
+        </member>
+        <member name="M:DealPLC.ParSetPLC.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:DealPLC.TypePLC_enum">
+            <summary>
+            PLC类型枚举
+            </summary>
+        </member>
+        <member name="T:DealPLC.WinSetPLC">
+            <summary>
+            SetPLC.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinSetPLC
+            </summary>
+        </member>
+        <member name="M:DealPLC.WinSetPLC.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealPLC.WinSetPLC.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealPLC.WriteInfo_PLCSim">
+            <summary>
+            写入的仿真信息
+            </summary>
+        </member>
+        <member name="M:DealPLC.WriteInfo_PLCSim.WriteInfo``1(System.String,``0)">
+            <summary>
+            记录写的内容
+            </summary>
+        </member>
+        <member name="M:DealPLC.WriteInfo_PLCSim.ClearTriggerValue(System.String,System.Double)">
+            <summary>
+            判断，清除模拟寄存器对应数组中的值
+            </summary>
+        </member>
+        <member name="M:DealPLC.WriteInfo_PLCSim.WriteInfo``1(System.String,``0[])">
+            <summary>
+            记录写的内容
+            </summary>
+            <param name="reg"></param>
+            <param name="value"></param>
+        </member>
+        <member name="T:DealPLC.WaitforClear">
+            <summary>
+            等待被清除
+            </summary>
+        </member>
+        <member name="P:DealPLC.WaitforClear.Item(System.Int32)">
+            <summary>
+            索引器
+            </summary>
+        </member>
+        <member name="M:DealPLC.WaitforClear.Clear">
+            <summary>
+            清空列表
+            </summary>
+        </member>
+        <member name="T:DealPLC.DataFlow_enum">
+            <summary>
+            数据流转方向
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

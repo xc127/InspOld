@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StdPoint Num="" >
+  <Home>
+    <Input>
+      <Vaccum Enable="false" No="8" WaitTime="1" NGIO="30" NGPos="1" Annotation=""/>
+      
+      <InputIO1 Enable="false" No="8" WaitTime="1" NGIO="30" OKPos="1" NGPos="1" Annotation=""/>
+      <InputIO2 Enable="false" No="8" WaitTime="1" NGIO="30" OKPos="1" NGPos="1" Annotation=""/>
+      <InputIO3 Enable="false" No="8" WaitTime="1" NGIO="30" OKPos="1" NGPos="1" Annotation=""/>
+      <InputIO4 Enable="false" No="8" WaitTime="1" NGIO="30" OKPos="1" NGPos="1" Annotation=""/>
+
+      <PC Enable="false" WaitTime="1" NGIO="30" OKPos="1" NGPos="1" Annotation=""/>
+      <PCCMD XChange="false" YChange="false" ZChange="false" RChange="false" Annotation=""/>
+    </Input>
+
+    <Move>
+      <Vel Enable="false" Power="High" Vel="100" Acc="100"  Annotation=""/>
+      <Move Type="Stay"  Annotation=""/>
+      <Des X="0" Y="0" Z="0" R="0" Arm="Left" Annotation=""/>
+      <PassCMD HereMove="false" Num="1" Z="Relative" R="Relative"/>
+      <Here X="0" Y="0" Z="0" R="0" Arm="Left" Annotation=""/>
+      <Pass1 X="0" Y="0" Z="0" R="0" Arm="Left" Annotation=""/>
+      <Pass2 X="0" Y="0" Z="0" R="0" Arm="Left" Annotation=""/>
+      <Pass3 X="0" Y="0" Z="0" R="0" Arm="Left" Annotation=""/>
+    </Move>
+
+    <Out>
+      <OutIO Enable="false" IO="1" WaitTime="1" Annotation=""/>
+      <OutVaccum Vaccum="Close" Blow="true"  WaitTime="1" Annotation=""/>
+      <OutPC Enable="false" Type="Camera1" CMD="0" NGIO="1" Annotation=""/>
+
+      <NextPos No="1" Annotation=""/>
+
+      <PrintInfo PrintRobot="false" PrintPC="false"  Annotation=""/>
+    </Out>
+
+  </Home>
+
+  <Pos0>
+
+  </Pos0>
+</StdPoint>

@@ -1,0 +1,85 @@
+﻿<BasicClass:BaseWindow x:Class="DealLog.WinRecover"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:MetroControls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:BasicClass="clr-namespace:BasicClass;assembly=BasicClass"
+        xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib" 
+        Title="历史参数恢复" Height="600" Width="1200" Topmost="True" ShowMaxRestoreButton="False" Loaded="BaseMetroWindow_Loaded" WindowStartupLocation="CenterScreen" Closing="BaseMetroWindow_Closing" BorderBrush="#FF00D1E5" BorderThickness="1">
+<Window.Resources>
+        <ResourceDictionary>
+           
+
+            <XmlDataProvider x:Key="TypeRecvoer" Source="../XmlTemplate/XmlTypeRecvoer.xml" XPath="Root"/>
+
+            <Style x:Key="TVIStyle" TargetType="TreeViewItem"  BasedOn="{StaticResource {x:Type TreeViewItem}}">
+                <Setter Property="IsExpanded" Value="{Binding XPath=@IsExpanded}"></Setter>
+            </Style>
+
+            <!--<HierarchicalDataTemplate DataType="Root" ItemsSource="{Binding XPath=Title}">
+                <TextBlock Text="{Binding XPath=@Name}"></TextBlock>
+            </HierarchicalDataTemplate>-->
+
+            <!--<HierarchicalDataTemplate DataType="Title" ItemsSource="{Binding XPath=Function}">
+                <TextBlock Text="{Binding XPath=@Name}"></TextBlock>
+            </HierarchicalDataTemplate>-->
+
+            <!--<HierarchicalDataTemplate DataType="Function" >
+                <TextBlock Text="{Binding XPath=@Name}"></TextBlock>
+            </HierarchicalDataTemplate>-->
+
+        </ResourceDictionary>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="4*" />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1"  HorizontalAlignment="Stretch" Margin="0" Name="grid1" VerticalAlignment="Stretch">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="184*" />
+                <RowDefinition Height="191*" />
+            </Grid.RowDefinitions>
+            <ControlLib:NGroupBox Grid.Row="0" TitleBrush="#FF00D1E5" Foreground="Black" HorizontalAlignment="Stretch" Header="文件目录" Margin="2" BorderBrush="#FF00D1E5" BorderThickness="1">
+                <Grid Name="gdLayout">
+                    <DataGrid AllowDrop="True" AreRowDetailsFrozen="True" AutoGenerateColumns="False" Background="White" BorderThickness="1" CanUserAddRows="False" CanUserResizeColumns="False" CanUserSortColumns="False" FontSize="13" GridLinesVisibility="All" HorizontalAlignment="Stretch" IsReadOnly="true" ItemsSource="{Binding}" Name="dgDir" VerticalAlignment="Stretch" Margin="1" SelectionChanged="dgDir_SelectionChanged">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding No}" Header="" Width="35" IsReadOnly="True"/>
+                            <DataGridTextColumn Binding="{Binding Date}" Header="日期" Width="100" IsReadOnly="True"/>
+                            <DataGridTextColumn Binding="{Binding Time}" Header="时间" Width="100" />
+                            <DataGridTextColumn Binding="{Binding Reason}" Header="备份原因" Width="500" />
+                            <DataGridTextColumn Binding="{Binding PathSourceShow}" Header="文件原路径" Width="550" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </ControlLib:NGroupBox>
+            <ControlLib:NGroupBox Foreground="Black" Header="文件夹目录" HorizontalAlignment="Stretch" TitleBrush="#FF00D1E5" Grid.Row="1" Margin="2">
+                <Grid Name="grid2">
+                    <DataGrid AllowDrop="True" AreRowDetailsFrozen="True" AutoGenerateColumns="False" Background="White" BorderThickness="1" CanUserAddRows="False" CanUserResizeColumns="False" CanUserSortColumns="False" FontSize="13" GridLinesVisibility="All" HorizontalAlignment="Stretch" IsReadOnly="true" ItemsSource="{Binding}" Margin="1" Name="dgFile" VerticalAlignment="Stretch">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding No}" Header="" IsReadOnly="True" Width="35" />
+                            <DataGridTextColumn Binding="{Binding Name}" Header="名称" IsReadOnly="True" Width="150" />
+                            <DataGridTextColumn Binding="{Binding Type}" Header="类型" Width="60" />
+                            <DataGridTextColumn Binding="{Binding Path}" Header="路径" Width="700" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </ControlLib:NGroupBox>
+        </Grid>
+        <Grid HorizontalAlignment="Stretch" Margin="0" Name="grid3" VerticalAlignment="Stretch">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <TreeView BorderBrush="#CC119EDA" BorderThickness="1" ItemsSource="{Binding Source={StaticResource TypeRecvoer}}" Margin="2" Name="tvBackup" VerticalAlignment="Stretch" FontSize="14" SelectedItemChanged="tvBackup_SelectedItemChanged">
+                <TreeView.ItemContainerStyle>
+                    <Style BasedOn="{StaticResource TVIStyle}" TargetType="TreeViewItem" />
+                </TreeView.ItemContainerStyle>
+            </TreeView>
+
+            <ControlLib:ButtonColor Background="#FF66FFFF" Content="恢复参数" FontSize="14" Height="40" HorizontalAlignment="Center" Margin="0" Name="btnRecover" VerticalAlignment="Center" Width="120" Grid.Row="1" Click="btnRecover_Click" />
+            <ControlLib:ButtonColor Background="#FF66FFFF" Content="查看文件夹" FontSize="14" Height="40" HorizontalAlignment="Center" Margin="0" Name="btnLook" VerticalAlignment="Center" Width="120" Grid.Row="2" Click="btnLook_Click" />
+        </Grid>
+    </Grid>
+</BasicClass:BaseWindow>

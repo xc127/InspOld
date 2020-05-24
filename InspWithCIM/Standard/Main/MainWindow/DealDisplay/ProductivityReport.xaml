@@ -1,0 +1,23 @@
+﻿<Window x:Class="Main.ProductivityReport"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Main"
+        mc:Ignorable="d"
+        Title="ProductivityReport" Height="450" Width="800" Loaded="Window_Loaded">
+	<Grid>
+		<DataGrid  AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" ItemsSource="{Binding}" HorizontalAlignment="Stretch" Name="ProReportDG" VerticalAlignment="Stretch" >
+			<DataGrid.Columns>
+				<DataGridTextColumn Binding="{Binding Date}" Width="150" Header="日期"></DataGridTextColumn>
+				<DataGridTextColumn Binding="{Binding NumAll}" Width="*" Header="总产量"></DataGridTextColumn>
+				<DataGridTextColumn Binding="{Binding NumNG}" Width="*" Header="NG"></DataGridTextColumn>
+				<DataGridTextColumn Binding="{Binding NumNGCorner}" Width="*" Header="破角"></DataGridTextColumn>
+				<DataGridTextColumn Binding="{Binding NumNGShell}" Width="*" Header="贝壳"></DataGridTextColumn>
+				<DataGridTextColumn Binding="{Binding NumNGOther}" Width="*" Header="凹凸边"></DataGridTextColumn>
+				<DataGridTextColumn Binding="{Binding CodeNG}" Width="*" Header="读码NG"></DataGridTextColumn>
+				<DataGridTextColumn Binding="{Binding ChipIDNG}" Width="*" Header="ChipID过账NG"></DataGridTextColumn>
+			</DataGrid.Columns>
+		</DataGrid>
+	</Grid>
+</Window>

@@ -1,0 +1,1094 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DealDisplay</name>
+    </assembly>
+    <members>
+        <member name="T:DealDisplay.TypeDisplay">
+            <summary>
+            TypeLocation.xaml 的交互逻辑
+            </summary>
+            <summary>
+            TypeDisplay
+            </summary>
+        </member>
+        <member name="M:DealDisplay.TypeDisplay.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealDisplay.BaseParDisplay.ReadXmlChildInit(System.Xml.XmlElement)">
+            <summary>
+            初始化读取参数，和ReadXmlChild方法相比，只是不读取基础属性
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.BaseParDisplay.ReadXmlChild(System.Xml.XmlElement)">
+            <summary>
+            读取子元素的参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.BaseParDisplay.ReadBasicPar(System.Xml.XmlElement)">
+            <summary>
+            读取基础参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.BaseParDisplay.WriteXmlRoot">
+            <summary>
+            写入参数并获取参数的根节点，直接从资源里面读取，确保参数所有的节点都被读取到
+            </summary>
+            <returns>根节点</returns>
+        </member>
+        <member name="M:DealDisplay.BaseParDisplay.WriteXmlChild(System.Xml.XmlElement)">
+            <summary>
+            在根节点中，写入参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.BaseParDisplay.WriteBasicAttribute(System.Xml.XmlElement)">
+            <summary>
+            写入基础属性
+            </summary>
+            <param name="xeRoot">跟节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.BaseParDisplay.LoadXmlStream(System.String)">
+            <summary>
+            加载资源中Xml文档
+            </summary>
+            <param name="Path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.BaseParDisplay.LoadXmlStream(System.String,System.String)">
+            <summary>
+            加载本地或者资源中的xml
+            </summary>
+            <param name="Path"></param>
+            <param name="PathStream"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.ParDisplayCross.WriteXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            写入参数到xml节点
+            </summary>
+            <param name="xDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.BaseParHObjectReference.ReadXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            初始化加载的时候读取根元素     
+            </summary>
+        </member>
+        <member name="M:DealDisplay.BaseParHObjectReference.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            记载整个配置文件的时候，读取参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.BaseParHObjectReference.ReadXmlPar(System.Xml.XmlElement)">
+            <summary>
+            读取算法参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.BaseParHObjectReference.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.BaseParHObjectReference.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            算法参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.ParDisplayImage.ReadXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            初始化加载的时候读取根元素     
+            </summary>
+            <param name="xDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.ParDisplayImage.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            记载整个配置文件的时候，读取参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.ParDisplayImage.ReadXmlPar(System.Xml.XmlElement)">
+            <summary>
+            读取算法参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.ParDisplayImage.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.ParDisplayImage.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            算法参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealDisplay.UCHObjectReference">
+            <summary>
+            UCHObjectReference.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCHObjectReference
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReference.Init(DealDisplay.BaseParHObjectReference,BasicComprehensive.CellHObjectReference)">
+            <summary>
+            
+            </summary>
+            <param name="baseParImageReference">关联的算法单元</param>
+            <param name="cellReference">关联的算法单元</param>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReference.cboCellDImage_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            切换算法
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReference.dgResultReference_MouseDoubleClick(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            双击单元格，输出选择的图像名称
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReference.tsbOverlap_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            是否叠加显示
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReference.cboColorOverlap_ColorChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.String})">
+            <summary>
+            叠加颜色
+            </summary>        
+        </member>
+        <member name="M:DealDisplay.UCHObjectReference.cboTypeFill_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            填充类型
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReference.ShowPar">
+            <summary>
+            显示所有的参数
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReference.VisibleCtrOverlap(System.Boolean)">
+            <summary>
+            显示隐藏控件
+            </summary>
+            <param name="blVisible"></param>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReference.ShowNameImage">
+            <summary>
+            显示选择图像名称
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReference.ShowCellImage">
+            <summary>
+            显示图像关联单元
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReference.CreateResultReference(System.Int32)">
+            <summary>
+            图像图形结果列表
+            </summary>
+            <param name="index">算法单元索引号</param>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReference.RefreshDgResultHObject">
+            <summary>
+            图像名称列表
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReference.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealDisplay.WinDisplayCross">
+            <summary>
+            WinDisplayCross.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinDisplayCross
+            </summary>
+        </member>
+        <member name="M:DealDisplay.WinDisplayCross.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealDisplay.FunDisplayResultInfo.DisplayResultInfo(BasicDisplay.BaseUCDisplay,DealResult.BaseResult)">
+            <summary>
+            显示字符
+            </summary>
+            <param name="baseUCDisplay"></param>
+            <param name="baseResult"></param>
+        </member>
+        <member name="M:DealDisplay.FunDisplayResultInfo.DisplayStr(BasicDisplay.BaseUCDisplay,DealResult.BaseResult)">
+            <summary>
+            显示字符串
+            </summary>
+            <param name="baseUCDisplay"></param>
+            <param name="baseResult"></param>
+        </member>
+        <member name="M:DealDisplay.FunDisplayResultInfo.DisplayResult(BasicDisplay.BaseUCDisplay,DealResult.BaseResult)">
+            <summary>
+            显示结果
+            </summary>
+            <param name="baseUCDisplay"></param>
+            <param name="baseResult"></param>
+        </member>
+        <member name="T:DealDisplay.UCDisplaySum4">
+            <summary>
+            UCDisplaySum3.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCDisplaySum4
+            </summary>
+        </member>
+        <member name="M:DealDisplay.BaseUCDisplaySum.LoginEvent">
+            <summary>
+            事件注册
+            </summary>
+        </member>
+        <member name="M:DealDisplay.BaseUCDisplaySum.CreateUCDisplay">
+            <summary>
+            实例化单个显示窗口类，并初始化设置
+            </summary>
+        </member>
+        <member name="M:DealDisplay.BaseUCDisplaySum.ShowCameraWin(BasicDisplay.BaseParSetDisplay)">
+            <summary>
+            采用窗体显示
+            </summary>
+        </member>
+        <member name="M:DealDisplay.BaseUCDisplaySum.ShowStateCamera(System.Boolean,Camera.BaseWinCamera,System.Int32)">
+            <summary>
+            显示相机打开状态
+            </summary>
+            <param name="blState"></param>
+            <param name="baseWinCamera"></param>
+            <param name="noCamera"></param>
+        </member>
+        <member name="M:DealDisplay.BaseUCDisplaySum.InitGrabImage(BasicDisplay.BaseParSetDisplay)">
+            <summary>
+            初始化抓取图像
+            </summary>
+        </member>
+        <member name="M:DealDisplay.BaseUCDisplaySum.ShowCameraCtr(BasicDisplay.BaseParSetDisplay,System.Int32)">
+            <summary>
+            采用控件显示
+            </summary>
+        </member>
+        <member name="M:DealDisplay.BaseUCDisplaySum.ShowStateCamera(System.Boolean,BasicDisplay.BaseUCDisplay,System.Int32)">
+            <summary>
+            显示相机打开状态
+            </summary>
+            <param name="blState"></param>
+            <param name="baseWinCamera"></param>
+            <param name="noCamera"></param>
+        </member>
+        <member name="M:DealDisplay.BaseUCDisplaySum.InitGrabImage(BasicDisplay.BaseUCDisplay,BasicDisplay.BaseParSetDisplay)">
+            <summary>
+            初始化抓取图像
+            </summary>
+        </member>
+        <member name="M:DealDisplay.BaseUCDisplaySum.g_BaseUCDisplay_CameraError_event(System.String)">
+            <summary>
+            相机错误事件响应
+            </summary>
+        </member>
+        <member name="M:DealDisplay.BaseUCDisplaySum.EnableBtnPhotoCtr(System.Boolean)">
+            <summary>
+            使能控制拍照等按钮
+            </summary>
+            <param name="blEnable"></param>
+        </member>
+        <member name="M:DealDisplay.BaseUCDisplaySum.StopRealImage">
+            <summary>
+            将相机停止实时显示
+            </summary>
+        </member>
+        <member name="M:DealDisplay.BaseUCDisplaySum.ShowState(System.String,System.Boolean)">
+            <summary>
+            显示状态信息
+            </summary>
+            <param name="info"></param>
+            <param name="Result"></param>
+        </member>
+        <member name="M:DealDisplay.BaseUCDisplaySum.ShowAlarm(System.String)">
+            <summary>
+            显示报警信息
+            </summary>
+            <param name="alarm"></param>
+        </member>
+        <member name="M:DealDisplay.BaseUCDisplaySum.ClearDisplay(System.Int32)">
+            <summary>
+            清空绘制显示
+            </summary>
+        </member>
+        <member name="M:DealDisplay.BaseUCDisplaySum.ClearDisplayAll">
+            <summary>
+            清空所有相机
+            </summary>
+        </member>
+        <member name="M:DealDisplay.BaseUCDisplaySum.ShowWinError_Invoke(System.String)">
+            <summary>
+            显示报警窗体
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:DealDisplay.BaseUCDisplaySum.HidePPResult">
+            <summary>
+            隐藏Popup
+            </summary>
+        </member>
+        <member name="M:DealDisplay.BaseUCDisplaySum.VisiblePPResult">
+            <summary>
+            显示控件
+            </summary>
+        </member>
+        <member name="M:DealDisplay.BaseUCDisplaySum.UnVisiblePPResult">
+            <summary>
+            显示控件
+            </summary>
+        </member>
+        <member name="M:DealDisplay.BaseUCDisplaySum.MovePPResult">
+            <summary>
+            移动Popup
+            </summary>
+        </member>
+        <member name="P:DealDisplay.BaseUCDisplaySum.BlRealImageWin">
+            <summary>
+            窗体实时
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCDisplaySum4.CreateUCDisplay">
+            <summary>
+            创建显示控件
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCDisplaySum4.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealDisplay.FunDisplayResultShape.AddDisplay(DealDisplay.ParDisplayResultShape,DealResult.BaseResult)">
+            <summary>
+            将产生的结果，添加到结果类显示
+            </summary>
+            <param name="parDisplayResult"></param>
+            <param name="baseResult"></param>
+        </member>
+        <member name="M:DealDisplay.FunDisplayResultShape.ShowResult(BasicDisplay.BaseUCDisplay,DealResult.BaseResult)">
+            <summary>
+            将结果显示出来
+            </summary>
+            <param name="baseUCCamera"></param>
+            <param name="parDisplayResult"></param>
+            <param name="baseParResult"></param>
+        </member>
+        <member name="M:DealDisplay.FunDisplayResultShape.DispAssistCross(BasicDisplay.BaseUCDisplay)">
+            <summary>
+            辅助十字
+            </summary>
+            <param name="baseUCDisplay"></param>
+        </member>
+        <member name="M:DealDisplay.FunDisplayResultShape.DispCircle(BasicDisplay.BaseUCDisplay)">
+            <summary>
+            绘制圆
+            </summary>
+            <param name="baseUCDisplay"></param>
+        </member>
+        <member name="M:DealDisplay.FunDisplayResultShape.DispEllipse(BasicDisplay.BaseUCDisplay)">
+            <summary>
+            绘制椭圆
+            </summary>
+            <param name="baseUCDisplay"></param>
+        </member>
+        <member name="M:DealDisplay.FunDisplayResultShape.DispMCircle(BasicDisplay.BaseUCDisplay)">
+            <summary>
+            绘制M圆
+            </summary>
+            <param name="baseUCDisplay"></param>
+        </member>
+        <member name="M:DealDisplay.FunDisplayResultShape.ShowResult(BasicDisplay.BaseUCDisplay,DealResult.BaseResult,System.Int32)">
+            <summary>
+            将结果显示出来
+            </summary>
+            <param name="baseUCCamera"></param>
+            <param name="parDisplayResult"></param>
+            <param name="baseParResult"></param>
+        </member>
+        <member name="T:DealDisplay.UCHObjectReferenceDisplay">
+            <summary>
+            UCHObjectReference.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCHObjectReferenceDisplay
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReferenceDisplay.Init(DealDisplay.BaseParHObjectReference,BasicComprehensive.CellHObjectReference)">
+            <summary>
+            用来显示和选择记录中间过程
+            </summary>
+            <param name="baseParImageReference">关联的算法单元</param>
+            <param name="cellReference">关联的算法单元</param>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReferenceDisplay.cboCellDImage_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            切换算法
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReferenceDisplay.tsbOverlap_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            是否叠加显示
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReferenceDisplay.cboColorOverlap_ColorChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.String})">
+            <summary>
+            叠加颜色
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>             
+        </member>
+        <member name="M:DealDisplay.UCHObjectReferenceDisplay.cboTypeFill_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            填充类型
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReferenceDisplay.Save">
+            <summary>
+            保存
+            </summary>       
+        </member>
+        <member name="M:DealDisplay.UCHObjectReferenceDisplay.SaveImage">
+            <summary>
+            保存存储图片相关
+            </summary>       
+        </member>
+        <member name="M:DealDisplay.UCHObjectReferenceDisplay.HideDisplayShow(System.String)">
+            <summary>
+            隐藏掉某一列
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReferenceDisplay.ChangeHearName(System.String,System.String)">
+            <summary>
+            改变Column
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReferenceDisplay.ShowPar">
+            <summary>
+            显示所有的参数
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReferenceDisplay.ShowNameImage">
+            <summary>
+            显示选择的单元算法
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReferenceDisplay.ShowCellImage">
+            <summary>
+            显示图像关联单元
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReferenceDisplay.CreateResultReference(System.Int32)">
+            <summary>
+            图像图形结果列表
+            </summary>
+            <param name="index">算法单元索引号</param>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReferenceDisplay.RefreshDgResultHObject">
+            <summary>
+            图像名称列表
+            </summary>
+        </member>
+        <member name="F:DealDisplay.UCHObjectReferenceDisplay.btnSave">
+            <summary>
+            btnSave Name Field
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCHObjectReferenceDisplay.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealDisplay.UCDisplaySum8">
+            <summary>
+            UCDisplaySum5.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCDisplaySum8
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCDisplaySum8.CreateUCDisplay">
+            <summary>
+            创建显示控件
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCDisplaySum8.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealDisplay.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:DealDisplay.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:DealDisplay.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="F:DealDisplay.ParDisplayResultShape.colorEnvelope">
+            <summary>
+            包络颜色
+            </summary>
+        </member>
+        <member name="F:DealDisplay.ParDisplayResultShape.typeFill">
+            <summary>
+            填充颜色
+            </summary>
+        </member>
+        <member name="F:DealDisplay.ParDisplayResultShape.colorCross">
+            <summary>
+            十字
+            </summary>
+        </member>
+        <member name="M:DealDisplay.ParDisplayResultShape.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            从根节点读取参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.ParDisplayResultShape.ReadXmlPar(System.Xml.XmlElement)">
+            <summary>
+            读取该算法的参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.ParDisplayResultShape.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            写入参数到xml节点
+            </summary>
+            <param name="xDocStream"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.ParDisplayResultShape.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            写入参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealDisplay.UCDisplaySum3">
+            <summary>
+            UCDisplaySum3.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCDisplaySum3
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCDisplaySum3.CreateUCDisplay">
+            <summary>
+            创建显示控件
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCDisplaySum3.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealDisplay.FunDisplayImage.DealDisplayImage(DealDisplay.ParDisplayImage,System.Collections.Hashtable,System.Collections.Hashtable)">
+            <summary>
+            显示图像到指定的窗口
+            </summary>
+            <param name="par"></param>
+            <param name="htUCDisplay"></param>
+            <param name="htResult"></param>
+        </member>
+        <member name="M:DealDisplay.FunDisplayImage.DisplayTestRunImage(DealDisplay.BaseParHObjectReference,BasicDisplay.BaseUCDisplay,DealResult.BaseResult,BasicClass.ImageAll)">
+            <summary>
+            显示测试图像到画面
+            </summary>
+            <param name="baseParHObjectReference"></param>
+            <param name="baseUCDisplay"></param>
+            <param name="baseResult"></param>
+            <param name="imageOriginal"></param>
+        </member>
+        <member name="M:DealDisplay.FunDisplayImage.GetHtImage(BasicComprehensive.CellReference,BasicComprehensive.HObjectReference,System.Collections.Hashtable)">
+            <summary>
+            从哈希表中获取图像
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.FunDisplayImage.GetHtImage(BasicComprehensive.HObjectReference,DealResult.BaseResult)">
+            <summary>
+            从结果类中，获取图像
+            </summary>
+            <param name="cellReference"></param>
+            <param name="resultImRef"></param>
+            <param name="baseResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.FunDisplayImage.GetHtHObject(BasicComprehensive.CellReference,BasicComprehensive.HObjectReference,System.Collections.Hashtable)">
+            <summary>
+            从哈希表中获取HObject,Region 或者XLD图像
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.FunDisplayImage.GetHtHObject(BasicComprehensive.HObjectReference,DealResult.BaseResult)">
+            <summary>
+            从单个结果类中获取HObject,Region 或者XLD图像
+            </summary>
+            <param name="resultImRef"></param>
+            <param name="baseResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.FunDisplayImage.GetResulHobjectAll_L(System.Collections.Generic.List{BasicComprehensive.HObjectReference},DealResult.BaseResult)">
+            <summary>
+            获取Object类型集合
+            </summary>
+            <param name="resultImRef"></param>
+            <param name="baseResult"></param>
+            <returns></returns>      
+        </member>
+        <member name="M:DealDisplay.FunDisplayImage.GetResulImageAll_L(System.Collections.Generic.List{BasicComprehensive.HObjectReference},DealResult.BaseResult,BasicClass.ImageAll)">
+            <summary>
+            获取Image类型集合
+            </summary>
+            <param name="resultImRef"></param>
+            <param name="baseResult"></param>
+            <returns></returns>      
+        </member>
+        <member name="M:DealDisplay.UCRegionReference.ShowResultHObject(System.Collections.Generic.List{BasicComprehensive.HObjectReference})">
+            <summary>
+            显示结果信息
+            </summary>
+            <param name="baseResultHObject"></param>
+        </member>
+        <member name="M:DealDisplay.UCRegionReference.Save">
+            <summary>
+            保存
+            </summary>       
+        </member>
+        <member name="T:DealDisplay.BaseWinDisplayImage">
+            <summary>
+            BaseWinDisplayImage.xaml 的交互逻辑
+            </summary>
+            <summary>
+            BaseWinDisplayImage
+            </summary>
+        </member>
+        <member name="M:DealDisplay.BaseWinDisplayImage.cboNameWinImage_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择显示窗口
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealDisplay.BaseWinDisplayImage.ShowWinDisplayList">
+            <summary>
+            显示窗口
+            </summary>
+        </member>
+        <member name="M:DealDisplay.BaseWinDisplayImage.HideSelectWin">
+            <summary>
+            隐藏窗口选择
+            </summary>
+        </member>
+        <member name="M:DealDisplay.BaseWinDisplayImage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealDisplay.WinDisplayImage.cboNameWinImage_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择显示窗口
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealDisplay.WinDisplayImage.ShowWinDisplayList">
+            <summary>
+            显示窗口
+            </summary>
+        </member>
+        <member name="M:DealDisplay.ParDisplayCamera.ReadXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            初始化加载的时候读取根元素     
+            </summary>
+            <param name="xDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.ParDisplayCamera.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            记载整个配置文件的时候，读取参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.ParDisplayCamera.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.ParDisplayCellResultShape.ReadXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            初始化加载的时候读取根元素     
+            </summary>
+            <param name="xDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.ParDisplayCellResultShape.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            记载整个配置文件的时候，读取参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.ParDisplayCellResultShape.ReadXmlPar(System.Xml.XmlElement)">
+            <summary>
+            读取算法参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.ParDisplayCellResultShape.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.ParDisplayCellResultShape.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            算法参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealDisplay.UCDisplaySum7">
+            <summary>
+            UCDisplaySum5.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCDisplaySum7
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCDisplaySum7.CreateUCDisplay">
+            <summary>
+            创建显示控件
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCDisplaySum7.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealDisplay.UCDisplaySum2">
+            <summary>
+            UCDisplaySum1.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCDisplaySum2
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCDisplaySum2.CreateUCDisplay">
+            <summary>
+            创建显示控件
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCDisplaySum2.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealDisplay.WinDisplayCellResultShape">
+            <summary>
+            WinDisplayCellResultShape.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinDisplayCellResultShape
+            </summary>
+        </member>
+        <member name="M:DealDisplay.WinDisplayCellResultShape.cboNameWinImage_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择显示窗口
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealDisplay.WinDisplayCellResultShape.btnSave_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            保存参数并且推出窗体
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealDisplay.WinDisplayCellResultShape.ShowWinDisplayList">
+            <summary>
+            显示窗口参数
+            </summary>
+        </member>
+        <member name="M:DealDisplay.WinDisplayCellResultShape.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealDisplay.UCDisplaySum6">
+            <summary>
+            UCDisplaySum5.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCDisplaySum6
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCDisplaySum6.CreateUCDisplay">
+            <summary>
+            创建显示控件
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCDisplaySum6.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealDisplay.UCDisplaySum1">
+            <summary>
+            UCDisplaySum1.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCDisplaySum1
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCDisplaySum1.CreateUCDisplay">
+            <summary>
+            创建显示控件
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCDisplaySum1.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="F:DealDisplay.ParDisplayResultInfo.colorFont">
+            <summary>
+            字体颜色
+            </summary>
+        </member>
+        <member name="M:DealDisplay.ParDisplayResultInfo.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            从本地文档读取参数的时候，读取
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:DealDisplay.ParDisplayResultInfo.ReadXmlPar(System.Xml.XmlElement)">
+            <summary>
+            读取算法参数
+            </summary>
+            <param name="xeRoot">算法参数根节点</param>
+            <returns>成功</returns>
+        </member>
+        <member name="M:DealDisplay.ParDisplayResultInfo.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            从Stream资源读取完整节点后，写入参数
+            </summary>
+            <param name="xDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDisplay.ParDisplayResultInfo.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            该算法参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="P:DealDisplay.ParDisplayResultInfo.Item(System.Int32)">
+            <summary>
+            索引器
+            </summary>
+        </member>
+        <member name="T:DealDisplay.UCDisplayResultInfo">
+            <summary>
+            UCResultInfo.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCDisplayResultInfo
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCDisplayResultInfo.Login_Event">
+            <summary>
+            事件注册
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCDisplayResultInfo.cboColorFont_ColorChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.String})">
+            <summary>
+            字体颜色
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>       
+        </member>
+        <member name="M:DealDisplay.UCDisplayResultInfo.cobSizeFont_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            字体大小
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealDisplay.UCDisplayResultInfo.dudColumn_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            列号
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealDisplay.UCDisplayResultInfo.dudRow_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            行号
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealDisplay.UCDisplayResultInfo.btnGetResult_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            引用算法结果
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealDisplay.UCDisplayResultInfo.RefreshFont">
+            <summary>
+            刷新字体
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCDisplayResultInfo.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealDisplay.UCDisplaySum5">
+            <summary>
+            UCDisplaySum5.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCDisplaySum5
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCDisplaySum5.CreateUCDisplay">
+            <summary>
+            创建显示控件
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCDisplaySum5.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealDisplay.UCDisplayResultShape">
+            <summary>
+            ParDisplayResultShape.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCDisplayResultShape
+            </summary>
+        </member>
+        <member name="M:DealDisplay.UCDisplayResultShape.cboColorResult_ColorChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.String})">
+            <summary>
+            包络
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>     
+        </member>
+        <member name="M:DealDisplay.UCDisplayResultShape.dudThicknessEnvelope_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            包络线宽
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealDisplay.UCDisplayResultShape.cboTypeFill_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            填充色
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealDisplay.UCDisplayResultShape.cboColorCross_ColorChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.String})">
+            <summary>
+            十字颜色
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>        
+        </member>
+        <member name="M:DealDisplay.UCDisplayResultShape.dudPixelXLineCross_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            线宽
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealDisplay.UCDisplayResultShape.dudLengthCross_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            十字长度
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealDisplay.UCDisplayResultShape.tsbShowCross_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            显示十字
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealDisplay.UCDisplayResultShape.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>

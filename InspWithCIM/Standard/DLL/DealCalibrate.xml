@@ -1,0 +1,2634 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DealCalibrate</name>
+    </assembly>
+    <members>
+        <member name="T:DealCalibrate.BaseParCalibrate">
+            <summary>
+            反射用
+            </summary>
+        </member>
+        <member name="F:DealCalibrate.BaseParCalibrate.g_ParCellExecuteReferenceForMult">
+            <summary>
+            多相机获取
+            </summary>
+        </member>
+        <member name="F:DealCalibrate.BaseParCalibrate.noCameraForCell">
+            <summary>
+            调用关联相机综合设置序号
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.BaseParCalibrate.GetPropForRef(System.String)">
+            <summary>
+            获取相关算子的相关名称
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.BaseParCalibrate.GetMethod(System.String)">
+            <summary>
+            获取窗体静态创建的方法
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.BaseParCalibrate.WriteXmlDefault">
+            <summary>
+            将参数保存到默认值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.BaseParCalibrate.WriteXmlRoot">
+            <summary>
+            写入参数并获取参数的根节点
+            </summary>
+            <returns>根节点</returns>
+        </member>
+        <member name="M:DealCalibrate.BaseParCalibrate.WriteXmlChild(System.Xml.XmlElement,System.Xml.XmlElement)">
+            <summary>
+            全局
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.BaseParCalibrate.ReadXmlChildInit(System.Xml.XmlElement)">
+            <summary>
+            初始化读取参数，和ReadXmlChild方法相比，只是不读取基础属性
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.BaseFunCalibrate.GetHtResultValue(System.String,System.Collections.Hashtable)">
+            <summary>
+            获取结果列表中的值
+            </summary>
+            <param name="type"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealCalibrate.TypeCalibrate_enum">
+            <summary>
+            校准的类型
+            </summary>
+        </member>
+        <member name="P:DealCalibrate.BaseUCCalibrate.Camera_L">
+            <summary>
+            相机Combox
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.BaseWinCalibrate">
+            <summary>
+            校准类算子基窗体
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.BaseWinCalibrate.TrriggerGetResultValue(DealAlgorithm.ParGetResultFromCell,DealCalibrate.BaseParCalibrate,BasicClass.HashAction)">
+            <summary>
+            执行关联算法
+            </summary>
+            <param name="par"></param>
+            <param name="baseParCalibrate"></param>
+            <param name="fun"></param>
+        </member>
+        <member name="M:DealCalibrate.BaseWinCalibrate.TrriggerGetResultValue_Mult(DealAlgorithm.ParGetResultFromCell,DealCalibrate.BaseParCalibrate,BasicClass.HashAction)">
+            <summary>
+            执行关联算法,多目
+            </summary>
+            <param name="par"></param>
+            <param name="baseParCalibrate"></param>
+            <param name="fun"></param>
+        </member>
+        <member name="M:DealCalibrate.BaseWinCalibrate.btnClose_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            退出窗体,恢复备份参数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.BaseWinCalibrate.LogOutEvent">
+            注销事件
+        </member>
+        <member name="M:DealCalibrate.FunCalibCameraAffine.CalCalibCameraAffine(DealCalibrate.ParCalibCameraAffine,System.Collections.Hashtable)">
+            <summary>
+            计算标定系数
+            </summary>
+            <param name="par"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibCameraAffine.SaveResultToStdResult(DealCalibrate.ParCalibCameraAffine,System.Collections.Hashtable)">
+            <summary>
+            讲计算出来的校准系数，存放到结果类中
+            </summary>
+            <param name="par"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibCameraAffine.SaveResultToPar(DealCalibrate.ParCalibCameraAffine,DealResult.ResultCalibCameraAffine)">
+            <summary>
+            将参数保存
+            </summary>
+            <param name="par"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.ParCalibCameraAffine.ReadXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            初始化加载的时候读取根元素     
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.ParCalibCameraAffine.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            记载整个配置文件的时候，读取参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+        </member>
+        <member name="M:DealCalibrate.ParCalibCameraAffine.ReadXmlPar(System.Xml.XmlElement)">
+            <summary>
+            读取算法参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+        </member>
+        <member name="M:DealCalibrate.ParCalibCameraAffine.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.ParCalibCameraAffine.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            算法参数
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.UCStdCalibCameraAffine">
+            <summary>
+            UCStdCalibCameraAffine.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCStdCalibCameraAffine
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCStdCalibCameraAffine.ShowPar">
+            <summary>
+            设置参数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCStdCalibCameraAffine.InitLanguage">
+            <summary>
+            语言
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCStdCalibCameraAffine.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.UCParCalibCameraAffine">
+            <summary>
+            UCParCalibAffine.xaml 的交互逻辑20181203-zx
+            </summary>
+            <summary>
+            UCParCalibCameraAffine
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibCameraAffine.tsbUsingDelta_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            是否使用偏差
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibCameraAffine.dudX_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            X偏差
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibCameraAffine.dudY_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            Y偏差
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibCameraAffine.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.UCPixelCalibCameraAffine">
+            <summary>
+            UCCalibCameraHomo.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCPixelCalibCameraAffine
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCPixelCalibCameraAffine.LoginEvent">
+            <summary>
+            注册事件
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCPixelCalibCameraAffine.uCResultValueOfCell_GetResultValue_event(DealAlgorithm.ParGetResultFromCell,BasicClass.HashAction)">
+            <summary>
+            触发获取坐标事件，同时保存执行算法关联单元
+            </summary>
+            <param name="par"></param>
+            <param name="fun"></param>
+        </member>
+        <member name="M:DealCalibrate.UCPixelCalibCameraAffine.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.UCStdPointCalibCameraAffine">
+            <summary>
+            UCCalibCameraHomo.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCStdPointCalibCameraAffine
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCStdPointCalibCameraAffine.LoginEvent">
+            <summary>
+            注册事件
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCStdPointCalibCameraAffine.uCResultValueOfCell_GetResultValue_event(DealAlgorithm.ParGetResultFromCell,BasicClass.HashAction)">
+            <summary>
+            触发获取坐标事件，同时保存执行算法关联单元
+            </summary>
+            <param name="par"></param>
+            <param name="fun"></param>
+        </member>
+        <member name="M:DealCalibrate.UCStdPointCalibCameraAffine.btnSure_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            切换相机综合设置，来控制执行合关联
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCStdPointCalibCameraAffine.ShowTitleCellExe(System.Int32)">
+            <summary>
+            显示算法执行的标题
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCStdPointCalibCameraAffine.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.WinCalibCameraAffine">
+            <summary>
+            WinCalibCameraHomo.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinCalibCameraAffine
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibCameraAffine.LoginEvent">
+            <summary>
+             事件注册
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibCameraAffine.Init(DealCalibrate.ParCalibCameraAffine,Camera.BaseUCDisplayCamera,System.Collections.Generic.List{BasicComprehensive.CellReference},System.Collections.Generic.List{BasicComprehensive.CellReference},System.Collections.Generic.List{BasicComprehensive.CellHObjectReference},System.Collections.Hashtable,System.Collections.Hashtable,System.Collections.Hashtable)">
+            <summary>
+            初始化，添加了多相机
+            </summary>
+            <param name="par"></param>
+            <param name="baseUCCamera"></param>
+            <param name="cellAll_L"></param>
+            <param name="cellData_L"></param>
+            <param name="cellHObject_L"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.WinCalibCameraAffine.uCTestRun_CellComprehensive_event(BasicComprehensive.ParCellExeReference,DealAlgorithm.BaseUCTestRun)">
+            <summary>
+            通过标定板的参数，以及求取的角点
+            </summary>
+            <param name="parCellExecuteReference"></param>
+            <param name="baseUCTestRun"></param>
+        </member>
+        <member name="M:DealCalibrate.WinCalibCameraAffine.uCStdCalibCameraHomo_GetResultValue_event(DealAlgorithm.ParGetResultFromCell,DealCalibrate.BaseParCalibrate,BasicClass.HashAction)">
+            <summary>
+            引用基准坐标,多相机执行
+            </summary>
+            <param name="par"></param>
+            <param name="baseParCalibrate"></param>
+            <param name="fun"></param>
+        </member>
+        <member name="M:DealCalibrate.WinCalibCameraAffine.uCGetResultForCalibCamera_GetResultValue_event(DealAlgorithm.ParGetResultFromCell,DealCalibrate.BaseParCalibrate,BasicClass.HashAction)">
+            <summary>
+            此相机执行
+            </summary>
+            <param name="par"></param>
+            <param name="baseParCalibrate"></param>
+            <param name="fun"></param>
+        </member>
+        <member name="M:DealCalibrate.WinCalibCameraAffine.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.UCStdCalibCamera">
+            <summary>
+            UCStdCalibCamera.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCStdCalibCamera
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCStdCalibCamera.InitLanguage">
+            <summary>
+            设置语言
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCStdCalibCamera.ShowHomo(System.Boolean)">
+            <summary>
+            是否是齐次校准
+            </summary>
+            <param name="blHome"></param>
+        </member>
+        <member name="M:DealCalibrate.UCStdCalibCamera.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.UCGetResultForCalibCamera">
+            <summary>
+            UCGetResultForCalibCamera.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCGetResultForCalibCamera
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCGetResultForCalibCamera.InitLanguage">
+            <summary>
+            设置语言
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCGetResultForCalibCamera.uCGetResultFromCell_GetResultFromCell_event(BasicComprehensive.CellReference,DealResult.ResultReference)">
+            <summary>
+            获取算法单元结果
+            </summary>
+            <param name="cellReference"></param>
+            <param name="resultReference"></param>
+        </member>
+        <member name="M:DealCalibrate.UCGetResultForCalibCamera.uCResultValueOfCell_GetResultValue_event(DealAlgorithm.ParGetResultFromCell,BasicClass.HashAction)">
+            <summary>
+            触发获取坐标事件，同时保存执行算法关联单元
+            </summary>
+            <param name="par"></param>
+            <param name="fun"></param>
+        </member>
+        <member name="M:DealCalibrate.UCGetResultForCalibCamera.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.FunCalibHandEye.GetAndSavePixelAndAxis(DealCalibrate.ParCalibHandEye,System.Int32,System.Collections.Hashtable)">
+            <summary>
+            获取和存储像素，轴坐标，并存储到对应的参数变量中
+            </summary>
+            <param name="par">手眼校准参数类</param>
+            <param name="index">点位索引号，对应于目前标定第几点，索引号从0开始</param>
+            <param name="htResult">结果哈希表，存储了像素点位，以及轴坐标</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibHandEye.CalCoordPoint(DealResult.BaseResult,DealResult.ResultCalibHandEye)">
+            <summary>
+            计算校准后坐标
+            </summary>
+            <param name="result"></param>
+            <param name="rcc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibHandEye.CalCoordPoint(BasicClass.Point2D,DealResult.ResultCalibHandEye)">
+            <summary>
+            计算校准后的坐标
+            </summary>
+            <param name="p">点位</param>
+            <param name="resultCalibHandEye">手眼标定算子结果</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibHandEye.CalCoordPoint(BasicClass.Point2D,DealCalibrate.ParCalibHandEye)">
+            <summary>
+            计算校准后坐标
+            </summary>
+            <param name="p">点位</param>
+            <param name="par">手眼标定算子参数类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibHandEye.CalCalibHandEye(DealCalibrate.ParCalibHandEye)">
+            <summary>
+            计算标定系数,以及坐标方向
+            </summary>
+            <param name="par">手眼标定参数类</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibHandEye.CheckSelf(DealCalibrate.ParCalibHandEye,System.Int32)">
+            <summary>
+            自校验
+            </summary>
+            <param name="par"></param>
+        </member>
+        <member name="M:DealCalibrate.FunCalibHandEye.CalDeltaforCalib(DealCalibrate.ParCalibHandEye,System.Collections.Generic.List{System.Double}@,System.Collections.Generic.List{System.Double}@,System.Int32)">
+            <summary>
+            根据自校准的结果，计算出偏差，补偿到Delta里面
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.FunCalibHandEye.SaveResultToStdResult(DealCalibrate.ParCalibHandEye,System.Collections.Hashtable)">
+            <summary>
+            讲计算出来的校准系数，存放到结果类中
+            </summary>
+            <param name="par">手眼校准参数</param>
+            <param name="htResult">哈希表</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibHandEye.SaveResultToPar(DealCalibrate.ParCalibHandEye,DealResult.ResultCalibHandEye)">
+            <summary>
+            将参数保存
+            </summary>
+            <param name="par">手眼校准参数类</param>
+            <param name="htResult">哈希表</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibHandEye.CheckAxisCoord(DealCalibrate.ParCalibHandEye,DealResult.ResultCalibHandEye,System.String@)">
+            <summary>
+            像素坐标目前默认是右手坐标系，左下角为图像原点，轴移动标定的时候，点位的移动顺序按照如下的方式，而且不论轴移动的时候
+            X方向是向左，向右，还是向上向下，都必须先移动轴的X方向，一些是九点标定和四个点
+              4        3  4
+            3 1 2      1  2
+              5
+              
+            10，1,11
+            </summary>
+            <param name="par">手眼标定参数类</param>
+            <param name="result">手眼标定结果类</param>
+             <param name="error">错误信息</param>
+            <returns></returns>
+        </member>
+        <member name="P:DealCalibrate.ParCalibHandEye.BlUsingCalibR">
+            <summary>
+            是否启用校准R
+            </summary>
+        </member>
+        <member name="P:DealCalibrate.ParCalibHandEye.Num">
+            <summary>
+            标定的点数
+            </summary>
+        </member>
+        <member name="P:DealCalibrate.ParCalibHandEye.OrientForAllAxis">
+            <summary>
+            所有轴的方向
+            </summary>
+        </member>
+        <member name="F:DealCalibrate.ParCalibHandEye.matrix_Axis">
+            <summary>
+            坐标系变换的所有情况
+            </summary>
+        </member>
+        <member name="F:DealCalibrate.ParCalibHandEye.matrixAxis_I">
+            <summary>
+            坐标系变换的所有情况，逆矩阵
+            </summary>
+        </member>
+        <member name="P:DealCalibrate.ParCalibHandEye.Matrix_Axis">
+            <summary>
+            获取变换矩阵
+            </summary>
+            <param name="x">x轴方向</param>
+            <param name="y">y轴方向</param>
+            <param name="r">r轴方向</param>
+            <returns></returns>
+        </member>
+        <member name="P:DealCalibrate.ParCalibHandEye.MatrixAxis_I">
+            <summary>
+            获取变换矩阵,逆变换
+            </summary>
+            <param name="x">x轴方向</param>
+            <param name="y">y轴方向</param>
+            <param name="r">r轴方向</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.ParCalibHandEye.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.ParCalibHandEye.ReadXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            初始化加载的时候读取根元素     
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.ParCalibHandEye.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            记载整个配置文件的时候，读取参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+        </member>
+        <member name="M:DealCalibrate.ParCalibHandEye.ReadXmlPar(System.Xml.XmlElement)">
+            <summary>
+            读取算法参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+        </member>
+        <member name="M:DealCalibrate.ParCalibHandEye.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            写入Xml
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.ParCalibHandEye.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            算法参数
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.UCCalibHandEye">
+            <summary>
+            UCCalibHandEye.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCCalibHandEye
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibHandEye.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibHandEye.LoginEvent">
+            <summary>
+            注册事件
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibHandEye.uCResultValueOfCell_GetResultValue_event(DealAlgorithm.ParGetResultFromCell,BasicClass.HashAction)">
+            <summary>
+            触发获取坐标事件，同时保存执行算法关联单元
+            </summary>
+            <param name="par"></param>
+            <param name="fun"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibHandEye.UCResultValueOfCell_Mannual_event">
+            <summary>
+            保存手动修改设置
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibHandEye.GetResultValueForCheck(System.Collections.Hashtable)">
+            <summary>
+            为验证获取结果
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibHandEye.btnCheck_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            验证
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibHandEye.btnCheckSelf_Clik(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            自验证
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibHandEye.SaveDGValue">
+            <summary>
+            将列表的值保存到参数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibHandEye.ShowPar">
+            <summary>
+            显示参数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibHandEye.RefreshDgResultCheck">
+            <summary>
+            传入的引用单元结果
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibHandEye.RefreshDgResultCalib">
+            <summary>
+            计算校准
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibHandEye.InitLanguage">
+            <summary>
+            语言
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibHandEye.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.UCParCalibHandEye">
+            <summary>
+            ParsCalibUC.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCParCalibHandEye
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibHandEye.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibHandEye.Init(DealCalibrate.ParCalibHandEye,System.Collections.Generic.List{BasicComprehensive.CellReference},System.Collections.Hashtable)">
+            <summary>
+            初始化校准
+            </summary>
+            <param name="par">参数</param>
+            <param name="cellAll_L">所有的单元格名称</param>
+            <param name="htResult">哈希表结果</param>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibHandEye.tsbSingleCalib_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            是否为全局参数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibHandEye.dudOffsetX_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            标定板偏移X
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibHandEye.dudOffsetY_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            标定板偏移Y
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibHandEye.dudRow_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            行
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibHandEye.dudCol_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            列
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibHandEye.cboX_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            X轴方向
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibHandEye.cboY_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Y轴方向
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibHandEye.cboR_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            R轴方向
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibHandEye.SaveParToResult">
+            <summary>
+            将参数保存到结果
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibHandEye.ShowPar">
+            <summary>
+            参数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibHandEye.InitLanguage">
+            <summary>
+            语言
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibHandEye.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.WinCalibHandEye">
+            <summary>
+            WinCalibHandEye.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinCalibHandEye
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibHandEye.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibHandEye.LoginEvent">
+            <summary>
+             事件注册
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibHandEye.Init(DealCalibrate.ParCalibHandEye,Camera.BaseUCDisplayCamera,System.Collections.Generic.List{BasicComprehensive.CellReference},System.Collections.Generic.List{BasicComprehensive.CellReference},System.Collections.Generic.List{BasicComprehensive.CellHObjectReference},System.Collections.Hashtable)">
+            <summary>
+            初始化参数
+            </summary>
+            <param name="par"></param>
+            <param name="baseUCCamera"></param>
+            <param name="cellAll_L"></param>
+            <param name="cellData_L"></param>
+            <param name="cellHObject_L"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.WinCalibHandEye.uCTestRun_CellComprehensive_event(BasicComprehensive.ParCellExeReference,DealAlgorithm.BaseUCTestRun)">
+            <summary>
+            通过标定板的参数，以及求取的角点
+            </summary>
+            <param name="parCellExecuteReference"></param>
+            <param name="baseUCTestRun"></param>
+        </member>
+        <member name="M:DealCalibrate.WinCalibHandEye.ResultToStd">
+            <summary>
+            重载结果保存到基准值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.WinCalibHandEye.ShowPar">
+            <summary>
+            参数显示
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibHandEye.tcAlgorithm_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            切换选项卡
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.WinCalibHandEye.InitLanguage">
+            <summary>
+            语言
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibHandEye.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.FunCalibMult">
+            <summary>
+            多目校准20190112
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.FunCalibMult.CalCalibMult(DealCalibrate.ParCalibMult,DealCalibrate.ParCalibMult)">
+            <summary>
+            计算系数
+            </summary>
+            <param name="par1"></param>
+            <param name="par2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibMult.CalCalibMult(DealCalibrate.ParCalibMult,DealCalibrate.ParCalibMult,System.Collections.Generic.List{System.Double},System.Collections.Generic.List{System.Double},System.Collections.Generic.List{System.Double},System.Collections.Generic.List{System.Double})">
+            <summary>
+            计算标定系数
+            </summary>
+            <param name="par1">第一个相机的参数</param>
+            <param name="par2">第二个相机的参数</param>
+            <param name="XP_L"></param>
+            <param name="YP_L"></param>
+            <param name="XQ_L"></param>
+            <param name="YQ_L"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibMult.SaveResultToStdResult(DealCalibrate.ParCalibMult,System.Collections.Hashtable)">
+            <summary>
+            讲计算出来的校准系数，存放到结果类中
+            </summary>
+            <param name="par"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibMult.SaveResultToPar(DealCalibrate.ParCalibMult,DealResult.ResultCalibMult)">
+            <summary>
+            将参数保存
+            </summary>
+            <param name="par"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealCalibrate.ParCalibMult">
+            <summary>
+            多目校准的参数
+            </summary>
+        </member>
+        <member name="P:DealCalibrate.ParCalibMult.CoCalib">
+            <summary>
+            //校准系数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.ParCalibMult.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.ParCalibMult.ReadXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            初始化加载的时候读取根元素     
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.ParCalibMult.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            记载整个配置文件的时候，读取参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+        </member>
+        <member name="M:DealCalibrate.ParCalibMult.ReadXmlPar(System.Xml.XmlElement)">
+            <summary>
+            读取算法参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+        </member>
+        <member name="M:DealCalibrate.ParCalibMult.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.ParCalibMult.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            算法参数
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.UCStdCalibMult">
+            <summary>
+            UCStdCalibMult.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCStdCalibMult
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCStdCalibMult.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.UCParCalibMult">
+            <summary>
+            UCParCalibMult.xaml 的交互逻辑20181203-zx
+            </summary>
+            <summary>
+            UCParCalibMult
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibMult.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibMult.Init(DealCalibrate.ParCalibMult)">
+            <summary>
+            初始化
+            </summary>
+            <param name="par">参数</param>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibMult.tsbGlobalPar_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            保存全局参数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibMult.tsbGlobalPar_Unchecked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            不保存全局参数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibMult.dudX_R_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            转轴机构X
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibMult.dudY_R_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            转轴机构Y
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibMult.dudR_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            转轴机构R
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibMult.dudX_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            非转轴机构X
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibMult.dudY_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            非转轴机构Y
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibMult.dudX_Camera_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            相机轴
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibMult.ShowPar">
+            <summary>
+            显示
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibMult.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.UCPixelCalibMult">
+            <summary>
+            UCCalibCameraHomo.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCPixelCalibMult
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCPixelCalibMult.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCPixelCalibMult.LoginEvent">
+            <summary>
+            注册事件
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCPixelCalibMult.Init(Camera.BaseUCDisplayCamera,DealCalibrate.ParCalibMult,System.Collections.Generic.List{BasicComprehensive.CellReference},System.Collections.Generic.List{BasicComprehensive.CellReference},System.Collections.Hashtable)">
+            <summary>
+            初始化
+            </summary>
+            <param name="baseUCCamera"></param>
+            <param name="par"></param>
+            <param name="cellAll_L"></param>
+            <param name="cellData_L"></param>
+            <param name="htResult"></param>
+        </member>
+        <member name="M:DealCalibrate.UCPixelCalibMult.dudStdX_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            旋转中心计算精度验证
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCPixelCalibMult.uCResultValueOfCell_GetResultValue_event(DealAlgorithm.ParGetResultFromCell,BasicClass.HashAction)">
+            <summary>
+            触发获取坐标事件，同时保存执行算法关联单元
+            </summary>
+            <param name="par"></param>
+            <param name="fun"></param>
+        </member>
+        <member name="M:DealCalibrate.UCPixelCalibMult.GetResultValueForCheck(System.Collections.Hashtable)">
+            <summary>
+            为验证获取结果
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCPixelCalibMult.btnCheck_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            验证
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCPixelCalibMult.Save">
+            <summary>
+            保存
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCPixelCalibMult.RefreshDgResultCheck">
+            <summary>
+            传入的引用单元结果
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCPixelCalibMult.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.WinCalibMult">
+            <summary>
+            WinCalibCameraHomo.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinCalibMult
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibMult.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibMult.LoginEvent">
+            <summary>
+             事件注册
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibMult.Init(DealCalibrate.ParCalibMult,Camera.BaseUCDisplayCamera,System.Collections.Generic.List{BasicComprehensive.CellReference},System.Collections.Generic.List{BasicComprehensive.CellReference},System.Collections.Generic.List{BasicComprehensive.CellHObjectReference},System.Collections.Hashtable,System.Collections.Hashtable,System.Collections.Hashtable)">
+            <summary>
+            初始化，添加了多相机
+            </summary>
+            <param name="par"></param>
+            <param name="baseUCCamera"></param>
+            <param name="cellAll_L"></param>
+            <param name="cellData_L"></param>
+            <param name="cellHObject_L"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.WinCalibMult.uCTestRun_CellComprehensive_event(BasicComprehensive.ParCellExeReference,DealAlgorithm.BaseUCTestRun)">
+            <summary>
+            通过标定板的参数，以及求取的角点
+            </summary>
+            <param name="parCellExecuteReference"></param>
+            <param name="baseUCTestRun"></param>
+        </member>
+        <member name="M:DealCalibrate.WinCalibMult.uCStdCalibCameraHomo_GetResultValue_event(DealAlgorithm.ParGetResultFromCell,DealCalibrate.BaseParCalibrate,BasicClass.HashAction)">
+            <summary>
+            引用基准坐标,多相机执行
+            </summary>
+            <param name="par"></param>
+            <param name="baseParCalibrate"></param>
+            <param name="fun"></param>
+        </member>
+        <member name="M:DealCalibrate.WinCalibMult.uCGetResultForCalibCamera_GetResultValue_event(DealAlgorithm.ParGetResultFromCell,DealCalibrate.BaseParCalibrate,BasicClass.HashAction)">
+            <summary>
+            此相机执行
+            </summary>
+            <param name="par"></param>
+            <param name="baseParCalibrate"></param>
+            <param name="fun"></param>
+        </member>
+        <member name="M:DealCalibrate.WinCalibMult.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.BaseParCalibRobot.GenRect_Pixel">
+            <summary>
+            生成像素的矩形阵列
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.BaseParCalibRobot.ReadIniCalib">
+            <summary>
+            读取机器校准文件
+            </summary>
+            <param name="Log"></param>
+        </member>
+        <member name="M:DealCalibrate.BaseParCalibRobot.CreateIniCalibRobot(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            创建校准文件
+            </summary>
+            <param name="row"></param>
+            <param name="col"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.BaseParCalibRobot.WritePixelIni">
+            <summary>
+            写入像素值
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.BaseParCalibRobot.WriteAlgorithmIni">
+            <summary>
+            写入算法名称
+            </summary>
+            <param name="row"></param>
+            <param name="col"></param>
+        </member>
+        <member name="M:DealCalibrate.PtInPoly.Multiply(BasicClass.Point2D,BasicClass.Point2D,BasicClass.Point2D)">
+            <summary>
+            计算叉乘     |P0P1|   ×   |P0P2|   ,平行四边形的面积
+            </summary>
+            <param name="p1"></param>
+            <param name="p2"></param>
+            <param name="p0"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.PtInPoly.IsOnline(BasicClass.Point2D,DealCalibrate.LineSegment)">
+            <summary>
+               判断线段是否包含点point   
+            </summary>
+            <param name="point"></param>
+            <param name="line"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.PtInPoly.Intersect(DealCalibrate.LineSegment,DealCalibrate.LineSegment)">
+            <summary>
+              判断线段相交   
+            </summary>
+            <param name="L1"></param>
+            <param name="L2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.PtInPoly.InPolygon(DealCalibrate.RectCalib,BasicClass.Point2D)">
+            <summary>
+            判断点在多边形内 
+            </summary>
+            <param name="rect"></param>
+            <param name="point"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealCalibrate.LineSegment">
+            <summary>
+            线段类
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.FunCalibRobot.GetWordCord(DealResult.BaseResult,DealResult.ResultCalibRobot,DealCalibrate.BaseParCalibRobot)">
+            <summary>
+            求取校准坐标,通过传入结果Result进行计算
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.FunCalibRobot.GetWordCord(BasicClass.Point2D,DealCalibrate.BaseParCalibRobot)">
+            <summary>
+            通过传入点位和参数进行计算,四点极值
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.FunCalibRobot.GetWordCord(BasicClass.Point2D,DealCalibrate.BaseParCalibRobot,System.Int32@,System.Int32@,BasicClass.Point2D@,BasicClass.Point2D@,BasicClass.Point2D@)">
+            <summary>
+            求取机器人坐标
+            </summary>
+            <param name="point"></param>
+            <param name="par"></param>
+            <param name="row"></param>
+            <param name="col"></param>
+            <param name="pX_Pixel"></param>
+            <param name="pY_Pixel"></param>
+            <param name="p_Word"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibRobot.NearMost(BasicClass.Point2D,DealCalibrate.RectCalib)">
+            <summary>
+            判断点距离矩形四角最近
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.FunCalibRobot.isInRect(BasicClass.Point2D,DealCalibrate.BaseParCalibRobot,System.Int32@,System.Int32@,System.Int32@)">
+            <summary>
+            判断点是否落在矩形中，
+            </summary>
+            <param name="point"></param>
+            <param name="par"></param>
+            <param name="row"></param>
+            <param name="col"></param>
+            <param name="num"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibRobot.GetShadowPoint(BasicClass.Point2D,BasicClass.Point2D,BasicClass.Point2D,BasicClass.Point2D)">
+            <summary>
+            平行四边形投影
+            </summary>
+            <param name="point"></param>
+            <param name="pointA"></param>
+            <param name="pointB"></param>
+            <param name="pointC"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibRobot.GetWordCordHomo(BasicClass.Point2D,DealCalibrate.BaseParCalibRobot)">
+            <summary>
+            齐次校准
+            </summary>
+            <param name="point"></param>
+            <param name="par"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibRobot.GetWordCordAffine(BasicClass.Point2D,DealCalibrate.BaseParCalibRobot)">
+            <summary>
+            投影校准 20181130-zx
+            </summary>
+            <param name="point"></param>
+            <param name="par"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibRobot.RecordResultReference(DealCalibrate.ParCalibRobot,System.Collections.Hashtable,System.Int32,System.Int32,DealCalibrate.BaseParCalibRobot)">
+            <summary>
+            调用引用结果
+            </summary>
+            <param name="par"></param>
+            <param name="htResult"></param>
+            <param name="index"></param>
+            <param name="baseParCalibRobot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibRobot.RecordResultReference_Check(DealCalibrate.ParCalibRobot,System.Collections.Hashtable,System.Int32)">
+            <summary>
+            验证
+            </summary>
+            <param name="par"></param>
+            <param name="htResult"></param>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibRobot.SaveParToResult(System.Collections.Hashtable,DealCalibrate.ParCalibRobot)">
+            <summary>
+            将参数结果保存到结果类
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.ParCalibRobot.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.ParCalibRobot.ReadXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            初始化加载,基础参数为UI设置单元算法时传入
+            </summary>
+            <param name="xDoc">Stream文档</param>
+            <returns></returns>  
+        </member>
+        <member name="M:DealCalibrate.ParCalibRobot.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            从本地文档读取参数的时候，读取
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:DealCalibrate.ParCalibRobot.ReadXmlPar(System.Xml.XmlElement)">
+            <summary>
+            读取算法参数
+            </summary>
+            <param name="xeRoot">算法参数根节点</param>
+            <returns>成功</returns>
+        </member>
+        <member name="M:DealCalibrate.ParCalibRobot.WriteXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            从Stream资源读取完整节点后，写入参数
+            </summary>
+            <param name="xDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.ParCalibRobot.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            从Stream资源读取完整节点后，写入参数
+            </summary>
+            <param name="xDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.ParCalibRobot.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            该算法参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealCalibrate.UCCalibRobot">
+            <summary>
+            UCSetTypeRobot.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCCalibRobot
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibRobot.dudRowSum_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            行列
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibRobot.dudXStart_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            起始XY,步长
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibRobot.cboAlgorithm_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            算法
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibRobot.tsbSaveImagePre_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            自动保存
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibRobot.SaveCalibImage">
+            <summary>
+            保存图像
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibRobot.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.UCGetPixelForRobot">
+            <summary>
+            UCGetPixelForRobot.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCGetPixelForRobot
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCGetPixelForRobot.LoginEvent">
+            <summary>
+            注册事件
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCGetPixelForRobot.uCResultValueOfCell_GetResultValue_event(DealAlgorithm.ParGetResultFromCell,BasicClass.HashAction)">
+            <summary>
+            触发获取坐标事件，同时保存执行算法关联单元
+            </summary>
+            <param name="par"></param>
+            <param name="fun"></param>
+        </member>
+        <member name="M:DealCalibrate.UCGetPixelForRobot.btnCheck_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            验证
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCGetPixelForRobot.TransResult">
+            <summary>
+            计算旋转中心
+            </summary>
+            <param name="baseResult"></param>
+        </member>
+        <member name="M:DealCalibrate.UCGetPixelForRobot.TransResultCheck">
+            <summary>
+            验证
+            </summary>
+            <param name="baseResult"></param>
+        </member>
+        <member name="M:DealCalibrate.UCGetPixelForRobot.Save">
+            <summary>
+            将参数结果保存到结果类
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCGetPixelForRobot.SavePixelToIni">
+            <summary>
+            将求取的像素值保存到
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCGetPixelForRobot.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.WinCalibRobot">
+            <summary>
+            WinCalibRobot.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinCalibRobot
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibRobot.LoginEvent">
+            <summary>
+             事件注册
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibRobot.btnSaveOnly_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            相机仅仅保存
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.WinCalibRobot.btnSave_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            保存且退出
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.WinCalibRobot.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.FunCalibAxis.GetAxisAngleDir(DealCalibrate.ParCalibAxis)">
+            <summary>
+            计算轴坐标和标定坐标的夹角
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.FunCalibAxis.GetAxisAngleFromLists(System.Collections.Generic.List{System.Double},System.Collections.Generic.List{System.Double},System.Collections.Generic.List{System.Double},System.Collections.Generic.List{System.Double})">
+            <summary>
+            获取标定坐标系和轴坐标系的夹角
+            </summary>
+            <param name="x_L">图像X坐标</param>
+            <param name="y_L">图像Y坐标</param>
+            <param name="xAxis_L">坐标轴X坐标</param>
+            <param name="yAxis_L">坐标轴Y坐标</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibAxis.GetAxisAngleAndDirFromLists(System.Collections.Generic.List{System.Double},System.Collections.Generic.List{System.Double},System.Collections.Generic.List{System.Double},System.Collections.Generic.List{System.Double},BasicClass.Point2D@)">
+            <summary>
+            
+            </summary>
+            <param name="x_L"></param>
+            <param name="y_L"></param>
+            <param name="xAxis_L"></param>
+            <param name="yAxis_L"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibAxis.ComputeAxisMoveDir(System.Double,System.Double,System.Double,System.Double,DealCalibrate.FunCalibAxis.AxisMoveDir@)">
+            <summary>
+            计算轴移动的方向，标定时计算轴夹角的时候只有可能动一个轴
+            如果两个轴的移动量相同，或者没有移动，则返回false
+            </summary>
+            <param name="xStart"></param>
+            <param name="xEnd"></param>
+            <param name="yStart"></param>
+            <param name="yEnd"></param>
+            <param name="axisMoveDir"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibAxis.AxisToGraphicDir(System.Double,DealCalibrate.AxisPar@,System.Boolean@)">
+            <summary>
+            判断轴坐标相对图像坐标的方向
+            方向只是用来计算最终的补正值，在发给轴偏差坐标之前，
+            或者使用轴坐标计算新的旋转中心的时候，都对轴使用此变换
+            </summary>
+            <param name="angle">轴和图像的夹角</param>
+            <param name="angleTrans">转换之后的轴相对图像夹角</param>
+            <param name="Direction">轴相对图像的方向,1为同向，-1为方向</param>
+            <param name="ExchangeXY">是否互换XY坐标轴</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibAxis.SaveParToResult(DealCalibrate.ParCalibAxis,System.Collections.Hashtable)">
+            <summary>
+            将参数结果保存到结果类
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.ParCalibAxis.ReadXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            初始化加载的时候读取根元素     
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.ParCalibAxis.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            记载整个配置文件的时候，读取参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+        </member>
+        <member name="M:DealCalibrate.ParCalibAxis.ReadXmlPar(System.Xml.XmlElement)">
+            <summary>
+            读取算法参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+        </member>
+        <member name="M:DealCalibrate.ParCalibAxis.ReadParAfterRotate(System.Xml.XmlElement)">
+            <summary>
+            计算经过旋转中心转换后的坐标
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.ParCalibAxis.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.ParCalibAxis.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            算法参数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.ParCalibAxis.WriteParAfterRotate(System.Xml.XmlElement)">
+            <summary>
+            写入计算旋转后坐标
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.DataCoord">
+            <summary>
+            轴方向数据
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:DealCalibrate.DataCoord.DataCoord_L" -->
+        <member name="M:DealCalibrate.DataCoord.ReadXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            初始化加载的时候读取根元素     
+            </summary>
+            <param name="xDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.DataCoord.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            加载整个配置文件的时候，读取参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.DataCoord.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            写入需要计算旋转之后坐标的参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealCalibrate.UCCalibAxis">
+            <summary>
+            UCCalibCoord.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCCalibAxis
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibAxis.LoginEvent">
+            <summary>
+            注册事件
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibAxis.dudXRC_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            旋转中心
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibAxis.dudXPreciese_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            旋转中心精度
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibAxis.dudAngleStep_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            角度步长
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibAxis.dudStdX_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            旋转中心计算精度验证
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibAxis.uCResultValueOfCell_GetResultValue_event(DealAlgorithm.ParGetResultFromCell,BasicClass.HashAction)">
+            <summary>
+            触发获取坐标事件，同时保存执行算法关联单元
+            </summary>
+            <param name="par"></param>
+            <param name="fun"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibAxis.btnCalCoord_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            通过获取的PLC轴位置和计算的图像位置计算轴和标定板（或者相机）的夹角
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibAxis.GetResultValueForCheck(System.Collections.Hashtable)">
+            <summary>
+            为验证获取结果
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibAxis.btnCheck_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            验证
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibAxis.RefreshDgResultCheck">
+            <summary>
+            传入的引用单元结果
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibAxis.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.WinCalibAxis">
+            <summary>
+            WinCalibRotate.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinCalibAxis
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibAxis.LoginEvent">
+            <summary>
+             事件注册
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibAxis.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.FunCalibRotate">
+            <summary>
+            增加了判断左右手坐标系的功能
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.FunCalibRotate.GetPoint_AfterRotation(DealCalibrate.ParCalibRotate,System.Collections.Generic.List{BasicClass.Point3D})">
+            <summary>
+            获取经过旋转后的点
+            </summary>
+            <param name="par">旋转中心变换类，参数中的类角度是角度单位，不是弧度</param>
+            <param name="srcPoint_L"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibRotate.GetPoint_AfterRotation(System.Double,BasicClass.Point2D,BasicClass.Point2D,DealResult.ResultCalibHandEye)">
+            <summary>
+            获取旋转角度的新坐标,计算时先采用坐标变换，转换成右手坐标系,然后再进行逆变换
+            </summary>
+            <param name="angle">旋转角度,单位是弧度，不是角度</param>
+            <param name="pRotateCenter">旋转中心坐标</param>
+            <param name="pInit">旋转前坐标</param>
+            <param name="result">手眼校准结果类</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibRotate.GetPoint_AfterRotation(System.Double,BasicClass.Point2D,BasicClass.Point2D,DealCalibrate.ParCalibRotate)">
+            <summary>
+            获取A点绕旋转中心转r°后的新坐标,此方法为旧函数，以后不再使用20191109-zx
+            </summary>
+            <param name="angle">旋转角度</param>
+            <param name="pRotateCenter">旋转中心坐标</param>
+            <param name="pInit">初始点位</param>
+            <param name="par">旋转中心算子类,需要判断坐标系</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibRotate.GetPoint_AfterRotation(System.Double,BasicClass.Point2D,BasicClass.Point2D)">
+            <summary>
+            获取A点绕旋转中心转r°后的新坐标
+            </summary>
+            <param name="angle">旋转角度</param>
+            <param name="pRotateCenter">旋转中心坐标</param>
+            <param name="pInit">初始点位</param>
+            <param name="par">旋转中心算子类,需要判断坐标系</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibRotate.GetOriginPoint(DealCalibrate.ParCalibRotate)">
+            <summary>
+            计算旋转中心,判断左手或者右手坐标系
+            </summary>
+            <param name="par">旋转中心校准类</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibRotate.GetOriginPoint(DealCalibrate.ParCalibRotate,DealResult.ResultCalibHandEye)">
+            <summary>
+            求取旋转中心
+            </summary>
+            <param name="par">旋转中心类</param>
+            <param name="result">结果类</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibRotate.GetOriginPoint(System.Double,BasicClass.Point2D,BasicClass.Point2D)">
+            <summary>
+            获取旋转中心坐标,输出旋转中心
+            </summary>
+            <param name="angle">旋转角度,逆时针为正</param>
+            <param name="srcPoint">旋转前坐标</param>
+            <param name="dstPoint">旋转后坐标</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibRotate.GetOriginPoint(System.Double,BasicClass.Point2D,BasicClass.Point2D,DealResult.ResultCalibHandEye)">
+            <summary>
+            获取旋转中心坐标,输出旋转中心
+            </summary>
+            <param name="angle">旋转角度,逆时针为正</param>
+            <param name="srcPoint">旋转前坐标</param>
+            <param name="dstPoint">旋转后坐标</param>
+            <param name="result">手眼校准结果类</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibRotate.GetOriginPoint(System.Double,BasicClass.Point2D,BasicClass.Point2D,DealCalibrate.ParCalibRotate)">
+            <summary>
+            计算旋转中心，通过传入的旋转中心类，来判断坐标系方向,此方法为旧函数，以后不再使用20191109-zx
+            </summary>
+            <param name="angle">角度</param>
+            <param name="srcPoint">旋转前坐标</param>
+            <param name="dstPoint">旋转后坐标</param>
+            <param name="par">旋转中心变换类</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibRotate.SaveParToResult(System.Collections.Hashtable,DealCalibrate.ParCalibRotate)">
+            <summary>
+            将参数结果保存到结果类
+            </summary>
+        </member>
+        <member name="P:DealCalibrate.ParCalibRotate.BlRightCoord">
+            <summary>
+            判断是否是右手坐标系
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.ParCalibRotate.ReadXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            初始化加载的时候读取根元素     
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.ParCalibRotate.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            记载整个配置文件的时候，读取参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+        </member>
+        <member name="M:DealCalibrate.ParCalibRotate.ReadXmlPar(System.Xml.XmlElement)">
+            <summary>
+            读取算法参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+        </member>
+        <member name="M:DealCalibrate.ParCalibRotate.ReadParAfterRotate(System.Xml.XmlElement)">
+            <summary>
+            计算经过旋转中心转换后的坐标
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.ParCalibRotate.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            将参数写入xml
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.ParCalibRotate.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            算法参数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.ParCalibRotate.WriteParAfterRotate(System.Xml.XmlElement)">
+            <summary>
+            写入计算旋转后坐标
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.DataRotate">
+            <summary>
+            旋转中心数据
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:DealCalibrate.DataRotate.DataRotate_L" -->
+        <member name="M:DealCalibrate.DataRotate.ReadXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            初始化加载的时候读取根元素     
+            </summary>
+            <param name="xDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.DataRotate.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            加载整个配置文件的时候，读取参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.DataRotate.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            写入需要计算旋转之后坐标的参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealCalibrate.UCCalibAfterRotate">
+            <summary>
+            UCCalibAfterRotate.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCCalibAfterRotate
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibAfterRotate.Login_event">
+            <summary>
+            注册事件
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibAfterRotate.tsbSingleCalib_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            是否为全局参数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibAfterRotate.uCGetResultFromCell_GetResultFromCell_event(BasicComprehensive.CellReference,DealResult.ResultReference)">
+            <summary>
+            引用关联响应
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibAfterRotate.btnGetResult_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            获取结果关联
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibAfterRotate.btnGetStd_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            获取标准值关联
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibAfterRotate.btnGetStdR_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            获取基准角度
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibAfterRotate.RefreshDgResult">
+            <summary>
+            刷新显示
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibAfterRotate.InitLanguage">
+            <summary>
+            语言
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibAfterRotate.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.UCCalibRotate">
+            <summary>
+            UCCalibRotate.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCCalibRotate
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibRotate.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibRotate.LoginEvent">
+            <summary>
+            注册事件
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibRotate.dudXRC_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            旋转中心
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibRotate.dudXPreciese_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            旋转中心精度
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibRotate.dudAngleStep_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            角度步长
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibRotate.dudStdX_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            旋转中心计算精度验证
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibRotate.cboOrientX_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            X方向
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibRotate.cboOrientY_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Y方向
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibRotate.cboOrientR_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            R方向
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibRotate.uCResultValueOfCell_GetResultValue_event(DealAlgorithm.ParGetResultFromCell,BasicClass.HashAction)">
+            <summary>
+            触发获取坐标事件，同时保存执行算法关联单元
+            </summary>
+            <param name="par"></param>
+            <param name="fun"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibRotate.GetResultValueForCheck(System.Collections.Hashtable)">
+            <summary>
+            为验证获取结果
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibRotate.btnCheck_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            验证
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibRotate.RefreshDgResultCheck">
+            <summary>
+            传入的引用单元结果
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibRotate.InitLanguage">
+            <summary>
+            语言
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibRotate.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.WinCalibRotate">
+            <summary>
+            WinCalibRotate.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinCalibRotate
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibRotate.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibRotate.LoginEvent">
+            <summary>
+             事件注册
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibRotate.InitLanguage">
+            <summary>
+            语言
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibRotate.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.FunCalibWorld.GetOriginPoint(DealCalibrate.ParCalibWorld,System.String@)">
+            <summary>
+            计算系数
+            </summary>
+            <param name="par"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibWorld.CalWordCoord(DealResult.BaseResult,DealResult.ResultCalibWorld)">
+            <summary>
+            计算世界坐标
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.FunCalibWorld.CalWordCoord_MeasureLine(DealResult.ResultMeasureSLine,DealResult.ResultCalibWorld)">
+            <summary>
+            直线测量
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.FunCalibWorld.CalWordCoord_MeasureCircle(DealResult.ResultMeasureCircle,DealResult.ResultCalibWorld)">
+            <summary>
+            圆弧测量
+            </summary>
+        </member>
+        <member name="P:DealCalibrate.ParCalibWorld.Item(System.Int32)">
+            <summary>
+            索引器Amp
+            </summary>
+        </member>
+        <member name="F:DealCalibrate.ParCalibWorld.Length">
+            double        
+        </member>
+        <member name="M:DealCalibrate.ParCalibWorld.ReadXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            初始化加载的时候读取根元素     
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.ParCalibWorld.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            记载整个配置文件的时候，读取参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.ParCalibWorld.ReadXmlPar(System.Xml.XmlElement)">
+            <summary>
+            读取算法参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.ParCalibWorld.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.ParCalibWorld.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            算法参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DealCalibrate.UCCalibWorld">
+            <summary>
+            UCCalibWorld.xaml 的交辑
+            </summary>
+            <summary>
+            UCCalibWorld
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibWorld.LoginEvent">
+            <summary>
+            注册事件
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibWorld.dudLength_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            角度步长
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibWorld.dudXCo_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            X校准系数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibWorld.cboWorldCoordMapX_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            像素X映射
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibWorld.cboWorldCoordMapY_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            像素Y映射
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibWorld.tsbSingleCalib_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibWorld.uCResultValueOfCell_GetResultValue_event(DealAlgorithm.ParGetResultFromCell,BasicClass.HashAction)">
+            <summary>
+            触发获取坐标事件，同时保存执行算法关联单元
+            </summary>
+            <param name="par"></param>
+            <param name="fun"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibWorld.btnGetResultCheck_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            获取验证时结果数值
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCCalibWorld.GetResultValueForCheck(System.Collections.Hashtable)">
+            <summary>
+            为验证获取结果
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibWorld.btnCheck_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            验证
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibWorld.Save">
+            <summary>
+            保存Amp系数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibWorld.RefreshDgResultCheck">
+            <summary>
+            传入的引用单元结果
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalibWorld.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.WinCalibWorld">
+            <summary>
+            WinCalibWorld.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinCalibWorld
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibWorld.LoginEvent">
+            <summary>
+            事件注册
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibWorld.btnSaveOnly_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            仅仅保存
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibWorld.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.FunCalibCamera.DealCalibCamera(DealCalibrate.ParCalibCamera)">
+            <summary>
+            求取标定系数，通过角点的坐标和标定板的参数
+            </summary>
+            <param name="par"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibCamera.CalibOne(DealCalibrate.ParCalibCamera,DealResult.ResultCalibCamera,System.Int32,System.Int32,System.Double[]@,System.Double[]@)">
+            <summary>
+            单目校准
+            </summary>
+            <param name="par"></param>
+            <param name="result"></param>
+            <param name="resultPointHarris"></param>
+            <param name="height"></param>
+            <param name="width"></param>
+        </member>
+        <member name="M:DealCalibrate.FunCalibCamera.CalibMany(DealCalibrate.ParCalibCamera,DealResult.ResultCalibCamera,System.Int32,System.Int32,System.Double[],System.Double[])">
+            <summary>
+            进行多目校准，同时进行坐标的中心点转换
+            </summary>
+            <param name="par"></param>
+            <param name="result"></param>
+            <param name="height"></param>
+            <param name="width"></param>
+            <param name="x_A"></param>
+            <param name="y_A"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibCamera.TransformPoint1_One(System.Double,System.Double,DealResult.ResultCalibCamera,System.Double@,System.Double@)">
+            <summary>
+            计算单目校正后的坐标点，输出结果以图像左上角为原点,这里对结果的引用为直接结果，而不是std
+            </summary>
+            <param name="x_In">输入参数：图像列坐标X</param>
+            <param name="y_In">输入参数：图像行坐标Y</param>
+            <param name="x_Out">输出参数：物理坐标X</param>
+            <param name="y_Out">输出参数：物理坐标Y</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibCamera.CalibHomo(DealCalibrate.ParCalibCamera,DealResult.ResultCalibCamera,System.Double[]@)">
+            <summary>
+            求取校准系数
+            </summary>
+            <param name="par"></param>
+            <param name="result"></param>
+            <param name="co"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibCamera.TransformPoint_Homo(System.Double,System.Double,DealResult.ResultCalibCamera,System.Double@,System.Double@)">
+            <summary>
+            齐次校准计算
+            </summary>
+            <param name="x_In"></param>
+            <param name="y_In"></param>
+            <param name="rcc"></param>
+            <param name="x_Out"></param>
+            <param name="y_Out"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibCamera.TransformPoint_Many(System.Double,System.Double,DealResult.ResultCalibCamera,System.Double@,System.Double@)">
+            <summary>
+            计算双目变换后的坐标点
+            </summary>
+            <param name="x_In">输入参数：图像列坐标X</param>
+            <param name="y_In">输入参数：图像行坐标Y</param>
+            <param name="x_Out">输出参数：标定板坐标X</param>
+            <param name="y_Out">输出参数：标定板坐标Y</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibCamera.MatrixMultipy(System.Double[0:,0:],System.Double[0:,0:],System.Double[0:,0:],System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            矩阵的乘法，a矩阵3*3，b矩阵为3*1，c矩阵为3*1，c矩阵第一行为X坐标，第二行为Y坐标
+            </summary>
+            <param name="a">第一个矩阵</param>
+            <param name="b">第二个矩阵</param>
+            <param name="c">算出来的矩阵</param>
+            <param name="ra">第一个矩阵的行数</param>
+            <param name="ca">第一个矩阵的列数</param>
+            <param name="rb">第二个矩阵的行数</param>
+            <param name="cb">第二个矩阵的列数</param>
+            <returns>返回true成功，返回false失败</returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibCamera.TransformPoint2_One(System.Double,System.Double,DealResult.ResultCalibCamera,System.Double@,System.Double@)">
+            <summary>
+            计算单目校正后的坐标点，输出结果以图像中心为原点
+            </summary>
+            <param name="x_In">输入参数：图像列坐标X</param>
+            <param name="y_In">输入参数：图像行坐标Y</param>
+            <param name="x_Out">输出参数：图像列坐标X</param>
+            <param name="y_Out">输出参数：图像行坐标Y</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibCamera.CalculateCoordPoint(DealResult.BaseResult,DealResult.ResultCalibCamera)">
+            <summary>
+            计算校准点，引入了轴的偏移，
+            </summary>
+            <param name="result"></param>
+            <param name="rcc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibCamera.CalculateCoordPoint(System.Double,System.Double,DealResult.ResultCalibCamera)">
+            <summary>
+            计算坐标点
+            </summary>
+            <param name="x_In">输入参数：图像列坐标X</param>
+            <param name="y_In">输入参数：图像行坐标Y</param>
+            <param name="x_Out">输出参数：标定板坐标X</param>
+            <param name="y_Out">输出参数：标定板坐标Y</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibCamera.CalculateCoordLine(DealResult.BaseResultEdge,DealResult.ResultCalibCamera)">
+            <summary>
+            求取直线相关算子的校准
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.FunCalibCamera.CalculateMCircle(DealResult.ResultMCircle,DealResult.ResultCalibCamera)">
+            <summary>
+            求取直线相关算子的校准
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.FunCalibCamera.SaveResultToStdResult(DealCalibrate.ParCalibCamera,System.Collections.Hashtable)">
+            <summary>
+            讲计算出来的校准系数，存放到
+            </summary>
+            <param name="par"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.FunCalibCamera.SaveResultToPar(DealCalibrate.ParCalibCamera,DealResult.ResultCalibCamera)">
+            <summary>
+            将参数保存
+            </summary>
+            <param name="par"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.ParCalibAxisPlate.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            记载整个配置文件的时候，读取参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.ParCalibAxisPlate.ReadXmlPar(System.Xml.XmlElement)">
+            <summary>
+            读取算法参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.ParCalibAxisPlate.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.ParCalibAxisPlate.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            算法参数
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.ParCalibCamera.ReadXmlRoot(System.Xml.XmlDocument)">
+            <summary>
+            初始化加载的时候读取根元素     
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.ParCalibCamera.ReadXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            加载整个配置文件的时候，读取参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.ParCalibCamera.ReadXmlPar(System.Xml.XmlElement)">
+            <summary>
+            读取算法参数
+            </summary>
+            <param name="xeRoot">根节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.ParCalibCamera.WriteXmlRoot(System.Xml.XmlElement)">
+            <summary>
+            
+            </summary>
+            <param name="xeRoot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealCalibrate.ParCalibCamera.WriteXmlPar(System.Xml.XmlElement)">
+            <summary>
+            算法参数
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.UCCalByCalibCamera">
+            <summary>
+            UCCalByCalibCamera.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCCalByCalibCamera
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCCalByCalibCamera.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.UCParCalibAxisPlate">
+            <summary>
+            UCParCalibAxis.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCParCalibAxisPlate
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibAxisPlate.Init(DealCalibrate.ParCalibCamera,System.Collections.Hashtable)">
+            <summary>
+            初始化参数
+            </summary>
+            <param name="par">相机校准类</param>
+            <param name="htResult">哈希表</param>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibAxisPlate.InitLanguage">
+            <summary>
+            设置语言
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibAxisPlate.cbDirectionAxisX_Camera_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            相机轴方向
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibAxisPlate.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.UCParCalibCamera">
+            <summary>
+            ParsCalibUC.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCParCalibCamera
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibCamera.InitLanguage">
+            <summary>
+            设置语言
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibCamera.dudRowChessboard_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            标定板参数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibCamera.dudWidthChessboard_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            标定板宽高
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibCamera.dudWidthImage_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            图像尺寸
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibCamera.dudWidthCalibBoard_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            标定板尺寸
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibCamera.cbPosRefOrign_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            标定板参考原点
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibCamera.dudThCalibOne_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            校准精度阈值
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibCamera.tsbSingleCalib_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            是否为全局参数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibCamera.dudOffsetX_ValueChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Object})">
+            <summary>
+            标定板偏移X
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibCamera.cboMark_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            标记的Mark
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibCamera.tsbUseHomo_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            使用齐次校准
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibCamera.ShowCellTemp">
+            <summary>
+            显示模板单元
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCParCalibCamera.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.WinCalibCamera">
+            <summary>
+            WinCalibCamera.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinCalibCamera
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibCamera.LoginEvent">
+            <summary>
+            事件注册
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibCamera.InitLanguage">
+            <summary>
+            设置语言
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibCamera.uCTestRun_CellComprehensive_event(BasicComprehensive.ParCellExeReference,DealAlgorithm.BaseUCTestRun)">
+            <summary>
+            通过标定板的参数，以及求取的角点
+            </summary>
+            <param name="parCellExecuteReference"></param>
+            <param name="baseUCTestRun"></param>
+        </member>
+        <member name="M:DealCalibrate.WinCalibCamera.uCGetResultForCalibCamera_ShowAxis_event">
+            <summary>
+            显示轴参数
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinCalibCamera.ShowNewWin(System.String,System.String)">
+            <summary>
+            显示窗体
+            </summary>
+            <param name="nameOld"></param>
+            <param name="nameCell"></param>
+        </member>
+        <member name="M:DealCalibrate.WinCalibCamera.BaseWinCalibrate_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            重载关闭窗口，清空数据
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.WinCalibCamera.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:DealCalibrate.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:DealCalibrate.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.WinTransCoord">
+            <summary>
+            WinCrossLine.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WinTransCoord
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.WinTransCoord.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.TypeCalibrate">
+            <summary>
+            TypeGeometry.xaml 的交互逻辑
+            </summary>
+            <summary>
+            TypeCalibrate
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.TypeCalibrate.LoadXmlStream(System.String)">
+            <summary>
+            读取指定路径的Stream，为系统资源
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.TypeCalibrate.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:DealCalibrate.UCUseCalib">
+            <summary>
+            UCUseCalib.xaml 的交互逻辑
+            </summary>
+            <summary>
+            UCUseCalib
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCUseCalib.Init(DealAlgorithm.ParAlgorithm,System.Collections.Generic.List{BasicComprehensive.CellReference})">
+            <summary>
+            初始化化控件Item
+            </summary>
+            <param name="par">参数</param>
+            <param name="cellAll_L">单元格列表</param>
+        </member>
+        <member name="M:DealCalibrate.UCUseCalib.InitLanguage">
+            <summary>
+            设置语言
+            </summary>
+        </member>
+        <member name="M:DealCalibrate.UCUseCalib.Init(DealAlgorithm.ParAlgorithm,System.Collections.Generic.List{BasicComprehensive.CellReference},System.String)">
+            <summary>
+            初始化化控件Item
+            </summary>
+            <param name="par">参数</param>
+            <param name="cellAll_L">单元格列表</param>
+            <param name="type">需包含的算法类型</param>
+        </member>
+        <member name="M:DealCalibrate.UCUseCalib.cboUseCalib_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            选择校准算子
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealCalibrate.UCUseCalib.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,10 @@
+******15:59:05******
+【Source】MvCameraControl.Net
+【ErrorType】System.DllNotFoundException
+【TargetSite】Int32 MV_CC_EnumDevices(UInt32, MV_CC_DEVICE_INFO_LIST ByRef)
+【Message】无法加载 DLL“MvCameraControl.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+【StackTrace】   在 MvCamCtrl.NET.MyCamera.MV_CC_EnumDevices(UInt32 nTLayerType, MV_CC_DEVICE_INFO_LIST& stDevList)
+   在 Camera.Camera_HIKSDK.EnumDevices(UInt32 nLayerType, MV_CC_DEVICE_INFO_LIST& stDeviceList) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 108
+   在 Camera.Camera_HIKSDK.ConnectCamera(String serialNumber) 位置 E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\Camera\CameraSDK\Camera_HIKSDK.cs:行号 159
+
+

@@ -1,0 +1,45 @@
+﻿<Window x:Class="DealLog.WinStateAndAlarm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:DealLog="clr-namespace:DealLog"
+        xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib" 
+        Title="运行状态&amp;报警显示" Height="775" Width="449" Topmost="True" Loaded="Window_Loaded">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <!--<ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />-->
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="603*" />
+            <RowDefinition Height="80" />
+        </Grid.RowDefinitions>
+        <WrapPanel HorizontalAlignment="Stretch" Name="dpLayout" VerticalAlignment="Stretch" Grid.RowSpan="2">
+            <DealLog:UCStateWork x:Name="uCStateWork" Height="300" />
+            <DealLog:UCAlarm x:Name="uCAlarm"  Height="300"/>
+        </WrapPanel>
+        <Grid Name="grid1" Margin="0" Grid.Row="1" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <ControlLib:MTSwitchButton Height="35" HorizontalAlignment="Center" Margin="0" Name="tsbMainShow" VerticalAlignment="Center" Width="60" ToolTip="图片存储根目录是否独立设置" IsChecked="False" Grid.Column="1" Checked="tsbMainShow_Checked" Unchecked="tsbMainShow_Unchecked" />
+            <Label Content="Main界面显示:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label1" VerticalAlignment="Center" />
+            <ControlLib:MTSwitchButton Grid.Column="3" Height="35" HorizontalAlignment="Center" IsChecked="False" Margin="0" Name="tsbAutoShow" ToolTip="图片存储根目录是否独立设置" VerticalAlignment="Center" Width="60" Checked="tsbAutoShow_Checked" Unchecked="tsbAutoShow_Unchecked" />
+            <Label Content="独立窗体自动显示:" Height="28" HorizontalAlignment="Center" Margin="0" Name="label2" VerticalAlignment="Center" Grid.Column="2" />
+            <CheckBox Content="窗体在最前" Height="20" HorizontalAlignment="Center" Margin="0" Name="chkTopMost" VerticalAlignment="Center" Checked="chkTopMost_Checked" Width="94" IsChecked="True" Unchecked="chkTopMost_Unchecked" Grid.Row="1" />
+        </Grid>
+    </Grid>
+</Window>

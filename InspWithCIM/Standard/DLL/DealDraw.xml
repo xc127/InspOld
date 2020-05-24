@@ -1,0 +1,548 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DealDraw</name>
+    </assembly>
+    <members>
+        <member name="M:DealDraw.DrawDisplay.AddNewRectangle2(System.Windows.Point[],System.String,System.String,System.String,System.Int32)">
+            <summary>
+            绘制新的矩形2区域
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.shapeRect2_MouseDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            鼠标左键点击
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.shapeRect2_MouseEnter(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            鼠标进入
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.shapeRect2_SelectIndex_event(System.Int32)">
+            <summary>
+            选中当前Rect2
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.ChangeSelectShape(System.Int32)">
+            <summary>
+            通过选择的索引，改变
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.ReDrawRectangle2(System.Windows.Point[],System.String,System.String,System.String,System.Int32)">
+            <summary>
+            重绘指定区域的ROI
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.ReDrawRectangle2(System.Windows.Point[],System.Int32)">
+            <summary>
+            按照指定的索引号进行重绘
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.InitCorner(DealDraw.ShapeMCircle,System.Windows.Point,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            添加可拖动的端点
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.InitCornerArc(DealDraw.ShapeMCircle,System.Int32)">
+            <summary>
+            生成圆弧等间隔的点
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.ReDrawCornerArc(System.Int32)">
+            <summary>
+            重绘圆弧上的点
+            </summary>
+            <param name="shape"></param>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.InitRect2(DealDraw.ShapeMCircle,System.Int32)">
+            <summary>
+            按照等间隔的圆弧点，添加矩形2
+            </summary>
+            <param name="shape"></param>
+            <param name="indexShape"></param>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.AddNewRectangle2(DealDraw.ShapeMCircle,System.Windows.Point[],System.String,System.Int32)">
+            <summary>
+            添加矩形2
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.RedrawRect2_MCircle(System.Int32)">
+            <summary>
+            重绘圆弧等间隔矩形2
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.CornerEllipseMouseDown_MCircle(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            鼠标选中角点后
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.CornerEllipseMouseUp_MCircle(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            光标抬起
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.CornerEllipseMouseEnter_MCircle(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            鼠标进入角点区域
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.CornerEllipseMouseLeave_MCircle(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            光标离开
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.AddNewPoly(System.Windows.Point[],System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            多边形，包括矩形1
+            </summary>
+            <param name="poins"></param>
+            <param name="type"></param>
+            <param name="colorLine"></param>
+            <param name="colorPoint"></param>
+            <param name="cell"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.AddRect1(System.Windows.Point[],System.Windows.Media.Brush,System.Windows.Media.Brush,DealDraw.ShapePoly,System.Int32)">
+            <summary>
+            添加矩形1
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.CreateRect1(System.Windows.Point[])">
+            <summary>
+            由点生成矩形1
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.AddPolygon(System.Windows.Point[],System.Windows.Media.Brush,System.Windows.Media.Brush,DealDraw.ShapePoly,System.Int32)">
+            <summary>
+            添加多边形
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.AddCorner(System.Windows.Point,System.Int32,System.Int32,System.Windows.Media.Brush,System.Windows.Media.Brush)">
+            <summary>
+            添加角点
+            </summary>
+            <param name="point">点位坐标</param>
+            <param name="index">索引号</param>
+            <param name="brLine">线的颜色</param>
+            <param name="brPoint">点的颜色</param>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.g_CanvasDraw_MouseMove(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            总体的移动过控制事件
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.CornerEllipseMouseDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            鼠标选中角点后
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.CornerEllipseMouseUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            光标抬起
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.CornerEllipseMouseEnter(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            鼠标进入角点区域
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.CornerEllipseMouseLeave(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            光标离开
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.ChangeCursor(System.Int32)">
+            <summary>
+            鼠标形状控制
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.SetEllipseVisible(System.Int32)">
+            <summary>
+            显示选中项得点位
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.DisplayRect1(HalconDotNet.HTuple,System.Windows.Point[],System.Double,System.String,System.String)">
+            <summary>
+            显示矩形1
+            </summary>
+            <param name="hv_WinHandle">Halcon窗体</param>
+            <param name="points">点坐标</param>
+            <param name="lineWidth">线宽</param>
+            <param name="strColor">颜色</param>
+            <param name="typeFill">margin or fill</param>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.DisplayRect2(HalconDotNet.HTuple,System.Double[],System.Double,System.String,System.String)">
+            <summary>
+            绘制矩形2
+            </summary>
+            <param name="hv_WinHandle">Halcon窗体</param>
+            <param name="value">中心X、Y，角度，长度，宽度</param>
+            <param name="lineWidth">线宽</param>
+            <param name="strColor">颜色</param>
+            <param name="typeFill">margin or fill</param>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.DisplayPolygon(HalconDotNet.HTuple,System.Windows.Point[],System.Double,System.String,System.String)">
+            <summary>
+            显示多边形
+            </summary>
+            <param name="Window">Halcon窗体</param>
+            <param name="points">点坐标数组</param>
+            <param name="lineWidth">线宽</param>
+            <param name="strColor">颜色</param>
+            <param name="typeFill">margin or fill</param>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.DisplayLine(HalconDotNet.HTuple,System.Windows.Point,System.Windows.Point,System.Double,System.String)">
+            <summary>
+            显示直线
+            </summary>
+            <param name="hv_WinHandle">Halcon窗体</param>
+            <param name="p1">坐标点1</param>
+            <param name="p1">坐标点2</param>
+            <param name="lineWidth">线宽</param>
+            <param name="strColor">颜色</param>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.DisplayCross(HalconDotNet.HTuple,System.Double[],System.Double,System.String)">
+            <summary>
+            显示十字
+            </summary>
+            <param name="Window">Halcon窗体</param>
+            <param name="value">中心X、Y，长度，角度</param>
+            <param name="lineWidth">线宽</param>
+            <param name="strColor">颜色</param>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.DisplayCross(HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple,System.Double,System.String)">
+            <summary>
+            通过XLD来显示十字
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.DisplayCircle(HalconDotNet.HTuple,System.Double[],System.Double,System.String,System.String)">
+            <summary>
+            显示圆
+            </summary>
+            <param name="Window">Halcon窗体</param>
+            <param name="value">中心X、Y，半径</param>
+            <param name="lineWidth">线宽</param>
+            <param name="strColor">颜色</param>
+            <param name="typeFill">margin or fill</param>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.DisplayEllipse(HalconDotNet.HTuple,System.Double[],System.Double,System.String,System.String)">
+            <summary>
+            绘制椭圆
+            </summary>
+            <param name="Window">Halcon窗体</param>
+            <param name="value">中心X、Y，角度，长轴半径，短轴半径</param>
+            <param name="lineWidth">线宽</param>
+            <param name="strColor">颜色</param>
+            <param name="typeFill">margin or fill</param>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.DisplayMCircle(HalconDotNet.HTuple,System.Double[],System.Double,System.String,System.String,System.String)">
+            <summary>
+            绘制椭圆
+            </summary>
+            <param name="hv_WinHandle">Halcon窗体</param>
+            <param name="value">中心X、Y，角度，长轴半径，短轴半径</param>
+            <param name="lineWidth">线宽</param>
+            <param name="strColor">颜色</param>
+            <param name="typeFill">margin or fill</param>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.DispString(HalconDotNet.HTuple,System.String,System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            显示字符
+            </summary>
+            <param name="hv_WinHandle">Halcon窗体</param>
+            <param name="text">文本</param>
+            <param name="fontSize">字体大小</param>
+            <param name="col">字体起始列</param>
+            <param name="row">字体起始行</param>
+            <param name="strColor">字体颜色</param>
+        </member>
+        <member name="F:DealDraw.DrawDisplay.g_SelectedPolygon_L">
+            <summary>
+            多边形的集合
+            </summary>
+        </member>
+        <member name="F:DealDraw.DrawDisplay.g_SelectRoundedPolygon">
+            用于平移时判断是否有选中多边形
+        </member>
+        <member name="F:DealDraw.DrawDisplay.g_SelectedCornerEllipse">
+            调整时选中的角点
+        </member>
+        <member name="F:DealDraw.DrawDisplay.Shape_L">
+            <summary>
+            角点组 遍历的方法存在bug，故全局获取
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.GetStdPoint(System.String)">
+            <summary>
+            生成标准坐标
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.DrawNewShape(System.Windows.Controls.Canvas,System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            绘制新的标准图像
+            </summary>
+            <param name="type">类别</param>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.DrawNewShape(System.Windows.Controls.Canvas,System.Windows.Point[],System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            通过传入的点的坐标，绘制各种形状，矩形也是多边形
+            </summary>
+            <param name="canvas">传入的点坐标</param>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.AddNewShape(System.Windows.Controls.Canvas,System.Windows.Point[],System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            新增形状
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.DrawCycle">
+            <summary>
+            重绘角点颜色
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.GetShapePoints">
+            <summary>
+            获取绘图的点位坐标
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.GetRect1Point(System.Int32)">
+            <summary>
+            获取绘图的点位坐标，double数组
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.GetRect2Point(System.Int32)">
+            <summary>
+            获取对应索引号的点坐标
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.GetMCirclePoint(System.Int32)">
+            <summary>
+            获取对应索引号的点坐标
+            </summary>
+        </member>
+        <member name="M:DealDraw.DrawDisplay.GetPolygonPoint(System.Int32)">
+            <summary>
+            获取绘图的点位坐标，double数组
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:DealDraw.DrawDisplay.WidthStroke">
+            <summary>
+            线条宽度
+            </summary>
+        </member>
+        <member name="T:DealDraw.ShapeMCircle">
+            <summary>
+            多边形类
+            </summary>
+        </member>
+        <member name="F:DealDraw.ShapeMCircle.g_RoundedMCircle">
+            <summary>
+            多个圆角多边形的集合
+            </summary>
+        </member>
+        <!-- 对于成员“F:DealDraw.ShapeMCircle.g_PathCorner_L”忽略有格式错误的 XML 注释 -->
+        <member name="T:DealDraw.ShapePoly">
+            <summary>
+            多边形类
+            </summary>
+        </member>
+        <member name="F:DealDraw.ShapePoly.g_RoundedPolygon">
+            <summary>
+            多个圆角多边形的集合
+            </summary>
+        </member>
+        <!-- 对于成员“F:DealDraw.ShapePoly.g_PathCorner_L”忽略有格式错误的 XML 注释 -->
+        <member name="T:DealDraw.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:DealDraw.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:DealDraw.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="T:DealDraw.ShapeRect2">
+            <summary>
+            不带点的矩形 20181231-zx
+            </summary>
+        </member>
+        <member name="M:DealDraw.ShapeRect2.TriggerIndex">
+            <summary>
+            当前形状的索引
+            </summary>
+        </member>
+        <member name="F:DealDraw.RoundedCornersMCircle.center">
+            圆心
+        </member>
+        <member name="F:DealDraw.RoundedCornersMCircle.Index">
+            <summary>
+            自定义
+            </summary>
+        </member>
+        <member name="M:DealDraw.RoundedCornersMCircle.InitAcr">
+            <summary>
+            初始化圆弧
+            </summary>
+        </member>
+        <member name="M:DealDraw.RoundedCornersMCircle.GetCenter">
+            <summary>
+            求取圆心
+            </summary>
+        </member>
+        <member name="M:DealDraw.RoundedCornersMCircle.GetCenterArc">
+            <summary>
+            求取圆弧中点
+            </summary>
+        </member>
+        <member name="M:DealDraw.RoundedCornersMCircle.AngleCircle(System.Windows.Point,System.Windows.Point,System.Windows.Point)">
+            <summary>
+            圆弧的整体夹角
+            </summary>
+        </member>
+        <member name="M:DealDraw.RoundedCornersMCircle.GetCircular">
+            <summary>
+            三点确定一个圆
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealDraw.RoundedCornersMCircle.AngleLine(System.Windows.Point,System.Windows.Point,System.Windows.Point)">
+            <summary>
+            三点求夹角
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealDraw.RoundedCornersMCircle.GetPointsArc">
+            <summary>
+            圆弧上的Rect2点
+            </summary>
+        </member>
+        <member name="M:DealDraw.RoundedCornersMCircle.AddArcPoint(System.Windows.Point,System.Windows.Point,System.Windows.Size,System.Double,System.Boolean,System.Windows.Media.SweepDirection)">
+            <summary>
+            增加圆弧点
+            </summary>
+        </member>
+        <member name="M:DealDraw.RoundedCornersMCircle.ReDrawArc">
+            <summary>
+            Redraws the entire shape.
+            </summary>
+        </member>
+        <member name="M:DealDraw.FunArc.Circle_Center(System.Windows.Point,System.Windows.Point,System.Double,System.Boolean)">
+            <summary>
+            求取圆心
+            </summary>
+        </member>
+        <member name="M:DealDraw.FunArc.GetStartAngle(System.Windows.Point,System.Windows.Point)">
+            <summary>
+            圆弧起始角度
+            </summary>
+        </member>
+        <member name="M:DealDraw.FunArc.GetEndAngle(System.Windows.Point,System.Windows.Point)">
+            <summary>
+            圆弧终结角度
+            </summary>
+        </member>
+        <member name="T:DealDraw.ShapeRectNew2">
+            <summary>
+            20181231-zx,带点的矩形
+            </summary>
+        </member>
+        <member name="M:DealDraw.ShapeRectNew2.TriggerIndex">
+            <summary>
+            当前形状的索引
+            </summary>
+        </member>
+        <member name="F:DealDraw.RoundedCornersPolygon.Index">
+            <summary>
+            自定义
+            </summary>
+        </member>
+        <member name="M:DealDraw.RoundedCornersPolygon.RedrawShape">
+            <summary>
+            Redraws the entire shape.
+            </summary>
+        </member>
+        <member name="M:DealDraw.RoundedCornersPolygon.AddPointToPath(System.Windows.Point,System.Nullable{System.Windows.Point},System.Nullable{System.Windows.Point})">
+            <summary>
+            Adds a point to the shape
+            </summary>
+            <param name="currentPoint">The current point added</param>
+            <param name="prevPoint">Previous point</param>
+            <param name="prevPrevPoint">The point before the previous point</param>
+        </member>
+        <member name="M:DealDraw.RoundedCornersPolygon.CloseFigure(System.Windows.Media.PathFigure)">
+            <summary>
+            Adds the segments necessary to close the shape
+            </summary>
+            <param name="pathFigure"></param>
+        </member>
+        <member name="M:DealDraw.RoundedCornersPolygon.ConnectLinePoints(System.Windows.Media.PathFigure,System.Windows.Point,System.Windows.Point,System.Windows.Point,System.Double,System.Boolean)">
+            <summary>
+            Method used to connect 2 segments with a common point, defined by 3 points and aplying an arc segment between them
+            </summary>
+            <param name="pathFigure"></param>
+            <param name="p1">First point, of the first segment</param>
+            <param name="p2">Second point, the common point</param>
+            <param name="p3">Third point, the second point of the second segment</param>
+            <param name="roundness">The roundness of the arc</param>
+            <param name="usePercentage">A value that indicates if the roundness of the arc will be used as a percentage or not</param>
+        </member>
+        <member name="M:DealDraw.RoundedCornersPolygon.GetPointAtDistancePercent(System.Windows.Point,System.Windows.Point,System.Double,System.Boolean)">
+            <summary>
+            Gets a point on a segment, defined by two points, at a given distance.
+            </summary>
+            <param name="p1">First point of the segment</param>
+            <param name="p2">Second point of the segment</param>
+            <param name="distancePercent">Distance percent to the point</param>
+            <param name="firstPoint">A value that indicates if the distance is calculated by the first or the second point</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealDraw.RoundedCornersPolygon.GetPointAtDistance(System.Windows.Point,System.Windows.Point,System.Double,System.Boolean)">
+            <summary>
+            Gets a point on a segment, defined by two points, at a given distance.
+            </summary>
+            <param name="p1">First point of the segment</param>
+            <param name="p2">Second point of the segment</param>
+            <param name="distance">Distance  to the point</param>
+            <param name="firstPoint">A value that indicates if the distance is calculated by the first or the second point</param>
+            <returns>The point calculated.</returns>
+        </member>
+        <member name="P:DealDraw.RoundedCornersPolygon.Points">
+            <summary>
+            Gets or sets a collection that contains the points of the polygon.
+            </summary>
+        </member>
+        <member name="P:DealDraw.RoundedCornersPolygon.IsClosed">
+            <summary>
+            Gets or sets a value that specifies if the polygon will be closed or not.
+            </summary>
+        </member>
+        <member name="P:DealDraw.RoundedCornersPolygon.UseRoundnessPercentage">
+            <summary>
+            Gets or sets a value that specifies if the ArcRoundness property value will be used as a percentage of the connecting segment or not.
+            </summary>
+        </member>
+        <member name="P:DealDraw.RoundedCornersPolygon.ArcRoundness">
+            <summary>
+            Gets or sets a value that specifies the arc roundness.
+            </summary>
+        </member>
+    </members>
+</doc>

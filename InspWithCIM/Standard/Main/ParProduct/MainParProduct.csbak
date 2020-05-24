@@ -1,0 +1,579 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using DealConfigFile;
+using BasicClass;
+using Common;
+
+namespace Main
+{
+    //处理产品参数的相关计算
+    public partial class MainParProduct
+    {
+        #region 静态类实例
+        public static MainParProduct M_I = new MainParProduct();
+        #endregion 静态类实例
+
+        #region 玻璃相关参数
+        /// <summary>
+        /// 玻璃尺寸
+        /// </summary>
+        public double XGlass
+        {
+            get
+            {
+                return ParConfigPar.P_I[3].DblValue;
+            }
+        }
+
+        public double YGlass
+        {
+            get
+            {
+                return ParConfigPar.P_I[4].DblValue;
+            }
+        }
+
+        public double ZGlass
+        {
+            get
+            {
+                return ParConfigPar.P_I[5].DblValue;
+            }
+        }
+
+        /// <summary>
+        /// 二维码尺寸
+        /// </summary>
+        public double XCode
+        {
+            get
+            {
+                return ParConfigPar.P_I[15].DblValue;
+            }
+        }
+
+        public double YCode
+        {
+            get
+            {
+                return ParConfigPar.P_I[16].DblValue;
+            }
+        }
+
+        /// <summary>
+        /// PLC中二维码相对基准点坐标
+        /// </summary>
+        public double XCode_PLC//PLC先将玻璃左下角移动到二维码下发，再按坐标移动
+        {
+            get
+            {
+                return Math.Round(XGlass / 2 - XCode, 1);
+            }
+        }
+
+        public double YCode_PLC //基准位置认为在左下角
+        {
+            get
+            {
+                return YCode - YDisLoad;
+            }
+        }
+
+        //根据皮带线的方向计算当前玻璃再前进方向的尺寸
+        public double WidthGlassBelt
+        {
+            get
+            {
+                if (OrientBelt_e == Orient_enum.Top
+                    || OrientBelt_e == Orient_enum.Down)
+                {
+                    return YGlass;
+                }
+                return XGlass;
+            }
+        }
+        #endregion 玻璃相关参数
+
+        #region 取料
+        /// <summary>
+        /// 取料第一列的偏差，相对外框
+        /// </summary>
+        public double XDisLoad
+        {
+            get
+            {
+                return DisCSTToBoard[0];
+            }
+        }
+        /// <summary>
+        /// 玻璃取料时候的露头
+        /// </summary>
+        public double YDisLoad
+        {
+            get
+            {
+                return ParStd.Value1("std2");
+            }
+        }
+        #endregion 取料
+
+        #region 粗定位拍照位置
+        /// <summary>
+        /// 第一列相对于基准值偏差,从取料中心偏差半个玻璃X
+        /// </summary>
+        public double XDisPosCudingWei
+        {
+            get
+            {
+                return DisCSTToBoard[0] - XGlass / 2;
+            }
+        }
+
+        public double YDisPosCudingWei
+        {
+            get
+            {
+                return YDisLoad;
+            }
+        }
+        #endregion 粗定位拍照位置
+
+        #region 精确定位拍照位置
+        /// <summary>
+        /// 
+        /// </summary>
+        public double XPosPreciese
+        {
+            get
+            {
+                
+                return  0;
+            }
+        }
+
+        public double YPosPreciese
+        {
+            get
+            {
+                return ParStd.Value1("std10")+YGlass;
+            }
+        }
+        #endregion 精确定位拍照位置
+
+        #region 相关方向
+        /// <summary>
+        /// AOI上料方向
+        /// </summary>
+        public Orient_enum OrientAOI_e
+        {
+            get
+            {
+                Orient_enum orient_e = Orient_enum.Top;
+
+                #region OLD
+                //switch ((int)ParConfigPar.P_I[6].DblValue)
+                //{
+                //    case 1:
+                //        orient_e = Orient_enum.Top;
+                //        break;
+
+                //    case 2:
+                //        orient_e = Orient_enum.Down;
+                //        break;
+
+                //    case 3:
+                //        orient_e = Orient_enum.Left;
+                //        break;
+
+                //    case 4:
+                //        orient_e = Orient_enum.Right;
+                //        break;
+                //}
+                #endregion
+
+                return orient_e;
+            }
+        }
+
+        public double AngleAOI
+        {
+            get
+            {
+                double angle = (int)ParConfigPar.P_I[6].DblValue;
+                if (angle == 270)
+                {
+                    angle = -90;
+                }
+
+                #region Old
+                //switch (OrientAOI_e)
+                //{
+                //    case Orient_enum.Top:
+                //        angle = 0;
+                //        break;
+
+                //    case Orient_enum.Down:
+                //        angle = 180;
+                //        break;
+
+                //    case Orient_enum.Left:
+                //        angle = 90;
+                //        break;
+
+                //    case Orient_enum.Right:
+                //        angle = -90;
+                //        break;
+                //}
+                #endregion
+
+                return angle - 90;//减去机器人U轴转的角度
+            }
+        }
+
+        /// <summary>
+
+        /// <summary>
+        /// 皮带线
+        /// </summary>
+        public Orient_enum OrientBelt_e
+        {
+            get
+            {
+                Orient_enum orient_e = Orient_enum.Top;
+
+                #region Old
+                //switch ((int)ParConfigPar.P_I[7].DblValue)
+                //{
+                //    case 1:
+                //        orient_e = Orient_enum.Top;
+                //        break;
+
+                //    case 2:
+                //        orient_e = Orient_enum.Down;
+                //        break;
+
+                //    case 3:
+                //        orient_e = Orient_enum.Left;
+                //        break;
+
+                //    case 4:
+                //        orient_e = Orient_enum.Right;
+                //        break;
+                //}
+                #endregion
+
+                return orient_e;
+            }
+        }
+
+        public double AngleBelt
+        {
+            get
+            {
+                double angle = (int)ParConfigPar.P_I[7].DblValue;
+
+                #region Old
+                //switch (OrientAOI_e)
+                //{
+                //    case Orient_enum.Top:
+                //        angle = -90;
+                //        break;
+
+                //    case Orient_enum.Down:
+                //        angle = 90;
+                //        break;
+
+                //    case Orient_enum.Left:
+                //        angle = 0;
+                //        break;
+
+                //    case Orient_enum.Right:
+                //        angle = 180;
+                //        break;
+                //}
+                #endregion
+
+                if (angle == 270)
+                {
+                    angle = -90;
+                }
+                //相对于
+                return angle;
+            }
+        }
+        #endregion 相关方向
+
+        #region AOI治具
+        // <summary>
+        ///治具1
+        /// </summary>
+        public double XPlate1
+        {
+            get
+            {
+                return ParConfigPar.P_I[20].DblValue;
+            }
+        }
+        public double YPlate1
+        {
+            get
+            {
+                return ParConfigPar.P_I[21].DblValue;
+            }
+        }
+        /// <summary>
+        /// 治具2
+        /// </summary>
+        public double XPlate2
+        {
+            get
+            {
+                return ParConfigPar.P_I[22].DblValue;
+            }
+        }
+        public double YPlate2
+        {
+            get
+            {
+                return ParConfigPar.P_I[23].DblValue;
+            }
+        }
+        /// <summary>
+        /// 治具3
+        /// </summary>
+        public double XPlate3
+        {
+            get
+            {
+                return ParConfigPar.P_I[24].DblValue;
+            }
+        }
+        public double YPlate3
+        {
+            get
+            {
+                return ParConfigPar.P_I[25].DblValue;
+            }
+        }
+        /// <summary>
+        /// 治具4
+        /// </summary>
+        public double XPlate4
+        {
+            get
+            {
+                return ParConfigPar.P_I[26].DblValue;
+            }
+        }
+        public double YPlate4
+        {
+            get
+            {
+                return ParConfigPar.P_I[27].DblValue;
+            }
+        }
+        #endregion AOI治具
+
+        #region 插栏
+        /// <summary>
+        /// 起始行列
+        /// </summary>
+        public int RowStart
+        {
+            get
+            {
+                return (int)ParConfigPar.P_I.ParProduct_L[18].DblValue;
+            }
+        }
+
+        public int ColStart
+        {
+            get
+            {
+                return (int)ParConfigPar.P_I.ParProduct_L[19].DblValue;
+            }
+        }
+
+
+        /// <summary>
+        /// 插栏行数
+        /// </summary>
+        public int RowCST
+        {
+            get
+            {
+                return (int)ParConfigPar.P_I.ParProduct_L[12].DblValue;
+            }
+        }
+        /// <summary>
+        /// 插栏列数
+        /// </summary>
+        public int ColCST
+        {
+            get
+            {
+                return (int)ParConfigPar.P_I.ParProduct_L[11].DblValue;
+            }
+        }
+
+        /// <summary>
+        /// 插栏总数
+        /// </summary>
+        public int SumGlass
+        {
+            get
+            {
+                return (int)ParConfigPar.P_I.ParProduct_L[13].DblValue;
+            }
+        }
+
+        /// <summary>
+        /// 龙骨间距
+        /// </summary>
+        public double KeelInterval
+        {
+            get
+            {
+                return ParConfigPar.P_I.ParProduct_L[17].DblValue;
+            }
+        }
+        /// <summary>
+        /// 龙骨列数
+        /// </summary>
+        public int KeelCol
+        {
+            get
+            {
+                return ColCST + 1;
+            }
+        }
+        /// <summary>
+        /// 大小卡塞,0为小
+        /// </summary>
+        bool CSTBigSmall
+        {
+            get
+            {
+                if (ParConfigPar.P_I.ParProduct_L[14].DblValue == 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
+        /// <summary>
+        /// 卡塞宽度
+        /// </summary>
+        public double WidthCST
+        {
+            get
+            {
+                if (CSTBigSmall)
+                {
+                    return ParStd.Value1("Std8");
+                }
+                else
+                {
+                    return ParStd.Value2("Std8");
+                }
+            }
+        }
+
+        /// <summary>
+        /// 各列相对于边的基准位置
+        /// </summary>
+        public double[] DisCSTToBoard
+        {
+            get
+            {
+                //卡塞两边的间隙
+                double dblDis = 0;
+                double[] dblValue = new double[6];
+                try
+                {
+                    //外框-龙骨间距-龙骨宽度=两边的间隙
+                    dblDis = Math.Round((WidthCST - ColCST * KeelInterval) / 2, 2);
+
+                    for (int i = 0; i < ColCST; i++)
+                    {
+                        dblValue[i] = dblDis + KeelInterval * i + KeelInterval / 2;
+                    }
+                }
+                catch (Exception)
+                {
+
+                }
+                return dblValue;
+            }
+        }
+
+        /// <summary>
+        /// 生成所有龙骨位置集合
+        /// </summary>
+        /// <returns></returns>
+        public List<List<Point2D>> CreatKeelPos_L()
+        {
+            List<List<Point2D>> pList = new List<List<Point2D>>();
+            try
+            {
+                double xStd = ParStd.Value1("std7");
+                for (int i = 0; i < KeelCol; i++)
+                {
+                    List<Point2D> point = new List<Point2D>();
+                    for (int j = 0; j < RowCST; j++)
+                    {
+                        double x = xStd - DisCSTToBoard[i];
+                        point.Add(new Point2D(x, 0));
+                    }
+                    pList.Add(point);
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return pList;
+        }
+        /// <summary>
+        /// 实际插栏坐标
+        /// </summary>
+        /// <returns></returns>
+        public List<List<Point2D>> RealCellPos_L()
+        {
+            try
+            {
+                List<List<Point2D>> pReal = new List<List<Point2D>>();
+                //起始数目               
+                List<List<Point2D>> pAll = CreatKeelPos_L();
+                for (int i = ColStart - 1; i < ColCST; i++)
+                {
+                    List<Point2D> pRow = new List<Point2D>();
+                    for (int j = RowStart - 1; j < RowCST; j++)
+                    {
+                        double x = (pAll[i][j].DblValue1 + pAll[i + 1][j].DblValue1) / 2;
+                        pRow.Add(new Point2D(Math.Round((float)x, 3), 0));
+                    }
+                    pReal.Add(pRow);
+                }
+                return pReal;
+            }
+            catch (Exception ex)
+            {
+                Log.L_I.WriteError("VarConfigPWork", ex);
+                return null;
+            }
+        }
+
+        #endregion
+    }
+
+    public enum Orient_enum
+    {
+        Top,
+        Down,
+        Left,
+        Right
+    }
+}

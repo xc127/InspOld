@@ -1,0 +1,33 @@
+﻿<BasicClass:BaseControl x:Class="DealLog.UCStateWork"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:BasicClass="clr-namespace:BasicClass;assembly=BasicClass"
+             mc:Ignorable="d" 
+             d:DesignHeight="230" d:DesignWidth="389">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!--<ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />-->
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Label Content="清空日志" Foreground="Black" Height="25" HorizontalAlignment="Right" VerticalAlignment="Top" Width="60" Background="{x:Null}" Panel.ZIndex="1" Margin="0,0,5,0" Name="lblClear" IsEnabled="True" MouseLeftButtonDown="lblClear_MouseLeftButtonDown" />
+        <Label Content="本地日志" Foreground="Black" Height="25" HorizontalAlignment="Right" VerticalAlignment="Top" Width="60" Background="{x:Null}" Panel.ZIndex="1" Margin="0,0,65,0" Name="lblOpenFolder" IsEnabled="True" MouseLeftButtonDown="lblOpenFolder_MouseLeftButtonDown" />
+        <GroupBox BorderBrush="#CC119EDA" BorderThickness="1" Header="运行状态" HorizontalAlignment="Stretch" Margin="0" Name="nGroupBox2" VerticalAlignment="Stretch" Visibility="Visible"  Foreground="Black">
+            <DataGrid AutoGenerateColumns="False" BorderThickness="1" GridLinesVisibility="All" IsReadOnly="True" Name="dgState" SelectionUnit="FullRow" Foreground="Blue" VerticalGridLinesBrush="#FFF0F0F0" HorizontalGridLinesBrush="#FFF0F0F0" Background="White">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding State}" Header="运行信息" Width="*" />
+                    <DataGridTextColumn Binding="{Binding Time}" Header="时间" Width="70" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </GroupBox>
+    </Grid>
+</BasicClass:BaseControl>

@@ -1,0 +1,988 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DealComprehensive</name>
+    </assembly>
+    <members>
+        <member name="M:DealComprehensive.BaseDealComprehensive.RefreshImage">
+            <summary>
+            刷新图像
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.RefreshCurrImage(Camera.BaseUCDisplayCamera)">
+            <summary>
+            刷新当前图片
+            </summary>
+            <param name="baseUCDisplayCamera">相机类，区分了主界面和相机综合设置界面</param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.RefreshImage(System.String,Camera.BaseUCDisplayCamera)">
+            <summary>
+            刷新指定单元格的图像
+            </summary>
+            <param name="nameCell"></param>
+            <param name="baseUCDisplayCamera">相机类，区分了主界面和相机综合设置界面</param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.RefreshImage(System.Int32)">
+            <summary>
+            刷新指定位置的图像
+            </summary>
+            <param name="pos"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.RefreshImage_MainShow(System.Int32)">
+            <summary>
+            刷新指定类的Hobject
+            </summary>
+            <param name="pos"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.RefreshImage_Select(System.Int32)">
+            <summary>
+            如果Main结果又图片，刷新这个
+            </summary>
+            <param name="pos"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.RefreshImage_ByCurPos">
+            <summary>
+            刷新当前的位置图像
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.RefreshHobject">
+            <summary>
+            刷新region和xld显示
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.RefreshHobject(System.String,Camera.BaseUCDisplayCamera)">
+            <summary>
+            不刷新Image,只刷新对象
+            </summary>
+            <param name="nameCell"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.RefreshHobject_MainShow(System.Int32)">
+            <summary>
+            刷新指定类的Hobject
+            </summary>
+            <param name="nameCell"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.RefreshHobject_MainShow_ByCurPos">
+            <summary>
+            刷新指定类的Hobject
+            </summary>
+            <param name="nameCell"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.RefreshShape">
+            <summary>
+            刷新形状
+            </summary>
+            <param name="pos"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.RefreshShape(System.String,Camera.BaseUCDisplayCamera)">
+            <summary>
+            刷新指定单元格
+            </summary>
+            <param name="nameCell"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.RefreshShape(System.Int32)">
+            <summary>
+            刷新指定位置
+            </summary>
+            <param name="nameCell"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.RefreshShape_ByCurPos">
+            <summary>
+            刷新当前位置
+            </summary>
+            <param name="pos"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.ClearHtResultObjectShape">
+            <summary>
+            清除哈希表中的halcon对象
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.RefreshResultInfo(System.String,Camera.BaseUCDisplayCamera)">
+            <summary>
+            
+            </summary>
+            <param name="nameCell"></param>
+            <param name="baseUCDisplayCamera">区分主窗体和相机综合设置窗体</param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.InitCalibCamera(System.Int32)">
+            <summary>
+            相机校准
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.InitCalibAffine(System.Int32)">
+            <summary>
+            相机投影校准
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.InitCalibHandEye(System.Int32)">
+            <summary>
+            手眼校准
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.InitCalibRotate(System.Int32)">
+            <summary>
+            将旋转中心保存在参数中的值，写入到结果类里面，20181110张鑫
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.InitCalibAxis(System.Int32)">
+            <summary>
+            将旋转中心保存在参数中的值，写入到结果类里面，20181110张鑫
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.Communication(ParComprehensive.BaseParComprehensive)">
+            <summary>
+            通过传递的相机UI进行图像抓取
+            </summary>
+            <param name="par"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SetCommOut(ParComprehensive.ParDealCommunication)">
+            <summary>
+            根据单元类型，选择拍照参数设置，或者是控制光源
+            </summary>
+            <param name="baseUCCamera"></param>
+            <param name="parDealGrabImage"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SetCommWritePLC(ParComprehensive.ParDealCommunication)">
+            <summary>
+            根据单元类型，选择拍照参数设置，或者是控制光源
+            </summary>
+            <param name="par"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DisplayResultInfo(System.Int32,BasicDisplay.BaseUCDisplay)">
+            <summary>
+            显示当前拍照位置的信息
+            </summary>
+            <param name="pos"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveAllImage">
+            <summary>
+            保存所有运行过的图像,按照默认的路径
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveImageFullPath_CurBit(System.String)">
+            <summary>
+            保存全路径，包含了文件夹和图片名称
+            </summary>
+            <param name="path">完整路径</param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveOKImage">
+            <summary>
+            保存当前单元的OK图像
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveOKImageDefaultPath(BasicClass.ImageAll)">
+            <summary>
+            保存指定的图片到默认路径
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveOKImageDefaultPath(BasicClass.ImageAll,BasicClass.FormatImage_enum)">
+            <summary>
+            保存图像到默认路径20190402
+            </summary>
+            <param name="imageAll">图像</param>
+            <param name="formatImage_e">图像格式</param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveOKImage(BasicComprehensive.CellReference,BasicComprehensive.HObjectReference,System.String)">
+            <summary>
+            保存指定的单元图像到指定的路径
+            </summary>
+            <param name="cellReference"></param>
+            <param name="hObjectReference"></param>
+            <param name="path"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveOKImage(System.String,System.String)">
+            <summary>
+            保存OK图像
+            </summary>
+            <param name="nameCell">传入的当前算子引用的拍照算子名称</param>
+            <param name="path"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveOKImage_CurBit(System.String)">
+            <summary>
+            保存NG图像到指定的目录Bitmap 20190404
+            </summary>
+            <param name="nameFolder">根目录下文件夹名称</param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveOKImage(System.String,BasicClass.FormatImage_enum,System.String)">
+            <summary>
+            保存图像到指定目录 20190402-zx
+            </summary>
+            <param name="nameCell">单元格名称</param>
+            <param name="formatImage_e">图像格式</param>
+            <param name="path">根目录下文件夹名称</param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveOKImage_CurBit">
+            <summary>
+            保存当前图像的Bitmap20190404
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveOKImage(System.String)">
+            <summary>
+            保存图像到默认路径
+            </summary>
+            <param name="nameCell">图像算子单元格</param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveOKImageBit_Cell(System.String)">
+            <summary>
+            保存图像到默认路径,以Bitmap格式
+            </summary>
+            <param name="nameCell">图像算子单元格</param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveOKImage(System.String,BasicClass.FormatImage_enum)">
+            <summary>
+            保存OK图片到默认路径
+            </summary>
+            <param name="nameCell">单元格名称</param>
+            <param name="formatImage_e">图像格式</param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveNGImage">
+            <summary>
+            保存NG的图像
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveNGImage_CurBit">
+            <summary>
+            保存当前图像的Bitmap20190404
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveNGImageDefaultPath(BasicClass.ImageAll)">
+            <summary>
+            保存指定的图片到默认路径
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveNGImage(BasicComprehensive.CellReference,BasicComprehensive.HObjectReference,System.String)">
+            <summary>
+            保存指定单元NG图像到指定的路径
+            </summary>
+            <param name="nameCell">图像单元名称</param>
+            <param name="path"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveNGImage(System.String,System.String)">
+            <summary>
+            保存NG图像到指定的目录
+            </summary>
+            <param name="nameCell">单元格名称</param>
+            <param name="nameFolder">根目录下文件夹名称</param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveNGImage_CurBit(System.String)">
+            <summary>
+            保存NG图像到指定的目录Bitmap 20190404
+            </summary>
+            <param name="nameFolder">根目录下文件夹名称</param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveNGImage(System.String,BasicClass.FormatImage_enum,System.String)">
+            <summary>
+            保存NG图像到指定路径
+            </summary>
+            <param name="nameCell">单元格</param>
+            <param name="formatImage_e">图像格式</param>
+            <param name="path">指定根目录下文件夹</param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveNGImage(System.String)">
+            <summary>
+            保存指定单元的NG图像
+            </summary>
+            <param name="nameCell"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveNGImageBit_Cell(System.String)">
+            <summary>
+            保存图像到默认路径,以Bitmap格式
+            </summary>
+            <param name="nameCell">图像算子单元格</param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveNGImage(System.String,BasicClass.FormatImage_enum)">
+            <summary>
+            保存指定单元格NG图像到默认路径
+            </summary>
+            <param name="nameCell">单元格名称</param>
+            <param name="formatImage_e">图像格式</param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.Fun2DCode(ParComprehensive.ParDealImageProcess,System.Collections.Hashtable)">
+            <summary>
+            二维码
+            </summary>
+            <param name="parDealImageProcess"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.FunGrayAnalyze(ParComprehensive.ParDealImageProcess,System.Collections.Hashtable)">
+            <summary>
+            灰度分析
+            </summary>
+            <param name="parDealImageProcess"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.FunSharpness(ParComprehensive.ParDealImageProcess,System.Collections.Hashtable)">
+            <summary>
+            清晰度
+            </summary>
+            <param name="parDealImageProcess"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.FunSharpnessFocal(ParComprehensive.ParDealImageProcess,System.Collections.Hashtable)">
+            <summary>
+            清晰度
+            </summary>
+            <param name="parDealImageProcess"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealScaleShapeTMCrossLines(ParComprehensive.ParDealImageProcess,System.Collections.Hashtable)">
+            <summary>
+            形状匹配T-M直线交点
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealNccTMCrossLines(ParComprehensive.ParDealImageProcess,System.Collections.Hashtable)">
+            <summary>
+            灰度匹配T-M直线交点
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealMeasureSLine(ParComprehensive.ParDealImageProcess,System.Collections.Hashtable)">
+            <summary>
+            直线测量
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealMeasureCircle(ParComprehensive.ParDealImageProcess,System.Collections.Hashtable)">
+            <summary>
+            圆弧测量
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.FunPointHarris(ParComprehensive.ParDealImageProcess,System.Collections.Hashtable)">
+            <summary>
+            H角点
+            </summary>
+            <param name="parDealImageProcess"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.FunPointCV(ParComprehensive.ParDealImageProcess,System.Collections.Hashtable)">
+            <summary>
+            V角点
+            </summary>
+            <param name="parDealImageProcess"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.FunPointRect(ParComprehensive.ParDealImageProcess,System.Collections.Hashtable)">
+            <summary>
+            四边形角点
+            </summary>
+            <param name="parDealImageProcess">图像处理参数</param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DisplayROI(System.Int32,Camera.BaseUCDisplayCamera,System.Double)">
+            <summary>
+            显示对应拍照位置的ROI
+            </summary>
+            <param name="pos">拍照位置</param>
+            <param name="baseUCDisplay">相机窗体</param>
+            <param name="scale">缩放系数</param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DiaplayROI_H(System.Int32,Camera.BaseUCDisplayCamera)">
+            <summary>
+            显示对应拍照位置的ROI,获取H对象-20190703
+            </summary>
+            <param name="pos"></param>
+            <param name="baseUCDisplay"></param>
+            <returns>当前拍照位置的ROI对象</returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DisplayROI(System.String,Camera.BaseUCDisplayCamera)">
+            <summary>
+            显示指定单元格的ROI 20190412-zx
+            </summary>
+            <param name="nameCell">指定的单元格</param>
+            <param name="baseUCDisplay">相机窗体</param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.ShowROI(BasicComprehensive.ParCellExeReference,Camera.BaseUCDisplayCamera)">
+            <summary>
+            显示指定算法单元的ROI到图形显示画面
+            </summary>
+            <param name="pos"></param>
+            <param name="baseUCDisplay"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SelectImageShape(ParComprehensive.BaseParComprehensive)">
+            <summary>
+            
+            </summary>
+            <param name="baseParComprehensive"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DisplayResultShape(System.Int32,BasicDisplay.BaseUCDisplay,System.Double)">
+            <summary>
+            显示当前拍照位置的结果
+            </summary>
+            <param name="pos"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DisplayResultShape_H(System.Int32,BasicDisplay.BaseUCDisplay)">
+            <summary>
+            显示指定位置的绘制，目前制作实时处理显示调用
+            </summary>
+            <param name="pos"></param>
+            <param name="baseUCDisplay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DisplayResultShape(System.String,BasicDisplay.BaseUCDisplay)">
+            <summary>
+            显示指定单元格的结果
+            </summary>
+            <param name="pos"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.GetParDisplayResultShape(ParComprehensive.BaseParComprehensive)">
+            <summary>
+            获取每个单元里面的显示结果类
+            </summary>
+            <param name="baseParComprehensive"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DisplayImage(ParComprehensive.ParDealDisplay)">
+            <summary>
+            显示图像
+            </summary>
+            <param name="par"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DisplayCamera(DealDisplay.BaseParDisplay)">
+            <summary>
+            显示相机图像
+            </summary>
+            <param name="baseParDisplay"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DisplayCellXLDRegion(System.Int32)">
+            <summary>
+            如果匹配或者圆弧线段被选中记录，则默认显示到界面中
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DisplayResultImage(DealDisplay.BaseParDisplay)">
+            <summary>
+            显示相机图像
+            </summary>
+            <param name="baseParDisplay"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.GrabImage(ParComprehensive.BaseParComprehensive,Camera.BaseUCDisplayCamera,System.Boolean)">
+            <summary>
+            通过传递的相机UI进行图像抓取
+            </summary>
+            <param name="baseParComprehensive">相机综合设置参数</param>
+            <param name="baseUCDisplayCamera">相机实例</param>
+            <param name="blTestRun">是否是相机综合设置调用</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SetGrabImage(ParComprehensive.ParDealGrabImage,Camera.BaseUCDisplayCamera,System.Boolean)">
+            <summary>
+            根据单元类型，选择拍照参数设置，或者是控制光源
+            </summary>
+            <param name="parDealGrabImage">参数类</param>
+            <param name="baseUCDisplayCamera">相机类，区分了相机综合设置和相机类</param>
+            <param name="blTestRun">是否是相机综合设置调用</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SetLight(ParComprehensive.ParDealGrabImage)">
+            <summary>
+            拍照设置
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.TakePhoto(ParComprehensive.ParDealGrabImage,Camera.BaseUCDisplayCamera,System.Boolean)">
+            <summary>
+            拍照设置
+            </summary>
+            <param name="parDealGrabImage">参数类</param>
+            <param name="baseUCDisplayCamera">相机类，区分了相机综合设置和相机类</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DefaultDisplayImage(BasicDisplay.BaseUCDisplay)">
+            <summary>
+            如果没有图像显示源，则显示默认的采集图像
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.PreSetPhoto(System.String@)">
+            <summary>
+            预设置拍照参数,设置曝光时间，增益等，再软件启动或者换型的时候设置
+            </summary>
+            <param name="str">输出信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.FunMStraightLine(ParComprehensive.ParDealImageProcess,System.Collections.Hashtable)">
+            <summary>
+            求取直线
+            </summary>
+            <param name="parDealImageProcess"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.FunMCrossLines(ParComprehensive.ParDealImageProcess,System.Collections.Hashtable)">
+            <summary>
+            求取直线交点
+            </summary>
+            <param name="parDealImageProcess"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.FunMCircle(ParComprehensive.ParDealImageProcess,System.Collections.Hashtable)">
+            <summary>
+            求取M圆
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.FunMCircleSegment(ParComprehensive.ParDealImageProcess,System.Collections.Hashtable)">
+            <summary>
+            求取M圆
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.FunMArc(ParComprehensive.ParDealImageProcess,System.Collections.Hashtable)">
+            <summary>
+            求取直线
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SelectImageProcess(ParComprehensive.BaseParComprehensive)">
+            <summary>
+            选择图像处理算法大类
+            </summary>
+            <param name="baseParComprehensive"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.CountWinTemp(System.Boolean@,System.Boolean@,System.Boolean@,System.Boolean@)">
+            <summary>
+            统计窗体类型
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.CreateTemplate(System.String@)">
+            <summary>
+            创建模板ＩＤ
+            </summary>
+            <param name="cellError"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.CreateTemplate(System.String@,System.Int32@,System.Int32@,System.Int32@,System.Int32@)">
+            <summary>
+            重载，兼容老版本
+            </summary>
+            <param name="cellError"></param>
+            <param name="numScale"></param>
+            <param name="numNcc"></param>
+            <param name="numScaleT"></param>
+            <param name="numNccT"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.GetTemplateID(DealImageProcess.BaseParTemplate,System.Boolean@,System.Boolean@)">
+            <summary>
+            求取模板ID
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.TempScaledShape(DealImageProcess.BaseParTemplate)">
+            <summary>
+            形状匹配模板ID
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.TempNcc(DealImageProcess.BaseParTemplate)">
+            <summary>
+            灰度值匹配模板ID
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.ReadHTModelID(System.String)">
+            <summary>
+            读取模板ID
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealScaledShape(ParComprehensive.ParDealImageProcess,System.Collections.Hashtable)">
+            <summary>
+            形状匹配
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealScaledShapeT(ParComprehensive.ParDealImageProcess,System.Collections.Hashtable)">
+            <summary>
+            形状匹配T
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealNcc(ParComprehensive.ParDealImageProcess,System.Collections.Hashtable)">
+            <summary>
+            灰度值匹配
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealNccT(ParComprehensive.ParDealImageProcess,System.Collections.Hashtable)">
+            <summary>
+            灰度值匹配T
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealComprehensivePos(Camera.BaseUCDisplayCamera,System.Collections.Hashtable,System.Int32,System.Collections.Hashtable@)">
+            <summary>
+            算法单元处理方法以及结果输出，采用Camera窗体
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealComprehensivePos_H(Camera.BaseUCDisplayCamera,System.Collections.Hashtable,System.Int32,System.Collections.Hashtable@)">
+            <summary>
+            显示采用H对象,目前只在实时显示中调用
+            </summary>
+            <param name="baseUCDisplayCamera"></param>
+            <param name="htUCDisplay"></param>
+            <param name="pos"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealComprehensivePos(Camera.BaseUCDisplayCamera,Camera.BaseUCDisplayCamera,System.Collections.Hashtable,System.Int32,System.Collections.Hashtable@)">
+            <summary>
+            传入Image窗体
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealComprehensivePosCell(Camera.BaseUCDisplayCamera,System.Collections.Hashtable,System.String,System.Int32,System.Collections.Hashtable@)">
+            <summary>
+            求取特定单元格的结果
+            </summary>
+            <param name="baseUCDisplayCamera">相机实例</param>
+            <param name="htUCDisplay">显示窗体集合</param>
+            <param name="nameCell">算法单元</param>
+            <param name="pos">拍照位置</param>
+            <param name="htResult">哈希表</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealComprehensivePosCell(Camera.BaseUCDisplayCamera,System.Collections.Hashtable,System.String,System.Collections.Hashtable@)">
+            <summary>
+            求取特定单元格的结果
+            </summary>
+            <param name="baseUCDisplayCamera">相机实例</param>
+            <param name="htUCDisplay">显示窗体集合</param>
+            <param name="nameCell">算法单元</param>
+            <param name="htResult">哈希表</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealComprehensivePosCell(Camera.BaseUCDisplayCamera,System.Collections.Hashtable,System.String[],System.Collections.Hashtable@)">
+            <summary>
+            求取特定单元格List的结果20190412
+            </summary>
+            <param name="baseUCDisplayCamera">相机实例</param>
+            <param name="htUCDisplay">显示窗体集合</param>
+            <param name="nameCell_L">算法单元数组</param>
+            <param name="htResult">哈希表</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealComprehensivePosCell(Camera.BaseUCDisplayCamera,BasicComprehensive.ParCellExeReference,System.Collections.Hashtable@)">
+            <summary>
+            按照条件分支的单元，进行处理
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealComprehensivePosCell_ForTestRun(Camera.BaseUCDisplayCamera,BasicComprehensive.ParCellExeReference,System.Collections.Hashtable@)">
+            <summary>
+            为测试运行进行关联算法时，添加的处理
+            </summary>
+            <param name="baseUCDisplayCamera">相机类</param>
+            <param name="parCellExecuteReference"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealComprehensivePosCell_ForTestRun(Camera.BaseUCDisplayCamera,BasicComprehensive.ParCellExeReference,System.Collections.Generic.List{BasicComprehensive.CellReference},System.Collections.Hashtable@)">
+            <summary>
+            执行关联算法单元，包含显示，
+            </summary>
+            <param name="baseUCDisplayCamera">相机实例</param>
+            <param name="parCellExecuteReference">需要执行的算法单元</param>
+            <param name="cellExecute_L"></param>
+            <param name="htResult">结果哈希表</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealComprehensivePosNoDisplay(Camera.BaseUCDisplayCamera,System.Collections.Hashtable,BasicClass.Pos_enum,System.Collections.Hashtable@,System.Boolean)">
+            <summary>
+            重载相机综合处理，默认不存图
+            </summary>
+            <param name="baseUCDisplayCamera">相机类</param>
+            <param name="htUCDisplay">窗体哈希表</param>
+            <param name="pos_e">位置枚举</param>
+            <param name="htResult">结果哈希表</param>
+            <param name="blSaveImage">是否存图</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealComprehensivePosNoDisplay(Camera.BaseUCDisplayCamera,System.Collections.Hashtable,System.Int32,System.Collections.Hashtable@,System.Boolean)">
+            <summary>
+            调用相机综合设置，不显示
+            </summary>
+            <param name="baseUCDisplayCamera"></param>
+            <param name="htUCDisplay"></param>
+            <param name="pos"></param>
+            <param name="htResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DisplayComprehensivePos(Camera.BaseUCDisplayCamera,System.Collections.Hashtable,System.Int32,System.Collections.Hashtable)">
+            <summary>
+            传入结果，显示所有，Main中主要调用
+            </summary>
+            <param name="baseUCDisplayCamera">相机实例</param>
+            <param name="htUCDisplay">存储所有显示窗口的哈希表</param>
+            <param name="pos">拍照位置</param>
+            <param name="htResult">结果哈希表</param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DisplayComprehensivePos_H(Camera.BaseUCDisplayCamera,System.Collections.Hashtable,System.Int32,System.Collections.Hashtable)">
+            <summary>
+            传入结果，显示所有，Main中主要调用20190703
+            目前只在实时显示处理时调用
+            </summary>
+            <param name="baseUCDisplayCamera"></param>
+            <param name="htUCDisplay"></param>
+            <param name="pos"></param>
+            <param name="htResult"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DisplayComprehensiveCell(Camera.BaseUCDisplayCamera,System.Collections.Hashtable,System.String,System.Collections.Hashtable,System.Boolean)">
+            <summary>
+            显示指定单元格的结果 20190412
+            </summary>
+            <param name="baseUCDisplayCamera">相机实例</param>
+            <param name="htUCDisplay">显示集合</param>
+            <param name="nameCell">单元格</param>
+            <param name="htResult">结果哈希表</param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DisplayComprehensivePos_MainShow(Camera.BaseUCDisplayCamera,System.Collections.Hashtable,System.Int32,System.Boolean,System.Collections.Hashtable)">
+            <summary>
+            显示图像
+            </summary>
+            <param name="baseUCDisplayCamera"></param>
+            <param name="htUCDisplay"></param>
+            <param name="pos"></param>
+            <param name="blShowMainImage"></param>
+            <param name="htResult"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DisplayComprehensivePos(Camera.BaseUCDisplayCamera,System.Collections.Hashtable,BasicClass.Pos_enum,System.Collections.Hashtable,System.Boolean,System.Boolean)">
+            <summary>
+            传入结果，显示所有,在Main中主要调用
+            </summary>
+            <param name="baseUCDisplayCamera">相机显示</param>
+            <param name="htUCDisplay">窗体哈希表</param>
+            <param name="pos_e">位置枚举</param>
+            <param name="htResult">结果哈希表</param>
+            <param name="blResult">结果是否正确</param>
+            <param name="blSaveImage">是否保存图像</param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DisplayComprehensivePos_H(Camera.BaseUCDisplayCamera,System.Collections.Hashtable,BasicClass.Pos_enum,System.Collections.Hashtable,System.Boolean)">
+            <summary>
+            通过H对象显示，实时触发模式
+            </summary>
+            <param name="baseUCDisplayCamera"></param>
+            <param name="htUCDisplay"></param>
+            <param name="pos_e"></param>
+            <param name="htResult"></param>
+            <param name="blResult"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DisplayComprehensivePos_Main(Camera.BaseUCDisplayCamera,System.Collections.Hashtable,BasicClass.Pos_enum,System.Collections.Hashtable,System.Boolean,System.Boolean)">
+            <summary>
+            是否刷新Main里面的图像
+            </summary>
+            <param name="baseUCDisplayCamera"></param>
+            <param name="htUCDisplay"></param>
+            <param name="pos_e"></param>
+            <param name="htResult"></param>
+            <param name="blResult"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DisplayComprehensivePos(Camera.BaseUCDisplayCamera,System.Collections.Hashtable,System.Int32,System.Collections.Hashtable,System.Boolean)">
+            <summary>
+            传入结果，显示所有，Main中主要调用
+            </summary>
+            <param name="baseUCDisplayCamera"></param>
+            <param name="htUCDisplay"></param>
+            <param name="pos"></param>
+            <param name="htResult"></param>
+            <param name="blResult"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DisplayComprehensivePos(Camera.BaseUCDisplayCamera,System.Collections.Hashtable,System.Int32,System.Collections.Hashtable,System.Boolean,System.Boolean)">
+            <summary>
+            传入结果，显示所有,选择是否显示Main里面传入的图像
+            </summary>
+            <param name="baseUCDisplayCamera"></param>
+            <param name="htUCDisplay"></param>
+            <param name="pos"></param>
+            <param name="htResult"></param>
+            <param name="blResult"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealComprehensivePos(Camera.BaseUCDisplayCamera,System.Int32)">
+            <summary>
+            单独执行拍照的算法
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealComprehensivePos(Camera.BaseUCDisplayCamera,BasicClass.Pos_enum)">
+            <summary>
+            单独执行拍照的算法
+            </summary>
+            <param name="baseUCDisplayCamera">相机</param>
+            <param name="pos_e">拍照位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealComprehensivePos_NoPhoto(Camera.BaseUCDisplayCamera,System.Collections.Hashtable,System.Int32,System.Collections.Hashtable@)">
+            <summary>
+            执行没有拍照的算法
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.ClearResultDoneNew(System.Int32)">
+            <summary>
+            清除上次执行的记录，只记录当次的执行
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealComprehensivePos(System.Int32,System.Boolean)">
+            <summary>
+            执行算法
+            </summary>
+            <param name="pos">拍照位置</param>
+            <param name="blSaveImage">是否保存图像</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealComprehensivePos(System.Int32,System.String)">
+            <summary>
+             执行算法中的特定单元
+            </summary>
+            <param name="pos">拍照位置</param>
+            <param name="type">图像类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealComprehensivePosWithout(System.Int32,System.String)">
+            <summary>
+            执行除特定位置的特定算法
+            </summary>
+            <param name="pos"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealComprehensivePos_SaveImage(System.Int32)">
+            <summary>
+            单独执行保存图像
+            </summary>
+            <param name="pos">拍照位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.RecordTimeImageP(System.Collections.Hashtable,System.Int32,System.Double)">
+            <summary>
+            记录图像处理时间
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.RecordTimeDisplay(System.Collections.Hashtable,System.Int32,System.Double,System.String,System.Boolean)">
+            <summary>
+            记录显示时间
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SelectAlgorithm(ParComprehensive.BaseParComprehensive,Camera.BaseUCDisplayCamera,System.Boolean)">
+            <summary>
+            根据每个单元的设置，选择算法
+            </summary>
+            <param name="baseParComprehensive">综合设置单元格的参数</param>
+            <param name="baseUCDisplayCamera">相机实例，区分相机综合设置和主界面的窗体</param>
+            <param name="blTestRun">是否是相机综合设置在调用</param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.AddConfigParAndAxisResult">
+            <summary>
+            添加配置参数以及轴坐标
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.CalTime(BasicDisplay.BaseUCDisplay,System.Int64)">
+            <summary>
+            计算算法时间，剔除相机延迟的时间
+            </summary>
+            <param name="time"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DisplayResultShape(ParComprehensive.ParDealDisplay,System.Double)">
+            <summary>
+            显示形状
+            </summary>
+            <param name="par"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.ShowResultShape(DealDisplay.BaseParDisplay,System.Double)">
+            <summary>
+            显示结果图形,按照设定的算法单元
+            </summary>
+            <param name="par"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SaveImage(ParComprehensive.ParDealImageProcess,System.Collections.Hashtable)">
+            <summary>
+            保存图像
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SelectInspection(ParComprehensive.BaseParComprehensive)">
+            <summary>
+            选择图像处理算法大类
+            </summary>
+            <param name="baseParComprehensive"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.AddResult(System.String,DealResult.BaseResult,System.Boolean)">
+            <summary>
+            在结果哈希表中添加新的结果，并释放以及移除旧的结果
+            </summary>
+            <param name="nameCell">结果单元格</param>
+            <param name="resultBase">结果类</param>
+            <param name="blTestRun">是否相机综合设置调用</param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DisposeResult(System.String,System.Boolean)">
+            <summary>
+            释放指定的单元
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.GetHtImage(BasicComprehensive.CellReference,BasicComprehensive.HObjectReference)">
+            <summary>
+            从哈希表中获取图像
+            </summary>
+            <param name="cellReference"></param>
+            <param name="hObjectReference"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.GetHtOriginalImage">
+            <summary>
+            获取相机采集的原始图像
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.WorkFlow(ParComprehensive.BaseParComprehensive)">
+            <summary>
+            通过传递的相机UI进行图像抓取
+            </summary>
+            <param name="baseParComprehensive"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.ClearNum_CycLogicBranch">
+            <summary>
+            清空同一流程中分支控制执行的次数
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.WorkFlowSetting(ParComprehensive.ParDealWorkFlow,System.String)">
+            <summary>
+            设置运行过程中的报警图像保存等
+            </summary>
+            <param name="parDealWorkFlow"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.LogicBranch(ParComprehensive.ParDealWorkFlow)">
+            <summary>
+            条件分支
+            </summary>
+            <param name="parDealWorkFlow"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.LogicBranch_DealComprehensive(BasicComprehensive.ParCellExeReference)">
+            <summary>
+            按照条件分支的单元，进行处理
+            </summary>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.WorkSetting(ParComprehensive.ParDealWorkFlow)">
+            <summary>
+            设置运行过程中的报警图像保存等
+            </summary>
+            <param name="parDealWorkFlow"></param>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.DealWorkSetting(System.Boolean,System.Int32)">
+            <summary>
+            处理运行设置
+            </summary>
+            <param name="blResult"></param>
+            <param name="pos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DealComprehensive.BaseDealComprehensive.SelectConfigFile(ParComprehensive.BaseParComprehensive)">
+            <summary>
+            选择配置文件算法
+            </summary>
+            <param name="baseParComprehensive"></param>
+        </member>
+    </members>
+</doc>

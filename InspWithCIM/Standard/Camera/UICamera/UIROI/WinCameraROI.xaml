@@ -1,0 +1,21 @@
+﻿<BasicClass:BaseMetroWindow x:Class="Camera.WinCameraROI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:MetroControls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:BasicClass="clr-namespace:BasicClass;assembly=BasicClass"
+        xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib" 
+        xmlns:Camera="clr-namespace:Camera" 
+        Title="绘制ROI窗体" Height="630" Width="630" Loaded="BaseMetroWindow_Loaded" Closing="BaseMetroWindow_Closing" Topmost="True" WindowStyle="SingleBorderWindow" ShowMinButton="True" ShowMaxRestoreButton="False" ShowCloseButton="False" Name="winCameraROI">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <!--<ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />-->
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid Name="gdRoot"></Grid>
+</BasicClass:BaseMetroWindow>

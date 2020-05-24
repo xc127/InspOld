@@ -1,0 +1,23 @@
+﻿<DealPLC:BaseUCPLC x:Class="DealPLC.UCSetRegCycle"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:BasicClass="clr-namespace:BasicClass;assembly=BasicClass"
+             xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib"
+             xmlns:DealPLC="clr-namespace:DealPLC"
+             mc:Ignorable="d" 
+             d:DesignHeight="325" d:DesignWidth="485" >
+    <Grid>
+        <ControlLib:NGroupBox Header="循环读取寄存器"  HorizontalAlignment="Stretch" Margin="0" TitleBrush="#FF00D1E5" VerticalAlignment="Stretch" >
+            <Grid Name="gdLayout">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200*" />
+                    <ColumnDefinition Width="100*" />
+                </Grid.ColumnDefinitions>
+                <TextBox AllowDrop="True"  HorizontalAlignment="Stretch" Name="txtCycReg" Text="" TextWrapping="WrapWithOverflow" VerticalAlignment="Stretch" />
+                <ControlLib:ButtonColor Background="#FF66FFFF" Click="btnCreateCycReg_Click" Content="生成寄存器" FontSize="20" FontStyle="Normal" FontWeight="SemiBold" Height="40" IsEnabled="True" Margin="2" Name="btnCreateCycReg" ToolTip="保存对参数的修改" VerticalAlignment="Center" Grid.Column="1" Width="120"/>
+            </Grid>
+        </ControlLib:NGroupBox>
+    </Grid>
+</DealPLC:BaseUCPLC>

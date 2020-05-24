@@ -1,0 +1,51 @@
+﻿<BasicClass:BaseControl x:Class="Main.UCCamFunSet"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:BasicClass="clr-namespace:BasicClass;assembly=BasicClass"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:local="clr-namespace:Main"
+             xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib"
+             mc:Ignorable="d" Loaded="BaseControl_Loaded">
+    <ControlLib:NGroupBox BorderBrush="#CC119EDA" Margin="2" BorderThickness="1" Header="相机功能选择" TitleBrush="#FF00D1E5">
+        <Grid Width="900" Height="450">
+            <Grid.Resources>
+                <ObjectDataProvider MethodName="GetValues" x:Key="KeyCamFun" ObjectType="{x:Type sys:Enum}">
+                    <ObjectDataProvider.MethodParameters>
+                        <x:Type Type="local:FunCam_Enum"/>
+                    </ObjectDataProvider.MethodParameters>
+                </ObjectDataProvider>
+            </Grid.Resources>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="1.2*" />
+            </Grid.ColumnDefinitions>
+            <Label Content="相机1" HorizontalAlignment="Right" IsEnabled="{Binding Path=IsEnable,ElementName=cbxCam1Set}" VerticalAlignment="Center"/>
+            <ComboBox Name="cbxCam1Set" IsEnabled="False" ItemsSource="{Binding Source={StaticResource KeyCamFun}}"  HorizontalAlignment="Left" VerticalAlignment="Center" Width="100" Grid.Row="0" Grid.Column="1" Margin="2" SelectionChanged="cbxCam1Set_SelectionChanged" />
+
+            <Label Content="相机2" IsEnabled="{Binding Path=IsEnable,ElementName=cbxCam2Set}" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="1" Grid.Column="0" />
+            <ComboBox Name="cbxCam2Set" IsEnabled="False" ItemsSource="{Binding Source={StaticResource KeyCamFun}}"  HorizontalAlignment="Left" VerticalAlignment="Center" Width="100" Grid.Row="1" Grid.Column="1" Margin="2" SelectionChanged="cbxCam2Set_SelectionChanged" />
+
+            <Label Content="相机3" IsEnabled="{Binding Path=IsEnable,ElementName=cbxCam3Set}" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="2" Grid.Column="0" />
+            <ComboBox Name="cbxCam3Set" IsEnabled="False" ItemsSource="{Binding Source={StaticResource KeyCamFun}}"  HorizontalAlignment="Left" VerticalAlignment="Center" Width="100" Grid.Row="2" Grid.Column="1"  Margin="2" SelectionChanged="cbxCam3Set_SelectionChanged" />
+
+            <Label Content="相机4" IsEnabled="{Binding Path=IsEnable,ElementName=cbxCam4Set}" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="3" Grid.Column="0" />
+            <ComboBox Name="cbxCam4Set" IsEnabled="False" ItemsSource="{Binding Source={StaticResource KeyCamFun}}" HorizontalAlignment="Left" VerticalAlignment="Center" Width="100" Grid.Row="3" Grid.Column="1"  Margin="2" SelectionChanged="cbxCam4Set_SelectionChanged" />
+
+            <Label Content="相机5" IsEnabled="{Binding Path=IsEnable,ElementName=cbxCam5Set}" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="4" Grid.Column="0" />
+            <ComboBox Name="cbxCam5Set" IsEnabled="False" ItemsSource="{Binding Source={StaticResource KeyCamFun}}" HorizontalAlignment="Left" VerticalAlignment="Center" Width="100" Grid.Row="4" Grid.Column="1"  Margin="2" SelectionChanged="cbxCam5Set_SelectionChanged" />
+
+            <Label Content="相机6" IsEnabled="{Binding Path=IsEnable,ElementName=cbxCam6Set}" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="5" Grid.Column="0" />
+            <ComboBox Name="cbxCam6Set" IsEnabled="False" ItemsSource="{Binding Source={StaticResource KeyCamFun}}" HorizontalAlignment="Left" VerticalAlignment="Center" Width="100" Grid.Row="5" Grid.Column="1" Margin="2" SelectionChanged="cbxCam6Set_SelectionChanged" />
+        </Grid>
+    </ControlLib:NGroupBox>
+</BasicClass:BaseControl>

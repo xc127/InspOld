@@ -1,0 +1,75 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:camera="clr-namespace:Camera;assembly=Camera"
+             xmlns:local="clr-namespace:Main"
+             xmlns:HalconDotNet="clr-namespace:HalconDotNet;assembly=halcondotnet" x:Class="Main.UCCompareSample"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1000">
+	<Grid Background="White">
+		<DockPanel>
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="24"/>
+					<RowDefinition Height="*"/>
+				</Grid.RowDefinitions>
+				<Label Content="图片列表"/>
+				<ScrollViewer Grid.Row="1" x:Name="scrollViewer" HorizontalScrollBarVisibility="Auto" 							 
+							  PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
+					<DataGrid x:Name="dgResult" IsReadOnly="True" ItemsSource="{Binding}" MaxWidth="400" 
+							  Height="{Binding ElementName=scrollViewer,Path=ActualHeight}" 
+							  AutoGenerateColumns="False" CanUserAddRows="False" MouseDoubleClick="DgResult_MouseDoubleClick">
+						<DataGrid.InputBindings>
+							<MouseBinding MouseAction="LeftDoubleClick" Command="{Binding DoubleClickCommand}"/>
+						</DataGrid.InputBindings>
+						<DataGrid.Columns>
+							<DataGridTextColumn Header="FileName" Binding="{Binding FileName,Mode=TwoWay}" MaxWidth="200"/>
+							<DataGridCheckBoxColumn Header="Shell" Binding="{Binding Shell,Mode=TwoWay}"/>
+							<DataGridCheckBoxColumn Header="Convex" Binding="{Binding Convex,Mode=TwoWay}"/>
+							<DataGridCheckBoxColumn Header="Cornor" Binding="{Binding Cornor,Mode=TwoWay}"/>
+						</DataGrid.Columns>
+					</DataGrid>
+				</ScrollViewer>
+			</Grid>
+			<Grid MinWidth="600">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="2"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*"/>
+					<RowDefinition Height="4*"/>
+					<RowDefinition Height="*"/>
+				</Grid.RowDefinitions>
+				<Label Content="Sample结果" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Black"/>
+				<Label Content="本地结果" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Black"/>
+				<Separator Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" VerticalAlignment="Bottom"/>
+				<camera:BaseUCDisplayCamera Name="ucSampleDisplay" Grid.Row="1" MinWidth="300" MaxWidth="400" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"/>
+				<camera:BaseUCDisplayCamera Name="ucLocalDisplay" Grid.Row="1" Grid.Column="2" MinWidth="300" MaxWidth="400" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"/>
+				<Separator Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" VerticalAlignment="Bottom"/>
+				<Rectangle Grid.Column="1" Grid.RowSpan="3" DockPanel.Dock="Right" Width="1" Stroke="CornflowerBlue" VerticalAlignment="Stretch" />
+				<Rectangle Grid.Column="2" Grid.RowSpan="3" Width="1" Stroke="CornflowerBlue" VerticalAlignment="Stretch" HorizontalAlignment="Right"/>
+				<Label x:Name="lblSampleDefect" Content="缺陷：" Grid.Row="2"/>
+				<Label x:Name="lblLocalDefect" Content="缺陷：" Grid.Row="2" Grid.Column="3" Loaded="LblLocalDefect_Loaded"/>
+			</Grid>
+			<Grid DockPanel.Dock="Right">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*"/>
+					<RowDefinition Height="*"/>
+					<RowDefinition Height="*"/>
+					<RowDefinition Height="*"/>
+				</Grid.RowDefinitions>
+				<ComboBox x:Name="cbSide" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" SelectionChanged="CbSide_SelectionChanged">
+					<ComboBoxItem Content="电极边" FontSize="16"/>
+					<ComboBoxItem Content="非电极边" FontSize="16"/>
+				</ComboBox>
+				<Button x:Name="btnLoadSample" Grid.Row="1" Grid.Column="0" Content="LoadSample" Width="80" Height="40" Click="BtnLoadSample_Click"/>
+				<Button x:Name="btnComPareSample" Grid.Row="2" Grid.Column="0" Content="RunSample" Width="80" Height="40" Click="BtnComPareSample_Click"/>
+				<Button x:Name="btnNext" Grid.Row="3" Grid.Column="0" Content="Next" Width="80" Height="40" Click="BtnNext_Click"/>
+			</Grid>
+		</DockPanel>
+	</Grid>
+</UserControl>

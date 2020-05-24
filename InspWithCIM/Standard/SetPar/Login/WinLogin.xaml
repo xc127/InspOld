@@ -1,0 +1,54 @@
+﻿<MetroControls:MetroWindow x:Class="SetPar.WinLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:MetroControls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib"
+        xmlns:SetPar="clr-namespace:SetPar"
+        Title="登录" Height="325" Width="485" WindowStartupLocation="CenterScreen" 
+        BorderBrush="#CC119EDA" BorderThickness="1" ShowMinButton="False" ShowMaxRestoreButton="False" 
+        ResizeMode="NoResize" xmlns:my="clr-namespace:Common;assembly=Common">
+    <Window.Resources >
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="0.8*" />
+        </Grid.RowDefinitions>
+        <Label Margin="60,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Height="58" Width="365" Grid.ColumnSpan="2">
+            <Label.Background>
+                <ImageBrush ImageSource="/SetPar;component/Images/Admin.gif"></ImageBrush>
+            </Label.Background>
+        </Label>
+        <Label Margin="60,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Height="58" Width="365" Grid.Row="1" Grid.ColumnSpan="2">
+            <Label.Background>
+                <ImageBrush ImageSource="/SetPar;component/Images/Password.gif"></ImageBrush>
+            </Label.Background>
+        </Label>
+        <PasswordBox MetroControls:TextBoxHelper.ClearTextButton="True" FontSize="40" Height="58" HorizontalAlignment="Left" Margin="112,0,0,0" Name="psbLogin" VerticalAlignment="Center" Width="312" ToolTip="输入登录密码" Grid.Row="1" Grid.ColumnSpan="2" />
+        <ControlLib:ButtonColor Background="#FF66FFFF" Content="确  认" FontSize="30" FontWeight="Bold" Margin="0" Name="btnSure" Click="btnSure_Click" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Width="180" Height="60"/>
+        <Label Height="40" HorizontalAlignment="Center" Margin="0" Name="lbInfo" VerticalAlignment="Center" Width="200" FontSize="24" Grid.Row="3" Grid.ColumnSpan="2" />
+        <ComboBox FontSize="36" Height="58" HorizontalAlignment="Left" Margin="112,0,0,0" Name="cboName" SelectedIndex="0" VerticalAlignment="Center" Width="312" Grid.ColumnSpan="2">
+            <ComboBoxItem Content="技术员" FontSize="36" />
+            <ComboBoxItem Content="工程师" FontSize="36" />
+            <ComboBoxItem Content="厂商" FontSize="36" />
+        </ComboBox>
+     
+        <ControlLib:ButtonColor Background="#FF66FFFF" Content="退  出" FontSize="30" FontWeight="Bold" Height="60" HorizontalAlignment="Center" Margin="0" Name="btnClose" VerticalAlignment="Center" Width="180" Grid.Row="2" Grid.Column="1" Click="btnClose_Click" />
+        <my:UIKeyBoard Grid.Column="1" Grid.Row="3" Height="50" HorizontalAlignment="Left" Margin="150,0,0,0" Name="uIKeyBoard" VerticalAlignment="Center" />
+    </Grid>
+</MetroControls:MetroWindow>

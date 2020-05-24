@@ -1,0 +1,50 @@
+﻿<DealRobot:BaseUCRobot  x:Class="DealRobot.UCSetDataLimit"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"            
+             xmlns:ControlLib="clr-namespace:ControlLib;assembly=ControlLib"
+             xmlns:DealRobot="clr-namespace:DealRobot" 
+             xmlns:BasicClass="clr-namespace:BasicClass;assembly=BasicClass"
+             mc:Ignorable="d" 
+             d:DesignHeight="550" d:DesignWidth="750">
+    <UserControl.Resources >
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>         
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid>
+        <ControlLib:NGroupBox Header="机器人发送数据控制" HorizontalAlignment="Stretch" Margin="0" TitleBrush="#FF00D1E5" VerticalAlignment="Stretch">
+            <Grid Name="gdButton1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="350*" />
+                    <RowDefinition Height="50*" />
+                </Grid.RowDefinitions>
+                <DataGrid AllowDrop="True" AreRowDetailsFrozen="True" AutoGenerateColumns="False" Background="White" BorderThickness="1" CanUserAddRows="False" CanUserResizeColumns="False" CanUserSortColumns="False" FontSize="13" GridLinesVisibility="All" Height="450" IsReadOnly="false" ItemsSource="{Binding}" Margin="2,2,0,0" Name="dgRobotData" SelectionUnit="FullRow" VerticalAlignment="Top">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding No}" Header="序号" Width="45" />
+                        <DataGridTextColumn Binding="{Binding IntCameraNo}" Header="相机" Width="45" />
+                        <DataGridTextColumn Binding="{Binding IntPosNo}" Header="拍照位置" Width="70" />
+                        <DataGridTextColumn Binding="{Binding DblXMin}" Header="XMin" Width="65" />
+                        <DataGridTextColumn Binding="{Binding DblXMax}" Header="XMax" Width="65" />
+                        <DataGridTextColumn Binding="{Binding DblYMin}" Header="YMin" Width="65" />
+                        <DataGridTextColumn Binding="{Binding DblYMax}" Header="YMax" Width="65" />
+                        <DataGridTextColumn Binding="{Binding DblRMin}" Header="RMin" Width="65" />
+                        <DataGridTextColumn Binding="{Binding DblRMax}" Header="RMax" Width="65" />
+                        <DataGridTextColumn Binding="{Binding DblTMin}" Header="TMin" Width="65" />
+                        <DataGridTextColumn Binding="{Binding DblTMax}" Header="TMax" Width="65" />
+                        <DataGridTextColumn Binding="{Binding Annotation}" Header="注释" Width="150" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <ControlLib:ButtonColor Background="#FF66FFFF" Content="保  存" FontSize="20" FontStyle="Normal" FontWeight="SemiBold" Grid.Row="1" IsEnabled="True" Margin="0,10,0,10" Name="btnSave" ToolTip="保存对参数的修改" Width="130" Click="btnSave_Click" />
+            </Grid>
+        </ControlLib:NGroupBox>
+    </Grid>
+</DealRobot:BaseUCRobot>

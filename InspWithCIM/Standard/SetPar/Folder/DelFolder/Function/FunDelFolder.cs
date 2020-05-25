@@ -76,19 +76,19 @@ namespace SetPar
                         if (baseParDelFolder.Annotation.Contains("未使用型号图片记录")
                             && baseParDelFolder.BlExcute)
                         {
-                            DelteOldImage(baseParDelFolder, uCStateWork);
+                            //DelteOldImage(baseParDelFolder, uCStateWork);
                         }
                         else if (baseParDelFolder.Annotation.Contains("算法单元节拍")
                             && baseParDelFolder.BlExcute)
                         {
                             for (int i = 0; i < 8; i++)
                             {
-                                string pathDel = path + "Camera" + (i + 1).ToString() + "\\";
-                                if (Log.L_I.GetDirectoryNum(pathDel) > baseParDelFolder.Num)
-                                {
-                                    Log.L_I.DeleteDir(pathDel, baseParDelFolder.Num);
-                                    uCStateWork.AddInfo(string.Format("根据设定，删除多余文件:{0}", pathDel));
-                                }
+                                //string pathDel = path + "Camera" + (i + 1).ToString() + "\\";
+                                //if (Log.L_I.GetDirectoryNum(pathDel) > baseParDelFolder.Num)
+                                //{
+                                //    Log.L_I.DeleteDir(pathDel, baseParDelFolder.Num);
+                                //    uCStateWork.AddInfo(string.Format("根据设定，删除多余文件:{0}", pathDel));
+                                //}
                             }
                         }
                         else if (Log.L_I.GetDirectoryNum(path) > baseParDelFolder.Num)

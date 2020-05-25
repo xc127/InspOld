@@ -12,9 +12,9 @@ DEBUG;TRACE
 
 81579395667
 
-261009412
+25616590580
 301514974753
 HardDisk\Clear\WinClearHardDisk.xaml;HardDisk\Monitor\UI\WinHardDisk.xaml;Login\WinLogin.xaml;Login\SetLogin\WinSetLogin.xaml;Folder\WinSetFolder.xaml;Folder\DelFolder\SetDelFolder.xaml;Folder\FolderAttribute\SetFileAttribute.xaml;Memory\UI\WinMemory.xaml;
 
-True
+False
 

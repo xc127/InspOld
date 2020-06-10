@@ -12,9 +12,9 @@ TRACE;DEBUG;Debug
 
 187543569
 
-99-347050254
-61-1366969422
+100-1867889669
+621849267073
 EdgeInspection\UI\UCRecord.xaml;EdgeInspection\UI\UCRecordTemp.xaml;EdgeInspection\UI\UCResultIns.xaml;EdgeInspection\UI\UIParInsp\WinParInsp.xaml;EdgeInspection\UI\UIParInsp\WinParWorkMode.xaml;MainWindow\DealDisplay\ProductivityReport.xaml;MainWindow\MainWindow.xaml;MainWindow\Manual\BaseUCTrrigerComprehensive.xaml;MainWindow\Manual\WinTrrigerComprehensive.xaml;Sample\UI\UCCompareSample.xaml;Sample\UI\UCSetSample.xaml;Sample\UI\WinSample.xaml;StartWindow\StartWindow.xaml;STDArrange\UI\UCCamFunSet.xaml;STDArrange\UI\UCParConfig.xaml;STDArrange\UI\WinSetSTDArrayConfig.xaml;WinGetPermission.xaml;UIShield.xaml;
 
-False
+True
 

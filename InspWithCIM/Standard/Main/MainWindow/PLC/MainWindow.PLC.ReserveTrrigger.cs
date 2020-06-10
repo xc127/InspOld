@@ -117,8 +117,9 @@ namespace Main
                 ShowState("PLC通知所有检测结束");
                 BaseDealComprehensiveResult.CommunicateInspResult();
                 if(ModelParams.IfSegmentDelImage)
-                {
-                    DeleteFilesOneByOnce(@"E:\Image\AllImage\", ModelParams.RetentionTime);
+                {                    
+                    DeleteFilesOneByOnce(DealComprehensiveResult1.D_I.BasePathImageSave
+                        , ModelParams.RetentionTime);
                     //DeleteFilesOneByOnce(@"E:\Image\NGImage\", 10);
                 }
             }

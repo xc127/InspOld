@@ -4,17 +4,17 @@
 library
 C#
 .cs
-E:\项目\Gitee\InspWithCIM\InspWithCIM_xc_0716\Standard\DealCIM\obj\x86\Debug\
+E:\项目\Git\InspOld\InspWithCIM\Standard\DealCIM\obj\x86\Debug\
 DealCIM
 none
 false
 DEBUG;TRACE
 
-51348397179
+6-886480039
 
-291287266491
-29625140289
-CIM\UI\CIMMain.xaml;CIM\UI\CIMStatus.xaml;CIM\UI\CIMWnd.xaml;CIM\UI\PostLotWnd.xaml;CIM\UI\PostTrackout.xaml;
+43477294796
+291489481716
+CIM\UI\CIMMain.xaml;CIM\UI\CIMStatus.xaml;CIM\UI\CIMWnd.xaml;CIM\UI\PostLotWnd.xaml;CIM\UI\PostTrackout.xaml;CIM\UI\WndCimMode.xaml;
 
 False
 

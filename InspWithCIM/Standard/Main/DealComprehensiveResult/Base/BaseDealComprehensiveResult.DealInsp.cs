@@ -19,13 +19,14 @@ using Microsoft.VisualBasic.Devices;
 using System.Linq;
 using DealFile;
 using DealRobot;
+using System.Configuration;
 
 namespace Main
 {
     public partial class BaseDealComprehensiveResult : BaseClass
     {
         #region 定义
-        readonly string BaseDir = "E:\\Image\\AllImage\\";
+        readonly string BaseDir = ConfigurationManager.AppSettings["dir"];
 
         public static int NoPicture_Cam1Side1 = 0;
         public static int NoPicture_Cam1Side2 = 0;
@@ -97,7 +98,7 @@ namespace Main
         /// <summary>
         /// 基目录，相机1拍照时初始化
         /// </summary>
-        public string BasePathImageSave = "E:\\Image\\AllImage\\";
+        public string BasePathImageSave = ConfigurationManager.AppSettings["dir"];
         public string BasePathNGImageSave = "";
         public string BasePathNGImageDefectPaintedSave = "";
         /// <summary>
@@ -526,7 +527,8 @@ namespace Main
 
                                 new FunInsp().PaintRegionToImage(im, out ImageAll NgRegionPaintedImage, result, g_ParIns.GetParBySideIndex(SideIndex).Amp);
 
-                                BasePathNGImageSave = BasePathImageSave.Replace("AllImage", "NGImage");
+
+                                BasePathNGImageSave = BasePathImageSave.Replace("AllImage", "NGImage");                                
                                 BasePathNGImageDefectPaintedSave = BasePathImageSave.Replace("AllImage", "NgPImage");
                                 if (!Directory.Exists(BasePathNGImageSave))
                                 {
@@ -1287,7 +1289,8 @@ namespace Main
 
                 //显示结果
                 // g_UCResultInsp.ShowResult(ResultInspSingeCell_L.Count - NumRemoveWhenReCheck);
-                g_UCResultInsp.ShowResult(ResultInspSingeCell_L.Count);
+
+                //g_UCResultInsp.ShowResult(ResultInspSingeCell_L.Count);
                 ShowState("当前总产能：" + ParAnalysis.P_I.g_ProductNumInfoNow.NumAll);
 
                 ShowState("NG列表：" + ResultInspSingeCell_L.Count + ",NG数：" + NumNG);
@@ -1296,7 +1299,7 @@ namespace Main
                 int result = ResultInspSingeCell_L.Count == 0 ? 1 : 2;
 
 
-                ShowState_Hidden("发送检测结果：" + result);
+                ShowState("发送检测结果：" + result);
 
                 DealComprehensiveResult1.D_I.RefreshDG();
 

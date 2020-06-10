@@ -4250,7 +4250,6 @@ E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\OpenCvSha
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\MathNet.Numerics.xml
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\HslCommunication.xml
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\zh-CHS\Microsoft.Windows.Design.resources.dll
-E:\项目\Git\InspOld\InspWithCIM\Standard\Main\obj\Debug\Main.csprojAssemblyReference.cache
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\obj\Debug\Main.csproj.ResolveComReference.cache
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\obj\Debug\EdgeInspection\UI\UCRecord.baml
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\obj\Debug\EdgeInspection\UI\UCRecordTemp.baml
@@ -4298,3 +4297,5 @@ E:\项目\Git\InspOld\InspWithCIM\Standard\Main\obj\Debug\Main.csproj.CoreCompil
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\obj\Debug\Main.csproj.CopyComplete
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\obj\Debug\机器视觉控制处理软件.exe
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\obj\Debug\机器视觉控制处理软件.pdb
+E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\app.config
+E:\项目\Git\InspOld\InspWithCIM\Standard\Main\obj\Debug\Main.csprojAssemblyReference.cache

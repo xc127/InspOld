@@ -64,7 +64,7 @@
                         <ControlLib:DoubleUpDown Name="DudThShellX" Value="{Binding Path=ThShellX,Mode=TwoWay}" Minimum="0"  Increment="0.01" Grid.Column="3"/>
                         <ControlLib:DoubleUpDown Name="DudThCornerY" Value="{Binding Path=ThCornerY,Mode=TwoWay}" Minimum="0"  Increment="0.01" Grid.Row="1" Grid.Column="1"/>
                         <ControlLib:DoubleUpDown Name="DudThCornerX" Value="{Binding Path=ThCornerX,Mode=TwoWay}" Minimum="0"  Increment="0.01" Grid.Row="1" Grid.Column="3"/>
-                        <CheckBox x:Name="cbUseOr" Content="使用“或”判断破角" Grid.Column="4" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" IsChecked="{Binding UsingORToCorner}" />
+                        <CheckBox x:Name="cbUseOr" Content="使用'Or'判断破角" Grid.Column="4" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" IsChecked="{Binding UsingORToCorner}" />
                         <CheckBox x:Name="cbCrackEnabled" Content="是否开启裂纹检测" Grid.Column="4" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" IsChecked="{Binding IsCrackEnabled}" />
                         <ControlLib:DoubleUpDown Name="DudThPreiectionY" Value="{Binding Path=ThPreiectionY,Mode=TwoWay}" Increment="0.01" Minimum="0"  Grid.Row="2" Grid.Column="1"/>
                         <ControlLib:DoubleUpDown Name="DudThPreiectionX" Value="{Binding Path=ThPreiectionX,Mode=TwoWay}" Minimum="0"  Increment="0.01" Grid.Row="2" Grid.Column="3"/>
@@ -80,7 +80,7 @@
                         <CheckBox Name="CbxIgnoreSide1Fault" IsChecked="{Binding BlIgnoreThisSideFault,Mode=TwoWay}" Content="忽略此边所有缺陷" VerticalContentAlignment="Center" FontSize="12" Height="14" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Center"/>
                         <!--<CheckBox Name="CbxIsCFSide" Margin="1" Content="检测CF面" Grid.Row="5" Grid.ColumnSpan="2" Grid.Column="1" IsChecked="{Binding BlInspCF,Mode=TwoWay}" VerticalContentAlignment="Center" HorizontalAlignment="Left" />-->
                         <Label Style="{StaticResource LblStyle}" Content="边序号设置：" Grid.Row="6" Grid.Column="0"/>
-						<TextBox Name="TxtSideMatch" Text="{Binding StrSidesMatch,Mode=TwoWay}" Width="auto" HorizontalAlignment="Stretch" Grid.Row="6" Grid.Column="1" HorizontalContentAlignment="Right" VerticalAlignment="Stretch" VerticalContentAlignment="Center" ToolTip="多个边需要用','" LostFocus="TextBox_LostFocus"/>
+                        <TextBox Name="TxtSideMatch" Text="{Binding StrSidesMatch,Mode=TwoWay}" Width="auto" HorizontalAlignment="Stretch" Grid.Row="6" Grid.Column="1" HorizontalContentAlignment="Right" VerticalAlignment="Stretch" VerticalContentAlignment="Center" ToolTip="多个边需要用','" LostFocus="TextBox_LostFocus"/>
                         <Label Name="LblState" Grid.Row="6" Grid.Column="2" Foreground="Red"/>
                         <CheckBox Name="CbxIgnoreMark" Content="通过识别Mark来判断OKNG" Margin="1" Grid.Row="8" Grid.ColumnSpan="2" Grid.Column="1" IsChecked="{Binding JudgeMentMark,Mode=TwoWay}" VerticalContentAlignment="Center" HorizontalAlignment="Left" ToolTip="勾选时，识别为破角的图片如果mark能正常识别，会判定为OK"/>
 
@@ -115,133 +115,133 @@
                         <ControlLib:DoubleUpDown Name="DudThresholdGlass" Increment="1" Maximum="255" Minimum="0"  Value="{Binding Path=ThresholdGlass,Mode=TwoWay}" Grid.Row="0" Grid.Column="3" Margin="0" />
                         <ControlLib:DoubleUpDown IsEnabled="False" Name="DudNumRect" Increment="1" Maximum="255" Minimum="0"  Value="{Binding Path=NumRect,Mode=TwoWay}" Grid.Row="1" Grid.Column="3" />
                         <ControlLib:DoubleUpDown Name="DudRatioDelete" IsEnabled="False" Increment="0.1" Maximum="1" Minimum="0"  Value="{Binding Path=RatioDelete,Mode=TwoWay}" Grid.Row="1" Grid.Column="1" />
-						<ControlLib:DoubleUpDown Name="DudThresholdEdge" Maximum="255" Minimum="0"  Increment="1" Value="{Binding Path=ThresholdEdge,Mode=TwoWay}" Grid.Column="1" />
-						<ControlLib:DoubleUpDown Name="DudAmp" Minimum="0"  Increment="0.00001" Value="{Binding Path=Amp,Mode=TwoWay}" Grid.Row="5" Grid.Column="1" />
+                        <ControlLib:DoubleUpDown Name="DudThresholdEdge" Maximum="255" Minimum="0"  Increment="1" Value="{Binding Path=ThresholdEdge,Mode=TwoWay}" Grid.Column="1" />
+                        <ControlLib:DoubleUpDown Name="DudAmp" Minimum="0"  Increment="0.00001" Value="{Binding Path=Amp,Mode=TwoWay}" Grid.Row="5" Grid.Column="1" />
 
-						<ControlLib:DoubleUpDown Name="DudThRectangleularity" Increment="0.01" Maximum="1" Minimum="0" Value="{Binding Path=ThRectangleularity,Mode=TwoWay}" Grid.Row="5" Grid.Column="3" />
-					</Grid>
+                        <ControlLib:DoubleUpDown Name="DudThRectangleularity" Increment="0.01" Maximum="1" Minimum="0" Value="{Binding Path=ThRectangleularity,Mode=TwoWay}" Grid.Row="5" Grid.Column="3" />
+                    </Grid>
                 </ControlLib:NGroupBox>
 
-				<ControlLib:NGroupBox Header="单独卡控" TitleBrush="#FF00D1E5" Margin="0,2,0,0">
-					<Grid>
-						<Grid.RowDefinitions>
-							<RowDefinition Height="*" />
-							<RowDefinition Height="*" />
-							<RowDefinition Height="*" />
-							<RowDefinition Height="*" />
-							<RowDefinition Height="*" />
-							<RowDefinition Height="*" />
-							<RowDefinition Height="*" />
-							<RowDefinition Height="*" />
-							<RowDefinition Height="*" />
-						</Grid.RowDefinitions>
-						<Grid.ColumnDefinitions>
-							<ColumnDefinition Width="*" />
-							<ColumnDefinition Width="*" />
-							<ColumnDefinition Width="*" />
-							<ColumnDefinition Width="*" />
-							<ColumnDefinition Width="*" />
-							<ColumnDefinition Width="*" />
-							<ColumnDefinition Width="*" />
-							<ColumnDefinition Width="*" />
-							<ColumnDefinition Width="*" />
-							<ColumnDefinition Width="*" />
-						</Grid.ColumnDefinitions>
-						<Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="0" Grid.Row="0"/>
-						<Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="2" Grid.Row="0" />
-						<Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="0" Grid.Row="1"/>
-						<Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="2" Grid.Row="1" />
-						<Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="0" Grid.Row="2"/>
-						<Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="2" Grid.Row="2" />
-						<Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="0" Grid.Row="3"/>
-						<Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="2" Grid.Row="3" />
-						<Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="0" Grid.Row="4"/>
-						<Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="2" Grid.Row="4" />
-						<Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="0" Grid.Row="5"/>
-						<Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="2" Grid.Row="5" />
-						<Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="0" Grid.Row="6"/>
-						<Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="2" Grid.Row="6" />
-						<Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="0" Grid.Row="7"/>
-						<Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="2" Grid.Row="7" />
-						<Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="0"  Grid.Row="8"/>
-						<Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="2" Grid.Row="8"/>
-						<Label Style="{StaticResource LblStyle}" Content="贝壳深度阈值：" Grid.Column="4"  Grid.Row="0"/>
-						<Label Style="{StaticResource LblStyle}" Content="贝壳宽度阈值：" Grid.Column="6" Grid.Row="0"/>
-						<Label Style="{StaticResource LblStyle}" Content="贝壳深度阈值：" Grid.Column="4"  Grid.Row="1"/>
-						<Label Style="{StaticResource LblStyle}" Content="贝壳宽度阈值：" Grid.Column="6" Grid.Row="1"/>
-						<Label Style="{StaticResource LblStyle}" Content="贝壳深度阈值：" Grid.Column="4"  Grid.Row="2"/>
-						<Label Style="{StaticResource LblStyle}" Content="贝壳宽度阈值：" Grid.Column="6" Grid.Row="2"/>
-						<Label Style="{StaticResource LblStyle}" Content="贝壳深度阈值：" Grid.Column="4"  Grid.Row="3"/>
-						<Label Style="{StaticResource LblStyle}" Content="贝壳宽度阈值：" Grid.Column="6" Grid.Row="3"/>
-						<Label Style="{StaticResource LblStyle}" Content="贝壳深度阈值：" Grid.Column="4"  Grid.Row="4"/>
-						<Label Style="{StaticResource LblStyle}" Content="贝壳宽度阈值：" Grid.Column="6" Grid.Row="4"/>
-						<Label Style="{StaticResource LblStyle}" Content="贝壳深度阈值：" Grid.Column="4"  Grid.Row="5"/>
-						<Label Style="{StaticResource LblStyle}" Content="贝壳宽度阈值：" Grid.Column="6" Grid.Row="5"/>
-						<Label Style="{StaticResource LblStyle}" Content="贝壳深度阈值：" Grid.Column="4"  Grid.Row="6"/>
-						<Label Style="{StaticResource LblStyle}" Content="贝壳宽度阈值：" Grid.Column="6" Grid.Row="6"/>
-						<Label Style="{StaticResource LblStyle}" Content="贝壳深度阈值：" Grid.Column="4"  Grid.Row="7"/>
-						<Label Style="{StaticResource LblStyle}" Content="贝壳宽度阈值：" Grid.Column="6" Grid.Row="7"/>
-						<Label Style="{StaticResource LblStyle}" Content="贝壳深度阈值：" Grid.Column="4"  Grid.Row="8"/>
-						<Label Style="{StaticResource LblStyle}" Content="贝壳宽度阈值：" Grid.Column="6" Grid.Row="8"/>
-						<Label Style="{StaticResource LblStyle}" Content="凹边深度阈值：" Grid.Column="8" Grid.Row="8"/>
-						<Label Style="{StaticResource LblStyle}" Content="凹边深度阈值：" Grid.Column="8" Grid.Row="7"/>
-						<Label Style="{StaticResource LblStyle}" Content="凹边深度阈值：" Grid.Column="8" Grid.Row="6"/>
-						<Label Style="{StaticResource LblStyle}" Content="凹边深度阈值：" Grid.Column="8" Grid.Row="5"/>
-						<Label Style="{StaticResource LblStyle}" Content="凹边深度阈值：" Grid.Column="8" Grid.Row="4"/>
-						<Label Style="{StaticResource LblStyle}" Content="凹边深度阈值：" Grid.Column="8" Grid.Row="3"/>
-						<Label Style="{StaticResource LblStyle}" Content="凹边深度阈值：" Grid.Column="8" Grid.Row="2"/>
-						<Label Style="{StaticResource LblStyle}" Content="凹边深度阈值：" Grid.Column="8" Grid.Row="1"/>
-						<Label Style="{StaticResource LblStyle}" Content="凹边深度阈值：" Grid.Column="8" Grid.Row="0"/>
-						<ControlLib:DoubleUpDown Name="DudSplStartIndex1" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplStartIndex1,Mode=TwoWay}" Grid.Row="0" Grid.Column="1" />
-						<ControlLib:DoubleUpDown Name="DudSplEndIndex1" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplEndIndex1,Mode=TwoWay}" Grid.Row="0" Grid.Column="3" />
-						<ControlLib:DoubleUpDown Name="DudSplStartIndex2" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplStartIndex2,Mode=TwoWay}" Grid.Row="1" Grid.Column="1" />
-						<ControlLib:DoubleUpDown Name="DudSplEndIndex2" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplEndIndex2,Mode=TwoWay}" Grid.Row="1" Grid.Column="3" />
-						<ControlLib:DoubleUpDown Name="DudSplStartIndex3" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplStartIndex3,Mode=TwoWay}" Grid.Row="2" Grid.Column="1" />
-						<ControlLib:DoubleUpDown Name="DudSplEndIndex3" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplEndIndex3,Mode=TwoWay}" Grid.Row="2" Grid.Column="3" />
-						<ControlLib:DoubleUpDown Name="DudSplStartIndex4" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplStartIndex4,Mode=TwoWay}" Grid.Row="3" Grid.Column="1" />
-						<ControlLib:DoubleUpDown Name="DudSplEndIndex4" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplEndIndex4,Mode=TwoWay}" Grid.Row="3" Grid.Column="3" />
-						<ControlLib:DoubleUpDown Name="DudSplStartIndex5" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplStartIndex5,Mode=TwoWay}" Grid.Row="4" Grid.Column="1" />
-						<ControlLib:DoubleUpDown Name="DudSplEndIndex5" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplEndIndex5,Mode=TwoWay}" Grid.Row="4" Grid.Column="3" />
-						<ControlLib:DoubleUpDown Name="DudSplStartIndex6" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplStartIndex6,Mode=TwoWay}" Grid.Row="5" Grid.Column="1" />
-						<ControlLib:DoubleUpDown Name="DudSplEndIndex6" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplEndIndex6,Mode=TwoWay}" Grid.Row="5" Grid.Column="3" />
-						<ControlLib:DoubleUpDown Name="DudSplStartIndex7" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplStartIndex7,Mode=TwoWay}" Grid.Row="6" Grid.Column="1" />
-						<ControlLib:DoubleUpDown Name="DudSplEndIndex7" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplEndIndex7,Mode=TwoWay}" Grid.Row="6" Grid.Column="3" />
-						<ControlLib:DoubleUpDown Name="DudSplStartIndex8" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplStartIndex8,Mode=TwoWay}" Grid.Row="7" Grid.Column="1" />
-						<ControlLib:DoubleUpDown Name="DudSplEndIndex8" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplEndIndex8,Mode=TwoWay}" Grid.Row="7" Grid.Column="3" />
-						<ControlLib:DoubleUpDown Name="DudSplStartIndex9" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplStartIndex9,Mode=TwoWay}" Grid.Row="8" Grid.Column="1" />
-						<ControlLib:DoubleUpDown Name="DudSplEndIndex9" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplEndIndex9,Mode=TwoWay}" Grid.Row="8" Grid.Column="3" />
+                <ControlLib:NGroupBox Header="单独卡控" TitleBrush="#FF00D1E5" Margin="0,2,0,0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="0" Grid.Row="0"/>
+                        <Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="2" Grid.Row="0" />
+                        <Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="0" Grid.Row="1"/>
+                        <Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="2" Grid.Row="1" />
+                        <Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="0" Grid.Row="2"/>
+                        <Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="2" Grid.Row="2" />
+                        <Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="0" Grid.Row="3"/>
+                        <Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="2" Grid.Row="3" />
+                        <Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="0" Grid.Row="4"/>
+                        <Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="2" Grid.Row="4" />
+                        <Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="0" Grid.Row="5"/>
+                        <Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="2" Grid.Row="5" />
+                        <Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="0" Grid.Row="6"/>
+                        <Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="2" Grid.Row="6" />
+                        <Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="0" Grid.Row="7"/>
+                        <Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="2" Grid.Row="7" />
+                        <Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="0"  Grid.Row="8"/>
+                        <Label Style="{StaticResource LblStyle}" Content="图片起始序号：" Grid.Column="2" Grid.Row="8"/>
+                        <Label Style="{StaticResource LblStyle}" Content="贝壳深度阈值：" Grid.Column="4"  Grid.Row="0"/>
+                        <Label Style="{StaticResource LblStyle}" Content="贝壳宽度阈值：" Grid.Column="6" Grid.Row="0"/>
+                        <Label Style="{StaticResource LblStyle}" Content="贝壳深度阈值：" Grid.Column="4"  Grid.Row="1"/>
+                        <Label Style="{StaticResource LblStyle}" Content="贝壳宽度阈值：" Grid.Column="6" Grid.Row="1"/>
+                        <Label Style="{StaticResource LblStyle}" Content="贝壳深度阈值：" Grid.Column="4"  Grid.Row="2"/>
+                        <Label Style="{StaticResource LblStyle}" Content="贝壳宽度阈值：" Grid.Column="6" Grid.Row="2"/>
+                        <Label Style="{StaticResource LblStyle}" Content="贝壳深度阈值：" Grid.Column="4"  Grid.Row="3"/>
+                        <Label Style="{StaticResource LblStyle}" Content="贝壳宽度阈值：" Grid.Column="6" Grid.Row="3"/>
+                        <Label Style="{StaticResource LblStyle}" Content="贝壳深度阈值：" Grid.Column="4"  Grid.Row="4"/>
+                        <Label Style="{StaticResource LblStyle}" Content="贝壳宽度阈值：" Grid.Column="6" Grid.Row="4"/>
+                        <Label Style="{StaticResource LblStyle}" Content="贝壳深度阈值：" Grid.Column="4"  Grid.Row="5"/>
+                        <Label Style="{StaticResource LblStyle}" Content="贝壳宽度阈值：" Grid.Column="6" Grid.Row="5"/>
+                        <Label Style="{StaticResource LblStyle}" Content="贝壳深度阈值：" Grid.Column="4"  Grid.Row="6"/>
+                        <Label Style="{StaticResource LblStyle}" Content="贝壳宽度阈值：" Grid.Column="6" Grid.Row="6"/>
+                        <Label Style="{StaticResource LblStyle}" Content="贝壳深度阈值：" Grid.Column="4"  Grid.Row="7"/>
+                        <Label Style="{StaticResource LblStyle}" Content="贝壳宽度阈值：" Grid.Column="6" Grid.Row="7"/>
+                        <Label Style="{StaticResource LblStyle}" Content="贝壳深度阈值：" Grid.Column="4"  Grid.Row="8"/>
+                        <Label Style="{StaticResource LblStyle}" Content="贝壳宽度阈值：" Grid.Column="6" Grid.Row="8"/>
+                        <Label Style="{StaticResource LblStyle}" Content="凹边深度阈值：" Grid.Column="8" Grid.Row="8"/>
+                        <Label Style="{StaticResource LblStyle}" Content="凹边深度阈值：" Grid.Column="8" Grid.Row="7"/>
+                        <Label Style="{StaticResource LblStyle}" Content="凹边深度阈值：" Grid.Column="8" Grid.Row="6"/>
+                        <Label Style="{StaticResource LblStyle}" Content="凹边深度阈值：" Grid.Column="8" Grid.Row="5"/>
+                        <Label Style="{StaticResource LblStyle}" Content="凹边深度阈值：" Grid.Column="8" Grid.Row="4"/>
+                        <Label Style="{StaticResource LblStyle}" Content="凹边深度阈值：" Grid.Column="8" Grid.Row="3"/>
+                        <Label Style="{StaticResource LblStyle}" Content="凹边深度阈值：" Grid.Column="8" Grid.Row="2"/>
+                        <Label Style="{StaticResource LblStyle}" Content="凹边深度阈值：" Grid.Column="8" Grid.Row="1"/>
+                        <Label Style="{StaticResource LblStyle}" Content="凹边深度阈值：" Grid.Column="8" Grid.Row="0"/>
+                        <ControlLib:DoubleUpDown Name="DudSplStartIndex1" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplStartIndex1,Mode=TwoWay}" Grid.Row="0" Grid.Column="1" />
+                        <ControlLib:DoubleUpDown Name="DudSplEndIndex1" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplEndIndex1,Mode=TwoWay}" Grid.Row="0" Grid.Column="3" />
+                        <ControlLib:DoubleUpDown Name="DudSplStartIndex2" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplStartIndex2,Mode=TwoWay}" Grid.Row="1" Grid.Column="1" />
+                        <ControlLib:DoubleUpDown Name="DudSplEndIndex2" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplEndIndex2,Mode=TwoWay}" Grid.Row="1" Grid.Column="3" />
+                        <ControlLib:DoubleUpDown Name="DudSplStartIndex3" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplStartIndex3,Mode=TwoWay}" Grid.Row="2" Grid.Column="1" />
+                        <ControlLib:DoubleUpDown Name="DudSplEndIndex3" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplEndIndex3,Mode=TwoWay}" Grid.Row="2" Grid.Column="3" />
+                        <ControlLib:DoubleUpDown Name="DudSplStartIndex4" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplStartIndex4,Mode=TwoWay}" Grid.Row="3" Grid.Column="1" />
+                        <ControlLib:DoubleUpDown Name="DudSplEndIndex4" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplEndIndex4,Mode=TwoWay}" Grid.Row="3" Grid.Column="3" />
+                        <ControlLib:DoubleUpDown Name="DudSplStartIndex5" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplStartIndex5,Mode=TwoWay}" Grid.Row="4" Grid.Column="1" />
+                        <ControlLib:DoubleUpDown Name="DudSplEndIndex5" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplEndIndex5,Mode=TwoWay}" Grid.Row="4" Grid.Column="3" />
+                        <ControlLib:DoubleUpDown Name="DudSplStartIndex6" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplStartIndex6,Mode=TwoWay}" Grid.Row="5" Grid.Column="1" />
+                        <ControlLib:DoubleUpDown Name="DudSplEndIndex6" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplEndIndex6,Mode=TwoWay}" Grid.Row="5" Grid.Column="3" />
+                        <ControlLib:DoubleUpDown Name="DudSplStartIndex7" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplStartIndex7,Mode=TwoWay}" Grid.Row="6" Grid.Column="1" />
+                        <ControlLib:DoubleUpDown Name="DudSplEndIndex7" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplEndIndex7,Mode=TwoWay}" Grid.Row="6" Grid.Column="3" />
+                        <ControlLib:DoubleUpDown Name="DudSplStartIndex8" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplStartIndex8,Mode=TwoWay}" Grid.Row="7" Grid.Column="1" />
+                        <ControlLib:DoubleUpDown Name="DudSplEndIndex8" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplEndIndex8,Mode=TwoWay}" Grid.Row="7" Grid.Column="3" />
+                        <ControlLib:DoubleUpDown Name="DudSplStartIndex9" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplStartIndex9,Mode=TwoWay}" Grid.Row="8" Grid.Column="1" />
+                        <ControlLib:DoubleUpDown Name="DudSplEndIndex9" Increment="1" Maximum="400" Minimum="0"  Value="{Binding Path=SplEndIndex9,Mode=TwoWay}" Grid.Row="8" Grid.Column="3" />
 
-						<ControlLib:DoubleUpDown Name="DudSplThShellY1" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellY1,Mode=TwoWay}" Grid.Row="0" Grid.Column="5" />
-						<ControlLib:DoubleUpDown Name="DudSplThShellX1" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellX1,Mode=TwoWay}" Grid.Row="0" Grid.Column="7" />
-						<ControlLib:DoubleUpDown Name="DudSplThShellY2" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellY2,Mode=TwoWay}" Grid.Row="1" Grid.Column="5" />
-						<ControlLib:DoubleUpDown Name="DudSplThShellX2" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellX2,Mode=TwoWay}" Grid.Row="1" Grid.Column="7" />
-						<ControlLib:DoubleUpDown Name="DudSplThShellY3" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellY3,Mode=TwoWay}" Grid.Row="2" Grid.Column="5" />
-						<ControlLib:DoubleUpDown Name="DudSplThShellX3" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellX3,Mode=TwoWay}" Grid.Row="2" Grid.Column="7" />
-						<ControlLib:DoubleUpDown Name="DudSplThShellY4" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellY4,Mode=TwoWay}" Grid.Row="3" Grid.Column="5" />
-						<ControlLib:DoubleUpDown Name="DudSplThShellX4" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellX4,Mode=TwoWay}" Grid.Row="3" Grid.Column="7" />
-						<ControlLib:DoubleUpDown Name="DudSplThShellY5" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellY5,Mode=TwoWay}" Grid.Row="4" Grid.Column="5" />
-						<ControlLib:DoubleUpDown Name="DudSplThShellX5" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellX5,Mode=TwoWay}" Grid.Row="4" Grid.Column="7" />
-						<ControlLib:DoubleUpDown Name="DudSplThShellY6" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellY6,Mode=TwoWay}" Grid.Row="5" Grid.Column="5" />
-						<ControlLib:DoubleUpDown Name="DudSplThShellX6" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellX6,Mode=TwoWay}" Grid.Row="5" Grid.Column="7" />
-						<ControlLib:DoubleUpDown Name="DudSplThShellY7" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellY7,Mode=TwoWay}" Grid.Row="6" Grid.Column="5" />
-						<ControlLib:DoubleUpDown Name="DudSplThShellX7" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellX7,Mode=TwoWay}" Grid.Row="6" Grid.Column="7" />
-						<ControlLib:DoubleUpDown Name="DudSplThShellY8" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellY8,Mode=TwoWay}" Grid.Row="7" Grid.Column="5" />
-						<ControlLib:DoubleUpDown Name="DudSplThShellX8" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellX8,Mode=TwoWay}" Grid.Row="7" Grid.Column="7" />
-						<ControlLib:DoubleUpDown Name="DudSplThShellY9" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellY9,Mode=TwoWay}" Grid.Row="8" Grid.Column="5" />
-						<ControlLib:DoubleUpDown Name="DudSplThShellX9" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellX9,Mode=TwoWay}" Grid.Row="8" Grid.Column="7" />
+                        <ControlLib:DoubleUpDown Name="DudSplThShellY1" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellY1,Mode=TwoWay}" Grid.Row="0" Grid.Column="5" />
+                        <ControlLib:DoubleUpDown Name="DudSplThShellX1" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellX1,Mode=TwoWay}" Grid.Row="0" Grid.Column="7" />
+                        <ControlLib:DoubleUpDown Name="DudSplThShellY2" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellY2,Mode=TwoWay}" Grid.Row="1" Grid.Column="5" />
+                        <ControlLib:DoubleUpDown Name="DudSplThShellX2" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellX2,Mode=TwoWay}" Grid.Row="1" Grid.Column="7" />
+                        <ControlLib:DoubleUpDown Name="DudSplThShellY3" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellY3,Mode=TwoWay}" Grid.Row="2" Grid.Column="5" />
+                        <ControlLib:DoubleUpDown Name="DudSplThShellX3" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellX3,Mode=TwoWay}" Grid.Row="2" Grid.Column="7" />
+                        <ControlLib:DoubleUpDown Name="DudSplThShellY4" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellY4,Mode=TwoWay}" Grid.Row="3" Grid.Column="5" />
+                        <ControlLib:DoubleUpDown Name="DudSplThShellX4" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellX4,Mode=TwoWay}" Grid.Row="3" Grid.Column="7" />
+                        <ControlLib:DoubleUpDown Name="DudSplThShellY5" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellY5,Mode=TwoWay}" Grid.Row="4" Grid.Column="5" />
+                        <ControlLib:DoubleUpDown Name="DudSplThShellX5" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellX5,Mode=TwoWay}" Grid.Row="4" Grid.Column="7" />
+                        <ControlLib:DoubleUpDown Name="DudSplThShellY6" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellY6,Mode=TwoWay}" Grid.Row="5" Grid.Column="5" />
+                        <ControlLib:DoubleUpDown Name="DudSplThShellX6" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellX6,Mode=TwoWay}" Grid.Row="5" Grid.Column="7" />
+                        <ControlLib:DoubleUpDown Name="DudSplThShellY7" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellY7,Mode=TwoWay}" Grid.Row="6" Grid.Column="5" />
+                        <ControlLib:DoubleUpDown Name="DudSplThShellX7" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellX7,Mode=TwoWay}" Grid.Row="6" Grid.Column="7" />
+                        <ControlLib:DoubleUpDown Name="DudSplThShellY8" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellY8,Mode=TwoWay}" Grid.Row="7" Grid.Column="5" />
+                        <ControlLib:DoubleUpDown Name="DudSplThShellX8" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellX8,Mode=TwoWay}" Grid.Row="7" Grid.Column="7" />
+                        <ControlLib:DoubleUpDown Name="DudSplThShellY9" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellY9,Mode=TwoWay}" Grid.Row="8" Grid.Column="5" />
+                        <ControlLib:DoubleUpDown Name="DudSplThShellX9" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThShellX9,Mode=TwoWay}" Grid.Row="8" Grid.Column="7" />
 
-						<ControlLib:DoubleUpDown Name="DudSplThPerY9" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThPerY9,Mode=TwoWay}" Grid.Row="8" Grid.Column="9" />
-						<ControlLib:DoubleUpDown Name="DudSplThPerY8" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThPerY8,Mode=TwoWay}" Grid.Row="7" Grid.Column="9" />
-						<ControlLib:DoubleUpDown Name="DudSplThPerY7" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThPerY7,Mode=TwoWay}" Grid.Row="6" Grid.Column="9" />
-						<ControlLib:DoubleUpDown Name="DudSplThPerY6" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThPerY6,Mode=TwoWay}" Grid.Row="5" Grid.Column="9" />
-						<ControlLib:DoubleUpDown Name="DudSplThPerY5" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThPerY5,Mode=TwoWay}" Grid.Row="4" Grid.Column="9" />
-						<ControlLib:DoubleUpDown Name="DudSplThPerY4" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThPerY4,Mode=TwoWay}" Grid.Row="3" Grid.Column="9" />
-						<ControlLib:DoubleUpDown Name="DudSplThPerY3" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThPerY3,Mode=TwoWay}" Grid.Row="2" Grid.Column="9" />
-						<ControlLib:DoubleUpDown Name="DudSplThPerY2" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThPerY2,Mode=TwoWay}" Grid.Row="1" Grid.Column="9" />
-						<ControlLib:DoubleUpDown Name="DudSplThPerY1" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThPerY1,Mode=TwoWay}" Grid.Row="0" Grid.Column="9" />
-					</Grid>
-				</ControlLib:NGroupBox>
-			</StackPanel>
+                        <ControlLib:DoubleUpDown Name="DudSplThPerY9" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThPerY9,Mode=TwoWay}" Grid.Row="8" Grid.Column="9" />
+                        <ControlLib:DoubleUpDown Name="DudSplThPerY8" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThPerY8,Mode=TwoWay}" Grid.Row="7" Grid.Column="9" />
+                        <ControlLib:DoubleUpDown Name="DudSplThPerY7" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThPerY7,Mode=TwoWay}" Grid.Row="6" Grid.Column="9" />
+                        <ControlLib:DoubleUpDown Name="DudSplThPerY6" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThPerY6,Mode=TwoWay}" Grid.Row="5" Grid.Column="9" />
+                        <ControlLib:DoubleUpDown Name="DudSplThPerY5" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThPerY5,Mode=TwoWay}" Grid.Row="4" Grid.Column="9" />
+                        <ControlLib:DoubleUpDown Name="DudSplThPerY4" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThPerY4,Mode=TwoWay}" Grid.Row="3" Grid.Column="9" />
+                        <ControlLib:DoubleUpDown Name="DudSplThPerY3" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThPerY3,Mode=TwoWay}" Grid.Row="2" Grid.Column="9" />
+                        <ControlLib:DoubleUpDown Name="DudSplThPerY2" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThPerY2,Mode=TwoWay}" Grid.Row="1" Grid.Column="9" />
+                        <ControlLib:DoubleUpDown Name="DudSplThPerY1" Increment="0.01" Maximum="5" Minimum="0" Value="{Binding Path=SplThPerY1,Mode=TwoWay}" Grid.Row="0" Grid.Column="9" />
+                    </Grid>
+                </ControlLib:NGroupBox>
+            </StackPanel>
             <Button Content="保存" Name="BtnSave" VerticalAlignment="Bottom" Width="100" Height="48" Background="#FF00D1E5" Click="BtnSave_Click" />
         </Grid>
     </Grid>

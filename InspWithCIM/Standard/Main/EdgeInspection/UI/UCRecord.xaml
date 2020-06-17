@@ -11,14 +11,14 @@
 		<ScrollViewer HorizontalScrollBarVisibility="Auto">
 			<DataGrid Name="dgRecord" Margin="1" Background="White" AllowDrop="True" GridLinesVisibility="All" SelectionChanged="dgRecord_SelectionChanged" VerticalScrollBarVisibility="Visible" ItemsSource="{Binding}" AutoGenerateColumns="False"   BorderThickness="2" CanUserReorderColumns="False" CanUserResizeColumns="True" CanUserSortColumns="False" CanUserResizeRows="False" IsReadOnly="True" SelectionUnit="FullRow">
 				<DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Time}" Header="时间" Width="Auto"  />
 					<DataGridTextColumn Binding="{Binding SideInfo}" Header="Side" Width="Auto"  />
 					<DataGridTextColumn Binding="{Binding NoCamera}" Header="CamN" Width="Auto"  />
 					<DataGridTextColumn Binding="{Binding Code}" Header="二维码" Width="Auto"  />
 					<DataGridTextColumn Binding="{Binding FaultTypeStr}" Header="缺陷" Width="Auto"  />
 					<DataGridTextColumn Binding="{Binding FaultInfoStr}" Header="规格" Width="Auto"  />
-					<DataGridTextColumn Binding="{Binding ImagePath}" Header="路径" Width="Auto"  />
-					<DataGridTextColumn Binding="{Binding Time}" Header="时间" Width="Auto"  />
-				</DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding ImagePath}" Header="路径" Width="Auto"  />
+                </DataGrid.Columns>
 			</DataGrid>
 		</ScrollViewer>
 	</GroupBox>

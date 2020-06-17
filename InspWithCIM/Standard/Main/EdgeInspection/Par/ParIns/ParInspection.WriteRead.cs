@@ -74,8 +74,8 @@ namespace Main
             IniFile.I_I.WriteIni(NameCam, "SplThShellY9_" + index, SplThShellY9, BasePathIni);
             IniFile.I_I.WriteIni(NameCam, "SplThShellX9_" + index, SplThShellX9, BasePathIni);
 
-            IniFile.I_I.WriteIni(NameCam, "SplThPerY1_" + index, SplThPerY1, BasePathIni);            
-            IniFile.I_I.WriteIni(NameCam, "SplThPerY2_" + index, SplThPerY2, BasePathIni);            
+            IniFile.I_I.WriteIni(NameCam, "SplThPerY1_" + index, SplThPerY1, BasePathIni);
+            IniFile.I_I.WriteIni(NameCam, "SplThPerY2_" + index, SplThPerY2, BasePathIni);
             IniFile.I_I.WriteIni(NameCam, "SplThPerY3_" + index, SplThPerY3, BasePathIni);
             IniFile.I_I.WriteIni(NameCam, "SplThPerY4_" + index, SplThPerY4, BasePathIni);
             IniFile.I_I.WriteIni(NameCam, "SplThPerY5_" + index, SplThPerY5, BasePathIni);

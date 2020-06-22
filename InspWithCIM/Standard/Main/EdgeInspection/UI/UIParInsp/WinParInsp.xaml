@@ -39,6 +39,7 @@
                             <RowDefinition Height="*" />
                             <RowDefinition Height="*" />
                             <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
@@ -51,38 +52,59 @@
                         <Label Style="{StaticResource LblStyle}" Content="贝壳宽度阈值：" Grid.Column="2" />
                         <Label Style="{StaticResource LblStyle}" Content="破角深度阈值：" Grid.Row="1"/>
                         <Label Style="{StaticResource LblStyle}" Content="破角宽度阈值：" Grid.Row="1" Grid.Column="2"/>
-                        <Label Style="{StaticResource LblStyle}" Content="凸边深度阈值：" Grid.Row="2"/>
-                        <Label Style="{StaticResource LblStyle}" Content="裂纹深度阈值：" Grid.Row="3"/>
-                        <Label Style="{StaticResource LblStyle}" Content="裂纹宽度阈值：" Grid.Column="2" Grid.Row="3"/>
-                        <Label Style="{StaticResource LblStyle}" Content="剔除毛刺：" Grid.Row="5" Grid.Column="0"/>
-                        <Label Style="{StaticResource LblStyle}" Content="电极灰度阈值：" Grid.Row="4" Grid.Column="0"/>
-                        <Label Style="{StaticResource LblStyle}" Content="电极检测扩张度：" Grid.Row="4" Grid.Column="2"/>
-                        <Label Style="{StaticResource LblStyle}" Content="凸边宽度阈值：" Grid.Row="2" Grid.Column="2"/>
-                        <Label Style="{StaticResource LblStyle}" Content="角图片起始张数" Grid.Row="7" Grid.Column="0"/>
-                        <Label Style="{StaticResource LblStyle}" Content="角图片结束张数" Grid.Row="7" Grid.Column="2"/>
+                        <Label Style="{StaticResource LblStyle}" Content="凹边深度阈值：" Grid.Row="2"/>
+                        <Label Style="{StaticResource LblStyle}" Content="凸边深度阈值：" Grid.Row="3"/>
+                        <Label Style="{StaticResource LblStyle}" Content="裂纹深度阈值：" Grid.Row="4"/>
+                        <Label Style="{StaticResource LblStyle}" Content="裂纹宽度阈值：" Grid.Column="2" Grid.Row="4"/>
+                        <Label Style="{StaticResource LblStyle}" Content="剔除毛刺：" Grid.Row="6" Grid.Column="0"/>
+                        <Label Style="{StaticResource LblStyle}" Content="电极灰度阈值：" Grid.Row="5" Grid.Column="0"/>
+                        <Label Style="{StaticResource LblStyle}" Content="电极检测扩张度：" 
+                               Grid.Row="5" Grid.Column="2"/>
+                        <Label Style="{StaticResource LblStyle}" Content="凹边宽度阈值：" Grid.Row="2" Grid.Column="2"/>
+                        <Label Style="{StaticResource LblStyle}" Content="凸边宽度阈值：" Grid.Row="3" Grid.Column="2"/>
+                        <Label Style="{StaticResource LblStyle}" Content="角图片起始张数" Grid.Row="8" Grid.Column="0"/>
+                        <Label Style="{StaticResource LblStyle}" Content="角图片结束张数" Grid.Row="8" Grid.Column="2"/>
                         <ControlLib:DoubleUpDown Name="DudThShellY" Value="{Binding Path=ThShellY,Mode=TwoWay}" Minimum="0" Increment="0.01" Grid.Column="1"/>
                         <ControlLib:DoubleUpDown Name="DudThShellX" Value="{Binding Path=ThShellX,Mode=TwoWay}" Minimum="0"  Increment="0.01" Grid.Column="3"/>
                         <ControlLib:DoubleUpDown Name="DudThCornerY" Value="{Binding Path=ThCornerY,Mode=TwoWay}" Minimum="0"  Increment="0.01" Grid.Row="1" Grid.Column="1"/>
                         <ControlLib:DoubleUpDown Name="DudThCornerX" Value="{Binding Path=ThCornerX,Mode=TwoWay}" Minimum="0"  Increment="0.01" Grid.Row="1" Grid.Column="3"/>
                         <CheckBox x:Name="cbUseOr" Content="使用'Or'判断破角" Grid.Column="4" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" IsChecked="{Binding UsingORToCorner}" />
-                        <CheckBox x:Name="cbCrackEnabled" Content="是否开启裂纹检测" Grid.Column="4" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" IsChecked="{Binding IsCrackEnabled}" />
+                        <CheckBox x:Name="cbCrackEnabled" Content="是否开启裂纹检测"
+                                  Grid.Column="4" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center" IsChecked="{Binding IsCrackEnabled}" />
                         <ControlLib:DoubleUpDown Name="DudThPreiectionY" Value="{Binding Path=ThPreiectionY,Mode=TwoWay}" Increment="0.01" Minimum="0"  Grid.Row="2" Grid.Column="1"/>
                         <ControlLib:DoubleUpDown Name="DudThPreiectionX" Value="{Binding Path=ThPreiectionX,Mode=TwoWay}" Minimum="0"  Increment="0.01" Grid.Row="2" Grid.Column="3"/>
-                        <ControlLib:DoubleUpDown Name="DudCrackY" Value="{Binding Path=ThCrackY,Mode=TwoWay}" Increment="0.01" Minimum="0"  Grid.Row="3" Grid.Column="1"/>
-                        <ControlLib:DoubleUpDown Name="DudCrackX" Value="{Binding Path=ThCrackX,Mode=TwoWay}" Minimum="0"  Increment="0.01" Grid.Row="3" Grid.Column="3"/>
-                        <ControlLib:DoubleUpDown Name="DudThITO" Increment="1" Maximum="255" Minimum="0"  Value="{Binding Path=ThITO,Mode=TwoWay}" Grid.Row="4" Grid.Column="1" />
-                        <ControlLib:DoubleUpDown Name="DudDblOutRate" Maximum="3" Minimum="0"  Increment="0.1" Value="{Binding Path=DblOutRate,Mode=TwoWay}" Grid.Row="4" Grid.Column="3" />
-                        <ControlLib:DoubleUpDown Name="DudSmooth" Maximum="20" Minimum="0"  Increment="1" Value="{Binding Path=SmoothWidth,Mode=TwoWay}" Grid.Row="5" Grid.Column="1" />
-                        <ControlLib:DoubleUpDown x:Name="DudSmooth_Copy" Maximum="20" Minimum="0"  Increment="1" Value="{Binding Path=SmoothHeight, Mode=TwoWay}" Grid.Row="5" Grid.Column="2" />
-                        <ControlLib:DoubleUpDown Name="DudNumCornerStart" Maximum="20" Minimum="0"  Increment="1" Value="{Binding Path=IntNumDefCornerWhenStart,Mode=TwoWay}" Grid.Row="7" Grid.Column="1" />
-                        <ControlLib:DoubleUpDown Name="DudNumCornerEnd" Maximum="20" Minimum="0"  Increment="1" Value="{Binding Path=IntNumDefCornerWhenEnd,Mode=TwoWay}" Grid.Row="7" Grid.Column="3" />
+                        <ControlLib:DoubleUpDown Name="DudThConvexY" Value="{Binding Path=ThConvexY,Mode=TwoWay}" Increment="0.01" Minimum="0"  Grid.Row="3" Grid.Column="1"/>
+                        <ControlLib:DoubleUpDown Name="DudThConvexX" Value="{Binding Path=ThConvexX,Mode=TwoWay}" Minimum="0"  Increment="0.01" Grid.Row="3" Grid.Column="3"/>
+                        <ControlLib:DoubleUpDown Name="DudCrackY" Value="{Binding Path=ThCrackY,Mode=TwoWay}" 
+                                                 Increment="0.01" Minimum="0"  
+                                                 Grid.Row="4" Grid.Column="1"/>
+                        <ControlLib:DoubleUpDown Name="DudCrackX" Value="{Binding Path=ThCrackX,Mode=TwoWay}" 
+                                                 Minimum="0"  Increment="0.01" 
+                                                 Grid.Row="4" Grid.Column="3"/>
+                        <ControlLib:DoubleUpDown Name="DudThITO" Increment="1" Maximum="255" 
+                                                 Minimum="0"  Value="{Binding Path=ThITO,Mode=TwoWay}" 
+                                                 Grid.Row="5" Grid.Column="1" />
+                        <ControlLib:DoubleUpDown Name="DudDblOutRate" Maximum="3" Minimum="0" 
+                                                 Increment="0.1" Value="{Binding Path=DblOutRate,Mode=TwoWay}" 
+                                                 Grid.Row="5" Grid.Column="3" />
+                        <ControlLib:DoubleUpDown Name="DudSmooth" Maximum="20" Minimum="0"  
+                                                 Increment="1" Value="{Binding Path=SmoothWidth,Mode=TwoWay}" 
+                                                 Grid.Row="6" Grid.Column="1" />
+                        <ControlLib:DoubleUpDown x:Name="DudSmooth_Copy" Maximum="20" Minimum="0" 
+                                                 Increment="1" Value="{Binding Path=SmoothHeight, Mode=TwoWay}"
+                                                 Grid.Row="6" Grid.Column="2" />
+                        <ControlLib:DoubleUpDown Name="DudNumCornerStart" Maximum="20" Minimum="0"  Increment="1" Value="{Binding Path=IntNumDefCornerWhenStart,Mode=TwoWay}" Grid.Row="8" Grid.Column="1" />
+                        <ControlLib:DoubleUpDown Name="DudNumCornerEnd" Maximum="20" Minimum="0"  Increment="1" Value="{Binding Path=IntNumDefCornerWhenEnd,Mode=TwoWay}" Grid.Row="8" Grid.Column="3" />
 
-                        <CheckBox Name="CbxIgnoreSide1Fault" IsChecked="{Binding BlIgnoreThisSideFault,Mode=TwoWay}" Content="忽略此边所有缺陷" VerticalContentAlignment="Center" FontSize="12" Height="14" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Center"/>
+                        <CheckBox Name="CbxIgnoreSide1Fault" IsChecked="{Binding BlIgnoreThisSideFault,Mode=TwoWay}" 
+                                  Content="忽略此边所有缺陷" VerticalContentAlignment="Center" 
+                                  FontSize="12" Height="14" 
+                                  Grid.Row="6" Grid.Column="3" HorizontalAlignment="Center"/>
                         <!--<CheckBox Name="CbxIsCFSide" Margin="1" Content="检测CF面" Grid.Row="5" Grid.ColumnSpan="2" Grid.Column="1" IsChecked="{Binding BlInspCF,Mode=TwoWay}" VerticalContentAlignment="Center" HorizontalAlignment="Left" />-->
-                        <Label Style="{StaticResource LblStyle}" Content="边序号设置：" Grid.Row="6" Grid.Column="0"/>
-                        <TextBox Name="TxtSideMatch" Text="{Binding StrSidesMatch,Mode=TwoWay}" Width="auto" HorizontalAlignment="Stretch" Grid.Row="6" Grid.Column="1" HorizontalContentAlignment="Right" VerticalAlignment="Stretch" VerticalContentAlignment="Center" ToolTip="多个边需要用','" LostFocus="TextBox_LostFocus"/>
+                        <Label Style="{StaticResource LblStyle}" Content="边序号设置：" Grid.Row="7" Grid.Column="0"/>
+                        <TextBox Name="TxtSideMatch" Text="{Binding StrSidesMatch,Mode=TwoWay}" Width="auto" HorizontalAlignment="Stretch" Grid.Row="7" Grid.Column="1" HorizontalContentAlignment="Right" VerticalAlignment="Stretch" VerticalContentAlignment="Center" ToolTip="多个边需要用','" LostFocus="TextBox_LostFocus"/>
                         <Label Name="LblState" Grid.Row="6" Grid.Column="2" Foreground="Red"/>
-                        <CheckBox Name="CbxIgnoreMark" Content="通过识别Mark来判断OKNG" Margin="1" Grid.Row="8" Grid.ColumnSpan="2" Grid.Column="1" IsChecked="{Binding JudgeMentMark,Mode=TwoWay}" VerticalContentAlignment="Center" HorizontalAlignment="Left" ToolTip="勾选时，识别为破角的图片如果mark能正常识别，会判定为OK"/>
+                        <!--<CheckBox Name="CbxIgnoreMark" Content="通过识别Mark来判断OKNG" Margin="1" Grid.Row="8" Grid.ColumnSpan="2" Grid.Column="1" IsChecked="{Binding JudgeMentMark,Mode=TwoWay}" VerticalContentAlignment="Center" HorizontalAlignment="Left" ToolTip="勾选时，识别为破角的图片如果mark能正常识别，会判定为OK"/>-->
 
                     </Grid>
                 </ControlLib:NGroupBox>

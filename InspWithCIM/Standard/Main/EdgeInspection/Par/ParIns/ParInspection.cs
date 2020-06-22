@@ -40,8 +40,16 @@ namespace Main
         /// </summary>
         public bool UsingORToCorner { get; set; }
         public bool IsCrackEnabled { get; set; } = false;
+        /// <summary>
+        /// 凹边
+        /// </summary>
         public double ThPreiectionX { get; set; }
         public double ThPreiectionY { get; set; }
+        /// <summary>
+        /// 凸边
+        /// </summary>
+        public double ThConvexX { get; set; }
+        public double ThConvexY { get; set; }
         /// <summary>
         /// 裂纹宽度阈值
         /// </summary>

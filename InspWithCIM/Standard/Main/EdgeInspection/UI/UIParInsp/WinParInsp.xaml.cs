@@ -92,7 +92,7 @@ namespace Main
                     DudThPreiectionY.IsEnabled = isEnable;
                     DudNumCornerStart.IsEnabled = isEnable;
                     DudNumCornerEnd.IsEnabled = isEnable;
-                    CbxIgnoreMark.IsEnabled = isEnable;
+                    //CbxIgnoreMark.IsEnabled = isEnable;
                     cbUseOr.IsEnabled = isEnable;
                     DudThresholdEdge.IsEnabled = isEnable;
                     DudThresholdGlass.IsEnabled = isEnable;

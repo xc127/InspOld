@@ -175,7 +175,7 @@ namespace Main
             }
             catch(Exception ex)
             {
-                Log.L_I.WriteError("MainWindow", ex);
+                Log.L_I.WriteError("DELIMAGE", ex);
             }
             finally
             {

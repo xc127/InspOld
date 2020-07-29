@@ -43,6 +43,11 @@ namespace DealCIM
         string operation;
         public string StrOperation { get { return operation; } set { operation = value; NotifyPropertyChanged("StrOperation"); } }
         /// <summary>
+        /// 工作站
+        /// </summary>
+        string wo_id;
+        public string Wo_id { get { return wo_id; } set { wo_id = value; NotifyPropertyChanged("Wo_id"); } }
+        /// <summary>
         /// 有效的lot号
         /// </summary>
         string lot;
@@ -117,7 +122,7 @@ namespace DealCIM
         /// cim是否打开
         /// </summary>
         bool blCimOn;
-        public bool BlCimOn { get { return blCimOn; } set { blCimOn = value; NotifyPropertyChanged("BlCimOn"); NotifyPropertyChanged("BlVerifyChipIDEnabled"); NotifyPropertyChanged("BlPassVerifyCodeEnabled"); } }        
+        public bool BlCimOn { get { return blCimOn; } set { blCimOn = value; NotifyPropertyChanged("BlCimOn"); NotifyPropertyChanged("BlVerifyChipIDEnabled"); NotifyPropertyChanged("BlPassVerifyCodeEnabled"); } }
         /// <summary>
         /// 是否读码
         /// </summary>
@@ -143,6 +148,9 @@ namespace DealCIM
         /// </summary>
         bool blPassVerifyCodeEnabled;
         public bool BlPassVerifyCodeEnabled { get { return !BlCimOn & BlCodeOn; } set { blPassVerifyCodeEnabled = value; NotifyPropertyChanged("BlPassVerifyCodeEnabled"); } }
+
+        bool _blByPiece;
+        public bool BlByPiece { get => _blByPiece; set { _blByPiece = value; NotifyPropertyChanged("BlByPiece"); } }
         #endregion
 
 

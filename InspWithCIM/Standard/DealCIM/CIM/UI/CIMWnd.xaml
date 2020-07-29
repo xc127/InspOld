@@ -39,6 +39,8 @@
 						<RowDefinition Height="*"/>
 						<RowDefinition Height="*"/>
 						<RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
 					</Grid.RowDefinitions>
 					<Label Content="UserID:" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
 					<TextBox x:Name="tbUserID" Grid.Column="1" Grid.Row="0" Text="{Binding StrUserID, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="120" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
@@ -50,8 +52,12 @@
 					<TextBox x:Name="tbLine" Grid.Column="1" Grid.Row="3" Text="{Binding StrLine, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="120" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 					<Label Content="Operation:" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
 					<TextBox x:Name="tbOperation" Grid.Column="1" Grid.Row="4" Text="{Binding StrOperation, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="120" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-					<Label Content="ModelNo:" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
-					<TextBox x:Name="tbModelNo" Grid.Column="1" Grid.Row="5" Text="{Binding StrModelNo, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="120" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <Label Content="EquipmentID:" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+                    <TextBox x:Name="tbeqpid" Grid.Column="1" Grid.Row="5" Text="{Binding StrOperation, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="120" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <Label Content="Wo_ID:" Grid.Column="0" Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+                    <TextBox x:Name="tbwoid" Grid.Column="1" Grid.Row="6" Text="{Binding Wo_id, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="120" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <Label Content="ModelNo:" Grid.Column="0" Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+					<TextBox x:Name="tbModelNo" Grid.Column="1" Grid.Row="7" Text="{Binding StrModelNo, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="120" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 				</Grid>
 			</TabItem>
 			<TabItem Header="CIM连接设置">
@@ -106,6 +112,10 @@
 					<TextBox x:Name="tbCodeDelay" Grid.Row="4" Grid.Column="1" Text="{Binding iCodeDelay, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="120" Height="40" HorizontalAlignment="Center" FontSize="20" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 				</Grid>
 			</TabItem>
+
+            <TabItem Header="Others">
+                <local:UcCimExtension/>
+            </TabItem>
 		</TabControl>
 		<Grid Grid.Row="1">
 			<Grid.ColumnDefinitions>

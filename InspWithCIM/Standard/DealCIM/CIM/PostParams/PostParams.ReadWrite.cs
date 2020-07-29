@@ -36,6 +36,7 @@ namespace DealCIM
                 StrArea = GetCimConfig(CIM_PARAMS.Area.ToString());
                 StrLine = GetCimConfig(CIM_PARAMS.Line.ToString());
                 StrOperation = GetCimConfig(CIM_PARAMS.Operation.ToString());
+                Wo_id = GetCimConfig(CIM_PARAMS.Wo_id.ToString());
                 StrLot = GetCimConfig(CIM_PARAMS.RunCard.ToString());
                 StrModelNo = GetCimConfig(CIM_PARAMS.ModelNo.ToString());
                 StrCom = GetCimConfig(CIM_PARAMS.COM.ToString());
@@ -62,6 +63,7 @@ namespace DealCIM
                 BlCimOn = bool.Parse(GetCimConfig(CIMMODE_ENUM.CimOn.ToString(), "CIMMODE"));
                 BlVerifyChipID = bool.Parse(GetCimConfig(CIMMODE_ENUM.VerifyChipid.ToString(), "CIMMODE"));
                 BlPassVerifyCode = bool.Parse(GetCimConfig(CIMMODE_ENUM.PassVerifyCode.ToString(), "CIMMODE"));
+                BlByPiece = bool.Parse(GetCimConfig(CIMMODE_ENUM.ByPiece.ToString(), "CIMMODE"));
                 #endregion
             }
             catch(Exception ex)
@@ -135,6 +137,7 @@ namespace DealCIM
             WriteCimConfig(CIM_PARAMS.Area.ToString(), StrArea);
             WriteCimConfig(CIM_PARAMS.Line.ToString(), StrLine);
             WriteCimConfig(CIM_PARAMS.Operation.ToString(), StrOperation);
+            WriteCimConfig(CIM_PARAMS.Wo_id.ToString(), Wo_id);
             WriteCimConfig(CIM_PARAMS.ModelNo.ToString(), StrModelNo);
             WriteCimConfig(CIM_PARAMS.RunCard.ToString(), StrLot);
             WriteCimConfig(CIM_PARAMS.COM.ToString(), StrCom);
@@ -153,6 +156,7 @@ namespace DealCIM
             WriteCimConfig(CIMMODE_ENUM.CimOn.ToString(), BlCimOn.ToString(), "CIMMODE");
             WriteCimConfig(CIMMODE_ENUM.VerifyChipid.ToString(), BlVerifyChipID.ToString(), "CIMMODE");
             WriteCimConfig(CIMMODE_ENUM.PassVerifyCode.ToString(), BlPassVerifyCode.ToString(), "CIMMODE");
+            WriteCimConfig(CIMMODE_ENUM.ByPiece.ToString(), BlByPiece.ToString(), "CIMMODE");
             #endregion
         }
 

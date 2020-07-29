@@ -17,6 +17,8 @@ namespace Main
             IniFile.I_I.WriteIni(NameCam, "ThCornerY_" + index, ThCornerY, BasePathIni);
             IniFile.I_I.WriteIni(NameCam, "ThPreiectionX_" + index, ThPreiectionX, BasePathIni);
             IniFile.I_I.WriteIni(NameCam, "ThPreiectionY_" + index, ThPreiectionY, BasePathIni);
+            IniFile.I_I.WriteIni(NameCam, "ThConvexX_" + index, ThConvexX, BasePathIni);
+            IniFile.I_I.WriteIni(NameCam, "ThConvexY_" + index, ThConvexY, BasePathIni);
             IniFile.I_I.WriteIni(NameCam, "ThCrackX_" + index, ThCrackX, BasePathIni);
             IniFile.I_I.WriteIni(NameCam, "ThCrackY_" + index, ThCrackY, BasePathIni);
             IniFile.I_I.WriteIni(NameCam, "ThresholdGlass_" + index, ThresholdGlass, BasePathIni);
@@ -124,6 +126,8 @@ namespace Main
                 ThCornerY = IniFile.I_I.ReadIniDbl(NameCam, "ThCornerY_" + index, 0.5, BasePathIni);
                 ThPreiectionX = IniFile.I_I.ReadIniDbl(NameCam, "ThPreiectionX_" + index, 0.5, BasePathIni);
                 ThPreiectionY = IniFile.I_I.ReadIniDbl(NameCam, "ThPreiectionY_" + index, 0.5, BasePathIni);
+                ThConvexX= IniFile.I_I.ReadIniDbl(NameCam, "ThConvexX_" + index, 0.5, BasePathIni);
+                ThConvexY = IniFile.I_I.ReadIniDbl(NameCam, "ThConvexY_" + index, 0.5, BasePathIni);
                 ThCrackX = IniFile.I_I.ReadIniDbl(NameCam, "ThCrackX_" + index, 0.5, BasePathIni);
                 ThCrackY = IniFile.I_I.ReadIniDbl(NameCam, "ThCrackY_" + index, 0.5, BasePathIni);
                 ThresholdGlass = IniFile.I_I.ReadIniInt(NameCam, "ThresholdGlass_" + index, 35, BasePathIni);

@@ -94,15 +94,23 @@ namespace Main
             try
             {
                 bool existed = System.IO.File.Exists(result.ImagePath);
-                if (result.ImagePath != null && System.IO.File.Exists(result.ImagePath))
+                if (result.ImagePath == null)
                 {
-                    g_UCSingleResult.ClearShapeHalWin();
-                    g_UCSingleResult.LoadLocalImage(result.ImagePath);
-                    List<double[]> list = CreatRect1(result);
-                    foreach (double[] value in list)
-                    {
-                        g_UCSingleResult.DispRectangle1(value, 1, "red", "margin");
-                    }
+                    Log.L_I.WriteError("ResultDisplay", "Path null");
+                    return;
+                }
+                if (!System.IO.File.Exists(result.ImagePath))
+                {
+                    Log.L_I.WriteError("ResultDisplay", "Not Exist:" + result.ImagePath);
+                    return;
+                }
+
+                g_UCSingleResult.ClearShapeHalWin();
+                g_UCSingleResult.LoadLocalImage(result.ImagePath);
+                List<double[]> list = CreatRect1(result);
+                foreach (double[] value in list)
+                {
+                    g_UCSingleResult.DispRectangle1(value, 1, "red", "margin");
                 }
             }
             catch (Exception ex)

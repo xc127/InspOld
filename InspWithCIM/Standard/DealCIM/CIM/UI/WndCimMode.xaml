@@ -28,6 +28,10 @@
 						  Checked="TbtnPassCodeNG_Checked" Unchecked="TbtnPassCodeNG_Unchecked"
 						  IsChecked="{Binding Path=BlPassVerifyCode,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
 						  IsEnabled="{Binding Path=BlPassVerifyCodeEnabled,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+            <ToggleButton x:Name="tbtnByPiece" Content="ByPiece过账" Width="120" Height="40" Margin="5"
+						  Checked="tbtnByPiece_Checked" Unchecked="tbtnByPiece_Unchecked"
+						  IsChecked="{Binding Path=BlByPiece,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+						  IsEnabled="{Binding Path=BlCimOn,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
 		</StackPanel>
 		<Grid Grid.Row="1">
 			<Grid.ColumnDefinitions>

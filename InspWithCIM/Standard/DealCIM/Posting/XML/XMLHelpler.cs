@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Xml;
 using System.Windows;
 using System.IO;
+using System.Linq;
 
 namespace DealCIM
 {
@@ -282,6 +283,12 @@ namespace DealCIM
                         type = PostType.Lot;
                         UpdataLotNum_event?.Invoke(lotnum);
                     }
+                }
+
+                foreach(string item in CimExtensionService.GetInstance().GetContents().ToArray())
+                {
+                    if (error_msg.Contains(item))
+                        result = true;
                 }
 
                 return result;

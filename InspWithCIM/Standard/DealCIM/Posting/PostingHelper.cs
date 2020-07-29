@@ -67,6 +67,16 @@ namespace DealCIM
 
             return returnValue;
         }
+
+        public static string PostTrackOut(string code, string modelno, XmlCreaterBase xmlCreater, out string key)
+        {
+            XmlDocument xmlDoc = xmlCreater.CreateTrackoutXml(code, modelno);
+            string returnValue = CIM.C_I.WriteData(XMLHelpler.XMLToString(xmlDoc), out key);
+            if (PostParams.P_I.BlLog)
+                XMLHelpler.SaveXml(xmlDoc, "Post-" + key, PostType.TrackOut);
+
+            return returnValue;
+        }
     }
 
     public struct PostInfo

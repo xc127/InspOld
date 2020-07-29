@@ -234,6 +234,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\SetComprehensive.dll</HintPath>
     </Reference>
+    <Reference Include="SetPar">
+      <HintPath>..\DLL\SetPar.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Configuration" />
@@ -516,10 +519,6 @@
     <ProjectReference Include="..\DealRobot\DealRobot.csproj">
       <Project>{2429126b-59e1-4d64-8a0c-45fd56b5b672}</Project>
       <Name>DealRobot</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SetPar\SetPar.csproj">
-      <Project>{d4868c16-b049-4ed6-90a3-73b72d3480da}</Project>
-      <Name>SetPar</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

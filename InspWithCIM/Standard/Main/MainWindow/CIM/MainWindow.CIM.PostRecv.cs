@@ -52,6 +52,14 @@ namespace Main
                 SetLot();
 
                 //string returnValue = PostHelper.PostLot(PostParams.P_I.StrModelNo, out string key);
+                if (PostParams.P_I.BlByPiece)
+                {
+                    PostParams.P_I.StrLot = PostParams.P_I.StrTempLot;
+                    SetLot();                    
+                    PostParams.P_I.WriteCimConfig();
+                    return;
+                }
+                    
                 string returnValue = PostHelper.PostLot(PostParams.P_I.StrModelNo, xmlCreater, out string key);
                 if (returnValue == CIM.ReturnOK)
                 {
@@ -86,6 +94,39 @@ namespace Main
                 //string returnValue = PostHelper.PostTrackOut(CIM.GetList(), PostParams.P_I.StrModelNo, out string key);
                 string returnValue = PostHelper.PostTrackOut(
                     CIM.GetList(), PostParams.P_I.StrModelNo, xmlCreater, out string key);
+                if (returnValue == CIM.ReturnOK)
+                {
+                    SetCimResult[(int)postInfo.type]("Trackout上报成功", false);
+                    postInfo.correlationID = key;
+                    Task.Factory.StartNew(FindReception, postInfo);
+                }
+                else
+                {
+                    SetTrackOutResult(returnValue + "-Trackout上报失败", true);
+                    //TODO 通知plc？
+                    SendCIMResult(postInfo.type, NG);
+                }
+            })).Start();
+        }
+
+        public void UploadByPieces(string code)
+        {
+            new Task(new Action(() =>
+            {
+                postInfo.type = PostType.TrackOut;
+                SetCimResult[(int)postInfo.type]("Trackout上报中...", false);
+                //CIM.LoadList(CIM.LotNum);
+                //ShowState("当前卡塞统计账料数：" + CIM.GetChipIDCnt().ToString());
+                //if (CIM.ChipIDCount != CIM.LotNum)
+                //{
+                //    ShowAlarm("统计账料数与LotNum不符，无法过账，请重新确认");
+                //    SendCIMResult(postInfo.type, NG);
+                //    return;
+                //}
+
+                //string returnValue = PostHelper.PostTrackOut(CIM.GetList(), PostParams.P_I.StrModelNo, out string key);
+                string returnValue = PostHelper.PostTrackOut(
+                    code, PostParams.P_I.StrModelNo, xmlCreater, out string key);
                 if (returnValue == CIM.ReturnOK)
                 {
                     SetCimResult[(int)postInfo.type]("Trackout上报成功", false);

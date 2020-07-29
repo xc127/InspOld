@@ -130,6 +130,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\Common.dll</HintPath>
     </Reference>
+    <Reference Include="CommonServiceLocator, Version=2.0.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.2.0.2\lib\net40\CommonServiceLocator.dll</HintPath>
+    </Reference>
     <Reference Include="ControlLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\ControlLib.dll</HintPath>
@@ -141,6 +144,12 @@
     <Reference Include="DealFile, Version=1.0.2019.104, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\DealFile.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight, Version=5.4.1.0, Culture=neutral, PublicKeyToken=0e453835af4ee6ce, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net40\GalaSoft.MvvmLight.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras, Version=5.4.1.0, Culture=neutral, PublicKeyToken=f46ff315b1088208, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net40\GalaSoft.MvvmLight.Extras.dll</HintPath>
     </Reference>
     <Reference Include="MahApps.Metro, Version=1.2.4.0, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -158,6 +167,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net40\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -194,6 +206,7 @@
     <Compile Include="CIM\CIM.Regedit.cs" />
     <Compile Include="CIM\PostParams\PostParams.cs" />
     <Compile Include="CIM\PostParams\PostParams.ReadWrite.cs" />
+    <Compile Include="CIM\Service\CimExtensionService.cs" />
     <Compile Include="CIM\UI\CIMMain.xaml.cs">
       <DependentUpon>CIMMain.xaml</DependentUpon>
     </Compile>
@@ -209,9 +222,13 @@
     <Compile Include="CIM\UI\PostTrackout.xaml.cs">
       <DependentUpon>PostTrackout.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CIM\UI\UcCimExtension.xaml.cs">
+      <DependentUpon>UcCimExtension.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CIM\UI\WndCimMode.xaml.cs">
       <DependentUpon>WndCimMode.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CIM\ViewModel\CimExtensionViewModel.cs" />
     <Compile Include="Posting\PostingHelper.cs" />
     <Compile Include="Posting\ReceiveHelper.cs" />
     <Compile Include="Posting\XML\XMLHelpler.cs" />
@@ -240,6 +257,13 @@
     <Compile Include="QRCode\TW_SVH\TW_SVH.IO.cs" />
     <Compile Include="QRCode\VYCode\VYCode.cs" />
     <Compile Include="QRCode\VYCode\VYCode.IO.cs" />
+    <Compile Include="Serializer\BinaryFormatterAdaptor.cs" />
+    <Compile Include="Serializer\IFormatter.cs" />
+    <Compile Include="Serializer\Serializer.cs" />
+    <Compile Include="Serializer\Serializer_Binary.cs" />
+    <Compile Include="Serializer\Serializer_Xml.cs" />
+    <Compile Include="Serializer\XmlFormatterAdaptor.cs" />
+    <Compile Include="XmlManager\XmlCreater\XmlCreater_XMbyPiece.cs" />
     <Compile Include="XmlManager\XmlCreater\XmlCreater.cs" />
     <Compile Include="XmlManager\XmlCreater\XmlCreater_SZ.cs" />
     <Compile Include="XmlManager\XmlCreater\XmlCreater_XM.cs" />
@@ -248,11 +272,13 @@
     <Compile Include="XmlManager\XmlParser\XmlParser.cs" />
     <Compile Include="XmlManager\XmlParser\XmlParser_SZ.cs" />
     <Compile Include="XmlManager\XmlParser\XmlParser_XM.cs" />
+    <Compile Include="XmlManager\XmlParser\XmlParser_XMbyPieces.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include=".editorconfig" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -278,6 +304,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CIM\UI\PostTrackout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CIM\UI\UcCimExtension.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

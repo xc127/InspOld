@@ -815,7 +815,6 @@ E:\项目\Git\InspOld\InspWithCIM\Standard\SetPar\bin\Debug\BasicClass.pdb
 E:\项目\Git\InspOld\InspWithCIM\Standard\SetPar\bin\Debug\BasicClass.xml
 E:\项目\Git\InspOld\InspWithCIM\Standard\SetPar\bin\Debug\BasicClass.dll.config
 E:\项目\Git\InspOld\InspWithCIM\Standard\SetPar\bin\Debug\MahApps.Metro.xml
-E:\项目\Git\InspOld\InspWithCIM\Standard\SetPar\obj\Debug\SetPar.csprojAssemblyReference.cache
 E:\项目\Git\InspOld\InspWithCIM\Standard\SetPar\obj\Debug\HardDisk\Clear\WinClearHardDisk.baml
 E:\项目\Git\InspOld\InspWithCIM\Standard\SetPar\obj\Debug\HardDisk\Monitor\UI\WinHardDisk.baml
 E:\项目\Git\InspOld\InspWithCIM\Standard\SetPar\obj\Debug\Login\SetLogin\WinSetLogin.baml
@@ -842,3 +841,5 @@ E:\项目\Git\InspOld\InspWithCIM\Standard\SetPar\obj\Debug\SetPar.csproj.CoreCo
 E:\项目\Git\InspOld\InspWithCIM\Standard\SetPar\obj\Debug\SetPar.csproj.CopyComplete
 E:\项目\Git\InspOld\InspWithCIM\Standard\SetPar\obj\Debug\SetPar.dll
 E:\项目\Git\InspOld\InspWithCIM\Standard\SetPar\obj\Debug\SetPar.pdb
+E:\项目\Git\InspOld\InspWithCIM\Standard\DLL\SetPar.dll
+E:\项目\Git\InspOld\InspWithCIM\Standard\DLL\SetPar.pdb

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Authentication.ExtendedProtection;
 using System.Text;
 using System.Windows;
 using System.Xml;
@@ -24,19 +25,19 @@ namespace DealCIM
         /// <summary>
         /// xml文档根目录，保存的是标准xml文件
         /// </summary>
-        private const string xmlFolder = "Store\\Custom\\XML\\";
+        protected const string xmlFolder = "Store\\Custom\\XML\\";
         /// <summary>
         /// trackout.xml目录
         /// </summary>
-        public static string Path_XML_TrackOut { get => ParPathRoot.PathRoot + xmlFolder + "track_out.xml"; }
+        public virtual string Path_XML_TrackOut { get => ParPathRoot.PathRoot + xmlFolder + "track_out.xml"; }
         /// <summary>
         /// chipid.xml目录
         /// </summary>
-        public static string Path_XML_ChipID { get => ParPathRoot.PathRoot + xmlFolder + "chipid.xml"; }
+        public virtual string Path_XML_ChipID { get => ParPathRoot.PathRoot + xmlFolder + "chipid.xml"; }
         /// <summary>
         /// lot.xml目录
         /// </summary>
-        public static string Path_XML_Lot { get => ParPathRoot.PathRoot + xmlFolder + "lot.xml"; }
+        public virtual string Path_XML_Lot { get => ParPathRoot.PathRoot + xmlFolder + "lot.xml"; }
         #endregion
 
         #region 接口
@@ -134,6 +135,9 @@ namespace DealCIM
             }
             return xmlDoc;
         }
+
+        public virtual XmlDocument CreateTrackoutXml(string chipid, string modelno) { return null; }
+
         /// <summary>
         /// 配置xml中的数据，为了普适，其实准备好对应的xml，只要写一个modelno即可，其余对于一台机而言可以写死，但耗费较少，不做特殊处理，并且写法冗长，有志之士可以用dic<节点名,数据>来进行管理，一个foreach+dic.trygetvalue就可以少几十行代码
         /// </summary>

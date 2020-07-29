@@ -5,6 +5,7 @@ using System;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using DealCIM;
+using System.Configuration;
 
 namespace Main
 {
@@ -25,8 +26,13 @@ namespace Main
         const int OFF = 2;
 
         static XmlHelplerFactory factory = new XmlHelper_XM();
-        XmlCreaterBase xmlCreater = factory.GetXmlCreater();
-        XmlParserBase xmlParser =factory.GetXmlParser();
+        //XmlCreaterBase xmlCreater = factory.GetXmlCreater();
+        XmlCreaterBase xmlCreater = Activator.CreateInstance(
+            Type.GetType(ConfigurationManager.AppSettings["cimcreater"].ToString())) as XmlCreaterBase;
+        //XmlParserBase xmlParser =factory.GetXmlParser();
+        XmlParserBase xmlParser = Activator.CreateInstance(
+                Type.GetType(ConfigurationManager.AppSettings["cimparser"].ToString())
+                ) as XmlParserBase;
 
         public Task MonitorTask = null;
 

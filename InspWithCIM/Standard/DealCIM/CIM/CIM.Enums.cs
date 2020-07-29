@@ -21,6 +21,7 @@ namespace DealCIM
         Area,
         Line,
         Operation,
+        Wo_id,
         ModelNo,
         RunCard,
         COM,
@@ -36,7 +37,8 @@ namespace DealCIM
         CodeOn,
         CimOn,
         VerifyChipid,
-        PassVerifyCode
+        PassVerifyCode,
+        ByPiece
     }
 
     /// <summary>

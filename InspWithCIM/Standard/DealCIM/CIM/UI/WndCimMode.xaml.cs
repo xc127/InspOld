@@ -86,5 +86,15 @@ namespace DealCIM
         {
             ((ToggleButton)sender).Content = "读码NG抛料";
         }
+
+        private void tbtnByPiece_Checked(object sender, RoutedEventArgs e)
+        {
+            ((ToggleButton)sender).Content = "ByPiece过账";
+        }
+
+        private void tbtnByPiece_Unchecked(object sender, RoutedEventArgs e)
+        {
+            ((ToggleButton)sender).Content = "整卡过账";
+        }
     }
 }

@@ -91,7 +91,7 @@ namespace Main
             try
             {
                 //长时间监控
-                this.timer_LongMonitor.Interval = 3000;//30S
+                this.timer_LongMonitor.Interval = 30000;//30S
                 this.timer_LongMonitor.Enabled = true;
                 //短时间监控
                 this.timer_ShortMonitor.Interval = 200;
@@ -170,7 +170,7 @@ namespace Main
                 if (Authority.Authority_e != Authority_enum.Null)
                 {
                     time_Logout++;
-                    double time = time_Logout * 0.5;//0.5分钟为一个计时单位
+                    double time = time_Logout * 0.05;//0.5分钟为一个计时单位
                     if (ParSetLogin.P_I.TimeLogout < time
                         && !RegeditLogin.R_I.BlManufacturer)
                     {

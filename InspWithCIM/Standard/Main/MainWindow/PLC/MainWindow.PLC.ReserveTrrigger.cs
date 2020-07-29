@@ -155,19 +155,19 @@ namespace Main
                                 if (fcode.Length > 0)
                                 {
                                     Directory.Delete(fcode[0], true);
-                                    Log.L_I.WriteError("DELIMAGE", fcode[0]+ datethreshold.ToOADate());
+                                    Log.L_I.WriteError("DELIMAGE", fcode[0]+ datethreshold.ToLongDateString());
                                     return;
                                 }
                                 else
                                 {
-                                    Log.L_I.WriteError("DELIMAGE", dirHour + datethreshold.ToOADate());
+                                    Log.L_I.WriteError("DELIMAGE", dirHour + datethreshold.ToLongDateString());
                                     Directory.Delete(dirHour);
                                 }
                             }
                         }
                         else
                         {
-                            Log.L_I.WriteError("DELIMAGE", dirDate + datethreshold.ToOADate());
+                            Log.L_I.WriteError("DELIMAGE", dirDate + datethreshold.ToLongDateString());
                             Directory.Delete(dirDate);
                         }
                     }
@@ -438,7 +438,17 @@ namespace Main
         void LogicPLC_Inst_Reserve16_event(TriggerSource_enum trrigerSource_e, int i)
         {
             try
-            {                 
+            {
+                ShowState("进行ByPiece过账");
+                if (ModelParams.DefaultTrackOutOK)
+                {
+                    ShowState("ByPiece默认OK");
+                    LogicPLC.L_I.WriteRegData1((int)DataRegister1.TrackOutResult, 1);
+                }
+                else
+                {
+                    UploadByPieces(RegeditMain.R_I.CodeFork);
+                }
             }
             catch (Exception ex)
             {

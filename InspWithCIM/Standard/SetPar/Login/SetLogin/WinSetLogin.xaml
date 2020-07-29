@@ -68,7 +68,14 @@
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
                     <ComboBox BorderBrush="#CC119EDA" FontSize="36" Height="65" ItemsSource="{Binding Source={StaticResource Time}}" Name="cboTime" SelectedIndex="0" Width="315" Margin="214,0,80,0" ToolTip="超过设定时间后，软件会退出登录权限" />
-                    <ControlLib:ButtonColor Background="#FF66FFFF" Content="保  存" EAuthority="True" FontSize="30" FontWeight="Bold" Height="65" HorizontalAlignment="Center" IsEnabled="False" Margin="0" Name="btnSaveSetting" VerticalAlignment="Center" WAuthority="True" Width="180" Grid.Row="2" Click="btnSaveSetting_Click" />
+                    <ControlLib:ButtonColor Background="#FF66FFFF" Content="保  存" 
+                                            EAuthority="True" FontSize="30" 
+                                            FontWeight="Bold" Height="65" 
+                                            HorizontalAlignment="Center" 
+                                            IsEnabled="True" Margin="0" 
+                                            Name="btnSaveSetting" VerticalAlignment="Center" 
+                                            WAuthority="True" Width="180" Grid.Row="2" 
+                                            Click="btnSaveSetting_Click" />
                     <CheckBox Content="默认厂商权限" Grid.Row="1" Height="40" HorizontalAlignment="Center" Margin="0" Name="chkManufacturer" VerticalAlignment="Center" FontSize="20" Width="169" />
                     <Label Content="自动注销时间:" Height="38" HorizontalAlignment="Left" Margin="42,47,0,0" Name="label1" VerticalAlignment="Top" FontSize="24" />
                 </Grid>

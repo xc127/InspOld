@@ -4106,6 +4106,7 @@ E:\项目\设备\产品\巡边检\Program\InspWithCIM_xc_0522\Standard\Main\obj\
 E:\项目\设备\产品\巡边检\Program\InspWithCIM_xc_0522\Standard\Main\obj\Debug\机器视觉控制处理软件.pdb
 E:\项目\设备\产品\巡边检\Program\InspWithCIM_xc_0522\Standard\Main\bin\巡边检测软件\DealFile.xml
 E:\项目\设备\产品\巡边检\Program\InspWithCIM_xc_0522\Standard\Main\obj\Debug\Main.csprojAssemblyReference.cache
+E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\app.config
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\机器视觉控制处理软件.exe.config
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\机器视觉控制处理软件.exe
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\机器视觉控制处理软件.pdb
@@ -4151,6 +4152,7 @@ E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\Basler.Py
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\MvCameraControl.Net.dll
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\McmqApi.dll
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\Panuon.UI.dll
+E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\GalaSoft.MvvmLight.dll
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\DealGeometry.dll
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\DealImageProcess_EX.dll
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\DealWorkFlow.dll
@@ -4233,7 +4235,10 @@ E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\ParCompre
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\SetComprehensive.pdb
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\SetComprehensive.xml
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\SetComprehensive.dll.config
+E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\System.Windows.Interactivity.xml
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\Basler.Pylon.xml
+E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\GalaSoft.MvvmLight.pdb
+E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\GalaSoft.MvvmLight.xml
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\DealGeometry.pdb
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\DealGeometry.xml
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\DealGeometry.dll.config
@@ -4297,5 +4302,6 @@ E:\项目\Git\InspOld\InspWithCIM\Standard\Main\obj\Debug\Main.csproj.CoreCompil
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\obj\Debug\Main.csproj.CopyComplete
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\obj\Debug\机器视觉控制处理软件.exe
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\obj\Debug\机器视觉控制处理软件.pdb
-E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\app.config
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\obj\Debug\Main.csprojAssemblyReference.cache
+E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\SetPar.xml
+E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\SetPar.dll.config

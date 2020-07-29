@@ -180,8 +180,8 @@
 					<MenuItem Header="过账模式选择" x:Name="cmiCimMode" Click="CmiCimMode_Click"/>
 					<MenuItem Header="手动过账" x:Name="cmiPost" Click="CmiPost_Click" />
 					<MenuItem Header="RunCard上报" x:Name="cmiPostLot" Click="CmiPostLot_Click"/>
-					<MenuItem Header="产能报表" x:Name="cmiReport" Click="CmiReport_Click"/>
-				</MenuItem>
+                    <MenuItem Header="产能报表" x:Name="cmiReport" Click="CmiReport_Click"/>
+                </MenuItem>
 
                 <MenuItem  Header="帮助" FontSize="14" Width="50">
                     <MenuItem Header="关于"  Name="cmiAbout" Click="cmiAbout_Click" />

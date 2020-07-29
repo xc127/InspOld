@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 
-6-886480039
+7935040542
 
-42652301323
-291489481716
-CIM\UI\CIMMain.xaml;CIM\UI\CIMStatus.xaml;CIM\UI\CIMWnd.xaml;CIM\UI\PostLotWnd.xaml;CIM\UI\PostTrackout.xaml;CIM\UI\WndCimMode.xaml;
+532011093514
+33710566259
+CIM\UI\CIMMain.xaml;CIM\UI\CIMStatus.xaml;CIM\UI\CIMWnd.xaml;CIM\UI\PostLotWnd.xaml;CIM\UI\PostTrackout.xaml;CIM\UI\UcCimExtension.xaml;CIM\UI\WndCimMode.xaml;
 
 False
 

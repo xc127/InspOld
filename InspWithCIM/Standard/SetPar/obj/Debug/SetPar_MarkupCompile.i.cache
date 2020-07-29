@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\程序\Std_EdgeInspV2.3_20190517\Standard\SetPar\obj\Debug\
+E:\项目\Git\InspOld\InspWithCIM\Standard\SetPar\obj\Debug\
 SetPar
 none
 false
@@ -12,8 +12,8 @@ DEBUG;TRACE
 
 81579395667
 
-26-737759299
-30964905202
+261009412
+29-238478037
 HardDisk\Clear\WinClearHardDisk.xaml;HardDisk\Monitor\UI\WinHardDisk.xaml;Login\WinLogin.xaml;Login\SetLogin\WinSetLogin.xaml;Folder\WinSetFolder.xaml;Folder\DelFolder\SetDelFolder.xaml;Folder\FolderAttribute\SetFileAttribute.xaml;Memory\UI\WinMemory.xaml;
 
 True

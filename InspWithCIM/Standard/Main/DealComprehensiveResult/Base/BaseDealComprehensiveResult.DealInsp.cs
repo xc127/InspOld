@@ -1311,6 +1311,8 @@ namespace Main
                 if (blInvalidInsp)
                     LogicPLC.L_I.WriteRegData1((int)DataRegister1.PCAlarm, (int)PCArarm_Enum.CameraDown);
 
+                //显示产能
+                g_UCResultInsp.ShowResult(result);
                 //   IsNew = true;
                 //NoPicture_Cam1Side1 = 0;
                 //NoPicture_Cam1Side2 = 0;

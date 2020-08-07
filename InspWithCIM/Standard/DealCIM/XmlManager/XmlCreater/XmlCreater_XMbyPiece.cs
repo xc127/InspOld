@@ -12,6 +12,7 @@ namespace DealCIM
     public class XmlCreater_XMbyPiece : XmlCreaterBase
     {
         string ClassName = "XmlCreater_XMbyPiece";
+        public override string strRoot => "trx";
 
         public override string Path_XML_ChipID => ParPathRoot.PathRoot + xmlFolder + "uprintcode.xml";
         public override string Path_XML_TrackOut => ParPathRoot.PathRoot + xmlFolder + "ukitting.xml";
@@ -102,7 +103,7 @@ namespace DealCIM
                     }
                     if (xe.Name == "eqp_id")
                     {
-                        xe.InnerText = "Test";
+                        xe.InnerText = PostParams.P_I.EqpId;
                     }
                     if (xe.Name == "op_id")
                     {

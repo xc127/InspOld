@@ -38,6 +38,8 @@ namespace Main
                 }
                 ShowLabel_Invoke(lblResult, str, color);
                 CountNum(result);
+                //0729-显示产能
+                ShowPar();
             }
             catch (Exception ex)
             {

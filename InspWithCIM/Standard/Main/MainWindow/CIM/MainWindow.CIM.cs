@@ -26,13 +26,13 @@ namespace Main
         const int OFF = 2;
 
         static XmlHelplerFactory factory = new XmlHelper_XM();
-        //XmlCreaterBase xmlCreater = factory.GetXmlCreater();
-        XmlCreaterBase xmlCreater = Activator.CreateInstance(
-            Type.GetType(ConfigurationManager.AppSettings["cimcreater"].ToString())) as XmlCreaterBase;
-        //XmlParserBase xmlParser =factory.GetXmlParser();
-        XmlParserBase xmlParser = Activator.CreateInstance(
-                Type.GetType(ConfigurationManager.AppSettings["cimparser"].ToString())
-                ) as XmlParserBase;
+        XmlCreaterBase xmlCreater = factory.GetXmlCreater();
+        //XmlCreaterBase xmlCreater = Activator.CreateInstance(
+        //    Type.GetType(ConfigurationManager.AppSettings["cimcreater"].ToString())) as XmlCreaterBase;
+        XmlParserBase xmlParser = factory.GetXmlParser();
+        //XmlParserBase xmlParser = Activator.CreateInstance(
+        //        Type.GetType(ConfigurationManager.AppSettings["cimparser"].ToString())
+        //        ) as XmlParserBase;
 
         public Task MonitorTask = null;
 

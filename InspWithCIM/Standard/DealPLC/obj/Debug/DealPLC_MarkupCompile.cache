@@ -12,9 +12,9 @@ DEBUG;TRACE
 
 6995381160
 
-57850933690
-46-1358535117
+561466514858
+45-1250317435
 Communication\UI\WinCommWritePLC.xaml;Manual\WinTrrigerPLC.xaml;SetPLC\RegPLC\Base\BaseUCReg.xaml;SetPLC\RegPLC\RegCycle\UCSetRegCycle.xaml;SetPLC\UI\UCSetTypePLC.xaml;SetPLC\UI\WinSetPLC.xaml;
 
-True
+False
 

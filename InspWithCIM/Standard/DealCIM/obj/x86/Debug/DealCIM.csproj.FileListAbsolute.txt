@@ -1965,4 +1965,3 @@ E:\项目\Git\InspOld\InspWithCIM\Standard\DealCIM\obj\x86\Debug\DealCIM.pdb
 E:\项目\Git\InspOld\InspWithCIM\Standard\DealCIM\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
 E:\项目\Git\InspOld\InspWithCIM\Standard\DealCIM\obj\x86\Debug\CIM\UI\UcCimExtension.g.cs
 E:\项目\Git\InspOld\InspWithCIM\Standard\DealCIM\obj\x86\Debug\CIM\UI\UcCimExtension.baml
-E:\项目\Git\InspOld\InspWithCIM\Standard\DealCIM\obj\x86\Debug\DealCIM.csprojAssemblyReference.cache

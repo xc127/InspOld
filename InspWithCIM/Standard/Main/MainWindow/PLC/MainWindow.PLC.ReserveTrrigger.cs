@@ -262,7 +262,7 @@ namespace Main
             try
             {
                 ShowState("PLC通知插栏成功");
-                if (ModelParams.IfCimOn)
+                if (ModelParams.IfCimOn && !PostParams.P_I.BlByPiece)
                 {
                     TriggerAppend();
 

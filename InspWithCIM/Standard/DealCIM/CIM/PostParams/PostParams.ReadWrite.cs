@@ -36,6 +36,7 @@ namespace DealCIM
                 StrArea = GetCimConfig(CIM_PARAMS.Area.ToString());
                 StrLine = GetCimConfig(CIM_PARAMS.Line.ToString());
                 StrOperation = GetCimConfig(CIM_PARAMS.Operation.ToString());
+                EqpId = GetCimConfig(CIM_PARAMS.EqpId.ToString());
                 Wo_id = GetCimConfig(CIM_PARAMS.Wo_id.ToString());
                 StrLot = GetCimConfig(CIM_PARAMS.RunCard.ToString());
                 StrModelNo = GetCimConfig(CIM_PARAMS.ModelNo.ToString());
@@ -66,7 +67,7 @@ namespace DealCIM
                 BlByPiece = bool.Parse(GetCimConfig(CIMMODE_ENUM.ByPiece.ToString(), "CIMMODE"));
                 #endregion
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Log.L_I.WriteError(ClassName, ex);
             }
@@ -136,6 +137,7 @@ namespace DealCIM
             WriteCimConfig(CIM_PARAMS.Fab.ToString(), StrFab);
             WriteCimConfig(CIM_PARAMS.Area.ToString(), StrArea);
             WriteCimConfig(CIM_PARAMS.Line.ToString(), StrLine);
+            WriteCimConfig(CIM_PARAMS.EqpId.ToString(), EqpId);
             WriteCimConfig(CIM_PARAMS.Operation.ToString(), StrOperation);
             WriteCimConfig(CIM_PARAMS.Wo_id.ToString(), Wo_id);
             WriteCimConfig(CIM_PARAMS.ModelNo.ToString(), StrModelNo);

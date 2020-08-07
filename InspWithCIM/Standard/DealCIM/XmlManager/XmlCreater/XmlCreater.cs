@@ -20,7 +20,7 @@ namespace DealCIM
     public class XmlCreaterBase : IXmlCreater
     {
         const string ClassName = "XmlBase";
-        public const string strRoot = @"si300_interface";
+        public virtual string strRoot => @"si300_interface";
         #region path xml
         /// <summary>
         /// xml文档根目录，保存的是标准xml文件

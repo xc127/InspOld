@@ -57,6 +57,7 @@ namespace Main
                     PostParams.P_I.StrLot = PostParams.P_I.StrTempLot;
                     SetLot();                    
                     PostParams.P_I.WriteCimConfig();
+                    SetCimResult[(int)postInfo.type]("Lot更新成功", false);
                     return;
                 }
                     

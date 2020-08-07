@@ -47,6 +47,8 @@ namespace DealCIM
         /// </summary>
         string wo_id;
         public string Wo_id { get { return wo_id; } set { wo_id = value; NotifyPropertyChanged("Wo_id"); } }
+        string _eqpid;
+        public string EqpId { get => _eqpid; set { _eqpid = value; NotifyPropertyChanged("EqpId"); } }
         /// <summary>
         /// 有效的lot号
         /// </summary>

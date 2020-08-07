@@ -20,6 +20,7 @@ namespace DealCIM
         Fab,
         Area,
         Line,
+        EqpId,
         Operation,
         Wo_id,
         ModelNo,
@@ -44,7 +45,7 @@ namespace DealCIM
     /// <summary>
     /// 客户要求保存两套CIM连接参数，分别为BEOL和MOD
     /// </summary>
-    public enum TypeMode 
+    public enum TypeMode
     {
         BEOL,
         MOD

@@ -95,11 +95,14 @@ namespace Main
                     RegeditMain.R_I.CodeArm = chipid;
                     ShowState("读码成功,Arm持有ChipID:" + RegeditMain.R_I.CodeArm);
 
-                    if (CIM.CheckDup(RegeditMain.R_I.CodeArm))
+                    if (!PostParams.P_I.BlByPiece)
                     {
-                        ShowAlarm("读取到重复ChipID：" + RegeditMain.R_I.CodeArm);
-                        LogicPLC.L_I.WriteRegData1((int)DataRegister1.QrCodeResult, NG);
-                        return;
+                        if (CIM.CheckDup(RegeditMain.R_I.CodeArm))
+                        {
+                            ShowAlarm("读取到重复ChipID：" + RegeditMain.R_I.CodeArm);
+                            LogicPLC.L_I.WriteRegData1((int)DataRegister1.QrCodeResult, NG);
+                            return;
+                        }
                     }
                 }
 

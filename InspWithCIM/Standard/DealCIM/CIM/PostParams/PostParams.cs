@@ -151,7 +151,7 @@ namespace DealCIM
         bool blPassVerifyCodeEnabled;
         public bool BlPassVerifyCodeEnabled { get { return !BlCimOn & BlCodeOn; } set { blPassVerifyCodeEnabled = value; NotifyPropertyChanged("BlPassVerifyCodeEnabled"); } }
 
-        bool _blByPiece;
+        bool _blByPiece = false;
         public bool BlByPiece { get => _blByPiece; set { _blByPiece = value; NotifyPropertyChanged("BlByPiece"); } }
         #endregion
 

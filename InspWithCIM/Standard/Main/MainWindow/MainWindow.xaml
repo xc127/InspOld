@@ -8,7 +8,7 @@
         xmlns:DealLog="clr-namespace:DealLog;assembly=DealLog"
         xmlns:DealResult="clr-namespace:DealResult;assembly=DealResult"
         xmlns:Main="clr-namespace:Main"
-        Title="ACS 巡边检测 V1.0417" 
+        Title="ACS 巡边检测 V1.0808" 
         Height="768" Width="1300" WindowStartupLocation="CenterScreen" WindowState="Normal" 
 		Icon="/机器视觉控制处理软件;component/Images/机器人.ico"         
         ResizeMode="CanResize" Topmost="False" Loaded="BaseWindow_Loaded"

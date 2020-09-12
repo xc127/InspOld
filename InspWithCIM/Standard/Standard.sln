@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camera", "Camera\Camera.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealCIM", "DealCIM\DealCIM.csproj", "{B8203736-3A4C-4B7E-BA54-12AB3B0DEBA2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTPSDK", "FTPSDK\FTPSDK.csproj", "{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		anycpu|Any CPU = anycpu|Any CPU
@@ -277,6 +279,36 @@ Global
 		{B8203736-3A4C-4B7E-BA54-12AB3B0DEBA2}.Release|x64.Build.0 = Release|x64
 		{B8203736-3A4C-4B7E-BA54-12AB3B0DEBA2}.Release|x86.ActiveCfg = Release|x86
 		{B8203736-3A4C-4B7E-BA54-12AB3B0DEBA2}.Release|x86.Build.0 = Release|x86
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.anycpu|Any CPU.ActiveCfg = Release|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.anycpu|Any CPU.Build.0 = Release|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.anycpu|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.anycpu|Mixed Platforms.Build.0 = Release|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.anycpu|Win32.ActiveCfg = Release|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.anycpu|Win32.Build.0 = Release|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.anycpu|x64.ActiveCfg = Release|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.anycpu|x64.Build.0 = Release|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.anycpu|x86.ActiveCfg = Release|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.anycpu|x86.Build.0 = Release|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.Debug|Win32.Build.0 = Debug|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.Debug|x64.Build.0 = Debug|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.Debug|x86.Build.0 = Debug|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.Release|Win32.ActiveCfg = Release|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.Release|Win32.Build.0 = Release|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.Release|x64.ActiveCfg = Release|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.Release|x64.Build.0 = Release|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.Release|x86.ActiveCfg = Release|Any CPU
+		{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

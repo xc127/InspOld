@@ -1296,6 +1296,9 @@ namespace Main
                 ShowState("NG列表：" + ResultInspSingeCell_L.Count + ",NG数：" + NumNG);
                 // int result = ResultInspSingeCell_L.Count - NumRemoveWhenReCheck > 0 ? 2 : 1;
 
+                //显示产能
+                g_UCResultInsp.ShowResult(ResultInspSingeCell_L.Count);
+
                 int result = ResultInspSingeCell_L.Count == 0 ? 1 : 2;
 
 
@@ -1311,8 +1314,7 @@ namespace Main
                 if (blInvalidInsp)
                     LogicPLC.L_I.WriteRegData1((int)DataRegister1.PCAlarm, (int)PCArarm_Enum.CameraDown);
 
-                //显示产能
-                g_UCResultInsp.ShowResult(result);
+                
                 //   IsNew = true;
                 //NoPicture_Cam1Side1 = 0;
                 //NoPicture_Cam1Side2 = 0;

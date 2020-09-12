@@ -1,0 +1,5 @@
+E:\项目\Git\InspOld\InspWithCIM\Standard\FTPSDK\bin\Debug\FTPSDK.dll
+E:\项目\Git\InspOld\InspWithCIM\Standard\FTPSDK\bin\Debug\FTPSDK.pdb
+E:\项目\Git\InspOld\InspWithCIM\Standard\FTPSDK\obj\Debug\FTPSDK.csproj.CoreCompileInputs.cache
+E:\项目\Git\InspOld\InspWithCIM\Standard\FTPSDK\obj\Debug\FTPSDK.dll
+E:\项目\Git\InspOld\InspWithCIM\Standard\FTPSDK\obj\Debug\FTPSDK.pdb

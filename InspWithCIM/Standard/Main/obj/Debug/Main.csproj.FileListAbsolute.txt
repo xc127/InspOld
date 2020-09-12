@@ -4304,3 +4304,4 @@ E:\项目\Git\InspOld\InspWithCIM\Standard\Main\obj\Debug\机器视觉控制处�
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\obj\Debug\机器视觉控制处理软件.pdb
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\SetPar.xml
 E:\项目\Git\InspOld\InspWithCIM\Standard\Main\bin\巡边检测软件\SetPar.dll.config
+E:\项目\Git\InspOld\InspWithCIM\Standard\Main\obj\Debug\Main.csprojAssemblyReference.cache

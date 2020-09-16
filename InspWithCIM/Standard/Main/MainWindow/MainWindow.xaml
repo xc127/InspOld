@@ -310,6 +310,7 @@
                             <DealResult:UCResult Grid.Row="2" Grid.Column="4" Height="0" HorizontalAlignment="Stretch" Margin="1" x:Name="uCResult" VerticalAlignment="Stretch" />
                         </Grid>
                     </TabItem>
+                    <Button Content="Button" Height="100" Width="75"/>
                 </TabControl>
             </DockPanel>
         </Grid>

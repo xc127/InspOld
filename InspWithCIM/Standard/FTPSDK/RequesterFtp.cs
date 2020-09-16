@@ -31,7 +31,6 @@ namespace FTPSDK
                 UsePassive = usePassive,
                 Timeout = timeout
             };
-
         }
 
         public RequesterFtp(string host = "", string username = "", string password = "")
@@ -39,9 +38,15 @@ namespace FTPSDK
         {
         }
 
+        /// <summary>
+        /// 传入整个data，其中host应当为ftp://ip/的格式，如果是ftp://dirName/格式，会异常
+        /// </summary>
+        /// <param name="ftpConnectionModel"></param>
         public RequesterFtp(FtpConnectionModel ftpConnectionModel)
         {
             connectionData = ftpConnectionModel.Clone() as FtpConnectionModel;
+            string host = connectionData.Host;
+            connectionData.Host = host.ToLower().StartsWith("ftp://") ? host : "ftp://" + host;
         }
         #endregion
 
@@ -55,36 +60,48 @@ namespace FTPSDK
                 ftp.UsePassive = false;
                 ftp.Credentials = new NetworkCredential(connectionData.Username, connectionData.Password);
             }
-            catch { }
+            catch(Exception ex) { }
         }
 
-        public bool Upload(FileInfo localFile, string remoteFileName)
+        /// <summary>
+        /// 上传文件到ftp服务器的指定目录下
+        /// </summary>
+        /// <param name="localFile">本地文件路径</param>
+        /// <param name="remoteFilePath">远程存储路径，需要dir（不含ftp://ip/）+filename</param>
+        /// <returns></returns>
+        public bool Upload(FileInfo localFile, string remoteFilePath)
         {
+            //加载本地图片
             if (!localFile.Exists)
                 return false;
 
-            string dir = Path.GetDirectoryName(remoteFileName);
-            CreateRemoteDir(dir);
+            //创建远程目录
+            string dir = Path.GetDirectoryName(remoteFilePath);
+            if (!string.IsNullOrEmpty(dir))
+                CreateRemoteDir(dir);
 
             try
             {
-                string url = connectionData.Host + '/' + remoteFileName;
+                //做ftp连接
+                string url = connectionData.Host + '/' + remoteFilePath;
                 ConnectUrl(url);
 
+                //进行文件的读取和远程写入
                 using (Stream s = ftp.GetRequestStream())
                 using (FileStream fs = localFile.OpenRead())
                 {
                     byte[] buffer = new byte[4096];
-                    int cnt = fs.Read(buffer, 0, buffer.Length);
-                    while (cnt > 0)
+                    int cnt;
+                    do
                     {
-                        s.Write(buffer, 0, cnt);
                         cnt = fs.Read(buffer, 0, buffer.Length);
+                        s.Write(buffer, 0, cnt);
                     }
+                    while (!(cnt < buffer.Length));
                     fs.Close();
                 }
             }
-            catch { }
+            catch (Exception ex) { }        
             return true;
         }
 

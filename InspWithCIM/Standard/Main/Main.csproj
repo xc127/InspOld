@@ -520,6 +520,10 @@
       <Project>{2429126b-59e1-4d64-8a0c-45fd56b5b672}</Project>
       <Name>DealRobot</Name>
     </ProjectReference>
+    <ProjectReference Include="..\FTPSDK\FTPSDK.csproj">
+      <Project>{C2F4BCAD-61FE-4808-AB2C-7482E4BCC095}</Project>
+      <Name>FTPSDK</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">

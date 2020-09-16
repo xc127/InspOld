@@ -23,6 +23,7 @@ using DealHelp;
 using DealMontionCtrler;
 using DealFile;
 using System.Collections;
+using FTPSDK;
 
 namespace Main
 {
@@ -2630,6 +2631,18 @@ namespace Main
         {
             quit = true;
             ShowState("BUG测试结束");
+        }
+
+        void FTPTest()
+        {
+            FtpConnectionModel data = new FtpConnectionModel
+            {
+                Host = @"ftp://192.168.0.106/",
+                Username = "xc",
+                Password = "910127",
+            };
+            RequesterFtp requester = new RequesterFtp(data);
+            requester.Upload(new FileInfo(@"E:\1.jpg"), "img.jpg");
         }
     }
 }

@@ -8,7 +8,7 @@ using System.Text;
 namespace FTPSDK
 {
     [Serializable]
-    public class FtpConnectionModel:ICloneable
+    public class FtpConnectionModel : ICloneable
     {
         private string _host = string.Empty;
         public string Host
@@ -69,8 +69,8 @@ namespace FTPSDK
         private string _remotePath = string.Empty;
         public string RemotePath
         {
-            get=> _remotePath;
-            
+            get => _remotePath;
+
             set
             {
                 //string result = rootPath;

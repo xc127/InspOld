@@ -77,6 +77,17 @@ namespace DealCIM
 
             return returnValue;
         }
+
+        public static string PostInsp(string chipid, string modelno,List<string> paths,
+            XmlCreaterBase xmlCreater, out string key)
+        {
+            XmlDocument xmlDoc = xmlCreater.CreateInspXml(chipid, modelno, paths);
+            string returnValue = CIM.C_I.WriteData(XMLHelpler.XMLToString(xmlDoc), out key);
+            if (PostParams.P_I.BlLog)
+                XMLHelpler.SaveXml(xmlDoc, "Post-" + chipid + "-" + key, PostType.Insp);
+
+            return returnValue;
+        }
     }
 
     public struct PostInfo

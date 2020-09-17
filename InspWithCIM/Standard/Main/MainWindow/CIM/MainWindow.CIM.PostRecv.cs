@@ -2,6 +2,9 @@
 using DealCIM;
 using DealPLC;
 using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -11,6 +14,7 @@ namespace Main
     {
         #region 定义    
         PostInfo postInfo = new PostInfo();
+        FTPSDK.RequesterFtp ftp;
 
         delegate void SetCimDelegate(string content, bool isAlarm);
         SetCimDelegate[] SetCimResult = new SetCimDelegate[3] { SetChipIDResult, SetLotResult, SetTrackOutResult };
@@ -39,6 +43,50 @@ namespace Main
                     SetChipIDResult(returnValue + "-ChipID上报失败:" + id, true);
                     //TODO 通知plc？Bot?
                     SendCIMResult(postInfo.type, NG);
+                }
+            })).Start();
+        }
+
+        public void UploadInsp(object chipid)
+        {
+            new Task(new Action(() =>
+            {
+                string id = chipid as string;
+                ShowState("上报巡边结果");
+                //postInfo.type = PostType.ChipID;
+                //SetArmChipID(id);
+                //SetCimResult[(int)postInfo.type]("Insp上报中...", false);
+                //string returnValue = PostHelper.PostChipID(id, PostParams.P_I.StrModelNo, out string key);
+                try
+                {
+                    string returnValue = PostHelper.PostInsp(
+                    id, PostParams.P_I.StrModelNo, CimHelper.GetFtpPaths(), xmlCreater, out string key);
+
+                    if (returnValue == CIM.ReturnOK)
+                    {
+
+                        ShowState("巡边结果上报成功");
+                        Parallel.For(0, CimHelper.Count, item =>
+                           {
+                               ftp.Upload(new FileInfo(CimHelper.GetPathsForCim(item)),
+                                   CimHelper.GetPathsForFtp(item));
+                           });
+
+                        //postInfo.correlationID = key;
+                        //Task.Factory.StartNew(FindReception, postInfo);
+                        //FindReception(postInfo);
+                    }
+                    else
+                    {
+                        ShowAlarm("Insp结果上报失败");
+                        //SetChipIDResult(returnValue + "-ChipID上报失败:" + id, true);
+                        ////TODO 通知plc？Bot?
+                        //SendCIMResult(postInfo.type, NG);
+                    }
+                }
+                finally
+                {
+                    CimHelper.Reset();
                 }
             })).Start();
         }

@@ -153,6 +153,9 @@ namespace DealCIM
 
         bool _blByPiece = false;
         public bool BlByPiece { get => _blByPiece; set { _blByPiece = value; NotifyPropertyChanged("BlByPiece"); } }
+
+        bool _blInsp = false;
+        public bool BlInsp { get => _blInsp; set { _blInsp = value; NotifyPropertyChanged("BlInsp"); } }
         #endregion
 
 

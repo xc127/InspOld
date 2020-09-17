@@ -119,6 +119,8 @@ namespace Main
                 return ParSetWork.P_I.WorkSelect_L[8].BlSelect;
             }
         }
+
+        public static bool IfPostInsp => DealCIM.PostParams.P_I.BlInsp;
         #endregion
     }
 }

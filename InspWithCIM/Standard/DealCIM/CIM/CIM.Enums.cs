@@ -39,7 +39,8 @@ namespace DealCIM
         CimOn,
         VerifyChipid,
         PassVerifyCode,
-        ByPiece
+        ByPiece,
+        Insp
     }
 
     /// <summary>
@@ -59,6 +60,7 @@ namespace DealCIM
         ChipID,
         Lot,
         TrackOut,
+        Insp,
         Null
     }
 }

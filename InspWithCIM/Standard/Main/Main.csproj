@@ -338,6 +338,7 @@
     <Compile Include="MainWindow\Manual\WinTrrigerComprehensive.xaml.cs">
       <DependentUpon>WinTrrigerComprehensive.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MainWindow\ModelParams\CimHelper.cs" />
     <Compile Include="MainWindow\ModelParams\ModelParams,Define.cs" />
     <Compile Include="MainWindow\ModelParams\ModelParams.Enums.cs" />
     <Compile Include="MainWindow\ModelParams\ModelParams.Property.cs" />

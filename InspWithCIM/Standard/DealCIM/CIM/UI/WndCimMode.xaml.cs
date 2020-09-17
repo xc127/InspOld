@@ -96,5 +96,15 @@ namespace DealCIM
         {
             ((ToggleButton)sender).Content = "整卡过账";
         }
+
+        private void tbtnInsp_Checked(object sender, RoutedEventArgs e)
+        {
+            ((ToggleButton)sender).Content = "巡边过账开启";
+        }
+
+        private void tbtnInsp_Unchecked(object sender, RoutedEventArgs e)
+        {
+            ((ToggleButton)sender).Content = "巡边过账关闭";
+        }
     }
 }

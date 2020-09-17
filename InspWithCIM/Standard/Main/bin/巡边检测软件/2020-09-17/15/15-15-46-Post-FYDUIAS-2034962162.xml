@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<trx>
+  <trx_name>CUTesterDefect_B</trx_name>
+  <type_id>I</type_id>
+  <log_id>005120712345678</log_id>
+  <eqpt_id>1AFVAOI1</eqpt_id>
+  <user_id>X43546uy</user_id>
+  <op>FINAL-VISUAL</op>
+  <chip_id>FYDUIAS</chip_id>
+  <parea>1A</parea>
+  <model_no>C080CAI01</model_no>
+  <test_result>FAIL</test_result>
+  <measure_type>BUR_CHECK</measure_type>
+  <port_id>000444FFF</port_id>
+  <eqp_port_id>
+  </eqp_port_id>
+  <test_time>2020-09-17 15-15-18</test_time>
+  <defect_cnt>2</defect_cnt>
+  <iary1>
+    <iary2>
+      <image_file_path>E:\1.jpg</image_file_path>
+    </iary2>
+  </iary1>
+  <iary1>
+    <iary2>
+      <image_file_path>E:\img.jpg</image_file_path>
+    </iary2>
+  </iary1>
+</trx>

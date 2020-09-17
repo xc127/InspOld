@@ -20,13 +20,15 @@ using System.Linq;
 using DealFile;
 using DealRobot;
 using System.Configuration;
+using System.Threading.Tasks;
+using DealCIM;
 
 namespace Main
 {
     public partial class BaseDealComprehensiveResult : BaseClass
     {
         #region 定义
-        readonly string BaseDir = ConfigurationManager.AppSettings["dir"];
+        readonly string BaseDir = ConfigurationManager.AppSettings["dir"];        
 
         public static int NoPicture_Cam1Side1 = 0;
         public static int NoPicture_Cam1Side2 = 0;
@@ -528,7 +530,7 @@ namespace Main
                                 new FunInsp().PaintRegionToImage(im, out ImageAll NgRegionPaintedImage, result, g_ParIns.GetParBySideIndex(SideIndex).Amp);
 
 
-                                BasePathNGImageSave = BasePathImageSave.Replace("AllImage", "NGImage");                                
+                                BasePathNGImageSave = BasePathImageSave.Replace("AllImage", "NGImage");
                                 BasePathNGImageDefectPaintedSave = BasePathImageSave.Replace("AllImage", "NgPImage");
                                 if (!Directory.Exists(BasePathNGImageSave))
                                 {
@@ -546,6 +548,9 @@ namespace Main
                                 g_UCDisplayCamera.SaveHoImage(im.Ho_Image, "jpeg 100", result.ImagePath);
                                 //存储缺陷区域打印的图片，方便查看和二次元对比（缩放到像素级别）
                                 g_UCDisplayCamera.SaveHoImage(NgRegionPaintedImage.Ho_Image, "jpeg 100", result.ImageDefectPaintedPath);
+                                if (ModelParams.IfPostInsp)
+                                    CimHelper.Add(result.ImagePath,
+                                        CodeNow + @"\" + g_NoCamera + result.IndexImage.ToString("d3") + @".jpg");
 
 
                                 //列表
@@ -1313,7 +1318,6 @@ namespace Main
 
                 if (blInvalidInsp)
                     LogicPLC.L_I.WriteRegData1((int)DataRegister1.PCAlarm, (int)PCArarm_Enum.CameraDown);
-
                 
                 //   IsNew = true;
                 //NoPicture_Cam1Side1 = 0;

@@ -65,6 +65,7 @@ namespace DealCIM
                 BlVerifyChipID = bool.Parse(GetCimConfig(CIMMODE_ENUM.VerifyChipid.ToString(), "CIMMODE"));
                 BlPassVerifyCode = bool.Parse(GetCimConfig(CIMMODE_ENUM.PassVerifyCode.ToString(), "CIMMODE"));
                 BlByPiece = bool.Parse(GetCimConfig(CIMMODE_ENUM.ByPiece.ToString(), "CIMMODE"));
+                BlInsp = bool.Parse(GetCimConfig(CIMMODE_ENUM.Insp.ToString(), "CIMMODE"));
                 #endregion
             }
             catch (Exception ex)
@@ -159,6 +160,7 @@ namespace DealCIM
             WriteCimConfig(CIMMODE_ENUM.VerifyChipid.ToString(), BlVerifyChipID.ToString(), "CIMMODE");
             WriteCimConfig(CIMMODE_ENUM.PassVerifyCode.ToString(), BlPassVerifyCode.ToString(), "CIMMODE");
             WriteCimConfig(CIMMODE_ENUM.ByPiece.ToString(), BlByPiece.ToString(), "CIMMODE");
+            WriteCimConfig(CIMMODE_ENUM.Insp.ToString(), BlInsp.ToString(), "CIMMODE");
             #endregion
         }
 

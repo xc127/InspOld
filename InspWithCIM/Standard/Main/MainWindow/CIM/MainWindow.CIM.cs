@@ -57,6 +57,15 @@ namespace Main
                 }
             })).Start();
             //二维码初始化
+
+            FTPSDK.FtpConnectionModel data = new FTPSDK.FtpConnectionModel
+            {
+                Host = @"ftp://192.168.0.106/",
+                Username = "xc",
+                Password = "910127",
+                Port = 21
+            };
+            ftp = new FTPSDK.RequesterFtp(data);
         }
 
         void ConnectCode()
